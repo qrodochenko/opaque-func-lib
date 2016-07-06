@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.CodeAnalysis.CSharp;
+using System.IO;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace LibraryTest
 {
@@ -41,9 +44,19 @@ namespace LibraryTest
             Console.WriteLine(h.Sum() + " " + s);
             Console.ReadKey();
             */
-            TaylorTestingEntry t = new TaylorTestingEntry();
-            TaylorFunc f = TaylorFuncTest.Sin;
-            Console.WriteLine(t.TestFunction(f, 1000000, 1e-10, -1, 1, 20));
+            //TaylorTestingEntry t = new TaylorTestingEntry();
+            //TaylorFunc f = TaylorFuncTest.Sin;
+            //Console.WriteLine(t.TestFunction(f, 1000000, 1e-10, -1, 1, 20));
+
+            var path = "C:\\git_reps\\summer_practice\\opaque-func-lib\\Muradyan\\TestingPractice\\TestingPractice\\OpaqueFunctions.cs";
+            var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(path));
+            var rt = tree.GetRoot();
+            var nodes = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
+            foreach(var i in nodes)
+            {
+                Console.WriteLine(i.GetText());
+            }
+
             Console.ReadKey();
         }
     }
