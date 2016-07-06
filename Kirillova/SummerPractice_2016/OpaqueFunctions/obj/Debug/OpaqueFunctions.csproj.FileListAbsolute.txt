@@ -1,0 +1,23 @@
+D:\Кондратенко и Кириллова\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.dll
+D:\Кондратенко и Кириллова\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
+D:\Кондратенко и Кириллова\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache
+D:\Кондратенко и Кириллова\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
+D:\Кондратенко и Кириллова\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
+C:\Users\Михаил\Desktop\Кондратенко и Кириллова\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache
+C:\Users\Михаил\Desktop\Кондратенко и Кириллова\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
+C:\Users\Михаил\Desktop\Кондратенко и Кириллова\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
+E:\Кондратенко Михаил\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.dll
+E:\Кондратенко Михаил\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
+E:\Кондратенко Михаил\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache
+E:\Кондратенко Михаил\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
+E:\Кондратенко Михаил\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
+F:\Кондратенко Михаил\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.dll
+F:\Кондратенко Михаил\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
+F:\Кондратенко Михаил\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache
+F:\Кондратенко Михаил\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
+F:\Кондратенко Михаил\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
+F:\prakt\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.dll
+F:\prakt\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
+F:\prakt\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache
+F:\prakt\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
+F:\prakt\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
