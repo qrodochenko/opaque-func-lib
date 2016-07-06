@@ -1,0 +1,6 @@
+C:\Google Disc\Программы мехмат ЮФУ\TestingPractice\TestingPractice\bin\Debug\TestingPractice.exe.config
+C:\Google Disc\Программы мехмат ЮФУ\TestingPractice\TestingPractice\bin\Debug\TestingPractice.exe
+C:\Google Disc\Программы мехмат ЮФУ\TestingPractice\TestingPractice\bin\Debug\TestingPractice.pdb
+C:\Google Disc\Программы мехмат ЮФУ\TestingPractice\TestingPractice\obj\Debug\TestingPractice.csprojResolveAssemblyReference.cache
+C:\Google Disc\Программы мехмат ЮФУ\TestingPractice\TestingPractice\obj\Debug\TestingPractice.exe
+C:\Google Disc\Программы мехмат ЮФУ\TestingPractice\TestingPractice\obj\Debug\TestingPractice.pdb
