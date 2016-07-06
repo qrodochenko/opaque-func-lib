@@ -7,22 +7,16 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-
-            for (int n = 100; n < 10000; n += 500)
+            for (int i = 1; i < 99; i++)
             {
-                for (int i = 0; i<10; i++)
-                {
-                    double dx = 2.0 / 10.0;
-                    double x = -1 + (i + 1) * dx;
-                    double F = CMath_7_2.Math_7_2(x, n);
-                    double benchmark = Math.Pow(1 + x, -1);
-                    double error1 = Math.Abs(F - benchmark);
-                    double error = Math.Abs(F - benchmark) / benchmark;
-                    Console.WriteLine(n.ToString() + ' ' + x.ToString() + ' ' + error1 + ' ' + error);
-                }
-                
+                double dx = 1.0 / 100.0;
+                double x = -1 + i * dx;
+                double F = CMath_12_2.Math_12_2(x, 100);
+                double benchmark = Math.Pow(1 - x, -3);
+                double error = Math.Abs(F - benchmark);
+                Console.WriteLine(x.ToString() + ' ' + error.ToString());
             }
-            Console.WriteLine("Summer Practice! Yay!");
+            
             Console.ReadKey();
         }
     }
