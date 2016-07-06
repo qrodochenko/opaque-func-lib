@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using System.IO;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -51,20 +52,24 @@ namespace LibraryTest
             var path = "C:\\git_reps\\summer_practice\\opaque-func-lib\\Muradyan\\TestingPractice\\TestingPractice\\OpaqueFunctions.cs";
             var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(path));
             var rt = tree.GetRoot();
-            var nodes = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
-            foreach(var i in nodes)
+            var newrt = rt;
+            var nodes = newrt.DescendantNodes().OfType<MethodDeclarationSyntax>();
+            int i = -1;
+            while(nodes.Count() > (++i))
             {
-                Console.WriteLine(" ==================== ");
+                var method = nodes.ElementAt(i);
+                //Console.WriteLine(" ==================== ");
                 //Console.WriteLine(i.GetText());
-                foreach(var j in i.ChildNodes().OfType<ParameterListSyntax>())
-                {
-                    Console.WriteLine(j.GetType()+ " " + j.GetText());
-                    foreach(var k in j.ChildNodes())
-                    {
-                        Console.WriteLine(k.GetType() + " " + k.GetText());
-                    }
-                }
+                var parlist = method.ChildNodes().OfType<ParameterListSyntax>().First();
+                //Console.WriteLine(parlist.GetType()+ " " + parlist.GetText()+ " " + parlist.ChildTokens().Count());
+                var newparlist = parlist.AddParameters(SyntaxFactory.Parameter(SyntaxFactory.Identifier("tst")).WithType(SyntaxFactory.ParseTypeName("TaylorTestingEntry ")));
+                //Console.WriteLine(newparlist.GetText());
+                var newmethod = method.ReplaceNode(parlist, newparlist);
+                newrt = newrt.ReplaceNode(method, newmethod);
+                nodes = newrt.DescendantNodes().OfType<MethodDeclarationSyntax>();
             }
+
+            Console.WriteLine(newrt.GetText());
 
             Console.ReadKey();
         }
