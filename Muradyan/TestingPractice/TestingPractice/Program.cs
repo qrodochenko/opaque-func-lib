@@ -54,7 +54,16 @@ namespace LibraryTest
             var nodes = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
             foreach(var i in nodes)
             {
-                Console.WriteLine(i.GetText());
+                Console.WriteLine(" ==================== ");
+                //Console.WriteLine(i.GetText());
+                foreach(var j in i.ChildNodes().OfType<ParameterListSyntax>())
+                {
+                    Console.WriteLine(j.GetType()+ " " + j.GetText());
+                    foreach(var k in j.ChildNodes())
+                    {
+                        Console.WriteLine(k.GetType() + " " + k.GetText());
+                    }
+                }
             }
 
             Console.ReadKey();
