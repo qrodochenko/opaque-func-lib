@@ -1,14 +1,12 @@
 ﻿#define TEST_TAYLOR
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
-using System.IO;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace LibraryTest
 {
@@ -31,6 +29,8 @@ namespace LibraryTest
 
     class MainClass
     {
+        static string[] testingMethodsNames = new string[] { "Body", "Sin_1_in" };
+
         static void Main(string[] args)
         {/*
             Heap h = new Heap();
@@ -58,6 +58,9 @@ namespace LibraryTest
             while(nodes.Count() > (++i))
             {
                 var method = nodes.ElementAt(i);
+                var methodName = method.Identifier.ValueText;
+                //Console.WriteLine("-"+methodName+"-");
+                if (!testingMethodsNames.Contains(methodName)) continue;
                 //Console.WriteLine(" ==================== ");
                 //Console.WriteLine(i.GetText());
                 var parlist = method.ChildNodes().OfType<ParameterListSyntax>().First();
