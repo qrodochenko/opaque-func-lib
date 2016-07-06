@@ -1,0 +1,8 @@
+D:\student\1\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
+D:\student\1\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe
+D:\student\1\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.pdb
+D:\student\1\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
+D:\student\1\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
+D:\student\1\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
+D:\student\1\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
+D:\student\1\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
