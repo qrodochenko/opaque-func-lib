@@ -1,0 +1,27 @@
+D:\student\K\FirstProject\bin\Debug\FirstProject.exe.config
+D:\student\K\FirstProject\obj\Debug\FirstProject.csprojResolveAssemblyReference.cache
+D:\student\K\FirstProject\bin\Debug\FirstProject.exe
+D:\student\K\FirstProject\bin\Debug\FirstProject.pdb
+D:\student\K\FirstProject\obj\Debug\FirstProject.exe
+D:\student\K\FirstProject\obj\Debug\FirstProject.pdb
+D:\student\K\FirstProject\bin\Debug\FunctionsLibrary.dll
+D:\student\K\FirstProject\bin\Debug\FunctionsLibrary.pdb
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\bin\Debug\FirstProject.exe.config
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\obj\Debug\FirstProject.exe
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\obj\Debug\FirstProject.pdb
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\bin\Debug\FirstProject.exe
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\bin\Debug\FirstProject.pdb
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\bin\Debug\FunctionsLibrary.dll
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\bin\Debug\FunctionsLibrary.pdb
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\obj\Debug\FirstProject.csprojResolveAssemblyReference.cache
+F:\K\FirstProject\bin\Debug\FirstProject.exe.config
+F:\K\FirstProject\obj\Debug\FirstProject.exe
+F:\K\FirstProject\obj\Debug\FirstProject.pdb
+D:\student\Рабочий стол\Practice\FirstProject\bin\Debug\FirstProject.exe.config
+D:\student\Рабочий стол\Practice\FirstProject\obj\Debug\FirstProject.exe
+D:\student\Рабочий стол\Practice\FirstProject\obj\Debug\FirstProject.pdb
+D:\student\Рабочий стол\Practice\FirstProject\bin\Debug\FirstProject.exe
+D:\student\Рабочий стол\Practice\FirstProject\bin\Debug\FirstProject.pdb
+D:\student\Рабочий стол\Practice\FirstProject\bin\Debug\FunctionsLibrary.dll
+D:\student\Рабочий стол\Practice\FirstProject\bin\Debug\FunctionsLibrary.pdb
+D:\student\Рабочий стол\Practice\FirstProject\obj\Debug\FirstProject.csprojResolveAssemblyReference.cache

@@ -1,0 +1,23 @@
+D:\student\K\FirstProject\UnitTest\bin\Debug\UnitTest.dll
+D:\student\K\FirstProject\UnitTest\bin\Debug\UnitTest.pdb
+D:\student\K\FirstProject\UnitTest\bin\Debug\FunctionsLibrary.dll
+D:\student\K\FirstProject\UnitTest\bin\Debug\FunctionsLibrary.pdb
+D:\student\K\FirstProject\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+D:\student\K\FirstProject\UnitTest\obj\Debug\UnitTest.dll
+D:\student\K\FirstProject\UnitTest\obj\Debug\UnitTest.pdb
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\UnitTest\bin\Debug\FunctionsLibrary.dll
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\UnitTest\bin\Debug\FunctionsLibrary.pdb
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\UnitTest\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\SuperUser\Desktop\ПРАКТИКА\K\FirstProject\UnitTest\obj\Debug\UnitTest.pdb
+D:\student\Рабочий стол\Practice\FirstProject\UnitTest\bin\Debug\UnitTest.dll
+D:\student\Рабочий стол\Practice\FirstProject\UnitTest\bin\Debug\UnitTest.pdb
+D:\student\Рабочий стол\Practice\FirstProject\UnitTest\bin\Debug\FunctionsLibrary.dll
+D:\student\Рабочий стол\Practice\FirstProject\UnitTest\bin\Debug\FunctionsLibrary.pdb
+D:\student\Рабочий стол\Practice\FirstProject\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+D:\student\Рабочий стол\Practice\FirstProject\UnitTest\obj\Debug\UnitTest.dll
+D:\student\Рабочий стол\Practice\FirstProject\UnitTest\obj\Debug\UnitTest.pdb
