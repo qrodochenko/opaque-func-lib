@@ -1,0 +1,5 @@
+F:\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.dll
+F:\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
+F:\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
+F:\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
+F:\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache
