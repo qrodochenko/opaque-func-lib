@@ -56,7 +56,7 @@ namespace TestingSystem
             //TaylorFunc f = TaylorFuncTest.Sin;
             //Console.WriteLine(t.TestFunction(f, 1000000, 1e-10, -1, 1, 20));
 
-            var path = "C:\\git_reps\\summer_practice\\opaque-func-lib\\Muradyan\\TestingSystem\\TestingSystem\\OpaqueFunctions.cs";
+            var path = "OpaqueFunctions.cs";
             var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(path));
             var rt = tree.GetRoot();
             var newrt = rt;
@@ -66,7 +66,7 @@ namespace TestingSystem
             {
                 var method = nodes.ElementAt(i);
                 var methodName = method.Identifier.ValueText;
-                Console.WriteLine("-" + methodName + "-");
+                //Console.WriteLine("-" + methodName + "-");
                 //if (!testingMethodsNames.Contains(methodName)) continue;
                 //Console.WriteLine(" ==================== ");
 
@@ -127,7 +127,7 @@ namespace TestingSystem
 
                     var childlist = s.Parent.ChildNodes();
 
-                    Console.WriteLine("trtt");
+                    //Console.WriteLine("trtt");
                     foreach (var si in childlist)
                     {
                         if (s != si) continue;
@@ -149,6 +149,7 @@ namespace TestingSystem
             //Console.WriteLine(newrt.GetText());
 
             Console.WriteLine("Max epsilon: " + UniversalTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
+            Console.WriteLine(UniversalTesting.getIterationsByEpsilon(path, "Sin_1", 0.005, 10));
 
             Console.ReadKey();
         }
@@ -269,10 +270,11 @@ namespace TestingSystem
 
     class UniversalTesting
     {
-        public static double getMaxEpsilon(string path, string f, int N, int pointsNumber)
+        // TODO: define intervals by function name
+        public static double getMaxEpsilon(string FilePath, string f, int N, int pointsNumber)
         {
 
-            var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(path));
+            var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(FilePath));
             var rt = tree.GetRoot();
             var nodes = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
             var usings = "using System; \n";
@@ -295,7 +297,7 @@ namespace TestingSystem
             var attribs = rt.DescendantNodes().OfType<AttributeSyntax>();
             foreach (var attr in attribs)
             {
-                Console.WriteLine(attr.GetText());
+                //Console.WriteLine(attr.GetText());
                 if (attr.Name.GetText().ToString() == "FunctionName" &&
                     attr.ArgumentList.Arguments.ElementAt(0).GetFirstToken().ValueText == f)
                 {
@@ -327,10 +329,35 @@ namespace TestingSystem
                 //Console.WriteLine(fullIdealExpr);
                 double idealVal = CSharpScript.EvaluateAsync<double>(fullIdealExpr, 
                     ScriptOptions.Default.WithImports("System.Math")).Result;
-                Console.WriteLine("Val: "+ val +". Ideal val: " + idealVal);
+                //Console.WriteLine("Val: "+ val +". Ideal val: " + idealVal);
                 res = Math.Max(res, Math.Abs(val - idealVal));
             }
             return res;
+        }
+
+
+        public static int getIterationsByEpsilon(string path, string f, double epsilon, int pointsNumber)
+        {
+            const int initialN = 8;
+            const int initialBadnessCountdown = 5;
+
+            int cN = initialN;
+            int badnessCountdown = initialBadnessCountdown;
+            double ceps = getMaxEpsilon(path, f, cN, pointsNumber);
+            while(ceps > epsilon)
+            {
+                cN <<= 1;
+                double neweps = getMaxEpsilon(path, f, cN, pointsNumber);
+                if (neweps == ceps) --badnessCountdown;
+                else
+                {
+                    badnessCountdown = initialBadnessCountdown;
+                    ceps = neweps;
+                }
+
+                if (badnessCountdown == 0) return cN << initialBadnessCountdown;
+            }
+            return cN;
         }
     }
 
