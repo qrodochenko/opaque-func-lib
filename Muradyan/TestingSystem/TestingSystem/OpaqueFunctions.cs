@@ -47,7 +47,7 @@ namespace OpaqueFunctions
             double s = 0.0;
             double k = x;
             x *= x;
-            long t;
+            double t;
             int sgn = 1;
             for (int i = 1; i < N; ++i)
             {

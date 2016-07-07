@@ -268,15 +268,19 @@ namespace TestingSystem
 
     }
 
+    // This class do tests of almost all functions.
+    // It searches all the information in the attributes
     class UniversalTesting
     {
         // TODO: define intervals by function name
         public static double getMaxEpsilon(string FilePath, string f, int N, int pointsNumber)
         {
-
+            // Syntax tree building
             var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(FilePath));
             var rt = tree.GetRoot();
             var nodes = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
+
+            // Find the code of the method we want to use and write it into defStr
             var usings = "using System; \n";
             string defsStr = usings;
             foreach (var meth in nodes)
@@ -284,58 +288,59 @@ namespace TestingSystem
                 if (meth.Identifier.ValueText == f)
                 {
                     defsStr += meth.GetText().ToString();
-                    /*foreach(var i in meth.AttributeLists)
-                    {
-                        Console.WriteLine(i.Attributes.First());
-                    }*/
                     break;
                 }
-                //defsStr += classnode.Members..GetText().ToString();
             }
 
+            // Find the attribute which contains "ideal" math expression
+            // Write this expression to idealExpr
             string idealExpr = "return ";
             var attribs = rt.DescendantNodes().OfType<AttributeSyntax>();
             foreach (var attr in attribs)
             {
-                //Console.WriteLine(attr.GetText());
+                var attrArgs = attr.ArgumentList.Arguments;
                 if (attr.Name.GetText().ToString() == "FunctionName" &&
-                    attr.ArgumentList.Arguments.ElementAt(0).GetFirstToken().ValueText == f)
+                    attrArgs.ElementAt(0).GetFirstToken().ValueText == f)
                 {
-                    idealExpr += attr.ArgumentList.Arguments.ElementAt(1).GetFirstToken().ValueText;
+                    idealExpr += attrArgs.ElementAt(1).GetFirstToken().ValueText;
                     break;
                 }
 
             }
-
             idealExpr += ";";
+
             string evalStr;
             string fullStr;
-            
-            double res = 0;
-            //TaylorFuncDelegate idealFun;
+            double eps = 0;
+            // TODO !!!!!
             double l = -1, r = 1;
+
+            // evaluating our function in some points
             double h = (r - l) / (pointsNumber + 1);
             for (double arg = l + h; arg < r; arg += h)
             {
+                // constructing script for calling "regular funtion"
                 var strarg = arg.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
                 evalStr = "\n" +
                     //"C" + f + "." + 
                     "return " + f + "( " + strarg + "," + N + "); ";
                 fullStr = defsStr + evalStr;
-                //Console.WriteLine(fullStr);
                 double val = 0;
                 val = CSharpScript.EvaluateAsync<double>(fullStr).Result;
+
+                // constructing and calling "ideal" expression
                 var fullIdealExpr = usings + "double x = " + strarg + ";" + idealExpr;
-                //Console.WriteLine(fullIdealExpr);
                 double idealVal = CSharpScript.EvaluateAsync<double>(fullIdealExpr, 
                     ScriptOptions.Default.WithImports("System.Math")).Result;
                 //Console.WriteLine("Val: "+ val +". Ideal val: " + idealVal);
-                res = Math.Max(res, Math.Abs(val - idealVal));
+
+                // evaluating epsilon
+                eps = Math.Max(eps, Math.Abs(val - idealVal));
             }
-            return res;
+            return eps;
         }
 
-
+        // returns the number of iterations by epsilon we want
         public static int getIterationsByEpsilon(string path, string f, double epsilon, int pointsNumber)
         {
             const int initialN = 8;
@@ -346,6 +351,7 @@ namespace TestingSystem
             double ceps = getMaxEpsilon(path, f, cN, pointsNumber);
             while(ceps > epsilon)
             {
+                Console.WriteLine(cN + " " + ceps);
                 cN <<= 1;
                 double neweps = getMaxEpsilon(path, f, cN, pointsNumber);
                 if (neweps == ceps) --badnessCountdown;
@@ -398,38 +404,6 @@ namespace TestingSystem
 
 
     }
-
-    /*
-        class TaylorFuncTest
-        {
-            static public double Sin(double x, int N
-    #if TEST_TAYLOR
-                                    , TaylorTestingEntry tst
-    #endif
-                )
-            {
-                double s = 0.0;
-                double k = x;
-                x *= x;
-                long t;
-                int sgn = 1;
-                for (int i = 1; i < N; ++i)
-                {
-                    s += k;
-    #if TEST_TAYLOR
-                    tst.AddElement(k);
-    #endif
-                    k *= x;
-                    sgn = -sgn;
-                    k *= sgn;
-                    t = i << 1;
-                    k /= t * (t + 1);
-                }
-
-                return s;
-            }
-        }
-    */
 
     class TaylorTestingUnit
     {
