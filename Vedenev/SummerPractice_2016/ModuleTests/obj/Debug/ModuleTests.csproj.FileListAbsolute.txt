@@ -1,0 +1,7 @@
+D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.dll
+D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.pdb
+D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.dll
+D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.pdb
+D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
+D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
+D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb
