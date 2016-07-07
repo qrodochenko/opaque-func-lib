@@ -17,21 +17,46 @@ namespace FirstProject
 
             //---------------------------------
             Console.WriteLine("Function 1");
-            k = C_interval_ww_ww_1.interval_ww_ww_1(0.5, 2, 2, 1.5);
+            k = C_interval_ww_ww_1.interval_ww_ww_1(1.5, 0.5, 2, 2);
             Console.WriteLine(k);
 
-            k_inv = C_interval_ww_ww_1_inv.interval_ww_ww_1_inv(0.5, 2, 2, 1.5);
+            k_inv = C_interval_ww_ww_1_inv.interval_ww_ww_1_inv(1.5, 0.5, 2, 2);
             Console.WriteLine(k_inv);
 
-            k = C_interval_ww_ww_1.interval_ww_ww_1(0.5, 2, 2, k_inv);
+            k = C_interval_ww_ww_1.interval_ww_ww_1(k_inv, 0.5, 2, 2);
             Console.WriteLine(k);
 
-            m = C_interval_ww_ww_1.interval_ww_ww_1(0.5, 2, 2, 1.5);
-            m_inv = C_interval_ww_ww_1_inv.interval_ww_ww_1_inv(0.5, 2, 2, m);
+            m = C_interval_ww_ww_1.interval_ww_ww_1(1.5, 0.5, 2, 2);
+            m_inv = C_interval_ww_ww_1_inv.interval_ww_ww_1_inv(m, 0.5, 2, 2);
             Console.WriteLine(m_inv);
 
             s = C_interval_ww_ww_1_in.interval_ww_ww_1_in();
             Console.WriteLine(s);
+
+            Random R = new Random();
+            for (int i = 1; i <= 10; i++)
+            {   
+                double x = Convert.ToDouble(R.Next(-1000000,1000000) / 1000.0);
+                double A = Convert.ToDouble(R.Next(-10000, 10000) / 1000.0);
+                double B = Convert.ToDouble(R.Next(-10000, 10000) / 1000.0);
+                int k1 = R.Next(-10000, 10000);
+                Console.WriteLine(x);
+                Console.WriteLine(A);
+                Console.WriteLine(B);
+                Console.WriteLine(k1);
+
+                 k_inv = C_interval_ww_ww_1_inv.interval_ww_ww_1_inv(x, A, B, k1);
+                 k = C_interval_ww_ww_1.interval_ww_ww_1(k_inv, A, B, k1);
+
+                 m = C_interval_ww_ww_1.interval_ww_ww_1(x, A, B, k1);
+                 m_inv = C_interval_ww_ww_1_inv.interval_ww_ww_1_inv(m, A, B, k1);
+
+                Console.WriteLine(k);
+                Console.WriteLine(k_inv);
+                Console.WriteLine(m);
+                Console.WriteLine(m_inv);
+                Console.WriteLine();
+            }
 
             Console.WriteLine();
 
@@ -53,7 +78,29 @@ namespace FirstProject
             s = C_interval_ww_finfin_2_in.interval_ww_finfin_2_in();
             Console.WriteLine(s);
 
-            Console.WriteLine();
+
+            for (int i = 1; i <= 10; i++)
+            {
+                double x = Convert.ToDouble(R.Next(-1000000, 1000000) / 1000.0);
+                double C = Convert.ToDouble(R.Next(-10000, 10000) / 1000.0);
+
+                Console.WriteLine(x);
+                Console.WriteLine(C);
+
+                k_inv = C_interval_ww_finfin_2_inv.interval_ww_finfin_2_inv(x, C);
+                k = C_interval_ww_finfin_2.interval_ww_finfin_2(k_inv, C);
+
+                m = C_interval_ww_finfin_2.interval_ww_finfin_2(x, C);
+                m_inv = C_interval_ww_finfin_2_inv.interval_ww_finfin_2_inv(m, C);
+
+                Console.WriteLine(k);
+                Console.WriteLine(k_inv);
+                Console.WriteLine(m);
+                Console.WriteLine(m_inv);
+                Console.WriteLine();
+            }
+
+                Console.WriteLine();
 
             //----------------------------------------
             Console.WriteLine("Function 3");
@@ -72,6 +119,23 @@ namespace FirstProject
 
             s = C_interval_finfin_ww_3_in.interval_finfin_ww_3_in();
             Console.WriteLine(s);
+
+            for (int i = 1; i <= 10; i++)
+            {
+                double x = Convert.ToDouble(R.Next(-1570796326, 1570796327) / 1000000000.0);
+
+                k_inv = C_interval_finfin_ww_3_inv.interval_finfin_ww_3_inv(x);
+                k = C_interval_finfin_ww_3.interval_finfin_ww_3(k_inv);
+
+                m = C_interval_finfin_ww_3.interval_finfin_ww_3(x);
+                m_inv = C_interval_finfin_ww_3_inv.interval_finfin_ww_3_inv(m);
+
+                Console.WriteLine(k);
+                Console.WriteLine(k_inv);
+                Console.WriteLine(m);
+                Console.WriteLine(m_inv);
+                Console.WriteLine();
+            }
 
             Console.WriteLine();
 
@@ -214,6 +278,8 @@ namespace FirstProject
             Console.WriteLine(s);
 
             Console.WriteLine();
+
+
 
             Console.ReadKey();
             
