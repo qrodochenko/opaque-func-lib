@@ -1,0 +1,5 @@
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.dll
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb

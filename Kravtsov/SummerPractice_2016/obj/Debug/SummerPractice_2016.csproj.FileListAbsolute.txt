@@ -1,0 +1,6 @@
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.pdb
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
+D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
