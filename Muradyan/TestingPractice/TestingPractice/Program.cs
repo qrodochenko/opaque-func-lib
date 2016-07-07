@@ -10,7 +10,9 @@ using System.Linq;
 
 namespace LibraryTest
 {
-    delegate double TaylorFunc(double x, int N, TaylorTestingEntry tst);
+    delegate double TaylorFuncTest(double x, int N, TaylorTestingEntry tst);
+    delegate double TaylorFunc(double x, int N);
+    delegate double TaylorFuncParam(double x, double a, int N);
 
     class Utility {
         public static void Swap<T>(ref T a, ref T b)
@@ -59,15 +61,82 @@ namespace LibraryTest
             {
                 var method = nodes.ElementAt(i);
                 var methodName = method.Identifier.ValueText;
-                //Console.WriteLine("-"+methodName+"-");
-                if (!testingMethodsNames.Contains(methodName)) continue;
+                Console.WriteLine("-"+methodName+"-");
+                //if (!testingMethodsNames.Contains(methodName)) continue;
                 //Console.WriteLine(" ==================== ");
+                
+                /* Adding last param */
                 //Console.WriteLine(i.GetText());
                 var parlist = method.ChildNodes().OfType<ParameterListSyntax>().First();
                 //Console.WriteLine(parlist.GetType()+ " " + parlist.GetText()+ " " + parlist.ChildTokens().Count());
                 var newparlist = parlist.AddParameters(SyntaxFactory.Parameter(SyntaxFactory.Identifier("tst")).WithType(SyntaxFactory.ParseTypeName("TaylorTestingEntry ")));
                 //Console.WriteLine(newparlist.GetText());
                 var newmethod = method.ReplaceNode(parlist, newparlist);
+
+                /* Adding tst.AddElement(i); */
+                foreach(var s in newmethod.Body.DescendantNodes())
+                {
+                    SyntaxTrivia st = SyntaxFactory.SyntaxTrivia(SyntaxKind.WhitespaceTrivia," ");
+                    bool fl = false;
+                    bool before = true;
+                    var lt = s.GetLeadingTrivia();
+                    
+                    foreach(var triviaEntry in lt)
+                    {
+                        if(triviaEntry.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia)
+                        {
+                            fl = true;
+                            st = triviaEntry;
+                            break;
+                        }
+                    }
+
+                    if (!fl)
+                    {
+                        lt = s.GetTrailingTrivia();
+                        before = false;
+                        foreach (var triviaEntry in lt)
+                        {
+                            if (triviaEntry.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia)
+                            {
+                                fl = true;
+                                st = triviaEntry;
+                                break;
+                            }
+                        }
+                        if (!fl) continue;
+                    }
+
+                    //Console.WriteLine("PAMPARAM");
+
+                    var commentContents = st.ToString();
+                    char[] delim = { ' ', '\n', '\t' ,'\r'};
+                    var ar = commentContents.Split(delim, StringSplitOptions.RemoveEmptyEntries);
+                    //Console.WriteLine(ar.Length);
+                    if (ar.Length != 2 || ar[0] != "add") continue;
+
+                    var lineToAdd = "tst.AddElement(" + ar[1]+ ")";
+                    //newmethod = newmethod.//ReplaceNode(s, newparlist);
+                    var linelist = new List<ExpressionStatementSyntax>();
+                    linelist.Add(SyntaxFactory.ExpressionStatement(SyntaxFactory.ParseExpression(lineToAdd)));
+
+                    var childlist = s.Parent.ChildNodes();
+
+                    Console.WriteLine("trtt");
+                    foreach (var si in childlist)
+                    {
+                        if (s != si) continue;
+                        if (before) newmethod = newmethod.InsertNodesBefore(si, linelist);
+                        else newmethod = newmethod.InsertNodesAfter(si, linelist);
+                        break;
+                    }
+                    
+                    //Console.WriteLine(s.Kind() + " " + s.ToString());
+                    break;
+                }
+
+
+                /* Nodes changing */
                 newrt = newrt.ReplaceNode(method, newmethod);
                 nodes = newrt.DescendantNodes().OfType<MethodDeclarationSyntax>();
             }
@@ -190,6 +259,26 @@ namespace LibraryTest
 
     }
 
+    class TaylorTestingSimple
+    {
+        public double getMaxEpsilon(string f, int N, int pointsNumber)
+        {
+            Random rand = new Random();
+            double res = 0;
+            TaylorFunc fun;
+            TaylorFunc idealFun;
+            double l = -1, r = 1;
+            double h = (r - l) / (pointsNumber + 1);
+            for (double arg = l + h; arg < r; arg += h)
+            {
+                double val = fun(arg, N);
+                double idealVal = idealFun(arg, N);
+                res = Math.Max(res, Math.Abs(val - idealVal));
+            }
+            return res;
+        }
+    }
+
     class TaylorTestingEntry
     {
         private Heap h = new Heap();
@@ -210,7 +299,7 @@ namespace LibraryTest
             else return "Error, mistake is " + current_eps;
         }
 
-        public string TestFunction(TaylorFunc f, int N, double eps, double l, double r, int pointsNumber)
+        public string TestFunction(TaylorFuncTest f, int N, double eps, double l, double r, int pointsNumber)
         {
 
             Random rand = new Random();
@@ -224,6 +313,8 @@ namespace LibraryTest
             }
             return res;
         }
+
+        
     }
 
     class TaylorFuncTest
