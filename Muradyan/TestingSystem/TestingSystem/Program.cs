@@ -4,13 +4,15 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using Microsoft.CodeAnalysis.Scripting;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 
-namespace LibraryTest
+//
+namespace TestingSystem
 {
     delegate double TaylorFuncTestDelegate(double x, int N, TaylorTestingEntry tst);
     delegate double TaylorFuncDelegate(double x, int N);
@@ -146,7 +148,7 @@ namespace LibraryTest
 
             //Console.WriteLine(newrt.GetText());
 
-            TaylorTestingSimple.getMaxEpsilon(path, "Body", 45, 10);
+            Console.WriteLine("Max epsilon: " + UniversalTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
 
             Console.ReadKey();
         }
@@ -265,47 +267,67 @@ namespace LibraryTest
 
     }
 
-    class TaylorTestingSimple
+    class UniversalTesting
     {
         public static double getMaxEpsilon(string path, string f, int N, int pointsNumber)
         {
-            //var path = "C:\\git_reps\\summer_practice\\opaque-func-lib\\Muradyan\\TestingPractice\\TestingPractice\\OpaqueFunctions.cs";
 
-            //var script = CSharpScript.Create(File.ReadAllText(path));
-            //var compiledScript = script.GetCompilation();
-            //compiledScript.
-            //Compilation compilation = script.GetCompilation();
             var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(path));
             var rt = tree.GetRoot();
             var nodes = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
-            string methodStr = "using System; \n";
+            var usings = "using System; \n";
+            string defsStr = usings;
             foreach (var meth in nodes)
             {
                 if (meth.Identifier.ValueText == f)
                 {
-                    methodStr += meth.GetText().ToString();
-                    foreach(var i in meth.AttributeLists)
+                    defsStr += meth.GetText().ToString();
+                    /*foreach(var i in meth.AttributeLists)
                     {
                         Console.WriteLine(i.Attributes.First());
-                    }
+                    }*/
                     break;
                 }
+                //defsStr += classnode.Members..GetText().ToString();
             }
+
+            string idealExpr = "return ";
+            var attribs = rt.DescendantNodes().OfType<AttributeSyntax>();
+            foreach (var attr in attribs)
+            {
+                Console.WriteLine(attr.GetText());
+                if (attr.Name.GetText().ToString() == "FunctionName" &&
+                    attr.ArgumentList.Arguments.ElementAt(0).GetFirstToken().ValueText == f)
+                {
+                    idealExpr += attr.ArgumentList.Arguments.ElementAt(1).GetFirstToken().ValueText;
+                    break;
+                }
+
+            }
+
+            idealExpr += ";";
             string evalStr;
             string fullStr;
             
-            Random rand = new Random();
             double res = 0;
             //TaylorFuncDelegate idealFun;
             double l = -1, r = 1;
             double h = (r - l) / (pointsNumber + 1);
             for (double arg = l + h; arg < r; arg += h)
             {
-                evalStr = "\n" + f + "( " + arg.ToString(CultureInfo.CreateSpecificCulture("en-GB")) + "," + N + "); ";
-                fullStr = methodStr + evalStr;
+                var strarg = arg.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
+                evalStr = "\n" +
+                    //"C" + f + "." + 
+                    "return " + f + "( " + strarg + "," + N + "); ";
+                fullStr = defsStr + evalStr;
                 //Console.WriteLine(fullStr);
-                var val = CSharpScript.EvaluateAsync<double>(fullStr).Result;
-                double idealVal = 0;//idealFun(arg, N);
+                double val = 0;
+                val = CSharpScript.EvaluateAsync<double>(fullStr).Result;
+                var fullIdealExpr = usings + "double x = " + strarg + ";" + idealExpr;
+                //Console.WriteLine(fullIdealExpr);
+                double idealVal = CSharpScript.EvaluateAsync<double>(fullIdealExpr, 
+                    ScriptOptions.Default.WithImports("System.Math")).Result;
+                Console.WriteLine("Val: "+ val +". Ideal val: " + idealVal);
                 res = Math.Max(res, Math.Abs(val - idealVal));
             }
             return res;
