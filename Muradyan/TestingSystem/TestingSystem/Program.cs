@@ -15,9 +15,9 @@ using System.Text;
 //main namespace
 namespace TestingSystem
 {
-    delegate double TaylorFuncTestDelegate(double x, int N, TaylorTestingEntry tst);
-    delegate double TaylorFuncDelegate(double x, int N);
-    delegate double TaylorFuncParamDelegate(double x, double a, int N);
+    public delegate double TaylorFuncTestDelegate(double x, int N, TaylorTestingEntry tst);
+    public delegate double TaylorFuncDelegate(double x, int N);
+    public delegate double TaylorFuncParamDelegate(double x, double a, int N);
 
     // some utility functions
     class Utility
@@ -60,100 +60,13 @@ namespace TestingSystem
             //Console.WriteLine(t.TestFunction(f, 1000000, 1e-10, -1, 1, 20));
 
             var path = "OpaqueFunctions.cs";
-            var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(path));
-            var rt = tree.GetRoot();
-            var newrt = rt;
-            var nodes = newrt.DescendantNodes().OfType<MethodDeclarationSyntax>();
-            int i = -1;
-            while (nodes.Count() > (++i))
-            {
-                var method = nodes.ElementAt(i);
-                var methodName = method.Identifier.ValueText;
-                //Console.WriteLine("-" + methodName + "-");
-                //if (!testingMethodsNames.Contains(methodName)) continue;
-                //Console.WriteLine(" ==================== ");
-
-                /* Adding last param */
-                //Console.WriteLine(i.GetText());
-                var parlist = method.ChildNodes().OfType<ParameterListSyntax>().First();
-                //Console.WriteLine(parlist.GetType()+ " " + parlist.GetText()+ " " + parlist.ChildTokens().Count());
-                var newparlist = parlist.AddParameters(SyntaxFactory.Parameter(SyntaxFactory.Identifier("tst")).WithType(SyntaxFactory.ParseTypeName("TaylorTestingEntry ")));
-                //Console.WriteLine(newparlist.GetText());
-                var newmethod = method.ReplaceNode(parlist, newparlist);
-
-                /* Adding tst.AddElement(i); */
-                foreach (var s in newmethod.Body.DescendantNodes())
-                {
-                    SyntaxTrivia st = SyntaxFactory.SyntaxTrivia(SyntaxKind.WhitespaceTrivia, " ");
-                    bool fl = false;
-                    bool before = true;
-                    var lt = s.GetLeadingTrivia();
-
-                    foreach (var triviaEntry in lt)
-                    {
-                        if (triviaEntry.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia)
-                        {
-                            fl = true;
-                            st = triviaEntry;
-                            break;
-                        }
-                    }
-
-                    if (!fl)
-                    {
-                        lt = s.GetTrailingTrivia();
-                        before = false;
-                        foreach (var triviaEntry in lt)
-                        {
-                            if (triviaEntry.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia)
-                            {
-                                fl = true;
-                                st = triviaEntry;
-                                break;
-                            }
-                        }
-                        if (!fl) continue;
-                    }
-
-                    //Console.WriteLine("PAMPARAM");
-
-                    var commentContents = st.ToString();
-                    char[] delim = { ' ', '\n', '\t', '\r' };
-                    var ar = commentContents.Split(delim, StringSplitOptions.RemoveEmptyEntries);
-                    //Console.WriteLine(ar.Length);
-                    if (ar.Length != 2 || ar[0] != "add") continue;
-
-                    var lineToAdd = "tst.AddElement(" + ar[1] + ")";
-                    //newmethod = newmethod.//ReplaceNode(s, newparlist);
-                    var linelist = new List<ExpressionStatementSyntax>();
-                    linelist.Add(SyntaxFactory.ExpressionStatement(SyntaxFactory.ParseExpression(lineToAdd)));
-
-                    var childlist = s.Parent.ChildNodes();
-
-                    //Console.WriteLine("trtt");
-                    foreach (var si in childlist)
-                    {
-                        if (s != si) continue;
-                        if (before) newmethod = newmethod.InsertNodesBefore(si, linelist);
-                        else newmethod = newmethod.InsertNodesAfter(si, linelist);
-                        break;
-                    }
-
-                    //Console.WriteLine(s.Kind() + " " + s.ToString());
-                    break;
-                }
-
-
-                /* Nodes changing */
-                newrt = newrt.ReplaceNode(method, newmethod);
-                nodes = newrt.DescendantNodes().OfType<MethodDeclarationSyntax>();
-            }
 
             //Console.WriteLine(newrt.GetText());
 
-            Console.WriteLine("Max epsilon: " + UniversalTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
-            Console.WriteLine(UniversalTesting.getIterationsByEpsilon(path, "Sin_1", 0.005, 10));
-
+            //Console.WriteLine("Max epsilon: " + UniversalTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
+            //Console.WriteLine(UniversalTesting.getIterationsByEpsilon(path, "Sin_1", 0.005, 10));
+            
+            Console.WriteLine("Max epsilon: " + TaylorTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
             Console.ReadKey();
         }
     }
@@ -317,8 +230,17 @@ namespace TestingSystem
             
             string EvalExpression = methodCode + "\nreturn " + methodName + arguments + ";";
             Console.WriteLine(EvalExpression);
-            return CSharpScript.EvaluateAsync<T>(EvalExpression,
-                    ScriptOptions.Default.WithImports("System.Math")).Result;
+
+            var opts = ScriptOptions.Default;
+            var mscorlib = typeof(System.Object).Assembly;
+            var systemCore = typeof(System.Linq.Enumerable).Assembly;
+            var sth = typeof(TestingSystem.TaylorTestingEntry).Assembly;
+            opts = opts.AddReferences(mscorlib, systemCore, sth);
+            opts = opts.AddImports("System");
+            opts = opts.AddImports("System.Linq");
+            opts = opts.AddImports("System.Collections.Generic");
+            opts = opts.AddImports("TestingSystem.TaylorTestingEntry"); 
+            return CSharpScript.EvaluateAsync<T>(EvalExpression, opts).Result;
         }
 
         public static string constructMethodCodeFromExpr(string methodName, string retType, string Expression, string usings,  string arguments)
@@ -402,7 +324,7 @@ namespace TestingSystem
     }
 
     // Testing different functions that use simple sums
-    class TaylorTestingEntry
+    public class TaylorTestingEntry
     {
         private Heap h = new Heap();
         //private double eps;
@@ -410,6 +332,13 @@ namespace TestingSystem
         public void AddElement(double el)
         {
             h.AddElem(el);
+        }
+
+        public double GetSumAndClear()
+        {
+            var t = h.Sum();
+            h.Clear();
+            return t;
         }
 
         public string MatchResult(double res, double eps)
@@ -444,24 +373,121 @@ namespace TestingSystem
     class TaylorTesting
     {
         
+        public static SyntaxNode getChangedTree(SyntaxNode root, string f)
+        {
+            var TestEntryArgName = "__tst";
+            var nodes = root.DescendantNodes().OfType<MethodDeclarationSyntax>();
+            SyntaxNode newrt = root;
+
+            foreach (var method in nodes)
+            {
+                var methodName = method.Identifier.ValueText;
+                //Console.WriteLine("-" + methodName + "-");
+                if (methodName != f) continue;
+                //Console.WriteLine(" ==================== ");
+
+                /* Adding last param */
+                //Console.WriteLine(i.GetText());
+                var parlist = method.ChildNodes().OfType<ParameterListSyntax>().First();
+                //Console.WriteLine(parlist.GetType()+ " " + parlist.GetText()+ " " + parlist.ChildTokens().Count());
+                var newparlist = parlist.AddParameters(SyntaxFactory.Parameter(SyntaxFactory.Identifier(TestEntryArgName)).WithType(SyntaxFactory.ParseTypeName("TaylorTestingEntry ")));
+                //Console.WriteLine(newparlist.GetText());
+                var newmethod = method.ReplaceNode(parlist, newparlist);
+
+                /* Adding tst.AddElement(i); */
+                foreach (var s in newmethod.Body.DescendantNodes())
+                {
+                    SyntaxTrivia st = SyntaxFactory.SyntaxTrivia(SyntaxKind.WhitespaceTrivia, " ");
+                    bool fl = false;
+                    bool before = true;
+                    var lt = s.GetLeadingTrivia();
+
+                    foreach (var triviaEntry in lt)
+                    {
+                        if (triviaEntry.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia)
+                        {
+                            fl = true;
+                            st = triviaEntry;
+                            break;
+                        }
+                    }
+
+                    if (!fl)
+                    {
+                        lt = s.GetTrailingTrivia();
+                        before = false;
+                        foreach (var triviaEntry in lt)
+                        {
+                            if (triviaEntry.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia)
+                            {
+                                fl = true;
+                                st = triviaEntry;
+                                break;
+                            }
+                        }
+                        if (!fl) continue;
+                    }
+
+                    //Console.WriteLine("PAMPARAM");
+
+                    var commentContents = st.ToString();
+                    char[] delim = { ' ', '\n', '\t', '\r' };
+                    var ar = commentContents.Split(delim, StringSplitOptions.RemoveEmptyEntries);
+                    //Console.WriteLine(ar.Length);
+                    if (ar.Length != 2 || ar[0] != "add") continue;
+
+                    var lineToAdd = TestEntryArgName + ".AddElement(" + ar[1] + ")";
+                    //newmethod = newmethod.//ReplaceNode(s, newparlist);
+                    var linelist = new List<ExpressionStatementSyntax>();
+                    linelist.Add(SyntaxFactory.ExpressionStatement(SyntaxFactory.ParseExpression(lineToAdd)));
+
+                    var childlist = s.Parent.ChildNodes();
+
+                    //Console.WriteLine("trtt");
+                    foreach (var si in childlist)
+                    {
+                        if (s != si) continue;
+                        if (before) newmethod = newmethod.InsertNodesBefore(si, linelist);
+                        else newmethod = newmethod.InsertNodesAfter(si, linelist);
+                        break;
+                    }
+
+                    //Console.WriteLine(s.Kind() + " " + s.ToString());
+                    break;
+                }
+
+
+                /* Nodes changing */
+                newrt = newrt.ReplaceNode(method, newmethod);
+                break;
+            }
+            return newrt;
+        }
+
+        public static string constructTeylorAddon(string funName)
+        {
+            return @"Tuple<double, TaylorTestingEntry> _TeylorAddon (double arg, int N){
+                        TaylorTestingEntry tst = new TaylorTestingEntry();
+                        var v = " + funName + @" (arg, N, tst);
+                        return Tuple.Create(v, tst);
+                    }";
+        }
+
         public static double getMaxEpsilon(string FilePath, string f, int N, int pointsNumber)
         {
-            
+            var usings = "using System; \n using TestingSystem; \n";
             // Syntax tree building
             var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(FilePath));
             var rt = tree.GetRoot();
-            var nodes = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
-
-            var usings = "using System; \n";
+            rt = getChangedTree(rt, f);
 
             // Find the code of the method we want to use and write it into defStr
             var defsStr = usings + UniversalTesting.getMethodCode(rt, f);
 
             // Find the attribute which contains "ideal" math expression
             // Write this expression to idealExpr
-            string idealExpr = getIdealExpressionFromAttribute(rt, f);
 
-            var intervalMethodStr = usings + getMethodCode(rt, f + "_in");
+            //var intervalMethodStr = usings + getMethodCode(rt, f + "_in");
 
             double eps = 0;
             // TODO !!!!!
@@ -472,15 +498,16 @@ namespace TestingSystem
             for (double arg = l + h; arg < r; arg += h)
             {
                 // constructing script for calling "regular funtion"
-                var strarg = makeArg(arg);
+                var strarg = UniversalTesting.makeArg(arg);
                 //Console.WriteLine(N);
-                double val = Evaluate<double>(f, defsStr, strarg, N.ToString());
+                string TaylorTestingAddon = constructTeylorAddon(f);
+                var TaylorTestingMethod = defsStr + TaylorTestingAddon;
+                var cort = UniversalTesting.Evaluate<Tuple<double,TaylorTestingEntry>>("_TeylorAddon", TaylorTestingMethod, strarg, N.ToString());
+                double val = cort.Item1;
+                TaylorTestingEntry tst = cort.Item2;
+                double idealVal = tst.GetSumAndClear();
 
                 // constructing and calling "ideal" expression
-                double idealVal = Evaluate<double>(
-                    "_ideal_",
-                    constructMethodCodeFromExpr("_ideal_", "double", idealExpr, usings, "(double x)"),
-                    strarg);
                 //Console.WriteLine("Val: "+ val +". Ideal val: " + idealVal);
 
                 // evaluating epsilon
