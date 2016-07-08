@@ -6,3 +6,6 @@ D:\student\1\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_20
 D:\student\1\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
 D:\student\1\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
 D:\student\1\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
+F:\YandexDisk\1.Учеба\Практика\Repository\opaque-func-lib\Lebedev\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
+F:\YandexDisk\1.Учеба\Практика\Repository\opaque-func-lib\Lebedev\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
+F:\YandexDisk\1.Учеба\Практика\Repository\opaque-func-lib\Lebedev\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb

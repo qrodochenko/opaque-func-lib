@@ -21,3 +21,12 @@ D:\student\1\SummerPractice2_2016\ModuleTests\bin\Debug\OpaqueFunctions.pdb
 D:\student\1\SummerPractice2_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
 D:\student\1\SummerPractice2_2016\ModuleTests\obj\Debug\ModuleTests.dll
 D:\student\1\SummerPractice2_2016\ModuleTests\obj\Debug\ModuleTests.pdb
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\ModuleTests\bin\Debug\ModuleTests.dll
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\ModuleTests\bin\Debug\ModuleTests.pdb
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\ModuleTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\ModuleTests\bin\Debug\OpaqueFunctions.dll
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\ModuleTests\bin\Debug\OpaqueFunctions.pdb
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\ModuleTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\ModuleTests\obj\Debug\ModuleTests.dll
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\ModuleTests\obj\Debug\ModuleTests.pdb

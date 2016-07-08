@@ -22,3 +22,11 @@ D:\student\1\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2
 D:\student\1\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
 D:\student\1\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
 D:\student\1\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.pdb
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
+F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
