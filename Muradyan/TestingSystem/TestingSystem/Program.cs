@@ -18,6 +18,7 @@ namespace TestingSystem
     public delegate double TaylorFuncTestDelegate(double x, int N, TaylorTestingEntry tst);
     public delegate double TaylorFuncDelegate(double x, int N);
     public delegate double TaylorFuncParamDelegate(double x, double a, int N);
+    public delegate double MaxEpsilonDelegate(string FilePath, string FunctionName, int NumberOfIterations, int PointsNumber);
 
     // some utility functions
     class Utility
@@ -64,9 +65,9 @@ namespace TestingSystem
             //Console.WriteLine(newrt.GetText());
 
             //Console.WriteLine("Max epsilon: " + UniversalTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
-            //Console.WriteLine(UniversalTesting.getIterationsByEpsilon(path, "Sin_1", 0.005, 10));
+            Console.WriteLine(UniversalTesting.getIterationsByEpsilon(path, "Sin_1", 0.005, 10));
             
-            Console.WriteLine("Max epsilon: " + TaylorTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
+            //Console.WriteLine("Max epsilon: " + TaylorTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
             Console.ReadKey();
         }
     }
@@ -229,7 +230,7 @@ namespace TestingSystem
             arguments = '(' + arguments + ')' ;
             
             string EvalExpression = methodCode + "\nreturn " + methodName + arguments + ";";
-            Console.WriteLine(EvalExpression);
+            //Console.WriteLine(EvalExpression);
 
             var opts = ScriptOptions.Default;
             var mscorlib = typeof(System.Object).Assembly;
@@ -237,8 +238,7 @@ namespace TestingSystem
             var sth = typeof(TestingSystem.TaylorTestingEntry).Assembly;
             opts = opts.AddReferences(mscorlib, systemCore, sth);
             opts = opts.AddImports("System");
-            opts = opts.AddImports("System.Linq");
-            opts = opts.AddImports("System.Collections.Generic");
+            opts = opts.AddImports("System.Math");
             opts = opts.AddImports("TestingSystem.TaylorTestingEntry"); 
             return CSharpScript.EvaluateAsync<T>(EvalExpression, opts).Result;
         }
@@ -297,14 +297,19 @@ namespace TestingSystem
         }
 
         // returns the number of iterations by epsilon we want
-        public static int getIterationsByEpsilon(string FilePath, string f, double epsilon, int pointsNumber)
+        public static int getIterationsByEpsilonDelegate(
+            string FilePath, 
+            string f, 
+            double epsilon, 
+            int pointsNumber, 
+            MaxEpsilonDelegate delegateFun)
         {
             const int initialN = 8;
             const int initialBadnessCountdown = 5;
 
             int cN = initialN;
             int badnessCountdown = initialBadnessCountdown;
-            double ceps = getMaxEpsilon(FilePath, f, cN, pointsNumber);
+            double ceps = delegateFun(FilePath, f, cN, pointsNumber);
             while(ceps > epsilon)
             {
                 //Console.WriteLine(cN + " " + ceps);
@@ -320,6 +325,15 @@ namespace TestingSystem
                 if (badnessCountdown == 0) return cN >> initialBadnessCountdown;
             }
             return cN;
+        }
+
+        public static int getIterationsByEpsilon(
+            string FilePath,
+            string f,
+            double epsilon,
+            int pointsNumber)
+        {
+            return getIterationsByEpsilonDelegate(FilePath, f, epsilon, pointsNumber, getMaxEpsilon);
         }
     }
 
@@ -372,7 +386,7 @@ namespace TestingSystem
     
     class TaylorTesting
     {
-        
+        // Изменяет метод f, добавляя в него ещё один аргумент типа TaylorTestingEntry, и строчку с .AddElement()
         public static SyntaxNode getChangedTree(SyntaxNode root, string f)
         {
             var TestEntryArgName = "__tst";
@@ -464,9 +478,9 @@ namespace TestingSystem
             return newrt;
         }
 
-        public static string constructTeylorAddon(string funName)
+        public static string constructTaylorAddon(string funName)
         {
-            return @"Tuple<double, TaylorTestingEntry> _TeylorAddon (double arg, int N){
+            return @"Tuple<double, TaylorTestingEntry> _TaylorAddon (double arg, int N){
                         TaylorTestingEntry tst = new TaylorTestingEntry();
                         var v = " + funName + @" (arg, N, tst);
                         return Tuple.Create(v, tst);
@@ -500,9 +514,9 @@ namespace TestingSystem
                 // constructing script for calling "regular funtion"
                 var strarg = UniversalTesting.makeArg(arg);
                 //Console.WriteLine(N);
-                string TaylorTestingAddon = constructTeylorAddon(f);
+                string TaylorTestingAddon = constructTaylorAddon(f);
                 var TaylorTestingMethod = defsStr + TaylorTestingAddon;
-                var cort = UniversalTesting.Evaluate<Tuple<double,TaylorTestingEntry>>("_TeylorAddon", TaylorTestingMethod, strarg, N.ToString());
+                var cort = UniversalTesting.Evaluate<Tuple<double,TaylorTestingEntry>>("_TaylorAddon", TaylorTestingMethod, strarg, N.ToString());
                 double val = cort.Item1;
                 TaylorTestingEntry tst = cort.Item2;
                 double idealVal = tst.GetSumAndClear();
@@ -516,15 +530,10 @@ namespace TestingSystem
             return eps;
         }
 
-        /*public static int getIterationsByEpsilon(string FilePath, string f, double epsilon, int pointsNumber)
+        public static int getIterationsByEpsilon(string FilePath, string f, double epsilon, int pointsNumber)
         {
-
-        }*/
-
-        /*private static string getChangedMethodCode(string FilePath, string fname)
-        {
-
-        }*/
+            return UniversalTesting.getIterationsByEpsilonDelegate(FilePath, f, epsilon, pointsNumber, getMaxEpsilon);
+        }
     }
     
 }
