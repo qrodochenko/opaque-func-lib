@@ -43,36 +43,18 @@ namespace TestingSystem
         static string[] testingMethodsNames = new string[] { "Body", "Sin_1_in" };
 
         static void Main(string[] args)
-        {/*
-            Heap h = new Heap();
-            int sgn = 1;
-            double s = 0;
-            for(int i=1; i<=10000000; ++i)
-            {
-                h.AddElem(sgn*1.0 / i);
-                s += sgn*1.0 / i;
-                sgn = -sgn;
-            }
-            Console.WriteLine(h.Sum() + " " + s);
-            Console.ReadKey();
-            */
-            //TaylorTestingEntry t = new TaylorTestingEntry();
-            //TaylorFunc f = TaylorFuncTest.Sin;
-            //Console.WriteLine(t.TestFunction(f, 1000000, 1e-10, -1, 1, 20));
-
+        {
             var path = "OpaqueFunctions.cs";
 
-            //Console.WriteLine(newrt.GetText());
-
-            //Console.WriteLine("Max epsilon: " + UniversalTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
-            Console.WriteLine(UniversalTesting.getIterationsByEpsilon(path, "Sin_1", 0.005, 10));
-            
+            Console.WriteLine("Max epsilon: " + UniversalTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
+            //Console.WriteLine(TaylorTesting.getIterationsByEpsilon(path, "Sin_1", 0.005, 10));
             //Console.WriteLine("Max epsilon: " + TaylorTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
+
             Console.ReadKey();
         }
     }
 
-    // important container for testing functions which that use sums
+    // important container for testing functions that use sums
     class Heap
     {
         private int elnum = 0;
@@ -186,7 +168,7 @@ namespace TestingSystem
 
     }
 
-    // This class do tests of almost all functions.
+    // This class make tests of almost all functions.
     // It searches all the information in the attributes
     class UniversalTesting
     {
@@ -225,7 +207,7 @@ namespace TestingSystem
 
         public static T Evaluate<T>(string methodName, string methodCode, params string[] args)
         {
-            string arguments = args.Aggregate((res, cur) => res + "," +cur);
+            string arguments = args.Length == 0 ? "" : args.Aggregate((res, cur) => res + "," +cur);
             //Console.WriteLine(arguments);
             arguments = '(' + arguments + ')' ;
             
@@ -234,9 +216,8 @@ namespace TestingSystem
 
             var opts = ScriptOptions.Default;
             var mscorlib = typeof(System.Object).Assembly;
-            var systemCore = typeof(System.Linq.Enumerable).Assembly;
-            var sth = typeof(TestingSystem.TaylorTestingEntry).Assembly;
-            opts = opts.AddReferences(mscorlib, systemCore, sth);
+            var testingEntry = typeof(TestingSystem.TaylorTestingEntry).Assembly;
+            opts = opts.AddReferences(mscorlib, testingEntry);
             opts = opts.AddImports("System");
             opts = opts.AddImports("System.Math");
             opts = opts.AddImports("TestingSystem.TaylorTestingEntry"); 
@@ -253,6 +234,37 @@ namespace TestingSystem
             return x.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
         }
 
+        public static Tuple<double, double> getInterval(string methodName, SyntaxNode root)
+        {
+            const double almostInfinity = 10e4;
+            var intervalMethodName = methodName + "_in";
+            var intervalMethodStr = getMethodCode(root, intervalMethodName);
+            var interval = Evaluate<string>(intervalMethodName, intervalMethodStr);
+
+            interval = interval.Substring(1, interval.Length - 2);
+            var lnr = interval.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+            if (lnr.Length != 2) throw new Exception();
+
+            double[] corners = new double[2];
+            for (int i = 0; i < 2; ++i)
+            {
+                try {
+                    corners[i] = CSharpScript.EvaluateAsync<double>(lnr[i], ScriptOptions.Default.WithImports("System.Math")).Result;
+                }
+                catch(CompilationErrorException e)
+                {
+                    corners[i] = i == 0 ? -almostInfinity : almostInfinity;
+                    continue;
+                }
+                catch(Exception e)
+                {
+                    throw e;
+                }
+            }
+
+            return Tuple.Create(corners[0], corners[1]);
+        }
+
         // TODO: define intervals by function name
         public static double getMaxEpsilon(string FilePath, string f, int N, int pointsNumber)
         {
@@ -263,17 +275,19 @@ namespace TestingSystem
 
             // Find the code of the method we want to use and write it into defStr
             var defsStr = usings + getMethodCode(rt, f);
-
+            
             // Find the attribute which contains "ideal" math expression
             // Write this expression to idealExpr
             string idealExpr = getIdealExpressionFromAttribute(rt, f);
 
-            var intervalMethodStr = usings + getMethodCode(rt, f + "_in");
-            
-            double eps = 0;
             // TODO !!!!!
-            double l = -1, r = 1;
+            var interval = getInterval(f, rt);
+            double l = interval.Item1, r = interval.Item2;
+            Console.WriteLine(l + " " + r);
+            //double l = -1, r = 1;
 
+            double eps = 0;
+            
             // evaluating our function in some points
             double h = (r - l) / (pointsNumber + 1);
             for (double arg = l + h; arg < r; arg += h)
@@ -505,7 +519,8 @@ namespace TestingSystem
 
             double eps = 0;
             // TODO !!!!!
-            double l = -1, r = 1;
+            var interval = UniversalTesting.getInterval(f, rt);
+            double l = interval.Item1, r = interval.Item2;
 
             // evaluating our function in some points
             double h = (r - l) / (pointsNumber + 1);

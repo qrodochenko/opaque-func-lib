@@ -72,7 +72,7 @@ namespace OpaqueFunctions
     {
         public static string Sin_1_in()
         {
-            string str = "(-Pi/2, Pi/2)";
+            string str = "(-PI/2, PI/2)";
             /// add gh
             return str;
         }
