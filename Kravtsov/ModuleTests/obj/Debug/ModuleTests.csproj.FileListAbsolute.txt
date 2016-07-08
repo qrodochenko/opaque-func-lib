@@ -5,3 +5,10 @@ D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\ModuleTests\bin\Deb
 D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
 D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
 D:\Kravtsov\SummerPractice_2016_template\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb
+D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\ModuleTests.dll
+D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\ModuleTests.pdb
+D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\OpaqueFunctions.dll
+D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\OpaqueFunctions.pdb
+D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
+D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\obj\Debug\ModuleTests.dll
+D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\obj\Debug\ModuleTests.pdb
