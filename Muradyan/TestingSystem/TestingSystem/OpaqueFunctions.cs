@@ -12,7 +12,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("Opaque1", "Math.Sin(x) * Math.Sin(x) + Math.Cos(x) * Math.Cos(x)")]
+    [FunctionName("Opaque1", "Sin(x) * Sin(x) + Cos(x) * Cos(x)")]
     [EquivalentIntConstant(1)]
     public static class Opaque1SinCos
     {
@@ -52,7 +52,7 @@ namespace OpaqueFunctions
             for (int i = 1; i < N; ++i)
             {
                 s += k;
-
+                /// add k
                 k *= x;
                 sgn = -sgn;
                 k *= sgn;

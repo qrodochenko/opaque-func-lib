@@ -10,14 +10,16 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text;
 
-//
+//main namespace
 namespace TestingSystem
 {
     delegate double TaylorFuncTestDelegate(double x, int N, TaylorTestingEntry tst);
     delegate double TaylorFuncDelegate(double x, int N);
     delegate double TaylorFuncParamDelegate(double x, double a, int N);
 
+    // some utility functions
     class Utility
     {
         public static void Swap<T>(ref T a, ref T b)
@@ -34,6 +36,7 @@ namespace TestingSystem
         }
     }
 
+    // too much code here, should be reduced to methods
     class MainClass
     {
         static string[] testingMethodsNames = new string[] { "Body", "Sin_1_in" };
@@ -155,6 +158,7 @@ namespace TestingSystem
         }
     }
 
+    // important container for testing functions which that use sums
     class Heap
     {
         private int elnum = 0;
@@ -272,45 +276,78 @@ namespace TestingSystem
     // It searches all the information in the attributes
     class UniversalTesting
     {
-        // TODO: define intervals by function name
-        public static double getMaxEpsilon(string FilePath, string f, int N, int pointsNumber)
+        public static string getMethodCode(SyntaxNode TreeRoot, string MethodName)
         {
-            // Syntax tree building
-            var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(FilePath));
-            var rt = tree.GetRoot();
-            var nodes = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
-
-            // Find the code of the method we want to use and write it into defStr
-            var usings = "using System; \n";
-            string defsStr = usings;
+            var nodes = TreeRoot.DescendantNodes().OfType<MethodDeclarationSyntax>();
+            string defsStr = "";
             foreach (var meth in nodes)
             {
-                if (meth.Identifier.ValueText == f)
+                if (meth.Identifier.ValueText == MethodName)
                 {
                     defsStr += meth.GetText().ToString();
                     break;
                 }
             }
+            return defsStr;
+        }
 
-            // Find the attribute which contains "ideal" math expression
-            // Write this expression to idealExpr
-            string idealExpr = "return ";
-            var attribs = rt.DescendantNodes().OfType<AttributeSyntax>();
+        public static string getIdealExpressionFromAttribute(SyntaxNode TreeRoot, string MethodName)
+        {
+            string idealExpr = "";
+            var attribs = TreeRoot.DescendantNodes().OfType<AttributeSyntax>();
             foreach (var attr in attribs)
             {
                 var attrArgs = attr.ArgumentList.Arguments;
                 if (attr.Name.GetText().ToString() == "FunctionName" &&
-                    attrArgs.ElementAt(0).GetFirstToken().ValueText == f)
+                    attrArgs.ElementAt(0).GetFirstToken().ValueText == MethodName)
                 {
                     idealExpr += attrArgs.ElementAt(1).GetFirstToken().ValueText;
                     break;
                 }
 
             }
-            idealExpr += ";";
+            return idealExpr;
+        }
 
-            string evalStr;
-            string fullStr;
+        public static T Evaluate<T>(string methodName, string methodCode, params string[] args)
+        {
+            string arguments = args.Aggregate((res, cur) => res + "," +cur);
+            //Console.WriteLine(arguments);
+            arguments = '(' + arguments + ')' ;
+            
+            string EvalExpression = methodCode + "\nreturn " + methodName + arguments + ";";
+            Console.WriteLine(EvalExpression);
+            return CSharpScript.EvaluateAsync<T>(EvalExpression,
+                    ScriptOptions.Default.WithImports("System.Math")).Result;
+        }
+
+        public static string constructMethodCodeFromExpr(string methodName, string retType, string Expression, string usings,  string arguments)
+        {
+            return usings + retType + " " + methodName + arguments + "{ return (" + Expression + "); }";
+        }
+
+        public static string makeArg(double x)
+        {
+            return x.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
+        }
+
+        // TODO: define intervals by function name
+        public static double getMaxEpsilon(string FilePath, string f, int N, int pointsNumber)
+        {
+            // Syntax tree building
+            var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(FilePath));
+            var rt = tree.GetRoot();
+            var usings = "using System; \n";
+
+            // Find the code of the method we want to use and write it into defStr
+            var defsStr = usings + getMethodCode(rt, f);
+
+            // Find the attribute which contains "ideal" math expression
+            // Write this expression to idealExpr
+            string idealExpr = getIdealExpressionFromAttribute(rt, f);
+
+            var intervalMethodStr = usings + getMethodCode(rt, f + "_in");
+            
             double eps = 0;
             // TODO !!!!!
             double l = -1, r = 1;
@@ -320,18 +357,15 @@ namespace TestingSystem
             for (double arg = l + h; arg < r; arg += h)
             {
                 // constructing script for calling "regular funtion"
-                var strarg = arg.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
-                evalStr = "\n" +
-                    //"C" + f + "." + 
-                    "return " + f + "( " + strarg + "," + N + "); ";
-                fullStr = defsStr + evalStr;
-                double val = 0;
-                val = CSharpScript.EvaluateAsync<double>(fullStr).Result;
+                var strarg = makeArg(arg);
+                //Console.WriteLine(N);
+                double val = Evaluate<double>(f, defsStr, strarg, N.ToString());
 
                 // constructing and calling "ideal" expression
-                var fullIdealExpr = usings + "double x = " + strarg + ";" + idealExpr;
-                double idealVal = CSharpScript.EvaluateAsync<double>(fullIdealExpr, 
-                    ScriptOptions.Default.WithImports("System.Math")).Result;
+                double idealVal = Evaluate<double>(
+                    "_ideal_", 
+                    constructMethodCodeFromExpr("_ideal_","double",idealExpr,usings,"(double x)"), 
+                    strarg);
                 //Console.WriteLine("Val: "+ val +". Ideal val: " + idealVal);
 
                 // evaluating epsilon
@@ -341,19 +375,19 @@ namespace TestingSystem
         }
 
         // returns the number of iterations by epsilon we want
-        public static int getIterationsByEpsilon(string path, string f, double epsilon, int pointsNumber)
+        public static int getIterationsByEpsilon(string FilePath, string f, double epsilon, int pointsNumber)
         {
             const int initialN = 8;
             const int initialBadnessCountdown = 5;
 
             int cN = initialN;
             int badnessCountdown = initialBadnessCountdown;
-            double ceps = getMaxEpsilon(path, f, cN, pointsNumber);
+            double ceps = getMaxEpsilon(FilePath, f, cN, pointsNumber);
             while(ceps > epsilon)
             {
-                Console.WriteLine(cN + " " + ceps);
+                //Console.WriteLine(cN + " " + ceps);
                 cN <<= 1;
-                double neweps = getMaxEpsilon(path, f, cN, pointsNumber);
+                double neweps = getMaxEpsilon(FilePath, f, cN, pointsNumber);
                 if (neweps == ceps) --badnessCountdown;
                 else
                 {
@@ -361,12 +395,13 @@ namespace TestingSystem
                     ceps = neweps;
                 }
 
-                if (badnessCountdown == 0) return cN << initialBadnessCountdown;
+                if (badnessCountdown == 0) return cN >> initialBadnessCountdown;
             }
             return cN;
         }
     }
 
+    // Testing different functions that use simple sums
     class TaylorTestingEntry
     {
         private Heap h = new Heap();
@@ -377,7 +412,7 @@ namespace TestingSystem
             h.AddElem(el);
         }
 
-        public String MatchResult(double res, double eps)
+        public string MatchResult(double res, double eps)
         {
             double sum = h.Sum();
             double current_eps = Math.Abs(res - sum);
@@ -391,7 +426,7 @@ namespace TestingSystem
         {
 
             Random rand = new Random();
-            String res = "Testing...\n";
+            string res = "Testing...\n";
             for (int i = 0; i < pointsNumber; ++i)
             {
                 double arg = l + rand.NextDouble() * (r - l);
@@ -405,11 +440,65 @@ namespace TestingSystem
 
     }
 
-    class TaylorTestingUnit
+    
+    class TaylorTesting
     {
-        private List<TaylorTestingEntry> entries = new List<TaylorTestingEntry>();
+        
+        public static double getMaxEpsilon(string FilePath, string f, int N, int pointsNumber)
+        {
+            
+            // Syntax tree building
+            var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(FilePath));
+            var rt = tree.GetRoot();
+            var nodes = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
 
+            var usings = "using System; \n";
 
+            // Find the code of the method we want to use and write it into defStr
+            var defsStr = usings + UniversalTesting.getMethodCode(rt, f);
+
+            // Find the attribute which contains "ideal" math expression
+            // Write this expression to idealExpr
+            string idealExpr = getIdealExpressionFromAttribute(rt, f);
+
+            var intervalMethodStr = usings + getMethodCode(rt, f + "_in");
+
+            double eps = 0;
+            // TODO !!!!!
+            double l = -1, r = 1;
+
+            // evaluating our function in some points
+            double h = (r - l) / (pointsNumber + 1);
+            for (double arg = l + h; arg < r; arg += h)
+            {
+                // constructing script for calling "regular funtion"
+                var strarg = makeArg(arg);
+                //Console.WriteLine(N);
+                double val = Evaluate<double>(f, defsStr, strarg, N.ToString());
+
+                // constructing and calling "ideal" expression
+                double idealVal = Evaluate<double>(
+                    "_ideal_",
+                    constructMethodCodeFromExpr("_ideal_", "double", idealExpr, usings, "(double x)"),
+                    strarg);
+                //Console.WriteLine("Val: "+ val +". Ideal val: " + idealVal);
+
+                // evaluating epsilon
+                eps = Math.Max(eps, Math.Abs(val - idealVal));
+            }
+            return eps;
+        }
+
+        /*public static int getIterationsByEpsilon(string FilePath, string f, double epsilon, int pointsNumber)
+        {
+
+        }*/
+
+        /*private static string getChangedMethodCode(string FilePath, string fname)
+        {
+
+        }*/
     }
+    
 }
 
