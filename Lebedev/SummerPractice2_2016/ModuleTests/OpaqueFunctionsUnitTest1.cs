@@ -45,7 +45,7 @@ namespace ModuleTests
                 double dx = 1.0 / 100.0;
                 double x = -1 + i * dx;
                 double F = CMath_2_2.Math_2_2(x, 100);
-                Assert.IsTrue(Math.Abs(F - Math.Pow(1 - x, 1 / 3)) < Double.Epsilon, "Погрешность больше нужной!");
+                Assert.IsTrue(Math.Abs(F - Math.Pow(1 - x, 1.0 / 3.0)) < Double.Epsilon, "Погрешность больше нужной!");
             }
 
         }
@@ -102,7 +102,7 @@ namespace ModuleTests
                 double dx = 1.0 / 100.0;
                 double x = -1 + i * dx;
                 double F = CMath_4_2.Math_4_2(x, 100);
-                Assert.IsTrue(Math.Abs(F - Math.Pow(1 - x, 1.0 / 3.0)) < Double.Epsilon, "Погрешность больше нужной!");
+                Assert.IsTrue(Math.Abs(F - Math.Pow(1 - x, 1.0 / 2.0)) < Double.Epsilon, "Погрешность больше нужной!");
             }
 
         }
@@ -437,11 +437,11 @@ namespace ModuleTests
         [TestMethod]
         public void test_Math_16_2()
         {
-            for (int i = -71; i < 69; i++)
+            for (int i = 1; i < 200; i++)
             {
-                //double dx = 1.0 / 100.0;
-                //double x = -1 + i * dx;
-                double x = i * 0.01;
+                double dx = 1.0 / 100.0;
+                double x = -1 + i * dx;
+                //double x = i * 0.01;
                 double F = CMath_16_2.Math_16_2(x, 100);
                 double benchmark = Math.Pow(1 - x, -1.0 / 2.0);
                 double error = Math.Abs(F - benchmark);
@@ -466,11 +466,11 @@ namespace ModuleTests
         [TestMethod]
         public void test_Math_17_2()
         {
-            for (int i = -71; i < 69; i++)
+            for (int i = 1; i < 200; i++)
             {
-                //double dx = 1.0 / 100.0;
-                //double x = -1 + i * dx;
-                double x = i * 0.01;
+                double dx = 1.0 / 100.0;
+                double x = -1 + i * dx;
+                //double x = i * 0.01;
                 double F = CMath_17_2.Math_17_2(x, 100);
                 double benchmark = Math.Pow(1 + x, -1.0 / 3.0);
                 double error = Math.Abs(F - benchmark);

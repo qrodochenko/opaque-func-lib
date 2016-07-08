@@ -50,7 +50,8 @@ namespace OpaqueFunctions
                 double F = (1.0 / 3.0) * x;
                 for (int i = 2; i <= N; i++)
                 {
-                    F *= Math.Pow(-1.0, i + 1.0) * ((3.0 * i - 4.0) * Math.Pow(3.0 * i, -1.0)) * x;
+                    F *= ((3.0 * i - 4.0) * Math.Pow(3.0 * i, -1.0)) * x;
+                    F = -F;
                     S += F;
                 }
             }
@@ -104,12 +105,12 @@ namespace OpaqueFunctions
             double S = 0;
             if (N > 1)
             {
-                S = 1 + (1.0 / 3.0) * x;
-                double F = -(1.0 / 3.0) * x;
+                S = 1 - (1.0 / 3.0) * x;
+                double F = (1.0 / 3.0) * x;
                 for (int i = 2; i <= N; i++)
                 {
-                    F *= ((3 * i - 4) * Math.Pow(3 * i, -1)) * x;
-                    S += F;
+                    F *= ((3.0 * i - 4) * Math.Pow(3.0 * i, -1)) * x;
+                    S -= F;
                 }
             }
             else
@@ -133,7 +134,7 @@ namespace OpaqueFunctions
     /// Возвращает область определения для степенной функции (1 - x)^1/3
     /// </summary>
     [OpaqueFunction()]
-    [FunctionName("Math_1_2", "(1-x)^1/3")]
+    [FunctionName("Math_2_2", "(1-x)^1/3")]
     public static class CMath_2_2_in
     {
         public static string Math_2_2_in()
@@ -167,7 +168,8 @@ namespace OpaqueFunctions
                 double F = (1.0 / 2.0) * x;
                 for (int i = 2; i <= N; i++)
                 {
-                    F *= (Math.Pow(-1, i + 1)) * ((2 * i - 3) / 2 * i) * x;
+                    F *= ((2.0 * i - 3) * Math.Pow(2.0 * i, -1)) * x;
+                    F = -F;
                     S += F;
                 }
             }
@@ -219,12 +221,12 @@ namespace OpaqueFunctions
             double S = 1;
             if (N > 1)
             {
-                S = 1 + (1.0 / 2.0) * x;
-                double F = -(1.0 / 2.0) * x;
+                S = 1 - (1.0 / 2.0) * x;
+                double F = (1.0 / 2.0) * x;
                 for (int i = 2; i <= N; i++)
                 {
-                    F *= ((2 * i - 3) * Math.Pow(2 * i, -1)) * x;
-                    S += F;
+                    F *= ((2.0 * i - 3) * Math.Pow(2.0 * i, -1)) * x;
+                    S -= F;
                 }
             }
             else
@@ -282,7 +284,8 @@ namespace OpaqueFunctions
                 double F = (1.0 / 4.0) * x;
                 for (int i = 2; i <= N; i++)
                 {
-                    F *= (Math.Pow(-1, i + 1)) * ((4 * i - 5) / 4 * i) * x;
+                    F *= ((4.0 * i - 5) * Math.Pow(4.0 * i, -1)) * x;
+                    F = -F;
                     S += F;
                 }
             }
@@ -336,13 +339,11 @@ namespace OpaqueFunctions
             if (N > 1)
             {
                 S = 1 - (1.0 / 4.0) * x;
-                double F = (1.0 / 4.0) * x;
-                double F1 = 0;
-                for (int i = N; i > 0; i--)
+                double F = (1.0 / 4.0) * x;                
+                for (int i = 1; i < 200; i++)
                 {
-                    F *= ((4 * i - 5) / (4 * i)) * x;
-                    F1 = -F;
-                    S += F1;
+                    F *= ((4.0 * i - 5) * Math.Pow(4.0 * i, -1)) * x;                    
+                    S -= F;
                 }
             }
             else
@@ -790,10 +791,10 @@ namespace OpaqueFunctions
             if (N > 1)
             {
                 S = 1 + (1.0 / 2.0) * x;
-                double F = (1 / 2) * x;
+                double F = (1.0 / 2.0) * x;
                 for (int i = 2; i <= N; i++)
                 {
-                    F *= ((2 * i - 1) / 2 * i) * x;
+                    F *= ((2.0 * i - 1) * Math.Pow(2.0 * i, -1)) * x;
                     S += F;
                 }
             }
@@ -849,7 +850,8 @@ namespace OpaqueFunctions
                 double F = 1;
                 for (int i = 1; i <= N; i++)
                 {
-                    F *= ((3 * i - 2) / 3 * i) * x * Math.Pow(-1, i);
+                    F *= ((3.0 * i - 2.0) * Math.Pow(3.0 * i, -1)) * x;
+                    F = -F;
                     S += F;
                 }
             }
@@ -901,7 +903,7 @@ namespace OpaqueFunctions
                 double F = 1;
                 for (int i = 1; i <= N; i++)
                 {
-                    F *= ((3 * i - 2) / 3 * i) * x;
+                    F *= ((3 * i - 2) * Math.Pow(3 * i, -1)) * x;
                     S += F;
                 }
             }
@@ -953,7 +955,8 @@ namespace OpaqueFunctions
                 double F = 1;
                 for (int i = 1; i <= N; i++)
                 {
-                    F *= ((4 * i - 3) / 4 * i) * x * Math.Pow(-1, i);
+                    F *= ((4 * i - 3) * Math.Pow(4 * i, -1)) * x;
+                    F = -F;
                     S += F;
                 }
             }
