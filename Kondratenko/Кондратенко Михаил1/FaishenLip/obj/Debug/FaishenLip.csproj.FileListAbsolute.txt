@@ -1,5 +1,0 @@
-D:\Кондратенко и Кириллова\FaishenLip\obj\Debug\FaishenLip.csprojResolveAssemblyReference.cache
-D:\Кондратенко и Кириллова\FaishenLip\bin\Debug\FaishenLip.dll
-D:\Кондратенко и Кириллова\FaishenLip\bin\Debug\FaishenLip.pdb
-D:\Кондратенко и Кириллова\FaishenLip\obj\Debug\FaishenLip.dll
-D:\Кондратенко и Кириллова\FaishenLip\obj\Debug\FaishenLip.pdb

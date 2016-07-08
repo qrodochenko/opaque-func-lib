@@ -1,7 +1,0 @@
-D:\Кондратенко и Кириллова\ConsoleApplication1\MyTest\bin\Debug\MyTest.dll
-D:\Кондратенко и Кириллова\ConsoleApplication1\MyTest\bin\Debug\MyTest.pdb
-D:\Кондратенко и Кириллова\ConsoleApplication1\MyTest\bin\Debug\FaishenLip.dll
-D:\Кондратенко и Кириллова\ConsoleApplication1\MyTest\bin\Debug\FaishenLip.pdb
-D:\Кондратенко и Кириллова\ConsoleApplication1\MyTest\obj\Debug\MyTest.csprojResolveAssemblyReference.cache
-D:\Кондратенко и Кириллова\ConsoleApplication1\MyTest\obj\Debug\MyTest.dll
-D:\Кондратенко и Кириллова\ConsoleApplication1\MyTest\obj\Debug\MyTest.pdb
