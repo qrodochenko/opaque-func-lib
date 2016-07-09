@@ -20,6 +20,8 @@ namespace TestingSystem
     public delegate double TaylorFuncParamDelegate(double x, double a, int N);
     public delegate double MaxEpsilonDelegate(string FilePath, string FunctionName, int NumberOfIterations, int PointsNumber);
 
+    
+
     // some utility functions
     class Utility
     {
@@ -46,9 +48,8 @@ namespace TestingSystem
         {
             var path = "OpaqueFunctions.cs";
 
-            Console.WriteLine("Max epsilon: " + UniversalTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
-            //Console.WriteLine(TaylorTesting.getIterationsByEpsilon(path, "Sin_1", 0.005, 10));
-            //Console.WriteLine("Max epsilon: " + TaylorTesting.getMaxEpsilon(path, "Sin_1", 100000, 10));
+            var methSin = new MethodForTesting(path, "Sin_1");
+            Console.WriteLine(methSin.GetMaxEpsilonOneArg(20000, 20));
 
             Console.ReadKey();
         }
@@ -170,63 +171,52 @@ namespace TestingSystem
 
     // This class make tests of almost all functions.
     // It searches all the information in the attributes
-    class UniversalTesting
+    class TestingUtilities
     {
-        public static string getMethodCode(SyntaxNode TreeRoot, string MethodName)
+        public const string DefaultUsings = "using System;\n";
+
+        public static string getEvalExpression(MethodDeclarationSyntax meth, string usings = DefaultUsings, MethodType Type = MethodType.X, bool isIdeal = false)
         {
-            var nodes = TreeRoot.DescendantNodes().OfType<MethodDeclarationSyntax>();
-            string defsStr = "";
-            foreach (var meth in nodes)
+            return usings + meth.GetText().ToString() + "\nreturn " + meth.Identifier + generateArguments(Type, !isIdeal) + ";\n";
+        }
+
+        public static T Evaluate<ArgsT, T>(MethodDeclarationSyntax meth, ArgsT args, string usings = DefaultUsings, ScriptOptions opts = null)
+        {
+            opts = opts ?? ScriptOptions.Default;
+            return CSharpScript.EvaluateAsync<T>(getEvalExpression(meth, usings), opts, globals:args).Result;
+        }
+
+        public static T Evaluate<ArgsT, T>(string EvalExpression, ArgsT args, ScriptOptions opts = null)
+        {
+            opts = opts ?? ScriptOptions.Default;
+            return CSharpScript.EvaluateAsync<T>(EvalExpression, opts, globals: args).Result;
+        }
+
+        // (arg1, arg2, .. , argn)
+        public static string generateArguments(MethodType Type, bool WithN = true, bool types = false, int TestingEntriesNumber = 0)
+        {
+            Dictionary<MethodType, List<string>> dic = new Dictionary<MethodType, List<string>>();
+            dic[MethodType.X] = new List<string> { "x" };
+            dic[MethodType.XA] = new List<string> { "x", "a" };
+            dic[MethodType.XAB] = new List<string> { "x", "a", "b" };
+            dic[MethodType.XY] = new List<string> { "x", "y" };
+            dic[MethodType.XYA] = new List<string> { "x", "y", "a" };
+            dic[MethodType.XYAB] = new List<string> { "x", "y", "a", "b" };
+
+            var res = "(" + (types ? "double " : "") + dic[Type].Aggregate( (result, cur) => result + ", " + (types ? "double" : "") + " " + cur);
+            if (WithN)
             {
-                if (meth.Identifier.ValueText == MethodName)
-                {
-                    defsStr += meth.GetText().ToString();
-                    break;
-                }
+                res += ", " + (types ? "int " : "") + "N";
             }
-            return defsStr;
-        }
 
-        public static string getIdealExpressionFromAttribute(SyntaxNode TreeRoot, string MethodName)
-        {
-            string idealExpr = "";
-            var attribs = TreeRoot.DescendantNodes().OfType<AttributeSyntax>();
-            foreach (var attr in attribs)
+            if (TestingEntriesNumber == 0) return res + ')';
+
+            string[] ar = new string[TestingEntriesNumber];
+            for (int i = 0; i < ar.Length; ++i)
             {
-                var attrArgs = attr.ArgumentList.Arguments;
-                if (attr.Name.GetText().ToString() == "FunctionName" &&
-                    attrArgs.ElementAt(0).GetFirstToken().ValueText == MethodName)
-                {
-                    idealExpr += attrArgs.ElementAt(1).GetFirstToken().ValueText;
-                    break;
-                }
-
+                ar[i] = "tst" + (i + 1);
             }
-            return idealExpr;
-        }
-
-        public static T Evaluate<T>(string methodName, string methodCode, params string[] args)
-        {
-            string arguments = args.Length == 0 ? "" : args.Aggregate((res, cur) => res + "," +cur);
-            //Console.WriteLine(arguments);
-            arguments = '(' + arguments + ')' ;
-            
-            string EvalExpression = methodCode + "\nreturn " + methodName + arguments + ";";
-            //Console.WriteLine(EvalExpression);
-
-            var opts = ScriptOptions.Default;
-            var mscorlib = typeof(System.Object).Assembly;
-            var testingEntry = typeof(TestingSystem.TaylorTestingEntry).Assembly;
-            opts = opts.AddReferences(mscorlib, testingEntry);
-            opts = opts.AddImports("System");
-            opts = opts.AddImports("System.Math");
-            opts = opts.AddImports("TestingSystem.TaylorTestingEntry"); 
-            return CSharpScript.EvaluateAsync<T>(EvalExpression, opts).Result;
-        }
-
-        public static string constructMethodCodeFromExpr(string methodName, string retType, string Expression, string usings,  string arguments)
-        {
-            return usings + retType + " " + methodName + arguments + "{ return (" + Expression + "); }";
+            return res + ", " + ar.Aggregate((result, cur) => result + ", " + (types ? "TaylorTestingEntry" : "") + " " + cur) + ')';
         }
 
         public static string makeArg(double x)
@@ -234,101 +224,32 @@ namespace TestingSystem
             return x.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
         }
 
-        public static Tuple<double, double> getInterval(string methodName, SyntaxNode root)
-        {
-            const double almostInfinity = 10e4;
-            var intervalMethodName = methodName + "_in";
-            var intervalMethodStr = getMethodCode(root, intervalMethodName);
-            var interval = Evaluate<string>(intervalMethodName, intervalMethodStr);
-
-            interval = interval.Substring(1, interval.Length - 2);
-            var lnr = interval.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-            if (lnr.Length != 2) throw new Exception();
-
-            double[] corners = new double[2];
-            for (int i = 0; i < 2; ++i)
-            {
-                try {
-                    corners[i] = CSharpScript.EvaluateAsync<double>(lnr[i], ScriptOptions.Default.WithImports("System.Math")).Result;
-                }
-                catch(CompilationErrorException e)
-                {
-                    corners[i] = i == 0 ? -almostInfinity : almostInfinity;
-                    continue;
-                }
-                catch(Exception e)
-                {
-                    throw e;
-                }
-            }
-
-            return Tuple.Create(corners[0], corners[1]);
-        }
-
-        // TODO: define intervals by function name
-        public static double getMaxEpsilon(string FilePath, string f, int N, int pointsNumber)
-        {
-            // Syntax tree building
-            var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(FilePath));
-            var rt = tree.GetRoot();
-            var usings = "using System; \n";
-
-            // Find the code of the method we want to use and write it into defStr
-            var defsStr = usings + getMethodCode(rt, f);
-            
-            // Find the attribute which contains "ideal" math expression
-            // Write this expression to idealExpr
-            string idealExpr = getIdealExpressionFromAttribute(rt, f);
-
-            // TODO !!!!!
-            var interval = getInterval(f, rt);
-            double l = interval.Item1, r = interval.Item2;
-            Console.WriteLine(l + " " + r);
-            //double l = -1, r = 1;
-
-            double eps = 0;
-            
-            // evaluating our function in some points
-            double h = (r - l) / (pointsNumber + 1);
-            for (double arg = l + h; arg < r; arg += h)
-            {
-                // constructing script for calling "regular funtion"
-                var strarg = makeArg(arg);
-                //Console.WriteLine(N);
-                double val = Evaluate<double>(f, defsStr, strarg, N.ToString());
-
-                // constructing and calling "ideal" expression
-                double idealVal = Evaluate<double>(
-                    "_ideal_", 
-                    constructMethodCodeFromExpr("_ideal_","double",idealExpr,usings,"(double x)"), 
-                    strarg);
-                //Console.WriteLine("Val: "+ val +". Ideal val: " + idealVal);
-
-                // evaluating epsilon
-                eps = Math.Max(eps, Math.Abs(val - idealVal));
-            }
-            return eps;
-        }
-
         // returns the number of iterations by epsilon we want
-        public static int getIterationsByEpsilonDelegate(
-            string FilePath, 
-            string f, 
+        public static int GetIterationsByEpsilonApproach(
+            MethodForTesting f,
             double epsilon, 
             int pointsNumber, 
-            MaxEpsilonDelegate delegateFun)
+            TestingApproach approach = TestingApproach.UNIVERSAL,
+            double[] functionParameters = null)
         {
+            functionParameters = functionParameters ?? new double[0];
+
             const int initialN = 8;
             const int initialBadnessCountdown = 5;
 
             int cN = initialN;
             int badnessCountdown = initialBadnessCountdown;
-            double ceps = delegateFun(FilePath, f, cN, pointsNumber);
+            double ceps = 
+                    approach == TestingApproach.UNIVERSAL ? 
+                    f.GetMaxEpsilonOneArg(cN, pointsNumber,functionParameters) : 
+                    ((MethodForTestingTaylor)f).GetMaxEpsilonOneArgTaylor(cN, pointsNumber, functionParameters);
             while(ceps > epsilon)
             {
                 //Console.WriteLine(cN + " " + ceps);
                 cN <<= 1;
-                double neweps = getMaxEpsilon(FilePath, f, cN, pointsNumber);
+                double neweps = approach == TestingApproach.UNIVERSAL ?
+                        f.GetMaxEpsilonOneArg(cN, pointsNumber, functionParameters) :
+                        ((MethodForTestingTaylor)f).GetMaxEpsilonOneArgTaylor(cN, pointsNumber, functionParameters);
                 if (neweps == ceps) --badnessCountdown;
                 else
                 {
@@ -340,17 +261,470 @@ namespace TestingSystem
             }
             return cN;
         }
+        
+    }
 
-        public static int getIterationsByEpsilon(
-            string FilePath,
-            string f,
-            double epsilon,
-            int pointsNumber)
+    public struct Interval
+    {
+        public const double almostInfinity = 10e4;
+        public double left, right;
+    }
+
+    public class IntervalMethod
+    {
+        public static Interval Evaluate(MethodDeclarationSyntax meth)
         {
-            return getIterationsByEpsilonDelegate(FilePath, f, epsilon, pointsNumber, getMaxEpsilon);
+            var methName = meth.Identifier.ValueText;
+            var methCode = meth.GetText().ToString();
+            var interval = CSharpScript.EvaluateAsync<string>(methCode + "\n return " + methName + "();").Result;
+            interval = interval.Substring(1, interval.Length - 2);
+            var lnr = interval.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+            if (lnr.Length != 2) throw new Exception();
+
+            double[] corners = new double[2];
+            for (int i = 0; i < 2; ++i)
+            {
+                try
+                {
+                    corners[i] = CSharpScript.EvaluateAsync<double>(lnr[i].ToUpper(), ScriptOptions.Default.WithImports("System.Math")).Result;
+                }
+                catch (CompilationErrorException)
+                {
+                    corners[i] = i == 0 ? -Interval.almostInfinity : Interval.almostInfinity;
+                    continue;
+                }
+            }
+
+            return new Interval {left = corners[0], right = corners[1]};
         }
     }
 
+    public enum MethodType
+    {
+        X, XY, XA, XYA, XAB, XYAB
+    }
+
+    public enum TestingApproach
+    {
+        UNIVERSAL, TAYLOR
+    }
+
+    namespace ArgsTypesIdeal
+    {
+
+        public class ArgsOneArg
+        {
+            public double x;
+        }
+        public class ArgsTwoArg
+        {
+            public double x, y;
+        }
+        public class ArgsX : ArgsOneArg
+        {
+
+        }
+        public class ArgsXY :ArgsTwoArg
+        {
+            
+        }
+        public class ArgsXA : ArgsOneArg
+        {
+            public double a;
+        }
+        public class ArgsXYA : ArgsTwoArg
+        {
+            public double a;
+        }
+        public class ArgsXAB : ArgsOneArg
+        {
+            public double a, b;
+        }
+        public class ArgsXYAB : ArgsTwoArg
+        {
+            public double a, b;
+        }
+    }
+
+    namespace ArgsTypesIterations
+    {
+
+        public class ArgsOneArg : ArgsTypesIdeal.ArgsOneArg
+        {
+            public int N;
+        }
+        public class ArgsTwoArg : ArgsTypesIdeal.ArgsTwoArg
+        {
+            public int N;
+        }
+        public class ArgsX : ArgsOneArg
+        {
+
+        }
+        public class ArgsXY : ArgsTwoArg
+        {
+            
+        }
+        public class ArgsXA : ArgsOneArg
+        {
+            public double a;
+        }
+        public class ArgsXYA : ArgsTwoArg
+        {
+            public double a;
+        }
+        public class ArgsXAB : ArgsOneArg
+        {
+            public double a, b;
+        }
+        public class ArgsXYAB : ArgsTwoArg
+        {
+            public double a, b;
+        }
+    }
+
+    public class IdealTestMethod
+    {
+        string EvalExpression;
+        MethodType type;
+
+        public static string Name = "_ideal";
+        public static string ReturnType = "double";
+        
+        public IdealTestMethod(string IdealExpression, MethodType mtype)
+        {
+            type = mtype;
+            EvalExpression = TestingUtilities.getEvalExpression(
+                CSharpSyntaxTree.ParseText(ReturnType + " " + Name + TestingUtilities.generateArguments(type, false, true, 0) + 
+                                            "{ return "+IdealExpression+"; }")
+                                            .GetRoot().ChildNodes().OfType<MethodDeclarationSyntax>().First(),
+                "using System;\n", mtype, true);
+        }
+        public double Evaluate<ArgsT>(ArgsT args)
+        {
+            return TestingUtilities.Evaluate<ArgsT, double>(EvalExpression, args, ScriptOptions.Default.WithImports("System.Math"));
+        }
+    }
+
+    public class MethodForTesting
+    {
+        public static string Usings = "using System; \n";
+        
+
+        public string Code;
+        public string EvalCode;
+        public string Name;
+        public IdealTestMethod IdealMethod;
+        public MethodDeclarationSyntax Node;
+        public MethodType Type;
+        public string FilePath;
+        public Interval Interval;
+        
+        public MethodForTesting()
+        {
+
+        }
+
+        public MethodForTesting(string FilePath, string MethodName)
+        {
+            var th = getMethodsFromFiles(new string[] { FilePath }, new string[] { MethodName })[0];
+            Code = th.Code;
+            EvalCode = th.EvalCode;
+            IdealMethod = th.IdealMethod;
+            this.FilePath = th.FilePath;
+            Interval = th.Interval;
+            Name = th.Name;
+            Node = th.Node;
+            Type = th.Type;
+        } 
+
+        //public class ArgsT{
+        //  public double arg1;
+        //  public int arg2; ...
+        //}
+        public double Evaluate<ArgsT>(ArgsT args){
+            var opts = ScriptOptions.Default;
+            var mscorlib = typeof(System.Object).Assembly;
+            opts = opts.AddReferences(mscorlib);
+            opts = opts.AddImports("System");
+            opts = opts.AddImports("System.Math");
+            return CSharpScript.EvaluateAsync<double>(EvalCode, opts, globals : args).Result;
+        }
+
+        public double GetMaxEpsilonOneArg(int N, int PointsNumber, double [] parameters = null)
+        {
+            double h = (Interval.right - Interval.left) / (PointsNumber + 1);
+
+            var structures = fillStructuresOneArg(Type, parameters);
+            var argStructIdeal = structures.Item1;
+            var argStructIter = structures.Item2;
+
+            argStructIter.N = N;
+            
+            double eps = 0;
+            for(double arg = Interval.left + h; arg< Interval.right; arg += h)
+            {
+                argStructIter.x = argStructIdeal.x = arg;
+                var val = Evaluate(argStructIter);
+                var idealVal = IdealMethod.Evaluate(argStructIdeal);
+                eps = Math.Max(eps, Math.Abs(val - idealVal));
+            }
+            return eps;
+        }
+
+        internal static Tuple<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg> fillStructuresOneArg(MethodType Type, double[] parameters = null)
+        {
+            if (Type != MethodType.X && Type != MethodType.XA && Type != MethodType.XAB)
+                throw new Exception();
+
+            parameters = parameters ?? new double[0];
+
+            ArgsTypesIdeal.ArgsOneArg argStructIdeal = new ArgsTypesIdeal.ArgsOneArg();
+            ArgsTypesIterations.ArgsOneArg argStructIter = new ArgsTypesIterations.ArgsOneArg();
+
+            switch (Type)
+            {
+                case MethodType.X:
+                    argStructIdeal = new ArgsTypesIdeal.ArgsX();
+                    argStructIter = new ArgsTypesIterations.ArgsX();
+                    break;
+                case MethodType.XA:
+                    argStructIdeal = new ArgsTypesIdeal.ArgsXA();
+                    argStructIter = new ArgsTypesIterations.ArgsXA();
+                    ((ArgsTypesIterations.ArgsXA)argStructIter).a =
+                        ((ArgsTypesIdeal.ArgsXA)argStructIdeal).a = parameters[0];
+                    break;
+                case MethodType.XAB:
+                    argStructIdeal = new ArgsTypesIdeal.ArgsXAB();
+                    argStructIter = new ArgsTypesIterations.ArgsXAB();
+                    ((ArgsTypesIterations.ArgsXAB)argStructIter).a =
+                        ((ArgsTypesIdeal.ArgsXAB)argStructIdeal).a = parameters[0];
+                    ((ArgsTypesIterations.ArgsXAB)argStructIter).b =
+                        ((ArgsTypesIdeal.ArgsXAB)argStructIdeal).b = parameters[1];
+                    break;
+            }
+
+            return Tuple.Create(argStructIdeal, argStructIter);
+        }
+
+        public static Dictionary<string, string> getExpressionsFromAttributes(SyntaxNode TreeRoot)
+        {
+            var dic = new Dictionary<string, string>();
+            var attribs = TreeRoot.DescendantNodes().OfType<AttributeSyntax>();
+            foreach (var attr in attribs)
+            {
+                if (attr.Name.GetText().ToString() == "FunctionName")
+                {
+                    var attrArgs = attr.ArgumentList.Arguments;
+                    dic[attrArgs.ElementAt(0).GetFirstToken().ValueText] = attrArgs.ElementAt(1).GetFirstToken().ValueText;
+                }
+            }
+
+            return dic;
+        }
+
+        public static Dictionary<string, Interval> getIntervals(SyntaxNode TreeRoot)
+        {
+            var dic = new Dictionary<string, Interval>();
+            var methods = TreeRoot.DescendantNodes().OfType<MethodDeclarationSyntax>();
+            foreach(var meth in methods)
+            {
+                string inMethName = meth.Identifier.ValueText;
+                if (!inMethName.EndsWith("_in")) continue;
+                string methodName = inMethName.Substring(0, inMethName.Length - 3);
+                dic[methodName] = IntervalMethod.Evaluate(meth);
+            }
+
+            return dic;
+        }
+
+        public static List<MethodForTesting> getMethodsFromFiles(
+            string[] FileNames,
+            string[] MethodNames,
+            bool exclude = false,
+            Dictionary<string, MethodType> MethodTypes = null )
+        {
+            MethodTypes = MethodTypes ?? new Dictionary<string, MethodType>();
+
+            List<MethodForTesting> reslist = new List<MethodForTesting>();
+            foreach(var fname in FileNames)
+            {
+                var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(fname));
+                var rt = tree.GetRoot();
+                var fileMethods = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
+                var expressionsDic = getExpressionsFromAttributes(rt);
+                var intervalsDic = getIntervals(rt);
+
+                foreach (var meth in fileMethods)
+                {
+                    string thisMethodName = meth.Identifier.Text;
+                    if (!(MethodNames.Contains(thisMethodName) ^ exclude)) continue;
+
+                    MethodForTesting m = new MethodForTesting();
+                    m.Code = meth.GetText().ToString();
+                    m.Name = thisMethodName;
+                    m.Node = meth;
+                    m.FilePath = fname;
+                    m.Type = MethodTypes.ContainsKey(m.Name) ? MethodTypes[m.Name] : MethodType.X;
+                    m.IdealMethod = new IdealTestMethod(expressionsDic[m.Name], m.Type);
+                    m.EvalCode = Usings + m.Code + "\nreturn " + 
+                        m.Name + TestingUtilities.generateArguments(m.Type, true, false, 0)+";\n";
+                    m.Interval = intervalsDic[m.Name];
+
+                    reslist.Add(m);
+                }
+            }
+
+            return reslist;
+        }
+    }
+
+    public class MethodForTestingTaylor : MethodForTesting
+    {
+        public string TaylorEvalCode;
+        public static new string Usings = "using System; \n using TestingSystem; \n";
+        public static string TaylorAddonName = "_TaylorAddon";
+
+        MethodForTestingTaylor(MethodForTesting meth)
+        {
+            Code = meth.Code;
+            EvalCode = meth.EvalCode;
+            IdealMethod = meth.IdealMethod;
+            this.FilePath = meth.FilePath;
+            Interval = meth.Interval;
+            Name = meth.Name;
+            Node = meth.Node;
+            Type = meth.Type;
+
+            TaylorEvalCode = Usings + 
+                getChangedNode(Node).GetText().ToString() + 
+                constructTaylorAddon(Name, Type) +
+                "\nreturn " +TaylorAddonName + TestingUtilities.generateArguments(Type, true, false, 0)+ ";";
+        }
+
+        public Tuple<double, double> EvaluateTaylor<ArgsT>(ArgsT args)
+        {
+            var opts = ScriptOptions.Default;
+            var mscorlib = typeof(object).Assembly;
+            var testingEntry = typeof(TaylorTestingEntry).Assembly;
+            opts = opts.AddReferences(mscorlib, testingEntry);
+            opts = opts.AddImports("System");
+            opts = opts.AddImports("System.Math");
+            opts = opts.AddImports("TestingSystem.TaylorTestingEntry");
+            var cort = TestingUtilities.Evaluate<ArgsT, Tuple<double, TaylorTestingEntry>>(EvalCode, args, opts);
+            return Tuple.Create(cort.Item1, cort.Item2.GetSumAndClear());
+        }
+        
+        public double GetMaxEpsilonOneArgTaylor(int N, int PointsNumber, double[] parameters = null)
+        {
+            double h = (Interval.right - Interval.left) / (PointsNumber + 1);
+
+            var structures = fillStructuresOneArg(Type, parameters);
+            var argStructIdeal = structures.Item1;
+            var argStructIter = structures.Item2;
+
+            argStructIter.N = N;
+
+            double eps = 0;
+            for (double arg = Interval.left + h; arg < Interval.right; arg += h)
+            {
+                argStructIter.x = argStructIdeal.x = arg;
+                var taylorTuple = EvaluateTaylor(argStructIter);
+                var val = taylorTuple.Item1;
+                var idealVal = taylorTuple.Item2;
+                eps = Math.Max(eps, Math.Abs(val - idealVal));
+            }
+            return eps;
+        }
+
+        public static MethodDeclarationSyntax getChangedNode(MethodDeclarationSyntax method)
+        {
+            var TestEntryArgName = "__tst";
+            /* Adding last param */
+            //Console.WriteLine(i.GetText());
+            var parlist = method.ChildNodes().OfType<ParameterListSyntax>().First();
+            //Console.WriteLine(parlist.GetType()+ " " + parlist.GetText()+ " " + parlist.ChildTokens().Count());
+            var newparlist = parlist.AddParameters(SyntaxFactory.Parameter(
+                                                                    SyntaxFactory   .Identifier(TestEntryArgName))
+                                                                                    .WithType(SyntaxFactory.ParseTypeName("TaylorTestingEntry ")));
+            //Console.WriteLine(newparlist.GetText());
+            var newmethod = method.ReplaceNode(parlist, newparlist);
+
+            /* Adding tst.AddElement(i); */
+            foreach (var s in newmethod.Body.DescendantNodes())
+            {
+                SyntaxTrivia st = SyntaxFactory.SyntaxTrivia(SyntaxKind.WhitespaceTrivia, " ");
+                bool fl = false;
+                bool before = true;
+                var lt = s.GetLeadingTrivia();
+
+                foreach (var triviaEntry in lt)
+                {
+                    if (triviaEntry.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia)
+                    {
+                        fl = true;
+                        st = triviaEntry;
+                        break;
+                    }
+                }
+
+                if (!fl)
+                {
+                    lt = s.GetTrailingTrivia();
+                    before = false;
+                    foreach (var triviaEntry in lt)
+                    {
+                        if (triviaEntry.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia)
+                        {
+                            fl = true;
+                            st = triviaEntry;
+                            break;
+                        }
+                    }
+                    if (!fl) continue;
+                }
+
+                //Console.WriteLine("PAMPARAM");
+
+                var commentContents = st.ToString();
+                char[] delim = { ' ', '\n', '\t', '\r' };
+                var ar = commentContents.Split(delim, StringSplitOptions.RemoveEmptyEntries);
+                //Console.WriteLine(ar.Length);
+                if (ar.Length != 2 || ar[0] != "add") continue;
+
+                var lineToAdd = TestEntryArgName + ".AddElement(" + ar[1] + ")";
+                //newmethod = newmethod.//ReplaceNode(s, newparlist);
+                var linelist = new List<ExpressionStatementSyntax>();
+                linelist.Add(SyntaxFactory.ExpressionStatement(SyntaxFactory.ParseExpression(lineToAdd)));
+
+                var childlist = s.Parent.ChildNodes();
+
+                //Console.WriteLine("trtt");
+                foreach (var si in childlist)
+                {
+                    if (s != si) continue;
+                    if (before) newmethod = newmethod.InsertNodesBefore(si, linelist);
+                    else newmethod = newmethod.InsertNodesAfter(si, linelist);
+                    break;
+                }
+
+                //Console.WriteLine(s.Kind() + " " + s.ToString());
+                break;
+            }
+
+            return newmethod;
+        }
+
+        public static string constructTaylorAddon(string funName, MethodType Type)
+        {
+            return @"Tuple<double, TaylorTestingEntry> " + TaylorAddonName + @" " + TestingUtilities.generateArguments(Type, true, true, 0) + @"{
+                        TaylorTestingEntry tst1 = new TaylorTestingEntry();
+                        var v = " + funName + @" " + TestingUtilities.generateArguments(Type, true, false, 1) + @";
+                        return Tuple.Create(v, tst1);
+                    }\n";
+        }
+
+    }
     // Testing different functions that use simple sums
     public class TaylorTestingEntry
     {
@@ -378,178 +752,8 @@ namespace TestingSystem
                 return "OK";
             else return "Error, mistake is " + current_eps;
         }
-
-        public string TestFunction(TaylorFuncTestDelegate f, int N, double eps, double l, double r, int pointsNumber)
-        {
-
-            Random rand = new Random();
-            string res = "Testing...\n";
-            for (int i = 0; i < pointsNumber; ++i)
-            {
-                double arg = l + rand.NextDouble() * (r - l);
-                double val = f(arg, N, this);
-                res += "f(" + arg + ") = " + val + " : " + MatchResult(val, eps) + "\n";
-
-            }
-            return res;
-        }
-
-
+        
     }
-
-    
-    class TaylorTesting
-    {
-        // Изменяет метод f, добавляя в него ещё один аргумент типа TaylorTestingEntry, и строчку с .AddElement()
-        public static SyntaxNode getChangedTree(SyntaxNode root, string f)
-        {
-            var TestEntryArgName = "__tst";
-            var nodes = root.DescendantNodes().OfType<MethodDeclarationSyntax>();
-            SyntaxNode newrt = root;
-
-            foreach (var method in nodes)
-            {
-                var methodName = method.Identifier.ValueText;
-                //Console.WriteLine("-" + methodName + "-");
-                if (methodName != f) continue;
-                //Console.WriteLine(" ==================== ");
-
-                /* Adding last param */
-                //Console.WriteLine(i.GetText());
-                var parlist = method.ChildNodes().OfType<ParameterListSyntax>().First();
-                //Console.WriteLine(parlist.GetType()+ " " + parlist.GetText()+ " " + parlist.ChildTokens().Count());
-                var newparlist = parlist.AddParameters(SyntaxFactory.Parameter(SyntaxFactory.Identifier(TestEntryArgName)).WithType(SyntaxFactory.ParseTypeName("TaylorTestingEntry ")));
-                //Console.WriteLine(newparlist.GetText());
-                var newmethod = method.ReplaceNode(parlist, newparlist);
-
-                /* Adding tst.AddElement(i); */
-                foreach (var s in newmethod.Body.DescendantNodes())
-                {
-                    SyntaxTrivia st = SyntaxFactory.SyntaxTrivia(SyntaxKind.WhitespaceTrivia, " ");
-                    bool fl = false;
-                    bool before = true;
-                    var lt = s.GetLeadingTrivia();
-
-                    foreach (var triviaEntry in lt)
-                    {
-                        if (triviaEntry.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia)
-                        {
-                            fl = true;
-                            st = triviaEntry;
-                            break;
-                        }
-                    }
-
-                    if (!fl)
-                    {
-                        lt = s.GetTrailingTrivia();
-                        before = false;
-                        foreach (var triviaEntry in lt)
-                        {
-                            if (triviaEntry.Kind() == SyntaxKind.SingleLineDocumentationCommentTrivia)
-                            {
-                                fl = true;
-                                st = triviaEntry;
-                                break;
-                            }
-                        }
-                        if (!fl) continue;
-                    }
-
-                    //Console.WriteLine("PAMPARAM");
-
-                    var commentContents = st.ToString();
-                    char[] delim = { ' ', '\n', '\t', '\r' };
-                    var ar = commentContents.Split(delim, StringSplitOptions.RemoveEmptyEntries);
-                    //Console.WriteLine(ar.Length);
-                    if (ar.Length != 2 || ar[0] != "add") continue;
-
-                    var lineToAdd = TestEntryArgName + ".AddElement(" + ar[1] + ")";
-                    //newmethod = newmethod.//ReplaceNode(s, newparlist);
-                    var linelist = new List<ExpressionStatementSyntax>();
-                    linelist.Add(SyntaxFactory.ExpressionStatement(SyntaxFactory.ParseExpression(lineToAdd)));
-
-                    var childlist = s.Parent.ChildNodes();
-
-                    //Console.WriteLine("trtt");
-                    foreach (var si in childlist)
-                    {
-                        if (s != si) continue;
-                        if (before) newmethod = newmethod.InsertNodesBefore(si, linelist);
-                        else newmethod = newmethod.InsertNodesAfter(si, linelist);
-                        break;
-                    }
-
-                    //Console.WriteLine(s.Kind() + " " + s.ToString());
-                    break;
-                }
-
-
-                /* Nodes changing */
-                newrt = newrt.ReplaceNode(method, newmethod);
-                break;
-            }
-            return newrt;
-        }
-
-        public static string constructTaylorAddon(string funName)
-        {
-            return @"Tuple<double, TaylorTestingEntry> _TaylorAddon (double arg, int N){
-                        TaylorTestingEntry tst = new TaylorTestingEntry();
-                        var v = " + funName + @" (arg, N, tst);
-                        return Tuple.Create(v, tst);
-                    }";
-        }
-
-        public static double getMaxEpsilon(string FilePath, string f, int N, int pointsNumber)
-        {
-            var usings = "using System; \n using TestingSystem; \n";
-            // Syntax tree building
-            var tree = CSharpSyntaxTree.ParseText(File.ReadAllText(FilePath));
-            var rt = tree.GetRoot();
-            rt = getChangedTree(rt, f);
-
-            // Find the code of the method we want to use and write it into defStr
-            var defsStr = usings + UniversalTesting.getMethodCode(rt, f);
-
-            // Find the attribute which contains "ideal" math expression
-            // Write this expression to idealExpr
-
-            //var intervalMethodStr = usings + getMethodCode(rt, f + "_in");
-
-            double eps = 0;
-            // TODO !!!!!
-            var interval = UniversalTesting.getInterval(f, rt);
-            double l = interval.Item1, r = interval.Item2;
-
-            // evaluating our function in some points
-            double h = (r - l) / (pointsNumber + 1);
-            for (double arg = l + h; arg < r; arg += h)
-            {
-                // constructing script for calling "regular funtion"
-                var strarg = UniversalTesting.makeArg(arg);
-                //Console.WriteLine(N);
-                string TaylorTestingAddon = constructTaylorAddon(f);
-                var TaylorTestingMethod = defsStr + TaylorTestingAddon;
-                var cort = UniversalTesting.Evaluate<Tuple<double,TaylorTestingEntry>>("_TaylorAddon", TaylorTestingMethod, strarg, N.ToString());
-                double val = cort.Item1;
-                TaylorTestingEntry tst = cort.Item2;
-                double idealVal = tst.GetSumAndClear();
-
-                // constructing and calling "ideal" expression
-                //Console.WriteLine("Val: "+ val +". Ideal val: " + idealVal);
-
-                // evaluating epsilon
-                eps = Math.Max(eps, Math.Abs(val - idealVal));
-            }
-            return eps;
-        }
-
-        public static int getIterationsByEpsilon(string FilePath, string f, double epsilon, int pointsNumber)
-        {
-            return UniversalTesting.getIterationsByEpsilonDelegate(FilePath, f, epsilon, pointsNumber, getMaxEpsilon);
-        }
-    }
-    
+        
 }
 
