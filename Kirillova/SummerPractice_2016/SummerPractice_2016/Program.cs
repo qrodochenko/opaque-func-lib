@@ -9,12 +9,17 @@ namespace SummerPractice_2016
         {
             Console.WriteLine("Summer Practice! Yay!");
             Console.WriteLine(С_Math_1_2_ln.Math_1_2_ln(0.5, 15));
-            Console.WriteLine(С_Math_2_2_ln.Math_2_2_ln(1.5, 15));
-            Console.WriteLine(С_Math_3_2_ln.Math_3_2_ln(0.5, 15));
-            Console.WriteLine(С_Math_4_2_ln.Math_4_2_ln(1.5, 15));
-            Console.WriteLine(С_Math_5_2_ln.Math_5_2_ln(1.5, 15));
-            Console.WriteLine(С_Math_6_2_ln.Math_6_2_ln(1.5, 15));
-          //  Console.WriteLine(С_Math_7_3_ln.Math_7_3_ln(0.5,1, 15));
+            Console.WriteLine(С_Math_2_2_ln.Math_2_2_ln(1, 15));
+            Console.WriteLine(С_Math_3_2_ln.Math_3_2_ln(1, 15));
+            Console.WriteLine(С_Math_4_2_ln.Math_4_2_ln(1, 15));
+            Console.WriteLine(С_Math_5_2_ln.Math_5_2_ln(0.5, 15));
+            Console.WriteLine(С_Math_6_2_ln.Math_6_2_ln(2, 15));
+            Console.WriteLine(С_Math_7_3_ln.Math_7_3_ln(1.5,1.5, 15));
+            Console.WriteLine(С_Math_8_2_ln.Math_8_2_ln(0.5, 15));
+            Console.WriteLine(С_Math_9_2_ln.Math_9_2_ln(0.5, 15));
+            Console.WriteLine(С_Math_10_2_ln.Math_10_2_ln(0.5, 15));
+            Console.WriteLine(С_Math_11_2_ln.Math_11_2_ln(1.5, 15));
+
             Console.ReadKey();
         }
     }
