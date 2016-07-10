@@ -12,3 +12,12 @@ D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\OpaqueFunctions.pdb
 D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
 D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\obj\Debug\ModuleTests.dll
 D:\Kravtsov\opaque-func-lib\Kravtsov\ModuleTests\obj\Debug\ModuleTests.pdb
+E:\Summer Practice\opaque-func-lib\Kravtsov\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
+E:\Summer Practice\opaque-func-lib\Kravtsov\ModuleTests\obj\Debug\ModuleTests.dll
+E:\Summer Practice\opaque-func-lib\Kravtsov\ModuleTests\obj\Debug\ModuleTests.pdb
+E:\Summer Practice\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\ModuleTests.dll
+E:\Summer Practice\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\ModuleTests.pdb
+E:\Summer Practice\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Summer Practice\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\OpaqueFunctions.dll
+E:\Summer Practice\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\OpaqueFunctions.pdb
+E:\Summer Practice\opaque-func-lib\Kravtsov\ModuleTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll

@@ -8,3 +8,8 @@ D:\Kravtsov\opaque-func-lib\Kravtsov\OpaqueFunctions\obj\Debug\OpaqueFunctions.d
 D:\Kravtsov\opaque-func-lib\Kravtsov\OpaqueFunctions\bin\Debug\OpaqueFunctions.dll
 D:\Kravtsov\opaque-func-lib\Kravtsov\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
 D:\Kravtsov\opaque-func-lib\Kravtsov\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
+E:\Summer Practice\opaque-func-lib\Kravtsov\OpaqueFunctions\bin\Debug\OpaqueFunctions.dll
+E:\Summer Practice\opaque-func-lib\Kravtsov\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
+E:\Summer Practice\opaque-func-lib\Kravtsov\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
+E:\Summer Practice\opaque-func-lib\Kravtsov\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
+E:\Summer Practice\opaque-func-lib\Kravtsov\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache

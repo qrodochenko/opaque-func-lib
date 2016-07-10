@@ -10,7 +10,6 @@ namespace OpaqueFunctions
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
-    /// <returns>0</returns>
     [OpaqueFunction()]
     [FunctionName("Csin_1", "sin")]
     public static class CSin_1
@@ -21,7 +20,7 @@ namespace OpaqueFunctions
             for (int i = 0; i < count; i++)
             {
                 sign *= -1;
-                for (int k = i; k <= 2 * k + 1; k++)
+                for (int k = i; k <= 2 * i + 1; k++) 
                     X *= X;
                 fact *= (2 * i + 1);
                 a = sign * X / fact;
@@ -58,11 +57,11 @@ namespace OpaqueFunctions
     {
         public static double Cos_1(double angle, int count)
         {
-            double X = 0, X1 = angle, fact = 1, sign = -1, result = 0, a;
+            double X1 = angle, fact = 1, sign = -1, result = 0, a;
             for (int i = 0; i < count; i++)
             {
                 sign *= -1;
-                for (int k = i; k <= 2 * k; k++)
+                for (int k = i; k <= 2 * i; k++)
                     X1 *= X1;
                 for (int k = 1; k <= 2 * i; k++)
                     fact *= k;
@@ -165,42 +164,88 @@ namespace OpaqueFunctions
             return str;
         }
     }
-    
+    /// <summary>
+    ///  Вычисляет числа Бернулли
+    /// </summary>
     public static class Bernoulli
     {
-        public static long fact(int N)
+        public static long  fact(int N)
         {
             if (N < 0) 
-            return 0;
-            if (N == 0)
+                return 0; 
+            if (N == 0) 
+                return 1; 
+            else 
+                return N * fact(N - 1); 
+        }
+        public static long rec(long n, long k)
+        {
+            long result = 1;
+            if (n == k)
                 return 1;
             else
-                return N * fact(N - 1);
+                if (k == 1)
+                return n;
+            else
+                if (k > n)
+                return 0;
+            else
+            {
+                for (long i = 1; i <= k; ++i) 
+                {
+                    result *= n--;
+                    result /= i;
+                }
+            }
+            return result;
         }
         public static double Ber(int n)
         {
-
-            double  Bnull = 1, sum = 0;
+            double sum = 0;
             if (n == 0)
-            {
-                return Bnull;
-            }
+                return 1;
             else
                 if (n == 1)
-                    return -1.0 / 2.0;
-                else
-            {
-                for (int k = 0; k <= n - 1; k++)
+                return -1.0 / 2.0;
+            else
+                if (n % 2 == 1)
+                return 0;
+            else
+                for(int k = 1; k <= n; k++)
                 {
-                    double c = fact(n) / fact(k);
-                    c = c / fact(n - k);
-                    sum += c * Ber(k) / (n - k + 1);
+                    sum += rec(n + 1, k + 1) * Ber(n - k);
                 }
-            }
-            return 1 - sum;
+            return -1.0/((double)(n+1))*sum;
         }  
     }
-
+    /// <summary>
+    /// Реализует тригонометрическую функцию tg(x),  
+    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
+    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
+    /// сколько задано параметром <paramref name="count"/>.
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <param name="count">Количество требуемых перемножений</param>
+    [OpaqueFunction()]
+    [FunctionName("Tg_1", "tg(x)")]
+    public static class CTg_1
+    {
+        public static double Tg_1(double angle, int count)
+        {
+            double X = angle, sum = 0, Ber = 0, two;
+            long fakt;
+            for (int i = 1; i <= count; i++) 
+            {
+                for (int k = i; k <= 2 * i + 1; k++)
+                    X *= X;
+                two = Math.Pow(2.0, (double)(2 * i));
+                fakt = Bernoulli.fact(2 * i);
+                Ber = Math.Abs(Bernoulli.Ber(2 * i));
+                sum += two * (two - 1) / fakt * X * Ber;
+            }
+            return sum;
+        }
+    }
 
     /// <summary>
     /// Реализует тригонометрическую функцию arctg(x),  
@@ -429,7 +474,7 @@ namespace OpaqueFunctions
         public static double Xpow3_Cos_1(double angle, int count)
         {
             double result = 0, X = angle;
-            int one = 1, k1 = 1, k2 = 1, fact = 1;
+            int one = 1, k1 = 1, k2 = 1;
             for (int i = 0; i < count; i++)
             {
                 for (int k = i; k <= 2 * i; k++)

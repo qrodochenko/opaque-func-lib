@@ -6,9 +6,8 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            double k;
-            k = Bernoulli.Ber(7);
-            Console.WriteLine(k);
+            double X = CTg_1.Tg_1(Math.PI/3.0,1);
+            Console.WriteLine(X);
         }
     }
 }
