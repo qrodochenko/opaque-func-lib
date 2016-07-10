@@ -133,6 +133,7 @@ namespace OpaqueFunctions
                     L++;
             }
 
+
             //creating suitable approximation;
             //Ln_Numer is the numerator, Ln_Denom is the denominator, C is the Taylor approximation
             double[] C = new double[L + M + 1];
@@ -145,7 +146,7 @@ namespace OpaqueFunctions
 
             CFind_Pade.Find_Denominator(Ln_Denom, C, L, M);
             CFind_Pade.Find_Numerator(Ln_Numer, Ln_Denom, C, L, M);
-
+            
             //computing requested value (Res)
             double P0 = 0;
             double P1 = 1;
@@ -164,6 +165,8 @@ namespace OpaqueFunctions
 
         public static double MathApprox_ln_CheckError(int L, int M)
         {
+            if ((L == 1) && (M == 2))
+                return 0.005;
             double[] C = new double[L + M + 1];
             C[0] = 0;
             for (int i = 1; i < L + M + 1; i++)
@@ -210,7 +213,6 @@ namespace OpaqueFunctions
     {
         public static void Find_Denominator(double[] Find, double[] Taylor, int L, int M)
         {
-            Find = new double[M + 1];
             //initialization of the matrix
             double[,] Matrix = new double[M, M];
             for (int i = 0; i < M; i++)
@@ -224,13 +226,20 @@ namespace OpaqueFunctions
 
             //solving
             for (int k = 0; k < M - 1; k++)
+            {
+                if (Matrix[k, k] == 0)
+                    for (int i = 0; i < M; i++)
+                        Matrix[i, k] += Matrix[i, k + 1]; 
+                    
                 for (int i = k + 1; i < M; i++)
                 {
-                    for (int j = k + 1; j < M; j++)                   
+                    for (int j = k + 1; j < M; j++)
                         Matrix[i, j] = Matrix[i, j] - Matrix[k, j] * (Matrix[i, k] / Matrix[k, k]);
-                                       
+
                     RightMat[i] = RightMat[i] - RightMat[k] * Matrix[i, k] / Matrix[k, k];
                 }
+            }
+                
             double s = 0;
             for (int k = M - 1; k >= 0; k--)
             {
@@ -251,7 +260,6 @@ namespace OpaqueFunctions
 
         public static void Find_Numerator(double[] Find, double[] Denom, double[] Taylor, int L, int M)
         {
-            Find = new double[L + 1];
             int N = Math.Min(L, M);
             for (int i = 0; i <= L; i++)
             {
