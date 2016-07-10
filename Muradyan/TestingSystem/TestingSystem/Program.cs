@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 //main namespace
 namespace TestingSystem
@@ -123,32 +124,122 @@ namespace TestingSystem
 
             var methSin = new MethodForTesting(path, "Sin_1");
             var methSinTaylor = new MethodForTestingTaylor(methSin);
-            Console.WriteLine(methSinTaylor.GetMaxEpsilonOneArg(10000, 30));
+            Console.WriteLine(methSinTaylor.GetTestingReportOneArg(10000, 30));
             //Console.WriteLine(methSin.GetIterationsByEpsilon(0.01,10));
             Console.ReadKey();
         }
     }
 
-    class ReportEntry
+    public class ReportEntry
     {
-        public string functionName;
+        public string FunctionName;
         public int NumberOfIterations;
-        public double[] arguments;
-        public double[] parameters;
-        public double val;
-        public double wantedVal;
-        public double absoluteEps;
-        public double relativeEps;
+        public double[] Arguments;
+        public double[] Parameters;
+        public double Val;
+        public double WantedVal;
+        public double AbsoluteEps;
+        public double RelativeEps;
 
-        public override string ToString()
+        public ReportEntry(
+            bool evaluateEps = true,
+            string functionName = "NONAME",
+            int N = -1,
+            double[] args = null,
+            double[] param = null,
+            double val = double.NaN,
+            double wantedVal = double.NaN,
+            double absEps = double.NaN,
+            double relEps = double.NaN)
         {
-            return string.Format("{0,10} {1,");
+            Arguments = args ?? new double[0];
+            Parameters = param ?? new double[0];
+            FunctionName = functionName;
+            NumberOfIterations = N;
+            Val = val;
+            WantedVal = wantedVal;
+
+            if (evaluateEps)
+            {
+                AbsoluteEps = Math.Abs(wantedVal - val);
+                RelativeEps = AbsoluteEps / Math.Abs(WantedVal);
+            }
+            else
+            {
+                AbsoluteEps = absEps;
+                RelativeEps = relEps;
+            }
+        }
+
+        public string ToString(int argnum = 1, int parnum = 0)
+        {
+            //var joinedargs = Arguments.Take.Aggregate("",(res, cur) => "" + res + ", " + cur.ToString("G5"), (res) => res);
+            //var joinedparam = Parameters.Aggregate("", (res, cur) => "" + res + ", " + cur.ToString("G5"), (res) => res);
+
+            string joinedargs = Arguments.Length == 0 ? "" : Arguments[0].ToString("G5"), 
+                   joinedparam = Parameters.Length == 0 ? "" : Parameters[0].ToString("G5");
+            for(int i=1; i<Arguments.Length; ++i)
+            {
+                joinedargs += ", " + Arguments[i].ToString("G5");
+            }
+            for (int i = 1; i < Parameters.Length; ++i)
+            {
+                joinedparam += ", " + Parameters[i].ToString("G5");
+            }
+
+            return string.Format(getFormatString(argnum, parnum),
+                FunctionName,
+                NumberOfIterations,
+                joinedargs,
+                joinedparam,
+                Val,
+                WantedVal,
+                AbsoluteEps,
+                RelativeEps);
+        }
+
+        public static string getFormatString(int argnum = 1, int parnum = 0)
+        {
+            return "{0,10} {1,5} {2," + (argnum * 7) + "} {3," + (parnum * 7) + "} {4,9:G4} {5,9:G4} {6,9:G4} {7,9:G4}\n";
         }
     }
 
-    class Report : List<ReportEntry>
+    public class Report : List<ReportEntry>
     {
+        public static string getFormatString(int argnum = 1, int parnum = 0)
+        {
+            return "{0,10} {1,5} {2," + (argnum * 7) + "} {3," + (parnum * 7) + "} {4,9} {5,9} {6,9} {7,9}\n";
+        }
+        
+        public override string ToString()
+        {
+            int maxArgs = 0, maxParams = 0;
+            foreach(var entry in this)
+            {
+                maxArgs = Math.Max(maxArgs, entry.Arguments.Length);
+                maxParams = Math.Max(maxParams, entry.Parameters.Length);
+            }
 
+            string title = string.Format(
+                getFormatString(maxArgs, maxParams),
+                "Function", "N", "Args", maxParams == 0 ? "" : "Params", "Val", "Ideal", "Abs", "Rel");
+            StringBuilder resultingStr = new StringBuilder(title);
+            foreach(var entry in this)
+            {
+                resultingStr.Append(entry.ToString(maxArgs, maxParams));
+            }
+            return resultingStr.ToString();
+        }
+
+        public double maxEpsilonAbsolute()
+        {
+            return this.Max((entry) => entry.AbsoluteEps);
+        }
+
+        public double maxEpsilonRelative()
+        {
+            return this.Max((entry) => entry.RelativeEps);
+        }
     }
 
     // important container for testing functions that use sums
@@ -335,14 +426,14 @@ namespace TestingSystem
             int badnessCountdown = initialBadnessCountdown;
             double ceps = 
                     approach == TestingApproach.UNIVERSAL ? 
-                    f.GetMaxEpsilonOneArg(cN, pointsNumber,functionParameters) : 
+                    f.GetMaxEpsilonAbsOneArg(cN, pointsNumber,functionParameters) : 
                     ((MethodForTestingTaylor)f).GetMaxEpsilonOneArgTaylor(cN, pointsNumber, functionParameters);
             while(ceps > epsilon)
             {
                 //Console.WriteLine(cN + " " + ceps);
                 cN <<= 1;
                 double neweps = approach == TestingApproach.UNIVERSAL ?
-                        f.GetMaxEpsilonOneArg(cN, pointsNumber, functionParameters) :
+                        f.GetMaxEpsilonAbsOneArg(cN, pointsNumber, functionParameters) :
                         ((MethodForTestingTaylor)f).GetMaxEpsilonOneArgTaylor(cN, pointsNumber, functionParameters);
                 if (neweps == ceps) --badnessCountdown;
                 else
@@ -466,25 +557,14 @@ namespace TestingSystem
             return CSharpScript.EvaluateAsync<double>(EvalCode, opts, globals : args).Result;
         }
 
-        public double GetMaxEpsilonOneArg(int N, int PointsNumber, double [] parameters = null)
+        public double GetMaxEpsilonAbsOneArg(int N, int PointsNumber, double [] parameters = null)
         {
-            double h = (Interval.right - Interval.left) / (PointsNumber + 1);
+            return GetTestingReportOneArg(N, PointsNumber, parameters).maxEpsilonAbsolute();
+        }
 
-            var structures = fillStructuresOneArg(Type, parameters);
-            var argStructIdeal = structures.Item1;
-            var argStructIter = structures.Item2;
-
-            argStructIter.N = N;
-            
-            double eps = 0;
-            for(double arg = Interval.left + h; arg< Interval.right; arg += h)
-            {
-                argStructIter.x = argStructIdeal.x = arg;
-                var val = Evaluate(argStructIter);
-                var idealVal = IdealMethod.Evaluate(argStructIdeal);
-                eps = Math.Max(eps, Math.Abs(val - idealVal));
-            }
-            return eps;
+        public double GetMaxEpsilonRelOneArg(int N, int PointsNumber, double[] parameters = null)
+        {
+            return GetTestingReportOneArg(N, PointsNumber, parameters).maxEpsilonRelative();
         }
 
         public int GetIterationsByEpsilon(
@@ -493,6 +573,27 @@ namespace TestingSystem
             double[] functionParameters = null)
         {
             return TestingUtilities.GetIterationsByEpsilonApproach(this, epsilon, pointsNumber, TestingApproach.UNIVERSAL, functionParameters);
+        }
+
+        public Report GetTestingReportOneArg(int N, int PointsNumber, double[] parameters = null)
+        {
+            Report rep = new Report();
+            double h = (Interval.right - Interval.left) / (PointsNumber + 1);
+
+            var structures = fillStructuresOneArg(Type, parameters);
+            var argStructIdeal = structures.Item1;
+            var argStructIter = structures.Item2;
+
+            argStructIter.N = N;
+            
+            for (double arg = Interval.left + h; arg < Interval.right; arg += h)
+            {
+                argStructIter.x = argStructIdeal.x = arg;
+                var val = Evaluate(argStructIter);
+                var idealVal = IdealMethod.Evaluate(argStructIdeal);
+                rep.Add(new ReportEntry(evaluateEps: true, functionName: Name, N: N, args: new double[] { arg }, val: val, wantedVal: idealVal));
+            }
+            return rep;
         }
 
         internal static Tuple<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg> fillStructuresOneArg(MethodType Type, double[] parameters = null)
@@ -613,7 +714,7 @@ namespace TestingSystem
             TaylorEvalCode = Usings + 
                 getChangedNode(Node).GetText().ToString() + 
                 constructTaylorAddon(Name, Type) +
-                "\nreturn " +TaylorAddonName + TestingUtilities.generateArguments(Type, true, false, 0)+ ";";
+                "return " +TaylorAddonName + TestingUtilities.generateArguments(Type, true, false, 0)+ ";";
         }
 
         public Tuple<double, double> EvaluateTaylor<ArgsT>(ArgsT args)
@@ -625,7 +726,7 @@ namespace TestingSystem
             opts = opts.AddImports("System");
             opts = opts.AddImports("System.Math");
             opts = opts.AddImports("TestingSystem.TaylorTestingEntry");
-            var cort = TestingUtilities.Evaluate<ArgsT, Tuple<double, TaylorTestingEntry>>(EvalCode, args, opts);
+            var cort = TestingUtilities.Evaluate<ArgsT, Tuple<double, TaylorTestingEntry>>(TaylorEvalCode, args, opts);
             return Tuple.Create(cort.Item1, cort.Item2.GetSumAndClear());
         }
         
@@ -743,7 +844,7 @@ namespace TestingSystem
                         TaylorTestingEntry tst1 = new TaylorTestingEntry();
                         var v = " + funName + @" " + TestingUtilities.generateArguments(Type, true, false, 1) + @";
                         return Tuple.Create(v, tst1);
-                    }\n";
+                    }";
         }
 
     }
