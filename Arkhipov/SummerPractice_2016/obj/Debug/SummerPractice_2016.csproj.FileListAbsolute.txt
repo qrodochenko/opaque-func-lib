@@ -10,3 +10,6 @@ D:\Arkhipov\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_201
 D:\Arkhipov\opaque-func-lib\Arkhipov\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
 D:\Arkhipov\opaque-func-lib\Arkhipov\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
 D:\Arkhipov\opaque-func-lib\Arkhipov\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
+D:\SummerPractice\opaque-func-lib\Arkhipov\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
+D:\SummerPractice\opaque-func-lib\Arkhipov\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
+D:\SummerPractice\opaque-func-lib\Arkhipov\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
