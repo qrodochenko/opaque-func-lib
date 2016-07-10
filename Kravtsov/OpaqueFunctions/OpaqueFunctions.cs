@@ -2,6 +2,9 @@
 
 namespace OpaqueFunctions
 {
+    /// <summary>
+    /// Реализует рекуррентное вычисление факториала, используется во многих функциях для избежаний переполнения и простоты вычислений
+    /// </summary>
     [OpaqueFunction()]
     [FunctionName("CFakt", "Fakt")]
     public static class CFakt
@@ -14,7 +17,6 @@ namespace OpaqueFunctions
                 return N * Fakt(N - 1);
         }
     }
-    
     /// <summary>
     /// Реализует тригонометрическую функцию sin(x),  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
@@ -68,14 +70,11 @@ namespace OpaqueFunctions
         public static double Cos_1(double angle, int count)
         {
             double X1,X = angle, result = 0, top, bottom;
-            for (int i = 0; i < count; i++)
+            for (int i = 1; i < count; i++)
             {
-                if (i == 0)
-                    result = 1;
+                if (i <= 1)
+                    result = 1 - X * X / 2.0;
                 else
-                    if (i == 1)
-                        result = 1 - X * X / 2.0;
-                    else
                 {
                     X1 = Math.Pow(X, 2 * i);
                     top = X1 * Math.Pow(-1, i);
@@ -113,24 +112,18 @@ namespace OpaqueFunctions
     {
         public static double Arcsin_1(double angle, int count)
         {
-            double result = 0, X1, X = angle, top, bottom;
-            for (int i = 0; i < count; i++)
+            double X1, X = angle, result = 0, top, bottom;
+            for (int i = 4; i < count; i++)
             {
-                if (i == 0)
-                    result = X;
+                if (i <= 4)
+                    result = X + Math.Pow(X, 3) / 6.0 + 3.0 * Math.Pow(X, 5) / 40.0 + 5 * Math.Pow(X, 7) / 112.0;
                 else
-                    if (i == 1)
-                        result = X + Math.Pow(X, 3) / 6.0;
-                    else
-                        if (i == 2)
-                            result = X + Math.Pow(X, 3) / 6.0 + 3.0 * Math.Pow(X, 5) / 40.0;
-                        else
-                        {
-                            X1 = Math.Pow(X, 2 * i + 1);
-                            top = X1 * (2 * i - 1);
-                            bottom = 2 * i * (2 * i + 1);
-                            result += top / bottom;
-                        }
+                {
+                    X1 = Math.Pow(X, 2 * i + 1);
+                    top = X1 * (2 * i - 1);
+                    bottom = 2 * i * (2 * i + 1);
+                    result += top / bottom;
+                }
             }
             return result;
         }
@@ -163,28 +156,19 @@ namespace OpaqueFunctions
         public static double Arccos_1(double angle, int count)
         {
             double X1, X = angle, result = 0, top, bottom;
-            for (int i = 0; i < count; i++)
+            for (int i = 4; i < count; i++)
             {
-                if (i == 0)
-                    result = X;
+                if (i <= 4)
+                    result = X + Math.Pow(X, 3) / 6.0 + 3.0 * Math.Pow(X, 5) / 40.0 + 5 * Math.Pow(X, 7) / 112.0;
                 else
-                    if (i == 1)
-                        result = X + Math.Pow(X, 3) / 3.0;
-                    else
-                        if (i == 2)
-                        {
-                            result = X + Math.Pow(X, 3) / 3.0 + 3.0 * Math.Pow(X, 5) / 40.0;
-                            result = Math.PI / 2.0 - result;
-                        }
-                        else
-                        {
-                            X1 = Math.Pow(X, 2 * i + 1);
-                            top = X1 * (2 * i - 1);
-                            bottom = 2 * i * (2 * i + 1);
-                            result = result + top / bottom;
-                        }
+                {
+                    X1 = Math.Pow(X, 2 * i + 1);
+                    top = X1 * (2 * i - 1);
+                    bottom = 2 * i * (2 * i + 1);
+                    result += top / bottom;
                 }
-                return  result;
+            }
+            return Math.PI / 2.0 - result;
         }
     }
     /// <summary>
@@ -201,19 +185,10 @@ namespace OpaqueFunctions
         }
     }
     /// <summary>
-    ///  Вычисляет числа Бернулли
+    /// Используется для вычисления чисел Бернулли
     /// </summary>
     public static class Bernoulli
     {
-        public static long  fact(int N)
-        {
-            if (N < 0) 
-                return 0; 
-            if (N == 0) 
-                return 1; 
-            else 
-                return N * fact(N - 1); 
-        }
         public static long rec(long n, long k)
         {
             long result = 1;
@@ -227,7 +202,7 @@ namespace OpaqueFunctions
                 return 0;
             else
             {
-                for (long i = 1; i <= k; ++i) 
+                for (long i = 1; i <= k; ++i)
                 {
                     result *= n--;
                     result /= i;
@@ -255,7 +230,7 @@ namespace OpaqueFunctions
         }  
     }
     /// <summary>
-    /// Реализует тригонометрическую функцию tg(x),  
+    /// Реализует тригонометрическую функцию tg(x), при аппроксимации которой общий член выражается с помощью чисел Бернулли
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
     /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
     /// сколько задано параметром <paramref name="count"/>.
@@ -263,29 +238,84 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
     [OpaqueFunction()]
-    [FunctionName("Tg_1", "tg(x)")]
+    [FunctionName("CTg_1", "tg(x)")]
     public static class CTg_1
     {
         public static double Tg_1(double angle, int count)
         {
-            double X1, X = angle,  top,topnew, bottom, result = 0;
-            for (int i = 5; i <= count; i++) 
+            double X1, X = angle, top, common, bottom, result = 0;
+            for (int i = 1; i <= count; i++) 
             {
                 if (i == 5)
                     result = X + Math.Pow(X, 3) / 3.0 + 2.0 * Math.Pow(X, 5) / 15.0 + 17.0 * Math.Pow(X, 7) / 315.0 + 62.0 * Math.Pow(X, 9) / 2835.0;
                 else
                 {
                     X1 = Math.Pow(X, 2 * i - 1);
-                    top = Math.Pow(2, 2 * i) * (Math.Pow(2, 2 * i) - 1);
-                    top *= Math.Abs(Bernoulli.Ber(2 * i));
+                    top = Math.Pow(2, 2 * i) * X1;
                     bottom = CFakt.Fakt(2 * i);
-                    result += top / bottom;
+                    common = top / bottom;
+                    common *= (Math.Pow(2, 2 * i) - 1);
+                    result += common * Math.Abs(Bernoulli.Ber(2 * i));
                 }
             }
             return result;
         }
     }
-
+    /// <summary>
+    /// Возвращает область определения функции tg(x)
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("Tg_1_in", "tg(x)")]
+    public static class CTg_1_in
+    {
+        public static string Tg_1_in()
+        {
+            string str = "(-Pi/2, Pi/2)";
+            return str;
+        }
+    }
+    /// <summary>
+    /// Реализует тригонометрическую функцию сtg(x), при аппроксимации которой общий член выражается с помощью чисел Бернулли
+    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
+    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
+    /// сколько задано параметром <paramref name="count"/>.
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <param name="count">Количество требуемых перемножений</param>
+    [OpaqueFunction()]
+    [FunctionName("Сctg_1", "сtg(x)")]
+    public static class Cctg_1
+    {
+        public static double Сtg_1(double angle, int count)
+        {
+            double result = Math.Pow(angle,-1), X = angle, X1, top, bottom, common;
+            for (int i = 4; i < count; i++)
+                if (i == 4)
+                    result -= (X / 3.0 + Math.Pow(X, 3) / 45.0 + 2.0 * Math.Pow(X, 5) / 945.0 + Math.Pow(X, 7) / 4725.0);
+                else
+                {
+                    X1 = Math.Pow(X, 2 * i - 1);
+                    top = Math.Pow(2, 2 * i) * X1;
+                    bottom = CFakt.Fakt(2 * i);
+                    common = top / bottom;
+                    result -= common * Math.Abs(Bernoulli.Ber(2 * i));
+                }
+            return result;
+        }
+    }
+    /// <summary>
+    /// Возвращает область определения функции ctg(x)
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("Ctg_1_in", "ctg(x)")]
+    public static class Cctg_1_in
+    {
+        public static string Ctg_1_in()
+        {
+            string str = "(0, Pi)";
+            return str;
+        }
+    }
     /// <summary>
     /// Реализует тригонометрическую функцию arctg(x),  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
@@ -300,15 +330,12 @@ namespace OpaqueFunctions
     {
         public static double Arctg_1(double angle, int count)
         {
-            double result = 0, sign = -1, X = angle;
-            int k1;
-            for (int i = 0; i < count; i++)
+            double result = 0, top, bottom, X = angle;
+            for(int i = 0; i < count; i++)
             {
-                for (int k = i; k <= 2 * i + 1; k++)
-                    X *= X;
-                k1 = 2 * i + 1;
-                result += sign * X / k1;
-                sign *= -1;
+                top = Math.Pow(-1, i) * Math.Pow(X, 2 * i + 1);
+                bottom = 2 * i + 1;
+                result += top / bottom;
             }
             return result;
         }
@@ -340,24 +367,21 @@ namespace OpaqueFunctions
     {
         public static double Arcctg_1(double angle, int count)
         {
-            double result = 0, sign = -1, X = angle;
-            int k1;
-            for (int i = 0; i < count; i++)
+            double result = 0, top, bottom, X = angle;
+            for(int i = 0; i < count; i++)
             {
-                for (int k = i; k <= 2 * i; k++)
-                    X *= X;
-                k1 = 2 * i + 1;
-                result += sign * X / k1;
-                sign *= -1;
+                top = Math.Pow(-1, i) * Math.Pow(X, 2 * i + 1);
+                bottom = 2 * i + 1;
+                result += top / bottom;
             }
-            return Math.PI / 2.0 - result;
+            return  Math.PI*Math.Pow(2,-1)-result;
         }
     }
     /// <summary>
     /// Возвращает область определения функции arcctg(x)
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("Arcctg_1_in", "Arcctg(x)")]
+    [FunctionName("Arcctg_1_in", "arcctg(x)")]
     public static class CArcctg_1_in
     {
         public static string Arcctg_1_in()
@@ -366,8 +390,50 @@ namespace OpaqueFunctions
             return str;
         }
     }
-    // Пропустил sec & cosec
-
+    /// <summary>
+    /// Реализует тригонометрическую функцию cosec(x), при аппроксимации которой общий член выражается с помощью чисел Бернулли
+    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
+    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
+    /// сколько задано параметром <paramref name="count"/>.
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <param name="count">Количество требуемых перемножений</param>
+     [OpaqueFunction()]
+    [FunctionName("Cosec_1", "cosec(x)")]
+   public static class CCosec_1
+    {
+        public static double Cosec_1(double angle, int count)
+        {
+            double result = 0, X = angle, top, bottom, common;
+            for(int i = 4; i < count; i++)
+            {
+                if (i == 4)
+                     result = Math.Pow(X, -1) + X / 6.0 + 7.0 * Math.Pow(X, 3) / 360.0 + 31.0 * Math.Pow(X, 5) / 15120.0 + 127.0*Math.Pow(X,7)/604800.0;
+                else
+                {
+                    top = 2 * (Math.Pow(2, 2 * i - 1) - 1) * Math.Pow(X, 2 * i - 1);
+                    bottom = CFakt.Fakt(2 * i);
+                    common = top / bottom;
+                    common *= Bernoulli.Ber(2 * i);
+                    result += common;
+                }
+            }
+            return result;
+        }
+    }
+    /// <summary>
+    /// Возвращает область определения функции cosec(x)
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("Cosec_1_in", "cosec(x)")]
+    public static class CCosec_1_in
+    {
+        public static string Cosec_1_in()
+        {
+            string str = "(-Pi, Pi)";
+            return str;
+        }
+    }
     /// <summary>
     /// Реализует тригонометрическую функцию sin^2(x),  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
@@ -382,18 +448,14 @@ namespace OpaqueFunctions
     {
         public static double Xpow2_Sin_1(double angle, int count)
         {
-            double result=0, X = angle;
-            int one = 1, k1 = 1, k2 = 1;
-            for (int i = 1; i < count; i++)
+            double result = 0, bottom, top, X = angle, common;
+            for(int i = 1; i < count; i++)
             {
-                for (int k = i; k <= 2 * i; k++) 
-                    X*=X;
-                for (int k = i; k <= 2 * i - 1; k++)
-                    k1 *= 2;
-                for (int k = 1; k <= 2 * i; k++)
-                    k2 *= k;
-                result += k1 / k2 * one * X;
-                one*=-1;
+                top = Math.Pow(2, 2 * i - 1) * Math.Pow(-1, i + 1);
+                bottom = CFakt.Fakt(2 * i);
+                common = top / bottom;
+                common *= Math.Pow(X, 2 * i);
+                result += common;
             }
             return result;
         }
@@ -425,20 +487,16 @@ namespace OpaqueFunctions
     {
         public static double Xpow2_Cos_1(double angle, int count)
         {
-            double result = 0, X = angle;
-            int one = 1, k1 = 1, k2 = 1;
+            double result = 0, bottom, top, X = angle, common;
             for (int i = 1; i < count; i++)
             {
-                for (int k = i; k <= 2 * i; k++)
-                    X *= X;
-                for (int k = i; k <= 2 * i - 1; k++)
-                    k1 *= 2;
-                for (int k = 1; k <= 2 * i; k++)
-                    k2 *= k;
-                result += k1 / k2 * one * X;
-                one *= -1;
+                top = Math.Pow(2, 2 * i - 1) * Math.Pow(-1, i + 1);
+                bottom = CFakt.Fakt(2 * i);
+                common = top / bottom;
+                common *= Math.Pow(X, 2 * i);
+                result += common;
             }
-            return 1-result;
+            return 1 - result;
         }
     }
     /// <summary>
@@ -468,21 +526,15 @@ namespace OpaqueFunctions
     {
         public static double Xpow3_Sin_1(double angle, int count)
         {
-            double result = 0, X = angle;
-            int one = 1, k1 = 1, k2 = 1;
-            for (int i = 1; i < count; i++)
+            double result = 0, top, bottom, common, X = angle;
+            for (int i = 1; i < count; i++) 
             {
-                for (int k = i; k <= 2 * i + 1; k++) 
-                    X *= X;
-                for (int k = i; k <= 2 * i + 1; k++)
-                    k1 *= 3;
-                k1 -= 3;
-                for (int k = 1; k <= 2 * i+1; k++)
-                    k2 *= k;
-                result += k1 / k2 * one * X;
-                one *= -1;
+                top = Math.Pow(-1, i + 1) * (Math.Pow(3, 2 * i + 1) - 3);
+                bottom = CFakt.Fakt(2 * i + 1);
+                common = top / bottom * Math.Pow(X, 2 * i + 1) / 4.0;
+                result += common;
             }
-            return result / 4.0;
+            return result;
         }
     }
     /// <summary>
@@ -512,21 +564,15 @@ namespace OpaqueFunctions
     {
         public static double Xpow3_Cos_1(double angle, int count)
         {
-            double result = 0, X = angle;
-            int one = 1, k1 = 1, k2 = 1;
+            double result = 0, top, bottom, common, X = angle;
             for (int i = 0; i < count; i++)
             {
-                for (int k = i; k <= 2 * i; k++)
-                    X *= X;
-                for (int k = i; k <= 2 * i; k++)
-                    k1 *= 3;
-                k1 += 3;
-                for (int k = 1; k <= 2 * i; k++)
-                    k2 *= k;
-                result += k1 / k2 * one * X;
-                one *= -1;
+                top = Math.Pow(-1, i) * (Math.Pow(3, 2 * i) + 3);
+                bottom = CFakt.Fakt(2 * i );
+                common = top / bottom * Math.Pow(X, 2 * i) / 4.0;
+                result += common;
             }
-            return result / 4.0;
+            return result;
         }
     }
     /// <summary>
