@@ -718,6 +718,284 @@ namespace OpaqueFunctions
         }
     }
 
+    /// <summary>
+    /// Реализует 50. f(x) = arctg(x) + arcctg(x) – π/2 
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <returns>0</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_50_1_arctg_arcctg", "f(x) = arctg(x) + arcctg(x) – π/2")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_50_1_arctg_arcctg
+    {
+        public static double L00_50_1_arctg_arcctg(double angle)
+        {
+            double X;
+            X = Math.Atan(angle) + (Math.PI - Math.Atan(angle)) - Math.PI / 2;
+            return X;
+        }
+    }
 
+    /// <summary>
+    /// Возвращает область определения 50.	f(x) = arctg(x) + arcctg(x) – π/2
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_50_1_arctg_arcctg", "f(x) = arctg(x) + arcctg(x) – π/2")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_50_1_arctg_arcctg_in
+    {
+        public static string L00_50_1_arctg_arcctg_in()
+        {
+            string str = "(w, w)";
+            return str;
+        }
+    }
+
+    /// <summary>
+    /// Реализует 51. f(x) = arctg(x/(1-x*x)^1/2) – arcsin(x) 
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <returns>0</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_51_1_arctg_arcsin", "f(x) = arctg(x/(1-x*x)^1/2) – arcsin(x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_51_1_arctg_arcsin
+    {
+        public static double L00_51_1_arctg_arcsin(double angle)
+        {
+            double X, arctgX;
+            arctgX = Math.Atan(angle / Math.Sqrt(1 - angle * angle));   
+            X = arctgX - Math.Asin(angle);
+            return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 51.	f(x) = arctg(x/(1-x*x)^1/2) – arcsin(x)
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_51_1_arctg_arcsin", "f(x) = arctg(x/(1-x*x)^1/2) – arcsin(x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_51_1_arctg_arcsin_in
+    {
+        public static string L00_51_1_arctg_arcsin_in()
+        {
+            string str = "(-1, 1)";
+            return str;
+        }
+    }
+
+    /// <summary>
+    /// Реализует 52. f(x) = arcsin(x) – arccos((1-x*x)^1/2) 
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <returns>0</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_52_1_arcsin_arccos", "f(x) = arcsin(x) – arccos((1-x*x)^1/2)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_52_1_arcsin_arccos
+    {
+        public static double L00_52_1_arcsin_arccos(double angle)
+        {
+            double X, arccosX;
+            arccosX = Math.Acos(Math.Sqrt(1 - angle * angle));
+            X = Math.Asin(angle) - arccosX;
+            return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 52.	f(x) = arcsin(x) – arccos((1-x*x)^1/2)
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_52_1_arcsin_arccos", "f(x) = arcsin(x) – arccos((1-x*x)^1/2)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_52_1_arcsin_arccos_in
+    {
+        public static string L00_52_1_arcsin_arccos_in()
+        {
+            string str = "(0, 1)";
+            return str;
+        }
+    }
+
+    /// <summary>
+    /// Реализует 53. f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x) 
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <returns>0</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_53_1_arcctg_arcsin", "f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_53_1_arcctg_arcsin
+    {
+        public static double L00_53_1_arcctg_arcsin(double angle)
+        {
+            double X, arcctgX;
+            arcctgX = Math.PI - Math.Atan(Math.Sqrt(1 - angle * angle) / angle);
+            X = arcctgX -Math.Asin(angle);
+            return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 53.	f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x)
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_53_1_arcctg_arcsin", "f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_53_1_arcctg_arcsin_in
+    {
+        public static string L00_53_1_arcctg_arcsin_in()
+        {
+            string str = "(0, 1)";
+            return str;
+        }
+    }
+
+    /// <summary>
+    /// Реализует 54. f(x) = arccos((1-x*x)^1/2) - arcctg(((1-x*x)^1/2)/x) 
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <returns>0</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_54_1_arccos_arcctg", "f(x) = arccos((1-x*x)^1/2) - arcctg(((1-x*x)^1/2)/x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_54_1_arccos_arcctg
+    {
+        public static double L00_54_1_arccos_arcctg(double angle)
+        {
+            double X, arccosX, arcctgX;
+            arccosX = Math.Acos(Math.Sqrt(1 - angle * angle));
+            arcctgX = Math.PI - Math.Atan(Math.Sqrt(1 - angle * angle) / angle);
+            X = arccosX - arcctgX;
+            return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 54.	f(x) = arccos((1-x*x)^1/2) - arcctg(((1-x*x)^1/2)/x) 
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_54_1_arccos_arcctg", "f(x) = arccos((1-x*x)^1/2) - arcctg(((1-x*x)^1/2)/x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_54_1_arccos_arcctg_in
+    {
+        public static string L00_54_1_arccos_arcctg_in()
+        {
+            string str = "(0, 1)";
+            return str;
+        }
+    }
+
+    /// <summary>
+    /// Реализует 55. f(x) = arccos(x) – arcctg(x/((1-x*x)^1/2))
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <returns>0</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_55_1_arccos_arcctg", "f(x) = arccos(x) – arcctg(x/((1-x*x)^1/2))")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_55_1_arccos_arcctg
+    {
+        public static double L00_55_1_arccos_arcctg(double angle)
+        {
+            double X, arcctgX;
+            arcctgX = Math.PI - Math.Atan(angle / Math.Sqrt(1 - angle * angle));
+            X = Math.Acos(angle) - arcctgX;
+            return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 55.	f(x) = arccos(x) – arcctg(x/((1-x*x)^1/2))
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_55_1_arccos_arcctg", "f(x) = arccos(x) – arcctg(x/((1-x*x)^1/2))")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_55_1_arccos_arcctg_in
+    {
+        public static string L00_55_1_arccos_arcctg_in()
+        {
+            string str = "(-1, 1)";
+            return str;
+        }
+    }
+
+    /// <summary>
+    /// Реализует 56. f(x) = arccos(x) – arctg(((1-x*x)^1/2)/x) 
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <returns>0</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_56_1_arccos_arctg", "f(x) = arccos(x) – arctg(((1-x*x)^1/2)/x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_56_1_arccos_arctg
+    {
+        public static double L00_56_1_arccos_arctg(double angle)
+        {
+            double X, arctgX;
+            arctgX = Math.Atan(Math.Sqrt(1 - angle * angle) / angle);
+            X = Math.Acos(angle) - arctgX;
+            return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 56.	f(x) = arccos(x) – arctg(((1-x*x)^1/2)/x)
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_56_1_arccos_arctg", "f(x) = arccos(x) – arctg(((1-x*x)^1/2)/x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_56_1_arccos_arctg_in
+    {
+        public static string L00_56_1_arccos_arctg_in()
+        {
+            string str = "(0, 1)";
+            return str;
+        }
+    }
+
+    /// <summary>
+    /// Реализует 57. f(x) = arctg(x) – arcsin(x/((1+x*x)^1/2)) 
+    /// </summary>
+    /// <param name="angle">Угол в радианах</param>
+    /// <returns>0</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_57_1_arctg_arcsin", "f(x) = arctg(x) – arcsin(x/((1+x*x)^1/2))")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_57_1_arctg_arcsin
+    {
+        public static double L00_57_1_arctg_arcsin(double angle)
+        {
+            double X, arcsinX;
+            arcsinX = Math.Asin(angle / Math.Sqrt(1 + angle * angle));
+            X = Math.Atan(angle) - arcsinX;
+            return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 57.	f(x) = arctg(x) – arcsin(x/((1+x*x)^1/2))
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_57_1_arctg_arcsin", "f(x) = arctg(x) – arcsin(x/((1+x*x)^1/2))")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_57_1_arctg_arcsin_in
+    {
+        public static string L00_57_1_arctg_arcsin_in()
+        {
+            string str = "(w, w)";
+            return str;
+        }
+    }
 }
 
