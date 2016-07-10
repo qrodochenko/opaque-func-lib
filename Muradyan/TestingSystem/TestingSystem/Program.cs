@@ -1,6 +1,4 @@
-﻿#define TEST_TAYLOR
-
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Scripting;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -10,17 +8,93 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 //main namespace
 namespace TestingSystem
 {
-    public delegate double TaylorFuncTestDelegate(double x, int N, TaylorTestingEntry tst);
-    public delegate double TaylorFuncDelegate(double x, int N);
-    public delegate double TaylorFuncParamDelegate(double x, double a, int N);
-    public delegate double MaxEpsilonDelegate(string FilePath, string FunctionName, int NumberOfIterations, int PointsNumber);
+    public enum MethodType
+    {
+        X, XY, XA, XYA, XAB, XYAB
+    }
 
-    
+    public enum TestingApproach
+    {
+        UNIVERSAL, TAYLOR
+    }
+
+    namespace ArgsTypesIdeal
+    {
+
+        public class ArgsOneArg
+        {
+            public double x;
+        }
+        public class ArgsTwoArg
+        {
+            public double x, y;
+        }
+        public class ArgsX : ArgsOneArg
+        {
+
+        }
+        public class ArgsXY : ArgsTwoArg
+        {
+
+        }
+        public class ArgsXA : ArgsOneArg
+        {
+            public double a;
+        }
+        public class ArgsXYA : ArgsTwoArg
+        {
+            public double a;
+        }
+        public class ArgsXAB : ArgsOneArg
+        {
+            public double a, b;
+        }
+        public class ArgsXYAB : ArgsTwoArg
+        {
+            public double a, b;
+        }
+    }
+
+    namespace ArgsTypesIterations
+    {
+
+        public class ArgsOneArg : ArgsTypesIdeal.ArgsOneArg
+        {
+            public int N;
+        }
+        public class ArgsTwoArg : ArgsTypesIdeal.ArgsTwoArg
+        {
+            public int N;
+        }
+        public class ArgsX : ArgsOneArg
+        {
+
+        }
+        public class ArgsXY : ArgsTwoArg
+        {
+
+        }
+        public class ArgsXA : ArgsOneArg
+        {
+            public double a;
+        }
+        public class ArgsXYA : ArgsTwoArg
+        {
+            public double a;
+        }
+        public class ArgsXAB : ArgsOneArg
+        {
+            public double a, b;
+        }
+        public class ArgsXYAB : ArgsTwoArg
+        {
+            public double a, b;
+        }
+    }
 
     // some utility functions
     class Utility
@@ -38,8 +112,7 @@ namespace TestingSystem
             array[ind2] = t;
         }
     }
-
-    // too much code here, should be reduced to methods
+    
     class MainClass
     {
         static string[] testingMethodsNames = new string[] { "Body", "Sin_1_in" };
@@ -49,10 +122,33 @@ namespace TestingSystem
             var path = "OpaqueFunctions.cs";
 
             var methSin = new MethodForTesting(path, "Sin_1");
-            Console.WriteLine(methSin.GetMaxEpsilonOneArg(20000, 20));
-
+            var methSinTaylor = new MethodForTestingTaylor(methSin);
+            Console.WriteLine(methSinTaylor.GetMaxEpsilonOneArg(10000, 30));
+            //Console.WriteLine(methSin.GetIterationsByEpsilon(0.01,10));
             Console.ReadKey();
         }
+    }
+
+    class ReportEntry
+    {
+        public string functionName;
+        public int NumberOfIterations;
+        public double[] arguments;
+        public double[] parameters;
+        public double val;
+        public double wantedVal;
+        public double absoluteEps;
+        public double relativeEps;
+
+        public override string ToString()
+        {
+            return string.Format("{0,10} {1,");
+        }
+    }
+
+    class Report : List<ReportEntry>
+    {
+
     }
 
     // important container for testing functions that use sums
@@ -168,9 +264,7 @@ namespace TestingSystem
         }
 
     }
-
-    // This class make tests of almost all functions.
-    // It searches all the information in the attributes
+    
     class TestingUtilities
     {
         public const string DefaultUsings = "using System;\n";
@@ -295,91 +389,7 @@ namespace TestingSystem
                 }
             }
 
-            return new Interval {left = corners[0], right = corners[1]};
-        }
-    }
-
-    public enum MethodType
-    {
-        X, XY, XA, XYA, XAB, XYAB
-    }
-
-    public enum TestingApproach
-    {
-        UNIVERSAL, TAYLOR
-    }
-
-    namespace ArgsTypesIdeal
-    {
-
-        public class ArgsOneArg
-        {
-            public double x;
-        }
-        public class ArgsTwoArg
-        {
-            public double x, y;
-        }
-        public class ArgsX : ArgsOneArg
-        {
-
-        }
-        public class ArgsXY :ArgsTwoArg
-        {
-            
-        }
-        public class ArgsXA : ArgsOneArg
-        {
-            public double a;
-        }
-        public class ArgsXYA : ArgsTwoArg
-        {
-            public double a;
-        }
-        public class ArgsXAB : ArgsOneArg
-        {
-            public double a, b;
-        }
-        public class ArgsXYAB : ArgsTwoArg
-        {
-            public double a, b;
-        }
-    }
-
-    namespace ArgsTypesIterations
-    {
-
-        public class ArgsOneArg : ArgsTypesIdeal.ArgsOneArg
-        {
-            public int N;
-        }
-        public class ArgsTwoArg : ArgsTypesIdeal.ArgsTwoArg
-        {
-            public int N;
-        }
-        public class ArgsX : ArgsOneArg
-        {
-
-        }
-        public class ArgsXY : ArgsTwoArg
-        {
-            
-        }
-        public class ArgsXA : ArgsOneArg
-        {
-            public double a;
-        }
-        public class ArgsXYA : ArgsTwoArg
-        {
-            public double a;
-        }
-        public class ArgsXAB : ArgsOneArg
-        {
-            public double a, b;
-        }
-        public class ArgsXYAB : ArgsTwoArg
-        {
-            public double a, b;
+            return new Interval { left = corners[0], right = corners[1] };
         }
     }
 
@@ -425,17 +435,22 @@ namespace TestingSystem
 
         }
 
-        public MethodForTesting(string FilePath, string MethodName)
+        public MethodForTesting(MethodForTesting m)
         {
-            var th = getMethodsFromFiles(new string[] { FilePath }, new string[] { MethodName })[0];
-            Code = th.Code;
-            EvalCode = th.EvalCode;
-            IdealMethod = th.IdealMethod;
-            this.FilePath = th.FilePath;
-            Interval = th.Interval;
-            Name = th.Name;
-            Node = th.Node;
-            Type = th.Type;
+            Code = m.Code;
+            EvalCode = m.EvalCode;
+            IdealMethod = m.IdealMethod;
+            FilePath = m.FilePath;
+            Interval = m.Interval;
+            Name = m.Name;
+            Node = m.Node;
+            Type = m.Type;
+        }
+
+        public MethodForTesting(string FilePath, string MethodName) : 
+            this(getMethodsFromFiles(new string[] { FilePath }, new string[] { MethodName })[0])
+        {
+            
         } 
 
         //public class ArgsT{
@@ -593,17 +608,8 @@ namespace TestingSystem
         public static new string Usings = "using System; \n using TestingSystem; \n";
         public static string TaylorAddonName = "_TaylorAddon";
 
-        MethodForTestingTaylor(MethodForTesting meth)
+        public MethodForTestingTaylor(MethodForTesting meth): base(meth)
         {
-            Code = meth.Code;
-            EvalCode = meth.EvalCode;
-            IdealMethod = meth.IdealMethod;
-            this.FilePath = meth.FilePath;
-            Interval = meth.Interval;
-            Name = meth.Name;
-            Node = meth.Node;
-            Type = meth.Type;
-
             TaylorEvalCode = Usings + 
                 getChangedNode(Node).GetText().ToString() + 
                 constructTaylorAddon(Name, Type) +
