@@ -472,6 +472,14 @@ namespace TestingSystem
             return eps;
         }
 
+        public int GetIterationsByEpsilon(
+            double epsilon,
+            int pointsNumber,
+            double[] functionParameters = null)
+        {
+            return TestingUtilities.GetIterationsByEpsilonApproach(this, epsilon, pointsNumber, TestingApproach.UNIVERSAL, functionParameters);
+        }
+
         internal static Tuple<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg> fillStructuresOneArg(MethodType Type, double[] parameters = null)
         {
             if (Type != MethodType.X && Type != MethodType.XA && Type != MethodType.XAB)
@@ -635,6 +643,14 @@ namespace TestingSystem
                 eps = Math.Max(eps, Math.Abs(val - idealVal));
             }
             return eps;
+        }
+
+        public int GetIterationsByEpsilonTaylor(
+            double epsilon,
+            int pointsNumber,
+            double[] functionParameters = null)
+        {
+            return TestingUtilities.GetIterationsByEpsilonApproach(this, epsilon, pointsNumber, TestingApproach.TAYLOR, functionParameters);
         }
 
         public static MethodDeclarationSyntax getChangedNode(MethodDeclarationSyntax method)
