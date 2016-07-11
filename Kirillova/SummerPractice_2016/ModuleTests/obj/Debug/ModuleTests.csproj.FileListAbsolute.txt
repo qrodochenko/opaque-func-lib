@@ -14,3 +14,12 @@ C:\Users\Михаил\Desktop\Кондратенко и Кириллова\Summe
 C:\Users\Михаил\Desktop\Кондратенко и Кириллова\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
 C:\Users\Михаил\Desktop\Кондратенко и Кириллова\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
 C:\Users\Михаил\Desktop\Кондратенко и Кириллова\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb
+D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.dll
+D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.pdb
+D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.dll
+D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\ModuleTests\bin\Debug\SummerPractice_2016.exe
+D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.pdb
+D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\ModuleTests\bin\Debug\SummerPractice_2016.pdb
+D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
+D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
+D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb

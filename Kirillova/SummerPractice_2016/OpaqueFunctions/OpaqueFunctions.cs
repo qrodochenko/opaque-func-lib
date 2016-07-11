@@ -138,7 +138,7 @@ namespace OpaqueFunctions
         }
     }
 
-
+/*
     //// <summary>
     /// Реализует нахождение логарифмической функции ln(1+x),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
@@ -160,7 +160,7 @@ namespace OpaqueFunctions
             for (int i = count; i > 2; i--)
             {
 
-                F = (i * i - 1) * (i * i - 1) * (i * i - 1) * x * x / ((2 * i + 1) * (2 * i * (i + 1) + (i * i + i + 1) * x));
+                F = (i * i - 1) * (i * i - 1) * (i * i - 1) * x * x / ((2 * i + 1) * (2 * i * (i + 1) + (i * i + i + 1) * x)-F);
             }
             F = x -  x * x / (2+4*x*x*x/(3*(4+3*x)-27*x*x*x/(5*(12+7*x)-F)));
             return F;
@@ -170,7 +170,7 @@ namespace OpaqueFunctions
         {
             return "(-1, w)";
         }
-    }
+    }*/
 
 
     /// <summary>
@@ -234,10 +234,10 @@ namespace OpaqueFunctions
             return F;
         }
 
-        /*public static string Math_7_3_ln_in()
+        public static string Math_7_3_ln_in()
         {
-            return "(0, w), (-a, w)";
-        }*/
+            return "(-a, w)";
+        }
     }
 
     /// <summary>

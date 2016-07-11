@@ -269,7 +269,7 @@ namespace OpaqueFunctions
     /// Реализует приведение аргумента функции тангенса к интервалу [-Pi/4; Pi/4],
     /// где аргумент функции задается в радианах <paramref name="x"/>.
     /// Результатом функции является структура C_build_func - содержащая новый аргумент функции,
-    /// который удолетворяет интервалу [-Pi/4; Pi/4],
+    /// который удолетворяет интервалу [0; Pi/4],
     /// содержит имя новой функции,
     /// содержит знак новой функции.
     /// </summary>
@@ -296,24 +296,36 @@ namespace OpaqueFunctions
             switch(q0)
             {
                 case 0:
-                    result.argument = sign*z * Math.PI / 4;
+                    result.argument = z * Math.PI / 4;
                     result.function = "tan";
-                    result.sign = "+";
+                    if (sign == 1)
+                        result.sign = "+";
+                    else
+                        result.sign = "-";
                     break;
                 case 1:
-                    result.argument = sign * z * Math.PI / 4;
+                    result.argument =  z * Math.PI / 4;
                     result.function = "ctg";
-                    result.sign = "+";
+                    if (sign == 1)
+                        result.sign = "+";
+                    else
+                        result.sign = "-";
                     break;
                 case 2:
-                    result.argument = sign * z * Math.PI / 4;
+                    result.argument =  z * Math.PI / 4;
                     result.function = "ctg";
-                    result.sign = "-";
+                    if (sign == 1)
+                        result.sign = "-";
+                    else
+                        result.sign = "+";
                     break;
                 case 3:
-                    result.argument = sign * z * Math.PI / 4;
+                    result.argument =  z * Math.PI / 4;
                     result.function = "tan";
-                    result.sign = "-";
+                    if (sign == 1)
+                        result.sign = "-";
+                    else
+                        result.sign = "+";
                     break;
                 default:
                     result.argument = x;
@@ -359,24 +371,36 @@ namespace OpaqueFunctions
             switch (q0)
             {
                 case 0:
-                    result.argument = sign * z * Math.PI / 4;
+                    result.argument =  z * Math.PI / 4;
                     result.function = "ctg";
-                    result.sign = "+";
+                    if (sign == 1)
+                        result.sign = "+";
+                    else
+                        result.sign = "-";
                     break;
                 case 1:
-                    result.argument = sign * z * Math.PI / 4;
+                    result.argument =  z * Math.PI / 4;
                     result.function = "tan";
-                    result.sign = "+";
+                    if (sign == 1)
+                        result.sign = "+";
+                    else
+                        result.sign = "-";
                     break;
                 case 2:
-                    result.argument = sign * z * Math.PI / 4;
+                    result.argument =  z * Math.PI / 4;
                     result.function = "tan";
-                    result.sign = "-";
+                    if (sign == 1)
+                        result.sign = "-";
+                    else
+                        result.sign = "+";
                     break;
                 case 3:
-                    result.argument = sign * z * Math.PI / 4;
+                    result.argument =  z * Math.PI / 4;
                     result.function = "ctg";
-                    result.sign = "-";
+                    if (sign == 1)
+                        result.sign = "-";
+                    else
+                        result.sign = "+";
                     break;
                 default:
                     result.argument = x;

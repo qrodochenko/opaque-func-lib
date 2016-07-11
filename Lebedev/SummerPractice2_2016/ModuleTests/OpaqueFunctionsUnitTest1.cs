@@ -13,9 +13,9 @@ namespace ModuleTests
             for (int i = -84; i < 87; i++)
             {
                 double x = i * 0.01;
-                double Eps = 0.0000000001;
+                double Eps = 1e-10;
                 double F = CMath_1_2.Math_1_2(x, 100);
-                double benchmark = Math.Pow(1.0 + x, (1.0 / 3.0));
+                double benchmark = Math.Pow(1 + x, (1.0 / 3.0));
                 double error = Math.Abs(F - benchmark);                
                 Assert.IsTrue((error < Eps), "Погрешность больше нужной!");                
             }
@@ -26,7 +26,7 @@ namespace ModuleTests
         public void test_Math_1_2_in()
         {
             string F = CMath_1_2_in.Math_1_2_in();
-            string s = "(-0.85, 0.87)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -53,7 +53,7 @@ namespace ModuleTests
         public void test_Math_2_2_in()
         {
             string F = CMath_2_2_in.Math_2_2_in();
-            string s = "(-0.87, 0.85)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -84,7 +84,7 @@ namespace ModuleTests
         public void test_Math_3_2_in()
         {
             string F = CMath_3_2_in.Math_3_2_in();
-            string s = "(-0.85, 0.87)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -111,7 +111,7 @@ namespace ModuleTests
         public void test_Math_4_2_in()
         {
             string F = CMath_4_2_in.Math_4_2_in();
-            string s = "(-0.87, 0.85)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -139,7 +139,7 @@ namespace ModuleTests
         public void test_Math_5_2_in()
         {
             string F = CMath_5_2_in.Math_5_2_in();
-            string s = "(-0.85, 0.87)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -155,7 +155,7 @@ namespace ModuleTests
             {
                 double x = i * 0.01;
                 double Eps = 0.0000000001;
-                double F = CMath_6_2.Math_6_2(x, 10000);
+                double F = CMath_6_2.Math_6_2(x, 100);
                 double benchmark = Math.Pow((1 - x), (1.0 / 4.0));
                 double error = Math.Abs(F - benchmark);
                 Assert.IsTrue((error < Eps), "Погрешность больше нужной!");                
@@ -166,7 +166,7 @@ namespace ModuleTests
         public void test_Math_6_2_in()
         {
             string F = CMath_6_2_in.Math_6_2_in();
-            string s = "(-0.87, 0.84)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -194,7 +194,7 @@ namespace ModuleTests
         public void test_Math_7_2_in()
         {
             string F = CMath_7_2_in.Math_7_2_in();
-            string s = "(-0.79, 0.81)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -221,7 +221,7 @@ namespace ModuleTests
         public void test_Math_8_2_in()
         {
             string F = CMath_8_2_in.Math_8_2_in();
-            string s = "(-0.81, 0.79)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -248,7 +248,7 @@ namespace ModuleTests
         public void test_Math_9_2_in()
         {
             string F = CMath_9_2_in.Math_9_2_in();
-            string s = "(-0.75, 0.77)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -275,7 +275,7 @@ namespace ModuleTests
         public void test_Math_10_2_in()
         {
             string F = CMath_10_2_in.Math_10_2_in();
-            string s = "(-0.77, 0.75)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -302,7 +302,7 @@ namespace ModuleTests
         public void test_Math_11_2_in()
         {
             string F = CMath_11_2_in.Math_11_2_in();
-            string s = "(-0.73, 0.74)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -329,7 +329,7 @@ namespace ModuleTests
         public void test_Math_12_2_in()
         {
             string F = CMath_12_2_in.Math_12_2_in();
-            string s = "(-0.74, 0.73)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -356,7 +356,7 @@ namespace ModuleTests
         public void test_Math_13_2_in()
         {
             string F = CMath_13_2_in.Math_13_2_in();
-            string s = "(-0.70, 0.71)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -383,7 +383,7 @@ namespace ModuleTests
         public void test_Math_14_2_in()
         {
             string F = CMath_14_2_in.Math_14_2_in();
-            string s = "(-0.71, 0.70)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -410,7 +410,7 @@ namespace ModuleTests
         public void test_Math_15_2_in()
         {
             string F = CMath_15_2_in.Math_15_2_in();
-            string s = "(-0.81, 0.83)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -437,7 +437,7 @@ namespace ModuleTests
         public void test_Math_16_2_in()
         {
             string F = CMath_16_2_in.Math_16_2_in();
-            string s = "(-0.83, 0.81)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -464,7 +464,7 @@ namespace ModuleTests
         public void test_Math_17_2_in()
         {
             string F = CMath_17_2_in.Math_17_2_in();
-            string s = "(-0.82, 0.84)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -491,7 +491,7 @@ namespace ModuleTests
         public void test_Math_18_2_in()
         {
             string F = CMath_18_2_in.Math_18_2_in();
-            string s = "(-0.84, 0.82)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -518,7 +518,7 @@ namespace ModuleTests
         public void test_Math_19_2_in()
         {
             string F = CMath_19_2_in.Math_19_2_in();
-            string s = "(-0.83, 0.84)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 
@@ -545,7 +545,7 @@ namespace ModuleTests
         public void test_Math_20_2_in()
         {
             string F = CMath_20_2_in.Math_20_2_in();
-            string s = "(-0.84, 0.83)";
+            string s = "(-1, 1)";
             Assert.IsTrue((F == s), "Интервалы не совпадают!");
         }
 

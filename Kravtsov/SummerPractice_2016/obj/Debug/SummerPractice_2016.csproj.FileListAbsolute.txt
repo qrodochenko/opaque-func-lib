@@ -12,11 +12,11 @@ D:\Kravtsov\opaque-func-lib\Kravtsov\SummerPractice_2016\bin\Debug\SummerPractic
 D:\Kravtsov\opaque-func-lib\Kravtsov\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
 D:\Kravtsov\opaque-func-lib\Kravtsov\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
 D:\Kravtsov\opaque-func-lib\Kravtsov\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
+E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
 E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
-E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
-E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
 E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe
 E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\bin\Debug\SummerPractice_2016.pdb
 E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
 E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
-E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
+E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
+E:\Summer Practice\opaque-func-lib\Kravtsov\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb

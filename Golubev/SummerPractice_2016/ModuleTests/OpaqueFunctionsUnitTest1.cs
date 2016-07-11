@@ -19,9 +19,9 @@ namespace ModuleTests
                 OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_sin_2.priv_sin_2(arg);
              
                 if (string.Compare(func.sign, "+") == 0)
-                     Assert.IsTrue(Math.Abs(Math.Sin(arg) - Math.Sin(func.argument)) < 0.000000001, "Значения функций не равны!");
+                     Assert.IsTrue(Math.Abs(Math.Sin(arg) - Math.Sin(func.argument)) < 0.00000001, "Значения функций не равны!");
                 else
-                     Assert.IsTrue(Math.Abs(Math.Sin(arg) + Math.Sin(func.argument)) < 0.000000001, "Значения функций не равны!");
+                     Assert.IsTrue(Math.Abs(Math.Sin(arg) + Math.Sin(func.argument)) < 0.00000001, "Значения функций не равны!");
                
                 Assert.IsTrue(Math.Abs(func.argument) <= Math.PI / 2, "Значение функции не попадает в интервал!");
             }
@@ -43,9 +43,9 @@ namespace ModuleTests
                 OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_cos_2.priv_cos_2(arg);
 
                 if (string.Compare(func.sign, "+") == 0)
-                    Assert.IsTrue(Math.Abs(Math.Cos(arg) - Math.Cos(func.argument)) < 0.000000001, "Значения функций не равны!");
+                    Assert.IsTrue(Math.Abs(Math.Cos(arg) - Math.Cos(func.argument)) < 0.00000001, "Значения функций не равны!");
                 else
-                    Assert.IsTrue(Math.Abs(Math.Cos(arg) + Math.Cos(func.argument)) < 0.000000001, "Значения функций не равны!");
+                    Assert.IsTrue(Math.Abs(Math.Cos(arg) + Math.Cos(func.argument)) < 0.00000001, "Значения функций не равны!");
 
                 Assert.IsTrue(Math.Abs(func.argument) <= Math.PI / 2, "Значение функции не попадает в интервал!");
             }
@@ -70,15 +70,15 @@ namespace ModuleTests
                 OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_sin_3.priv_sin_3(arg);
                 if (string.Compare(func.function, "sin") == 0)
                     if (string.Compare(func.sign, "+") == 0)
-                        Assert.IsTrue(Math.Abs(Math.Sin(arg) - Math.Sin(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(Math.Sin(arg) - Math.Sin(func.argument)) < 0.00000001, "Значения функций не равны!");
                     else
-                        Assert.IsTrue(Math.Abs(Math.Sin(arg) + Math.Sin(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(Math.Sin(arg) + Math.Sin(func.argument)) < 0.00000001, "Значения функций не равны!");
                 else
                     if (string.Compare(func.sign, "+") == 0)
-                        Assert.IsTrue(Math.Abs(Math.Sin(arg) - Math.Cos(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(Math.Sin(arg) - Math.Cos(func.argument)) < 0.00000001, "Значения функций не равны!");
                     else
-                        Assert.IsTrue(Math.Abs(Math.Sin(arg) + Math.Cos(func.argument)) < 0.000000001, "Значения функций не равны!");
-                Assert.IsTrue(Math.Abs(func.argument) <= Math.PI/4, "Значение функции не попадает в интервал!");
+                        Assert.IsTrue(Math.Abs(Math.Sin(arg) + Math.Cos(func.argument)) < 0.00000001, "Значения функций не равны!");
+                Assert.IsTrue(func.argument <= Math.PI/4, "Значение функции не попадает в интервал!");
             }
         
         }
@@ -98,15 +98,15 @@ namespace ModuleTests
                 OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_cos_3.priv_cos_3(arg);
                 if (string.Compare(func.function, "sin") == 0)
                     if (string.Compare(func.sign, "+") == 0)
-                        Assert.IsTrue(Math.Abs(Math.Cos(arg) - Math.Sin(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(Math.Cos(arg) - Math.Sin(func.argument)) < 0.00000001, "Значения функций не равны!");
                     else
-                        Assert.IsTrue(Math.Abs(Math.Cos(arg) + Math.Sin(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(Math.Cos(arg) + Math.Sin(func.argument)) < 0.00000001, "Значения функций не равны!");
                 else
                     if (string.Compare(func.sign, "+") == 0)
-                        Assert.IsTrue(Math.Abs(Math.Cos(arg) - Math.Cos(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(Math.Cos(arg) - Math.Cos(func.argument)) < 0.00000001, "Значения функций не равны!");
                     else
-                        Assert.IsTrue(Math.Abs(Math.Cos(arg) + Math.Cos(func.argument)) < 0.000000001, "Значения функций не равны!");
-                Assert.IsTrue(Math.Abs(func.argument) <= Math.PI / 4, "Значение функции не попадает в интервал!");
+                        Assert.IsTrue(Math.Abs(Math.Cos(arg) + Math.Cos(func.argument)) < 0.00000001, "Значения функций не равны!");
+                Assert.IsTrue(func.argument <= Math.PI / 4, "Значение функции не попадает в интервал!");
             }
 
         }
@@ -120,7 +120,7 @@ namespace ModuleTests
         public void OpaquePriv_Tan_6_Test()
         {
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 1000000; i++)
             {
                 Random x = new Random();
                 double arg = x.NextDouble() * 20000 - 10000;
@@ -128,15 +128,15 @@ namespace ModuleTests
 
                 if (string.Compare(func.function, "tan") == 0)
                     if (string.Compare(func.sign, "+") == 0)
-                        Assert.IsTrue(Math.Abs(Math.Tan(arg) - Math.Tan(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(Math.Tan(arg) - Math.Tan(func.argument)) < 0.0000001, "Значения функций не равны!");
                     else
-                        Assert.IsTrue(Math.Abs(Math.Tan(arg) + Math.Tan(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(Math.Tan(arg) + Math.Tan(func.argument)) < 0.0000001, "Значения функций не равны!");
                 else
                     if (string.Compare(func.sign, "+") == 0)
-                        Assert.IsTrue(Math.Abs(Math.Tan(arg) - 1/Math.Tan(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(Math.Tan(arg) - 1/Math.Tan(func.argument)) < 0.0000001, "Значения функций не равны!");
                 else
-                        Assert.IsTrue(Math.Abs(Math.Tan(arg) + 1/Math.Tan(func.argument)) < 0.000000001, "Значения функций не равны!");
-                Assert.IsTrue(Math.Abs(func.argument )<= Math.PI / 4, "Значение функции не попадает в интервал!");
+                        Assert.IsTrue(Math.Abs(Math.Tan(arg) + 1/Math.Tan(func.argument)) < 0.0000001, "Значения функций не равны!");
+                Assert.IsTrue(func.argument <= Math.PI / 4, "Значение функции не попадает в интервал!");
             }
 
         }
@@ -158,15 +158,15 @@ namespace ModuleTests
 
                 if (string.Compare(func.function, "tan") == 0)
                     if (string.Compare(func.sign, "+") == 0)
-                        Assert.IsTrue(Math.Abs(1/Math.Tan(arg) - Math.Tan(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(1/Math.Tan(arg) - Math.Tan(func.argument)) < 0.00000001, "Значения функций не равны!");
                     else
-                        Assert.IsTrue(Math.Abs(1/Math.Tan(arg) + Math.Tan(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(1/Math.Tan(arg) + Math.Tan(func.argument)) < 0.00000001, "Значения функций не равны!");
                 else
                     if (string.Compare(func.sign, "+") == 0)
-                        Assert.IsTrue(Math.Abs(1/Math.Tan(arg) - 1 / Math.Tan(func.argument)) < 0.000000001, "Значения функций не равны!");
+                        Assert.IsTrue(Math.Abs(1/Math.Tan(arg) - 1 / Math.Tan(func.argument)) < 0.00000001, "Значения функций не равны!");
                 else
-                        Assert.IsTrue(Math.Abs(1/Math.Tan(arg) + 1 / Math.Tan(func.argument)) < 0.000000001, "Значения функций не равны!");
-                Assert.IsTrue(Math.Abs(func.argument )<= Math.PI / 4, "Значение функции не попадает в интервал!");
+                        Assert.IsTrue(Math.Abs(1/Math.Tan(arg) + 1 / Math.Tan(func.argument)) < 0.00000001, "Значения функций не равны!");
+                Assert.IsTrue(func.argument <= Math.PI / 4, "Значение функции не попадает в интервал!");
             }
 
         }

@@ -57,11 +57,12 @@ namespace OpaqueFunctions
                 double F = (1.0 / 3.0) * x;
                 for (int i = 2; i <= N; i++)
                 {
-                    F *= ((3.0 * i - 4.0) * Math.Pow(3.0 * i, -1.0)) * x;
+                    F *= ((3.0 * i - 4) * Math.Pow(3.0 * i, -1)) * x;
                     F = -F;
                     S += F;
                 }
-            }
+            }            
+
             else            
             {
                 if (N == 0)
@@ -87,7 +88,7 @@ namespace OpaqueFunctions
     {
         public static string Math_1_2_in()
         {
-            string s = "(-0.85, 0.87)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -148,7 +149,7 @@ namespace OpaqueFunctions
     {
         public static string Math_2_2_in()
         {
-            string s = "(-0.87, 0.85)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -209,7 +210,7 @@ namespace OpaqueFunctions
     {
         public static string Math_3_2_in()
         {
-            string s = "(-0.85, 0.87)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -267,7 +268,7 @@ namespace OpaqueFunctions
     {
         public static string Math_4_2_in()
         {
-            string s = "(-0.87, 0.85)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -282,7 +283,7 @@ namespace OpaqueFunctions
     /// Тест показал, что ряд сходится только в точке {0}
     /// сколько задано параметром <paramref name="N"/>.
     /// Точность до десятого знака (0.0000000001).
-    /// (-0.85, 0.87)
+    /// (-0.85, 0.87) N = 100;
     /// </summary>
     /// <param name="x">Параметр X</param>
     /// <param name="N">Количество требуемых слогаемых (точность)</param>
@@ -329,7 +330,7 @@ namespace OpaqueFunctions
     {
         public static string Math_5_2_in()
         {
-            string s = "(-0.85, 0.87)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -388,7 +389,7 @@ namespace OpaqueFunctions
     {
         public static string Math_6_2_in()
         {
-            string s = "(-0.87, 0.84)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -434,7 +435,7 @@ namespace OpaqueFunctions
     {
         public static string Math_7_2_in()
         {
-            string s = "(-0.79, 0.81)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -477,7 +478,7 @@ namespace OpaqueFunctions
     {
         public static string Math_8_2_in()
         {
-            string s = "(-0.81, 0.79)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -520,7 +521,7 @@ namespace OpaqueFunctions
     {
         public static string Math_9_2_in()
         {
-            string s = "(-0.75, 0.77)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -563,7 +564,7 @@ namespace OpaqueFunctions
     {
         public static string Math_10_2_in()
         {
-            string s = "(-0.77, 0.75)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -606,7 +607,7 @@ namespace OpaqueFunctions
     {
         public static string Math_11_2_in()
         {
-            string s = "(-0.73, 0.74)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -649,7 +650,7 @@ namespace OpaqueFunctions
     {
         public static string Math_12_2_in()
         {
-            string s = "(-0.74, 0.73)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -692,7 +693,7 @@ namespace OpaqueFunctions
     {
         public static string Math_13_2_in()
         {
-            string s = "(-0.70, 0.71)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -734,7 +735,7 @@ namespace OpaqueFunctions
     {
         public static string Math_14_2_in()
         {
-            string s = "(-0.71, 0.70)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -793,7 +794,7 @@ namespace OpaqueFunctions
     {
         public static string Math_15_2_in()
         {
-            string s = "(-0.81, 0.83)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -851,7 +852,7 @@ namespace OpaqueFunctions
     {
         public static string Math_16_2_in()
         {
-            string s = "(-0.83, 0.81)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -905,7 +906,7 @@ namespace OpaqueFunctions
     {
         public static string Math_17_2_in()
         {
-            string s = "(-0.82, 0.84)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -958,7 +959,7 @@ namespace OpaqueFunctions
     {
         public static string Math_18_2_in()
         {
-            string s = "(-0.84, 0.82)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -1012,7 +1013,7 @@ namespace OpaqueFunctions
     {
         public static string Math_19_2_in()
         {
-            string s = "(-0.83, 0.84)";
+            string s = "(-1, 1)";
             return s;
 
         }
@@ -1067,7 +1068,7 @@ namespace OpaqueFunctions
     {
         public static string Math_20_2_in()
         {
-            string s = "(-0.84, 0.83)";
+            string s = "(-1, 1)";
             return s;
 
         }
