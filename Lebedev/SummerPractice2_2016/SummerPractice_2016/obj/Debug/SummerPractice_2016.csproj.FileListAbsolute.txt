@@ -30,6 +30,3 @@ F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_
 F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
 F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
 F:\YandexDisk\1.Учеба\Практика\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
-E:\Summer Practice\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
-E:\Summer Practice\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
-E:\Summer Practice\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
