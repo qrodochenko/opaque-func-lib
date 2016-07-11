@@ -38,20 +38,20 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("Sin_1", "Sin(x)")]
+    [FunctionName("Sin_1", "Sin(X)")]
     // [EquivalentIntConstant(1)]
     public static class CSin_1
     {
-        public static double Sin_1(double x, int N)
+        public static double Sin_1(double X, int N)
         {
             double s = 0.0;
-            double k = x;
+            double k = X;
             for (int i = 1; i <= N; ++i)
             {
                 s += k;
                 /// add k
 
-                k *= -x * x / (i << 1) / (i << 1 + 1);
+                k *= -X * X / (i << 1) / (i << 1 + 1);
             }
 
             return s;

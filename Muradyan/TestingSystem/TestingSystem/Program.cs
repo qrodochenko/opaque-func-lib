@@ -15,13 +15,12 @@ namespace TestingSystem
 {
     interface IOneArgMethod
     {
-        void SetInterval(Interval i);
-        Interval GetInterval();
+        Interval Interval { get; set; }
     }
     interface ITwoArgMethod
     {
-        void SetIntervals(Interval i1, Interval i2);
-        Tuple<Interval, Interval> GetIntervals();
+        Interval Interval1 { get; set; }
+        Interval Interval2 { get; set; }
     }
 
     public enum MethodType
@@ -125,19 +124,45 @@ namespace TestingSystem
         }
     }
     
+    public class OpaqueException : Exception
+    {
+        public OpaqueException():base("Argument is out of range"){
+            
+        }
+    }
+
     class MainClass
     {
         static string[] testingMethodsNames = new string[] { "Body", "Sin_1_in" };
 
         static void Main(string[] args)
         {
+            /*
             var path = "OpaqueFunctions.cs";
 
             var methSin = new MethodForTestingOneArg(path, "Sin_1");
             var methSinTaylor = new MethodForTestingTaylorOneArg(methSin);
-            methSinTaylor.GetTestingReport(100000, 300).SaveCSV("reportU.csv");
+            methSin.GetTestingReport(100000, 300).SaveCSV("reportU.csv");
+            methSinTaylor.GetTestingReport(1000, 300).SaveCSV("reportT.csv");
             //Console.WriteLine(methSin.GetIterationsByEpsilon(0.01,10));
             Console.ReadKey();
+            */
+
+            var sr = new StreamReader("../CSlist.txt");
+            var listOfFiles = new List<string>();
+            while (!sr.EndOfStream)
+            {
+                listOfFiles.Add(sr.ReadLine());
+            }
+            var listOfMethods = MethodForTesting.getMethodsFromFiles(listOfFiles.ToArray(), new string[0], true, true);
+
+            Console.WriteLine("Methods found total: {0}", listOfMethods.Count);
+            listOfMethods.ForEach(
+                (m) => 
+                {
+                    Console.WriteLine("{0} {1}", m.Name, m.Type);
+                    m.GetTestingReport(100, 50, new double[] { 2, 3 }).SaveCSV("Reports/"+m.Name+".txt");
+                });
         }
     }
 
@@ -431,12 +456,12 @@ namespace TestingSystem
         public static string generateArguments(MethodType Type, bool WithN = true, bool types = false, int HeapsNumber = 0)
         {
             Dictionary<MethodType, List<string>> dic = new Dictionary<MethodType, List<string>>();
-            dic[MethodType.X] = new List<string> { "x" };
-            dic[MethodType.XA] = new List<string> { "x", "a" };
-            dic[MethodType.XAB] = new List<string> { "x", "a", "b" };
-            dic[MethodType.XY] = new List<string> { "x", "y" };
-            dic[MethodType.XYA] = new List<string> { "x", "y", "a" };
-            dic[MethodType.XYAB] = new List<string> { "x", "y", "a", "b" };
+            dic[MethodType.X] = new List<string> { "X" };
+            dic[MethodType.XA] = new List<string> { "X", "A" };
+            dic[MethodType.XAB] = new List<string> { "X", "A", "B" };
+            dic[MethodType.XY] = new List<string> { "X", "Y" };
+            dic[MethodType.XYA] = new List<string> { "X", "Y", "A" };
+            dic[MethodType.XYAB] = new List<string> { "X", "Y", "A", "B" };
 
             var res = "(" + (types ? "double " : "") + dic[Type].Aggregate( (result, cur) => result + ", " + (types ? "double" : "") + " " + cur);
             if (WithN)
@@ -563,7 +588,7 @@ namespace TestingSystem
             var argStructIter = structures.Item2;
             argStructIter.N = N;
 
-            for (double x = startX; xIter-- > 0; x += sqSide)
+            for (double x = startX; xIter --> 0; x += sqSide)
             {
                 for (double y = startY; yIter-- > 0; y += sqSide)
                 {
@@ -689,6 +714,7 @@ namespace TestingSystem
         public MethodType Type;
         public string FilePath;
         public Script<double> Script;
+        public bool Correct;
 
         public MethodForTesting()
         {
@@ -704,14 +730,15 @@ namespace TestingSystem
             Name = m.Name;
             Node = m.Node;
             Type = m.Type;
+            Correct = m.Correct;
             if (m is IOneArgMethod)
             {
-                ((IOneArgMethod)this).SetInterval(((IOneArgMethod)m).GetInterval());
+                ((IOneArgMethod)this).Interval = ((IOneArgMethod)m).Interval;
             }
             else if (m is ITwoArgMethod)
             {
-                var intervs = ((ITwoArgMethod)m).GetIntervals();
-                ((ITwoArgMethod)this).SetIntervals(intervs.Item1, intervs.Item2);
+                ((ITwoArgMethod)this).Interval1 = ((ITwoArgMethod)m).Interval1;
+                ((ITwoArgMethod)this).Interval2 = ((ITwoArgMethod)m).Interval2;
             }
             else throw new Exception();
         }
@@ -810,24 +837,26 @@ namespace TestingSystem
             var argsSynt = meth.ParameterList.ChildNodes().OfType<ParameterSyntax>();
             var argsL = argsSynt.Select((elem) => elem.Identifier.ValueText.ToUpper());
             var args = argsL.ToArray();
+            
 
-            if (args.Length == 0) return MethodType.NOT_DETECTED;
+            if (argsSynt.Last().Type.GetText().ToString() != "int") return MethodType.NOT_DETECTED;
+            if (args.Length <2) return MethodType.NOT_DETECTED;
             if (args[0] == "X")
             {
-                if (args.Length == 1) return MethodType.X;
+                if (args.Length == 2) return MethodType.X;
                 if(args[1] == "Y")
                 {
-                    if (args.Length == 2) return MethodType.XY;
+                    if (args.Length == 3) return MethodType.XY;
                     if(args[2] == "A")
                     {
-                        if (args.Length == 3) return MethodType.XYA;
-                        if (args[3] == "B" && args.Length == 4) return MethodType.XYAB;
+                        if (args.Length == 4) return MethodType.XYA;
+                        if (args[3] == "B" && args.Length == 5) return MethodType.XYAB;
                     }
                 }
                 else if(args[1] == "A")
                 {
-                    if (args.Length == 2) return MethodType.XA;
-                    if (args[3] == "B" && args.Length == 3) return MethodType.XAB;
+                    if (args.Length == 3) return MethodType.XA;
+                    if (args[3] == "B" && args.Length == 4) return MethodType.XAB;
                 }
             }
             return MethodType.NOT_DETECTED;
@@ -858,20 +887,22 @@ namespace TestingSystem
 
                     var t = MethodTypes.ContainsKey(thisMethodName) ? MethodTypes[thisMethodName] :
                         (methodTypeDetection ? DetectType(meth): MethodType.X);
+                    if (t == MethodType.NOT_DETECTED) continue;
 
                     MethodForTesting m = null;
 
-                    if (isOneArg(t))
+                    if (!intervalsDic.ContainsKey(thisMethodName)) continue;
+                    var methIntervals = intervalsDic[thisMethodName];
+                    if (isOneArg(t) && methIntervals.Length == 1)
                     {
                         m = new MethodForTestingOneArg();
-                        ((MethodForTestingOneArg)m).Interval = intervalsDic[thisMethodName][0];
+                        ((MethodForTestingOneArg)m).Interval = methIntervals[0];
                     }
-                    else if (isTwoArg(t))
+                    else if (isTwoArg(t) && methIntervals.Length == 2)
                     {
                         m = new MethodForTestingTwoArg();
-                        var interv = intervalsDic[thisMethodName];
-                        ((MethodForTestingTwoArg)m).Interval1 = interv[0];
-                        ((MethodForTestingTwoArg)m).Interval2 = interv[0];
+                        ((MethodForTestingTwoArg)m).Interval1 = methIntervals[0];
+                        ((MethodForTestingTwoArg)m).Interval2 = methIntervals[1];
                     }
                     else throw new Exception();
 
@@ -880,8 +911,16 @@ namespace TestingSystem
                     m.Name = thisMethodName;
                     m.Node = meth;
                     m.FilePath = fname;
-                    
-                    m.IdealMethod = new IdealTestMethod(expressionsDic[m.Name], m.Type);
+                    m.Correct = true;
+
+                    try
+                    {
+                        m.IdealMethod = new IdealTestMethod(expressionsDic[m.Name], m.Type);
+                    }
+                    catch(Exception)
+                    {
+                        m.Correct = false;
+                    }
 
                     var EvalCode = Usings + m.Code + "\nreturn " + 
                         m.Name + TestingUtilities.generateArguments(m.Type, true, false, 0)+";\n";
@@ -892,7 +931,7 @@ namespace TestingSystem
                     opts = opts.AddImports("System.Math");
                     m.Script = CSharpScript.Create<double>(EvalCode, opts, m.GetArgsType());
                     m.Script.Compile();
-                    
+
 
                     reslist.Add(m);
                 }
@@ -904,17 +943,7 @@ namespace TestingSystem
 
     public class MethodForTestingOneArg : MethodForTesting, IOneArgMethod
     {
-        public Interval Interval;
-        
-        public void SetInterval(Interval i)
-        {
-            Interval = i;
-        }
-
-        public Interval GetInterval()
-        {
-            return Interval;
-        }
+        public Interval Interval { get; set; }
 
         public MethodForTestingOneArg(MethodForTestingOneArg meth) : base(meth)
         {
@@ -979,18 +1008,8 @@ namespace TestingSystem
 
     public class MethodForTestingTwoArg : MethodForTesting, ITwoArgMethod
     {
-        public Interval Interval1, Interval2;
-
-        public void SetIntervals(Interval i1, Interval i2)
-        {
-            Interval1 = i1;
-            Interval2 = i2;
-        }
-
-        public Tuple<Interval, Interval> GetIntervals()
-        {
-            return Tuple.Create(Interval1, Interval2);
-        }
+        public Interval Interval1 { get; set; }
+        public Interval Interval2 { get; set; }
 
         public MethodForTestingTwoArg(MethodForTestingTwoArg meth) : base(meth)
         {
@@ -1075,8 +1094,16 @@ namespace TestingSystem
             opts = opts.AddImports("System.Math");
             opts = opts.AddImports("TestingSystem.Heap");
 
-            ScriptTaylor = CSharpScript.Create<Tuple<double, double>>(TaylorEvalCode, opts, GetArgsType());
-            ScriptTaylor.Compile();
+            Correct = true;
+            try
+            {
+                ScriptTaylor = CSharpScript.Create<Tuple<double, double>>(TaylorEvalCode, opts, GetArgsType());
+                ScriptTaylor.Compile();
+            }
+            catch(Exception)
+            {
+                Correct = false;
+            }
         }
 
         public Tuple<double, double> EvaluateTaylor<ArgsT>(ArgsT args)
@@ -1183,17 +1210,7 @@ namespace TestingSystem
 
     public class MethodForTestingTaylorOneArg : MethodForTestingTaylor, IOneArgMethod
     {
-        Interval Interval;
-
-        public void SetInterval(Interval i)
-        {
-            Interval = i;
-        }
-
-        public Interval GetInterval()
-        {
-            return Interval;
-        }
+        public Interval Interval { get; set; }
 
         public MethodForTestingTaylorOneArg(MethodForTestingOneArg meth) : base(meth)
         {
@@ -1212,19 +1229,8 @@ namespace TestingSystem
 
     public class MethodForTestingTaylorTwoArg : MethodForTestingTaylor, ITwoArgMethod
     {
-        Interval Interval1;
-        Interval Interval2;
-
-        public void SetIntervals(Interval i1, Interval i2)
-        {
-            Interval1 = i1;
-            Interval2 = i2;
-        }
-        
-        public Tuple<Interval, Interval> GetIntervals()
-        {
-            return Tuple.Create(Interval1, Interval2);
-        }
+        public Interval Interval1 { get; set; }
+        public Interval Interval2 { get; set; }
 
         public MethodForTestingTaylorTwoArg(MethodForTestingTwoArg meth) : base(meth)
         {
