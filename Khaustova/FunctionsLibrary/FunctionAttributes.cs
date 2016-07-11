@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FunctionsLibrary
+namespace OpaqueFunctions
 {
     [System.AttributeUsage(System.AttributeTargets.Class)]
     public class FunctionAttributes : System.Attribute

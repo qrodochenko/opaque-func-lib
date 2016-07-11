@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using FunctionsLibrary;
-namespace UnitTest
+using OpaqueFunctions;
+namespace ModuleTests
 {
     [TestClass]
     public class Test_interval_ww_ww_1
@@ -13,7 +13,7 @@ namespace UnitTest
             int i = 1, p = 1; int k;
             double x, A, B, g_inv, g;
            
-            for (; i<=10; i++)
+            for (; i<=100000; i++)
             {
                 x = p*R.NextDouble();
                 p *= -1;
@@ -311,9 +311,9 @@ namespace UnitTest
             Assert.IsTrue((f == s), "false");
         }
     }
-//--------------------------------------------------------------------------
-//--------------------------------------------------------------------------
-//--------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
 
     [TestClass]
     public class Test_interval_finfin_finfin_7
@@ -325,18 +325,16 @@ namespace UnitTest
             Random R = new Random();
             int i = 1;
             double x, a, b, c, d, g_inv, g;
-            int p = 1, t = -1;
             for (; i <= 10; i++)
             {
 
-                a = R.NextDouble();
+                a = R.Next(1, 10) + R.NextDouble();
                 b = a + R.Next(2, 10) + R.NextDouble();
 
-                c = t * R.NextDouble();
+                c = R.Next(1, 10) + R.NextDouble();
                 d = c + R.Next(2, 10) + R.NextDouble(); ;
-                x = (d - c) / 2.0;
+                x = c + R.NextDouble();
 
-                p *= -1; t *= -1;
 
                 g_inv = Cinterval_finfin_finfin_7_inv.interval_finfin_finfin_7_inv(x, a, b, c, d);
                 g = Cinterval_finfin_finfin_7.interval_finfin_finfin_7(g_inv, a, b, c, d);
@@ -353,17 +351,14 @@ namespace UnitTest
             Random R = new Random();
             int i = 1;
             double x, a, b, c, d, g_inv, g;
-            int p = 1, t = -1;
             for (; i <= 10; i++)
             {
-                a = p * R.NextDouble();
+                a = R.Next(1, 10) + R.NextDouble(); ;
                 b = a + R.Next(2, 10) + R.NextDouble();
-                x = (b - a) / 2.0;
+                x = a + R.NextDouble();
 
-                c = t * R.NextDouble();
+                c = R.Next(1, 10) + R.NextDouble();
                 d = c + R.Next(2, 10) + R.NextDouble();
-
-                p *= -1; t *= -1;
 
                 g = Cinterval_finfin_finfin_7.interval_finfin_finfin_7(x, a, b, c, d);
                 g_inv = Cinterval_finfin_finfin_7_inv.interval_finfin_finfin_7_inv(g, a, b, c, d);
@@ -399,18 +394,16 @@ namespace UnitTest
             Random R = new Random();
             int i = 1;
             double x, a, b, c, d, g_inv, g;
-            int p = 1, t = -1;
             for (; i <= 10; i++)
             {
 
-                a = p * R.NextDouble();
+                a = R.Next(1, 10) + R.NextDouble();
                 b = a + R.Next(2, 10) + R.NextDouble();
 
-                c = t * R.NextDouble();
+                c = R.Next(1, 10) + R.NextDouble();
                 d = c + R.Next(2, 10) + R.NextDouble();
-                x = (d - c) / 2.0;
+                x = c + R.NextDouble();
 
-                p *= -1; t *= -1;
 
                 g_inv = Cinterval_finfin_finfin_8_inv.interval_finfin_finfin_8_inv(x, a, b, c, d);
                 g = Cinterval_finfin_finfin_8.interval_finfin_finfin_8(g_inv, a, b, c, d);
@@ -427,17 +420,14 @@ namespace UnitTest
             Random R = new Random();
             int i = 1;
             double x, a, b, c, d, g_inv, g;
-            int p = 1, t = -1;
             for (; i <= 10; i++)
             {
-                a = p * R.NextDouble();
+                a = R.Next(1, 10) + R.NextDouble();
                 b = a + R.Next(2, 10) + R.NextDouble();
-                x = (b - a) / 2.0;
+                x = a + R.NextDouble();
 
-                c = t * R.NextDouble();
+                c = R.Next(1, 10) + R.NextDouble();
                 d = c + R.Next(2, 10) + R.NextDouble();
-
-                p *= -1; t *= -1;
 
                 g = Cinterval_finfin_finfin_8.interval_finfin_finfin_8(x, a, b, c, d);
                 g_inv = Cinterval_finfin_finfin_8_inv.interval_finfin_finfin_8_inv(g, a, b, c, d);
@@ -503,7 +493,7 @@ namespace UnitTest
                 g_inv = Cinterval_finfin_finfin_9_inv.interval_finfin_finfin_9_inv(g);
                 Assert.IsTrue((Math.Abs(g_inv - x) < 0.000001), "false");
             }
-        }
+        } 
 
         [TestMethod]
         public void Test_interval_finfin_finfin_9_in()
