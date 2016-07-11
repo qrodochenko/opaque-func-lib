@@ -38,7 +38,7 @@
   <Class Name="TestingSystem.TestingUtilities" Collapsed="true">
     <Position X="16.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAgAEAAAABAAAAAAAgAAAAAIAAAAAABAAAAACAA=</HashCode>
+      <HashCode>AAAAAAgAAAAAADAAAAAAAgAAAAAAAAAAAABAAAAACAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -64,25 +64,28 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TestingSystem.MethodForTestingOneArg" Collapsed="true">
-    <Position X="0.5" Y="9.75" Width="1.5" />
+    <Position X="4.75" Y="9.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAQAAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAQAAAAACAAAAAIAAAAAAAAAABCAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="TestingSystem.MethodForTestingTwoArg" Collapsed="true">
-    <Position X="2.75" Y="9.75" Width="1.5" />
+    <Position X="7" Y="9.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAIAAAAgAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAQAAAAACAAAAAIAAAAAAAAAABCAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="TestingSystem.MethodForTestingTaylorOneArg" Collapsed="true">
-    <Position X="0.5" Y="11.25" Width="1.5" />
+    <Position X="8.25" Y="11.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>JACAAAAIAAAAAACAACAAAAAAAAAAAAwAAAAAAAAEACA=</HashCode>
+      <HashCode>AAAAAAAAAAACAAAAAIAAAAAAAAAABCAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="TestingSystem.TaylorTestingEntry" Collapsed="true">
     <Position X="14.75" Y="2.5" Width="1.5" />
@@ -127,7 +130,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="TestingSystem.ArgsTypesIdeal.ArgsXYA" Collapsed="true">
-    <Position X="12.25" Y="1.75" Width="1.5" />
+    <Position X="5.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
@@ -203,10 +206,25 @@
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="TestingSystem.MethodForTestingTaylor" Collapsed="true">
+    <Position X="9.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAACAACAAAAAAAAAAAAwAAAAAAAAEACA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.MethodForTestingTaylorTwoArg" Collapsed="true">
+    <Position X="10.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAIAAAAAAAAAABCAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Struct Name="TestingSystem.Interval" Collapsed="true">
     <Position X="14.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAABAAAAIAAAAAAAAAAAAgAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Struct>

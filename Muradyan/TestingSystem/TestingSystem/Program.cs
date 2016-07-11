@@ -26,14 +26,9 @@ namespace TestingSystem
 
     public enum MethodType
     {
-        X, XY, XA, XYA, XAB, XYAB
+        X, XY, XA, XYA, XAB, XYAB, NOT_DETECTED
     }
-
-    public enum TestingApproach
-    {
-        UNIVERSAL, TAYLOR
-    }
-
+    
     public enum EpsilonType
     {
         ABSOLUTE, RELATIVE
@@ -140,7 +135,7 @@ namespace TestingSystem
 
             var methSin = new MethodForTestingOneArg(path, "Sin_1");
             var methSinTaylor = new MethodForTestingTaylorOneArg(methSin);
-            methSin.GetTestingReport(100000, 300).SaveCSV("reportU.csv");
+            methSinTaylor.GetTestingReport(100000, 300).SaveCSV("reportU.csv");
             //Console.WriteLine(methSin.GetIterationsByEpsilon(0.01,10));
             Console.ReadKey();
         }
@@ -298,7 +293,7 @@ namespace TestingSystem
     }
 
     // important container for testing functions that use sums
-    class Heap
+    public class Heap
     {
         private int elnum = 0;
         private List<double> ar = new List<double>();
@@ -402,7 +397,7 @@ namespace TestingSystem
             elnum = a.Count();
         }
 
-        public void AddElem(double el)
+        public void AddElement(double el)
         {
             //Console.WriteLine(elnum);
             ar.Add(el);
@@ -433,7 +428,7 @@ namespace TestingSystem
         }
 
         // (arg1, arg2, .. , argn)
-        public static string generateArguments(MethodType Type, bool WithN = true, bool types = false, int TestingEntriesNumber = 0)
+        public static string generateArguments(MethodType Type, bool WithN = true, bool types = false, int HeapsNumber = 0)
         {
             Dictionary<MethodType, List<string>> dic = new Dictionary<MethodType, List<string>>();
             dic[MethodType.X] = new List<string> { "x" };
@@ -449,14 +444,14 @@ namespace TestingSystem
                 res += ", " + (types ? "int " : "") + "N";
             }
 
-            if (TestingEntriesNumber == 0) return res + ')';
+            if (HeapsNumber == 0) return res + ')';
 
-            string[] ar = new string[TestingEntriesNumber];
+            string[] ar = new string[HeapsNumber];
             for (int i = 0; i < ar.Length; ++i)
             {
                 ar[i] = "tst" + (i + 1);
             }
-            return res + ", " + ar.Aggregate((result, cur) => result + ", " + (types ? "TaylorTestingEntry" : "") + " " + cur) + ')';
+            return res + ", " + ar.Aggregate((result, cur) => result + ", " + (types ? "Heap" : "") + " " + cur) + ')';
         }
 
         public static string makeArg(double x)
@@ -502,6 +497,94 @@ namespace TestingSystem
             return cN;
         }
         
+        public static Report GetReportOneArg(
+            int N, 
+            int pointsNumber, 
+            double[] parameters, 
+            MethodType type,
+            string methodName,
+            Interval interval, 
+            Func<MethodType, double[], Tuple<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg>> generateStructures,
+            Action<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg, double>  putArg,
+            Func<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg, Tuple<double, double>> evalFunc)
+        {
+            Report rep = new Report();
+            double h = (interval.right - interval.left) / (pointsNumber + 1);
+
+            var structures = generateStructures(type, parameters);
+            var argStructIdeal = structures.Item1;
+            var argStructIter = structures.Item2;
+
+            argStructIter.N = N;
+
+            for (double arg = interval.left + h; pointsNumber-- > 0; arg += h)
+            {
+                putArg(argStructIdeal,argStructIter,arg);
+                var resTuple = evalFunc(argStructIdeal, argStructIter);
+                var val = resTuple.Item1;
+                var idealVal = resTuple.Item2;
+                rep.Add(new ReportEntry(
+                    evaluateEps: true,
+                    functionName: methodName,
+                    N: N,
+                    args: new double[] { arg },
+                    param: parameters,
+                    val: val,
+                    wantedVal: idealVal));
+            }
+            return rep;
+        }
+
+        public static Report GetReportTwoArg(
+            int N,
+            int pointsNumber,
+            double[] parameters,
+            MethodType type,
+            string methodName,
+            Interval interval1,
+            Interval interval2,
+            Func<MethodType, double[], Tuple<ArgsTypesIdeal.ArgsTwoArg, ArgsTypesIterations.ArgsTwoArg>> generateStructures,
+            Action<ArgsTypesIdeal.ArgsTwoArg, ArgsTypesIterations.ArgsTwoArg, double, double> putArgs,
+            Func<ArgsTypesIdeal.ArgsTwoArg, ArgsTypesIterations.ArgsTwoArg, Tuple<double, double>> evalFunc)
+        {
+            Report rep = new Report();
+            double xSide = interval1.Length();
+            double ySide = interval2.Length();
+            double area = xSide * ySide;
+            double sqArea = area / pointsNumber;
+            double sqSide = Math.Sqrt(sqArea);
+            int xIter = (int)(xSide / sqSide);
+            int yIter = (int)(ySide / sqSide);
+            var startX = interval1.left + sqSide / 2;
+            var startY = interval2.left + sqSide / 2;
+
+            var structures = generateStructures(type, parameters);
+            var argStructIdeal = structures.Item1;
+            var argStructIter = structures.Item2;
+            argStructIter.N = N;
+
+            for (double x = startX; xIter-- > 0; x += sqSide)
+            {
+                for (double y = startY; yIter-- > 0; y += sqSide)
+                {
+                    putArgs(argStructIdeal, argStructIter, x, y);
+                    var resTuple = evalFunc(argStructIdeal, argStructIter);
+                    var val = resTuple.Item1;
+                    var idealVal = resTuple.Item2;
+                    rep.Add(new ReportEntry(
+                        evaluateEps: true,
+                        functionName: methodName,
+                        N: N,
+                        args: new double[] { x, y },
+                        param: parameters,
+                        val: val,
+                        wantedVal: idealVal));
+                }
+            }
+            return rep;
+        }
+            
+
     }
 
     public struct Interval
@@ -722,10 +805,39 @@ namespace TestingSystem
             return t == MethodType.XY || t == MethodType.XYA || t == MethodType.XYAB;
         }
 
+        public static MethodType DetectType(MethodDeclarationSyntax meth)
+        {
+            var argsSynt = meth.ParameterList.ChildNodes().OfType<ParameterSyntax>();
+            var argsL = argsSynt.Select((elem) => elem.Identifier.ValueText.ToUpper());
+            var args = argsL.ToArray();
+
+            if (args.Length == 0) return MethodType.NOT_DETECTED;
+            if (args[0] == "X")
+            {
+                if (args.Length == 1) return MethodType.X;
+                if(args[1] == "Y")
+                {
+                    if (args.Length == 2) return MethodType.XY;
+                    if(args[2] == "A")
+                    {
+                        if (args.Length == 3) return MethodType.XYA;
+                        if (args[3] == "B" && args.Length == 4) return MethodType.XYAB;
+                    }
+                }
+                else if(args[1] == "A")
+                {
+                    if (args.Length == 2) return MethodType.XA;
+                    if (args[3] == "B" && args.Length == 3) return MethodType.XAB;
+                }
+            }
+            return MethodType.NOT_DETECTED;
+        }
+
         public static List<MethodForTesting> getMethodsFromFiles(
             string[] FileNames,
             string[] MethodNames,
             bool exclude = false,
+            bool methodTypeDetection = false,
             Dictionary<string, MethodType> MethodTypes = null )
         {
             MethodTypes = MethodTypes ?? new Dictionary<string, MethodType>();
@@ -744,7 +856,8 @@ namespace TestingSystem
                     string thisMethodName = meth.Identifier.Text;
                     if (!(MethodNames.Contains(thisMethodName) ^ exclude)) continue;
 
-                    var t = MethodTypes.ContainsKey(thisMethodName) ? MethodTypes[thisMethodName] : MethodType.X;
+                    var t = MethodTypes.ContainsKey(thisMethodName) ? MethodTypes[thisMethodName] :
+                        (methodTypeDetection ? DetectType(meth): MethodType.X);
 
                     MethodForTesting m = null;
 
@@ -820,30 +933,11 @@ namespace TestingSystem
 
         public override Report GetTestingReport(int N, int PointsNumber, double[] parameters = null)
         {
-            Report rep = new Report();
-            double h = (Interval.right - Interval.left) / (PointsNumber + 1);
-
-            var structures = fillStructures(Type, parameters);
-            var argStructIdeal = structures.Item1;
-            var argStructIter = structures.Item2;
-
-            argStructIter.N = N;
-
-            for (double arg = Interval.left + h; PointsNumber-- > 0; arg += h)
-            {
-                argStructIter.x = argStructIdeal.x = arg;
-                var val = Evaluate(argStructIter);
-                var idealVal = IdealMethod.Evaluate(argStructIdeal);
-                rep.Add(new ReportEntry(
-                    evaluateEps: true, 
-                    functionName: Name, 
-                    N: N, 
-                    args: new double[] { arg }, 
-                    param:parameters,
-                    val: val, 
-                    wantedVal: idealVal));
-            }
-            return rep;
+            return TestingUtilities.GetReportOneArg(
+                N, PointsNumber, parameters, Type, Name, Interval,
+                fillStructures,
+                (ideal, iter, x) => ideal.x = iter.x = x,
+                (ideal, iter) => Tuple.Create(Evaluate(iter), IdealMethod.Evaluate(ideal)));
         }
 
         internal static Tuple<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg> fillStructures(MethodType Type, double[] parameters = null)
@@ -916,41 +1010,10 @@ namespace TestingSystem
 
         public override Report GetTestingReport(int N, int PointsNumber, double[] parameters = null)
         {
-            Report rep = new Report();
-            double xSide = Interval1.Length();
-            double ySide = Interval2.Length();
-            double area = xSide * ySide;
-            double sqArea = area / PointsNumber;
-            double sqSide = Math.Sqrt(sqArea);
-            int xIter = (int)(xSide / sqSide);
-            int yIter = (int)(ySide / sqSide);
-            var startX = Interval1.left + sqSide / 2;
-            var startY = Interval2.left + sqSide / 2;
-            
-            var structures = fillStructures(Type, parameters);
-            var argStructIdeal = structures.Item1;
-            var argStructIter = structures.Item2;
-            argStructIter.N = N;
-
-            for(double x = startX; xIter --> 0; x += sqSide)
-            {
-                argStructIter.x = argStructIdeal.x = x;
-                for(double y = startY; yIter --> 0; y+= sqSide)
-                {
-                    argStructIter.y = argStructIdeal.y = y;
-                    var val = Evaluate(argStructIter);
-                    var idealVal = IdealMethod.Evaluate(argStructIdeal);
-                    rep.Add(new ReportEntry(
-                        evaluateEps: true, 
-                        functionName: Name, 
-                        N: N, 
-                        args: new double[] { x, y }, 
-                        param: parameters,
-                        val: val, 
-                        wantedVal: idealVal));
-                }
-            }
-            return rep;
+            return TestingUtilities.GetReportTwoArg(N, PointsNumber, parameters, Type, Name, Interval1, Interval2,
+                fillStructures,
+                (ideal, iter, x, y) => { ideal.x = iter.x = x; ideal.y = iter.y = y; },
+                (ideal, iter) => Tuple.Create(Evaluate(iter), IdealMethod.Evaluate(ideal)));
         }
 
         internal static Tuple<ArgsTypesIdeal.ArgsTwoArg, ArgsTypesIterations.ArgsTwoArg> fillStructures(MethodType Type, double[] parameters = null)
@@ -995,7 +1058,7 @@ namespace TestingSystem
         //public string TaylorEvalCode;
         public static new string Usings = "using System; \n using TestingSystem; \n";
         public static string TaylorAddonName = "_TaylorAddon";
-        public Script<Tuple<double, TaylorTestingEntry>> ScriptTaylor;
+        public Script<Tuple<double, double>> ScriptTaylor;
 
         public MethodForTestingTaylor(MethodForTesting meth): base(meth)
         {
@@ -1006,20 +1069,19 @@ namespace TestingSystem
 
             var opts = ScriptOptions.Default;
             var mscorlib = typeof(object).Assembly;
-            var testingEntry = typeof(TaylorTestingEntry).Assembly;
+            var testingEntry = typeof(Heap).Assembly;
             opts = opts.AddReferences(mscorlib, testingEntry);
             opts = opts.AddImports("System");
             opts = opts.AddImports("System.Math");
-            opts = opts.AddImports("TestingSystem.TaylorTestingEntry");
+            opts = opts.AddImports("TestingSystem.Heap");
 
-            ScriptTaylor = CSharpScript.Create<Tuple<double, TaylorTestingEntry>>(TaylorEvalCode, opts, GetArgsType());
+            ScriptTaylor = CSharpScript.Create<Tuple<double, double>>(TaylorEvalCode, opts, GetArgsType());
             ScriptTaylor.Compile();
         }
 
         public Tuple<double, double> EvaluateTaylor<ArgsT>(ArgsT args)
         {
-            var cort = ScriptTaylor.RunAsync(args).Result.ReturnValue;
-            return Tuple.Create(cort.Item1, cort.Item2.GetSumAndClear());
+            return ScriptTaylor.RunAsync(args).Result.ReturnValue;
         }
         
         public int GetIterationsByEpsilonTaylor(
@@ -1039,7 +1101,7 @@ namespace TestingSystem
             //Console.WriteLine(parlist.GetType()+ " " + parlist.GetText()+ " " + parlist.ChildTokens().Count());
             var newparlist = parlist.AddParameters(SyntaxFactory.Parameter(
                                                                     SyntaxFactory   .Identifier(TestEntryArgName))
-                                                                                    .WithType(SyntaxFactory.ParseTypeName("TaylorTestingEntry ")));
+                                                                                    .WithType(SyntaxFactory.ParseTypeName("Heap ")));
             //Console.WriteLine(newparlist.GetText());
             var newmethod = method.ReplaceNode(parlist, newparlist);
 
@@ -1110,10 +1172,10 @@ namespace TestingSystem
 
         public static string constructTaylorAddon(string funName, MethodType Type)
         {
-            return @"Tuple<double, TaylorTestingEntry> " + TaylorAddonName + @" " + TestingUtilities.generateArguments(Type, true, true, 0) + @"{
-                        TaylorTestingEntry tst1 = new TaylorTestingEntry();
+            return @"Tuple<double, double> " + TaylorAddonName + @" " + TestingUtilities.generateArguments(Type, true, true, 0) + @"{
+                        Heap tst1 = new Heap();
                         var v = " + funName + @" " + TestingUtilities.generateArguments(Type, true, false, 1) + @";
-                        return Tuple.Create(v, tst1);
+                        return Tuple.Create(v, tst1.Sum());
                     }";
         }
 
@@ -1140,30 +1202,11 @@ namespace TestingSystem
 
         public override Report GetTestingReport(int N, int PointsNumber, double[] parameters = null)
         {
-            var rep = new Report();
-            double h = (Interval.right - Interval.left) / (PointsNumber + 1);
-
-            var structures = MethodForTestingOneArg.fillStructures(Type, parameters);
-            var argStructIter = structures.Item2;
-
-            argStructIter.N = N;
-
-            for (double arg = Interval.left + h; PointsNumber-- > 0; arg += h)
-            {
-                argStructIter.x = arg;
-                var taylorTuple = EvaluateTaylor(argStructIter);
-                var val = taylorTuple.Item1;
-                var idealVal = taylorTuple.Item2;
-                rep.Add(new ReportEntry(
-                    evaluateEps: true,
-                    functionName: Name, 
-                    N: N, 
-                    args: new double[] { arg }, 
-                    param:parameters,
-                    val: val, 
-                    wantedVal: idealVal));
-            }
-            return rep;
+            return TestingUtilities.GetReportOneArg(
+                N, PointsNumber, parameters, Type, Name, Interval,
+                MethodForTestingOneArg.fillStructures,
+                (ideal, iter, x) => iter.x = x,
+                (ideal, iter) => EvaluateTaylor(iter));
         }
     }
 
@@ -1191,73 +1234,11 @@ namespace TestingSystem
 
         public override Report GetTestingReport(int N, int PointsNumber, double[] parameters = null)
         {
-            Report rep = new Report();
-            double xSide = Interval1.Length();
-            double ySide = Interval2.Length();
-            double area = xSide * ySide;
-            double sqArea = area / PointsNumber;
-            double sqSide = Math.Sqrt(sqArea);
-            int xIter = (int)(xSide / sqSide);
-            int yIter = (int)(ySide / sqSide);
-            var startX = Interval1.left + sqSide / 2;
-            var startY = Interval2.left + sqSide / 2;
-
-            var structures = MethodForTestingTwoArg.fillStructures(Type, parameters);
-            var argStructIter = structures.Item2;
-            argStructIter.N = N;
-
-            for (double x = startX; xIter-- > 0; x += sqSide)
-            {
-                argStructIter.x = x;
-                for (double y = startY; yIter-- > 0; y += sqSide)
-                {
-                    argStructIter.y = y;
-                    var taylorTuple = EvaluateTaylor(argStructIter);
-                    var val = taylorTuple.Item1;
-                    var idealVal = taylorTuple.Item2;
-                    rep.Add(new ReportEntry(
-                        evaluateEps: true,
-                        functionName: Name,
-                        N: N,
-                        args: new double[] { x, y },
-                        param: parameters,
-                        val: val,
-                        wantedVal: idealVal));
-                }
-            }
-            return rep;
+            return TestingUtilities.GetReportTwoArg(N, PointsNumber, parameters, Type, Name, Interval1, Interval2,
+                MethodForTestingTwoArg.fillStructures,
+                (ideal, iter, x, y) => {iter.x = x; iter.y = y; },
+                (ideal, iter) => EvaluateTaylor(iter));
         }
-    }
-
-    // Testing different functions that use simple sums
-    public class TaylorTestingEntry
-    {
-        private Heap h = new Heap();
-        //private double eps;
-
-        public void AddElement(double el)
-        {
-            h.AddElem(el);
-        }
-
-        public double GetSumAndClear()
-        {
-            var t = h.Sum();
-            h.Clear();
-            return t;
-        }
-
-        public string MatchResult(double res, double eps)
-        {
-            double sum = h.Sum();
-            double current_eps = Math.Abs(res - sum);
-            h.Clear();
-            if (current_eps <= eps)
-                return "OK";
-            else return "Error, mistake is " + current_eps;
-        }
-        
-    }
-        
+    }   
 }
 

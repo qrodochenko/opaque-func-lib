@@ -46,18 +46,12 @@ namespace OpaqueFunctions
         {
             double s = 0.0;
             double k = x;
-            x *= x;
-            double t;
-            int sgn = 1;
-            for (int i = 1; i < N; ++i)
+            for (int i = 1; i <= N; ++i)
             {
                 s += k;
                 /// add k
-                k *= x;
-                sgn = -sgn;
-                k *= sgn;
-                t = i << 1;
-                k /= t * (t + 1);
+
+                k *= -x * x / (i << 1) / (i << 1 + 1);
             }
 
             return s;
