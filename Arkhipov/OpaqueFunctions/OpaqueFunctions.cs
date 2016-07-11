@@ -27,27 +27,22 @@ namespace OpaqueFunctions
         }
     }
 
-
     /// <summary>
     /// Реализует 86.​ f(x) = th(2x) – (2*th(x))/( 1 + th(x)*th(x))
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_86_2_th", "f(x) = th(2x) – (2*th(x))/( 1 + th(x)*th(x))")]
+    [FunctionName("L00_86_1_th", "f(x) = th(2x) – (2*th(x))/( 1 + th(x)*th(x))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_86_2_th
+    public static class CL00_86_1_th
     {
-        public static double L00_86_2_th(double angle, int count)
+        public static double L00_86_1_th(double angle)
         {
-            double X = 1, thX, th2X;
-            for (int i = 0; i < count; i++)
-            {
-                thX = Math.Tanh(angle);
-                th2X = Math.Tanh(2 * angle);
-                X = th2X - (2 * thX) / (1 + thX * thX);
-            }
+            double X, thX, th2X;
+            thX = Math.Tanh(angle);
+            th2X = Math.Tanh(2 * angle);
+            X = th2X - (2 * thX) / (1 + thX * thX);
             return X;
         }
     }
@@ -57,11 +52,11 @@ namespace OpaqueFunctions
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_86_2_th_in", "f(x) = th(2x) – (2*th(x))/( 1 + th(x)*th(x))")]
+    [FunctionName("L00_86_1_th_in", "f(x) = th(2x) – (2*th(x))/( 1 + th(x)*th(x))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_86_2_th_in
+    public static class CL00_86_1_th_in
     {
-        public static string L00_86_2_th_in()
+        public static string L00_86_1_th_in()
         {
             string str = "(w, w)";
             return str;
@@ -69,28 +64,25 @@ namespace OpaqueFunctions
     }
 
     /// <summary>
-    /// Реализует 87.​ f(x,y) = sh(x) + sh(y) – 2*sh((x+y)/2)*ch((x-y)/2)
+    /// Реализует 87.​ f(x,y) = sh(x) + sh(y) – 2 * sh((x+y)/2) * ch((x-y)/2)
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_87_3_sh", "f(x,y) = sh(x) + sh(y) – 2*sh((x+y)/2)*ch((x-y)/2)")]
+    [FunctionName("L00_87_2_sh_ch", "f(x,y) = sh(x) + sh(y) – 2*sh((x+y)/2)*ch((x-y)/2)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_87_3_sh
+    public static class CL00_87_2_sh_ch
     {
-        public static double L00_87_3_sh(double angle, double angle2, int count)
+        public static double L00_87_2_sh_ch(double angle, double angle2)
         {
-            double X = 1, shX, shY, shXpY, chXmY;
-            for (int i = 0; i < count; i++)
-            {
-                shX = Math.Sinh(angle);
-                shY = Math.Sinh(angle2);
-                shXpY = Math.Sinh((angle + angle2) / 2);
-                chXmY = Math.Cosh((angle - angle2) / 2);
+            double X, shX, shY, shXpY, chXmY;
+            shX = Math.Sinh(angle);
+            shY = Math.Sinh(angle2);
+            shXpY = Math.Sinh((angle + angle2) / 2);
+            chXmY = Math.Cosh((angle - angle2) / 2);
 
-                X *= shX + shY - 2 * shXpY * chXmY;
-            }
+            X = shX + shY - 2 * shXpY * chXmY;
             return X;
         }
     }
@@ -99,13 +91,13 @@ namespace OpaqueFunctions
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_87_3_sh_ch_in", "f(x,y) = sh(x) + sh(y) – 2*sh((x+y)/2)*ch((x-y)/2)")]
+    [FunctionName("L00_87_2_sh_ch_in", "f(x,y) = sh(x) + sh(y) – 2*sh((x+y)/2)*ch((x-y)/2)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_87_3_sh_ch_in
+    public static class CL00_87_2_sh_ch_in
     {
-        public static string L00_87_3_sh_ch_in()
+        public static string L00_87_2_sh_ch_in()
         {
-            string str = "(w, w)";
+            string str = "(w, w) (w, w)";
             return str;
         }
     }
@@ -113,26 +105,23 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует 88.​ f(x,y) = sh(x) - sh(y) – 2*sh((x-y)/2)*ch((x+y)/2)
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_88_3_sh_ch", "f(x,y) = sh(x) - sh(y) – 2*sh((x-y)/2)*ch((x+y)/2)")]
+    [FunctionName("L00_88_2_sh_ch", "f(x,y) = sh(x) - sh(y) – 2*sh((x-y)/2)*ch((x+y)/2)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_88_3_sh_ch
+    public static class CL00_88_2_sh_ch
     {
-        public static double L00_88_3_sh_ch(double angle, double angle2, int count)
+        public static double L00_88_2_sh_ch(double angle, double angle2)
         {
-            double X = 1, shX, shY, shXmY, chXpY;
-            for (int i = 0; i < count; i++)
-            {
-                shX = Math.Sinh(angle);
-                shY = Math.Sinh(angle2);
-                shXmY = Math.Sinh((angle - angle2) / 2);
-                chXpY = Math.Cosh((angle + angle2) / 2);
+            double X, shX, shY, shXmY, chXpY;
+            shX = Math.Sinh(angle);
+            shY = Math.Sinh(angle2);
+            shXmY = Math.Sinh((angle - angle2) / 2);
+            chXpY = Math.Cosh((angle + angle2) / 2);
 
-                X *= shX + shY - 2 * shXmY * chXpY;
-            }
+            X = shX - shY - 2 * shXmY * chXpY;
             return X;
         }
     }
@@ -142,11 +131,11 @@ namespace OpaqueFunctions
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_88_3_sh_ch_in", "f(x,y) = sh(x) - sh(y) – 2*sh((x-y)/2)*ch((x+y)/2)")]
+    [FunctionName("L00_88_2_sh_ch_in", "f(x,y) = sh(x) - sh(y) – 2*sh((x-y)/2)*ch((x+y)/2)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_88_3_sh_ch_in
+    public static class CL00_88_2_sh_ch_in
     {
-        public static string L00_88_3_sh_ch_in()
+        public static string L00_88_2_sh_ch_in()
         {
             string str = "(w, w)";
             return str;
@@ -156,26 +145,23 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует 89.​ f(x,y) = ch(x) + ch(y) – 2*ch((x+y)/2)*ch((x-y)/2)
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_89_3_ch", "f(x,y) = ch(x) + ch(y) – 2*ch((x+y)/2)*ch((x-y)/2)")]
+    [FunctionName("L00_89_2_ch", "f(x,y) = ch(x) + ch(y) – 2*ch((x+y)/2)*ch((x-y)/2)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_89_3_ch
+    public static class CL00_89_2_ch
     {
-        public static double L00_89_3_ch(double angle, double angle2, int count)
+        public static double L00_89_2_ch(double angle, double angle2)
         {
-            double X = 1, chX, chY, chXpY, chXmY;
-            for (int i = 0; i < count; i++)
-            {
-                chX = Math.Sinh(angle);
-                chY = Math.Sinh(angle2);
-                chXpY = Math.Cosh((angle + angle2) / 2);
-                chXmY = Math.Cosh((angle - angle2) / 2);
+            double X, chX, chY, chXpY, chXmY;
+            chX = Math.Cosh(angle);
+            chY = Math.Cosh(angle2);
+            chXpY = Math.Cosh((angle + angle2) / 2);
+            chXmY = Math.Cosh((angle - angle2) / 2);
 
-                X *= chX + chY - 2 * chXpY * chXmY;
-            }
+            X = chX + chY - 2 * chXpY * chXmY;
             return X;
         }
     }
@@ -185,11 +171,11 @@ namespace OpaqueFunctions
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_89_3_ch_in", "f(x,y) = ch(x) + ch(y) – 2*ch((x+y)/2)*ch((x-y)/2)")]
+    [FunctionName("L00_89_2_ch_in", "f(x,y) = ch(x) + ch(y) – 2*ch((x+y)/2)*ch((x-y)/2)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_89_3_ch_in
+    public static class CL00_89_2_ch_in
     {
-        public static string L00_89_3_ch_in()
+        public static string L00_89_2_ch_in()
         {
             string str = "(w, w)";
             return str;
@@ -199,26 +185,23 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует 90.​ f(x,y) = ch(x) - ch(y) – 2*sh((x+y)/2)*sh((x-y)/2)
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_90_3_ch", "f(x,y) = ch(x) - ch(y) – 2*sh((x+y)/2)*sh((x-y)/2)")]
+    [FunctionName("L00_90_2_ch_sh", "f(x,y) = ch(x) - ch(y) – 2*sh((x+y)/2)*sh((x-y)/2)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_90_3_ch
+    public static class CL00_90_2_ch_sh
     {
-        public static double L00_90_3_ch(double angle, double angle2, int count)
+        public static double L00_90_2_ch_sh(double angle, double angle2)
         {
-            double X = 1, chX, chY, shXpY, shXmY;
-            for (int i = 0; i < count; i++)
-            {
-                chX = Math.Cosh(angle);
-                chY = Math.Cosh(angle2);
-                shXpY = Math.Sinh((angle + angle2) / 2);
-                shXmY = Math.Sinh((angle - angle2) / 2);
+            double X, chX, chY, shXpY, shXmY;
+            chX = Math.Cosh(angle);
+            chY = Math.Cosh(angle2);
+            shXpY = Math.Sinh((angle + angle2) / 2);
+            shXmY = Math.Sinh((angle - angle2) / 2);
 
-                X *= chX + chY - 2 * shXpY * shXmY;
-            }
+            X = chX - chY - 2 * shXpY * shXmY;
             return X;
         }
     }
@@ -228,11 +211,11 @@ namespace OpaqueFunctions
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_90_3_ch_sh_in", "f(x,y) = ch(x) - ch(y) – 2*sh((x+y)/2)*sh((x-y)/2)")]
+    [FunctionName("L00_90_2_ch_sh_in", "f(x,y) = ch(x) - ch(y) – 2*sh((x+y)/2)*sh((x-y)/2)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_90_3_ch_sh_in
+    public static class CL00_90_2_ch_sh_in
     {
-        public static string L00_90_3_ch_sh_in()
+        public static string L00_90_2_ch_sh_in()
         {
             string str = "(w, w)";
             return str;
@@ -242,27 +225,24 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует 91.​ f(x,y) = th(x) + th(y) – sh(x+y)/(ch(x)*ch(y))
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_91_3_th_sh_ch", "f(x,y) = th(x) + th(y) – sh(x+y)/(ch(x)*ch(y))")]
+    [FunctionName("L00_91_2_th_sh_ch", "f(x,y) = th(x) + th(y) – sh(x+y)/(ch(x)*ch(y))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_91_3_th_sh_ch
+    public static class CL00_91_2_th_sh_ch
     {
-        public static double L00_91_3_th_sh_ch(double angle, double angle2, int count)
+        public static double L00_91_2_th_sh_ch(double angle, double angle2)
         {
-            double X = 1, thX, thY, shXpY, chX, chY;
-            for (int i = 0; i < count; i++)
-            {
-                thX = Math.Tanh(angle);
-                thY = Math.Tanh(angle2);
-                shXpY = Math.Sinh(angle + angle2);
-                chX = Math.Cosh(angle);
-                chY = Math.Cosh(angle2);
+            double X, thX, thY, shXpY, chX, chY;
+            thX = Math.Tanh(angle);
+            thY = Math.Tanh(angle2);
+            shXpY = Math.Sinh(angle + angle2);
+            chX = Math.Cosh(angle);
+            chY = Math.Cosh(angle2);
 
-                X *= thX + thY - shXpY / chX / chY;
-            }
+            X = thX + thY - shXpY / chX / chY;
             return X;
         }
     }
@@ -272,42 +252,38 @@ namespace OpaqueFunctions
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_91_3_th_sh_ch_in", "f(x,y) = th(x) + th(y) – sh(x+y)/(ch(x)*ch(y))")]
+    [FunctionName("L00_91_2_th_sh_ch_in", "f(x,y) = th(x) + th(y) – sh(x+y)/(ch(x)*ch(y))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_91_3_th_sh_ch
+    public static class CL00_91_2_th_sh_ch_in
     {
-        public static string L00_91_3_th_sh_ch_in()
+        public static string L00_91_2_th_sh_ch_in()
         {
-
             string str = "(w, w)";
             return str;
         }
     }
 
     /// <summary>
-    /// Реализует 92.​ f(x,y) = th(x) -th(y) – sh(x-y)/(ch(x)*ch(y))
+    /// Реализует 92.​ f(x,y) = th(x) - th(y) – sh(x-y)/(ch(x)*ch(y))
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_92_3_th_sh_ch", "f(x,y) = th(x) - th(y) – sh(x-y)/(ch(x)*ch(y))")]
+    [FunctionName("L00_92_2_th_sh_ch", "f(x,y) = th(x) - th(y) – sh(x-y)/(ch(x)*ch(y))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_92_3_th_sh_ch
+    public static class CL00_92_2_th_sh_ch
     {
-        public static double L00_92_3_th_sh_ch(double angle, double angle2, int count)
+        public static double L00_92_2_th_sh_ch(double angle, double angle2)
         {
-            double X = 1, thX, thY, shXmY, chX, chY;
-            for (int i = 0; i < count; i++)
-            {
-                thX = Math.Tanh(angle);
-                thY = Math.Tanh(angle2);
-                shXmY = Math.Sinh(angle - angle2);
-                chX = Math.Cosh(angle);
-                chY = Math.Cosh(angle2);
+            double X, thX, thY, shXmY, chX, chY;
+            thX = Math.Tanh(angle);
+            thY = Math.Tanh(angle2);
+            shXmY = Math.Sinh(angle - angle2);
+            chX = Math.Cosh(angle);
+            chY = Math.Cosh(angle2);
 
-                X *= thX - thY - shXmY / chX / chY;
-            }
+            X = thX - thY - shXmY / (chX * chY);
             return X;
         }
     }
@@ -317,13 +293,12 @@ namespace OpaqueFunctions
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_92_3_th_sh_ch_in", "f(x,y) = th(x) - th(y) – sh(x-y)/(ch(x)*ch(y))")]
+    [FunctionName("L00_92_2_th_sh_ch_in", "f(x,y) = th(x) - th(y) – sh(x-y)/(ch(x)*ch(y))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_92_3_th_sh_ch_in
+    public static class CL00_92_2_th_sh_ch_in
     {
-        public static string L00_92_3_th_sh_ch_in()
+        public static string L00_92_2_th_sh_ch_in()
         {
-
             string str = "(w, w)";
             return str;
         }
@@ -332,27 +307,24 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует 93.​ f(x,y) = cth(x) + cth(y) – sh(y+x)/(sh(x)*sh(y))
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_93_3_cth_sh", "f(x,y) = cth(x) + cth(y) – sh(y+x)/(sh(x)*sh(y))")]
+    [FunctionName("L00_93_2_cth_sh", "f(x,y) = cth(x) + cth(y) – sh(y+x)/(sh(x)*sh(y))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_93_3_cth_sh
+    public static class CL00_93_2_cth_sh
     {
-        public static double L00_93_3_cth_sh(double angle, double angle2, int count)
+        public static double L00_93_2_cth_sh(double angle, double angle2)
         {
-            double X = 1, cthX, cthY, shXpY, shX, shY;
-            for (int i = 0; i < count; i++)
-            {
-                cthX = 1 / Math.Tanh(angle);
-                cthY = 1 / Math.Tanh(angle2);
-                shXpY = Math.Sinh(angle + angle2);
-                shX = Math.Sinh(angle);
-                shY = Math.Sinh(angle2);
+            double X, cthX, cthY, shXpY, shX, shY;
+            cthX = 1 / Math.Tanh(angle);
+            cthY = 1 / Math.Tanh(angle2);
+            shXpY = Math.Sinh(angle + angle2);
+            shX = Math.Sinh(angle);
+            shY = Math.Sinh(angle2);
 
-                X *= cthX + cthY - shXpY / shX / shY;
-            }
+            X = cthX + cthY - shXpY / shX / shY;
             return X;
         }
     }
@@ -362,14 +334,14 @@ namespace OpaqueFunctions
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_93_3_cth_sh_in", "f(x,y) = cth(x) + cth(y) – sh(y+x)/(sh(x)*sh(y))")]
+    [FunctionName("L00_93_2_cth_sh_in", "f(x,y) = cth(x) + cth(y) – sh(y+x)/(sh(x)*sh(y))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_93_3_cth_sh_in
+    public static class CL00_93_2_cth_sh_in
     {
-        public static string L00_93_3_cth_sh_in()
+        public static string L00_93_2_cth_sh_in()
         {
 
-            string str = "(w, 0) (0, w)";
+            string str = "(0, w) (0, w)";
             return str;
         }
     }
@@ -377,33 +349,32 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует 94.​ f(x,y) = cth(x) - cth(y) – sh(y-x)/(sh(x)*sh(y))
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
     [FunctionName("L00_94_2_cth_sh", "f(x,y) = cth(x) - cth(y) – sh(y-x)/(sh(x)*sh(y))")]
     [EquivalentIntConstant(0)]
     public static class CL00_94_2_cth_sh
     {
-        public static double L00_94_2_cth_sh(double angle, double angle2, int count)
+        public static double L00_94_2_cth_sh(double angle, double angle2)
         {
-            double X = 1, cthX, cthY, shXmY, shX, shY;
-            for (int i = 0; i < count; i++)
-            {
-                cthX = 1 / Math.Tanh(angle);
-                cthY = 1 / Math.Tanh(angle2);
-                shXmY = Math.Sinh(angle - angle2);
-                shX = Math.Sinh(angle);
-                shY = Math.Sinh(angle2);
+            double X, cthX, cthY, shXmY, shX, shY;
+            cthX = 1 / Math.Tanh(angle);
+            cthY = 1 / Math.Tanh(angle2);
+            shXmY = Math.Sinh(angle - angle2);
+            shX = Math.Sinh(angle);
+            shY = Math.Sinh(angle2);
 
-                X *= cthX - cthY - shXmY / shX / shY;
-            }
+            X = cthX - cthY - shXmY / (shX * shY);
             return X;
         }
     }
 
     /// <summary>
     /// Возвращает область определения 94.​ f(x,y) = cth(x) - cth(y) – sh(y-x)/(sh(x)*sh(y))
+    /// sh(x)*sh(y) = 0 при y = 2*i*Pi*C1 + i * Pi
+    /// https://www.wolframalpha.com/input/?i=sh(x)*sh(y)+%3D+0
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
@@ -413,7 +384,7 @@ namespace OpaqueFunctions
     {
         public static string L00_94_2_cth_sh_in()
         {
-            string str = "(w, 0) (0, w)";                   // todo
+            string str = "(0, w) (0, w)";
             return str;
         }
     }
@@ -421,26 +392,23 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует 95.​ f(x,y) = sh(x)*sh(x) – sh(y)*sh(y) – sh(x+y)*sh(x-y)
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
     [FunctionName("L00_95_2_sh", "f(x,y) = sh(x)*sh(x) – sh(y)*sh(y) – sh(x+y)*sh(x-y)")]
     [EquivalentIntConstant(0)]
     public static class CL00_95_2_sh
     {
-        public static double L00_95_2_cth_sh(double angle, double angle2, int count)
+        public static double L00_95_2_sh(double angle, double angle2)
         {
-            double X = 1, shX, shY, shXmY, shXpY;
-            for (int i = 0; i < count; i++)
-            {
-                shX = Math.Sinh(angle);
-                shY = Math.Sinh(angle2);
-                shXmY = Math.Sinh(angle - angle2);
-                shXpY = Math.Sinh(angle + angle2);
+            double X, shX, shY, shXmY, shXpY;
+            shX = Math.Sinh(angle);
+            shY = Math.Sinh(angle2);
+            shXmY = Math.Sinh(angle - angle2);
+            shXpY = Math.Sinh(angle + angle2);
 
-                X *= shX * shX - shY * shY - shXpY * shXmY;
-            }
+            X = shX * shX - shY * shY - shXpY * shXmY;
             return X;
         }
     }
@@ -464,26 +432,23 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует 96.​ f(x,y) = ch(x)*ch(x) – ch(y)*ch(y) – sh(x+y)*sh(x-y)
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
     [FunctionName("L00_96_2_ch_sh", "f(x,y) = ch(x)*ch(x) – ch(y)*ch(y) – sh(x+y)*sh(x-y)")]
     [EquivalentIntConstant(0)]
     public static class CL00_96_2_ch_sh
     {
-        public static double L00_96_2_ch_sh(double angle, double angle2, int count)
+        public static double L00_96_2_ch_sh(double angle, double angle2)
         {
-            double X = 1, chX, chY, shXpY, shXmY;
-            for (int i = 0; i < count; i++)
-            {
-                chX = Math.Cosh(angle);
-                chY = Math.Cosh(angle2);
-                shXmY = Math.Sinh(angle - angle2);
-                shXpY = Math.Sinh(angle + angle2);
+            double X, chX, chY, shXpY, shXmY;
+            chX = Math.Cosh(angle);
+            chY = Math.Cosh(angle2);
+            shXmY = Math.Sinh(angle - angle2);
+            shXpY = Math.Sinh(angle + angle2);
 
-                X *= chX * chX - chY * chY - shXpY * shXmY;
-            }
+            X = chX * chX - chY * chY - shXpY * shXmY;
             return X;
         }
     }
@@ -507,26 +472,23 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует 97.​ f(x,y) = sh(x)*sh(x) – sh(y)*sh(y) – ch(x)*ch(x) + ch(y)*ch(y)
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
     [FunctionName("L00_97_2_sh_ch", "f(x,y) = sh(x)*sh(x) – sh(y)*sh(y) – ch(x)*ch(x) + ch(y)*ch(y)")]
     [EquivalentIntConstant(0)]
     public static class CL00_97_2_sh_ch
     {
-        public static double L00_97_2_sh_ch(double angle, double angle2, int count)
+        public static double L00_97_2_sh_ch(double angle, double angle2)
         {
-            double X = 1, chX, chY, shX, shY;
-            for (int i = 0; i < count; i++)
-            {
-                chX = Math.Cosh(angle);
-                chY = Math.Cosh(angle2);
-                shX = Math.Sinh(angle);
-                shY = Math.Sinh(angle2);
+            double X, chX, chY, shX, shY;
+            chX = Math.Cosh(angle);
+            chY = Math.Cosh(angle2);
+            shX = Math.Sinh(angle);
+            shY = Math.Sinh(angle2);
 
-                X *= shX * shX - shY * shY - chX * chX + chY * chY;
-            }
+            X = shX * shX - shY * shY - chX * chX + chY * chY;
             return X;
         }
     }
@@ -550,32 +512,34 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует 98.​ f(x,y) = sh(x)*sh(x) + ch(y)*ch(y) - ch(x+y)*ch(x-y)
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="angle">Угол X в радианах</param>
+    /// <param name="angle2">Угол Y в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
     [FunctionName("L00_98_2_sh_ch", "f(x,y) = sh(x)*sh(x) + ch(y)*ch(y) - ch(x+y)*ch(x-y)")]
     [EquivalentIntConstant(0)]
     public static class CL00_98_2_sh_ch
     {
-        public static double L00_98_2_sh_ch(double angle, double angle2, int count)
+        public static double L00_98_2_sh_ch(double angle, double angle2)
         {
-            double X = 1, chY, shX, chXpY, chXmY;
-            for (int i = 0; i < count; i++)
-            {
-                chXpY = Math.Cosh(angle + angle2);
-                chY = Math.Cosh(angle2);
-                shX = Math.Sinh(angle);
-                chXmY = Math.Sinh(angle - angle2);
+            double X, chY, shX, chXpY, chXmY;
+            chY = Math.Cosh(angle2);
+            shX = Math.Sinh(angle);
+            chXpY = Math.Cosh(angle + angle2);
+            chXmY = Math.Cosh(angle - angle2);
 
-                X *= shX * shX + chY * chY - chXpY * chXm;
-            }
+            X = shX * shX + chY * chY - chXpY * chXmY;
             return X;
         }
     }
 
+    //?????????????????????????????????????????????????????????????????????????????????????????????????????????
+    //?????????????????????????????????????????????????????????????????????????????????????????????????????????
+    //?????????????????????????????????????????????????????????????????????????????????????????????????????????
     /// <summary>
     /// Возвращает область определения 98.​ f(x,y) = sh(x)*sh(x) + ch(y)*ch(y) - ch(x+y)*ch(x-y)
+    /// Данная функция не тождественный ноль
+    /// http://www.wolframalpha.com/input/?i=sh%28x%29*sh%28x%29+%2B+ch%28y%29*ch%28y%29+-+ch%28x%2By%29*ch%28x-y%29
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
@@ -594,24 +558,20 @@ namespace OpaqueFunctions
     /// Реализует 99.​ f(x) = log_a(x) + log_1/a(x)
     /// </summary>
     /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
-    /// <param name="basis">Основание логарифма, необязаетльный параметр</param>
+    /// <param name="basis">Основание логарифма a, необязаетльный параметр, из области (0, 1) & (1, w)</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_99_3_log", "f(x) = log_a(x) + log_1/a(x)")]
+    [FunctionName("L00_99_2_log", "f(x) = log_a(x) + log_1/a(x)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_99_3_log
+    public static class CL00_99_2_log
     {
-        public static double L00_99_3_log(double arg, int count, double basis = 5.0)
+        public static double L00_99_2_log(double arg, double basis = 5.0)
         {
-            double X = 0, logaX, log1aX;
-            for (int i = 0; i < count; i++)
-            {
-                logaX = Math.Log(arg, basis);
-                log1aX = Math.Log(arg, 1 / basis);
+            double X, logaX, log1aX;
+            logaX = Math.Log(arg, basis);
+            log1aX = Math.Log(arg, 1 / basis);
 
-                X += logaX + log1aX;
-            }
+            X = logaX + log1aX;
             return X;
         }
     }
@@ -619,101 +579,139 @@ namespace OpaqueFunctions
     /// <summary>
     /// Возвращает область определения 99.​ f(x) = log_a(x) + log_1/a(x)
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
-    /// <param name="basis">Основание логарифма, необязаетльный параметр</param>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_99_3_log_in", "f(x) = log_a(x) + log_1/a(x)")]
+    [FunctionName("L00_99_2_log_in", "f(x) = log_a(x) + log_1/a(x)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_99_3_log_in
+    public static class CL00_99_2_log_in
     {
-        public static string L00_99_3_log_in()
+        public static string L00_99_2_log_in()
         {
             string str = "(0, w)";
+            return str;
+        }
+    }
+
+    /// <summary>
+    /// Реализует 100.​ f(x,y) = log_a(x*y) – log_a(x) - log_a(y)
+    /// </summary>
+    /// <param name="arg">Аргумент логарифма X</param>
+    /// <param name="arg2">Аргумент логарифма Y</param>
+    /// <param name="basis">Основание логарифма a, необязаетльный параметр, из области (0, 1) & (1, w)</param>
+    /// <returns>0</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_100_3_log", "f(x,y) = log_a(x*y) – log_a(x) - log_a(y)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_100_3_log
+    {
+        public static double L00_100_3_log(double arg, double arg2, double basis = 5.0)
+        {
+            double X, logaXY, logaX, logaY;
+            logaXY = Math.Log(arg * arg2, basis);
+            logaX = Math.Log(arg, basis);
+            logaY = Math.Log(arg2, basis);
+
+            X = logaXY - logaX - logaY;
             return X;
         }
     }
 
     /// <summary>
-    /// Реализует 100.​ f(x,y) = log(x*y) – log_a(x) + log_a(y)
+    /// Возвращает область определения 100.​ f(x,y) = log(x*y) – log_a(x) + log_a(y)
+    /// Где первый интервал - это область определения Х, а второй - область определения Y
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
-    /// <param name="basis">Основание логарифма, необязаетльный параметр</param>
-    /// <returns>0</returns>
+    /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_100_4_log", "f(x,y) = log(x*y) – log_a(x) + log_a(y)")]
+    [FunctionName("L00_100_3_log_in", "f(x,y) = log(x*y) – log_a(x) + log_a(y)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_100_4_log
+    public static class CL00_100_3_log_in
     {
-        public static double L00_100_4_log(double arg, double arg2, int count, double basis = 10.0)
+        public static string L00_100_3_log_in()
         {
-            double X = 0, logaXY, logaX, logaY;
-            for (int i = 0; i < count; i++)
-            {
-                logaXY = Math.Log(arg * arg2, basis);
-                logaX = Math.Log(arg, basis);
-                logaY = Math.Log(arg2, basis);
-
-                X += logaXY - logaX + logaY;
-            }
-            return X;
+            string str = "(0, w) (0, w)";
+            return str;
         }
     }
 
     /// <summary>
     /// Реализует 101.​ f(x,y) = log_a(x/y) – log_a(x) + log_a(y)
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
-    /// <param name="basis">Основание логарифма, необязаетльный параметр</param>
+    /// <param name="arg">Аргумент логарифма X</param>
+    /// <param name="arg2">Аргумент логарифма Y</param>
+    /// <param name="basis">Основание логарифма a, необязаетльный параметр, из области (0, 1) & (1, w)</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_101_4_log", "f(x,y) = log_a(x/y) – log_a(x) + log_a(y)")]
+    [FunctionName("L00_101_3_log", "f(x,y) = log_a(x/y) – log_a(x) + log_a(y)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_101_4_log
+    public static class CL00_101_3_log
     {
-        public static double L00_101_4_log(double arg, double arg2, int count, double basis = 10.0)
+        public static double L00_101_3_log(double arg, double arg2, double basis = 5.0)
         {
-            double X = 0, logaXY, logaX, logaY;
-            for (int i = 0; i < count; i++)
-            {
-                logaXY = Math.Log(arg / arg2, basis);
-                logaX = Math.Log(arg, basis);
-                logaY = Math.Log(arg2, basis);
+            double X, logaXY, logaX, logaY;
+            logaXY = Math.Log(arg / arg2, basis);
+            logaX = Math.Log(arg, basis);
+            logaY = Math.Log(arg2, basis);
 
-                X += logaXY - logaX + logaY;
-            }
+            X = logaXY - logaX + logaY;
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 101.​ f(x,y) = log_a(x/y) – log_a(x) + log_a(y)
+    /// Где первый интервал - это область определения Х, а второй - область определения Y
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_101_3_log_in", "f(x,y) = log_a(x/y) – log_a(x) + log_a(y)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_101_3_log_in
+    {
+        public static string L00_101_3_log_in()
+        {
+            string str = "(0, w) (0, w)";
+            return str;
         }
     }
 
     /// <summary>
     /// Реализует 102.​ f(x) = log_a(x^n) – n*log_a(x)
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
-    /// <param name="basis">Основание логарифма, необязаетльный параметр</param>
+    /// <param name="arg">Аргумент логарифма X</param>
+    /// <param name="n">Степень аргумента, необязательный параметр</param>
+    /// <param name="basis">Основание логарифма a, необязаетльный параметр, из области (0, 1) & (1, w)</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_102_4_log", "f(x) = log_a(x^n) – n*log_a(x)")]
+    [FunctionName("L00_102_3_log", "f(x) = log_a(x^n) – n*log_a(x)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_102_4_log
+    public static class CL00_102_3_log
     {
-        public static double L00_102_4_log(double arg, int count, int n = 10, double basis = 10.0)
+        public static double L00_102_3_log(double arg, int n = 10, double basis = 5.0)
         {
-            double X = 0, XN = arg, logaXN, logaX;
-            for (int i = 0; i < count; i++)
-            {
-                for (int k = 0; i < n; i++) 
-                    XN *= arg;
-                logaXN = Math.Log(XN, basis);
-                logaX = Math.Log(arg, basis);
+            double X, XN = arg, logaXN, logaX;
+            for (int i = 1; i < n; i++)
+                XN *= arg;
+            logaXN = Math.Log(XN, basis);
+            logaX = Math.Log(arg, basis);
 
-                X += logaXN - n* logaX;
-            }
+            X = logaXN - n * logaX;
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 102.​ f(x) = log_a(x^n) – n * log_a(x)
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_102_3_log_in", "f(x) = log_a(x^n) – n * log_a(x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_102_3_log_in
+    {
+        public static string L00_102_3_log_in()
+        {
+            string str = "(0, w)";
+            return str;
         }
     }
 
@@ -721,27 +719,39 @@ namespace OpaqueFunctions
     /// Реализует 103.​ f(x) = log_a(x) – log_b(x)/log_b(a)
     /// </summary>
     /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
-    /// <param name="basis">Основание логарифма a, необязаетльный параметр</param>
+    /// <param name="basis">Основание логарифма a, необязаетльный параметр, из области (0, 1) & (1, w)</param>
     /// <param name="basis2">Основание логарифма b, необязаетльный параметр</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_103_4_log", "f(x) = log_a(x) – log_b(x)/log_b(a)")]
+    [FunctionName("L00_103_3_log", "f(x) = log_a(x) – log_b(x)/log_b(a)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_103_4_log
+    public static class CL00_103_3_log
     {
-        public static double L00_103_4_log(double arg, int count, int n = 10, double basis = 10.0, double basis2 = 5.0)
+        public static double L00_103_3_log(double arg, double basis = 5.0, double basis2 = 10.0)
         {
-            double X = 0, logaX, logbX, logbA;
-            for (int i = 0; i < count; i++)
-            {
-                logaX = Math.Log(arg, basis);
-                logbX = Math.Log(arg, basis2);
-                logbA = Math.Log(basis, basis2);
+            double X, logaX, logbX, logbA;
+            logaX = Math.Log(arg, basis);
+            logbX = Math.Log(arg, basis2);
+            logbA = Math.Log(basis, basis2);
 
-                X += logaX - logbX / logbA;
-            }
+            X = logaX - logbX / logbA;
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 103.​ f(x) = log_a(x) – log_b(x)/log_b(a)
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_103_3_log_in", "f(x) = log_a(x) – log_b(x)/log_b(a)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_103_3_log_in
+    {
+        public static string L00_103_3_log_in()
+        {
+            string str = "(0, w)";
+            return str;
         }
     }
 
@@ -751,25 +761,37 @@ namespace OpaqueFunctions
     /// одинаковых логарифмов ln(x+(x*x + 1)^1/2)
     /// </summary>
     /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_104_2_ln_arsh", "f(x) = ln(x+(x*x+1)^1/2) – Arsh(x)")]
+    [FunctionName("L00_104_1_ln_arsh", "f(x) = ln(x+(x*x+1)^1/2) – Arsh(x)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_104_2_ln_arsh
+    public static class CL00_104_1_ln_arsh
     {
-        public static double L00_104_2_ln_arsh(double arg, int count)
+        public static double L00_104_1_ln_arsh(double arg)
         {
-            double X = 0, lnX, sqrt, arsh;
-            for (int i = 0; i < count; i++)
-            {   
-                sqrt = Math.Sqrt(arg*arg + 1);
-                lnX = Math.Log(arg + sqrt);
-                arsh = lnX;
+            double X, lnX, sqrt, arsh;
+            sqrt = Math.Sqrt(arg*arg + 1);
+            lnX = Math.Log(arg + sqrt);
+            arsh = lnX;
 
-                X += lnX - arsh;
-            }
+            X = lnX - arsh;
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 104.​ f(x) = ln(x+(x*x+1)^1/2) – Arsh(x)
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_104_1_ln_arsh_in", "f(x) = ln(x+(x*x+1)^1/2) – Arsh(x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_104_1_ln_arsh_in
+    {
+        public static string L00_104_1_ln_arsh_in()
+        {
+            string str = "(w, w)";
+            return str;
         }
     }
 
@@ -779,25 +801,37 @@ namespace OpaqueFunctions
     /// одинаковых логарифмов ln(x+(x*x - 1)^1/2)
     /// </summary>
     /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_105_2_ln_arch", "f(x) = ln(x + (x*x - 1)^1/2) – Arch(x)")]
+    [FunctionName("L00_105_1_ln_arch", "f(x) = ln(x + (x*x - 1)^1/2) – Arch(x)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_105_2_ln_arch
+    public static class CL00_105_1_ln_arch
     {
-        public static double L00_105_2_ln_arch(double arg, int count)
+        public static double L00_105_1_ln_arch(double arg)
         {
-            double X = 0, lnX, sqrt, arch;
-            for (int i = 0; i < count; i++)
-            {
-                sqrt = Math.Sqrt(arg * arg - 1);
-                lnX = Math.Log(arg + sqrt);
-                arch = lnX;
+            double X, lnX, sqrt, arch;
+            sqrt = Math.Sqrt(arg * arg - 1);
+            lnX = Math.Log(arg + sqrt);
+            arch = lnX;
 
-                X += lnX - arch;
-            }
+            X = lnX - arch;
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 105.​ f(x) = ln(x + (x*x - 1)^1/2) – Arch(x)
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_105_1_ln_arch_in", "f(x) = ln(x + (x*x - 1)^1/2) – Arch(x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_105_1_ln_arch_in
+    {
+        public static string L00_105_1_ln_arch_in()
+        {
+            string str = "(1, w)";
+            return str;
         }
     }
 
@@ -807,216 +841,336 @@ namespace OpaqueFunctions
     /// одинаковых логарифмов 1/2 * ln((1 + x)/(1 - x))
     /// </summary>
     /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_106_2_ln_arth", "f(x) = 1/2 * ln((1 + x)/(1 - x)) – Arth(x)")]
+    [FunctionName("L00_106_1_ln_arth", "f(x) = 1/2 * ln((1 + x)/(1 - x)) – Arth(x)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_106_2_ln_arth
+    public static class CL00_106_1_ln_arth
     {
-        public static double L00_106_2_ln_arth(double arg, int count)
+        public static double L00_106_1_ln_arth(double arg)
         {
-            double X = 0, lnX, arth;
-            for (int i = 0; i < count; i++)
-            {
-                lnX = Math.Log((1 + arg)/(1 - arg));
-                arth = 1 / 2 * lnX;
+            double X, lnX, arth;
+            lnX = Math.Log((1 + arg)/(1 - arg));
+            arth = lnX / 2;
 
-                X += 1/2 * lnX - arth;
-            }
+            X = (lnX / 2) - arth;
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 106.​ f(x) = 1/2 * ln((1 + x)/(1 - x)) – Arth(x)
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_106_1_ln_arth_in", "f(x) = 1/2 * ln((1 + x)/(1 - x)) – Arth(x)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_106_1_ln_arth_in
+    {
+        public static string L00_106_1_ln_arth_in()
+        {
+            string str = "(-1, 1)";
+            return str;
         }
     }
 
     /// <summary>
     /// Реализует 107.​ f(x) = a^x – e^(x*ln(a))
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="arg">Аргумент X</param>
+    /// <param name="param">Необязательный параметр А</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_107_3_pow_exp", "f(x) = a^x – e^(x*ln(a))")]
+    [FunctionName("L00_107_2_pow_exp", "f(x) = a^x – e^(x*ln(a))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_107_3_pow_exp
+    public static class CL00_107_2_pow_exp
     {
-        public static double L00_107_3_pow_exp(double arg, int count, double param = 10.0)
+        public static double L00_107_2_pow_exp(double arg, double param = 10.0)
         {
-            double X = 0, aX, ln, exp;
-            for (int i = 0; i < count; i++)
-            {
-                ln = Math.Log(param);
-                exp = Math.Exp(arg * ln);
-                aX = Math.Pow(param, arg);
+            double X, aX, ln, exp;
+            ln = Math.Log(param);
+            exp = Math.Exp(arg * ln);
+            aX = Math.Pow(param, arg);
 
-                X += aX - exp;
-            }
+            X = aX - exp;
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 107.​ f(x) = a^x – e^(x*ln(a))
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_107_2_pow_exp_in", "f(x) = a^x – e^(x*ln(a))")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_107_2_pow_exp_in
+    {
+        public static string L00_107_2_pow_exp_in()
+        {
+            string str = "(w, w)";
+            return str;
         }
     }
 
     /// <summary>
     /// Реализует 108.​ f(x,y) = a^x * a^y – a^(x+y)
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="arg">Аргумент X</param>
+    /// <param name="arg2">Аргумент Y</param>
+    /// <param name="param">Необязательный параметр А</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_108_4_pow", "f(x,y) = a^x * a^y – a^(x+y)")]
+    [FunctionName("L00_108_3_pow", "f(x,y) = a^x * a^y – a^(x+y)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_108_4_pow
+    public static class CL00_108_3_pow
     {
-        public static double L00_108_4_pow(double arg, double arg2, int count, double param = 10.0)
+        public static double L00_108_3_pow(double arg, double arg2, double param = 10.0)
         {
-            double X = 0, aX, aY, aXY;
-            for (int i = 0; i < count; i++)
-            {
-                aX = Math.Pow(param, arg);
-                aY = Math.Pow(param, arg2);
-                aXY = Math.Pow(param, arg * arg2);
+            double X, aX, aY, aXY;
+            aX = Math.Pow(param, arg);
+            aY = Math.Pow(param, arg2);
+            aXY = Math.Pow(param, arg * arg2);
 
-                X += aX * aY - aXY;
-            }
+            X = aX * aY - aXY;
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 108.​ f(x,y) = a^x * a^y – a^(x+y)
+    /// Где первый интервал - это область определения Х, а второй - область определения Y
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_108_3_pow_in", "f(x,y) = a^x * a^y – a^(x+y)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_108_3_pow_in
+    {
+        public static string L00_108_3_pow_in()
+        {
+            string str = "(w, w) (w, w)";
+            return str;
         }
     }
 
     /// <summary>
     /// Реализует 109.​ f(x,y) = a^x/a^y – a^(x-y)
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="arg">Аргумент X</param>
+    /// <param name="arg2">Аргумент Y</param>
+    /// <param name="param">Необязательный параметр А</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_109_4_pow", "f(x,y) = a^x/a^y – a^(x-y)")]
+    [FunctionName("L00_109_3_pow", "f(x,y) = a^x/a^y – a^(x-y)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_109_4_pow
+    public static class CL00_109_3_pow
     {
-        public static double L00_109_4_pow(double arg, double arg2, int count, double param = 10.0)
+        public static double L00_109_3_pow(double arg, double arg2, double param = 10.0)
         {
-            double X = 0, aX, aY, aXY;
-            for (int i = 0; i < count; i++)
-            {
-                aX = Math.Pow(param, arg);
-                aY = Math.Pow(param, arg2);
-                aXY = Math.Pow(param, arg - arg2);
+            double X, aX, aY, aXY;
+            aX = Math.Pow(param, arg);
+            aY = Math.Pow(param, arg2);
+            aXY = Math.Pow(param, arg - arg2);
 
-                X += (aX / aY) - aXY;
-            }
+            X = (aX / aY) - aXY;
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 109.​ f(x,y) = a^x/a^y – a^(x-y)
+    /// Где первый интервал - это область определения Х, а второй - область определения Y
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_109_3_pow_in", "f(x,y) = a^x/a^y – a^(x-y)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_109_3_pow_in
+    {
+        public static string L00_109_3_pow_in()
+        {
+            string str = "(w, w) (w, w)";
+            return str;
         }
     }
 
     /// <summary>
     /// Реализует 110.​ f(x,y) = (a^x)^y – a^(x*y)
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="arg">Аргумент X</param>
+    /// <param name="arg2">Аргумент Y</param>
+    /// <param name="param">Необязательный параметр А</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_110_4_pow", "f(x,y) = (a^x)^y – a^(x*y)")]
+    [FunctionName("L00_110_3_pow", "f(x,y) = (a^x)^y – a^(x*y)")]
     [EquivalentIntConstant(0)]
-    public static class CL00_110_4_pow
+    public static class CL00_110_3_pow
     {
-        public static double L00_110_4_pow(double arg, double arg2, int count, double param = 10.0)
+        public static double L00_110_3_pow(double arg, double arg2, double param = 10.0)
         {
-            double X = 0, aX, axY, aXY;
-            for (int i = 0; i < count; i++)
-            {
-                aX = Math.Pow(param, arg);
-                axY = Math.Pow(aX, arg2);
-                aXY = Math.Pow(param, arg * arg2);
+            double X, aX, axY, aXY;
+            aX = Math.Pow(param, arg);
+            axY = Math.Pow(aX, arg2);
+            aXY = Math.Pow(param, arg * arg2);
 
-                X += axY - aXY;
-            }
+            X = axY - aXY;
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 110.​ f(x,y) = (a^x)^y – a^(x*y)
+    /// Где первый интервал - это область определения Х, а второй - область определения Y
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_110_3_pow_in", "f(x,y) = (a^x)^y – a^(x*y)")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_110_3_pow_in
+    {
+        public static string L00_110_3_pow_in()
+        {
+            string str = "(w, w) (w, w)";
+            return str;
         }
     }
 
     /// <summary>
     /// Реализует 111.​ f(x) = e^x – (1 + th(x/2))/(1 – th(x/2))
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="arg">Аргумент X</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_111_2_exp_th", "f(x) = e^x – (1 + th(x/2))/(1 – th(x/2))")]
+    [FunctionName("L00_111_1_exp_th", "f(x) = e^x – (1 + th(x/2))/(1 – th(x/2))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_111_2_exp_th
+    public static class CL00_111_1_exp_th
     {
-        public static double L00_111_2_exp_th(double arg, int count)
+        public static double L00_111_1_exp_th(double arg)
         {
-            double X = 0, th, exp;
-            for (int i = 0; i < count; i++)
-            {
-                exp = Math.Exp(arg);
-                th = Math.Tanh(arg / 2.0);
+            double X, th, exp;
+            exp = Math.Exp(arg);
+            th = Math.Tanh(arg / 2);
 
-                X += exp - (1 + th) / (1 - th);
-            }
+            X = exp - (1 + th) / (1 - th);
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 111.​ f(x) = e^x – (1 + th(x/2))/(1 – th(x/2))
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_111_1_exp_th_in", "f(x) = e^x – (1 + th(x/2))/(1 – th(x/2))")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_111_1_exp_th_in
+    {
+        public static string L00_111_1_exp_th_in()
+        {
+            string str = "(w, w)";
+            return str;
         }
     }
 
     /// <summary>
     /// Реализует 112.​ f(x) = e^x – (ch(x/2) + sh(x/2))/ (ch(x/2) - sh(x/2))
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="arg">Аргумент X</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_112_2_exp_sh_ch", "f(x) = e^x – (ch(x/2) + sh(x/2))/ (ch(x/2) - sh(x/2))")]
+    [FunctionName("L00_112_1_exp_ch_sh", "f(x) = e^x – (ch(x/2) + sh(x/2))/ (ch(x/2) - sh(x/2))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_112_2_exp_sh_ch
+    public static class CL00_112_1_exp_ch_sh
     {
-        public static double L00_112_2_exp_sh_ch(double arg, int count)
+        public static double L00_112_1_exp_ch_sh(double arg)
         {
-            double X = 0, ch, sh, exp;
-            for (int i = 0; i < count; i++)
-            {
-                exp = Math.Exp(arg);
-                ch = Math.Cosh(arg / 2.0);
-                sh = Math.Sinh(arg / 2.0);
+            double X, ch, sh, exp;
+            exp = Math.Exp(arg);
+            ch = Math.Cosh(arg / 2);
+            sh = Math.Sinh(arg / 2);
 
-                X += exp - (ch + sh) / (ch - sh);
-            }
+            X = exp - (ch + sh) / (ch - sh);
             return X;
+        }
+    }
+
+    /// <summary>
+    /// Возвращает область определения 112.​ f(x) = e^x – (ch(x/2) + sh(x/2))/ (ch(x/2) - sh(x/2))
+    /// Область определения данной функции симметрична относительно нуля
+    /// В действительности, она определена везде, кроме Х = +-2.12255012381007
+    /// http://www.wolframalpha.com/input/?i=ch%28x%2F2%29+-+sh%28x%2F2%29+%3D+0
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_112_1_exp_ch_sh_in", "f(x) = e^x – (ch(x/2) + sh(x/2)) / (ch(x/2) - sh(x/2))")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_112_1_exp_ch_sh_in
+    {
+        public static string L00_112_1_exp_ch_sh_in()   
+        {
+            string str = "(0, 2.1226) (2.1226, w)";
+            return str;
         }
     }
 
     /// <summary>
     /// Реализует 113.​ f(x) = (ch(x/2) + sh(x/2))/ (ch(x/2) - sh(x/2)) - (1 + th(x/2))/(1 – th(x/2))
     /// </summary>
-    /// <param name="arg">Аргумент логарифма</param>
-    /// <param name="count">Количество требуемых перемножений</param>
+    /// <param name="arg">Аргумент X</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_112_2_ch_sh_th", "f(x) = (ch(x/2) + sh(x/2))/ (ch(x/2) - sh(x/2)) - (1 + th(x/2))/(1 – th(x/2))")]
+    [FunctionName("L00_113_1_ch_sh_th", "f(x) = (ch(x/2) + sh(x/2))/ (ch(x/2) - sh(x/2)) - (1 + th(x/2))/(1 – th(x/2))")]
     [EquivalentIntConstant(0)]
-    public static class CL00_112_2_ch_sh_th
+    public static class CL00_113_1_ch_sh_th
     {
-        public static double L00_112_2_ch_sh_th(double arg, int count)
+        public static double L00_113_1_ch_sh_th(double arg)
         {
-            double X = 0, ch, sh, th;
-            for (int i = 0; i < count; i++)
-            {
-                ch = Math.Cosh(arg / 2.0);
-                sh = Math.Sinh(arg / 2.0);
-                th = Math.Tanh(arg / 2.0);
+            double X, ch, sh, th;
+            ch = Math.Cosh(arg / 2);
+            sh = Math.Sinh(arg / 2);
+            th = Math.Tanh(arg / 2);
 
-                X += (ch + sh) / (ch - sh) - (1 + th) / (1 - th);
-            }
+            X = (ch + sh) / (ch - sh) - (1 + th) / (1 - th);
             return X;
         }
     }
 
+    /// <summary>
+    /// Возвращает область определения 113.​ f(x) = (ch(x/2) + sh(x/2))/ (ch(x/2) - sh(x/2)) - (1 + th(x/2))/(1 – th(x/2))
+    /// Область определения данной функции симметрична относительно нуля
+    /// В действительности, она определена везде, кроме Х = +-2.12255012381007
+    /// http://www.wolframalpha.com/input/?i=ch%28x%2F2%29+-+sh%28x%2F2%29+%3D+0
+    /// </summary>
+    /// <returns>string</returns>
+    [OpaqueFunction()]
+    [FunctionName("L00_113_1_ch_sh_th_in", "f(x) = (ch(x/2) + sh(x/2))/ (ch(x/2) - sh(x/2)) - (1 + th(x/2))/(1 – th(x/2))")]
+    [EquivalentIntConstant(0)]
+    public static class CL00_113_1_ch_sh_th_in
+    {
+        public static string L00_113_1_ch_sh_th_in()
+        {
+            string str = "(0, 2.1226) (2.1226, w)";
+            return str;
+        }
+    }
 
 
-    // todo list
+    /* 
+      todo list
+    
+        тесты   
+    
 
-    // количество аргументов c 94
-    // в цикле * или +, тогда Х=0 или Х=1
-    // описание параметров под summary
-    // основание логарифма в 100
-    // ОДЗ с 100 
+
+
+     done list
+      
+       количество аргументов
+       - циклы
+       описание функций
+       все области определения 
+     тесты 86 - 90
+    */
 }
 
