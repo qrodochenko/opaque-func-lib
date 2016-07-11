@@ -2,6 +2,19 @@
 
 namespace OpaqueFunctions
 {
+    [OpaqueFunction()]
+    [FunctionName("CFakt", "Fakt")]
+    public static class CFakt
+    {
+        public static long Fakt(long N)
+        {
+            if (N == 0 || N == 1)
+                return 1;
+            else
+                return N * Fakt(N - 1);
+        }
+    }
+    
     /// <summary>
     /// Реализует тригонометрическую функцию sin(x),  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
@@ -16,16 +29,13 @@ namespace OpaqueFunctions
     {
         public static double Sin_1(double angle, int count)
         {
-            double X = angle, fact = 1, sign = -1, result = 0, a;
+            double X1, X = angle, result = 0, top,bottom;
             for (int i = 0; i < count; i++)
             {
-                sign *= -1;
-                for (int k = i; k <= 2 * i + 1; k++) 
-                    X *= X;
-                fact *= (2 * i + 1);
-                a = sign * X / fact;
-                result += a;
-
+                X1 = Math.Pow(X, 2 * i + 1);
+                top = X1 * Math.Pow(-1, i);
+                bottom = CFakt.Fakt(2 * i + 1);
+                result += top / bottom;
             }
             return result;
         }
@@ -57,16 +67,21 @@ namespace OpaqueFunctions
     {
         public static double Cos_1(double angle, int count)
         {
-            double X1 = angle, fact = 1, sign = -1, result = 0, a;
+            double X1,X = angle, result = 0, top, bottom;
             for (int i = 0; i < count; i++)
             {
-                sign *= -1;
-                for (int k = i; k <= 2 * i; k++)
-                    X1 *= X1;
-                for (int k = 1; k <= 2 * i; k++)
-                    fact *= k;
-                a = sign * X1 / fact;
-                result += a;
+                if (i == 0)
+                    result = 1;
+                else
+                    if (i == 1)
+                        result = 1 - X * X / 2.0;
+                    else
+                {
+                    X1 = Math.Pow(X, 2 * i);
+                    top = X1 * Math.Pow(-1, i);
+                    bottom = CFakt.Fakt(2 * i);
+                    result += top / bottom;
+                }
             }
             return result;
         }
@@ -98,15 +113,24 @@ namespace OpaqueFunctions
     {
         public static double Arcsin_1(double angle, int count)
         {
-            double result = 0, X = angle;
-            int k1 = 1, k2 = 1;
+            double result = 0, X1, X = angle, top, bottom;
             for (int i = 0; i < count; i++)
             {
-                for (int k = i; k <= 2 * i + 1; k++)
-                    X *= X;
-                k1 = 2 * i - 1;
-                k2 = 2 * i * (2 * i + 1);
-                result += k1 * X / k2;
+                if (i == 0)
+                    result = X;
+                else
+                    if (i == 1)
+                        result = X + Math.Pow(X, 3) / 6.0;
+                    else
+                        if (i == 2)
+                            result = X + Math.Pow(X, 3) / 6.0 + 3.0 * Math.Pow(X, 5) / 40.0;
+                        else
+                        {
+                            X1 = Math.Pow(X, 2 * i + 1);
+                            top = X1 * (2 * i - 1);
+                            bottom = 2 * i * (2 * i + 1);
+                            result += top / bottom;
+                        }
             }
             return result;
         }
@@ -138,17 +162,29 @@ namespace OpaqueFunctions
     {
         public static double Arccos_1(double angle, int count)
         {
-            double result = 0, X = angle;
-            double k1 = 1, k2 = 1;
+            double X1, X = angle, result = 0, top, bottom;
             for (int i = 0; i < count; i++)
             {
-                k1 = 2 * i - 1;
-                k2 = 2 * i * (2 * i + 1);
-                for (int k = i; k <= 2 * i + 1; k++)
-                    X *= X;
-                result += k1 * X / k2;
-            }
-            return Math.PI / 2.0 - result;
+                if (i == 0)
+                    result = X;
+                else
+                    if (i == 1)
+                        result = X + Math.Pow(X, 3) / 3.0;
+                    else
+                        if (i == 2)
+                        {
+                            result = X + Math.Pow(X, 3) / 3.0 + 3.0 * Math.Pow(X, 5) / 40.0;
+                            result = Math.PI / 2.0 - result;
+                        }
+                        else
+                        {
+                            X1 = Math.Pow(X, 2 * i + 1);
+                            top = X1 * (2 * i - 1);
+                            bottom = 2 * i * (2 * i + 1);
+                            result = result + top / bottom;
+                        }
+                }
+                return  result;
         }
     }
     /// <summary>
@@ -232,18 +268,21 @@ namespace OpaqueFunctions
     {
         public static double Tg_1(double angle, int count)
         {
-            double X = angle, sum = 0, Ber = 0, two;
-            long fakt;
-            for (int i = 1; i <= count; i++) 
+            double X1, X = angle,  top,topnew, bottom, result = 0;
+            for (int i = 5; i <= count; i++) 
             {
-                for (int k = i; k <= 2 * i + 1; k++)
-                    X *= X;
-                two = Math.Pow(2.0, (double)(2 * i));
-                fakt = Bernoulli.fact(2 * i);
-                Ber = Math.Abs(Bernoulli.Ber(2 * i));
-                sum += two * (two - 1) / fakt * X * Ber;
+                if (i == 5)
+                    result = X + Math.Pow(X, 3) / 3.0 + 2.0 * Math.Pow(X, 5) / 15.0 + 17.0 * Math.Pow(X, 7) / 315.0 + 62.0 * Math.Pow(X, 9) / 2835.0;
+                else
+                {
+                    X1 = Math.Pow(X, 2 * i - 1);
+                    top = Math.Pow(2, 2 * i) * (Math.Pow(2, 2 * i) - 1);
+                    top *= Math.Abs(Bernoulli.Ber(2 * i));
+                    bottom = CFakt.Fakt(2 * i);
+                    result += top / bottom;
+                }
             }
-            return sum;
+            return result;
         }
     }
 
