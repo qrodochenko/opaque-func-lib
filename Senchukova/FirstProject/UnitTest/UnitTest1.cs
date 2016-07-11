@@ -14,3 +14,17 @@ namespace UnitTest
         }
     }
 }
+
+
+    [TestClass]
+    public class UnitTest2
+    {
+        [TestMethod]
+        public void TestMethod2()
+        {
+            double m = Cinterval_ww_finfin_2.interval_ww_finfin_2(1);
+            Assert.IsTrue(Math.Abs(m - 1) < Double.Epsilon, "false");
+        }
+    }
+
+
