@@ -1,0 +1,74 @@
+T: Math_1_2_ln X C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+T: Math_2_2_ln X C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+T: Math_3_2_ln X C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+T: Math_4_2_ln X C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+T: Math_6_2_ln X C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+T: Math_8_2_ln X C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+T: Math_9_2_ln X C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+T: Math_10_2_ln X C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+T: LOX_9_2 X C:\git_reps\summer_practice\opaque-func-lib\Kondratenko\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(3,73): error CS1737: Optional parameters must appear after all required parameters
+T: LOX_10_2 X C:\git_reps\summer_practice\opaque-func-lib\Kondratenko\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(3,74): error CS1737: Optional parameters must appear after all required parameters
+T: LOX_11_2 X C:\git_reps\summer_practice\opaque-func-lib\Kondratenko\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(3,74): error CS1737: Optional parameters must appear after all required parameters
+T: LOX_12_2 X C:\git_reps\summer_practice\opaque-func-lib\Kondratenko\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(3,74): error CS1737: Optional parameters must appear after all required parameters
+T: Sin_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(10,26): error CS0103: The name 'CFakt' does not exist in the current context
+Cos_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(13,30): error CS0103: The name 'CFakt' does not exist in the current context
+T: Cos_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(14,30): error CS0103: The name 'CFakt' does not exist in the current context
+Arcsin_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(2,40): error CS0103: The name 'x' does not exist in the current context
+T: Arcsin_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+Arccos_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Arctg_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Arcctg_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Cosec_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(12,30): error CS0103: The name 'CFakt' does not exist in the current context
+Xpow2_Sin_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(8,26): error CS0103: The name 'CFakt' does not exist in the current context
+Xpow2_Cos_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(8,26): error CS0103: The name 'CFakt' does not exist in the current context
+Xpow3_Sin_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(8,26): error CS0103: The name 'CFakt' does not exist in the current context
+Xpow3_Cos_1 X C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(8,26): error CS0103: The name 'CFakt' does not exist in the current context
+Math_1_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_2_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_3_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_4_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_5_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_6_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_7_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_8_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_9_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_10_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_11_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_12_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_13_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_14_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+Math_15_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^Недостаточно памяти для продолжения выполнения программы.
+T: Math_15_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+Math_16_2 X C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
+^^ERROR^^(

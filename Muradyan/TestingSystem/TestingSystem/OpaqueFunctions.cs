@@ -89,7 +89,7 @@ namespace OpaqueFunctions
             for (int i = 0; i < count; i++)
             {
                 sign *= sign;
-                for (int k = i; k <= 2 * k; k++)
+                for (int k = i; k <= 2 * i; k++)
                     X1 *= X1;
                 fact *= (2 * i);
                 a = sign * X1 / fact;

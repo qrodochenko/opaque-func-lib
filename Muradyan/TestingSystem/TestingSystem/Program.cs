@@ -158,38 +158,38 @@ namespace TestingSystem
 
             Directory.CreateDirectory("Reports");
             Directory.CreateDirectory("ReportsTaylor");
-
+            var sw = new StreamWriter("errors.txt");
             Console.WriteLine("Methods found total: {0}", listOfMethods.Count);
             listOfMethods.ForEach(
                 (m) => 
                 {
                     if (m.Correct)
                     {
-                        Console.WriteLine("{0} {1}", m.Name, m.Type);
+                        sw.WriteLine("{0} {1} {2}", m.Name, m.Type, m.FilePath);
                         try
                         {
                             m.GetTestingReport(100, 50, new double[] { 2, 3 }).SaveCSV("Reports\\" + m.Name + ".csv");
                         }
                         catch(Exception e)
                         {
-                            Console.WriteLine("^^ERROR^^"+e.Message);
+                            sw.WriteLine("^^ERROR^^"+e.Message);
                         }
                     }
                     var mT = MethodForTestingTaylor.GetTaylorExtension(m);
                     if (mT.Correct)
                     {
-                        Console.WriteLine("T: {0} {1}", m.Name, m.Type);
+                        sw.WriteLine("T: {0} {1} {2}", m.Name, m.Type, m.FilePath);
                         try
                         {
                             mT.GetTestingReport(100, 50, new double[] { 2, 3 }).SaveCSV("ReportsTaylor\\" + m.Name + ".csv");
                         }
                         catch (Exception e)
                         {
-                            Console.WriteLine("^^ERROR^^"+e.Message);
+                            sw.WriteLine("^^ERROR^^"+e.Message);
                         }
                     }
                 });
-            Console.ReadKey();
+            sw.Close();
         }
     }
 
@@ -654,6 +654,11 @@ namespace TestingSystem
     //Считаем, что внутри выажений скобок нет
     public class IntervalMethod
     {
+        //TODO:
+        //Параметризованные интервалы
+        //Замена маленьких идентификаторов на большие
+        string Code;
+
         public static Interval[] Evaluate(MethodDeclarationSyntax meth)
         {
             var methName = meth.Identifier.ValueText;
@@ -721,6 +726,11 @@ namespace TestingSystem
 
         public static string Name = "_ideal";
         public static string ReturnType = "double";
+        public static Dictionary<string, string> IdentifierDic = new Dictionary<string, string>()
+        {
+            { "SIN", "Sin" }, {"COS", "Cos" }, {"TAN",  "Tan"}, {"LN", "Log" }, { "LOG","Log10"},
+            {"X", "X" }, {"Y", "Y" }, {"A", "A" }, {"B", "B" }
+        };
 
         Type GetArgsType()
         {
@@ -739,13 +749,32 @@ namespace TestingSystem
         public IdealTestMethod(string IdealExpression, MethodType mtype)
         {
             Type = mtype;
-            var EvalExpression = TestingUtilities.getEvalExpression(
-                CSharpSyntaxTree.ParseText(ReturnType + " " + Name + TestingUtilities.generateArguments(Type, false, true, 0) + 
-                                            "{ return "+
-                                            IdealExpression.Replace('x', 'X').Replace('y','Y') +
+            var parsed = CSharpSyntaxTree.ParseText(ReturnType + " " + Name + TestingUtilities.generateArguments(Type, false, true, 0) +
+                                            "{ return " +
+                                            IdealExpression +
                                             "; }")
-                                            .GetRoot().ChildNodes().OfType<MethodDeclarationSyntax>().First(),
-                "using System;\n", mtype, true);
+                                            .GetRoot().ChildNodes().OfType<MethodDeclarationSyntax>().First();
+            while (true)
+            {
+                var identifiers = parsed.DescendantNodes().OfType<IdentifierNameSyntax>();
+                bool notFound = true;
+                foreach(var id in identifiers)
+                {
+                    var idTextNCh = id.Identifier.ValueText.Trim();
+                    var idText = idTextNCh.Trim();
+                    if (!IdentifierDic.ContainsKey(idText)) continue;
+                    var dicText = IdentifierDic[idText];
+
+                    if (dicText != idTextNCh){
+                        parsed = parsed.ReplaceNode(id, SyntaxFactory.IdentifierName(dicText));
+                        notFound = false;
+                        break;
+                    }
+                }
+                if (notFound) break;
+            }
+
+            var EvalExpression = TestingUtilities.getEvalExpression(parsed, "using System;\n", mtype, true);
 
             Script = CSharpScript.Create<double>(EvalExpression, ScriptOptions.Default.WithImports("System.Math"), GetArgsType());
 
@@ -896,6 +925,7 @@ namespace TestingSystem
 
             if (argsSynt.Count() == 0 || argsSynt.Last().Type.GetText().ToString().Trim() != "int") return MethodType.NOT_DETECTED;
             if (args.Length <2) return MethodType.NOT_DETECTED;
+            if (args.Length == 2) return MethodType.X;
             if (args[0] == "X")
             {
                 if (args.Length == 2) return MethodType.X;
@@ -925,7 +955,9 @@ namespace TestingSystem
             Dictionary<string, MethodType> MethodTypes = null )
         {
             MethodTypes = MethodTypes ?? new Dictionary<string, MethodType>();
-
+#if DEBUG
+            StreamWriter sw = new StreamWriter("gmffErrors.txt");
+#endif
             List<MethodForTesting> reslist = new List<MethodForTesting>();
             foreach(var fname in FileNames)
             {
@@ -942,7 +974,13 @@ namespace TestingSystem
 
                     var t = MethodTypes.ContainsKey(thisMethodName) ? MethodTypes[thisMethodName] :
                         (methodTypeDetection ? DetectType(meth): MethodType.X);
-                    if (t == MethodType.NOT_DETECTED) continue;
+                    if (t == MethodType.NOT_DETECTED)
+                    {
+#if DEBUG
+                        sw.WriteLine(thisMethodName + " " + fname + " " + " Not detected");
+#endif
+                        continue;
+                    }
 
                     MethodForTesting m = null;
 
@@ -977,8 +1015,11 @@ namespace TestingSystem
                     {
                         m.IdealMethod = new IdealTestMethod(expressionsDic[m.Name], m.Type);
                     }
-                    catch(Exception)
+                    catch(Exception e)
                     {
+#if DEBUG
+                        sw.WriteLine(m.Name+" "+m.FilePath+ " "+e.Message);
+#endif
                         m.Correct = false;
                     }
 
