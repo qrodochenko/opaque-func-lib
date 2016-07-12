@@ -1,0 +1,28 @@
+58;f(x) = arctg(x) Ц arcctg(1/x);(0, w);arctg_arcctg; X = 1, Y1, Y2;ѕоложительное число
+59;f(x) = arctg(x) Ц arccos(1/((1+x*x)^1/2));(0, w);arctg_arccos; X = 1, Y1, Y2, Y3, Y4, Y5;ѕоложительное число
+60;f(x) = arcctg(1/x) - arccos(1/((1+x*x)^1/2));(0, w);arcctg_arccos; X = 1, Y1, Y2, Y3;ѕоложительное число
+61;f(x) = arcctg(x) - arccos(x/((1+x*x)^1/2));(0, w);arcctg_arccos; X = 1, Y1, Y2, Y3;ѕоложительное число
+62;f(x) = arcctg(x) Ц arcsin(1/((1+x*x)^1/2));(0, w);arctg_arcsin; X = 1, Y1, Y2, Y3;ѕоложительное число
+63;f(x) = cos(2x) Ц 2*cos(x)*cos(x) + 1;(w, w);cos; Y1, Y2, Y3, X = 1;”гол в радианах
+64;f(x) = cos(2x) Ц 1 + 2*sin(x)*sin(x);(w, w);cos_sin; Y1, Y2, Y3, X = 1;”гол в радианах
+65;f(x) = tg(x) Ц 1/(tg(PI/2-x));(w, w);tg; Y1, Y2, Y3, X = 1;”гол в радианах
+66;f(x) = tg(x) Ц (tg(a) + tg(x-a)/(1 Ц tg(a)*tg(x-a));(w, w) (w, w);tg; Y1, Y2, Y3, X = 1;”гол в радианах;ѕроизвольный параметр
+67;f(x) = ch(x)*ch(x) Ц sh(x)*sh(x) Ц 1;(w, w);ch_sh; Y1, Y2, X=1;”гол в радианах
+68;f(x) = th(x) Ц sh(x)/ch(x);(w, w);th_sh_ch; Y1, Y2, Y3, X = 1;”гол в радианах
+69;f(x) = cth(x) Ц ch(x)/sh(x);(w, w);cth_sh_ch; Y1, Y2, Y3, X=1;”гол в радианах
+70;f(x) = sch(x) Ц 1/ch(x);(w, w);sch_ch; Y1, Y2, X=1;”гол в радианах
+71;f(x) = csch(x) Ц 1/sh(x);(w, w);sch_ch; Y1, Y2, X=1;”гол в радианах
+72;f(x,y) = sh(x+y) Ц (sh(x)*ch(y) + ch(x)*sh(y));(w, w) (w, w);sh_ch;Y1, Y2, Y3, Y4, Y5, Y6, X = 1;”гол в радианах;”гол в радианах
+73;f(x,y) = sh(x-y) Ц (sh(x)*ch(y) - ch(x)*sh(y));(w, w) (w, w);sh_ch;Y1, Y2, Y3, Y4, Y5, Y6, X = 1;”гол в радианах;”гол в радианах
+74;f(x,y) = ch(x+y) Ц (ch(x)*ch(y) + sh(x)*sh(y));(w, w) (w, w);sh_ch;Y1, Y2, Y3, Y4, Y5, Y6, X = 1;”гол в радианах;”гол в радианах
+75;f(x,y) = ch(x-y) Ц (ch(x)*ch(y) - sh(x)*sh(y));(w, w) (w, w);sh_ch;Y1, Y2, Y3, Y4, Y5, Y6, X = 1;”гол в радианах;”гол в радианах
+76;f(x,y) = th(x+y) Ц (th(x) + th(y)/(1 + th(x)*th(y));(w, w) (w, w);th;Y1, Y2, Y3, Y4, X=1;”гол в радианах;”гол в радианах
+77;f(x,y) = th(x-y) Ц (th(x) - th(y)/(1 - th(x)*th(y));(w, w) (w, w);th;Y1, Y2, Y3, Y4, X=1;”гол в радианах;”гол в радианах
+78;f(x,y)  = cth(x+y) Ц (1 + cth(x)*cth(y))/(cth(x) + cth(y));(w, w) (w, w);cth;Y1, Y2, Y3, Y4, X=1;”гол в радианах;”гол в радианах
+79;f(x,y)  = cth(x-y) Ц (1 - cth(x)*cth(y))/(cth(x) - cth(y));(w, w) (w, w);cth;Y1, Y2, Y3, Y4, X=1;”гол в радианах;”гол в радианах
+80;f(x,y) = 2*sh(x)*sh(y) Ц ch(x+y) + ch(x-y);(w, w) (w, w);sh_ch;Y1, Y2, Y3, Y4, Y5, Y6, X = 1;”гол в радианах;”гол в радианах
+81;f(x,y) = 2*ch(x)*ch(y) Ц ch(x+y) Ц ch(x-y);(w, w) (w, w);sh_ch;Y1, Y2, Y3, Y4, Y5, Y6,X = 1;”гол в радианах;”гол в радианах
+82;f(x,y) = 2*sh(x)*ch(y) Ц sh(x+y) Ц sh(x-y);(w, w) (w, w);sh_ch;Y1, Y2, Y3, Y4, Y5, Y6,X = 1;”гол в радианах;”гол в радианах
+83;f(x) = ch(2x) Ц sh(x)*sh(x) + ch(x)*ch(x);(w, w);sh_ch;Y1, Y2, Y3, Y4, X = 1;”гол в радианах
+84;f(x) = cth(2x) Ц (1 + cth(x)*cth(x))/(2*cth(x));(w, w);cth;Y1, Y2, Y3, Y4, Y5, X=1;”гол в радианах
+85;f(x) = sh(2x) Ц 2*sh(x)*ch(x);(w, w);sh_ch;Y1, Y2, Y3, Y4, X=1;”гол в радианах

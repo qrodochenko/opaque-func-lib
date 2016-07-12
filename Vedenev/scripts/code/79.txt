@@ -1,0 +1,5 @@
+Y1 = x-y;
+Y2 = Math.Tan(x+y);
+Y3 = Math.Tan(x);
+Y4 = Math.Tan(y);
+X = 1/Y2 - (1 - 1/Y3 * 1/Y4)/(1 / Y3 - 1 / Y4);

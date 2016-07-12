@@ -1,0 +1,4 @@
+Y1 = Math.Tan(x);
+Y2 = Math.PI/2 - x;
+Y3 = Math.Tan(Y2);
+X = Y1 - 1/Y3;

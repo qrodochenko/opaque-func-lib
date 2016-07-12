@@ -1,0 +1,4 @@
+Y1 = Math.PI/2 - Math.Atan(1/x);
+Y2 = 1/Math.Pow(1+x*x, 0.5);
+Y3 = Math.Acos(Y2);
+X = Y1 - Y3;
