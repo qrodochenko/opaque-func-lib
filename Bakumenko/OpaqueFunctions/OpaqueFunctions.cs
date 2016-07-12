@@ -15,8 +15,9 @@ namespace OpaqueFunctions
     {
         public static double L00_30_1_sin_arccos(double angle)
         {
-            double X, sinX, sqrtX;
-            sinX = Math.Sin(Math.Acos(angle));
+            double X, sinX, arccosX, sqrtX;
+            arccosX = Math.Acos(angle);
+            sinX = Math.Sin(arccosX);
             sqrtX = Math.Sqrt(1 - angle * angle);
             X = sinX - sqrtX;
             return X;
@@ -52,10 +53,11 @@ namespace OpaqueFunctions
     {
         public static double L00_31_1_cos_arcsin(double angle)
         {
-            double X, sinX, sqrtX;
-            sinX = Math.Cos(Math.Asin(angle));
+            double X, cosX, arcsinX, sqrtX;
+            arcsinX = Math.Asin(angle);
+            cosX = Math.Cos(arcsinX);
             sqrtX = Math.Sqrt(1 - angle * angle);
-            X = sinX - sqrtX;
+            X = cosX - sqrtX;
             return X;
         }
     }
@@ -92,7 +94,7 @@ namespace OpaqueFunctions
             double X, sinX, arctgX, cosX, arcctgX;
             arctgX = Math.Atan(angle);
             sinX = Math.Sin(arctgX);
-            arcctgX = (Math.PI - Math.Atan(angle));
+            arcctgX = (Math.PI / 2 - Math.Atan(angle));
             cosX = Math.Cos(arcctgX);
             X = sinX - cosX;
             return X;
@@ -110,13 +112,14 @@ namespace OpaqueFunctions
     {
         public static string L00_32_1_sin_arctg_cos_arcctg_in()
         {
-            string str = "(w, w)";
+            string str = "(-1, 1)";
             return str;
         }
     }
 
     /// <summary>
     /// Реализует 33. f(x) = sin(arctg(x)) – x/((1+x*x)^1/2)
+    /// ОДЗ синуса [-1,1]
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
     /// <returns>0</returns>
@@ -127,8 +130,9 @@ namespace OpaqueFunctions
     {
         public static double L00_33_1_sin_arctg(double angle)
         {
-            double X, sinX, sqrtX;
-            sinX = Math.Sin(Math.Atan(angle));
+            double X, sinX, arctgX, sqrtX;
+            arctgX = Math.Atan(angle);
+            sinX = Math.Sin(arctgX);
             sqrtX = angle / Math.Sqrt(1 + angle * angle);
             X = sinX - sqrtX;
             return X;
@@ -146,7 +150,7 @@ namespace OpaqueFunctions
     {
         public static string L00_33_1_sin_arctg_in()
         {
-            string str = "(w, w)";
+            string str = "(-1, 1)";
             return str;
         }
     }
@@ -164,8 +168,9 @@ namespace OpaqueFunctions
     {
         public static double L00_34_1_cos_arcctg(double angle)
         {
-            double X, cosX, sqrtX;
-            cosX = Math.Cos(Math.PI - Math.Atan(angle));
+            double X, cosX, arcctgX, sqrtX;
+            arcctgX = Math.PI / 2 - Math.Atan(angle);
+            cosX = Math.Cos(arcctgX);
             sqrtX = angle / Math.Sqrt(1 + angle * angle);
             X = cosX - sqrtX;
             return X;
@@ -183,7 +188,7 @@ namespace OpaqueFunctions
     {
         public static string L00_34_1_cos_arcctg_in()
         {
-            string str = "(w, w)";
+            string str = "(-1, 1)";
             return str;
         }
     }
@@ -200,8 +205,9 @@ namespace OpaqueFunctions
     {
         public static double L00_35_1_cos_arctg(double angle)
         {
-            double X, cosX, sqrtX;
-            cosX = Math.Cos(Math.Atan(angle));
+            double X, cosX, arctgX, sqrtX;
+            arctgX = Math.Atan(angle);
+            cosX = Math.Cos(arctgX);
             sqrtX = 1 / Math.Sqrt(1 + angle * angle);
             X = cosX - sqrtX;
             return X;
@@ -219,7 +225,7 @@ namespace OpaqueFunctions
     {
         public static string L00_35_1_cos_arctg_in()
         {
-            string str = "(w, w)";
+            string str = "(-1, 1)";
             return str;
         }
     }
@@ -236,8 +242,9 @@ namespace OpaqueFunctions
     {
         public static double L00_36_1_sin_arcctg(double angle)
         {
-            double X, sinX, sqrtX;
-            sinX = Math.Sin(Math.PI - Math.Atan(angle));
+            double X, sinX, arcctgX, sqrtX;
+            arcctgX = Math.PI / 2 - Math.Atan(angle);
+            sinX = Math.Sin(arcctgX);
             sqrtX = 1 / Math.Sqrt(1 + angle * angle);
             X = sinX - sqrtX;
             return X;
@@ -255,7 +262,7 @@ namespace OpaqueFunctions
     {
         public static string L00_36_1_sin_arcctg_in()
         {
-            string str = "(w, w)";
+            string str = "(-1, 1)";
             return str;
         }
     }
@@ -272,8 +279,9 @@ namespace OpaqueFunctions
     {
         public static double L00_37_1_tg_arcsin(double angle)
         {
-            double X, tgX, sqrtX;
-            tgX = Math.Tan(Math.Asin(angle));
+            double X, tgX, arcsinX, sqrtX;
+            arcsinX = Math.Asin(angle);
+            tgX = Math.Tan(arcsinX);
             sqrtX = angle / Math.Sqrt(1 - angle * angle);
             X = tgX - sqrtX;
             return X;
@@ -308,8 +316,9 @@ namespace OpaqueFunctions
     {
         public static double L00_38_1_ctg_arccos(double angle)
         {
-            double X, ctgX, sqrtX;
-            ctgX = 1 / Math.Tan(Math.Acos(angle));
+            double X, ctgX, arccosX, sqrtX;
+            arccosX = Math.Acos(angle);
+            ctgX = 1 / Math.Tan(arccosX);
             sqrtX = angle / Math.Sqrt(1 - angle * angle);
             X = ctgX - sqrtX;
             return X;
@@ -344,8 +353,9 @@ namespace OpaqueFunctions
     {
         public static double L00_39_1_tg_arccos(double angle)
         {
-            double X, tgX, sqrtX;
-            tgX = Math.Tan(Math.Acos(angle));
+            double X, tgX, arccosX, sqrtX;
+            arccosX = Math.Acos(angle);
+            tgX = Math.Tan(arccosX);
             sqrtX = Math.Sqrt(1 - angle * angle) / angle;
             X = tgX - sqrtX;
             return X;
@@ -380,10 +390,11 @@ namespace OpaqueFunctions
     {
         public static double L00_40_1_ctg_arcsin(double angle)
         {
-            double X, sinX, sqrtX;
-            sinX = 1 / Math.Tan(Math.Asin(angle));
+            double X, ctgX, arcsinX, sqrtX;
+            arcsinX = Math.Asin(angle);
+            ctgX = 1 / Math.Tan(arcsinX);
             sqrtX = Math.Sqrt(1 - angle * angle) / angle;
-            X = sinX - sqrtX;
+            X = ctgX - sqrtX;
             return X;
         }
     }
@@ -416,9 +427,11 @@ namespace OpaqueFunctions
     {
         public static double L00_41_1_sin_arcctg_cos_arctg(double angle)
         {
-            double X, sinX, cosX;
-            sinX = Math.Sin(Math.PI - Math.Atan(angle));
-            cosX = Math.Cos(Math.Tan(angle));
+            double X, sinX, cosX, arcctgX, arctgX;
+            arcctgX = Math.PI / 2 - Math.Atan(angle);
+            sinX = Math.Sin(arcctgX);
+            arctgX = Math.Atan(angle);
+            cosX = Math.Cos(arctgX);
             X = sinX - cosX;
             return X;
         }
@@ -435,7 +448,7 @@ namespace OpaqueFunctions
     {
         public static string L00_41_1_sin_arcctg_cos_arctg_in()
         {
-            string str = "(w, w)";
+            string str = "(-1, 1)";
             return str;
         }
     }
@@ -452,8 +465,9 @@ namespace OpaqueFunctions
     {
         public static double L00_42_1_tg_arctg(double angle)
         {
-            double X, tgX;
-            tgX = Math.Tan(Math.Atan(angle));
+            double X, tgX, arctgX;
+            arctgX = Math.Atan(angle);
+            tgX = Math.Tan(arctgX);
             X = tgX - angle;
             return X;
         }
@@ -470,7 +484,7 @@ namespace OpaqueFunctions
     {
         public static string L00_42_1_tg_arctg_in()
         {
-            string str = "(w, w)";
+            string str = "(-Pi/2, Pi/2)";
             return str;
         }
     }
@@ -487,9 +501,11 @@ namespace OpaqueFunctions
     {
         public static double L00_43_1_tg_arcsin_ctg_arccos(double angle)
         {
-            double X, tgX, ctgX;
-            tgX = Math.Tan(Math.Asin(angle));
-            ctgX = 1 / Math.Tan(Math.Acos(angle));
+            double X, tgX, ctgX, arcsinX, arccosX;
+            arcsinX = Math.Asin(angle);
+            tgX = Math.Tan(arcsinX);
+            arccosX = Math.Acos(angle);
+            ctgX = 1 / Math.Tan(arccosX);
             X = tgX - ctgX;
             return X;
         }
@@ -523,9 +539,11 @@ namespace OpaqueFunctions
     {
         public static double L00_44_1_tg_arccos_ctg_arcsin(double angle)
         {
-            double X, tgX, ctgX;
-            tgX = Math.Tan(Math.Acos(angle));
-            ctgX = 1 / Math.Tan(Math.Asin(angle));
+            double X, tgX, arccosX, arcsinX, ctgX;
+            arccosX = Math.Acos(angle);
+            tgX = Math.Tan(arccosX);
+            arcsinX = (Math.Asin(angle));
+            ctgX = 1 / Math.Tan(arcsinX);
             X = tgX - ctgX;
             return X;
         }
@@ -559,8 +577,9 @@ namespace OpaqueFunctions
     {
         public static double L00_45_1_ctg_arcctg(double angle)
         {
-            double X, ctgX;
-            ctgX = 1 / Math.Tan(Math.PI - Math.Atan(angle));
+            double X, ctgX, arcctgX;
+            arcctgX = Math.PI / 2- Math.Atan(angle);
+            ctgX = 1 / Math.Tan(arcctgX);
             X = ctgX - angle;
             return X;
         }
@@ -594,8 +613,9 @@ namespace OpaqueFunctions
     {
         public static double L00_46_1_arcsin_sin(double angle)
         {
-            double X, arcsinX;
-            arcsinX = Math.Asin(Math.Sin(angle));
+            double X, arcsinX, sinX;
+            sinX = Math.Sin(angle);
+            arcsinX = Math.Asin(sinX);
             X = arcsinX - angle;
             return X;
         }
@@ -629,8 +649,9 @@ namespace OpaqueFunctions
     {
         public static double L00_47_1_arccos_cos(double angle)
         {
-            double X, arccosX;
-            arccosX = Math.Acos(Math.Cos(angle));
+            double X, arccosX, cosX;
+            cosX = Math.Cos(angle);
+            arccosX = Math.Acos(cosX);
             X = arccosX - angle;
             return X;
         }
@@ -664,8 +685,9 @@ namespace OpaqueFunctions
     {
         public static double L00_48_1_arctg_tg(double angle)
         {
-            double X, arctgX;
-            arctgX = Math.Atan(Math.Tan(angle));
+            double X, arctgX, tgX;
+            tgX = Math.Tan(angle);
+            arctgX = Math.Atan(tgX);
             X = arctgX - angle;
             return X;
         }
@@ -699,8 +721,9 @@ namespace OpaqueFunctions
     {
         public static double L00_49_1_arcctg_ctg(double angle)
         {
-            double X, arcctgX;
-            arcctgX = Math.PI - Math.Atan(1 / Math.Tan(angle));
+            double X, arcctgX, ctgX;
+            ctgX = 1 / Math.Tan(angle);
+            arcctgX = Math.PI / 2- Math.Atan(ctgX);
             X = arcctgX - angle;
             return X;
         }
@@ -734,8 +757,10 @@ namespace OpaqueFunctions
     {
         public static double L00_50_1_arctg_arcctg(double angle)
         {
-            double X;
-            X = Math.Atan(angle) + (Math.PI - Math.Atan(angle)) - Math.PI / 2;
+            double X, arctgX, arcctgX;
+            arctgX = Math.Atan(angle);
+            arcctgX = Math.PI / 2 - Math.Atan(angle);
+            X = arctgX + arcctgX - Math.PI / 2;
             return X;
         }
     }
@@ -768,9 +793,11 @@ namespace OpaqueFunctions
     {
         public static double L00_51_1_arctg_arcsin(double angle)
         {
-            double X, arctgX;
-            arctgX = Math.Atan(angle / Math.Sqrt(1 - angle * angle));   
-            X = arctgX - Math.Asin(angle);
+            double X, arctgX, arcsinX, sqrtX;
+            arcsinX = Math.Asin(angle);
+            sqrtX = Math.Sqrt(1 - angle * angle);
+            arctgX = Math.Atan(sqrtX);   
+            X = arctgX - arcsinX;
             return X;
         }
     }
@@ -803,9 +830,11 @@ namespace OpaqueFunctions
     {
         public static double L00_52_1_arcsin_arccos(double angle)
         {
-            double X, arccosX;
-            arccosX = Math.Acos(Math.Sqrt(1 - angle * angle));
-            X = Math.Asin(angle) - arccosX;
+            double X, arccosX, sqrtX, arcsinX;
+            sqrtX = Math.Sqrt(1 - angle * angle);
+            arccosX = Math.Acos(sqrtX);
+            arcsinX = Math.Asin(angle);
+            X = arcsinX - arccosX;
             return X;
         }
     }
@@ -838,9 +867,11 @@ namespace OpaqueFunctions
     {
         public static double L00_53_1_arcctg_arcsin(double angle)
         {
-            double X, arcctgX;
-            arcctgX = Math.PI - Math.Atan(Math.Sqrt(1 - angle * angle) / angle);
-            X = arcctgX -Math.Asin(angle);
+            double X, arcctgX, sqrtX, arcsinX;
+            sqrtX = Math.Sqrt(1 - angle * angle) / angle;
+            arcctgX = Math.PI / 2- Math.Atan(sqrtX);
+            arcsinX = Math.Asin(angle);
+            X = arcctgX - arcsinX;
             return X;
         }
     }
@@ -873,9 +904,10 @@ namespace OpaqueFunctions
     {
         public static double L00_54_1_arccos_arcctg(double angle)
         {
-            double X, arccosX, arcctgX;
-            arccosX = Math.Acos(Math.Sqrt(1 - angle * angle));
-            arcctgX = Math.PI - Math.Atan(Math.Sqrt(1 - angle * angle) / angle);
+            double X, arccosX, arcctgX, sqrtX;
+            sqrtX = Math.Sqrt(1 - angle * angle);
+            arccosX = Math.Acos(sqrtX);
+            arcctgX = Math.PI / 2 - Math.Atan(sqrtX / angle);
             X = arccosX - arcctgX;
             return X;
         }
@@ -909,9 +941,11 @@ namespace OpaqueFunctions
     {
         public static double L00_55_1_arccos_arcctg(double angle)
         {
-            double X, arcctgX;
-            arcctgX = Math.PI - Math.Atan(angle / Math.Sqrt(1 - angle * angle));
-            X = Math.Acos(angle) - arcctgX;
+            double X, arcctgX, sqrtX, arccosX;
+            sqrtX = Math.Sqrt(1 - angle * angle);
+            arcctgX = Math.PI / 2- Math.Atan(angle / sqrtX);
+            arccosX = Math.Acos(angle);
+            X = arccosX - arcctgX;
             return X;
         }
     }
@@ -944,9 +978,11 @@ namespace OpaqueFunctions
     {
         public static double L00_56_1_arccos_arctg(double angle)
         {
-            double X, arctgX;
+            double X, arctgX, sqrtX, arccosX;
+            sqrtX = (Math.Sqrt(1 - angle * angle));
+            arccosX = Math.Acos(angle);
             arctgX = Math.Atan(Math.Sqrt(1 - angle * angle) / angle);
-            X = Math.Acos(angle) - arctgX;
+            X = arccosX - arctgX;
             return X;
         }
     }
@@ -979,9 +1015,11 @@ namespace OpaqueFunctions
     {
         public static double L00_57_1_arctg_arcsin(double angle)
         {
-            double X, arcsinX;
-            arcsinX = Math.Asin(angle / Math.Sqrt(1 + angle * angle));
-            X = Math.Atan(angle) - arcsinX;
+            double X, arcsinX, sqrtX, arctgX;
+            sqrtX = Math.Sqrt(1 + angle * angle);
+            arcsinX = Math.Asin(angle / sqrtX);
+            arctgX = Math.Atan(angle);
+            X = arctgX - arcsinX;
             return X;
         }
     }
