@@ -71,7 +71,7 @@ namespace OpaqueFunctions
     {
         public static string L00_31_1_cos_arcsin_in()
         {
-            string str = "(w, w)";
+            string str = "(-1, 1)";
             return str;
         }
     }
@@ -89,9 +89,11 @@ namespace OpaqueFunctions
     {
         public static double L00_32_1_sin_arctg_cos_arcctg(double angle)
         {
-            double X, sinX, cosX;
-            sinX = Math.Sin(Math.Atan(angle));
-            cosX = Math.Cos(Math.PI - Math.Atan(angle));
+            double X, sinX, arctgX, cosX, arcctgX;
+            arctgX = Math.Atan(angle);
+            sinX = Math.Sin(arctgX);
+            arcctgX = (Math.PI - Math.Atan(angle));
+            cosX = Math.Cos(arcctgX);
             X = sinX - cosX;
             return X;
         }
