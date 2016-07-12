@@ -148,27 +148,34 @@ namespace TestingSystem
             Console.ReadKey();
             */
 
+            //PlotGraph.makeErrorPlot()
+
             var sr = new StreamReader("../../CSlist.txt");
             var listOfFiles = new List<string>();
             while (!sr.EndOfStream)
             {
                 listOfFiles.Add(sr.ReadLine());
             }
-            var listOfMethods = MethodForTesting.getMethodsFromFiles(listOfFiles.ToArray(), new string[] {}, true, true);
+            var listOfMethods = MethodForTesting.getMethodsFromFiles(listOfFiles.ToArray(), new string[] {}, true, true,onlyNames: true);
 
             Directory.CreateDirectory("Reports");
             Directory.CreateDirectory("ReportsTaylor");
             var sw = new StreamWriter("errors.txt");
             Console.WriteLine("Methods found total: {0}", listOfMethods.Count);
             listOfMethods.ForEach(
-                (m) => 
+                (mt) => 
                 {
+                    MethodForTesting m = null;
+                    if(mt is IOneArgMethod)
+                        m = new MethodForTestingOneArg(mt.FilePath, mt.Name);
+                    else if(mt is ITwoArgMethod)
+                        m = new MethodForTestingOneArg(mt.FilePath, mt.Name);
                     if (m.Correct)
                     {
                         sw.WriteLine("{0} {1} {2}", m.Name, m.Type, m.FilePath);
                         try
                         {
-                            m.GetTestingReport(100, 50, new double[] { 2, 3 }).SaveCSV("Reports\\" + m.Name + ".csv");
+                            m.GetTestingReport(10, 500, new double[] { 2, 3 }).SaveCSV("Reports\\" + m.Name + ".csv");
                         }
                         catch(Exception e)
                         {
@@ -181,7 +188,7 @@ namespace TestingSystem
                         sw.WriteLine("T: {0} {1} {2}", m.Name, m.Type, m.FilePath);
                         try
                         {
-                            mT.GetTestingReport(100, 50, new double[] { 2, 3 }).SaveCSV("ReportsTaylor\\" + m.Name + ".csv");
+                            mT.GetTestingReport(10, 500, new double[] { 2, 3 }).SaveCSV("ReportsTaylor\\" + m.Name + ".csv");
                         }
                         catch (Exception e)
                         {
@@ -190,6 +197,9 @@ namespace TestingSystem
                     }
                 });
             sw.Close();
+
+            PlotGraph.makeErrorPlots("Reports");
+            PlotGraph.makeErrorPlots("ReportsTaylor");
         }
     }
 
@@ -657,7 +667,6 @@ namespace TestingSystem
         //TODO:
         //Параметризованные интервалы
         //Замена маленьких идентификаторов на большие
-        string Code;
 
         public static Interval[] Evaluate(MethodDeclarationSyntax meth)
         {
@@ -761,7 +770,7 @@ namespace TestingSystem
                 foreach(var id in identifiers)
                 {
                     var idTextNCh = id.Identifier.ValueText.Trim();
-                    var idText = idTextNCh.Trim();
+                    var idText = idTextNCh.ToUpper();
                     if (!IdentifierDic.ContainsKey(idText)) continue;
                     var dicText = IdentifierDic[idText];
 
@@ -828,7 +837,7 @@ namespace TestingSystem
         }
 
         public MethodForTesting(string FilePath, string MethodName) : 
-            this(getMethodsFromFiles(new string[] { FilePath }, new string[] { MethodName })[0])
+            this(getMethodsFromFiles(new string[] { FilePath }, new string[] { MethodName },methodTypeDetection:true)[0])
         {
             
         }
@@ -952,6 +961,7 @@ namespace TestingSystem
             string[] MethodNames,
             bool exclude = false,
             bool methodTypeDetection = false,
+            bool onlyNames = false,
             Dictionary<string, MethodType> MethodTypes = null )
         {
             MethodTypes = MethodTypes ?? new Dictionary<string, MethodType>();
@@ -1004,11 +1014,17 @@ namespace TestingSystem
                         continue;
                     }
 
+                    m.Name = thisMethodName;
+                    m.FilePath = fname;
+                    if (onlyNames)
+                    {
+                        reslist.Add(m);
+                        continue;
+                    }
                     m.Type = t;
                     m.Code = meth.GetText().ToString();
-                    m.Name = thisMethodName;
                     m.Node = meth;
-                    m.FilePath = fname;
+                    
                     m.Correct = true;
 
                     try
@@ -1026,8 +1042,8 @@ namespace TestingSystem
                     var EvalCode = Usings + m.Code + "\nreturn " + 
                         m.Name + TestingUtilities.generateArguments(m.Type, true, false, 0)+";\n";
                     var opts = ScriptOptions.Default;
-                    var mscorlib = typeof(System.Object).Assembly;
-                    opts = opts.AddReferences(mscorlib);
+                    //var mscorlib = typeof(System.Object).Assembly;
+                    //opts = opts.AddReferences(mscorlib);
                     opts = opts.AddImports("System");
                     opts = opts.AddImports("System.Math");
                     m.Script = CSharpScript.Create<double>(EvalCode, opts, m.GetArgsType());
@@ -1035,9 +1051,12 @@ namespace TestingSystem
 
 
                     reslist.Add(m);
+                    
                 }
             }
 
+            sw.Close();
+            sw.Dispose();
             return reslist;
         }
     }

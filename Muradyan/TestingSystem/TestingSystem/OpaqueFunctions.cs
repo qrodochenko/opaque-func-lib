@@ -61,7 +61,7 @@ namespace OpaqueFunctions
     /// Возвращает область определения функции sin(x)
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("Sin_1_in", "Sin(x)")]
+    [FunctionName("Sin_1_in", "sin(x)")]
     public static class CSin_1_in
     {
         public static string Sin_1_in()
