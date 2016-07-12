@@ -1,15 +1,73 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Windows.Forms.DataVisualization.Charting; //консольное приложение не имеет ссылки сюда само по себе. Нужно добавить её через меню "Добавить->Ссылка->Платформа".
+//System.Windows.Forms + System.Windows.Forms.DataVisualization + System.Drawing
+using Microsoft.VisualBasic.FileIO; //то же самое, нужно для обработки .csv
 using OpaqueFunctions;
 
 namespace SummerPractice_2016
 {
     class Program
     {
+        static void makeErrorPlot(string source_csv_file_name)
+        //немного магии от разработчиков .Net, по которой нет ни одного приличного гайда в сети. Нужно осознать.
+        {
+            TextFieldParser parser = new TextFieldParser(source_csv_file_name); //обрабатываем .csv файл
+            parser.TextFieldType = FieldType.Delimited;
+            parser.SetDelimiters(";");
+            var errorChart = new Chart();
+            var relativeErrorChart = new Chart();
+
+            errorChart.Series.Add("absolute_error");
+            relativeErrorChart.Series.Add("relative_error");
+
+            string headers = parser.ReadLine();
+            var x_coordinates = new List<double>();
+            while (!parser.EndOfData)
+            {
+                string[] fields = parser.ReadFields();
+                errorChart.Series["absolute_error"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[1])); //добавляем точки на график
+                relativeErrorChart.Series["relative_error"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[2]));
+            }
+            errorChart.Series["absolute_error"].ChartType = SeriesChartType.FastLine;
+            errorChart.Series["absolute_error"].Color = System.Drawing.Color.Red;
+            errorChart.Height = 1000;
+            errorChart.Width = 1000;
+            errorChart.ChartAreas.Add("NewChartArea");
+            errorChart.Series["absolute_error"].ChartArea = "NewChartArea";
+
+            String path = source_csv_file_name.Replace("csv\\", "$").Split('$')[0];
+            String absoluteErrorFolder = path + "absolute_error_plots";
+            if (!System.IO.Directory.Exists(absoluteErrorFolder))
+                System.IO.Directory.CreateDirectory(absoluteErrorFolder);
+            errorChart.SaveImage(source_csv_file_name.Replace("csv\\", "absolute_error_plots\\").Replace(".csv", ".png"), ChartImageFormat.Png);
+
+            relativeErrorChart.Series["relative_error"].ChartType = SeriesChartType.FastLine;
+            relativeErrorChart.Series["relative_error"].Color = System.Drawing.Color.Green;
+            relativeErrorChart.Height = 1000;
+            relativeErrorChart.Width = 1000;
+            relativeErrorChart.ChartAreas.Add("NewRelativeChartArea");
+            relativeErrorChart.Series["relative_error"].ChartArea = "NewRelativeChartArea";
+
+            String relativeErrorFolder = path + "relative_error_plots";
+            if (!System.IO.Directory.Exists(relativeErrorFolder))
+                System.IO.Directory.CreateDirectory(relativeErrorFolder);
+            relativeErrorChart.SaveImage(source_csv_file_name.Replace("csv\\", "relative_error_plots\\").Replace(".csv", ".png"), ChartImageFormat.Png);
+        }
+
+        static void makeErrorPlots(string source_csv_folder_name) //в директории не должно быть лишнего, считаем, что там только csv, притом нужного формата
+        {
+            foreach (String source_csv_file_name in System.IO.Directory.GetFiles(source_csv_folder_name))
+                makeErrorPlot(source_csv_file_name);
+        }
+
         static void Main(string[] args)
         {
-            System.IO.StreamWriter file2 =
+            makeErrorPlots(@"D:\student\prakt\opaque-func-lib\Pashkov\csv");
+
+           /* System.IO.StreamWriter file2 =
                  new System.IO.StreamWriter(@"F:\Практика\csv\L00_2.csv");
-            file2.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
+            file2.WriteLine("angle" + ';' + "absoluteError" + ';' + "relativeError");
             for (int i = 1; i < 100; i++)
             {
                 double dx = Math.PI / 100.0;
@@ -25,7 +83,7 @@ namespace SummerPractice_2016
 
             System.IO.StreamWriter file3 =
                  new System.IO.StreamWriter(@"F:\Практика\csv\L00_3.csv");
-            file3.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
+            file3.WriteLine("angle" + ';' + "absoluteError" + ';' + "relativeError");
             for (int i = 1; i < 100; i++)
             {
                 double dx = Math.PI / 100.0;
@@ -41,7 +99,7 @@ namespace SummerPractice_2016
 
             System.IO.StreamWriter file4 =
                  new System.IO.StreamWriter(@"F:\Практика\csv\L00_4.csv");
-            file4.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
+            file4.WriteLine("angle" + ';' + "absoluteError" + ';' + " relativeError");
             for (int i = 1; i < 100; i++)
             {
                 double dx = Math.PI / 100.0;
@@ -534,6 +592,8 @@ namespace SummerPractice_2016
 
             }
             file29.Close();
+
+            */
         }
     }
 }
