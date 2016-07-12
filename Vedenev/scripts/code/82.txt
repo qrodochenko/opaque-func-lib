@@ -1,0 +1,7 @@
+Y1 = Math.Cosh(x);
+Y2 = Math.Sinh(y);
+Y3 = x + y;
+Y4 = x - y;
+Y5 = Math.Sinh(Y3);
+Y6 = Math.Sinh(Y4);
+X = 2*Y2*Y1 - Y5 - Y6;

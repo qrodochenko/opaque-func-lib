@@ -1,0 +1,4 @@
+Y3 = 2*x;
+Y1 = Math.Cos(Y3);
+Y2 = Math.Sin(x);
+X = Y1 - 1 + 2*Y2*Y2;

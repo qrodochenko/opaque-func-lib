@@ -1,0 +1,3 @@
+Y1 = 1/Math.Cosh(x); //sch(x)
+Y2 = 1/Math.Cosh(x);
+X = Y1 - Y2;

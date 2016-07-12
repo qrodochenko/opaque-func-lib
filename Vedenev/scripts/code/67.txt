@@ -1,0 +1,3 @@
+Y1 = Math.Cosh(x);
+Y2 = Math.Sinh(x);
+X = Y1*Y1-Y2*Y2-1;

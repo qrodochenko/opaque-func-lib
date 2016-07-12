@@ -1,0 +1,6 @@
+Y1 = 2*x;
+Y2 = Math.Tanh(Y1);
+Y3 = Math.Tanh(x);
+Y4 = 1/Y2;
+Y5 = 1/Y3;
+X = Y4 - (1+Y5*Y5)/(2*Y5);

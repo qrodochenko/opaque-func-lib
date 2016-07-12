@@ -1,0 +1,4 @@
+Y1 = Math.Tanh(x);
+Y2 = Math.Cosh(x);
+Y3 = Math.Sinh(x);
+X = Y1 - Y3/Y2;

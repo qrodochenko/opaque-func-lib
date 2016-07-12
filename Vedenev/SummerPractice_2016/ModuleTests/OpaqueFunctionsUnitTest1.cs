@@ -522,8 +522,8 @@ namespace ModuleTests
             Random random = new Random();
             for (int i = 0; i < 10; ++i)
             {
-                x = random.NextDouble() * 20 - 10;
-                y = random.NextDouble() * 20 - 10;
+                x = random.NextDouble() * 2 - 1;
+                y = random.NextDouble() * 2 - 1;
                 t = CL00_74_2_sh_ch.Body(x, y);
                 mid += t;
                 if (t > mx)
@@ -708,8 +708,8 @@ namespace ModuleTests
             Random random = new Random();
             for (int i = 0; i < 10; ++i)
             {
-                x = random.NextDouble() * 20 - 10;
-                y = random.NextDouble() * 20 - 10;
+                x = random.NextDouble() * 2 - 1;
+                y = random.NextDouble() * 2 - 1;
                 t = CL00_80_2_sh_ch.Body(x, y);
                 mid += t;
                 if (t > mx)
@@ -739,8 +739,8 @@ namespace ModuleTests
             Random random = new Random();
             for (int i = 0; i < 10; ++i)
             {
-                x = random.NextDouble() * 20 - 10;
-                y = random.NextDouble() * 20 - 10;
+                x = random.NextDouble() * 2 - 1;
+                y = random.NextDouble() * 2 - 1;
                 t = CL00_81_2_sh_ch.Body(x, y);
                 mid += t;
                 if (t > mx)

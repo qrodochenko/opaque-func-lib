@@ -133,7 +133,7 @@ namespace OpaqueFunctions
                 Y3 = Math.Pow(Y2, 0.5);
                 Y4 = 1 / Y3;
                 Y5 = Math.Acos(Y4);
-                X = Y1 - Y5;
+                X *= Y1 - Y5;
             }
             return X;
         }
@@ -196,7 +196,7 @@ namespace OpaqueFunctions
                 Y1 = Math.PI / 2 - Math.Atan(1 / x);
                 Y2 = 1 / Math.Pow(1 + x * x, 0.5);
                 Y3 = Math.Acos(Y2);
-                X = Y1 - Y3;
+                X *= Y1 - Y3;
             }
             return X;
         }
@@ -259,7 +259,7 @@ namespace OpaqueFunctions
                 Y1 = Math.PI / 2 - Math.Atan(x);
                 Y2 = x / Math.Pow(1 + x * x, 0.5);
                 Y3 = Math.Acos(Y2);
-                X = Y1 - Y3;
+                X *= Y1 - Y3;
             }
             return X;
         }
@@ -320,11 +320,11 @@ namespace OpaqueFunctions
             double X = 1, Y1, Y2, Y3;
             for (int i = 0; i < count; ++i)
             {
-                Y1 = Math.PI / 2 + Math.Atan(-1 / x);
+                Y1 = Math.PI / 2 - Math.Atan(x);
                 Y2 = Math.Pow(1 + x * x, 0.5);
                 Y2 = 1 / Y2;
                 Y3 = Math.Asin(Y2);
-                X = Y1 - Y3;
+                X *= Y1 - Y3;
             }
             return X;
         }
@@ -387,7 +387,7 @@ namespace OpaqueFunctions
                 Y3 = 2 * x;
                 Y1 = Math.Cos(Y3);
                 Y2 = Math.Cos(x);
-                X = Y1 - 2 * Y2 * Y2 + 1;
+                X *= Y1 - 2 * Y2 * Y2 + 1;
             }
             return X;
         }
@@ -450,7 +450,7 @@ namespace OpaqueFunctions
                 Y3 = 2 * x;
                 Y1 = Math.Cos(Y3);
                 Y2 = Math.Sin(x);
-                X = Y1 - 1 + 2 * Y2 * Y2;
+                X *= Y1 - 1 + 2 * Y2 * Y2;
             }
             return X;
         }
@@ -513,7 +513,7 @@ namespace OpaqueFunctions
                 Y1 = Math.Tan(x);
                 Y2 = Math.PI / 2 - x;
                 Y3 = Math.Tan(Y2);
-                X = Y1 - 1 / Y3;
+                X *= Y1 - 1 / Y3;
             }
             return X;
         }

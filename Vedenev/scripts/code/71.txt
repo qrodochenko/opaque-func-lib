@@ -1,0 +1,3 @@
+Y1 = 1/Math.Sinh(x); //csch(x)
+Y2 = 1/Math.Sinh(x);
+X = Y1 - Y2;
