@@ -38,11 +38,11 @@ namespace TestingSystem
 
         public class ArgsOneArg
         {
-            public double x;
+            public double X;
         }
         public class ArgsTwoArg
         {
-            public double x, y;
+            public double X, Y;
         }
         public class ArgsX : ArgsOneArg
         {
@@ -54,19 +54,19 @@ namespace TestingSystem
         }
         public class ArgsXA : ArgsOneArg
         {
-            public double a;
+            public double A;
         }
         public class ArgsXYA : ArgsTwoArg
         {
-            public double a;
+            public double A;
         }
         public class ArgsXAB : ArgsOneArg
         {
-            public double a, b;
+            public double A, B;
         }
         public class ArgsXYAB : ArgsTwoArg
         {
-            public double a, b;
+            public double A, B;
         }
     }
 
@@ -91,19 +91,19 @@ namespace TestingSystem
         }
         public class ArgsXA : ArgsOneArg
         {
-            public double a;
+            public double A;
         }
         public class ArgsXYA : ArgsTwoArg
         {
-            public double a;
+            public double A;
         }
         public class ArgsXAB : ArgsOneArg
         {
-            public double a, b;
+            public double A, B;
         }
         public class ArgsXYAB : ArgsTwoArg
         {
-            public double a, b;
+            public double A, B;
         }
     }
 
@@ -148,21 +148,48 @@ namespace TestingSystem
             Console.ReadKey();
             */
 
-            var sr = new StreamReader("../CSlist.txt");
+            var sr = new StreamReader("../../CSlist.txt");
             var listOfFiles = new List<string>();
             while (!sr.EndOfStream)
             {
                 listOfFiles.Add(sr.ReadLine());
             }
-            var listOfMethods = MethodForTesting.getMethodsFromFiles(listOfFiles.ToArray(), new string[0], true, true);
+            var listOfMethods = MethodForTesting.getMethodsFromFiles(listOfFiles.ToArray(), new string[] {}, true, true);
+
+            Directory.CreateDirectory("Reports");
+            Directory.CreateDirectory("ReportsTaylor");
 
             Console.WriteLine("Methods found total: {0}", listOfMethods.Count);
             listOfMethods.ForEach(
                 (m) => 
                 {
-                    Console.WriteLine("{0} {1}", m.Name, m.Type);
-                    m.GetTestingReport(100, 50, new double[] { 2, 3 }).SaveCSV("Reports/"+m.Name+".txt");
+                    if (m.Correct)
+                    {
+                        Console.WriteLine("{0} {1}", m.Name, m.Type);
+                        try
+                        {
+                            m.GetTestingReport(100, 50, new double[] { 2, 3 }).SaveCSV("Reports\\" + m.Name + ".csv");
+                        }
+                        catch(Exception e)
+                        {
+                            Console.WriteLine("^^ERROR^^"+e.Message);
+                        }
+                    }
+                    var mT = MethodForTestingTaylor.GetTaylorExtension(m);
+                    if (mT.Correct)
+                    {
+                        Console.WriteLine("T: {0} {1}", m.Name, m.Type);
+                        try
+                        {
+                            mT.GetTestingReport(100, 50, new double[] { 2, 3 }).SaveCSV("ReportsTaylor\\" + m.Name + ".csv");
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("^^ERROR^^"+e.Message);
+                        }
+                    }
                 });
+            Console.ReadKey();
         }
     }
 
@@ -408,6 +435,7 @@ namespace TestingSystem
 
         public double Sum()
         {
+            if (elnum == 0) return 0;
             for (int i = elnum >> 1; i >= 1; --i)
             {
                 Heapify(i);
@@ -630,8 +658,33 @@ namespace TestingSystem
         {
             var methName = meth.Identifier.ValueText;
             var methCode = meth.GetText().ToString();
-            var methodResult = CSharpScript.EvaluateAsync<string>(methCode + "\n return " + methName + "();").Result;
-            string[] intervalsStrs = methodResult.Split(new string[] { "(", ")", ") (" }, StringSplitOptions.RemoveEmptyEntries);
+            string methodResult = "";
+            try
+            {
+                methodResult = CSharpScript.EvaluateAsync<string>(methCode + "\n return " + methName + "();").Result;
+            }
+            catch(Exception)
+            {
+                return null;
+            }
+            var intervalsList = new List<string>();
+            int cBracket = 0, oBracket = 0;
+            string cS = "";
+            foreach(char c in methodResult)
+            {
+                if (c == '(') ++cBracket;
+                else if (c == ')') --cBracket;
+                else cS += c;
+
+                if(cBracket == 0 && oBracket == 1)
+                {
+                    intervalsList.Add(cS);
+                    cS = "";
+                }
+                oBracket = cBracket;
+            }
+            string[] intervalsStrs = intervalsList.ToArray();
+            
             Interval[] intervals = new Interval[intervalsStrs.Length];
 
             int k = 0;
@@ -688,7 +741,9 @@ namespace TestingSystem
             Type = mtype;
             var EvalExpression = TestingUtilities.getEvalExpression(
                 CSharpSyntaxTree.ParseText(ReturnType + " " + Name + TestingUtilities.generateArguments(Type, false, true, 0) + 
-                                            "{ return "+IdealExpression+"; }")
+                                            "{ return "+
+                                            IdealExpression.Replace('x', 'X').Replace('y','Y') +
+                                            "; }")
                                             .GetRoot().ChildNodes().OfType<MethodDeclarationSyntax>().First(),
                 "using System;\n", mtype, true);
 
@@ -839,7 +894,7 @@ namespace TestingSystem
             var args = argsL.ToArray();
             
 
-            if (argsSynt.Last().Type.GetText().ToString() != "int") return MethodType.NOT_DETECTED;
+            if (argsSynt.Count() == 0 || argsSynt.Last().Type.GetText().ToString().Trim() != "int") return MethodType.NOT_DETECTED;
             if (args.Length <2) return MethodType.NOT_DETECTED;
             if (args[0] == "X")
             {
@@ -893,6 +948,7 @@ namespace TestingSystem
 
                     if (!intervalsDic.ContainsKey(thisMethodName)) continue;
                     var methIntervals = intervalsDic[thisMethodName];
+                    if (methIntervals == null) continue;
                     if (isOneArg(t) && methIntervals.Length == 1)
                     {
                         m = new MethodForTestingOneArg();
@@ -904,7 +960,11 @@ namespace TestingSystem
                         ((MethodForTestingTwoArg)m).Interval1 = methIntervals[0];
                         ((MethodForTestingTwoArg)m).Interval2 = methIntervals[1];
                     }
-                    else throw new Exception();
+                    else
+                    {
+                        Console.WriteLine("Intervals/types: {0} {1}", fname, thisMethodName);
+                        continue;
+                    }
 
                     m.Type = t;
                     m.Code = meth.GetText().ToString();
@@ -965,7 +1025,7 @@ namespace TestingSystem
             return TestingUtilities.GetReportOneArg(
                 N, PointsNumber, parameters, Type, Name, Interval,
                 fillStructures,
-                (ideal, iter, x) => ideal.x = iter.x = x,
+                (ideal, iter, x) => ideal.X = iter.X = x,
                 (ideal, iter) => Tuple.Create(Evaluate(iter), IdealMethod.Evaluate(ideal)));
         }
 
@@ -988,16 +1048,16 @@ namespace TestingSystem
                 case MethodType.XA:
                     argStructIdeal = new ArgsTypesIdeal.ArgsXA();
                     argStructIter = new ArgsTypesIterations.ArgsXA();
-                    ((ArgsTypesIterations.ArgsXA)argStructIter).a =
-                        ((ArgsTypesIdeal.ArgsXA)argStructIdeal).a = parameters[0];
+                    ((ArgsTypesIterations.ArgsXA)argStructIter).A =
+                        ((ArgsTypesIdeal.ArgsXA)argStructIdeal).A = parameters[0];
                     break;
                 case MethodType.XAB:
                     argStructIdeal = new ArgsTypesIdeal.ArgsXAB();
                     argStructIter = new ArgsTypesIterations.ArgsXAB();
-                    ((ArgsTypesIterations.ArgsXAB)argStructIter).a =
-                        ((ArgsTypesIdeal.ArgsXAB)argStructIdeal).a = parameters[0];
-                    ((ArgsTypesIterations.ArgsXAB)argStructIter).b =
-                        ((ArgsTypesIdeal.ArgsXAB)argStructIdeal).b = parameters[1];
+                    ((ArgsTypesIterations.ArgsXAB)argStructIter).A =
+                        ((ArgsTypesIdeal.ArgsXAB)argStructIdeal).A = parameters[0];
+                    ((ArgsTypesIterations.ArgsXAB)argStructIter).B =
+                        ((ArgsTypesIdeal.ArgsXAB)argStructIdeal).B = parameters[1];
                     break;
             }
 
@@ -1031,7 +1091,7 @@ namespace TestingSystem
         {
             return TestingUtilities.GetReportTwoArg(N, PointsNumber, parameters, Type, Name, Interval1, Interval2,
                 fillStructures,
-                (ideal, iter, x, y) => { ideal.x = iter.x = x; ideal.y = iter.y = y; },
+                (ideal, iter, x, y) => { ideal.X = iter.X = x; ideal.Y = iter.Y = y; },
                 (ideal, iter) => Tuple.Create(Evaluate(iter), IdealMethod.Evaluate(ideal)));
         }
 
@@ -1054,16 +1114,16 @@ namespace TestingSystem
                 case MethodType.XYA:
                     argStructIdeal = new ArgsTypesIdeal.ArgsXYA();
                     argStructIter = new ArgsTypesIterations.ArgsXYA();
-                    ((ArgsTypesIterations.ArgsXYA)argStructIter).a =
-                        ((ArgsTypesIdeal.ArgsXYA)argStructIdeal).a = parameters[0];
+                    ((ArgsTypesIterations.ArgsXYA)argStructIter).A =
+                        ((ArgsTypesIdeal.ArgsXYA)argStructIdeal).A = parameters[0];
                     break;
                 case MethodType.XYAB:
                     argStructIdeal = new ArgsTypesIdeal.ArgsXYAB();
                     argStructIter = new ArgsTypesIterations.ArgsXYAB();
-                    ((ArgsTypesIterations.ArgsXYAB)argStructIter).a =
-                        ((ArgsTypesIdeal.ArgsXYAB)argStructIdeal).a = parameters[0];
-                    ((ArgsTypesIterations.ArgsXYAB)argStructIter).b =
-                        ((ArgsTypesIdeal.ArgsXYAB)argStructIdeal).b = parameters[1];
+                    ((ArgsTypesIterations.ArgsXYAB)argStructIter).A =
+                        ((ArgsTypesIdeal.ArgsXYAB)argStructIdeal).A = parameters[0];
+                    ((ArgsTypesIterations.ArgsXYAB)argStructIter).B =
+                        ((ArgsTypesIdeal.ArgsXYAB)argStructIdeal).B = parameters[1];
                     break;
             }
 
@@ -1206,6 +1266,13 @@ namespace TestingSystem
                     }";
         }
 
+        public static MethodForTestingTaylor GetTaylorExtension(MethodForTesting m)
+        {
+            if (MethodForTesting.isOneArg(m.Type)) return new MethodForTestingTaylorOneArg((MethodForTestingOneArg)m);
+            if (MethodForTesting.isTwoArg(m.Type)) return new MethodForTestingTaylorTwoArg((MethodForTestingTwoArg)m);
+            throw new Exception();
+        }
+
     }
 
     public class MethodForTestingTaylorOneArg : MethodForTestingTaylor, IOneArgMethod
@@ -1222,7 +1289,7 @@ namespace TestingSystem
             return TestingUtilities.GetReportOneArg(
                 N, PointsNumber, parameters, Type, Name, Interval,
                 MethodForTestingOneArg.fillStructures,
-                (ideal, iter, x) => iter.x = x,
+                (ideal, iter, x) => iter.X = x,
                 (ideal, iter) => EvaluateTaylor(iter));
         }
     }
@@ -1242,7 +1309,7 @@ namespace TestingSystem
         {
             return TestingUtilities.GetReportTwoArg(N, PointsNumber, parameters, Type, Name, Interval1, Interval2,
                 MethodForTestingTwoArg.fillStructures,
-                (ideal, iter, x, y) => {iter.x = x; iter.y = y; },
+                (ideal, iter, x, y) => {iter.X = x; iter.Y = y; },
                 (ideal, iter) => EvaluateTaylor(iter));
         }
     }   

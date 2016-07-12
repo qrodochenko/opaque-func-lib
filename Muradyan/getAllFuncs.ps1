@@ -1,2 +1,2 @@
 cd C:\git_reps\summer_practice\opaque-func-lib
-Get-ChildItem -Path . -Filter *.cs -Recurse -Exclude "*Test*","*Info.cs","*Temporary*","*FunctionAttributes.cs", "*Program.cs" -File| % { Write $_.FullName} | Out-File "C:\git_reps\summer_practice\opaque-func-lib\Muradyan\my.txt"
+Get-ChildItem -Path . -Filter *.cs -Recurse -Exclude "*Test*","*Info.cs","*Temporary*","*FunctionAttributes.cs", "*Program.cs", "*Muradyan*" -File| % { Write $_.FullName} | Out-File "C:\git_reps\summer_practice\opaque-func-lib\Muradyan\CSlist.txt"
