@@ -1,4 +1,6 @@
-﻿using System;
+﻿#define _Debug
+using System;
+
 
 namespace OpaqueFunctions
 {
@@ -50,6 +52,12 @@ namespace OpaqueFunctions
     {
         public static double Math_1_2(double x, int N)
         {
+            #if _Debug
+                        if (Math.Abs(x) >= 1)
+                            throw new Exception("Значение 'x' не принадлежит области определения!");
+                        if (N < 0)
+                            throw new Exception("Значение 'N' не принадлежит области определения!");
+            #endif
             double S = 0;
             if (N > 1)
             {
@@ -112,6 +120,13 @@ namespace OpaqueFunctions
     {
         public static double Math_2_2(double x, int N)
         {
+            #if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+            #endif
+
             double S = 0;
             if (N > 1)
             {
@@ -155,7 +170,6 @@ namespace OpaqueFunctions
         }
     };
 
-    //---------------------------------------------------------
 
     /// <summary>
     /// Реализует степенную функцию (1 + x)^1/2,  
@@ -173,6 +187,13 @@ namespace OpaqueFunctions
     {
         public static double Math_3_2(double x, int N)
         {
+            #if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+            #endif
+
             double S = 1;
             if (N > 1)
             {
@@ -232,6 +253,12 @@ namespace OpaqueFunctions
     {
         public static double Math_4_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             if (N > 1)
             {
@@ -274,13 +301,11 @@ namespace OpaqueFunctions
         }
     };
 
-    //---------------------------------------------------------
 
     /// <summary>
     /// Реализует степенную функцию (1 + x)^1/4,  
     /// где X задается параметром <paramref name="x"/>. 
     /// Результатом функции является целое число S - результат суммы элементов разложения ряда,
-    /// Тест показал, что ряд сходится только в точке {0}
     /// сколько задано параметром <paramref name="N"/>.
     /// Точность до десятого знака (0.0000000001).
     /// (-0.85, 0.87) N = 100;
@@ -293,6 +318,12 @@ namespace OpaqueFunctions
     {
         public static double Math_5_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             if (N > 1)
             {
@@ -353,6 +384,12 @@ namespace OpaqueFunctions
     {
         public static double Math_6_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             if (N > 1)
             {
@@ -395,7 +432,6 @@ namespace OpaqueFunctions
         }
     };
 
-    //---------------------------------------------------------
 
     /// <summary>
     /// Реализует степенную функцию (1 + x)^(-1),  
@@ -414,6 +450,12 @@ namespace OpaqueFunctions
     {
         public static double Math_7_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 0;            
             double F = 0;
             for (int i = 0; i <= N; i++)
@@ -457,6 +499,12 @@ namespace OpaqueFunctions
     {
         public static double Math_8_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 0;            
             double F = 0;
             for (int i = 0; i <= N; i++)
@@ -500,6 +548,12 @@ namespace OpaqueFunctions
     {
         public static double Math_9_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 0;           
             double F = 0;
             for (int i = 0; i <= N; i++)
@@ -543,6 +597,12 @@ namespace OpaqueFunctions
     {
         public static double Math_10_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 0;
             double F = 0;
             for (int i = 0; i <= N; i++)
@@ -586,6 +646,12 @@ namespace OpaqueFunctions
     {
         public static double Math_11_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             double F = 0;
             for (int i = 2; i < N+2; i++)
@@ -629,6 +695,12 @@ namespace OpaqueFunctions
     {
         public static double Math_12_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             double F = 0;
             for (int i = 2; i < N + 2; i++)
@@ -672,6 +744,12 @@ namespace OpaqueFunctions
     {
         public static double Math_13_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             double F = 0;
             for (int i = 2; i < N; i++)
@@ -715,6 +793,12 @@ namespace OpaqueFunctions
     {
         public static double Math_14_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             double F = 0;
             for (int i = 2; i < N; i++)
@@ -757,6 +841,12 @@ namespace OpaqueFunctions
     {
         public static double Math_15_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             if (N > 0)
             {
@@ -812,6 +902,12 @@ namespace OpaqueFunctions
     {
         public static double Math_16_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             if (N > 0)
             {
@@ -867,6 +963,12 @@ namespace OpaqueFunctions
     {
         public static double Math_17_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             if (N > 0)
             {
@@ -921,6 +1023,12 @@ namespace OpaqueFunctions
     {
         public static double Math_18_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             if (N > 0)
             {
@@ -974,6 +1082,12 @@ namespace OpaqueFunctions
     {
         public static double Math_19_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             if (N > 0)
             {
@@ -1028,6 +1142,12 @@ namespace OpaqueFunctions
     {
         public static double Math_20_2(double x, int N)
         {
+#if _Debug
+            if (Math.Abs(x) >= 1)
+                throw new Exception("Значение 'x' не принадлежит области определения!");
+            if (N < 0)
+                throw new Exception("Значение 'N' не принадлежит области определения!");
+#endif
             double S = 1;
             if (N > 0)
             {
