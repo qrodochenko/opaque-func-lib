@@ -7,31 +7,18 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Summer Practice! Yay!");
-            double mx;
-            double X1 = CL00_58_1_arctg_arcctg.Body(1);
-            mx = X1;
-            double X2 = CL00_58_1_arctg_arcctg.Body(0.53);
-            if (X2 > mx) mx = X2;
-            double X3 = CL00_58_1_arctg_arcctg.Body(0.0001);
-            if (X3 > mx) mx = X3;
-            double X4 = CL00_58_1_arctg_arcctg.Body(360);
-            if (X4 > mx) mx = X4;
-            double X5 = CL00_58_1_arctg_arcctg.Body(1547.547921);
-            if (X5 > mx) mx = X5;
-            double X6 = CL00_58_1_arctg_arcctg.Body(12);
-            if (X6 > mx) mx = X6;
-            double X7 = CL00_58_1_arctg_arcctg.Body(6641);
-            if (X7 > mx) mx = X7;
-            double X8 = CL00_58_1_arctg_arcctg.Body(0.00000614);
-            if (X8 > mx) mx = X8;
-            double X9 = CL00_58_1_arctg_arcctg.Body(897);
-            if (X9 > mx) mx = X9;
-            double X10 = CL00_58_1_arctg_arcctg.Body(92);
-            if (X10 > mx) mx = X10;
-
-            double mid = (X1 + X2 + X3 + X4 + X5 + X6 + X7 + X8 + X9 + X10) / 10;
-            Console.WriteLine(mx);
+            double mx = 0, mid = 0, x, t;
+            Random random = new Random();
+            for (int i = 0; i < 10; ++i)
+            {
+                x = random.NextDouble() * 200 + 100;
+                t = CL00_67_1_ch_sh.Body(x);
+                Console.WriteLine(x.ToString() + " " + t.ToString());
+                mid += t;
+                if (t > mx)
+                    mx = t;
+            }
+            Console.WriteLine("Summer Practice! Yay!" + mid.ToString());
             Console.ReadKey();
         }
     }

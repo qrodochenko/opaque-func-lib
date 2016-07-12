@@ -51,10 +51,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ModuleTests\ModuleTests.csproj">
-      <Project>{1caf6fec-6fa8-480f-9444-722567edb04f}</Project>
-      <Name>ModuleTests</Name>
-    </ProjectReference>
     <ProjectReference Include="..\OpaqueFunctions\OpaqueFunctions.csproj">
       <Project>{b21eac56-fce9-43ff-81a2-56f9791bc6b3}</Project>
       <Name>OpaqueFunctions</Name>

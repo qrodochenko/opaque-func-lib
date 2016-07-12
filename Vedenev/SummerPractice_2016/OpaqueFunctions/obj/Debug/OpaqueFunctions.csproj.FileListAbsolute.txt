@@ -2,4 +2,9 @@ D:\student\Рабочий стол\SummerPractice_2016\OpaqueFunctions\bin\Debug
 D:\student\Рабочий стол\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
 D:\student\Рабочий стол\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
 D:\student\Рабочий стол\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
+C:\Users\Кирилл\Desktop\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.dll
+C:\Users\Кирилл\Desktop\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
+C:\Users\Кирилл\Desktop\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache
+C:\Users\Кирилл\Desktop\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
+C:\Users\Кирилл\Desktop\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
 D:\student\Рабочий стол\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache

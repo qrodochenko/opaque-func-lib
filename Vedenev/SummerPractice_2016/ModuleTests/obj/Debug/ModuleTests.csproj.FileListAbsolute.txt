@@ -5,3 +5,12 @@ D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\bin\Debug\Opa
 D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
 D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
 D:\student\Рабочий стол\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb
+C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.dll
+C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.pdb
+C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.dll
+C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.pdb
+C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
+C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
+C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb

@@ -4,7 +4,13 @@ D:\student\Рабочий стол\SummerPractice_2016\SummerPractice_2016\bin\D
 D:\student\Рабочий стол\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
 D:\student\Рабочий стол\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
 D:\student\Рабочий стол\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
-D:\student\Рабочий стол\SummerPractice_2016\SummerPractice_2016\bin\Debug\ModuleTests.dll
+C:\Users\Кирилл\Desktop\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
+C:\Users\Кирилл\Desktop\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
+C:\Users\Кирилл\Desktop\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
+C:\Users\Кирилл\Desktop\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe
+C:\Users\Кирилл\Desktop\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.pdb
+C:\Users\Кирилл\Desktop\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
+C:\Users\Кирилл\Desktop\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
+C:\Users\Кирилл\Desktop\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
 D:\student\Рабочий стол\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
-D:\student\Рабочий стол\SummerPractice_2016\SummerPractice_2016\bin\Debug\ModuleTests.pdb
 D:\student\Рабочий стол\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
