@@ -26,7 +26,7 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
     [OpaqueFunction()]
-    [FunctionName("Csin_1", "sin")]
+    [FunctionName("Sin_1", "sin")]
     public static class CSin_1
     {
         public static double Sin_1(double angle, int count)
@@ -238,7 +238,7 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
     [OpaqueFunction()]
-    [FunctionName("CTg_1", "tg(x)")]
+    [FunctionName("Tg_1", "tg(x)")]
     public static class CTg_1
     {
         public static double Tg_1(double angle, int count)
@@ -251,10 +251,9 @@ namespace OpaqueFunctions
                 else
                 {
                     X1 = Math.Pow(X, 2 * i - 1);
-                    top = Math.Pow(2, 2 * i) * X1;
+                    top = Math.Pow(2, 2 * i) * X1 * (Math.Pow(2, 2 * i) - 1);
                     bottom = CFakt.Fakt(2 * i);
                     common = top / bottom;
-                    common *= (Math.Pow(2, 2 * i) - 1);
                     result += common * Math.Abs(Bernoulli.Ber(2 * i));
                 }
             }
@@ -283,7 +282,7 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
     [OpaqueFunction()]
-    [FunctionName("Сctg_1", "сtg(x)")]
+    [FunctionName("Ctg_1", "сtg(x)")]
     public static class Cctg_1
     {
         public static double Сtg_1(double angle, int count)
