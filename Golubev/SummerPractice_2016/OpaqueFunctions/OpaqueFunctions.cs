@@ -47,7 +47,7 @@ namespace OpaqueFunctions
     /// <param name="x">Аргумент в радианах</param>
     [OpaqueFunction()]
     [FunctionName("priv_sin_2", "sin(x)=+-sin(y), y in [-Pi/2; Pi/2]")]
-    public static class C_priv_sin_2
+    public static class Cpriv_sin_2
     {
         
 
@@ -77,7 +77,7 @@ namespace OpaqueFunctions
     [OpaqueFunction()]
     [FunctionName("priv_cos_2", "cos(x)=+-cos(y), y in [-Pi/2; Pi/2]")]
 
-    public static class C_priv_cos_2
+    public static class Cpriv_cos_2
     {
        
 
@@ -110,7 +110,7 @@ namespace OpaqueFunctions
     [OpaqueFunction()]
     [FunctionName("priv_sin_3", "sin(x)=+-cos(y)/+-sin(y), y in [0; Pi/4]")]
 
-    public static class C_priv_sin_3
+    public static class Cpriv_sin_3
     {
       
 
@@ -195,7 +195,7 @@ namespace OpaqueFunctions
     [OpaqueFunction()]
     [FunctionName("priv_sin_3", "cos(x)=+-cos(y)/+-sin(y), y in [0; Pi/4]")]
 
-    public static class C_priv_cos_3
+    public static class Cpriv_cos_3
     {
         
 
@@ -276,7 +276,7 @@ namespace OpaqueFunctions
     /// <param name="x">Аргумент в радианах</param>
     [OpaqueFunction()]
     [FunctionName("priv_tan_6", "tg(x)=+-tg(y)/+-ctg(y), y in [0; Pi/4]")]
-    public static class C_priv_tan_6
+    public static class Cpriv_tan_6
     {
        
         public static C_build_func priv_tan_6(double x)
@@ -350,7 +350,7 @@ namespace OpaqueFunctions
     [OpaqueFunction()]
     [FunctionName("priv_ctg_6", "ctg(x)=+-tg(y)/+-ctg(y), y in [0; Pi/4]")]
 
-    public static class C_priv_ctg_6
+    public static class Cpriv_ctg_6
     {
         
         public static C_build_func priv_ctg_6(double x)

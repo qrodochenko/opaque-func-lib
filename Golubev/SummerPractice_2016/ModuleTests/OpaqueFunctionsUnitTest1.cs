@@ -16,7 +16,7 @@ namespace ModuleTests
             {
                 Random x = new Random();
                 double arg = x.NextDouble() * 20000 - 10000;
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_sin_2.priv_sin_2(arg);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_sin_2.priv_sin_2(arg);
              
                 if (string.Compare(func.sign, "+") == 0)
                      Assert.IsTrue(Math.Abs(Math.Sin(arg) - Math.Sin(func.argument)) < 0.00000001, "Значения функций не равны!");
@@ -40,7 +40,7 @@ namespace ModuleTests
             {
                 Random x = new Random();
                 double arg = x.NextDouble() * 20000 - 10000;
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_cos_2.priv_cos_2(arg);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_cos_2.priv_cos_2(arg);
 
                 if (string.Compare(func.sign, "+") == 0)
                     Assert.IsTrue(Math.Abs(Math.Cos(arg) - Math.Cos(func.argument)) < 0.00000001, "Значения функций не равны!");
@@ -67,7 +67,7 @@ namespace ModuleTests
             {
                 Random x = new Random();
                 double arg = x.NextDouble() * 20000 - 10000;
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_sin_3.priv_sin_3(arg);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_sin_3.priv_sin_3(arg);
                 if (string.Compare(func.function, "sin") == 0)
                     if (string.Compare(func.sign, "+") == 0)
                         Assert.IsTrue(Math.Abs(Math.Sin(arg) - Math.Sin(func.argument)) < 0.00000001, "Значения функций не равны!");
@@ -95,7 +95,7 @@ namespace ModuleTests
             {
                 Random x = new Random();
                 double arg = x.NextDouble() * 20000 - 10000;
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_cos_3.priv_cos_3(arg);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_cos_3.priv_cos_3(arg);
                 if (string.Compare(func.function, "sin") == 0)
                     if (string.Compare(func.sign, "+") == 0)
                         Assert.IsTrue(Math.Abs(Math.Cos(arg) - Math.Sin(func.argument)) < 0.00000001, "Значения функций не равны!");
@@ -124,7 +124,7 @@ namespace ModuleTests
             {
                 Random x = new Random();
                 double arg = x.NextDouble() * 20000 - 10000;
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_tan_6.priv_tan_6(arg);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_tan_6.priv_tan_6(arg);
 
                 if (string.Compare(func.function, "tan") == 0)
                     if (string.Compare(func.sign, "+") == 0)
@@ -154,7 +154,7 @@ namespace ModuleTests
             {
                 Random x = new Random();
                 double arg = x.NextDouble() * 20000 - 10000;
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_ctg_6.priv_ctg_6(arg);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_ctg_6.priv_ctg_6(arg);
 
                 if (string.Compare(func.function, "tan") == 0)
                     if (string.Compare(func.sign, "+") == 0)
