@@ -55,3 +55,11 @@ D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2
 D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
 D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
 D:\student\Summer\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
+D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
+D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
+D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
+D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe
+D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.pdb
+D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
+D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
+D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache

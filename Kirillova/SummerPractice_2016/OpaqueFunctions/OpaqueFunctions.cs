@@ -138,8 +138,9 @@ namespace OpaqueFunctions
         }
     }
 
-/*
-    //// <summary>
+
+
+    /// <summary>
     /// Реализует нахождение логарифмической функции ln(1+x),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм через цепную дробь,
@@ -157,40 +158,6 @@ namespace OpaqueFunctions
         {
             double F = 0;
 
-            for (int i = count; i > 2; i--)
-            {
-
-                F = (i * i - 1) * (i * i - 1) * (i * i - 1) * x * x / ((2 * i + 1) * (2 * i * (i + 1) + (i * i + i + 1) * x)-F);
-            }
-            F = x -  x * x / (2+4*x*x*x/(3*(4+3*x)-27*x*x*x/(5*(12+7*x)-F)));
-            return F;
-        }
-
-        public static string Math_5_2_ln_in()
-        {
-            return "(-1, w)";
-        }
-    }*/
-
-
-    /// <summary>
-    /// Реализует нахождение логарифмической функции ln(1+x),  
-    /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
-    /// Результатом функции является число F , вычисляющее логарифм через цепную дробь,
-    /// количество итераций задано параметром <paramref name="count"/>.
-    /// </summary>
-    /// <param name="x">число, удовлетворяющее области определения</param>
-    /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
-    [OpaqueFunction()]
-    [FunctionName("СMath_6_2_ln", "ln(1+x)")]
-    [EquivalentIntConstant(1)]
-    public static class СMath_6_2_ln
-    {
-        public static double Math_6_2_ln(double x, int count)
-        {
-            double F = 0;
-
             for (int i = count; i > 1; i--)
             {
 
@@ -200,7 +167,7 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_6_2_ln_in()
+        public static string Math_5_2_ln_in()
         {
             return "(-1, w)";
         }
@@ -217,11 +184,11 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_7_3_ln", "ln(x+a)")]
+    [FunctionName("СMath_6_3_ln", "ln(x+a)")]
     [EquivalentIntConstant(1)]
-    public static class СMath_7_3_ln
+    public static class СMath_6_3_ln
     {
-        public static double Math_7_3_ln(double a,double x, int count)
+        public static double Math_6_3_ln(double a,double x, int count)
         {
             double F = 0, X = x / (2 * a + x);
 
@@ -234,11 +201,44 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_7_3_ln_in()
+        public static string Math_6_3_ln_in()
         {
             return "(-a, w)";
         }
     }
+
+    /// <summary>
+    /// Реализует нахождение логарифмической функции ln(1+x),  
+    /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
+    /// Результатом функции является число F , вычисляющее логарифм, используя ряд тейлора,
+    /// количество итераций задано параметром <paramref name="count"/>.
+    /// </summary>
+    /// <param name="x">число, удовлетворяющее области определения</param>
+    /// <param name="count">Количество требуемых итераций</param>
+    /// <returns>1</returns>
+    [OpaqueFunction()]
+    [FunctionName("СMath_7_2_ln", "ln(1+x)")]
+    [EquivalentIntConstant(1)]
+    public static class СMath_7_2_ln
+    {
+        public static double Math_7_2_ln(double x, int count)
+        {
+            double F = 0, X = x;
+
+            for (int i = 0; i < count; i++)
+            {
+                F = X / (i + 1) + F;
+                X = -X * x;
+            }
+            return F;
+        }
+
+        public static string Math_7_2_ln_in()
+        {
+            return "(-1, 1)";
+        }
+    }
+
 
     /// <summary>
     /// Реализует нахождение логарифмической функции ln(1+x),  
@@ -256,39 +256,6 @@ namespace OpaqueFunctions
     {
         public static double Math_8_2_ln(double x, int count)
         {
-            double F = 0, X = x;
-
-            for (int i = 0; i < count; i++)
-            {
-                F = X / (i + 1) + F;
-                X = -X * x;
-            }
-            return F;
-        }
-
-        public static string Math_8_2_ln_in()
-        {
-            return "(-1, 1)";
-        }
-    }
-
-
-    /// <summary>
-    /// Реализует нахождение логарифмической функции ln(1+x),  
-    /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
-    /// Результатом функции является число F , вычисляющее логарифм, используя ряд тейлора,
-    /// количество итераций задано параметром <paramref name="count"/>.
-    /// </summary>
-    /// <param name="x">число, удовлетворяющее области определения</param>
-    /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
-    [OpaqueFunction()]
-    [FunctionName("СMath_9_2_ln", "ln(1+x)")]
-    [EquivalentIntConstant(1)]
-    public static class СMath_9_2_ln
-    {
-        public static double Math_9_2_ln(double x, int count)
-        {
             double F = 0, X = x * x;
 
             for (int i = 1; i < count; i++)
@@ -300,7 +267,7 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_9_2_ln_in()
+        public static string Math_8_2_ln_in()
         {
             return "(-1, 2)";
         }
@@ -316,11 +283,11 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_10_2_ln", "ln((1+x)/(1-x))")]
+    [FunctionName("СMath_9_2_ln", "ln((1+x)/(1-x))")]
     [EquivalentIntConstant(1)]
-    public static class СMath_10_2_ln
+    public static class СMath_9_2_ln
     {
-        public static double Math_10_2_ln(double x, int count)
+        public static double Math_9_2_ln(double x, int count)
         {
             double F = 0, X = x ;
 
@@ -333,7 +300,7 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_10_2_ln_in()
+        public static string Math_9_2_ln_in()
         {
             return "(-1, 1)";
         }
@@ -349,11 +316,11 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_11_2_ln", "ln(x/(1-x))")]
+    [FunctionName("СMath_10_2_ln", "ln(x/(1-x))")]
     [EquivalentIntConstant(1)]
-    public static class СMath_11_2_ln
+    public static class СMath_10_2_ln
     {
-        public static double Math_11_2_ln(double x, int count)
+        public static double Math_10_2_ln(double x, int count)
         {
             double F = 0, X = x ;
 
@@ -365,9 +332,9 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_11_2_ln_in()
+        public static string Math_10_2_ln_in()
         {
-            return "(w, -1) U (1, w)";
+            return "(1, w)";
         }
     }
 
