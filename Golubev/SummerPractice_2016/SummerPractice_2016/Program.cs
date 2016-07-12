@@ -24,7 +24,7 @@ namespace SummerPractice_2016
                 double step = 1.0 / 10.0;
                 x += step;
                 double standart = Math.Sin(x);
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_sin_2.priv_sin_2(x);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_sin_2.priv_sin_2(x);
                 int sign = 1;
                 if (string.Compare(func.sign, "-") == 0)
                     sign = -1;
@@ -47,7 +47,7 @@ namespace SummerPractice_2016
                 double step = 1.0 / 10.0;
                 x += step;
                 double standart = Math.Cos(x);
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_cos_2.priv_cos_2(x);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_cos_2.priv_cos_2(x);
                 int sign = 1;
                 if (string.Compare(func.sign, "-") == 0)
                     sign = -1;
@@ -72,7 +72,7 @@ namespace SummerPractice_2016
                 double step = 1.0 / 10.0;
                 x += step;
                 double standart = Math.Sin(x);
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_sin_3.priv_sin_3(x);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_sin_3.priv_sin_3(x);
                 int sign = 1;
                 if (string.Compare(func.sign, "-") == 0)
                     sign = -1;
@@ -98,7 +98,7 @@ namespace SummerPractice_2016
                 double step = 1.0 / 10.0;
                 x += step;
                 double standart = Math.Cos(x);
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_cos_3.priv_cos_3(x);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_cos_3.priv_cos_3(x);
                 int sign = 1;
                 if (string.Compare(func.sign, "-") == 0)
                     sign = -1;
@@ -124,7 +124,7 @@ namespace SummerPractice_2016
                 double step = 1.0 / 10.0;
                 x += step;
                 double standart = Math.Tan(x);
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_tan_6.priv_tan_6(x);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_tan_6.priv_tan_6(x);
                 int sign = 1;
                 if (string.Compare(func.sign, "-") == 0)
                     sign = -1;
@@ -150,7 +150,7 @@ namespace SummerPractice_2016
                 double step = 1.0 / 10.0;
                 x += step;
                 double standart = 1/Math.Tan(x);
-                OpaqueFunctions.C_build_func func = OpaqueFunctions.C_priv_ctg_6.priv_ctg_6(x);
+                OpaqueFunctions.C_build_func func = OpaqueFunctions.Cpriv_ctg_6.priv_ctg_6(x);
                 int sign = 1;
                 if (string.Compare(func.sign, "-") == 0)
                     sign = -1;
