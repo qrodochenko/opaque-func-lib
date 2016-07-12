@@ -758,7 +758,7 @@ namespace OpaqueFunctions
         public static double Math_15_2(double x, int N)
         {
             double S = 1;
-            if (N > 1)
+            if (N > 0)
             {
                 S = 1;
                 double F = 1;
@@ -774,10 +774,6 @@ namespace OpaqueFunctions
                 if (N == 0)
                 {
                     S = 1;
-                }
-                if (N == 1)
-                {
-                    S = 1 - (1.0 / 2.0) * x;
                 }
             }
             return S;
@@ -817,11 +813,11 @@ namespace OpaqueFunctions
         public static double Math_16_2(double x, int N)
         {
             double S = 1;
-            if (N > 1)
+            if (N > 0)
             {
-                S = 1 + (1.0 / 2.0) * x;
-                double F = (1.0 / 2.0) * x;
-                for (int i = 2; i <= N; i++)
+                S = 1;
+                double F = 1;
+                for (int i = 1; i <= N; i++)
                 {
                     F *= ((2.0 * i - 1) * Math.Pow(2.0 * i, -1)) * x;
                     S += F;
@@ -833,10 +829,7 @@ namespace OpaqueFunctions
                 {
                     S = 1;
                 }
-                if (N == 1)
-                {
-                    S = 1 + (1.0 / 2.0) * x;
-                }
+               
             }
             return S;
 

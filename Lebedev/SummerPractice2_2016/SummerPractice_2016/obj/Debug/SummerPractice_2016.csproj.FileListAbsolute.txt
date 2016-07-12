@@ -44,3 +44,19 @@ F:\YandexDisk\1.Учеба\Практика\Новая папка (2)\SummerPrac
 F:\YandexDisk\1.Учеба\Практика\Новая папка (2)\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
 F:\YandexDisk\1.Учеба\Практика\Новая папка (2)\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
 F:\YandexDisk\1.Учеба\Практика\Новая папка (2)\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
+D:\student\1\Новая папка\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
+D:\student\1\Новая папка\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
+D:\student\1\Новая папка\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
+D:\student\1\Новая папка\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
+D:\student\1\Новая папка\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe
+D:\student\1\Новая папка\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.pdb
+D:\student\1\Новая папка\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
+D:\student\1\Новая папка\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
+D:\student\1\Repository\rep0\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe.config
+D:\student\1\Repository\rep0\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.exe
+D:\student\1\Repository\rep0\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.pdb
+D:\student\1\Repository\rep0\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.exe
+D:\student\1\Repository\rep0\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\bin\Debug\SummerPractice_2016.pdb
+D:\student\1\Repository\rep0\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.dll
+D:\student\1\Repository\rep0\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\bin\Debug\OpaqueFunctions.pdb
+D:\student\1\Repository\rep0\opaque-func-lib\Lebedev\SummerPractice2_2016\SummerPractice_2016\obj\Debug\SummerPractice_2016.csprojResolveAssemblyReference.cache
