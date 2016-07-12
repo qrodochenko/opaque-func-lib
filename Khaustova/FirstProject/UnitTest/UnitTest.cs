@@ -12,10 +12,10 @@ namespace ModuleTests
             Random R = new Random();
             int i = 1, p = 1; int k;
             double x, A, B, g_inv, g;
-           
-            for (; i<=100000; i++)
+
+            for (; i <= 10; i++)
             {
-                x = p*R.NextDouble();
+                x = p * R.NextDouble();
                 p *= -1;
                 A = R.NextDouble();
                 B = R.NextDouble();
@@ -25,7 +25,9 @@ namespace ModuleTests
                 g = Cinterval_ww_ww_1.interval_ww_ww_1(g_inv, A, B, k);
 
                 Assert.IsTrue((Math.Abs(g - x) < 0.000001), "false");
+
             }
+
         }
 
         [TestMethod]
@@ -90,6 +92,10 @@ namespace ModuleTests
             Random R = new Random();
             int i = 1, p = 1;
             double x, C, g_inv, g;
+            double max = 0;
+            double average = 0;
+            double sum = 0;
+            double eps = 0;
 
             for (; i <= 10; i++)
             {
@@ -102,7 +108,14 @@ namespace ModuleTests
                 g_inv = Cinterval_ww_finfin_2_inv.interval_ww_finfin_2_inv(g, C);
 
                 Assert.IsTrue((Math.Abs(g_inv - x) < 0.000001), "false");
+
+                eps = Math.Abs(g_inv - x);
+                if (eps > max) max = eps;
+                sum += eps;
             }
+
+            average = sum / 10.0;
+            Assert.IsTrue((Math.Abs(max - average) < 0.000001), "Results are not equal");
         }
 
         [TestMethod]
@@ -125,17 +138,29 @@ namespace ModuleTests
             Random R = new Random();
             int i = 1, p = 1;
             double x, g_inv, g;
+            double max = 0;
+            double average = 0;
+            double sum = 0;
+            double eps = 0;
             for (; i <= 10; i++)
             {
-                x = p*R.NextDouble();
+                x = p * R.NextDouble();
                 p *= -1;
 
                 g_inv = Cinterval_finfin_ww_3_inv.interval_finfin_ww_3_inv(x);
                 g = Cinterval_finfin_ww_3.interval_finfin_ww_3(g_inv);
 
                 Assert.IsTrue((Math.Abs(g - x) < 0.000001), "false");
+
+                eps = Math.Abs(g - x);
+                if (eps > max) max = eps;
+                sum += eps;
             }
+
+            average = sum / 10.0;
+            Assert.IsTrue((Math.Abs(max - average) < 0.000001), "Results are not equal");
         }
+        
         [TestMethod]
         public void Test_interval_finfin_ww_3_ginv_gx()
         {
@@ -325,6 +350,10 @@ namespace ModuleTests
             Random R = new Random();
             int i = 1;
             double x, a, b, c, d, g_inv, g;
+            double max = 0;
+            double average = 0;
+            double sum = 0;
+            double eps = 0;
             for (; i <= 10; i++)
             {
 
@@ -340,7 +369,14 @@ namespace ModuleTests
                 g = Cinterval_finfin_finfin_7.interval_finfin_finfin_7(g_inv, a, b, c, d);
 
                 Assert.IsTrue((Math.Abs(g - x) < 0.000001), "false");
+
+                eps = Math.Abs(g - x);
+                if (eps > max) max = eps;
+                sum += eps;
             }
+
+            average = sum / 10.0;
+            Assert.IsTrue((Math.Abs(max - average) < 0.000001), "Results are not equal");
         }
 
 
@@ -351,6 +387,10 @@ namespace ModuleTests
             Random R = new Random();
             int i = 1;
             double x, a, b, c, d, g_inv, g;
+            double max = 0;
+            double average = 0;
+            double sum = 0;
+            double eps = 0;
             for (; i <= 10; i++)
             {
                 a = R.Next(1, 10) + R.NextDouble(); ;
@@ -364,7 +404,14 @@ namespace ModuleTests
                 g_inv = Cinterval_finfin_finfin_7_inv.interval_finfin_finfin_7_inv(g, a, b, c, d);
 
                 Assert.IsTrue((Math.Abs(g_inv - x) < 0.000001), "false");
+
+                eps = Math.Abs(g_inv - x);
+                if (eps > max) max = eps;
+                sum += eps;
             }
+
+            average = sum / 10.0;
+            Assert.IsTrue((Math.Abs(max - average) < 0.000001), "Results are not equal");
         }
 
         [TestMethod]
@@ -394,6 +441,10 @@ namespace ModuleTests
             Random R = new Random();
             int i = 1;
             double x, a, b, c, d, g_inv, g;
+            double max = 0;
+            double average = 0;
+            double sum = 0;
+            double eps = 0;
             for (; i <= 10; i++)
             {
 
@@ -409,7 +460,14 @@ namespace ModuleTests
                 g = Cinterval_finfin_finfin_8.interval_finfin_finfin_8(g_inv, a, b, c, d);
 
                 Assert.IsTrue((Math.Abs(g - x) < 0.000001), "false");
+
+                eps = Math.Abs(g - x);
+                if (eps > max) max = eps;
+                sum += eps;
             }
+
+            average = sum / 10.0;
+            Assert.IsTrue((Math.Abs(max - average) < 0.000001), "Results are not equal");
         }
 
 
@@ -420,6 +478,10 @@ namespace ModuleTests
             Random R = new Random();
             int i = 1;
             double x, a, b, c, d, g_inv, g;
+            double max = 0;
+            double average = 0;
+            double sum = 0;
+            double eps = 0;
             for (; i <= 10; i++)
             {
                 a = R.Next(1, 10) + R.NextDouble();
@@ -433,7 +495,14 @@ namespace ModuleTests
                 g_inv = Cinterval_finfin_finfin_8_inv.interval_finfin_finfin_8_inv(g, a, b, c, d);
 
                 Assert.IsTrue((Math.Abs(g_inv - x) < 0.000001), "false");
+
+                eps = Math.Abs(g_inv - x);
+                if (eps > max) max = eps;
+                sum += eps;
             }
+
+            average = sum / 10.0;
+            Assert.IsTrue((Math.Abs(max - average) < 0.000001), "Results are not equal");
         }
 
         [TestMethod]
@@ -465,6 +534,10 @@ namespace ModuleTests
             int i = 1;
             double x, g_inv, g;
             int p = 1;
+            double max = 0;
+            double average = 0;
+            double sum = 0;
+            double eps = 0;
             for (; i <= 10; i++)
             {
                 x = p * R.NextDouble();
@@ -474,7 +547,14 @@ namespace ModuleTests
                 g = Cinterval_finfin_finfin_9.interval_finfin_finfin_9(g_inv);
 
                 Assert.IsTrue((Math.Abs(g - x) < 0.000001)  , "false");
+
+                eps = Math.Abs(g - x);
+                if (eps > max) max = eps;
+                sum += eps;
             }
+
+            average = sum / 10.0;
+            Assert.IsTrue((Math.Abs(max - average) < 0.000001), "Results are not equal");
         }
 
         [TestMethod]
@@ -484,6 +564,10 @@ namespace ModuleTests
             int i = 1;
             double x, g_inv, g;
             int p = 1;
+            double max = 0;
+            double average = 0;
+            double sum = 0;
+            double eps = 0;
             for (; i <= 10; i++)
             {
                 x = p * R.NextDouble() * Math.PI / 2;
@@ -492,7 +576,14 @@ namespace ModuleTests
                 g = Cinterval_finfin_finfin_9.interval_finfin_finfin_9(x);
                 g_inv = Cinterval_finfin_finfin_9_inv.interval_finfin_finfin_9_inv(g);
                 Assert.IsTrue((Math.Abs(g_inv - x) < 0.000001), "false");
+
+                eps = Math.Abs(g_inv - x);
+                if (eps > max) max = eps;
+                sum += eps;
             }
+
+            average = sum / 10.0;
+            Assert.IsTrue((Math.Abs(max - average) < 0.000001), "Results are not equal");
         } 
 
         [TestMethod]
@@ -515,6 +606,10 @@ namespace ModuleTests
             int i = 1;
             double x, g_inv, g;
             int p = 1;
+            double max = 0;
+            double average = 0;
+            double sum = 0;
+            double eps = 0;
             for (; i <= 10; i++)
             {
                 x = p * R.NextDouble();
@@ -524,7 +619,14 @@ namespace ModuleTests
                 g = Cinterval_finfin_finfin_10.interval_finfin_finfin_10(g_inv);
 
                 Assert.IsTrue((Math.Abs(g - x) < 0.000001), "false");
+
+                eps = Math.Abs(g - x);
+                if (eps > max) max = eps;
+                sum += eps;
             }
+
+            average = sum / 10.0;
+            Assert.IsTrue((Math.Abs(max - average) < 0.000001), "Results are not equal");
         }
 
         [TestMethod]
@@ -533,6 +635,10 @@ namespace ModuleTests
             Random R = new Random();
             int i = 1;
             double x, g_inv, g;
+            double max = 0;
+            double average = 0;
+            double sum = 0;
+            double eps = 0;
             for (; i <= 10; i++)
             {
                 x = R.NextDouble()*Math.PI ;
@@ -540,7 +646,14 @@ namespace ModuleTests
                 g = Cinterval_finfin_finfin_10.interval_finfin_finfin_10(x);
                 g_inv = Cinterval_finfin_finfin_10_inv.interval_finfin_finfin_10_inv(g);
                 Assert.IsTrue((Math.Abs(g_inv - x) < 0.000001), "false");
+
+                eps = Math.Abs(g_inv - x);
+                if (eps > max) max = eps;
+                sum += eps;
             }
+
+            average = sum / 10.0;
+            Assert.IsTrue((Math.Abs(max - average) < 0.000001), "Results are not equal");
         }
 
         [TestMethod]

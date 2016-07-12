@@ -5,6 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpaqueFunctions;
+using System.Windows.Forms.DataVisualization.Charting; //консольное приложение не имеет ссылки сюда само по себе. Нужно добавить её через меню "Добавить->Ссылка->Платформа".
+//System.Windows.Forms + System.Windows.Forms.DataVisualization + System.Drawing
+using Microsoft.VisualBasic.FileIO; //то же самое, нужно для обработки .csv
 
 namespace SummerPractice_2016
 {
@@ -12,443 +15,41 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            /// Задание:
-            /// Если область определения конечна (интервал), то берется из интервала k=10 точек, 
-            /// в этих точках вычисляется функция и вычисляются ее среднее и максимальное значения. 
-            /// Результаты сравниваются с допустимой погрешностью и в негативном случае выводятся на экран. 
 
-
-            double max = 0;
-            double average = 0;
-            double sum = 0;
-
-            Random R = new Random();
-
-            int i = 1, p = 1;
+            /// Создание csv-файлов
+            /// 
             double x, g, g_inv;
-            double C, a, b, c, d;
-
-
-
-            Console.WriteLine("g_inv(x) = sqrt(C) * x / sqrt(1 - x*x), x in (-1, 1)");
-            x = p * R.NextDouble();
-            C = R.NextDouble();
-            p *= -1;
-
-            g = Cinterval_ww_finfin_2_inv.interval_ww_finfin_2_inv(x, C);
-            max = g;
-            sum = g;
-
-            for (i = 2; i <= 10; i++)
-            {
-                x = R.NextDouble();
-                C = R.NextDouble();
-
-                g = Cinterval_ww_finfin_2_inv.interval_ww_finfin_2_inv(x, C);
-
-                if (g > max) max = g;
-                sum += g;
-
-                //    Console.WriteLine("x = " + x);
-                //    Console.WriteLine("g(x) = " + g);
-
-            }
-
-            average = sum / 10.0;
-            //  Console.WriteLine();
-            if (Math.Abs(max - average) < 0.000001)
-                Console.WriteLine("Results are almost equal");
-
-            Console.WriteLine("Average = " + average);
-            Console.WriteLine("Max = " + max);
-
-            Console.WriteLine();
-
-
-
-
-            max = sum = average = 0;
-            Console.WriteLine("g(x) = tg(x), x in (-Pi/2, Pi/2)");
-            x = p * R.NextDouble() * Math.PI / 2;
-            p *= -1;
-
-            g = Cinterval_finfin_ww_3.interval_finfin_ww_3(x);
-            max = g;
-            sum = g;
-
-            for (i = 2; i <= 10; i++)
-            {
-                x = p * R.NextDouble() * Math.PI / 2;
-                p *= -1;
-
-                g = Cinterval_finfin_ww_3.interval_finfin_ww_3(x);
-                if (g > max) max = g;
-                sum += g;
-
-                //    Console.WriteLine("x = " + x);
-                //    Console.WriteLine("g(x) = " + g);
-
-            }
-
-            average = sum / 10.0;
-            //  Console.WriteLine();
-            if (Math.Abs(max - average) < 0.000001)
-                Console.WriteLine("Results are almost equal");
-
-            Console.WriteLine("Average = " + average);
-            Console.WriteLine("Max = " + max);
-
-            Console.WriteLine();
-
-
-
-
-            max = sum = average = 0;
-            i = 1; 
-            Console.WriteLine("g(x) = ((c - d)/(a - b)) * x + (a*d - b*c) / (a - b), x in (a, b)");
-
-            a = R.Next(1, 10) + R.NextDouble();
-            b = a + R.Next(2, 10) + R.NextDouble();
-            Console.WriteLine("a = " + a);
-            Console.WriteLine("b = " + b);
-            x = a + R.NextDouble();
-
-            c = R.Next(1, 10) + R.NextDouble();
-            d = c + R.Next(2, 10) + R.NextDouble();
-
-            g = Cinterval_finfin_finfin_7.interval_finfin_finfin_7(x, a, b, c, d);
-            max = g;
-            sum = g;
-
-            for (i = 2; i <= 10; i++)
-            {
-                x = a + R.NextDouble();
-                g = Cinterval_finfin_finfin_7.interval_finfin_finfin_7(x, a, b, c, d);
-
-                if (g > max) max = g;
-                sum += g;
-
-                 //  Console.WriteLine("x = " + x);
-                 //  Console.WriteLine("g(x) = " + g);
-
-            }
-
-            average = sum / 10.0;
-             // Console.WriteLine();
-            if (Math.Abs(max - average) < 0.000001)
-                Console.WriteLine("Results are almost equal");
-
-            Console.WriteLine("Average = " + average);
-            Console.WriteLine("Max = " + max);
-
-            Console.WriteLine();
-
-
-
-
-            max = sum = average = 0;
-            i = 1;
-            Console.WriteLine("g_inv(x) = ((a - b)/(c -d)) * x + (bc - ad) / (c - d), x in (c, d)");
-
-            a = R.Next(1, 10) + R.NextDouble();
-            b = a + R.Next(2, 10) + R.NextDouble();
-
-            c = R.Next(1, 10) + R.NextDouble();
-            d = c + R.Next(2, 10) + R.NextDouble();
-            Console.WriteLine("c = " + c);
-            Console.WriteLine("d = " + d);
-            x = c + R.NextDouble();
-
-            g = Cinterval_finfin_finfin_7_inv.interval_finfin_finfin_7_inv(x, a, b, c, d);
-            max = g;
-            sum = g;
-
-            for (i = 2; i <= 10; i++)
-            {
-
-                x = c + R.NextDouble();
-                g = Cinterval_finfin_finfin_7_inv.interval_finfin_finfin_7_inv(x, a, b, c, d);
-
-
-                if (g > max) max = g;
-                sum += g;
-
-                //    Console.WriteLine("x = " + x);
-                //    Console.WriteLine("g(x) = " + g);
-
-            }
-
-            average = sum / 10.0;
-            //  Console.WriteLine();
-            if (Math.Abs(max - average) < 0.000001)
-                Console.WriteLine("Results are almost equal");
-
-            Console.WriteLine("Average = " + average);
-            Console.WriteLine("Max = " + max);
-
-            Console.WriteLine();
-
-
-
-
-            max = sum = average = 0;
-            i = 1;
-            Console.WriteLine("g(x) = (ab*(d - c)/(a - b)) / x + (ac - bd) / (a - b), x in (a, b)");
-
-            a = R.Next(1, 10) + R.NextDouble();
-            b = a + R.Next(2, 10) + R.NextDouble();
-            x = a + R.NextDouble();
-            Console.WriteLine("a = " + a);
-            Console.WriteLine("b = " + b);
-
-            c = R.Next(1, 10) + R.NextDouble();
-            d = c + R.Next(2, 10) + R.NextDouble();
-
-            g = Cinterval_finfin_finfin_8.interval_finfin_finfin_8(x, a, b, c, d);
-            max = g;
-            sum = g;
-
-            for (i = 2; i <= 10; i++)
-            {
-
-                x = a + R.NextDouble();
-                g = Cinterval_finfin_finfin_8.interval_finfin_finfin_8(x, a, b, c, d);
-
-
-                if (g > max) max = g;
-                sum += g;
-
-                //    Console.WriteLine("x = " + x);
-                //    Console.WriteLine("g(x) = " + g);
-
-            }
-
-            average = sum / 10.0;
-            //  Console.WriteLine();
-            if (Math.Abs(max - average) < 0.000001)
-                Console.WriteLine("Results are almost equal");
-
-            Console.WriteLine("Average = " + average);
-            Console.WriteLine("Max = " + max);
-
-            Console.WriteLine();
-
-
-
-
-            max = sum = average = 0;
-            i = 1;
-            Console.WriteLine("g_inv(x) = (d - c)*a*b/(x*(a- b) - (a*c - b*d)), x in (c, d)");
-
-            a = R.Next(1, 10) + R.NextDouble();
-            b = a + R.Next(2, 10) + R.NextDouble();
-
-            c = R.Next(1, 10) + R.NextDouble();
-            d = c + R.Next(2, 10) + R.NextDouble();
-            Console.WriteLine("c = " + c);
-            Console.WriteLine("d = " + d);
-            x = c + R.NextDouble();
-
-
-            g = Cinterval_finfin_finfin_8_inv.interval_finfin_finfin_8_inv(x, a, b, c, d);
-            max = g;
-            sum = g;
-
-            for (i = 2; i <= 10; i++)
-            {
-
-                x = c + R.NextDouble();
-                g = Cinterval_finfin_finfin_8_inv.interval_finfin_finfin_8_inv(x, a, b, c, d);
-
-
-                if (g > max) max = g;
-                sum += g;
-
-                //    Console.WriteLine("x = " + x);
-                //    Console.WriteLine("g(x) = " + g);
-
-            }
-
-            average = sum / 10.0;
-            //  Console.WriteLine();
-            if (Math.Abs(max - average) < 0.000001)
-                Console.WriteLine("Results are almost equal");
-
-            Console.WriteLine("Average = " + average);
-            Console.WriteLine("Max = " + max);
-
-            Console.WriteLine();
-
-            
-
-
-
-            max = sum = average = 0;
-            Console.WriteLine("g(x) = sin(x), x in (-Pi/2, Pi/2)");
-            x = p * R.NextDouble() * Math.PI / 2;
-            p *= -1;
-
-            g = Cinterval_finfin_finfin_9.interval_finfin_finfin_9(x);
-            max = g;
-            sum = g;
-
-            for (i = 2; i <= 10; i++)
-            {
-                x = p * R.NextDouble() * Math.PI / 2;
-                p *= -1;
-
-                g = Cinterval_finfin_finfin_9.interval_finfin_finfin_9(x);
-                if (g > max) max = g;
-                sum += g;
-
-                //    Console.WriteLine("x = " + x);
-                //    Console.WriteLine("g(x) = " + g);
-
-            }
-
-            average = sum / 10.0;
-            //  Console.WriteLine();
-            if (Math.Abs(max - average) < 0.000001)
-                Console.WriteLine("Results are almost equal");
-
-            Console.WriteLine("Average = " + average);
-            Console.WriteLine("Max = " + max);
-
-            Console.WriteLine();
-
-
-
-
-            max = sum = average = 0;
-            Console.WriteLine("g(x) = arcsin(x), x in (-1, 1)");
-            x = p * R.NextDouble();
-            p *= -1;
-
-            g = Cinterval_finfin_finfin_9_inv.interval_finfin_finfin_9_inv(x);
-            max = g;
-            sum = g;
-
-            for (i = 2; i <= 10; i++)
-            {
-                x = p * R.NextDouble();
-                p *= -1;
-
-                g = Cinterval_finfin_finfin_9_inv.interval_finfin_finfin_9_inv(x);
-                if (g > max) max = g;
-                sum += g;
-
-                //    Console.WriteLine("x = " + x);
-                //    Console.WriteLine("g(x) = " + g);
-
-            }
-
-            average = sum / 10.0;
-            //  Console.WriteLine();
-            if (Math.Abs(max - average) < 0.000001)
-                Console.WriteLine("Results are almost equal");
-
-            Console.WriteLine("Average = " + average);
-            Console.WriteLine("Max = " + max);
-
-            Console.WriteLine();
-
-
-
-
-
-            max = sum = average = 0;
-            Console.WriteLine("g(x) = cos(x), x in (0, Pi)");
-            x = R.NextDouble() * Math.PI ;
-
-            g = Cinterval_finfin_finfin_10.interval_finfin_finfin_10(x);
-            max = g;
-            sum = g;
-
-            for (i = 2; i <= 10; i++)
-            {
-                x = R.NextDouble() * Math.PI;
-
-                g = Cinterval_finfin_finfin_10.interval_finfin_finfin_10(x);
-                if (g > max) max = g;
-                sum += g;
-
-                //    Console.WriteLine("x = " + x);
-                //    Console.WriteLine("g(x) = " + g);
-
-            }
-
-            average = sum / 10.0;
-            //  Console.WriteLine();
-            if (Math.Abs(max - average) < 0.000001)
-                Console.WriteLine("Results are almost equal");
-
-            Console.WriteLine("Average = " + average);
-            Console.WriteLine("Max = " + max);
-
-            Console.WriteLine();
-
-
-
-
-            max = sum = average = 0;
-            Console.WriteLine("g(x) = arccos(x), x in (-1, 1)");
-            x = p * R.NextDouble() ;
-            p *= -1;
-
-            g = Cinterval_finfin_finfin_10_inv.interval_finfin_finfin_10_inv(x);
-            max = g;
-            sum = g;
-
-            for (i = 2; i <= 10; i++)
-            {
-                x = p * R.NextDouble();
-                p *= -1;
-
-                g = Cinterval_finfin_finfin_10_inv.interval_finfin_finfin_10_inv(x);
-                if (g > max) max = g;
-                sum += g;
-
-                //    Console.WriteLine("x = " + x);
-                //    Console.WriteLine("g(x) = " + g);
-
-            }
-
-            average = sum / 10.0;
-            if (Math.Abs(max - average) < 0.000001)
-                Console.WriteLine("Results are almost equal");
-
-            Console.WriteLine("Average = " + average);
-            Console.WriteLine("Max = " + max);
-
-            Console.WriteLine();
-
-
-
-
-            /// Создание CSV-файлов
-
-            double result; // Результат функции
+            double result; // Результат вычисления
             double t; // Шаг
             double absoluteError; // Абсолютная погрешность
             double relativeError; // Относительная погрешность
+            string name;
+            string name_folder = (@"D:\PRACTICE\K\csv\");
+            string funcname;
+            string S1 = "g_ginvx";
+            string S2 = "ginv_gx";
+
+            int i, k;
+            double A, B, C, a, b, c, d;
 
             /// g(x) = (x + A)^(2k + 1) + B
             /// g_inv(x) = (x - B)^(1/(2k + 1)) - A
             /// (w, w) -> (w, w)
-            /// 
-            System.IO.StreamWriter file1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_ww_ww_1_1.csv");
-            file1.WriteLine("x" + ';' + "g_ginvx" + ';' + "absoluteError" + ';' + "relativeError");
-
             
+            A = 0.0135;
+            B = 1.2477;
+            k = -4;
+            funcname = "interval_ww_ww_1";
+
+            name = name_folder + funcname + "_" + S1 + "_A=" + A.ToString() + "_B=" + B.ToString() + "_k=" + k.ToString() + ".csv";
+                System.IO.StreamWriter name_file_writer =
+               new System.IO.StreamWriter(name);
+                name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
+
             g = 0; g_inv = 0;
             result = 0;
             x = -50;
             t = 1.0 / 10.0;
-
-            double A = R.NextDouble();
-            double B = R.NextDouble();
-            int k = R.Next(-5, 5);
 
             for (i = 1; i < 1000; i++)
             {
@@ -456,21 +57,22 @@ namespace SummerPractice_2016
 
                 g_inv = Cinterval_ww_ww_1_inv.interval_ww_ww_1_inv(x, A, B, k);
                 g = Cinterval_ww_ww_1.interval_ww_ww_1(g_inv, A, B, k);
-
                 result = g;
 
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file1.Close();
+            name_file_writer.Close();
 
-            System.IO.StreamWriter file1_1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_ww_ww_1_2.csv");
-            file1_1.WriteLine("x" + ';' + "ginv_gx" + ';' + "absoluteError" + ';' + "relativeError");
 
+            
+            name = name_folder + funcname + "_" + S2 + "_A=" + A.ToString() + "_B=" + B.ToString() + "_k=" + k.ToString() + ".csv";
+            name_file_writer =
+               new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
             g = 0; g_inv = 0;
             result = 0;
             x = -50;
@@ -482,16 +84,15 @@ namespace SummerPractice_2016
 
                 g = Cinterval_ww_ww_1.interval_ww_ww_1(x, A, B, k);
                 g_inv = Cinterval_ww_ww_1_inv.interval_ww_ww_1_inv(g, A, B, k);
-
                 result = g_inv;
 
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file1_1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file1_1.Close();
+            name_file_writer.Close();
 
 
 
@@ -499,16 +100,18 @@ namespace SummerPractice_2016
             /// g_inv(x) = sqrt(C) * x / sqrt(1 - x*x)
             /// (w, w) -> (-1, 1)
 
-            System.IO.StreamWriter file2 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_ww_finfin_2_1.csv");
-            file2.WriteLine("x" + ';' + "g_ginvx" + ';' + "absoluteError" + ';' + "relativeError");
+            funcname = "interval_ww_finfin_2";
+            C = 0.4673;
+
+            name = name_folder + funcname + "_" + S1 + "_C=" + C.ToString() + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+                name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
             x = -0.5;
             t = 1.0 / 1000.0;
-
-            C = R.NextDouble();
 
             for (i = 1; i < 1000; i++)
             {
@@ -516,20 +119,20 @@ namespace SummerPractice_2016
 
                 g_inv = Cinterval_ww_finfin_2_inv.interval_ww_finfin_2_inv(x, C);
                 g = Cinterval_ww_finfin_2.interval_ww_finfin_2(g_inv, C);
-
                 result = g;
 
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file2.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
-
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
             }
-            file2.Close();
+            name_file_writer.Close();
 
-            System.IO.StreamWriter file2_1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_ww_finfin_2_2.csv");
-            file2_1.WriteLine("x" + ';' + "ginv_gx" + ';' + "absoluteError" + ';' + "relativeError");
+
+            name = name_folder + funcname + "_" + S2 + "_C=" + C.ToString() + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+                name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
@@ -542,16 +145,15 @@ namespace SummerPractice_2016
 
                 g = Cinterval_ww_finfin_2.interval_ww_finfin_2(x, C);
                 g_inv = Cinterval_ww_finfin_2_inv.interval_ww_finfin_2_inv(g, C);
-
                 result = g_inv;
 
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file2_1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file2_1.Close();
+            name_file_writer.Close();
 
 
 
@@ -559,9 +161,13 @@ namespace SummerPractice_2016
             /// g_inv(x) = arctg(x)
             /// (-Pi/2, Pi/2) -> (w, w)
 
-            System.IO.StreamWriter file3 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finfin_ww_3_1.csv");
-            file3.WriteLine("x" + ';' + "g_ginvx" + ';' + "absoluteError" + ';' + "relativeError");
+            funcname = "interval_finfin_ww_3";
+
+            name = name_folder + funcname + "_" + S1 + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
+
 
             g = 0; g_inv = 0;
             result = 0;
@@ -580,14 +186,16 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file3.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file3.Close();
+            name_file_writer.Close();
 
-            System.IO.StreamWriter file3_1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finfin_ww_3_2.csv");
-            file3_1.WriteLine("x" + ';' + "ginv_gx" + ';' + "absoluteError" + ';' + "relativeError");
+
+            name = name_folder + funcname + "_" + S2 + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
@@ -606,19 +214,22 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file3_1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file3_1.Close();
+            name_file_writer.Close();
 
 
             /// g(x) = 1/x
             /// g_inv(x) = 1/x
             /// (0, w) -> (0, w)
 
-            System.IO.StreamWriter file4 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finw_finw_4_1.csv");
-            file4.WriteLine("x" + ';' + "g_ginvx" + ';' + "absoluteError" + ';' + "relativeError");
+            funcname = "interval_finw_finw_4";
+
+            name = name_folder + funcname + "_" + S1 + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
@@ -637,15 +248,15 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file4.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file4.Close();
+            name_file_writer.Close();
 
-            System.IO.StreamWriter file4_1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finw_finw_4_2.csv");
-            file4_1.WriteLine("x" + ';' + "ginv_gx" + ';' + "absoluteError" + ';' + "relativeError");
-
+            name = name_folder + funcname + "_" + S2 + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
             g = 0; g_inv = 0;
             result = 0;
             x = 0;
@@ -663,19 +274,22 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file4_1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file4_1.Close();
+            name_file_writer.Close();
 
 
             /// g(x) = -x
             /// g_inv(x) = -x
             /// (0, w) -> (w, 0)
 
-            System.IO.StreamWriter file5 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finw_wfin_5_1.csv");
-            file5.WriteLine("x" + ';' + "g_ginvx" + ';' + "absoluteError" + ';' + "relativeError");
+            funcname = "interval_finw_wfin_5";
+
+            name = name_folder + funcname + "_" + S1 + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
@@ -694,14 +308,15 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file5.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file5.Close();
+            name_file_writer.Close();
 
-            System.IO.StreamWriter file5_1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finw_wfin_5_2.csv");
-            file5_1.WriteLine("x" + ';' + "ginv_gx" + ';' + "absoluteError" + ';' + "relativeError");
+            name = name_folder + funcname + "_" + S2 + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
@@ -720,28 +335,30 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file5_1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file5_1.Close();
+            name_file_writer.Close();
 
 
             /// g(x) = A*exp(x + B)
             /// g_inv(x) = ln(x / A) - B
             /// (w, w) -> (0, w)
-            /// 
-            System.IO.StreamWriter file6 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_ww_finw_6_1.csv");
-            file6.WriteLine("x" + ';' + "g_ginvx" + ';' + "absoluteError" + ';' + "relativeError");
+            
+            A = 1.4636;
+            B = 0.5731;
+            funcname = "interval_ww_finw_6";
+
+            name = name_folder + funcname + "_" + S1 + "_A=" + A.ToString() + "_B=" + B.ToString() + ".csv";
+            name_file_writer =
+               new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
 
             g = 0; g_inv = 0;
             result = 0;
             x = 0;
             t = 1.0 / 10.0;
-
-            A = R.NextDouble();
-            B = R.NextDouble();
 
             for (i = 1; i < 1000; i++)
             {
@@ -755,14 +372,15 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file6.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file6.Close();
+            name_file_writer.Close();
 
-            System.IO.StreamWriter file6_1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_ww_finw_6_2.csv");
-            file6_1.WriteLine("x" + ';' + "ginv_gx" + ';' + "absoluteError" + ';' + "relativeError");
+            name = name_folder + funcname + "_" + S2 + "_A=" + A.ToString() + "_B=" + B.ToString() + ".csv";
+            name_file_writer =
+               new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
@@ -781,33 +399,30 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file6_1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file6_1.Close();
+            name_file_writer.Close();
 
 
             /// g(x) = ((c - d)/(a - b)) * x + (ad - bc) / (a - b)
             /// g_inv(x) = ((a - b)/(c -d)) * x + (bc - ad) / (c - d)
             /// (a, b) -> (c, d)
-            
-            System.IO.StreamWriter file7 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finfin_finfin_7_1.csv");
-            file7.WriteLine("x" + ';' + "g_ginvx" + ';' + "absoluteError" + ';' + "relativeError");
+            a = 40; b = 140;
+            c = 30; d = 130;
+            funcname = "interval_finfin_finfin_7";
 
+            name = name_folder + funcname + "_" + S1 + "_a=" + a.ToString() + "_b=" + b.ToString() + "_c=" + c.ToString() + "_d=" + d.ToString() + ".csv";
+            name_file_writer =
+               new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
 
             t = 1.0 / 10.0;
 
-            a = R.Next(-50, 50);
-            b = a + 100;
-
-            c = R.Next(-50, 50);
-            d = c + 100;
             x = c;
-
 
             for (i = 1; i < 1000; i++)
             {
@@ -821,26 +436,24 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file7.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file7.Close();
+            name_file_writer.Close();
 
-            System.IO.StreamWriter file7_1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finfin_finfin_7_2.csv");
-            file7_1.WriteLine("x" + ';' + "ginv_gx" + ';' + "absoluteError" + ';' + "relativeError");
+
+            name = name_folder + funcname + "_" + S2 + "_a=" + a.ToString() + "_b=" + b.ToString() + "_c=" + c.ToString() + "_d=" + d.ToString() + ".csv";
+            name_file_writer =
+               new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
+
 
             g = 0; g_inv = 0;
             result = 0;
 
             t = 1.0 / 10.0;
 
-            a = R.Next(-50, 50); 
-            b = a + 100;
             x = a;
-
-            c = R.Next(-50, 50);
-            d = c + 100;
 
             for (i = 1; i < 1000; i++)
             {
@@ -854,33 +467,33 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file7_1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file7_1.Close();
+            name_file_writer.Close();
 
 
             /// g(x) = (ab*(d - c)/(a - b)) / x + (ac - bd) / (a - b)
             /// g_inv(x) = (d - c)*a*b/(x*(a- b) - (a*c - b*d))
             /// (a, b) -> (c, d)
 
-            System.IO.StreamWriter file8 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finfin_finfin_8_1.csv");
-            file8.WriteLine("x" + ';' + "g_ginvx" + ';' + "absoluteError" + ';' + "relativeError");
+            funcname = "interval_finfin_finfin_8";
+            a = 5.8363;
+            b = a + 7.3245;
+            c = 3.7841;
+            d = c + 8.4234;
+
+            name = name_folder + funcname + "_" + S1 + "_a=" + a.ToString() + "_b=" + b.ToString() + "_c=" + c.ToString() + "_d=" + d.ToString() + ".csv";
+            name_file_writer =
+               new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
 
             g = 0; g_inv = 0;
             result = 0;
 
-            a = R.Next(1, 10) + R.NextDouble();
-            b = a + R.Next(2, 10) + R.NextDouble();
-
-            c = R.Next(1, 10) + R.NextDouble();
-            d = c + R.Next(2, 10) + R.NextDouble();
-
             t = (d - c) / 1000.0;
             x = c;
-
 
             for (i = 1; i < 1000; i++)
             {
@@ -894,27 +507,21 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file8.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file8.Close();
+            name_file_writer.Close();
 
-            System.IO.StreamWriter file8_1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finfin_finfin_8_2.csv");
-            file8_1.WriteLine("x" + ';' + "ginv_gx" + ';' + "absoluteError" + ';' + "relativeError");
+            name = name_folder + funcname + "_" + S2 + "_a=" + a.ToString() + "_b=" + b.ToString() + "_c=" + c.ToString() + "_d=" + d.ToString() + ".csv";
+            name_file_writer =
+               new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
 
-            t = 1.0 / 10.0;
-
-            a = R.Next(1, 10) + R.NextDouble();
-            b = a + R.Next(2, 10) + R.NextDouble();
             t = (b - a) / 1000.0;
             x = a;
-
-            c = R.Next(1, 10) + R.NextDouble();
-            d = c + R.Next(2, 10) + R.NextDouble();
 
             for (i = 1; i < 1000; i++)
             {
@@ -928,19 +535,21 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file8_1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file8_1.Close();
+            name_file_writer.Close();
 
 
             /// g(x) = sin(x)
             /// g_inv(x) = arcsin(x)
             /// (-Pi/2, Pi/2) -> (-1, 1)
+            funcname = "interval_finfin_finfin_9";
 
-            System.IO.StreamWriter file9 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finfin_finfin_9_1.csv");
-            file9.WriteLine("x" + ';' + "g_ginvx" + ';' + "absoluteError" + ';' + "relativeError");
+            name = name_folder + funcname + "_" + S1 + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
@@ -959,14 +568,15 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file9.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file9.Close();
+            name_file_writer.Close();
 
-            System.IO.StreamWriter file9_1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finfin_finfin_9_2.csv");
-            file9_1.WriteLine("x" + ';' + "ginv_gx" + ';' + "absoluteError" + ';' + "relativeError");
+            name = name_folder + funcname + "_" + S2 + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
@@ -985,19 +595,22 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file9_1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file9_1.Close();
+            name_file_writer.Close();
 
 
             /// g(x) = cos(x)
             /// g_inv(x) = arccos(x)
             /// (0, Pi) -> (-1, 1)
 
-            System.IO.StreamWriter file10 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finfin_finfin_10_1.csv");
-            file10.WriteLine("x" + ';' + "g_ginvx" + ';' + "absoluteError" + ';' + "relativeError");
+            funcname = "interval_finfin_finfin_10";
+
+            name = name_folder + funcname + "_" + S1 + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
@@ -1016,14 +629,16 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file10.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file10.Close();
+            name_file_writer.Close();
 
-            System.IO.StreamWriter file10_1 =
-            new System.IO.StreamWriter(@"D:\PRACTICE\K\CSV\interval_finfin_finfin_10_2.csv");
-            file10_1.WriteLine("x" + ';' + "ginv_gx" + ';' + "absoluteError" + ';' + "relativeError");
+
+            name = name_folder + funcname + "_" + S2 + ".csv";
+            name_file_writer =
+                new System.IO.StreamWriter(name);
+            name_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "result");
 
             g = 0; g_inv = 0;
             result = 0;
@@ -1042,14 +657,77 @@ namespace SummerPractice_2016
                 absoluteError = Math.Abs(result - x);
                 relativeError = Math.Abs((result - x) / result);
 
-                file10_1.WriteLine(x.ToString() + ';' + result.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
+                name_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + result.ToString());
 
             }
-            file10_1.Close();
+            name_file_writer.Close();
 
 
             Console.WriteLine("CSV-files generated successfully");
+
+
+            makeErrorPlots(@"D:\PRACTICE\K\csv");
+
+            Console.WriteLine("Plots created successfully");
         }
+
+
+
+
+            ///  Создание графиков
+            
+                    static void makeErrorPlot(string source_csv_file_name)
+        {
+            TextFieldParser parser = new TextFieldParser(source_csv_file_name); 
+            parser.TextFieldType = FieldType.Delimited;
+            parser.SetDelimiters(";");
+            var errorChart = new Chart();
+            var relativeErrorChart = new Chart();
+
+            errorChart.Series.Add("absolute_error");
+            relativeErrorChart.Series.Add("relative_error");
+
+            string headers = parser.ReadLine();
+            var x_coordinates = new List<double>();
+            while (!parser.EndOfData)
+            {
+                string[] fields = parser.ReadFields();
+                errorChart.Series["absolute_error"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[1])); //добавляем точки на график
+                relativeErrorChart.Series["relative_error"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[2]));
+            }
+            errorChart.Series["absolute_error"].ChartType = SeriesChartType.FastLine;
+            errorChart.Series["absolute_error"].Color = System.Drawing.Color.Red;
+            errorChart.Height = 1000;
+            errorChart.Width = 1000;
+            errorChart.ChartAreas.Add("NewChartArea");
+            errorChart.Series["absolute_error"].ChartArea = "NewChartArea";
+
+            String path = source_csv_file_name.Replace("csv\\", "$").Split('$')[0];
+            String absoluteErrorFolder = path + "absolute_error_plots";
+            if (!System.IO.Directory.Exists(absoluteErrorFolder))
+                System.IO.Directory.CreateDirectory(absoluteErrorFolder);
+            errorChart.SaveImage(source_csv_file_name.Replace("csv\\", "absolute_error_plots\\").Replace(".csv", ".png"), ChartImageFormat.Png);
+
+            relativeErrorChart.Series["relative_error"].ChartType = SeriesChartType.FastLine;
+            relativeErrorChart.Series["relative_error"].Color = System.Drawing.Color.Green;
+            relativeErrorChart.Height = 1000;
+            relativeErrorChart.Width = 1000;
+            relativeErrorChart.ChartAreas.Add("NewRelativeChartArea");
+            relativeErrorChart.Series["relative_error"].ChartArea = "NewRelativeChartArea";
+
+            String relativeErrorFolder = path + "relative_error_plots";
+            if (!System.IO.Directory.Exists(relativeErrorFolder))
+                System.IO.Directory.CreateDirectory(relativeErrorFolder);
+            relativeErrorChart.SaveImage(source_csv_file_name.Replace("csv\\", "relative_error_plots\\").Replace(".csv", ".png"), ChartImageFormat.Png);
+        } 
+
+        static void makeErrorPlots(string source_csv_folder_name) 
+        {
+            foreach (String source_csv_file_name in System.IO.Directory.GetFiles(source_csv_folder_name))
+                makeErrorPlot(source_csv_file_name);
+        }
+        }
+    
     }
-}
+
 
