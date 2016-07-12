@@ -3,39 +3,15 @@
 namespace OpaqueFunctions
 {
     /// <summary>
-    /// Реализует основное тригонометрическое тождество sin^2 (x) + cos^2 (x) = 1,  
-    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Реализует 30.	f(x) = sin(arccos(x)) – (1 – x*x)^1/2
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
-    /// <returns>1</returns>
-    [OpaqueFunction()]
-    [FunctionName("Opaque1", "sin^2 + cos^2 = 1")]
-    [EquivalentIntConstant(1)]
-    public static class Opaque1SinCos
-    {
-        public static double Body(double angle, int count)
-        {
-            double X = 1;
-            for (int i = 0; i < count; i++)
-            {
-                X *= Math.Sin(angle) * Math.Sin(angle) + Math.Cos(angle) * Math.Cos(angle);
-            }
-            return X;
-        }
-    }
-
-    /// <summary>
-    /// Реализует 30.	f(x) = sin(arccos(x)) –(1 – x*x)^1/2 
-    /// </summary>
-    /// <param name="angle">Угол в радианах</param>
+    /// arcctg(x)=pi-arctg(x) 
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_30_1_sin_arccos", "f(x) = sin(arccos(x)) –(1 – x*x)^1/2")]
+    [FunctionName("L00_30_1_sin_arccos", "f(x) = sin(arccos(x)) – (1 – x*x)^1/2")]
     [EquivalentIntConstant(0)]
-    public static class СL00_30_1_sin_arccos
+    public static class CL00_30_1_sin_arccos
     {
         public static double L00_30_1_sin_arccos(double angle)
         {
@@ -48,13 +24,13 @@ namespace OpaqueFunctions
     }
 
     /// <summary>
-    /// Возвращает область определения 30.	f(x) = sin(arccos(x)) –(1 – x*x)^1/2 
+    /// Возвращает область определения 30.  f(x) = sin(arccos(x)) – (1 – x*x)^1/2
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_30_1_sin_arccos", "f(x) = sin(arccos(x)) –(1 – x*x)^1/2")]
+    [FunctionName("L00_30_1_sin_arccos", "f(x) = sin(arccos(x)) – (1 – x*x)^1/2")]
     [EquivalentIntConstant(0)]
-    public static class СL00_30_1_sin_arccos_in
+    public static class CL00_30_1_sin_arccos_in
     {
         public static string L00_30_1_sin_arccos_in()
         {
@@ -64,16 +40,17 @@ namespace OpaqueFunctions
     }
 
     /// <summary>
-    /// Реализует 31.	f(x) = cos(arcsin(x)) – (1 – x*x)^1/2 
+    /// Реализует 31.  f(x) = cos(arcsin(x)) – (1 – x*x)^1/2  
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
+    /// arcctg(x)=pi-arctg(x) 
     /// <returns>0</returns>
     [OpaqueFunction()]
     [FunctionName("L00_31_1_cos_arcsin", "f(x) = cos(arcsin(x)) – (1 – x*x)^1/2")]
     [EquivalentIntConstant(0)]
-    public static class СL00_31_1_cos_arcsin
+    public static class CL00_31_1_cos_arcsin
     {
-        public static double L00_30_1_cos_arcsin(double angle)
+        public static double L00_31_1_cos_arcsin(double angle)
         {
             double X, sinX, sqrtX;
             sinX = Math.Cos(Math.Asin(angle));
@@ -84,17 +61,17 @@ namespace OpaqueFunctions
     }
 
     /// <summary>
-    /// Возвращает область определения 31.	f(x) = cos(arcsin(x)) – (1 – x*x)^1/2 
+    /// Возвращает область определения 31.	f(x) = cos(arcsin(x)) – (1 – x*x)^1/2  
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
     [FunctionName("L00_31_1_cos_arcsin", "f(x) = cos(arcsin(x)) – (1 – x*x)^1/2")]
     [EquivalentIntConstant(0)]
-    public static class СL00_31_1_cos_arcsin_in
+    public static class CL00_31_1_cos_arcsin_in
     {
         public static string L00_31_1_cos_arcsin_in()
         {
-            string str = "(-1, 1)";
+            string str = "(w, w)";
             return str;
         }
     }
