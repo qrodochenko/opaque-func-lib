@@ -41,3 +41,12 @@ D:\Kirillova\SummerPractice_2016\ModuleTests\bin\Debug\SummerPractice_2016.pdb
 D:\Kirillova\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
 D:\Kirillova\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
 D:\Kirillova\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb
+F:\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.dll
+F:\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.pdb
+F:\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.dll
+F:\SummerPractice_2016\ModuleTests\bin\Debug\SummerPractice_2016.exe
+F:\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.pdb
+F:\SummerPractice_2016\ModuleTests\bin\Debug\SummerPractice_2016.pdb
+F:\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
+F:\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
+F:\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb

@@ -40,3 +40,8 @@ D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\bin\De
 D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache
 D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
 D:\praktika\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb
+F:\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.dll
+F:\SummerPractice_2016\OpaqueFunctions\bin\Debug\OpaqueFunctions.pdb
+F:\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.csprojResolveAssemblyReference.cache
+F:\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.dll
+F:\SummerPractice_2016\OpaqueFunctions\obj\Debug\OpaqueFunctions.pdb

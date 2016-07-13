@@ -192,11 +192,11 @@ namespace ModuleTests
         [TestMethod]
         public void Test_Math_8_2_ln()
         {
-            double exp = 1e-4;
+            double exp = 1e-14;
             for (int i = 0; i < 10; i++)
             {
                 Random rnd = new Random();
-                var x = rnd.NextDouble() * 3 - 1;
+                var x = rnd.NextDouble() * 2 - 1;
                 double F = СMath_8_2_ln.Math_8_2_ln(x, 100);
                 Assert.IsTrue(Math.Abs(Math.Log(1 + x) - F) < exp, "Погрешность больше нужной");
 
