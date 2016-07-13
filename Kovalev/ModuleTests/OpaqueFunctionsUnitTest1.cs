@@ -19,4 +19,39 @@ namespace ModuleTests
         }
     }
 
+    [TestClass]
+    public class TMathApprox_1
+    {
+        [TestMethod]
+        public void MathApprox_1_Compute_2_Test()
+        {
+            Random rnd = new Random();
+            double error = 0.000000005;
+            for (int i = 0; i < 1000; i++)
+            {
+                double arg = rnd.Next(1, 2000) - 1000;
+                arg = arg / 2000.0;
+                Assert.IsTrue((Math.Abs(CMathApprox_1_Compute.MathApprox_1_Compute_2(arg, error)
+                    - Math.Log(1 + arg)) < error), "Значение недостаточно близко к реальному");
+            }
+        }
+    }
+
+    [TestClass]
+    public class TMathApprox_2
+    {
+        [TestMethod]
+        public void MathApprox_2_Compute_2_Test()
+        {
+            Random rnd = new Random();
+            double error = 0.000000005;
+            for (int i = 0; i < 1000; i++)
+            {
+                double arg = rnd.Next(1, 4000) - 2000;
+                arg = arg / 2000.0;
+                Assert.IsTrue((Math.Abs(CMathApprox_2_Compute.MathApprox_2_Compute_2(arg, error)
+                    - Math.Atan(arg)) < error), "Значение недостаточно близко к реальному");
+            }
+        }
+    }
 }
