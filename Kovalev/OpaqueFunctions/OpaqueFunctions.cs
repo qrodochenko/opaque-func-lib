@@ -142,6 +142,11 @@ namespace OpaqueFunctions
             return error;
         }
 
+        public static string MathApprox_1_2_in()
+        {
+            return "(-0.5, 0.5)";
+        }
+
     }
   
     
@@ -324,6 +329,11 @@ namespace OpaqueFunctions
 
             return error;
         }
+
+        public static string MathApprox_2_2_in()
+        {
+            return "(-1, 1)";
+        }
     }
 
     /// <summary>
@@ -385,7 +395,10 @@ namespace OpaqueFunctions
             return Res;
         }
 
-
+        public static string MathApprox_2_Compute_2_in()
+        {
+            return "(-1, 1) (w, w)";
+        }
     }
 
     public static class CFind_Pade
