@@ -864,7 +864,7 @@ namespace OpaqueFunctions
     [FunctionName("L00_53_1_arcctg_arcsin", "f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x) ")]
     [EquivalentIntConstant(0)]
     public static class CL00_53_1_arcctg_arcsin
-    {
+    { 
         public static double L00_53_1_arcctg_arcsin(double angle)
         {
             double X, arcctgX, sqrtX, arcsinX;
@@ -1015,10 +1015,10 @@ namespace OpaqueFunctions
     {
         public static double L00_57_1_arctg_arcsin(double angle)
         {
-            double X, arcsinX, sqrtX, arctgX;
+            double X, arctgX, arcsinX, sqrtX;
+            arctgX = Math.Atan(angle);
             sqrtX = angle / Math.Sqrt(1 + angle * angle);
             arcsinX = Math.Asin(sqrtX);
-            arctgX = Math.Atan(angle);
             X = arctgX - arcsinX;
             return X;
         }

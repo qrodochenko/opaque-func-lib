@@ -10,7 +10,7 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            string offset = "..\\..\\..\\..\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
+            string offset = "..\\..\\..\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
             string source_csv_folder_name = offset + "csv"; // пусть папка для файлов с отчётами .csv называется так.
             makeErrorPlots(source_csv_folder_name);
 
@@ -42,12 +42,13 @@ namespace SummerPractice_2016
             MakeResultsSummaryFile("L00_55_1_arccos_arcctg", CL00_55_1_arccos_arcctg.L00_55_1_arccos_arcctg);
             MakeResultsSummaryFile("L00_56_1_arccos_arctg", CL00_56_1_arccos_arctg.L00_56_1_arccos_arctg);
             MakeResultsSummaryFile("L00_57_1_arctg_arcsin", CL00_57_1_arctg_arcsin.L00_57_1_arctg_arcsin);
+            Console.WriteLine("CSV-files generated successfully");
         }
 
         static void MakeResultsSummaryFile(string funcname, Func<double, double> f)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = ("..\\..\\..\\..\\csv\\");
+            string dest_folder = ("..\\..\\..\\csv\\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + ".csv";
             System.IO.StreamWriter dest_file_writer =
@@ -74,6 +75,7 @@ namespace SummerPractice_2016
             }
             dest_file_writer.Close();
         }
+
 
         static void makeErrorPlot(string source_csv_file_name)
         //немного магии от разработчиков .Net, по которой нет ни одного приличного гайда в сети. Нужно осознать.

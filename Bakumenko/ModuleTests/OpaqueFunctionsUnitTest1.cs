@@ -469,7 +469,7 @@ namespace ModuleTests
         [TestMethod]
         public void Test_L00_45_1_ctg_arcctg()
         {
-            double treshold = 1e-14;
+            double treshold = 1e-9;
             for (int i = 1; i <= 10; i++)
             {
                 var rnd = new Random();
@@ -705,7 +705,7 @@ namespace ModuleTests
     //L00_53_1_arcctg_arcsin(_in)
 
     [TestClass]
-    public class CL00_53_1_arcctg_arcsin
+    public class CTest_L00_53_1_arcctg_arcsin
     {
         [TestMethod]
         public void Test_L00_53_1_arcctg_arcsin()
@@ -716,7 +716,7 @@ namespace ModuleTests
                 var rnd = new Random();
                 var arg = rnd.NextDouble();
 
-                double F = CL00_54_1_arccos_arcctg.L00_54_1_arccos_arcctg(arg);
+                double F = CL00_53_1_arcctg_arcsin.L00_53_1_arcctg_arcsin(arg);
                 Assert.IsTrue(Math.Abs(F - 0) < treshold, "Значение функции не ноль!");
             }
         }
@@ -830,7 +830,7 @@ namespace ModuleTests
         [TestMethod]
         public void Test_L00_57_1_arctg_arcsin()
         {
-            double treshold = 1e-14;
+            double treshold = 1e-12;
             for (int i = 1; i <= 10; i++)
             {
                 var rnd = new Random();
