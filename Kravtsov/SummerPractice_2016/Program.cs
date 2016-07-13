@@ -104,17 +104,17 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            for (int n = 18; n <= 20; n ++ ) 
+          /*  for (int n = 18; n <= 20; n ++ ) 
             {
                // int n = 4000000;
                 MakeResultsSummaryFile("Xpow3_Cos_1", CXpow3_Cos_1.Xpow3_Cos_1, n);
                 string offset = "..\\..\\..\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
                 string source_csv_folder_name = offset + "csv"; // пусть папка для файлов с отчётами .csv называется так.
                 makeErrorPlots(source_csv_folder_name);
-            }
+            } */
         }
 
-        static void MakeResultsSummaryFile(string funcname, Func<double, int, double> f, int N)
+        /* static void MakeResultsSummaryFile(string funcname, Func<double, int, double> f, int N)
         {
             //генерирует файл .csv нужного формата
             string dest_folder = ("..\\..\\..\\csv\\");
@@ -199,7 +199,7 @@ namespace SummerPractice_2016
     }
 
 }
-
+        */
 
 
 

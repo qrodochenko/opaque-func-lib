@@ -1,5 +1,5 @@
-﻿using System;
-
+﻿#define _Debug
+using System;
 namespace OpaqueFunctions
 {
     /// <summary>
@@ -31,7 +31,11 @@ namespace OpaqueFunctions
     {
         public static double Sin_1(double angle, int count)
         {
-            double X1, X = angle, result = 0, top,bottom;
+#if _Debug
+            if (Math.Abs(angle) >= Math.PI / 2.0)
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
+            double X1, X = angle, result = 0, top, bottom;
             for (int i = 0; i < count; i++)
             {
                 X1 = Math.Pow(X, 2 * i + 1);
@@ -69,6 +73,10 @@ namespace OpaqueFunctions
     {
         public static double Cos_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) >= Math.PI)
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double X1,X = angle, result = 0, top, bottom;
             for (int i = 1; i < count; i++)
             {
@@ -112,6 +120,10 @@ namespace OpaqueFunctions
     {
         public static double Arcsin_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) >= 1.0)
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double X1, X = angle, result = 0, top, bottom;
             for (int i = 4; i < count; i++)
             {
@@ -155,6 +167,10 @@ namespace OpaqueFunctions
     {
         public static double Arccos_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) >= 1.0)
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double X1, X = angle, result = 0, top, bottom;
             for (int i = 4; i < count; i++)
             {
@@ -186,6 +202,8 @@ namespace OpaqueFunctions
     }
     /// <summary>
     /// Используется для вычисления чисел Бернулли
+    /// Функция rec вычисляет количество сочетаний Cn_k, она используется в функции Ber
+    /// Функция Ber вычисляет сами числа Бернулли
     /// </summary>
     public static class Bernoulli
     {
@@ -243,6 +261,10 @@ namespace OpaqueFunctions
     {
         public static double Tg_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) >= Math.PI / 2.0) 
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double X1, X = angle, top, common, bottom, result = 0;
             for (int i = 1; i <= count; i++) 
             {
@@ -287,6 +309,10 @@ namespace OpaqueFunctions
     {
         public static double Сtg_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) <= 0.0 || Math.Abs(angle) >= Math.PI) 
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double result = Math.Pow(angle,-1), X = angle, X1, top, bottom, common;
             for (int i = 4; i < count; i++)
                 if (i == 4)
@@ -329,6 +355,10 @@ namespace OpaqueFunctions
     {
         public static double Arctg_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) > 1.0)
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double result = 0, top, bottom, X = angle;
             for(int i = 0; i < count; i++)
             {
@@ -366,6 +396,10 @@ namespace OpaqueFunctions
     {
         public static double Arcctg_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) >= 1.0)
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double result = 0, top, bottom, X = angle;
             for(int i = 0; i < count; i++)
             {
@@ -403,6 +437,10 @@ namespace OpaqueFunctions
     {
         public static double Cosec_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) >= Math.PI) 
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double result = 0, X = angle, top, bottom, common;
             for(int i = 4; i < count; i++)
             {
@@ -447,6 +485,10 @@ namespace OpaqueFunctions
     {
         public static double Xpow2_Sin_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) >= Math.PI / 2.0) 
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double result = 0, bottom, top, X = angle, common;
             for(int i = 1; i < count; i++)
             {
@@ -486,6 +528,10 @@ namespace OpaqueFunctions
     {
         public static double Xpow2_Cos_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) >= Math.PI)
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double result = 0, bottom, top, X = angle, common;
             for (int i = 1; i < count; i++)
             {
@@ -525,6 +571,10 @@ namespace OpaqueFunctions
     {
         public static double Xpow3_Sin_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) >= Math.PI / 2.0) 
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double result = 0, top, bottom, common, X = angle;
             for (int i = 1; i < count; i++) 
             {
@@ -563,6 +613,10 @@ namespace OpaqueFunctions
     {
         public static double Xpow3_Cos_1(double angle, int count)
         {
+#if _Debug
+            if (Math.Abs(angle) >= Math.PI)
+                throw new Exception("Значение x не принадлежит области определения функции!");
+#endif
             double result = 0, top, bottom, common, X = angle;
             for (int i = 0; i < count; i++)
             {
