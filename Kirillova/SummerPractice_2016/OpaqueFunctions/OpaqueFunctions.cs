@@ -28,16 +28,16 @@ namespace OpaqueFunctions
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-  
+
     [OpaqueFunction()]
     [FunctionName("СMath_1_2_ln", "ln((1+x)/(1-x))")]
- 
+
     public static class СMath_1_2_ln
     {
         public static double Math_1_2_ln(double x, int count)
         {
 #if DEBUG
-            if ((x<-1)||(x>1))
+            if ((x < -1) || (x > 1))
             {
                 throw new OpaqueException();
             }
@@ -71,7 +71,7 @@ namespace OpaqueFunctions
 
     [OpaqueFunction()]
     [FunctionName("СMath_2_2_ln", "ln(1+x)")]
-  
+
     public static class СMath_2_2_ln
     {
         public static double Math_2_2_ln(double x, int count)
@@ -87,9 +87,9 @@ namespace OpaqueFunctions
             for (int i = count; i > 0; i--)
             {
 
-                F = i * i * x / (2*i + i * i * x / ( 2 * i + 1 + F));
+                F = i * i * x / (2 * i + i * i * x / (2 * i + 1 + F));
             }
-            F =  x / (1 + F);
+            F = x / (1 + F);
             return F;
         }
 
@@ -110,7 +110,7 @@ namespace OpaqueFunctions
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-  
+
     [OpaqueFunction()]
     [FunctionName("СMath_3_2_ln", "ln(1/sqrt(1-sqr(x)))")]
 
@@ -129,7 +129,7 @@ namespace OpaqueFunctions
             for (int i = count; i > 0; i--)
             {
 
-                F = i*x*x/(1-i*x*x/(2*(2*i+1)-F));
+                F = i * x * x / (1 - i * x * x / (2 * (2 * i + 1) - F));
             }
             F = x * x / (2 - F);
             return F;
@@ -151,10 +151,10 @@ namespace OpaqueFunctions
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-   
+
     [OpaqueFunction()]
     [FunctionName("СMath_4_2_ln", "ln(1+x)")]
-   
+
     public static class СMath_4_2_ln
     {
         public static double Math_4_2_ln(double x, int count)
@@ -170,9 +170,9 @@ namespace OpaqueFunctions
             for (int i = count; i > 0; i--)
             {
 
-                F = i * i*x * x /( (2* i +1)*(2+x)- F);
+                F = i * i * x * x / ((2 * i + 1) * (2 + x) - F);
             }
-            F = 2 * x / (2+x - F);
+            F = 2 * x / (2 + x - F);
             return F;
         }
 
@@ -196,7 +196,7 @@ namespace OpaqueFunctions
 
     [OpaqueFunction()]
     [FunctionName("СMath_5_2_ln", "ln(1+x)")]
- 
+
     public static class СMath_5_2_ln
     {
         public static double Math_5_2_ln(double x, int count)
@@ -212,9 +212,9 @@ namespace OpaqueFunctions
             for (int i = count; i > 1; i--)
             {
 
-                F = i *( i -1)*(2*i-3)*(2*i+1)* x * x / (2*(4*i * i - 1) + 4*i*i*x - F);
+                F = i * (i - 1) * (2 * i - 3) * (2 * i + 1) * x * x / (2 * (4 * i * i - 1) + 4 * i * i * x - F);
             }
-            F = x -3*x*x/(6+4*x- F);
+            F = x - 3 * x * x / (6 + 4 * x - F);
             return F;
         }
 
@@ -224,7 +224,7 @@ namespace OpaqueFunctions
         }
     }
 
-    
+
     /// <summary>
     /// Реализует нахождение логарифмической функции f(x)=ln(x+a),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
@@ -240,7 +240,7 @@ namespace OpaqueFunctions
 
     public static class СMath_6_3_ln
     {
-        public static double Math_6_3_ln(double a,double x, int count)
+        public static double Math_6_3_ln(double a, double x, int count)
         {
 #if DEBUG
             if (x < -a)
@@ -252,10 +252,10 @@ namespace OpaqueFunctions
 
             for (int i = 0; i < count; i++)
             {
-                F =X/(2*i+1) + F;
-                X = X*(x / (2 * a + x)) * (x / (2 * a + x));
+                F = X / (2 * i + 1) + F;
+                X = X * (x / (2 * a + x)) * (x / (2 * a + x));
             }
-            F = Math.Log(a)+2*F;
+            F = Math.Log(a) + 2 * F;
             return F;
         }
 
@@ -277,7 +277,7 @@ namespace OpaqueFunctions
 
     [OpaqueFunction()]
     [FunctionName("СMath_7_2_ln", "ln(1+x)")]
- 
+
     public static class СMath_7_2_ln
     {
         public static double Math_7_2_ln(double x, int count)
@@ -316,7 +316,7 @@ namespace OpaqueFunctions
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-   
+
     [OpaqueFunction()]
     [FunctionName("СMath_8_2_ln", "ln(1+x)")]
 
@@ -356,10 +356,10 @@ namespace OpaqueFunctions
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-  
+
     [OpaqueFunction()]
     [FunctionName("СMath_9_2_ln", "ln((1+x)/(1-x))")]
-   
+
     public static class СMath_9_2_ln
     {
         public static double Math_9_2_ln(double x, int count)
@@ -370,7 +370,7 @@ namespace OpaqueFunctions
                 throw new OpaqueException();
             }
 #endif
-            double F = 0, X = x ;
+            double F = 0, X = x;
 
             for (int i = 0; i < count; i++)
             {
@@ -396,7 +396,7 @@ namespace OpaqueFunctions
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    
+
     [OpaqueFunction()]
     [FunctionName("СMath_10_2_ln", "ln(x/(1-x))")]
 
@@ -410,7 +410,7 @@ namespace OpaqueFunctions
                 throw new OpaqueException();
             }
 #endif
-            double F = 0, X = x ;
+            double F = 0, X = x;
 
             for (int i = 0; i < count; i++)
             {
@@ -427,4 +427,3 @@ namespace OpaqueFunctions
     }
 
 }
-

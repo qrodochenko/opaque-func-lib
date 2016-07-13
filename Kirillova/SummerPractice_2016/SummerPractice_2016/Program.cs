@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +36,7 @@ namespace SummerPractice_2016
             Console.WriteLine("(-1, w)\n");
 
             Console.WriteLine("ln(a+x)");
-            Console.WriteLine(СMath_6_3_ln.Math_6_3_ln(0.5,1, 15));
+            Console.WriteLine(СMath_6_3_ln.Math_6_3_ln(0.5, 1, 15));
             Console.WriteLine("(-a, w)\n");
 
             Console.WriteLine("ln(1+x)");
@@ -62,18 +61,18 @@ namespace SummerPractice_2016
             double absoluteError; // Абсолютная погрешность
             double relativeError; // Относительная погрешность
             double result;
-            double x ;
+            double x;
             double t = 1.0 / 100.0;
 
-           System.IO.StreamWriter file;
+            System.IO.StreamWriter file;
             for (int j = 0; j < 3; j++)
-            {/*
+            {
                 ///1
                 file = new System.IO.StreamWriter(@" D:\Kirillova\SummerPractice_2016\csv\Math_1_2_ln_N" + N.ToString() + ".csv");
                 file.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
                 result = 0;
                 x = -1;
-                
+
                 for (int i = 0; i < 199; i++)
                 {
                     System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
@@ -216,15 +215,15 @@ namespace SummerPractice_2016
                     file.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + time.ToString());
                 }
                 file.Close();
-                */
+
                 ///8
                 file =
-                new System.IO.StreamWriter(@" F:\SummerPractice_2016\csv\Math_8_2_ln_N" + N.ToString() + ".csv");
+                new System.IO.StreamWriter(@" D:\Kirillova\SummerPractice_2016\csv\Math_8_2_ln_N" + N.ToString() + ".csv");
                 file.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
 
                 result = 0;
                 x = -1;
-            
+
 
                 for (int i = 0; i < 199; i++)
                 {
@@ -239,7 +238,7 @@ namespace SummerPractice_2016
                     file.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + time.ToString());
                 }
                 file.Close();
-            /*
+
                 ///9
                 file = new System.IO.StreamWriter(@" D:\Kirillova\SummerPractice_2016\csv\Math_9_2_ln_N" + N.ToString() + ".csv");
                 file.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
@@ -281,22 +280,22 @@ namespace SummerPractice_2016
                     file.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + time.ToString());
                 }
                 file.Close();
-                */
+
                 if (j == 0) N = 500;
                 else N = 1000;
             }
-            
-              makeErrorPlots(@" F:\SummerPractice_2016\csv");
+
+            makeErrorPlots(@" D:\Kirillova\SummerPractice_2016\csv");
 
 
             Console.ReadKey();
         }
 
-          ///  Создание графиков
-            
+        ///  Создание графиков
+
         static void makeErrorPlot(string source_csv_file_name)
         {
-            TextFieldParser parser = new TextFieldParser(source_csv_file_name); 
+            TextFieldParser parser = new TextFieldParser(source_csv_file_name);
             parser.TextFieldType = FieldType.Delimited;
             parser.SetDelimiters(";");
             var errorChart = new Chart();
@@ -337,14 +336,13 @@ namespace SummerPractice_2016
             if (!System.IO.Directory.Exists(relativeErrorFolder))
                 System.IO.Directory.CreateDirectory(relativeErrorFolder);
             relativeErrorChart.SaveImage(source_csv_file_name.Replace("csv\\", "relative_error_plots\\").Replace(".csv", ".png"), ChartImageFormat.Png);
-        } 
+        }
 
-        static void makeErrorPlots(string source_csv_folder_name) 
+        static void makeErrorPlots(string source_csv_folder_name)
         {
             foreach (String source_csv_file_name in System.IO.Directory.GetFiles(source_csv_folder_name))
                 makeErrorPlot(source_csv_file_name);
         }
-        }
-    
     }
-        
+
+}
