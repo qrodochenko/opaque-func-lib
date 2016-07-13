@@ -14,38 +14,38 @@ namespace SummerPractice_2016
             string source_csv_folder_name = offset + "csv"; // пусть папка для файлов с отчётами .csv называется так.
             makeErrorPlots(source_csv_folder_name);
 
-            MakeResultsSummaryFile("L00_30_1_sin_arccos", CL00_30_1_sin_arccos.L00_30_1_sin_arccos);
-            MakeResultsSummaryFile("L00_31_1_cos_arcsin", CL00_31_1_cos_arcsin.L00_31_1_cos_arcsin);
-            MakeResultsSummaryFile("L00_32_1_sin_arctg_cos_arcctg", CL00_32_1_sin_arctg_cos_arcctg.L00_32_1_sin_arctg_cos_arcctg);
-            MakeResultsSummaryFile("L00_33_1_sin_arctg", CL00_33_1_sin_arctg.L00_33_1_sin_arctg);
-            MakeResultsSummaryFile("L00_34_1_cos_arcctg", CL00_34_1_cos_arcctg.L00_34_1_cos_arcctg);
-            MakeResultsSummaryFile("L00_35_1_cos_arctg", CL00_35_1_cos_arctg.L00_35_1_cos_arctg);           
-            MakeResultsSummaryFile("L00_36_1_sin_arcctg", CL00_36_1_sin_arcctg.L00_36_1_sin_arcctg);
-            MakeResultsSummaryFile("L00_37_1_tg_arcsin", CL00_37_1_tg_arcsin.L00_37_1_tg_arcsin);          
-            MakeResultsSummaryFile("L00_38_1_ctg_arccos", CL00_38_1_ctg_arccos.L00_38_1_ctg_arccos);
-            MakeResultsSummaryFile("L00_39_1_tg_arccos", CL00_39_1_tg_arccos.L00_39_1_tg_arccos);          
-            MakeResultsSummaryFile("L00_40_1_ctg_arcsin", CL00_40_1_ctg_arcsin.L00_40_1_ctg_arcsin);
-            MakeResultsSummaryFile("L00_41_1_sin_arcctg_cos_arctg", CL00_41_1_sin_arcctg_cos_arctg.L00_41_1_sin_arcctg_cos_arctg);          
-            MakeResultsSummaryFile("L00_42_1_tg_arctg", CL00_42_1_tg_arctg.L00_42_1_tg_arctg);
-            MakeResultsSummaryFile("L00_43_1_tg_arcsin_ctg_arccos", CL00_43_1_tg_arcsin_ctg_arccos.L00_43_1_tg_arcsin_ctg_arccos);          
-            MakeResultsSummaryFile("L00_44_1_tg_arccos_ctg_arcsin", CL00_44_1_tg_arccos_ctg_arcsin.L00_44_1_tg_arccos_ctg_arcsin);
-            MakeResultsSummaryFile("L00_45_1_ctg_arcctg", CL00_45_1_ctg_arcctg.L00_45_1_ctg_arcctg);
-            MakeResultsSummaryFile("L00_46_1_arcsin_sin", CL00_46_1_arcsin_sin.L00_46_1_arcsin_sin);
-            MakeResultsSummaryFile("L00_47_1_arccos_cos", CL00_47_1_arccos_cos.L00_47_1_arccos_cos);
-            MakeResultsSummaryFile("L00_48_1_arctg_tg", CL00_48_1_arctg_tg.L00_48_1_arctg_tg);
-            MakeResultsSummaryFile("L00_49_1_arcctg_ctg", CL00_49_1_arcctg_ctg.L00_49_1_arcctg_ctg);
-            MakeResultsSummaryFile("L00_50_1_arctg_arcctg", CL00_50_1_arctg_arcctg.L00_50_1_arctg_arcctg);
-            MakeResultsSummaryFile("L00_51_1_arctg_arcsin", CL00_51_1_arctg_arcsin.L00_51_1_arctg_arcsin);
-            MakeResultsSummaryFile("L00_52_1_arcsin_arccos", CL00_52_1_arcsin_arccos.L00_52_1_arcsin_arccos);
-            MakeResultsSummaryFile("L00_53_1_arcctg_arcsin", CL00_53_1_arcctg_arcsin.L00_53_1_arcctg_arcsin);
-            MakeResultsSummaryFile("L00_54_1_arccos_arcctg", CL00_54_1_arccos_arcctg.L00_54_1_arccos_arcctg);
-            MakeResultsSummaryFile("L00_55_1_arccos_arcctg", CL00_55_1_arccos_arcctg.L00_55_1_arccos_arcctg);
-            MakeResultsSummaryFile("L00_56_1_arccos_arctg", CL00_56_1_arccos_arctg.L00_56_1_arccos_arctg);
-            MakeResultsSummaryFile("L00_57_1_arctg_arcsin", CL00_57_1_arctg_arcsin.L00_57_1_arctg_arcsin);
+            MakeResultsSummaryFile("L00_30_1_sin_arccos", CL00_30_1_sin_arccos.L00_30_1_sin_arccos, MyBenchmark.L00_30_1_sin_arccos_benchmark);
+            MakeResultsSummaryFile("L00_31_1_cos_arcsin", CL00_31_1_cos_arcsin.L00_31_1_cos_arcsin, MyBenchmark.L00_31_1_cos_arcsin_benchmark);
+            MakeResultsSummaryFile("L00_32_1_sin_arctg_cos_arcctg", CL00_32_1_sin_arctg_cos_arcctg.L00_32_1_sin_arctg_cos_arcctg, MyBenchmark.L00_32_1_sin_arctg_cos_arcctg_benchmark);
+            MakeResultsSummaryFile("L00_33_1_sin_arctg", CL00_33_1_sin_arctg.L00_33_1_sin_arctg, MyBenchmark.L00_33_1_sin_arctg_benchmark);
+            MakeResultsSummaryFile("L00_34_1_cos_arcctg", CL00_34_1_cos_arcctg.L00_34_1_cos_arcctg, MyBenchmark.L00_34_1_cos_arcctg_benchmark);
+            MakeResultsSummaryFile("L00_35_1_cos_arctg", CL00_35_1_cos_arctg.L00_35_1_cos_arctg, MyBenchmark.L00_35_1_cos_arctg_benchmark);
+            MakeResultsSummaryFile("L00_36_1_sin_arcctg", CL00_36_1_sin_arcctg.L00_36_1_sin_arcctg, MyBenchmark.L00_36_1_sin_arcctg_benchmark);
+            MakeResultsSummaryFile("L00_37_1_tg_arcsin", CL00_37_1_tg_arcsin.L00_37_1_tg_arcsin, MyBenchmark.L00_37_1_tg_arcsin_benchmark);
+            MakeResultsSummaryFile("L00_38_1_ctg_arccos", CL00_38_1_ctg_arccos.L00_38_1_ctg_arccos, MyBenchmark.L00_38_1_ctg_arccos_benchmark);
+            MakeResultsSummaryFile("L00_39_1_tg_arccos", CL00_39_1_tg_arccos.L00_39_1_tg_arccos, MyBenchmark.L00_39_1_tg_arccos_benchmark);
+            MakeResultsSummaryFile("L00_40_1_ctg_arcsin", CL00_40_1_ctg_arcsin.L00_40_1_ctg_arcsin, MyBenchmark.L00_40_1_ctg_arcsin_benchmark);
+            MakeResultsSummaryFile("L00_41_1_sin_arcctg_cos_arctg", CL00_41_1_sin_arcctg_cos_arctg.L00_41_1_sin_arcctg_cos_arctg, MyBenchmark.L00_41_1_sin_arcctg_cps_arctg_benchmark);
+            MakeResultsSummaryFile("L00_42_1_tg_arctg", CL00_42_1_tg_arctg.L00_42_1_tg_arctg, MyBenchmark.L00_42_1_tg_arctg_benchmark);
+            MakeResultsSummaryFile("L00_43_1_tg_arcsin_ctg_arccos", CL00_43_1_tg_arcsin_ctg_arccos.L00_43_1_tg_arcsin_ctg_arccos, MyBenchmark.L00_43_1_tg_arcsin_ctg_arccos_benchmark);
+            MakeResultsSummaryFile("L00_44_1_tg_arccos_ctg_arcsin", CL00_44_1_tg_arccos_ctg_arcsin.L00_44_1_tg_arccos_ctg_arcsin, MyBenchmark.L00_44_1_tg_arccos_ctg_arcsin_benchmark);
+            MakeResultsSummaryFile("L00_45_1_ctg_arcctg", CL00_45_1_ctg_arcctg.L00_45_1_ctg_arcctg, MyBenchmark.L00_45_1_ctg_arcctg_benchmark);
+            MakeResultsSummaryFile("L00_46_1_arcsin_sin", CL00_46_1_arcsin_sin.L00_46_1_arcsin_sin, MyBenchmark.L00_46_1_arcsin_sin_benchmark);
+            MakeResultsSummaryFile("L00_47_1_arccos_cos", CL00_47_1_arccos_cos.L00_47_1_arccos_cos, MyBenchmark.L00_47_1_arccos_cos_benchmark);
+            MakeResultsSummaryFile("L00_48_1_arctg_tg", CL00_48_1_arctg_tg.L00_48_1_arctg_tg, MyBenchmark.L00_48_1_arctg_tg_benchmark);
+            MakeResultsSummaryFile("L00_49_1_arcctg_ctg", CL00_49_1_arcctg_ctg.L00_49_1_arcctg_ctg, MyBenchmark.L00_49_1_arcctg_ctg_benchmark);
+            MakeResultsSummaryFile("L00_50_1_arctg_arcctg", CL00_50_1_arctg_arcctg.L00_50_1_arctg_arcctg, MyBenchmark.L00_50_1_arctg_arcctg_benchmark);
+            MakeResultsSummaryFile("L00_51_1_arctg_arcsin", CL00_51_1_arctg_arcsin.L00_51_1_arctg_arcsin, MyBenchmark.L00_51_1_arctg_arcsin_benchmark);
+            MakeResultsSummaryFile("L00_52_1_arcsin_arccos", CL00_52_1_arcsin_arccos.L00_52_1_arcsin_arccos, MyBenchmark.L00_52_1_arcsin_arccos_benchmark);
+            MakeResultsSummaryFile("L00_53_1_arcctg_arcsin", CL00_53_1_arcctg_arcsin.L00_53_1_arcctg_arcsin, MyBenchmark.L00_53_1_arcctg_arcsin_benchmark);
+            MakeResultsSummaryFile("L00_54_1_arccos_arcctg", CL00_54_1_arccos_arcctg.L00_54_1_arccos_arcctg, MyBenchmark.L00_54_1_arccos_arcctg_benchmark);
+            MakeResultsSummaryFile("L00_55_1_arccos_arcctg", CL00_55_1_arccos_arcctg.L00_55_1_arccos_arcctg, MyBenchmark.L00_55_1_arccos_arcctg_benchmark);
+            MakeResultsSummaryFile("L00_56_1_arccos_arctg", CL00_56_1_arccos_arctg.L00_56_1_arccos_arctg, MyBenchmark.L00_56_1_arccos_arctg_benchmark);
+            MakeResultsSummaryFile("L00_57_1_arctg_arcsin", CL00_57_1_arctg_arcsin.L00_57_1_arctg_arcsin, MyBenchmark.L00_57_1_arctg_arcsin_benchmark);
             Console.WriteLine("CSV-files generated successfully");
         }
 
-        static void MakeResultsSummaryFile(string funcname, Func<double, double> f)
+        static void MakeResultsSummaryFile(string funcname, Func<double, double> f, Func<double, double> benchmark)
         {
             //генерирует файл .csv нужного формата
             string dest_folder = ("..\\..\\..\\csv\\");
@@ -66,9 +66,8 @@ namespace SummerPractice_2016
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x);
-                double benchmark = Math.Pow(1.0 + x, (1.0 / 3.0));
-                double absoluteError = Math.Abs((F - benchmark));
-                double relativeError = Math.Abs((F - benchmark) / benchmark);
+                double absoluteError = Math.Abs((F - benchmark(x)));
+                double relativeError = Math.Abs((F - benchmark(x)) / benchmark(x));
                 swatch.Stop();
                 long t = swatch.ElapsedMilliseconds;
                 dest_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + t.ToString());
@@ -129,5 +128,177 @@ namespace SummerPractice_2016
                 makeErrorPlot(source_csv_file_name);
         }
     }
+    public class MyBenchmark
+    {
 
+        public static double L00_30_1_sin_arccos_benchmark(double x)
+        {
+            double result;
+            result = Math.Sin(Math.Acos(x)) - Math.Sqrt(1 - x * x);
+            return result;
+        }
+        public static double L00_31_1_cos_arcsin_benchmark(double x)
+        {
+            double result;
+            result = Math.Cos(Math.Asin(x)) - Math.Sqrt(1 - x * x);
+            return result;
+        }
+        public static double L00_32_1_sin_arctg_cos_arcctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Sin(Math.Atan(x)) - Math.Cos(Math.PI / 2 - Math.Tan(x));
+            return result;
+        }
+        public static double L00_33_1_sin_arctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Sin(Math.Atan(x)) - x / Math.Sqrt(1 + x * x);
+            return result;
+        }
+        public static double L00_34_1_cos_arcctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Cos(Math.PI / 2 - Math.Atan(x)) - x / Math.Sqrt(1 + x * x);
+            return result;
+        }
+        public static double L00_35_1_cos_arctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Cos(Math.Atan(x)) - 1 / Math.Sqrt(1 + x * x);
+            return result;
+        }
+        public static double L00_36_1_sin_arcctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Sin(Math.PI / 2 - Math.Atan(x)) - 1 / Math.Sqrt(1 + x * x);
+            return result;
+        }
+        public static double L00_37_1_tg_arcsin_benchmark(double x)
+        {
+            double result;
+            result = Math.Tan(Math.Asin(x)) - x / Math.Sqrt(1 - x * x);
+            return result;
+        }
+        public static double L00_38_1_ctg_arccos_benchmark(double x)
+        {
+            double result;
+            result = Math.PI / 2 - Math.Tan(Math.Acos(x)) - x / Math.Sqrt(1 - x * x);
+            return result;
+        }
+        public static double L00_39_1_tg_arccos_benchmark(double x)
+        {
+            double result;
+            result = Math.Tan(Math.Acos(x)) - Math.Sqrt(1 - x * x) / x;
+            return result;
+        }
+        public static double L00_40_1_ctg_arcsin_benchmark(double x)
+        {
+            double result;
+            result = Math.PI / 2 - Math.Tan(Math.Asin(x)) - Math.Sqrt(1 - x * x) / x; ;
+            return result;
+        }
+        public static double L00_41_1_sin_arcctg_cps_arctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Asin(Math.PI / 2 - Math.Atan(x)) - Math.Acos(Math.Atan(x));
+            return result;
+        }
+        public static double L00_42_1_tg_arctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Tan(Math.Atan(x)) - x;
+            return result;
+        }
+        public static double L00_43_1_tg_arcsin_ctg_arccos_benchmark(double x)
+        {
+            double result;
+            result = Math.Tan(Math.Asin(x)) - (1 / Math.Tan(Math.Acos(x)));
+            return result;
+        }
+        public static double L00_44_1_tg_arccos_ctg_arcsin_benchmark(double x)
+        {
+            double result;
+            result = Math.Tan(Math.Acos(x)) - (1 / Math.Tan(Math.Asin(x)));
+            return result;
+        }
+        public static double L00_45_1_ctg_arcctg_benchmark(double x)
+        {
+            double result;
+            result = 1 / Math.Tan(Math.PI / 2 - Math.Atan(x)) - x;
+            return result;
+        }
+        public static double L00_46_1_arcsin_sin_benchmark(double x)
+        {
+            double result;
+            result = Math.Asin(Math.Sin(x)) - x;
+            return result;
+        }
+        public static double L00_47_1_arccos_cos_benchmark(double x)
+        {
+            double result;
+            result = Math.Acos(Math.Cos(x)) - x;
+            return result;
+        }
+        public static double L00_48_1_arctg_tg_benchmark(double x)
+        {
+            double result;
+            result = Math.Atan(Math.Tan(x)) - x;
+            return result;
+        }
+        public static double L00_49_1_arcctg_ctg_benchmark(double x)
+        {
+            double result;
+            result = Math.PI / 2 - Math.Atan(1 / Math.Tan(x)) - x;
+            return result;
+        }
+        public static double L00_50_1_arctg_arcctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Atan(x) + (Math.PI / 2 - Math.Atan(x)) - Math.PI / 2;
+            return result;
+        }
+        public static double L00_51_1_arctg_arcsin_benchmark(double x)
+        {
+            double result;
+            result = Math.Atan(x / Math.Sqrt(1 - x * x)) - Math.Asin(x);
+            return result;
+        }
+        public static double L00_52_1_arcsin_arccos_benchmark(double x)
+        {
+            double result;
+            result = Math.Asin(x) - Math.Acos(Math.Sqrt(1 - x * x));
+            return result;
+        }
+        public static double L00_53_1_arcctg_arcsin_benchmark(double x)
+        {
+            double result;
+            result = Math. PI / 2 - Math.Atan(Math.Sqrt(1 - x * x) / x) - Math.Asin(x);
+            return result;
+        }
+        
+        public static double L00_54_1_arccos_arcctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Acos(Math.Sqrt(1 - x * x)) - (Math.PI / 2 - Math.Atan(Math.Sqrt(1 - x * x) / x));
+            return result;
+        }
+        public static double L00_55_1_arccos_arcctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Acos(x) - (Math.PI / 2 - Math.Atan(x / Math.Sqrt(1 - x * x)));
+            return result;
+        }
+        public static double L00_56_1_arccos_arctg_benchmark(double x)
+        {
+            double result;
+            result = Math.Acos(x) - Math.Atan(Math.Sqrt(1 - x * x) / x);
+            return result;
+        }
+        public static double L00_57_1_arctg_arcsin_benchmark(double x)
+        {
+            double result;
+            result = Math.Atan(x) - Math.Asin(x / Math.Sqrt(1 + x * x));
+            return result;
+        }
+    }
 }
