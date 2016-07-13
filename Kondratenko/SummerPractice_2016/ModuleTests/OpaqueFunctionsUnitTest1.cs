@@ -624,7 +624,7 @@ namespace ModuleTests
             double param = random.NextDouble();
             for (int i = 1; i <= 10; i++)
             {
-                param = random.NextDouble();
+                param = 1 + random.NextDouble();
                 double F = CLOX_20_1_arth_th.LOX_20_1_arth_th(param);
                 Assert.IsTrue(Math.Abs(F - param) < treshold, "Значение функции не x!");
             }
