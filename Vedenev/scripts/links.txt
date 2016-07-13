@@ -1,0 +1,113 @@
+ 
+**58. f(x) = arctg(x) – arcctg(1/x)**
+
+[[Vedenev/absolute_error_plots/L00_58_1_arctg_arcctg.png]]
+    
+**59. f(x) = arctg(x) – arccos(1/((1+x*x)^1/2))**
+
+[[Vedenev/absolute_error_plots/L00_59_1_arctg_arccos.png]]
+    
+**60. f(x) = arcctg(1/x) - arccos(1/((1+x*x)^1/2))**
+
+[[Vedenev/absolute_error_plots/L00_60_1_arcctg_arccos.png]]
+    
+**61. f(x) = arcctg(x) - arccos(x/((1+x*x)^1/2))**
+
+[[Vedenev/absolute_error_plots/L00_61_1_arcctg_arccos.png]]
+    
+**62. f(x) = arcctg(x) – arcsin(1/((1+x*x)^1/2))**
+
+[[Vedenev/absolute_error_plots/L00_62_1_arctg_arcsin.png]]
+    
+**63. f(x) = cos(2x) – 2*cos(x)*cos(x) + 1**
+
+[[Vedenev/absolute_error_plots/L00_63_1_cos.png]]
+    
+**64. f(x) = cos(2x) – 1 + 2*sin(x)*sin(x)**
+
+[[Vedenev/absolute_error_plots/L00_64_1_cos_sin.png]]
+    
+**65. f(x) = tg(x) – 1/(tg(PI/2-x))**
+
+[[Vedenev/absolute_error_plots/L00_65_1_tg.png]]
+    
+**66. f(x) = tg(x) – (tg(a) + tg(x-a)/(1 – tg(a)*tg(x-a))** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_66_2_tg_Y5,05.png]]
+    
+**67. f(x) = ch(x)*ch(x) – sh(x)*sh(x) – 1**
+
+[[Vedenev/absolute_error_plots/L00_67_1_ch_sh.png]]
+    
+**68. f(x) = th(x) – sh(x)/ch(x)**
+
+[[Vedenev/absolute_error_plots/L00_68_1_th_sh_ch.png]]
+    
+**69. f(x) = cth(x) – ch(x)/sh(x)**
+
+[[Vedenev/absolute_error_plots/L00_69_1_cth_sh_ch.png]]
+    
+**70. f(x) = sch(x) – 1/ch(x)**
+
+[[Vedenev/absolute_error_plots/L00_70_1_sch_ch.png]]
+    
+**71. f(x) = csch(x) – 1/sh(x)**
+
+[[Vedenev/absolute_error_plots/L00_71_1_sch_ch.png]]
+    
+**72. f(x,y) = sh(x+y) – (sh(x)*ch(y) + ch(x)*sh(y))** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_72_2_sh_ch_Y5,05.png]]
+    
+**73. f(x,y) = sh(x-y) – (sh(x)*ch(y) - ch(x)*sh(y))** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_73_2_sh_ch_Y5,05.png]]
+    
+**74. f(x,y) = ch(x+y) – (ch(x)*ch(y) + sh(x)*sh(y))** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_74_2_sh_ch_Y5,05.png]]
+    
+**75. f(x,y) = ch(x-y) – (ch(x)*ch(y) - sh(x)*sh(y))** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_75_2_sh_ch_Y5,05.png]]
+    
+**76. f(x,y) = th(x+y) – (th(x) + th(y)/(1 + th(x)*th(y))** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_76_2_th_Y5,05.png]]
+    
+**77. f(x,y) = th(x-y) – (th(x) - th(y)/(1 - th(x)*th(y))** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_77_2_th_Y5,05.png]]
+    
+**78. f(x,y)  = cth(x+y) – (1 + cth(x)*cth(y))/(cth(x) + cth(y))** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_78_2_cth_Y5,05.png]]
+    
+**79. f(x,y)  = cth(x-y) – (1 - cth(x)*cth(y))/(cth(x) - cth(y))** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_79_2_cth_Y5,05.png]]
+    
+**80. f(x,y) = 2*sh(x)*sh(y) – ch(x+y) + ch(x-y)** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_80_2_sh_ch_Y5,05.png]]
+    
+**81. f(x,y) = 2*ch(x)*ch(y) – ch(x+y) – ch(x-y)** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_81_2_sh_ch_Y5,05.png]]
+    
+**82. f(x,y) = 2*sh(x)*ch(y) – sh(x+y) – sh(x-y)** y = 5.05
+
+[[Vedenev/absolute_error_plots/L00_82_2_sh_ch_Y5,05.png]]
+    
+**83. f(x) = ch(2x) – sh(x)*sh(x) + ch(x)*ch(x)**
+
+[[Vedenev/absolute_error_plots/L00_83_1_sh_ch.png]]
+    
+**84. f(x) = cth(2x) – (1 + cth(x)*cth(x))/(2*cth(x))**
+
+[[Vedenev/absolute_error_plots/L00_84_1_cth.png]]
+    
+**85. f(x) = sh(2x) – 2*sh(x)*ch(x)**
+
+[[Vedenev/absolute_error_plots/L00_85_1_sh_ch.png]]
+    
