@@ -11,7 +11,7 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            string offset = (@"D:\SummerPractice_2016\"); // чтобы выходные файлы оказались точно в папке с фамилией  
+            string offset = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\"); // чтобы выходные файлы оказались точно в папке с фамилией  
             string source_csv_folder_name = offset + "csv"; // пусть папка для файлов с отчётами .csv называется так.
             MakeResultsSummaryFile_1_1_count("Sin_1", CSin_1.Sin_1, Math.Sin, 50);
             MakeResultsSummaryFile_1_1_er("Sin_2", CSin_2.Sin_2, Math.Sin, 1e-30);
@@ -41,9 +41,9 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile_1_1_count(string funcname, Func<double, int, double> f, Func<double, double> g, int N)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            string dest_folder = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\csv\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_N" + N.ToString() + ".csv";
+            string dest = dest_folder + funcname + "_N_" + N.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
@@ -71,9 +71,9 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile_1_1_er(string funcname, Func<double, double, double, double> f, Func<double, double> g, double er)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            string dest_folder = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\csv\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_er" + er.ToString() + ".csv";
+            string dest = dest_folder + funcname + "_er_" + er.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
@@ -100,9 +100,9 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile_1_1_count_2(string funcname, Func<double, int, double> f, Func<double, double> g, int N)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            string dest_folder = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\csv\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_N" + N.ToString() + ".csv";
+            string dest = dest_folder + funcname + "_N_" + N.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
@@ -130,9 +130,9 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile_1_1_er_2(string funcname, Func<double, double, double, double> f, Func<double, double> g, double er)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            string dest_folder = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\csv\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_er" + er.ToString() + ".csv";
+            string dest = dest_folder + funcname + "_er_" + er.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
@@ -159,9 +159,9 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile_1_1_count_3(string funcname, Func<double, int, double> f, Func<double, double> g, int N)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            string dest_folder = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\csv\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_N" + N.ToString() + ".csv";
+            string dest = dest_folder + funcname + "_N_" + N.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
@@ -189,9 +189,9 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile_1_1_er_3(string funcname, Func<double, double, double, double> f, Func<double, double> g, double er)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            string dest_folder = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\csv\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_er" + er.ToString() + ".csv";
+            string dest = dest_folder + funcname + "_er_" + er.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
@@ -218,9 +218,9 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile_0_1_count(string funcname, Func<double, int, double> f, Func<double, double> g, int N)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            string dest_folder = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\csv\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_N" + N.ToString() + ".csv";
+            string dest = dest_folder + funcname + "_N_" + N.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
@@ -248,9 +248,9 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile_0_1_er(string funcname, Func<double, double, double, double> f, Func<double, double> g, double er)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            string dest_folder = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\csv\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_er" + er.ToString() + ".csv";
+            string dest = dest_folder + funcname + "_er_" + er.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
@@ -277,9 +277,9 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile_1_1_form_count(string funcname, Func<double, int, double, double> f, Func<double, double> g, int N)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            string dest_folder = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\csv\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_form_N" + N.ToString() + ".csv";
+            string dest = dest_folder + funcname + "_form_N_" + N.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
@@ -306,9 +306,9 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile_1_1_form_er(string funcname, Func<double, double, double, double, double> f, Func<double, double> g, double er)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            string dest_folder = (@"C:\Users\4460\Desktop\opaque-func-lib\Markov\csv\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_form_er" + er.ToString() + ".csv";
+            string dest = dest_folder + funcname + "_form_er_" + er.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
