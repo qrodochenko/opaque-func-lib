@@ -1,8 +1,9 @@
 ﻿#define DEBUG
 using System;
 using System.Collections.Generic;
-using System.Windows.Forms.DataVisualization.Charting; 
-using Microsoft.VisualBasic.FileIO;
+using System.Windows.Forms.DataVisualization.Charting; //консольное приложение не имеет ссылки сюда само по себе. Нужно добавить её через меню "Добавить->Ссылка->Платформа".
+//System.Windows.Forms + System.Windows.Forms.DataVisualization + System.Drawing
+using Microsoft.VisualBasic.FileIO; //то же самое, нужно для обработки .csv
 using OpaqueFunctions;
 namespace SummerPractice_2016
 {
@@ -10,8 +11,8 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            string offset = (@"D:\SummerPractice_2016\");   
-            string source_csv_folder_name = offset + "csv"; 
+            string offset = (@"D:\SummerPractice_2016\"); // чтобы выходные файлы оказались точно в папке с фамилией  
+            string source_csv_folder_name = offset + "csv"; // пусть папка для файлов с отчётами .csv называется так.
             MakeResultsSummaryFile_1_1_count("Sin_1", CSin_1.Sin_1, Math.Sin, 50);
             MakeResultsSummaryFile_1_1_er("Sin_2", CSin_2.Sin_2, Math.Sin, 1e-30);
             MakeResultsSummaryFile_1_1_count("Cos_3", CCos_3.Cos_3, Math.Cos, 50);
@@ -39,10 +40,13 @@ namespace SummerPractice_2016
 
         static void MakeResultsSummaryFile_1_1_count(string funcname, Func<double, int, double> f, Func<double, double> g, int N)
         {
+            //генерирует файл .csv нужного формата
             string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_N" + N.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = -1.0;
             double right_border_of_range = 1.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
@@ -50,7 +54,7 @@ namespace SummerPractice_2016
             double dx = range_length / number_of_points;
             for (int i = 1; i < number_of_points; i++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch();
+                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, N);
@@ -66,10 +70,13 @@ namespace SummerPractice_2016
 
         static void MakeResultsSummaryFile_1_1_er(string funcname, Func<double, double, double, double> f, Func<double, double> g, double er)
         {
+            //генерирует файл .csv нужного формата
             string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_er" + er.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = -1.0;
             double right_border_of_range = 1.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
@@ -77,7 +84,7 @@ namespace SummerPractice_2016
             double dx = range_length / number_of_points;
             for (int i = 1; i < number_of_points; i++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch();
+                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, er, 0.8);
@@ -92,10 +99,13 @@ namespace SummerPractice_2016
         }
         static void MakeResultsSummaryFile_1_1_count_2(string funcname, Func<double, int, double> f, Func<double, double> g, int N)
         {
+            //генерирует файл .csv нужного формата
             string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_N" + N.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = -1.0;
             double right_border_of_range = 1.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
@@ -103,7 +113,7 @@ namespace SummerPractice_2016
             double dx = range_length / number_of_points;
             for (int i = 1; i < number_of_points; i++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); 
+                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, N);
@@ -119,10 +129,13 @@ namespace SummerPractice_2016
 
         static void MakeResultsSummaryFile_1_1_er_2(string funcname, Func<double, double, double, double> f, Func<double, double> g, double er)
         {
+            //генерирует файл .csv нужного формата
             string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_er" + er.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = -1.0;
             double right_border_of_range = 1.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
@@ -130,7 +143,7 @@ namespace SummerPractice_2016
             double dx = range_length / number_of_points;
             for (int i = 1; i < number_of_points; i++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); 
+                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, er, 0.8);
@@ -145,10 +158,13 @@ namespace SummerPractice_2016
         }
         static void MakeResultsSummaryFile_1_1_count_3(string funcname, Func<double, int, double> f, Func<double, double> g, int N)
         {
+            //генерирует файл .csv нужного формата
             string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_N" + N.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = -1.0;
             double right_border_of_range = 1.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
@@ -156,7 +172,7 @@ namespace SummerPractice_2016
             double dx = range_length / number_of_points;
             for (int i = 1; i < number_of_points; i++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); 
+                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, N);
@@ -172,10 +188,13 @@ namespace SummerPractice_2016
 
         static void MakeResultsSummaryFile_1_1_er_3(string funcname, Func<double, double, double, double> f, Func<double, double> g, double er)
         {
+            //генерирует файл .csv нужного формата
             string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_er" + er.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = -1.0;
             double right_border_of_range = 1.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
@@ -183,7 +202,7 @@ namespace SummerPractice_2016
             double dx = range_length / number_of_points;
             for (int i = 1; i < number_of_points; i++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch();
+                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, er, 0.8);
@@ -198,10 +217,13 @@ namespace SummerPractice_2016
         }
         static void MakeResultsSummaryFile_0_1_count(string funcname, Func<double, int, double> f, Func<double, double> g, int N)
         {
+            //генерирует файл .csv нужного формата
             string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_N" + N.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = 0.0;
             double right_border_of_range = 1.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
@@ -209,7 +231,7 @@ namespace SummerPractice_2016
             double dx = range_length / number_of_points;
             for (int i = 1; i < number_of_points; i++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); 
+                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, N);
@@ -225,10 +247,13 @@ namespace SummerPractice_2016
 
         static void MakeResultsSummaryFile_0_1_er(string funcname, Func<double, double, double, double> f, Func<double, double> g, double er)
         {
+            //генерирует файл .csv нужного формата
             string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_er" + er.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = 0.0;
             double right_border_of_range = 1.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
@@ -236,7 +261,7 @@ namespace SummerPractice_2016
             double dx = range_length / number_of_points;
             for (int i = 1; i < number_of_points; i++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); 
+                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, er, 0.8);
@@ -251,10 +276,13 @@ namespace SummerPractice_2016
         }
         static void MakeResultsSummaryFile_1_1_form_count(string funcname, Func<double, int, double, double> f, Func<double, double> g, int N)
         {
+            //генерирует файл .csv нужного формата
             string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_form_N" + N.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = -1.0;
             double right_border_of_range = 1.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
@@ -262,7 +290,7 @@ namespace SummerPractice_2016
             double dx = range_length / number_of_points;
             for (int i = 1; i < number_of_points; i++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); 
+                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, N, g(x));
@@ -277,10 +305,13 @@ namespace SummerPractice_2016
         }
         static void MakeResultsSummaryFile_1_1_form_er(string funcname, Func<double, double, double, double, double> f, Func<double, double> g, double er)
         {
+            //генерирует файл .csv нужного формата
             string dest_folder = (@"D:\SummerPractice_2016\csv\");
+            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_form_er" + er.ToString() + ".csv";
             System.IO.StreamWriter dest_file_writer = new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = -1.0;
             double right_border_of_range = 1.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
@@ -288,7 +319,7 @@ namespace SummerPractice_2016
             double dx = range_length / number_of_points;
             for (int i = 1; i < number_of_points; i++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); 
+                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, er, g(x), 0.8);
@@ -302,8 +333,9 @@ namespace SummerPractice_2016
             dest_file_writer.Close();
         }
         static void makeErrorPlot(string source_csv_file_name)
+        //немного магии от разработчиков .Net, по которой нет ни одного приличного гайда в сети. Нужно осознать.
         {
-            TextFieldParser parser = new TextFieldParser(source_csv_file_name); 
+            TextFieldParser parser = new TextFieldParser(source_csv_file_name); //обрабатываем .csv файл
             parser.TextFieldType = FieldType.Delimited;
             parser.SetDelimiters(";");
             var errorChart = new Chart();
@@ -317,7 +349,7 @@ namespace SummerPractice_2016
             while (!parser.EndOfData)
             {
                 string[] fields = parser.ReadFields();
-                errorChart.Series["absolute_error"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[1])); 
+                errorChart.Series["absolute_error"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[1])); //добавляем точки на график
                 relativeErrorChart.Series["relative_error"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[2]));
             }
             errorChart.Series["absolute_error"].ChartType = SeriesChartType.FastLine;
@@ -346,7 +378,7 @@ namespace SummerPractice_2016
             relativeErrorChart.SaveImage(source_csv_file_name.Replace("csv\\", "relative_error_plots\\").Replace(".csv", ".png"), ChartImageFormat.Png);
         }
 
-        static void makeErrorPlots(string source_csv_folder_name)
+        static void makeErrorPlots(string source_csv_folder_name) //в директории не должно быть лишнего, считаем, что там только csv, притом нужного формата
         {
             foreach (String source_csv_file_name in System.IO.Directory.GetFiles(source_csv_folder_name))
                 makeErrorPlot(source_csv_file_name);
