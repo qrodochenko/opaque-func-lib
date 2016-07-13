@@ -1,7 +1,15 @@
-﻿using System;
+﻿#define DEBUG
+using System;
 
 namespace OpaqueFunctions
 {
+    public class OpaqueException : Exception
+    {
+        public OpaqueException():base("Argument is out of range"){
+            
+        }
+    }
+
     /// <summary>
     /// Реализует основное тригонометрическое тождество sin^2 (x) + cos^2 (x) = 1,  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
@@ -39,7 +47,11 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double X = 1, Y1, Y2;
+            #if DEBUG
+            if (x <= 0)                
+                throw new OpaqueException();
+            #endif
+            double X, Y1, Y2;
             Y1 = Math.Atan(x);
             Y2 = Math.PI / 2 - Math.Atan(1 / x);
             X = Y1 - Y2;
@@ -61,6 +73,10 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, int count)
         {
+#if DEBUG
+            if (x <= 0)
+                throw new OpaqueException();
+#endif
             double X = 1, Y1, Y2;
             for (int i = 0; i < count; ++i)
             {
@@ -100,7 +116,11 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double X = 1, Y1, Y2, Y3, Y4, Y5;
+#if DEBUG
+            if (x <= 0)
+                throw new OpaqueException();
+#endif
+            double X, Y1, Y2, Y3, Y4, Y5;
             Y1 = Math.Atan(x);
             Y2 = 1 + x * x;
             Y3 = Math.Pow(Y2, 0.5);
@@ -125,6 +145,10 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, int count)
         {
+#if DEBUG
+            if (x <= 0)
+                throw new OpaqueException();
+#endif
             double X = 1, Y1, Y2, Y3, Y4, Y5;
             for (int i = 0; i < count; ++i)
             {
@@ -167,7 +191,11 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double X = 1, Y1, Y2, Y3;
+#if DEBUG
+            if (x <= 0)
+                throw new OpaqueException();
+#endif
+            double X, Y1, Y2, Y3;
             Y1 = Math.PI / 2 - Math.Atan(1 / x);
             Y2 = 1 / Math.Pow(1 + x * x, 0.5);
             Y3 = Math.Acos(Y2);
@@ -190,6 +218,10 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, int count)
         {
+#if DEBUG
+            if (x <= 0)
+                throw new OpaqueException();
+#endif
             double X = 1, Y1, Y2, Y3;
             for (int i = 0; i < count; ++i)
             {
@@ -230,7 +262,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double X = 1, Y1, Y2, Y3;
+            double X, Y1, Y2, Y3;
             Y1 = Math.PI / 2 - Math.Atan(x);
             Y2 = x / Math.Pow(1 + x * x, 0.5);
             Y3 = Math.Acos(Y2);
@@ -253,6 +285,10 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, int count)
         {
+#if DEBUG
+            if (x <= 0)
+                throw new OpaqueException();
+#endif
             double X = 1, Y1, Y2, Y3;
             for (int i = 0; i < count; ++i)
             {
@@ -293,7 +329,11 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double X = 1, Y1, Y2, Y3;
+#if DEBUG
+            if (x <= 0)
+                throw new OpaqueException();
+#endif
+            double X, Y1, Y2, Y3;
             Y1 =  Math.PI/2 - Math.Atan(x);
             Y2 = Math.Pow(1 + x * x, 0.5);
             Y2 = 1 / Y2;
@@ -317,6 +357,10 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, int count)
         {
+#if DEBUG
+            if (x <= 0)
+                throw new OpaqueException();
+#endif
             double X = 1, Y1, Y2, Y3;
             for (int i = 0; i < count; ++i)
             {
@@ -358,7 +402,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, Y3, X = 1;
+            double Y1, Y2, Y3, X;
             Y3 = 2 * x;
             Y1 = Math.Cos(Y3);
             Y2 = Math.Cos(x);
@@ -421,7 +465,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, Y3, X = 1;
+            double Y1, Y2, Y3, X;
             Y3 = 2 * x;
             Y1 = Math.Cos(Y3);
             Y2 = Math.Sin(x);
@@ -484,10 +528,14 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, Y3, X = 1;
+            double Y1, Y2, Y3, X;
             Y1 = Math.Tan(x);
             Y2 = Math.PI / 2 - x;
             Y3 = Math.Tan(Y2);
+#if DEBUG
+            if (Math.Abs(Y3) <= double.Epsilon)
+                throw new OpaqueException();
+#endif
             X = Y1 - 1 / Y3;
             return X;
         }
@@ -513,6 +561,10 @@ namespace OpaqueFunctions
                 Y1 = Math.Tan(x);
                 Y2 = Math.PI / 2 - x;
                 Y3 = Math.Tan(Y2);
+#if DEBUG
+                if (Math.Abs(Y3) <= double.Epsilon)
+                    throw new OpaqueException();
+#endif
                 X *= Y1 - 1 / Y3;
             }
             return X;
@@ -548,11 +600,15 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, X = 1;
+            double Y1, Y2, Y3, X;
             Y1 = x - y;
             Y1 = Math.Tan(Y1);
             Y2 = Math.Tan(x);
             Y3 = Math.Tan(y);
+#if DEBUG
+            if (Math.Abs(1 - Y3 * Y1)  <= double.Epsilon)
+                throw new OpaqueException();
+#endif
             X = Y2 - (Y3+ Y1) / (1 - Y3 * Y1);
             return X;
         }
@@ -580,6 +636,10 @@ namespace OpaqueFunctions
                 Y1 = Math.Tan(Y1);
                 Y2 = Math.Tan(x);
                 Y3 = Math.Tan(y);
+#if DEBUG
+                if (Math.Abs(1 - Y3 * Y1) <= double.Epsilon)
+                    throw new OpaqueException();
+#endif
                 X = Y2 - (Y3 + Y1) / (1 - Y3 * Y1);
                 return X;
             }
@@ -615,7 +675,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, X = 1;
+            double Y1, Y2, X;
             Y1 = Math.Cosh(x);
             Y2 = Math.Sinh(x);
             X = Y1 * Y1 - Y2 * Y2 - 1;
@@ -676,10 +736,14 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, Y3, X = 1;
+            double Y1, Y2, Y3, X;
             Y1 = Math.Tanh(x);
             Y2 = Math.Cosh(x);
             Y3 = Math.Sinh(x);
+#if DEBUG
+            if (Math.Abs(Y2) <= double.Epsilon)
+                throw new OpaqueException();
+#endif
             X = Y1 - Y3 / Y2;
             return X;
         }
@@ -705,6 +769,10 @@ namespace OpaqueFunctions
                 Y1 = Math.Tanh(x);
                 Y2 = Math.Cosh(x);
                 Y3 = Math.Sinh(x);
+#if DEBUG
+                if (Math.Abs(Y2) <= double.Epsilon)
+                    throw new OpaqueException();
+#endif
                 X *= Y1 - Y3 / Y2;
             }
             return X;
@@ -739,10 +807,14 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, Y3, X = 1;
+            double Y1, Y2, Y3, X;
             Y1 = 1 / Math.Tanh(x);
             Y2 = Math.Cosh(x);
             Y3 = Math.Sinh(x);
+#if DEBUG
+            if (Math.Abs(Y3) <= double.Epsilon)
+                throw new OpaqueException();
+#endif
             X = Y1 - Y2 / Y3;
             return X;
         }
@@ -768,6 +840,10 @@ namespace OpaqueFunctions
                 Y1 = 1 / Math.Tanh(x);
                 Y2 = Math.Cosh(x);
                 Y3 = Math.Sinh(x);
+#if DEBUG
+                if (Math.Abs(Y3) <= double.Epsilon)
+                    throw new OpaqueException();
+#endif
                 X *= Y1 - Y2 / Y3;
             }
             return X;
@@ -802,7 +878,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, X = 1;
+            double Y1, Y2, X;
             Y1 = 1 / Math.Cosh(x); //sch(x)
             Y2 = 1 / Math.Cosh(x);
             X = Y1 - Y2;
@@ -863,7 +939,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, X = 1;
+            double Y1, Y2, X;
             Y1 = 1 / Math.Sinh(x); //csch(x)
             Y2 = 1 / Math.Sinh(x);
             X = Y1 - Y2;
@@ -925,7 +1001,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, Y5, Y6, X = 1;
+            double Y1, Y2, Y3, Y4, Y5, Y6, X;
             Y1 = x + y;
             Y2 = Math.Sinh(Y1);
             Y3 = Math.Sinh(x);
@@ -996,7 +1072,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, Y5, Y6, X = 1;
+            double Y1, Y2, Y3, Y4, Y5, Y6, X;
             Y1 = x - y;
             Y2 = Math.Sinh(Y1);
             Y3 = Math.Sinh(x);
@@ -1067,7 +1143,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, Y5, Y6, X = 1;
+            double Y1, Y2, Y3, Y4, Y5, Y6, X;
             Y1 = x + y;
             Y2 = Math.Cosh(Y1);
             Y3 = Math.Cosh(x);
@@ -1138,7 +1214,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, Y5, Y6, X = 1;
+            double Y1, Y2, Y3, Y4, Y5, Y6, X;
             Y1 = x - y;
             Y2 = Math.Cosh(Y1);
             Y3 = Math.Cosh(x);
@@ -1209,11 +1285,15 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, X = 1;
+            double Y1, Y2, Y3, Y4, X;
             Y1 = x + y;
             Y2 = Math.Tanh(Y1);
             Y3 = Math.Tanh(x);
             Y4 = Math.Tanh(y);
+#if DEBUG
+            if (Math.Abs(1 + Y3 * Y4) <= double.Epsilon)
+                throw new OpaqueException();
+#endif
             X = Y2 - (Y3 + Y4) / (1 + Y3 * Y4);
             return X;
         }
@@ -1241,6 +1321,10 @@ namespace OpaqueFunctions
                 Y2 = Math.Tanh(Y1);
                 Y3 = Math.Tanh(x);
                 Y4 = Math.Tanh(y);
+#if DEBUG
+                if (Math.Abs(1 + Y3 * Y4) <= double.Epsilon)
+                    throw new OpaqueException();
+#endif
                 X *= Y2 - (Y3 + Y4) / (1 + Y3 * Y4);
             }
             return X;
@@ -1276,11 +1360,15 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, X = 1;
+            double Y1, Y2, Y3, Y4, X;
             Y1 = x - y;
             Y2 = Math.Tanh(Y1);
             Y3 = Math.Tanh(x);
             Y4 = Math.Tanh(y);
+#if DEBUG
+            if (Math.Abs(1 - Y3 * Y4) <= double.Epsilon)
+                throw new OpaqueException();
+#endif
             X = Y2 - (Y3 - Y4) / (1 - Y3 * Y4);
             return X;
         }
@@ -1308,6 +1396,10 @@ namespace OpaqueFunctions
                 Y2 = Math.Tanh(Y1);
                 Y3 = Math.Tanh(x);
                 Y4 = Math.Tanh(y);
+#if DEBUG
+                if (Math.Abs(1 - Y3 * Y4) <= double.Epsilon)
+                    throw new OpaqueException();
+#endif
                 X *= Y2 - (Y3 - Y4) / (1 - Y3 * Y4);
             }
             return X;
@@ -1343,11 +1435,15 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, X = 1;
+            double Y1, Y2, Y3, Y4, X;
             Y1 = x + y;
             Y2 = Math.Tanh(Y1);
             Y3 = Math.Tanh(x);
             Y4 = Math.Tanh(y);
+#if DEBUG
+            if (Math.Abs(Y2) <= double.Epsilon || Math.Abs(Y3) <= double.Epsilon || Math.Abs(Y4) <= double.Epsilon || Math.Abs(1 / Y3 + 1 / Y4) <= double.Epsilon)
+                throw new OpaqueException();
+#endif
             X = 1 / Y2 - (1 + 1 / Y3 * 1 / Y4) / (1 / Y3 + 1 / Y4);
             return X;
         }
@@ -1375,6 +1471,10 @@ namespace OpaqueFunctions
                 Y2 = Math.Tanh(Y1);
                 Y3 = Math.Tanh(x);
                 Y4 = Math.Tanh(y);
+#if DEBUG
+                if (Math.Abs(Y2) <= double.Epsilon || Math.Abs(Y3) <= double.Epsilon || Math.Abs(Y4) <= double.Epsilon || Math.Abs(1 / Y3 + 1 / Y4) <= double.Epsilon)
+                    throw new OpaqueException();
+#endif
                 X *= 1 / Y2 - (1 + 1 / Y3 * 1 / Y4) / (1 / Y3 + 1 / Y4);
             }
             return X;
@@ -1410,11 +1510,15 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, X = 1;
+            double Y1, Y2, Y3, Y4, X;
             Y1 = x - y;
             Y2 = Math.Tanh(Y1);
             Y3 = Math.Tanh(x);
             Y4 = Math.Tanh(y);
+#if DEBUG
+            if (Math.Abs(Y3 - Y4) <= double.Epsilon || Math.Abs(Y2) <= double.Epsilon)
+                throw new OpaqueException();
+#endif
             X = 1 / Y2 - (1 - 1 / Y3 * 1 / Y4) / (1 / Y3 - 1 / Y4);
             return X;
         }
@@ -1442,6 +1546,10 @@ namespace OpaqueFunctions
                 Y2 = Math.Tan(Y1);
                 Y3 = Math.Tan(x);
                 Y4 = Math.Tan(y);
+#if DEBUG
+                if (Math.Abs(Y3 - Y4) <= double.Epsilon || Math.Abs(Y2) <= double.Epsilon)
+                    throw new OpaqueException();
+#endif
                 X *= 1 / Y2 - (1 - 1 / Y3 * 1 / Y4) / (1 / Y3 - 1 / Y4);
             }
             return X;
@@ -1477,7 +1585,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, Y5, Y6, X = 1;
+            double Y1, Y2, Y3, Y4, Y5, Y6, X;
             Y1 = Math.Sinh(x);
             Y2 = Math.Sinh(y);
             Y3 = x + y;
@@ -1548,7 +1656,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, Y5, Y6, X = 1;
+            double Y1, Y2, Y3, Y4, Y5, Y6, X;
             Y1 = Math.Cosh(x);
             Y2 = Math.Cosh(y);
             Y3 = x + y;
@@ -1619,7 +1727,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x, double y)
         {
-            double Y1, Y2, Y3, Y4, Y5, Y6, X = 1;
+            double Y1, Y2, Y3, Y4, Y5, Y6, X;
             Y1 = Math.Sinh(x);
             Y2 = Math.Cosh(y);
             Y3 = x + y;
@@ -1689,7 +1797,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, Y3, Y4, X = 1;
+            double Y1, Y2, Y3, Y4, X;
             Y1 = 2 * x;
             Y2 = Math.Cosh(Y1);
             Y3 = Math.Sinh(x);
@@ -1754,12 +1862,20 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, Y3, Y4, Y5, X = 1;
+            double Y1, Y2, Y3, Y4, Y5, X;
             Y1 = 2 * x;
             Y2 = Math.Tanh(Y1);
             Y3 = Math.Tanh(x);
+#if DEBUG
+            if (Math.Abs(Y3) <= double.Epsilon || Math.Abs(Y2) <= double.Epsilon)
+                throw new OpaqueException();
+#endif
             Y4 = 1 / Y2;
             Y5 = 1 / Y3;
+#if DEBUG
+            if (Math.Abs(Y5) <= double.Epsilon)
+                throw new OpaqueException();
+#endif
             X = Y4 - (1 + Y5 * Y5) / (2 * Y5);
             return X;
         }
@@ -1785,8 +1901,16 @@ namespace OpaqueFunctions
                 Y1 = 2 * x;
                 Y2 = Math.Tanh(Y1);
                 Y3 = Math.Tanh(x);
+#if DEBUG
+                if (Math.Abs(Y3) <= double.Epsilon || Math.Abs(Y2) <= double.Epsilon)
+                    throw new OpaqueException();
+#endif
                 Y4 = 1 / Y2;
                 Y5 = 1 / Y3;
+#if DEBUG
+                if (Math.Abs(Y5) <= double.Epsilon)
+                    throw new OpaqueException();
+#endif
                 X *= Y4 - (1 + Y5 * Y5) / (2 * Y5);
             }
             return X;
@@ -1821,7 +1945,7 @@ namespace OpaqueFunctions
     {
         public static double Body(double x)
         {
-            double Y1, Y2, Y3, Y4, X = 1;
+            double Y1, Y2, Y3, Y4, X;
             Y1 = 2 * x;
             Y2 = Math.Sinh(Y1);
             Y3 = Math.Sinh(x);

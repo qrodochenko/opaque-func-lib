@@ -14,3 +14,19 @@ C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\bin\Debug\ru\Micro
 C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
 C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
 C:\Users\Кирилл\Desktop\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb
+D:\student\Рабочий стол\Vedenev\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.dll
+D:\student\Рабочий стол\Vedenev\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.pdb
+D:\student\Рабочий стол\Vedenev\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.dll
+D:\student\Рабочий стол\Vedenev\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.pdb
+D:\student\Рабочий стол\Vedenev\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
+D:\student\Рабочий стол\Vedenev\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
+D:\student\Рабочий стол\Vedenev\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb
+E:\Vedenev\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.dll
+E:\Vedenev\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.pdb
+E:\Vedenev\SummerPractice_2016\ModuleTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Vedenev\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.dll
+E:\Vedenev\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.pdb
+E:\Vedenev\SummerPractice_2016\ModuleTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+E:\Vedenev\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
+E:\Vedenev\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
+E:\Vedenev\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb
