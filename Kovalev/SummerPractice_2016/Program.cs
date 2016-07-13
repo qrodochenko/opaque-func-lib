@@ -1,5 +1,8 @@
 ﻿using System;
 using OpaqueFunctions;
+using Microsoft.VisualBasic.FileIO;
+using System.Collections.Generic;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace SummerPractice_2016
 {
@@ -9,71 +12,133 @@ namespace SummerPractice_2016
         {
             Console.WriteLine("Summer Practice! Yay!");
             Console.WriteLine();
+            
 
-            /*        Console.WriteLine(CMathApprox_1.MathApprox_1_1(-0.5));
-                    Console.WriteLine(CMathApprox_1.MathApprox_1_1_Pow(-0.5));
-                    Console.WriteLine(Math.Sin(-0.5));
-                    Console.WriteLine();
-                    Console.WriteLine(CMathApprox_1.MathApprox_1_1(-1.57));
-                    Console.WriteLine(CMathApprox_1.MathApprox_1_1_Pow(-1.57));
-                    Console.WriteLine(Math.Sin(-1.57));
-                    Console.WriteLine();
-            */
-
-            int L = 6;
-            int M = 6;
-
-            double[] C = new double[L + M + 1];
-            C[0] = 0;
-            for (int i = 1; i < L + M + 1; i++)
-                C[i] = 1.0 / i * Math.Pow(-1, i + 1);
-
-            Console.WriteLine("Taylor coefficients: ");
-            for (int i = 0; i < L + M + 1; i++)
-                Console.Write(C[i] + " ");
-            Console.WriteLine();
+            //if (MakeTests(0.00000000001, CMathApprox_1_Compute.MathApprox_1_Compute_2))
+            //  Console.WriteLine("Testing failed...");
             Console.WriteLine();
 
-            double[] Ln_Numer = new double[L + 1];
-            double[] Ln_Denom = new double[M + 1];
+            //MakeResFile("MathApprox_Ln_2", CMathApprox_1_Compute.MathApprox_1_Compute_2, 
+            //    Math.Log, 0.5, 0.00000005);
 
-            CFind_Pade.Find_Denominator(Ln_Denom, C, L, M);
-            CFind_Pade.Find_Numerator(Ln_Numer, Ln_Denom, C, L, M);
+            //if (MakeTests(0.0000000000000000005, CMathApprox_2_Compute.MathApprox_2_Compute_2, 1.05))
+            //   Console.WriteLine("Failed...");
+            
+            
 
-            Console.WriteLine("Ln(1 + x) denominator:");
-            for (int i = 0; i < M + 1; i++)
+            Console.WriteLine(CMathApprox_2.MathApprox_2_2("D:\\C#\\Kovalev\\", 0.0000000005));
+
+            MakeResFile("MathApprox_Atan_2", CMathApprox_2_Compute.MathApprox_2_Compute_2,
+                Math.Atan, 1, 0.00000005);
+
+            MakeErrorPlot("D:\\C#\\Kovalev\\csv\\Report_MathApprox_Atan_2_5E-08.csv");
+        }
+
+        static void MakeResFile(string funcname, Func<double, double, double> F, 
+            Func<double, double> f, double border, double error)
+        {
+            string Folder = ("csv\\");
+            string Dest = Folder + "Report_" + funcname + "_" + error.ToString() + ".csv";
+            System.IO.StreamWriter Dest_file_writer = new System.IO.StreamWriter(Dest);
+            Dest_file_writer.WriteLine("x" + ';' + "Value" + ";" + "Abs" + ';' + "Rel");
+            double length = border * 2;
+            uint number_of_points = 100;
+            double dx = length / number_of_points;
+            border = -Math.Abs(border);
+            for (int i = 1; i < number_of_points; i++)
             {
-                Console.Write(Ln_Denom[i] + " ");
+                double x = border + i * dx;
+                double Res = F(x, error);
+                double R = 0;
+                if (funcname == "MathApprox_Ln_2")
+                    R = f(1 + x);
+                else
+                    R = f(x);
+                double abs = Math.Abs(Res - R);
+                double rel;
+                if (R == 0)
+                    rel = 0;
+                else
+                    rel = Math.Abs((Res - R) / R);
+                Dest_file_writer.WriteLine(x.ToString() + ';' + Res.ToString() + ";" + abs.ToString() + ';' + rel.ToString());
             }
-            Console.WriteLine();
-            Console.WriteLine();
 
-            Console.WriteLine(CMathApprox_Ln.MathApprox_ln_CheckError(L, M));
-            Console.WriteLine(CMathApprox_Ln.MathApprox_ln_CheckError(2, 2));
-            Console.WriteLine(CMathApprox_Ln.MathApprox_ln_CheckError(1, 1));
-            Console.WriteLine();
+            Console.Write("Complete! \n");
+            Dest_file_writer.Close();
+        }
+
+        static bool MakeTests(double error, Func<double, double, double> f, double border)
+        {
 
             Random rnd = new Random();
-            double error = 0.000000000001;
             double max = 0.0;
+            Console.WriteLine("Starting tests...");
+            Console.WriteLine();
+            bool F = false;
+            double Range = border * 4000.0;
             for (int i = 0; i < 1000; i++)
             {
-                double arg = rnd.Next(1, 2000) - 1000;
+                double arg = rnd.Next(1, Convert.ToInt32(Range)) - Range/2;
                 arg = arg / 2000.0;
                 if (Math.Abs(arg) > max)
                     max = Math.Abs(arg);
-                if (Math.Abs(CMathApprox_Ln.MathApprox_ln_2(arg, error) - Math.Log(arg + 1)) > error)
-                    Console.Write("lol noob ");
+                if (Math.Abs(f(arg, error) - Math.Atan(arg)) > error)
+                {
+                    F = true;
+                    max = arg;
+                    break;
+                }
             }
-            Console.WriteLine(max);
-            Console.WriteLine();
-            Console.WriteLine(CMathApprox_Ln.MathApprox_ln_2(0.5, 0.0000000000001));
-            Console.WriteLine(Math.Log(1.5));
-            Console.WriteLine();
-
-
-            Console.WriteLine(CMathApprox_1.MathApprox_1_1_in());
-
+            if (F)
+                Console.WriteLine(max);
+            
+            return F;
         }
+
+        static void MakeErrorPlot(string Source)
+        {
+            TextFieldParser Parser = new TextFieldParser(Source); //обрабатываем .csv файл
+            Parser.TextFieldType = FieldType.Delimited;
+            Parser.SetDelimiters(";");
+            var AbsErrChart = new Chart();
+            var RelErrChart = new Chart();
+
+            AbsErrChart.Series.Add("AbsErr");
+            RelErrChart.Series.Add("RelErr");
+
+            string headers = Parser.ReadLine();
+            var x_coordinates = new List<double>();
+            while (!Parser.EndOfData)
+            {
+                string[] fields = Parser.ReadFields();
+                AbsErrChart.Series["AbsErr"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[2])); //добавляем точки на график
+                RelErrChart.Series["RelErr"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[3]));
+            }
+            AbsErrChart.Series["AbsErr"].ChartType = SeriesChartType.FastLine;
+            AbsErrChart.Series["AbsErr"].Color = System.Drawing.Color.Red;
+            AbsErrChart.Height = 1000;
+            AbsErrChart.Width = 1000;
+            AbsErrChart.ChartAreas.Add("NewAbsChartArea");
+            AbsErrChart.Series["AbsErr"].ChartArea = "NewAbsChartArea";
+
+            String Path = Source.Replace("csv\\", "$").Split('$')[0];
+            String AbsErrorFolder = Path + "Plots\\AbsErr_plots";
+            if (!System.IO.Directory.Exists(AbsErrorFolder))
+                System.IO.Directory.CreateDirectory(AbsErrorFolder);
+            AbsErrChart.SaveImage(Source.Replace("csv\\", "Plots\\AbsErr_Plots\\").Replace(".csv", ".png"), ChartImageFormat.Png);
+
+            RelErrChart.Series["RelErr"].ChartType = SeriesChartType.FastLine;
+            RelErrChart.Series["RelErr"].Color = System.Drawing.Color.Green;
+            RelErrChart.Height = 1000;
+            RelErrChart.Width = 1000;
+            RelErrChart.ChartAreas.Add("NewRelChartArea");
+            RelErrChart.Series["RelErr"].ChartArea = "NewRelChartArea";
+
+            String RelErrorFolder = Path + "Plots\\RelErr_plots";
+            if (!System.IO.Directory.Exists(RelErrorFolder))
+                System.IO.Directory.CreateDirectory(RelErrorFolder);
+            RelErrChart.SaveImage(Source.Replace("csv\\", "Plots\\RelErr_Plots\\").Replace(".csv", ".png"), ChartImageFormat.Png);
+        }
+
     }
 }
