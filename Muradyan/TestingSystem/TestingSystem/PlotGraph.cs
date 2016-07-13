@@ -59,7 +59,16 @@ namespace TestingSystem
         public static void makeErrorPlots(string source_csv_folder_name) //в директории не должно быть лишнего, считаем, что там только csv, притом нужного формата
         {
             foreach (String source_csv_file_name in System.IO.Directory.GetFiles(source_csv_folder_name))
-                makeErrorPlot(source_csv_file_name);
+            {
+                try
+                {
+                    makeErrorPlot(source_csv_file_name);
+                }
+                catch(Exception e)
+                {
+                    Console.WriteLine(source_csv_file_name+" was not plotted: " + e.Message);
+                }
+            }
         }
     }
 }

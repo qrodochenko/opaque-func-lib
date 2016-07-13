@@ -12,7 +12,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_1_2_ln", "ln((1+x)/(1-x))")]
+    [FunctionName("Math_1_2_ln", "ln((1+x)/(1-x))")]
     [EquivalentIntConstant(1)]
     public static class СMath_1_2_ln
     {
@@ -46,7 +46,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_2_2_ln", "ln(1+x)")]
+    [FunctionName("Math_2_2_ln", "ln(1+x)")]
     [EquivalentIntConstant(1)]
     public static class СMath_2_2_ln
     {
@@ -81,7 +81,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_3_2_ln", "ln(1/sqrt(1-sqr(x)))")]
+    [FunctionName("Math_3_2_ln", "ln(1/sqrt(1-sqr(x)))")]
     [EquivalentIntConstant(1)]
     public static class СMath_3_2_ln
     {
@@ -115,7 +115,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_4_2_ln", "ln(1+x)")]
+    [FunctionName("Math_4_2_ln", "ln(1+x)")]
     [EquivalentIntConstant(1)]
     public static class СMath_4_2_ln
     {
@@ -149,7 +149,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_5_2_ln", "ln(1+x)")]
+    [FunctionName("Math_5_2_ln", "ln(1+x)")]
     [EquivalentIntConstant(1)]
     public static class СMath_5_2_ln
     {
@@ -183,7 +183,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_6_2_ln", "ln(1+x)")]
+    [FunctionName("Math_6_2_ln", "ln(1+x)")]
     [EquivalentIntConstant(1)]
     public static class СMath_6_2_ln
     {
@@ -217,7 +217,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_7_3_ln", "ln(x+a)")]
+    [FunctionName("Math_7_3_ln", "ln(x+a)")]
     [EquivalentIntConstant(1)]
     public static class СMath_7_3_ln
     {
@@ -250,7 +250,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_8_2_ln", "ln(1+x)")]
+    [FunctionName("Math_8_2_ln", "ln(1+x)")]
     [EquivalentIntConstant(1)]
     public static class СMath_8_2_ln
     {
@@ -283,7 +283,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_9_2_ln", "ln(1+x)")]
+    [FunctionName("Math_9_2_ln", "ln(1+x)")]
     [EquivalentIntConstant(1)]
     public static class СMath_9_2_ln
     {
@@ -316,7 +316,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_10_2_ln", "ln((1+x)/(1-x))")]
+    [FunctionName("Math_10_2_ln", "ln((1+x)/(1-x))")]
     [EquivalentIntConstant(1)]
     public static class СMath_10_2_ln
     {
@@ -349,7 +349,7 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
     /// <returns>1</returns>
     [OpaqueFunction()]
-    [FunctionName("СMath_11_2_ln", "ln(x/(1-x))")]
+    [FunctionName("Math_11_2_ln", "ln(x/(1-x))")]
     [EquivalentIntConstant(1)]
     public static class СMath_11_2_ln
     {

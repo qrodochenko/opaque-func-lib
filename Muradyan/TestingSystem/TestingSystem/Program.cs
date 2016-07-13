@@ -156,43 +156,46 @@ namespace TestingSystem
             {
                 listOfFiles.Add(sr.ReadLine());
             }
-            var listOfMethods = MethodForTesting.getMethodsFromFiles(listOfFiles.ToArray(), new string[] {}, true, true,onlyNames: true);
+            var listOfMethods = MethodForTesting.getMethodsFromFiles(listOfFiles.ToArray(), new string[] {}, true, true);
 
             Directory.CreateDirectory("Reports");
             Directory.CreateDirectory("ReportsTaylor");
             var sw = new StreamWriter("errors.txt");
             Console.WriteLine("Methods found total: {0}", listOfMethods.Count);
             listOfMethods.ForEach(
-                (mt) => 
+                (m) => 
                 {
-                    MethodForTesting m = null;
-                    if(mt is IOneArgMethod)
-                        m = new MethodForTestingOneArg(mt.FilePath, mt.Name);
-                    else if(mt is ITwoArgMethod)
-                        m = new MethodForTestingOneArg(mt.FilePath, mt.Name);
-                    if (m.Correct)
+                    if (m.CompileScript())
                     {
-                        sw.WriteLine("{0} {1} {2}", m.Name, m.Type, m.FilePath);
-                        try
+                        if (m.Correct)
                         {
-                            m.GetTestingReport(10, 500, new double[] { 2, 3 }).SaveCSV("Reports\\" + m.Name + ".csv");
+                            try
+                            {
+                                m.GetTestingReport(10, 500, new double[] { 2, 3 }).SaveCSV("Reports\\" + m.Name + ".csv");
+                            }
+                            catch
+                            {
+                                sw.WriteLine("Universal error: " + m.Name + " " + m.FilePath);
+                            }
                         }
-                        catch(Exception e)
-                        {
-                            sw.WriteLine("^^ERROR^^"+e.Message);
-                        }
+                        m.Script = null;
+                        m.IdealMethod = null;
                     }
-                    var mT = MethodForTestingTaylor.GetTaylorExtension(m);
-                    if (mT.Correct)
+                    else
                     {
-                        sw.WriteLine("T: {0} {1} {2}", m.Name, m.Type, m.FilePath);
+                        sw.WriteLine("Can't compile general code: " + m.Name + " " + m.FilePath);
+                        return;
+                    }
+                    var mt = MethodForTestingTaylor.GetTaylorExtension(m);
+                    if (mt.Correct)
+                    {
                         try
                         {
-                            mT.GetTestingReport(10, 500, new double[] { 2, 3 }).SaveCSV("ReportsTaylor\\" + m.Name + ".csv");
+                            mt.GetTestingReport(10, 500, new double[] { 2, 3 }).SaveCSV("ReportsTaylor\\" + mt.Name + ".csv");
                         }
-                        catch (Exception e)
+                        catch
                         {
-                            sw.WriteLine("^^ERROR^^"+e.Message);
+                            sw.WriteLine("Taylor error: " + m.Name + " " + m.FilePath);
                         }
                     }
                 });
@@ -738,6 +741,8 @@ namespace TestingSystem
         public static Dictionary<string, string> IdentifierDic = new Dictionary<string, string>()
         {
             { "SIN", "Sin" }, {"COS", "Cos" }, {"TAN",  "Tan"}, {"LN", "Log" }, { "LOG","Log10"},
+            {"TANH", "Tanh" }, { "TG", "Tan"}, {"POW", "Pow" }, {"SH", "Sinh" }, {"CH","Cosh" },
+            {"TH", "Tanh" },
             {"X", "X" }, {"Y", "Y" }, {"A", "A" }, {"B", "B" }
         };
 
@@ -771,7 +776,7 @@ namespace TestingSystem
                 {
                     var idTextNCh = id.Identifier.ValueText.Trim();
                     var idText = idTextNCh.ToUpper();
-                    if (!IdentifierDic.ContainsKey(idText)) continue;
+                    if (!IdentifierDic.ContainsKey(idText) || IdentifierDic.ContainsValue(idTextNCh)) continue;
                     var dicText = IdentifierDic[idText];
 
                     if (dicText != idTextNCh){
@@ -784,7 +789,7 @@ namespace TestingSystem
             }
 
             var EvalExpression = TestingUtilities.getEvalExpression(parsed, "using System;\n", mtype, true);
-
+            Console.WriteLine(EvalExpression);
             Script = CSharpScript.Create<double>(EvalExpression, ScriptOptions.Default.WithImports("System.Math"), GetArgsType());
 
         }
@@ -800,7 +805,8 @@ namespace TestingSystem
         
 
         public string Code;
-        //public string EvalCode;
+        public string EvalCode;
+        public string IdealCode;
         public string Name;
         public IdealTestMethod IdealMethod;
         public MethodDeclarationSyntax Node;
@@ -824,6 +830,9 @@ namespace TestingSystem
             Node = m.Node;
             Type = m.Type;
             Correct = m.Correct;
+            EvalCode = m.EvalCode;
+            IdealCode = m.IdealCode;
+
             if (m is IOneArgMethod)
             {
                 ((IOneArgMethod)this).Interval = ((IOneArgMethod)m).Interval;
@@ -854,6 +863,41 @@ namespace TestingSystem
                 case MethodType.XYAB: return typeof(ArgsTypesIterations.ArgsXYAB);
                 default: throw new Exception();
             }
+        }
+
+        public bool CompileScript()
+        {
+            if (IdealCode == null) return false;
+            Correct = true;
+            try
+            {
+                IdealMethod = new IdealTestMethod(IdealCode, Type);
+            }
+            catch (Exception e)
+            {
+#if DEBUG
+                Console.WriteLine(Name + " " + FilePath + " " + e.Message);
+#endif
+                Correct = false;
+            }
+
+
+            var opts = ScriptOptions.Default;
+            //var mscorlib = typeof(System.Object).Assembly;
+            //opts = opts.AddReferences(mscorlib);
+            opts = opts.AddImports("System");
+            opts = opts.AddImports("System.Math");
+            try
+            {
+                Script = CSharpScript.Create<double>(EvalCode, opts, GetArgsType());
+                Script.Compile();
+            }
+            catch
+            {
+                Correct = false;
+                return false;
+            }
+            return true;
         }
 
         //public class ArgsT{
@@ -961,7 +1005,6 @@ namespace TestingSystem
             string[] MethodNames,
             bool exclude = false,
             bool methodTypeDetection = false,
-            bool onlyNames = false,
             Dictionary<string, MethodType> MethodTypes = null )
         {
             MethodTypes = MethodTypes ?? new Dictionary<string, MethodType>();
@@ -996,7 +1039,14 @@ namespace TestingSystem
 
                     if (!intervalsDic.ContainsKey(thisMethodName)) continue;
                     var methIntervals = intervalsDic[thisMethodName];
-                    if (methIntervals == null) continue;
+                    if (methIntervals == null)
+                    {
+                        
+#if DEBUG
+                        sw.WriteLine(thisMethodName + " " + fname + " " + " No intervals");
+#endif
+                        continue;
+                    }
                     if (isOneArg(t) && methIntervals.Length == 1)
                     {
                         m = new MethodForTestingOneArg();
@@ -1016,39 +1066,19 @@ namespace TestingSystem
 
                     m.Name = thisMethodName;
                     m.FilePath = fname;
-                    if (onlyNames)
-                    {
-                        reslist.Add(m);
-                        continue;
-                    }
+                    Console.WriteLine(thisMethodName+" "+fname);
                     m.Type = t;
                     m.Code = meth.GetText().ToString();
                     m.Node = meth;
                     
-                    m.Correct = true;
-
-                    try
-                    {
-                        m.IdealMethod = new IdealTestMethod(expressionsDic[m.Name], m.Type);
-                    }
-                    catch(Exception e)
-                    {
-#if DEBUG
-                        sw.WriteLine(m.Name+" "+m.FilePath+ " "+e.Message);
-#endif
-                        m.Correct = false;
-                    }
-
-                    var EvalCode = Usings + m.Code + "\nreturn " + 
+                    m.Correct = false;
+                    m.EvalCode = Usings + m.Code + "\nreturn " + 
                         m.Name + TestingUtilities.generateArguments(m.Type, true, false, 0)+";\n";
-                    var opts = ScriptOptions.Default;
-                    //var mscorlib = typeof(System.Object).Assembly;
-                    //opts = opts.AddReferences(mscorlib);
-                    opts = opts.AddImports("System");
-                    opts = opts.AddImports("System.Math");
-                    m.Script = CSharpScript.Create<double>(EvalCode, opts, m.GetArgsType());
-                    m.Script.Compile();
 
+                    if (expressionsDic.ContainsKey(m.Name))
+                        m.IdealCode = expressionsDic[m.Name];
+                    else
+                        m.IdealCode = null;
 
                     reslist.Add(m);
                     

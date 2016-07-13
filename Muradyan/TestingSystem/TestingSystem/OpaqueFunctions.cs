@@ -80,24 +80,7 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
     [OpaqueFunction()]
-    [FunctionName("Cos_1", "Cos(x)")]
-    public static class CCos_1
-    {
-        public static double Cos_1(double angle, int count)
-        {
-            double X = 0, X1 = angle, fact = 1, sign = -1, result = 0, a;
-            for (int i = 0; i < count; i++)
-            {
-                sign *= sign;
-                for (int k = i; k <= 2 * i; k++)
-                    X1 *= X1;
-                fact *= (2 * i);
-                a = sign * X1 / fact;
-                result += a;
-            }
-            return result;
-        }
-    }
+
     /// <summary>
     /// Возвращает область определения функции cos(x)
     /// <returns>string</returns>
