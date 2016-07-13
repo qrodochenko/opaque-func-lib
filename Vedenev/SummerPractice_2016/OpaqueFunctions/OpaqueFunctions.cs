@@ -1828,7 +1828,7 @@ namespace OpaqueFunctions
                 Y2 = Math.Cosh(Y1);
                 Y3 = Math.Sinh(x);
                 Y4 = Math.Cosh(x);
-                X *= Y2 - Y3 * Y3 + Y4 * Y4;
+                X *= Y2 - Y3 * Y3 - Y4 * Y4;
             }
             return X;
         }
