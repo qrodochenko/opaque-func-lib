@@ -266,7 +266,7 @@ namespace ModuleTests
     [TestClass]
     public class Ctest_L00_66_2_tg
     {
-        double persicion = 0.00000001;
+        double persicion = 0.0000001;
         [TestMethod]
         public void test_L00_66_2_tg_2()
         {
@@ -297,7 +297,7 @@ namespace ModuleTests
     [TestClass]
     public class Ctest_L00_67_1_ch_sh
     {
-        double persicion = 0.00000001;
+        double persicion = 0.0000001;
         [TestMethod]
         public void test_L00_67_1_ch_sh_2()
         {
@@ -545,7 +545,7 @@ namespace ModuleTests
     [TestClass]
     public class Ctest_L00_75_2_sh_ch
     {
-        double persicion = 0.00000001;
+        double persicion = 0.0000001;
         [TestMethod]
         public void test_L00_75_2_sh_ch_2()
         {
@@ -638,7 +638,7 @@ namespace ModuleTests
     [TestClass]
     public class Ctest_L00_78_2_cth 
     {
-        double persicion = 0.00000001;
+        double persicion = 0.0000001;
         [TestMethod]
         public void test_L00_78_2_cth_2()
         {
@@ -762,7 +762,7 @@ namespace ModuleTests
     [TestClass]
     public class Ctest_L00_82_2_sh_ch
     {
-        double persicion = 0.00000001;
+        double persicion = 0.0000001;
         [TestMethod]
         public void test_L00_82_2_sh_ch_2()
         {
@@ -793,7 +793,7 @@ namespace ModuleTests
     [TestClass]
     public class Ctest_L00_83_1_sh_ch
     {
-        double persicion = 0.00000001;
+        double persicion = 0.0000001;
         [TestMethod]
         public void test_L00_83_1_sh_ch_2()
         {
@@ -855,7 +855,7 @@ namespace ModuleTests
     [TestClass]
     public class Ctest_L00_85_1_sh_ch
     {
-        double persicion = 0.00000001;
+        double persicion = 0.0000001;
         [TestMethod]
         public void test_L00_85_1_sh_ch_2()
         {

@@ -1,25 +1,48 @@
-﻿using System;
+﻿#define DEBUG
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace OpaqueFunctions
 {
+
+    public class OpaqueException : Exception
+    {
+        public OpaqueException()
+            : base("Argument is out of range")
+        {
+
+        }
+
+    }
+
     /// <summary>
-    /// Реализует нахождение логарифмической функции ln((1+x)/(1-x)),  
+    /// Реализует нахождение логарифмической функции f(x)=ln((1+x)/(1-x)),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм через цепную дробь,
     /// количество итераций задано параметром <paramref name="count"/>.
+    /// Обратной к этой функции является функция E^(f(x))=(1+x)/(1-x).
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
+
     [OpaqueFunction()]
-    [FunctionName("Math_1_2_ln", "ln((1+x)/(1-x))")]
-    [EquivalentIntConstant(1)]
+    [FunctionName("СMath_1_2_ln", "ln((1+x)/(1-x))")]
+
     public static class СMath_1_2_ln
     {
         public static double Math_1_2_ln(double x, int count)
         {
+#if DEBUG
+            if ((x < -1) || (x > 1))
+            {
+                throw new OpaqueException();
+            }
+#endif
             double F = 0;
-       
             for (int i = count; i > 0; i--)
             {
 
@@ -37,29 +60,36 @@ namespace OpaqueFunctions
     }
 
     /// <summary>
-    /// Реализует нахождение логарифмической функции ln(1+x),  
+    /// Реализует нахождение логарифмической функции f(x)=ln(1+x),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм через цепную дробь,
     /// количество итераций задано параметром <paramref name="count"/>.
+    ///  Обратной к этой функции является функция E^(f(x))=(1+x).
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
+
     [OpaqueFunction()]
-    [FunctionName("Math_2_2_ln", "ln(1+x)")]
-    [EquivalentIntConstant(1)]
+    [FunctionName("СMath_2_2_ln", "ln(1+x)")]
+
     public static class СMath_2_2_ln
     {
         public static double Math_2_2_ln(double x, int count)
         {
+#if DEBUG
+            if (x < -1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double F = 0;
 
             for (int i = count; i > 0; i--)
             {
 
-                F = i * i * x / (2*i + i * i * x / ( 2 * i + 1 + F));
+                F = i * i * x / (2 * i + i * i * x / (2 * i + 1 + F));
             }
-            F =  x / (1 + F);
+            F = x / (1 + F);
             return F;
         }
 
@@ -72,27 +102,34 @@ namespace OpaqueFunctions
 
 
     /// <summary>
-    /// Реализует нахождение логарифмической функции ln(1/sqrt(1-sqr(x))),  
+    /// Реализует нахождение логарифмической функции f(x)=ln(1/sqrt(1-sqr(x))),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм через цепную дробь,
     /// количество итераций задано параметром <paramref name="count"/>.
+    ///  Обратной к этой функции является функция E^(f(x))=1/sqrt(1-sqr(x)).
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
+
     [OpaqueFunction()]
-    [FunctionName("Math_3_2_ln", "ln(1/sqrt(1-sqr(x)))")]
-    [EquivalentIntConstant(1)]
+    [FunctionName("СMath_3_2_ln", "ln(1/sqrt(1-sqr(x)))")]
+
     public static class СMath_3_2_ln
     {
         public static double Math_3_2_ln(double x, int count)
         {
+#if DEBUG
+            if ((x < -1) || (x > 1))
+            {
+                throw new OpaqueException();
+            }
+#endif
             double F = 0;
 
             for (int i = count; i > 0; i--)
             {
 
-                F = i*x*x/(1-i*x*x/(2*(2*i+1)-F));
+                F = i * x * x / (1 - i * x * x / (2 * (2 * i + 1) - F));
             }
             F = x * x / (2 - F);
             return F;
@@ -106,29 +143,36 @@ namespace OpaqueFunctions
 
 
     /// <summary>
-    /// Реализует нахождение логарифмической функции ln(1+x),  
+    /// Реализует нахождение логарифмической функции f(x)=ln(1+x),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм через цепную дробь,
     /// количество итераций задано параметром <paramref name="count"/>.
+    ///  Обратной к этой функции является функция E^(f(x))=(1+x).
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
+
     [OpaqueFunction()]
-    [FunctionName("Math_4_2_ln", "ln(1+x)")]
-    [EquivalentIntConstant(1)]
+    [FunctionName("СMath_4_2_ln", "ln(1+x)")]
+
     public static class СMath_4_2_ln
     {
         public static double Math_4_2_ln(double x, int count)
         {
+#if DEBUG
+            if (x < -1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double F = 0;
 
             for (int i = count; i > 0; i--)
             {
 
-                F = i * i*x * x /( (2* i +1)*(2+x)- F);
+                F = i * i * x * x / ((2 * i + 1) * (2 + x) - F);
             }
-            F = 2 * x / (2+x - F);
+            F = 2 * x / (2 + x - F);
             return F;
         }
 
@@ -138,31 +182,39 @@ namespace OpaqueFunctions
         }
     }
 
-/*
-    //// <summary>
-    /// Реализует нахождение логарифмической функции ln(1+x),  
+
+
+    /// <summary>
+    /// Реализует нахождение логарифмической функции f(x)=ln(1+x),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм через цепную дробь,
     /// количество итераций задано параметром <paramref name="count"/>.
+    ///  Обратной к этой функции является функция E^(f(x))=(1+x).
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
+
     [OpaqueFunction()]
-    [FunctionName("Math_5_2_ln", "ln(1+x)")]
-    [EquivalentIntConstant(1)]
+    [FunctionName("СMath_5_2_ln", "ln(1+x)")]
+
     public static class СMath_5_2_ln
     {
         public static double Math_5_2_ln(double x, int count)
         {
+#if DEBUG
+            if (x < -1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double F = 0;
 
-            for (int i = count; i > 2; i--)
+            for (int i = count; i > 1; i--)
             {
 
-                F = (i * i - 1) * (i * i - 1) * (i * i - 1) * x * x / ((2 * i + 1) * (2 * i * (i + 1) + (i * i + i + 1) * x)-F);
+                F = i * (i - 1) * (2 * i - 3) * (2 * i + 1) * x * x / (2 * (4 * i * i - 1) + 4 * i * i * x - F);
             }
-            F = x -  x * x / (2+4*x*x*x/(3*(4+3*x)-27*x*x*x/(5*(12+7*x)-F)));
+            F = x - 3 * x * x / (6 + 4 * x - F);
             return F;
         }
 
@@ -170,92 +222,72 @@ namespace OpaqueFunctions
         {
             return "(-1, w)";
         }
-    }*/
-
-
-    /// <summary>
-    /// Реализует нахождение логарифмической функции ln(1+x),  
-    /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
-    /// Результатом функции является число F , вычисляющее логарифм через цепную дробь,
-    /// количество итераций задано параметром <paramref name="count"/>.
-    /// </summary>
-    /// <param name="x">число, удовлетворяющее области определения</param>
-    /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
-    [OpaqueFunction()]
-    [FunctionName("Math_6_2_ln", "ln(1+x)")]
-    [EquivalentIntConstant(1)]
-    public static class СMath_6_2_ln
-    {
-        public static double Math_6_2_ln(double x, int count)
-        {
-            double F = 0;
-
-            for (int i = count; i > 1; i--)
-            {
-
-                F = i *( i -1)*(2*i-3)*(2*i+1)* x * x / (2*(4*i * i - 1) + 4*i*i*x - F);
-            }
-            F = x -3*x*x/(6+4*x- F);
-            return F;
-        }
-
-        public static string Math_6_2_ln_in()
-        {
-            return "(-1, w)";
-        }
     }
 
-    
+
     /// <summary>
-    /// Реализует нахождение логарифмической функции ln(x+a),  
+    /// Реализует нахождение логарифмической функции f(x)=ln(x+a),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм, используя ряд тейлора,
     /// количество итераций задано параметром <paramref name="count"/>.
+    ///  Обратной к этой функции является функция E^(f(x))=(a+x).
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
+
     [OpaqueFunction()]
-    [FunctionName("Math_7_3_ln", "ln(x+a)")]
-    [EquivalentIntConstant(1)]
-    public static class СMath_7_3_ln
+    [FunctionName("СMath_6_3_ln", "ln(x+a)")]
+
+    public static class СMath_6_3_ln
     {
-        public static double Math_7_3_ln(double a,double x, int count)
+        public static double Math_6_3_ln(double a, double x, int count)
         {
+#if DEBUG
+            if (x < -a)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double F = 0, X = x / (2 * a + x);
 
             for (int i = 0; i < count; i++)
             {
-                F =X/(2*i+1) + F;
-                X = X*(x / (2 * a + x)) * (x / (2 * a + x));
+                F = X / (2 * i + 1) + F;
+                X = X * (x / (2 * a + x)) * (x / (2 * a + x));
             }
-            F = Math.Log(a)+2*F;
+            F = Math.Log(a) + 2 * F;
             return F;
         }
 
-        public static string Math_7_3_ln_in()
+        public static string Math_6_3_ln_in()
         {
             return "(-a, w)";
         }
     }
 
     /// <summary>
-    /// Реализует нахождение логарифмической функции ln(1+x),  
+    /// Реализует нахождение логарифмической функции f(x)=ln(1+x),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм, используя ряд тейлора,
     /// количество итераций задано параметром <paramref name="count"/>.
+    ///  Обратной к этой функции является функция E^(f(x))=(1+x).
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
+
     [OpaqueFunction()]
-    [FunctionName("Math_8_2_ln", "ln(1+x)")]
-    [EquivalentIntConstant(1)]
-    public static class СMath_8_2_ln
+    [FunctionName("СMath_7_2_ln", "ln(1+x)")]
+
+    public static class СMath_7_2_ln
     {
-        public static double Math_8_2_ln(double x, int count)
+        public static double Math_7_2_ln(double x, int count)
         {
+#if DEBUG
+            if ((x < -1) || (x > 1))
+            {
+                throw new OpaqueException();
+            }
+#endif
             double F = 0, X = x;
 
             for (int i = 0; i < count; i++)
@@ -266,7 +298,7 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_8_2_ln_in()
+        public static string Math_7_2_ln_in()
         {
             return "(-1, 1)";
         }
@@ -274,21 +306,30 @@ namespace OpaqueFunctions
 
 
     /// <summary>
-    /// Реализует нахождение логарифмической функции ln(1+x),  
+    /// Реализует нахождение логарифмической функции f(x)=ln(1+x),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм, используя ряд тейлора,
     /// количество итераций задано параметром <paramref name="count"/>.
+    ///  Обратной к этой функции является функция E^(f(x))=(1+x).
+    /// На самом деле область определения (-1, 1),так как в указаном условии (-1, 2) промежутке
+    /// после х=1 погрешность резко возрастает.
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
+
     [OpaqueFunction()]
-    [FunctionName("Math_9_2_ln", "ln(1+x)")]
-    [EquivalentIntConstant(1)]
-    public static class СMath_9_2_ln
+    [FunctionName("СMath_8_2_ln", "ln(1+x)")]
+
+    public static class СMath_8_2_ln
     {
-        public static double Math_9_2_ln(double x, int count)
+        public static double Math_8_2_ln(double x, int count)
         {
+#if DEBUG
+            if ((x < -1) || (x > 1))
+            {
+                throw new OpaqueException();
+            }
+#endif
             double F = 0, X = x * x;
 
             for (int i = 1; i < count; i++)
@@ -300,29 +341,36 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_9_2_ln_in()
+        public static string Math_8_2_ln_in()
         {
-            return "(-1, 2)";
+            return "(-1, 1)";
         }
     }
 
     /// <summary>
-    /// Реализует нахождение логарифмической функции ln((1+x)/(1-x)),  
+    /// Реализует нахождение логарифмической функции f(x)=ln((1+x)/(1-x)),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм, используя ряд тейлора,
     /// количество итераций задано параметром <paramref name="count"/>.
+    ///  Обратной к этой функции является функция E^(f(x))=(1+x)/(1-x).
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
+
     [OpaqueFunction()]
-    [FunctionName("Math_10_2_ln", "ln((1+x)/(1-x))")]
-    [EquivalentIntConstant(1)]
-    public static class СMath_10_2_ln
+    [FunctionName("СMath_9_2_ln", "ln((1+x)/(1-x))")]
+
+    public static class СMath_9_2_ln
     {
-        public static double Math_10_2_ln(double x, int count)
+        public static double Math_9_2_ln(double x, int count)
         {
-            double F = 0, X = x ;
+#if DEBUG
+            if ((x < -1) || (x > 1))
+            {
+                throw new OpaqueException();
+            }
+#endif
+            double F = 0, X = x;
 
             for (int i = 0; i < count; i++)
             {
@@ -333,29 +381,36 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_10_2_ln_in()
+        public static string Math_9_2_ln_in()
         {
             return "(-1, 1)";
         }
     }
 
     /// <summary>
-    /// Реализует нахождение логарифмической функции ln(x/(1-x)),  
+    /// Реализует нахождение логарифмической функции f(x)=ln(x/(x-1)),  
     /// где число x задается параметром, удовлетворяющим области определения <paramref name="x"/>. 
     /// Результатом функции является число F , вычисляющее логарифм, используя ряд тейлора,
     /// количество итераций задано параметром <paramref name="count"/>.
+    ///  Обратной к этой функции является функция E^(f(x))=x/(x-1).
     /// </summary>
     /// <param name="x">число, удовлетворяющее области определения</param>
     /// <param name="count">Количество требуемых итераций</param>
-    /// <returns>1</returns>
+
     [OpaqueFunction()]
-    [FunctionName("Math_11_2_ln", "ln(x/(1-x))")]
-    [EquivalentIntConstant(1)]
-    public static class СMath_11_2_ln
+    [FunctionName("СMath_10_2_ln", "ln(x/(1-x))")]
+
+    public static class СMath_10_2_ln
     {
-        public static double Math_11_2_ln(double x, int count)
+        public static double Math_10_2_ln(double x, int count)
         {
-            double F = 0, X = x ;
+#if DEBUG
+            if (x < 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
+            double F = 0, X = x;
 
             for (int i = 0; i < count; i++)
             {
@@ -365,11 +420,10 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_11_2_ln_in()
+        public static string Math_10_2_ln_in()
         {
-            return "(w, -1) U (1, w)";
+            return "(1, w)";
         }
     }
 
 }
-

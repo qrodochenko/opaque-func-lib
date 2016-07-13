@@ -473,7 +473,7 @@ namespace SummerPractice_2016
             name_file_writer.Close();
 
 
-            /// g(x) = (ab*(d - c)/(a - b)) / x + (ac - bd) / (a - b)
+            /// g(x) = (ab*(d - c)/(a - b)) / result + (ac - bd) / (a - b)
             /// g_inv(x) = (d - c)*a*b/(x*(a- b) - (a*c - b*d))
             /// (a, b) -> (c, d)
 
@@ -673,10 +673,9 @@ namespace SummerPractice_2016
 
 
 
+        ///  Создание графиков
 
-            ///  Создание графиков
-            
-                    static void makeErrorPlot(string source_csv_file_name)
+        static void makeErrorPlot(string source_csv_file_name)
         {
             TextFieldParser parser = new TextFieldParser(source_csv_file_name); 
             parser.TextFieldType = FieldType.Delimited;

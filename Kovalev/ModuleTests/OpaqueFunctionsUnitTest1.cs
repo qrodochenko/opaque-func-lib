@@ -20,79 +20,37 @@ namespace ModuleTests
     }
 
     [TestClass]
-    public class Ctest_Math_Sin
+    public class TMathApprox_1
     {
         [TestMethod]
-        public void test_Math_Sin_error()
+        public void MathApprox_1_Compute_2_Test()
         {
-            for (int j = 0; j < 10000000; j++)
-                for (int i = 0; i < 10; i++)
-                {
-                    Random rnd = new Random();
-                    double arg = 0.0314 * (rnd.Next(100) - 49);                   
-                    double X = CMathApprox_1.MathApprox_1_1(arg);
-                    Assert.IsTrue(Math.Abs(X - Math.Sin(arg)) < 0.000000092, "Значение функции недостаточно близко к реальному");
-                }
-        }
-
-        [TestMethod]
-        public void test_Math_Sin_Pow_error()
-        {
-            for (int j = 0; j < 1000000; j++)
-                for (int i = 0; i < 10; i++)
-                {
-                    Random rnd = new Random();
-                    double arg = 0.00314 * rnd.Next(100);
-                    double X = CMathApprox_1.MathApprox_1_1_Pow(arg);
-                    Assert.IsTrue(Math.Abs(X - Math.Sin(arg)) < 0.00000005, "Значение функции недостаточно близко к реальному");
-                }
-        }
-
-       
-    }
-
-    [TestClass]
-    public class Ctest_Math_Exp
-    {
-        [TestMethod]
-        public void Ctest_Math_Exp_error()
-        {
-            for (int j = 0; j < 1000000; j++)
-                for (int i = 0; i < 10; i++)
-                {
-                    Random rnd = new Random();
-                    double arg = 0.001 * rnd.Next(1000);
-                    double X = CMathApprox_2.MathApprox_2_1(arg);
-                    Assert.IsTrue(Math.Abs(X - Math.Exp(arg)) < 0.00000005, "Значение функции недостаточно близко к реальному");
-                }
-        }
-    }
-
-    [TestClass]
-    public class Ctest_Comparison_Pow_NotPow
-    {
-        [TestMethod]
-        public void Sin_Pow()
-        {
-            for (int i = 0; i < 50; i++)
+            Random rnd = new Random();
+            double error = 0.000000005;
+            for (int i = 0; i < 1000; i++)
             {
-                double arg = -1.57 + i * 3.14 / 50;
-                double X = CMathApprox_1.MathApprox_1_1_Pow(arg);
-                Assert.IsTrue(Math.Abs(X - Math.Sin(arg)) < 0.0009, "Значение функции недостаточно близко к реальному");
-
+                double arg = rnd.Next(1, 2000) - 1000;
+                arg = arg / 2000.0;
+                Assert.IsTrue((Math.Abs(CMathApprox_1_Compute.MathApprox_1_Compute_2(arg, error)
+                    - Math.Log(1 + arg)) < error), "Значение недостаточно близко к реальному");
             }
         }
+    }
 
+    [TestClass]
+    public class TMathApprox_2
+    {
         [TestMethod]
-        public void Sin()
+        public void MathApprox_2_Compute_2_Test()
         {
-            for (int j = 0; j < 1000000; j++)
-            for (int i = 0; i < 50; i++)
+            Random rnd = new Random();
+            double error = 0.000000005;
+            for (int i = 0; i < 1000; i++)
             {
-                double arg = -1.57 + i * 3.14 / 50;
-                double X = CMathApprox_1.MathApprox_1_1(arg);
-                Assert.IsTrue(Math.Abs(X - Math.Sin(arg)) < 0.000000092, "Значение функции недостаточно близко к реальному");
-
+                double arg = rnd.Next(1, 4000) - 2000;
+                arg = arg / 2000.0;
+                Assert.IsTrue((Math.Abs(CMathApprox_2_Compute.MathApprox_2_Compute_2(arg, error)
+                    - Math.Atan(arg)) < error), "Значение недостаточно близко к реальному");
             }
         }
     }
