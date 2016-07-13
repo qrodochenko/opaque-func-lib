@@ -401,7 +401,7 @@ namespace OpaqueFunctions
         public static double LOX_8_1_arcctg_ctg(double angle)
         {
             #if Debug
-                if ((angle > 1) || (angle < -1))
+                if ((angle < 0) || (angle > Math.PI))
                 {
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
@@ -426,7 +426,7 @@ namespace OpaqueFunctions
     {
         public static string LOX_8_1_arcctg_ctg_in()
         {
-            string s = "(-1, 1)";
+            string s = "(0, Pi)";
             return s;
         }
     }
@@ -448,21 +448,21 @@ namespace OpaqueFunctions
     [EquivalentIntConstant(1)]
     public static class CLOX_9_2_xpowy_xpown_1divn
     {
-        public static double LOX_9_2_xpowy_xpown_1divn(double angle, int n = 10)
+        public static double LOX_9_2_xpowy_xpown_1divn(double x, int n = 10)
         {
             #if Debug
-                if  (angle < 0)
+                if  (x < 0)
                 {
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1, Y2;
-              Y1 = 1.0/n;
-              Y2 = Math.Pow(angle, n);
-              X = Math.Pow(Y2, Y1);
+              Y1 = Math.Pow(n, -1.0);
+              Y2 = Math.Pow(x, n);
+              F = Math.Pow(Y2, Y1);
 
-            return X;
+            return F;
         }
     }
 
@@ -984,7 +984,7 @@ namespace OpaqueFunctions
         public static double LOX_20_1_arth_th(double angle)
         {
             #if Debug
-                if ((angle > -1) || (angle < 1))
+                if ((angle > -1) & (angle < 1))
                 {
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
@@ -1036,7 +1036,7 @@ namespace OpaqueFunctions
         public static double LOX_21_1_cth_arcth(double angle)
         {
             #if Debug
-                if ((angle > -1) || (angle < 1))
+                if ((angle > -1) & (angle < 1))
                 {
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }

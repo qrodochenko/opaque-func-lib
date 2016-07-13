@@ -17,9 +17,9 @@ namespace SummerPractice_2016
             MakeResultsSummaryFile("LOX_3_1_tg_arctg", CLOX_3_1_tg_arctg.LOX_3_1_tg_arctg, -1, 1);
             MakeResultsSummaryFile("LOX_4_1_ctg_arcctg", CLOX_4_1_ctg_arcctg.LOX_4_1_ctg_arcctg, -1, 1);
             MakeResultsSummaryFile("LOX_5_1_arcsin_sin", CLOX_5_1_arcsin_sin.LOX_5_1_arcsin_sin, -1, 1);
-            MakeResultsSummaryFile("LOX_6_1_arccos_cos", CLOX_6_1_arccos_cos.LOX_6_1_arccos_cos, -1, 1);
+            MakeResultsSummaryFile("LOX_6_1_arccos_cos", CLOX_6_1_arccos_cos.LOX_6_1_arccos_cos, 0, 1);
             MakeResultsSummaryFile("LOX_7_1_arctg_tg", CLOX_7_1_arctg_tg.LOX_7_1_arctg_tg, -1, 1);
-            MakeResultsSummaryFile("LOX_8_1_arcctg_ctg", CLOX_8_1_arcctg_ctg.LOX_8_1_arcctg_ctg, -1, 1);
+            MakeResultsSummaryFile("LOX_8_1_arcctg_ctg", CLOX_8_1_arcctg_ctg.LOX_8_1_arcctg_ctg, 0, Math.PI);
             MakeResultsSummaryFile("LOX_9_2_xpowy_xpown_1divn", CLOX_9_2_xpowy_xpown_1divn.LOX_9_2_xpowy_xpown_1divn, n);
             MakeResultsSummaryFile("LOX_10_2_xpown_xpown_1divn", CLOX_10_2_xpown_xpown_1divn.LOX_10_2_xpown_xpown_1divn, n);
             MakeResultsSummaryFile("LOX_11_2_logax_apowx", CLOX_11_2_logax_apowx.LOX_11_2_logax_apowx, a);
@@ -29,9 +29,9 @@ namespace SummerPractice_2016
             MakeResultsSummaryFile("LOX_15_1_sh_arsh", CLOX_15_1_sh_arsh.LOX_15_1_sh_arsh, -1, 1);
             MakeResultsSummaryFile("LOX_16_1_arsh_sh", CLOX_16_1_arsh_sh.LOX_16_1_arsh_sh, -1, 1);
             MakeResultsSummaryFile("LOX_17_1_ch_arch", CLOX_17_1_ch_arch.LOX_17_1_ch_arch, 1, 5);
-            MakeResultsSummaryFile("LOX_18_1_arch_ch", CLOX_18_1_arch_ch.LOX_18_1_arch_ch, -1, 1);
+            MakeResultsSummaryFile("LOX_18_1_arch_ch", CLOX_18_1_arch_ch.LOX_18_1_arch_ch, 0, 1);
             MakeResultsSummaryFile("LOX_19_1_th_arth", CLOX_19_1_th_arth.LOX_19_1_th_arth, -1, 1);
-            MakeResultsSummaryFile("LOX_20_1_arth_th", CLOX_20_1_arth_th.LOX_20_1_arth_th, -1, 1);
+            MakeResultsSummaryFile("LOX_20_1_arth_th", CLOX_20_1_arth_th.LOX_20_1_arth_th, 1, 2);
             MakeResultsSummaryFile("LOX_21_1_cth_arcth", CLOX_21_1_cth_arcth.LOX_21_1_cth_arcth, 1, 5);
             MakeResultsSummaryFile("LOX_22_1_arcth_cth", CLOX_22_1_arcth_cth.LOX_22_1_arcth_cth, -1, 1);
             string offset = "..\\..\\..\\..\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
@@ -45,10 +45,15 @@ namespace SummerPractice_2016
             string dest_folder = ("..\\..\\..\\..\\csv\\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + ".csv";
+            if (!System.IO.Directory.Exists(dest_folder))
+            {
+                System.IO.Directory.CreateDirectory(dest_folder);
+            }
             System.IO.StreamWriter dest_file_writer =
                new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
+            right_border_of_range -= 1e-2; //чтобы не достигать 1
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
             uint number_of_points = 200;
             double dx = range_length / number_of_points;
@@ -58,7 +63,7 @@ namespace SummerPractice_2016
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x);
-                double benchmark = Math.Pow(1.0 + x, (1.0 / 3.0));
+                double benchmark = x;
                 double absoluteError = Math.Abs((F - benchmark));
                 double relativeError = Math.Abs((F - benchmark) / benchmark);
                 swatch.Stop();
@@ -74,12 +79,16 @@ namespace SummerPractice_2016
             string dest_folder = ("..\\..\\..\\..\\csv\\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + "_a" + a.ToString() + ".csv";
+            if(!System.IO.Directory.Exists(dest_folder))
+            {
+                System.IO.Directory.CreateDirectory(dest_folder);
+            }
             System.IO.StreamWriter dest_file_writer =
                new System.IO.StreamWriter(dest);
             dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
-            double left_border_of_range = -1.0;
-            double right_border_of_range = 1.0;
+            double left_border_of_range = 1.0;
+            double right_border_of_range = 2.0;
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
             uint number_of_points = 200;
             double dx = range_length / number_of_points;
@@ -89,7 +98,7 @@ namespace SummerPractice_2016
                 swatch.Start();
                 double x = left_border_of_range + i * dx;
                 double F = f(x, a);
-                double benchmark = Math.Pow(1.0 + x, (1.0 / 3.0));
+                double benchmark = x;
                 double absoluteError = Math.Abs((F - benchmark));
                 double relativeError = Math.Abs((F - benchmark) / benchmark);
                 swatch.Stop();
