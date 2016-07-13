@@ -578,7 +578,7 @@ namespace OpaqueFunctions
         public static double L00_45_1_ctg_arcctg(double angle)
         {
             double X, ctgX, arcctgX;
-            arcctgX = Math.PI / 2- Math.Atan(angle);
+            arcctgX = Math.PI / 2 - Math.Atan(angle);
             ctgX = 1 / Math.Tan(arcctgX);
             X = ctgX - angle;
             return X;
@@ -632,7 +632,7 @@ namespace OpaqueFunctions
     {
         public static string L00_46_1_arcsin_sin_in()
         {
-            string str = "(-Pi / 2, Pi / 2)";
+            string str = "(-Pi/2, Pi/2)";
             return str;
         }
     }
@@ -704,7 +704,7 @@ namespace OpaqueFunctions
     {
         public static string L00_48_1_arctg_tg_in()
         {
-            string str = "(-Pi / 2, Pi / 2)";
+            string str = "(-Pi/2, Pi/2)";
             return str;
         }
     }
@@ -723,7 +723,7 @@ namespace OpaqueFunctions
         {
             double X, arcctgX, ctgX;
             ctgX = 1 / Math.Tan(angle);
-            arcctgX = Math.PI / 2- Math.Atan(ctgX);
+            arcctgX = Math.PI / 2 - Math.Atan(ctgX);
             X = arcctgX - angle;
             return X;
         }
@@ -795,7 +795,7 @@ namespace OpaqueFunctions
         {
             double X, arctgX, arcsinX, sqrtX;
             arcsinX = Math.Asin(angle);
-            sqrtX = Math.Sqrt(1 - angle * angle);
+            sqrtX = angle / Math.Sqrt(1 - angle * angle);
             arctgX = Math.Atan(sqrtX);   
             X = arctgX - arcsinX;
             return X;
@@ -861,7 +861,7 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <returns>0</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_53_1_arcctg_arcsin", "f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x)")]
+    [FunctionName("L00_53_1_arcctg_arcsin", "f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x) ")]
     [EquivalentIntConstant(0)]
     public static class CL00_53_1_arcctg_arcsin
     {
@@ -869,7 +869,7 @@ namespace OpaqueFunctions
         {
             double X, arcctgX, sqrtX, arcsinX;
             sqrtX = Math.Sqrt(1 - angle * angle) / angle;
-            arcctgX = Math.PI / 2- Math.Atan(sqrtX);
+            arcctgX = Math.PI / 2 - Math.Atan(sqrtX);
             arcsinX = Math.Asin(angle);
             X = arcctgX - arcsinX;
             return X;
@@ -877,11 +877,11 @@ namespace OpaqueFunctions
     }
 
     /// <summary>
-    /// Возвращает область определения 53.	f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x)
+    /// Возвращает область определения 53.	f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x) ) 
     /// </summary>
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("L00_53_1_arcctg_arcsin", "f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x)")]
+    [FunctionName("L00_53_1_arcctg_arcsin", "f(x) = arcctg(((1-x*x)^1/2)/x) – arcsin(x) ")]
     [EquivalentIntConstant(0)]
     public static class CL00_53_1_arcctg_arcsin_in
     {
@@ -1016,8 +1016,8 @@ namespace OpaqueFunctions
         public static double L00_57_1_arctg_arcsin(double angle)
         {
             double X, arcsinX, sqrtX, arctgX;
-            sqrtX = Math.Sqrt(1 + angle * angle);
-            arcsinX = Math.Asin(angle / sqrtX);
+            sqrtX = angle / Math.Sqrt(1 + angle * angle);
+            arcsinX = Math.Asin(sqrtX);
             arctgX = Math.Atan(angle);
             X = arctgX - arcsinX;
             return X;
