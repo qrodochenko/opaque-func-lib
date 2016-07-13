@@ -10,20 +10,77 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-           //for (int n = 18; n <= 20; n ++ ) 
-            {
-               // int n = 4000000;
-                MakeResultsSummaryFile("Cos_1", CCos_1.Cos_1, Program.Cos_1_bechmark, -Math.PI+1e-3, Math.PI-1e-3, 10);
-                string offset = "..\\..\\..\\..\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
-                string source_csv_folder_name = offset + "csv"; // пусть папка для файлов с отчётами .csv называется так.
-                makeErrorPlots(source_csv_folder_name);
-            } 
+            MakeResultsSummaryFile("Sin_1", CSin_1.Sin_1, Program.Sin_1_bechmark, -Math.PI / 2.0 + 1e-3, Math.PI / 2.0 - 1e-3, 10);
+            MakeResultsSummaryFile("Cos_1", CCos_1.Cos_1, Program.Cos_1_bechmark, -Math.PI + 1e-3, Math.PI - 1e-3, 10);
+            MakeResultsSummaryFile("Arcsin_1", CArcsin_1.Arcsin_1, Program.Arcsin_1_bechmark, -1.0 + 1e-3, 1.0 - 1e-3, 4000000);
+            MakeResultsSummaryFile("Arccos_1", CArccos_1.Arccos_1, Program.Arccos_1_bechmark, -1.0 + 1e-3, 1.0 - 1e-3, 4000000);
+            MakeResultsSummaryFile("Tg_1", CTg_1.Tg_1, Program.Tg_1_bechmark, -Math.PI / 2.0 + 1e-3, Math.PI / 2.0 - 1e-3, 10);
+            MakeResultsSummaryFile("Ctg_1", Cctg_1.Сtg_1, Program.Ctg_1_bechmark, 0.0 + 1e-3, Math.PI - 1e-3, 10);
+            MakeResultsSummaryFile("Arctg_1", CArctg_1.Arctg_1, Program.Arctg_1_bechmark, -1.0, 1.0, 4000000);
+            MakeResultsSummaryFile("Arcctg_1", CArcctg_1.Arcctg_1, Program.Arcctg_1_bechmark, -1.0 + 1e-3, 1.0 - 1e-3, 4000000);
+            MakeResultsSummaryFile("Cosec_1", CCosec_1.Cosec_1, Program.Cosec_1_bechmark, -Math.PI + 1e-3, Math.PI - 1e-3, 12);
+            MakeResultsSummaryFile("XPow2_Sin_1", CXpow2_Sin_1.Xpow2_Sin_1, Program.Xpow2_Sin_1_bechmark, -Math.PI / 2.0 + 1e-3, Math.PI / 2.0 - 1e-3, 20);
+            MakeResultsSummaryFile("XPow2_Cos_1", CXpow2_Cos_1.Xpow2_Cos_1, Program.Xpow2_Cos_1_bechmark, -Math.PI + 1e-3, Math.PI - 1e-3, 20);
+            MakeResultsSummaryFile("XPow3_Sin_1", CXpow3_Sin_1.Xpow3_Sin_1, Program.Xpow3_Sin_1_bechmark, -Math.PI / 2.0 + 1e-3, Math.PI / 2.0 - 1e-3, 20);
+            MakeResultsSummaryFile("XPow3_Cos_1", CXpow3_Cos_1.Xpow3_Cos_1, Program.Xpow3_Cos_1_bechmark, -Math.PI + 1e-3, Math.PI - 1e-3, 20);
+            string offset = "..\\..\\..\\..\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
+            string source_csv_folder_name = offset + "csv"; // пусть папка для файлов с отчётами .csv называется так.
+            makeErrorPlots(source_csv_folder_name);
         }
-
+     
+        static double Sin_1_bechmark(double x)
+        {
+            return Math.Sin(x);
+        }
         static double Cos_1_bechmark(double x)
         {
             return Math.Cos(x);
         }
+        static double Arcsin_1_bechmark(double x)
+        {
+            return Math.Asin(x);
+        }
+        static double Arccos_1_bechmark(double x)
+        {
+            return Math.Acos(x);
+        }
+        static double Tg_1_bechmark(double x)
+        {
+            return Math.Tan(x);
+        }
+        static double Ctg_1_bechmark(double x)
+        {
+            return 1 / Math.Tan(x);
+        }
+        static double Arctg_1_bechmark(double x)
+        {
+            return Math.Atan(x);
+        }
+        static double Arcctg_1_bechmark(double x)
+        {
+            return Math.PI / 2.0 - Math.Atan(x);
+        }
+        static double Cosec_1_bechmark(double x)
+        {
+            return 1 / Math.Sin(x);
+        }
+        static double Xpow2_Sin_1_bechmark(double x)
+        {
+            return Math.Sin(x) * Math.Sin(x);
+        }
+        static double Xpow2_Cos_1_bechmark(double x)
+        {
+            return Math.Cos(x) * Math.Cos(x);
+        }
+        static double Xpow3_Sin_1_bechmark(double x)
+        {
+            return Math.Sin(x) * Math.Sin(x) * Math.Sin(x);
+        }
+        static double Xpow3_Cos_1_bechmark(double x)
+        {
+            return Math.Cos(x) * Math.Cos(x) * Math.Cos(x);
+        }
+    
         static void MakeResultsSummaryFile(string funcname, Func<double, int, double> f, Func<double, double> benchmark, double left_border_of_range, double right_border_of_range, int N)
         {
             //генерирует файл .csv нужного формата
