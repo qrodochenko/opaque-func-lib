@@ -59,16 +59,16 @@ namespace OpaqueFunctions
             for (int i = 1; i < L + M + 1; i++)
                 C[i] = 1.0 / i * Math.Pow(-1, i + 1);
 
-            double[] Ln_Numer = new double[L + 1];
-            double[] Ln_Denom = new double[M + 1];
+            double[] Numer = new double[L + 1];
+            double[] Denom = new double[M + 1];
 
-            CFind_Pade.Find_Denominator(Ln_Denom, C, L, M);
-            CFind_Pade.Find_Numerator(Ln_Numer, Ln_Denom, C, L, M);
+            CFind_Pade.Find_Denominator(Denom, C, L, M);
+            CFind_Pade.Find_Numerator(Numer, Denom, C, L, M);
             
 
             //creating program with found approximation
-            string FileName = PathName + "MathApprox_1_2.cs";
-            System.IO.StreamWriter FileWriter = CMakeProgram.MakeBeginning(PathName, "MathApprox_1_2");
+            string FileName = PathName + "MathApprox_1_2" + "_" + error.ToString() + ".cs";
+            System.IO.StreamWriter FileWriter = CMakeProgram.MakeBeginning(PathName, "MathApprox_1_2", error);
 
 
             //!!! 
@@ -78,9 +78,9 @@ namespace OpaqueFunctions
             FileWriter.WriteLine("            double[] Denom = new double[" + (M + 1).ToString() + "];");
             FileWriter.WriteLine("            double[] Numer = new double[" + (L + 1).ToString() + "];");
             for (int i = 0; i < M + 1; i++)
-                FileWriter.WriteLine("            Denom[" + i.ToString() + "] = " + Ln_Denom[i].ToString().Replace(",", ".") + ";");
+                FileWriter.WriteLine("            Denom[" + i.ToString() + "] = " + Denom[i].ToString().Replace(",", ".") + ";");
             for (int i = 0; i < L + 1; i++)
-                FileWriter.WriteLine("            Numer[" + i.ToString() + "] = " + Ln_Numer[i].ToString().Replace(",", ".") + ";");
+                FileWriter.WriteLine("            Numer[" + i.ToString() + "] = " + Numer[i].ToString().Replace(",", ".") + ";");
             FileWriter.WriteLine("            Console.Write(\"Input argument for ln(1 + x): \");");
             FileWriter.WriteLine("            double arg = double.Parse(Console.ReadLine());");
             FileWriter.WriteLine("            for (int j = 1; j < " + (M + 1).ToString() + "; j++)");
@@ -112,10 +112,10 @@ namespace OpaqueFunctions
             for (int i = 1; i < L + M + 1; i++)
                 C[i] = 1.0 / i * Math.Pow(-1, i + 1);
 
-            double[] Ln_Numer = new double[L + 1];
-            double[] Ln_Denom = new double[M + 1];
-            CFind_Pade.Find_Denominator(Ln_Denom, C, L, M);
-            CFind_Pade.Find_Numerator(Ln_Numer, Ln_Denom, C, L, M);
+            double[] Numer = new double[L + 1];
+            double[] Denom = new double[M + 1];
+            CFind_Pade.Find_Denominator(Denom, C, L, M);
+            CFind_Pade.Find_Numerator(Numer, Denom, C, L, M);
 
             double error = 0;
 
@@ -129,8 +129,8 @@ namespace OpaqueFunctions
                 {
                     double Tmp = Math.Pow(arg, j);
                     if (j <= L)
-                        P0 += Ln_Numer[j] * Tmp;
-                    P1 += Ln_Denom[j] * Tmp;
+                        P0 += Numer[j] * Tmp;
+                    P1 += Denom[j] * Tmp;
                 }
                 double Res = P0 / P1;
 
@@ -187,11 +187,11 @@ namespace OpaqueFunctions
             for (int i = 1; i < L + M + 1; i++)
                 C[i] = 1.0 / i * Math.Pow(-1, i + 1);
 
-            double[] Ln_Numer = new double[L + 1];
-            double[] Ln_Denom = new double[M + 1];
+            double[] Numer = new double[L + 1];
+            double[] Denom = new double[M + 1];
 
-            CFind_Pade.Find_Denominator(Ln_Denom, C, L, M);
-            CFind_Pade.Find_Numerator(Ln_Numer, Ln_Denom, C, L, M);
+            CFind_Pade.Find_Denominator(Denom, C, L, M);
+            CFind_Pade.Find_Numerator(Numer, Denom, C, L, M);
 
             double P0 = 0;
             double P1 = 1;
@@ -199,8 +199,8 @@ namespace OpaqueFunctions
             {
                 double Tmp = Math.Pow(arg, j);
                 if (j <= L)
-                    P0 += Ln_Numer[j] * Tmp;
-                P1 += Ln_Denom[j] * Tmp;
+                    P0 += Numer[j] * Tmp;
+                P1 += Denom[j] * Tmp;
             }
             double Res = P0 / P1;
 
@@ -244,16 +244,16 @@ namespace OpaqueFunctions
                     p++;
                 }
 
-            double[] Atan_Numer = new double[L + 1];
-            double[] Atan_Denom = new double[M + 1];
+            double[] Numer = new double[L + 1];
+            double[] Denom = new double[M + 1];
 
-            CFind_Pade.Find_Denominator(Atan_Denom, C, L, M);
-            CFind_Pade.Find_Numerator(Atan_Numer, Atan_Denom, C, L, M);
+            CFind_Pade.Find_Denominator(Denom, C, L, M);
+            CFind_Pade.Find_Numerator(Numer, Denom, C, L, M);
 
 
             //creating program with found approximation
-            string FileName = PathName + "MathApprox_2_2.cs";
-            System.IO.StreamWriter FileWriter = CMakeProgram.MakeBeginning(PathName, "MathApprox_2_2");
+            string FileName = PathName + "MathApprox_2_2" + "_" + error.ToString() + ".cs";
+            System.IO.StreamWriter FileWriter = CMakeProgram.MakeBeginning(PathName, "MathApprox_2_2", error);
 
             
             //!!! 
@@ -263,9 +263,9 @@ namespace OpaqueFunctions
             FileWriter.WriteLine("            double[] Denom = new double[" + (M + 1).ToString() + "];");
             FileWriter.WriteLine("            double[] Numer = new double[" + (L + 1).ToString() + "];");
             for (int i = 0; i < M + 1; i++)
-                FileWriter.WriteLine("            Denom[" + i.ToString() + "] = " + Atan_Denom[i].ToString().Replace(",", ".") + ";");
+                FileWriter.WriteLine("            Denom[" + i.ToString() + "] = " + Denom[i].ToString().Replace(",", ".") + ";");
             for (int i = 0; i < L + 1; i++)
-                FileWriter.WriteLine("            Numer[" + i.ToString() + "] = " + Atan_Numer[i].ToString().Replace(",", ".") + ";");
+                FileWriter.WriteLine("            Numer[" + i.ToString() + "] = " + Numer[i].ToString().Replace(",", ".") + ";");
             FileWriter.WriteLine("            Console.Write(\"Input argument for Atan(x): \");");
             FileWriter.WriteLine("            double arg = double.Parse(Console.ReadLine());");
             FileWriter.WriteLine("            for (int j = 1; j < " + (M + 1).ToString() + "; j++)");
@@ -300,10 +300,10 @@ namespace OpaqueFunctions
                     C[i] = 1.0 / i * Math.Pow(-1, k);
                     k++;
                 }
-            double[] Atan_Numer = new double[L + 1];
-            double[] Atan_Denom = new double[M + 1];
-            CFind_Pade.Find_Denominator(Atan_Denom, C, L, M);
-            CFind_Pade.Find_Numerator(Atan_Numer, Atan_Denom, C, L, M);
+            double[] Numer = new double[L + 1];
+            double[] Denom = new double[M + 1];
+            CFind_Pade.Find_Denominator(Denom, C, L, M);
+            CFind_Pade.Find_Numerator(Numer, Denom, C, L, M);
 
             double error = 0;
 
@@ -317,8 +317,8 @@ namespace OpaqueFunctions
                 {
                     double Tmp = Math.Pow(arg, j);
                     if (j <= L)
-                        P0 += Atan_Numer[j] * Tmp;
-                    P1 += Atan_Denom[j] * Tmp;
+                        P0 += Numer[j] * Tmp;
+                    P1 += Denom[j] * Tmp;
                 }
                 double Res = P0 / P1;
 
@@ -375,11 +375,11 @@ namespace OpaqueFunctions
                     p++;
                 }
 
-            double[] Atan_Numer = new double[L + 1];
-            double[] Atan_Denom = new double[M + 1];
+            double[] Numer = new double[L + 1];
+            double[] Denom = new double[M + 1];
 
-            CFind_Pade.Find_Denominator(Atan_Denom, C, L, M);
-            CFind_Pade.Find_Numerator(Atan_Numer, Atan_Denom, C, L, M);
+            CFind_Pade.Find_Denominator(Denom, C, L, M);
+            CFind_Pade.Find_Numerator(Numer, Denom, C, L, M);
 
             double P0 = 0;
             double P1 = 1;
@@ -387,8 +387,8 @@ namespace OpaqueFunctions
             {
                 double Tmp = Math.Pow(arg, j);
                 if (j <= L)
-                    P0 += Atan_Numer[j] * Tmp;
-                P1 += Atan_Denom[j] * Tmp;
+                    P0 += Numer[j] * Tmp;
+                P1 += Denom[j] * Tmp;
             }
             double Res = P0 / P1;
 
@@ -476,10 +476,10 @@ namespace OpaqueFunctions
 
     public static class CMakeProgram
     {
-        public static System.IO.StreamWriter MakeBeginning(string PathName, string FuncName)
+        public static System.IO.StreamWriter MakeBeginning(string PathName, string FuncName, double error)
         {
 
-            string Fname = PathName + FuncName + ".cs";
+            string Fname = PathName + FuncName + "_" + error.ToString() + ".cs";
             System.IO.StreamWriter FileWriter = new System.IO.StreamWriter(Fname);
 
             FileWriter.WriteLine("using System;");

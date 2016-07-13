@@ -26,12 +26,13 @@ namespace SummerPractice_2016
             
             
 
-            Console.WriteLine(CMathApprox_2.MathApprox_2_2("D:\\C#\\Kovalev\\", 0.0000000005));
+            Console.WriteLine(CMathApprox_1.MathApprox_1_2("D:\\C#\\Kovalev\\", 0.0000000005));
 
-            MakeResFile("MathApprox_Atan_2", CMathApprox_2_Compute.MathApprox_2_Compute_2,
-                Math.Atan, 1, 0.00000005);
+            MakeResFile("MathApprox_Ln_2", CMathApprox_1_Compute.MathApprox_1_Compute_2,
+                Math.Log, 0.5, 0.0000000005);
 
-            MakeErrorPlot("D:\\C#\\Kovalev\\csv\\Report_MathApprox_Atan_2_5E-08.csv");
+            MakeErrorPlot("D:\\C#\\Kovalev\\csv\\Report_MathApprox_Atan_2_5E-10.csv");
+            MakeErrorPlot("D:\\C#\\Kovalev\\csv\\Report_MathApprox_Ln_2_5E-10.csv");
         }
 
         static void MakeResFile(string funcname, Func<double, double, double> F, 
