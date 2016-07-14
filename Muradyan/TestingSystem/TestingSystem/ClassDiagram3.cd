@@ -1,115 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="TestingSystem.PlotGraph" Collapsed="true">
-    <Position X="16.25" Y="1.5" Width="1.5" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access" MembersFormat="FullSignature">
+  <Class Name="TestingSystem.PlotGraph">
+    <Position X="20" Y="11.25" Width="5.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>PlotGraph.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.Utility" Collapsed="true">
-    <Position X="16.25" Y="2.5" Width="1.5" />
+  <Class Name="TestingSystem.Utility">
+    <Position X="20" Y="12.75" Width="5.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.OpaqueException" Collapsed="true">
-    <Position X="14.5" Y="1.5" Width="1.5" />
+  <Class Name="TestingSystem.OpaqueException">
+    <Position X="20.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.MainClass" Collapsed="true">
-    <Position X="19.75" Y="0.5" Width="1.5" />
+  <Class Name="TestingSystem.MainClass">
+    <Position X="22.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.ReportEntry" Collapsed="true">
-    <Position X="19.75" Y="1.5" Width="1.5" />
+  <Class Name="TestingSystem.ReportEntry">
+    <Position X="17.25" Y="4.5" Width="4" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAAGAAAAEAAACAAACAAAAAAAAYIQAAAEAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.Report" Collapsed="true">
-    <Position X="18" Y="1.5" Width="1.5" />
+  <Class Name="TestingSystem.Report">
+    <Position X="17.25" Y="2" Width="4" />
     <TypeIdentifier>
       <HashCode>AAAAAAABAAAAAAAEAAAAAAECACAAAAAAAAAAAAAAQAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.Heap" Collapsed="true">
-    <Position X="14.5" Y="0.5" Width="1.5" />
+  <Class Name="TestingSystem.Heap">
+    <Position X="21.5" Y="2" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAgAABAACAAIAAAQgAiABAAQgAAAAAAABAAAQ=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.TestingUtilities" Collapsed="true">
-    <Position X="14.5" Y="2.5" Width="1.5" />
+  <Class Name="TestingSystem.TestingUtilities">
+    <Position X="20" Y="14.25" Width="5.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgAAAAAADAAEAAAAgAAAAAAAQAAAABAAAAACAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.IntervalMethod" Collapsed="true">
-    <Position X="18" Y="0.5" Width="1.5" />
+  <Class Name="TestingSystem.IntervalMethod">
+    <Position X="17.25" Y="0.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.IdealTestMethod" Collapsed="true">
-    <Position X="16.25" Y="0.5" Width="1.5" />
+  <Class Name="TestingSystem.IdealTestMethod">
+    <Position X="14.25" Y="0.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAAAAAAAAAAAgQAAAAAAAAAAQAAAACkAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.MethodForTesting" Collapsed="true">
-    <Position X="3.75" Y="8.5" Width="1.5" />
+  <Class Name="TestingSystem.MethodForTesting">
+    <Position X="4.75" Y="8.5" Width="4" />
     <TypeIdentifier>
       <HashCode>AAYAAAAAAAAAACAABgAgAgTQEAAABAoAARBAAAGpAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.MethodForTestingOneArg" Collapsed="true">
-    <Position X="0.5" Y="9.75" Width="1.5" />
+  <Class Name="TestingSystem.MethodForTestingOneArg">
+    <Position X="1" Y="9.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="TestingSystem.MethodForTestingTwoArg" Collapsed="true">
-    <Position X="2.75" Y="9.75" Width="1.5" />
+  <Class Name="TestingSystem.MethodForTestingTwoArg">
+    <Position X="1" Y="12.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAQAAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="TestingSystem.MethodForTestingTaylor" Collapsed="true">
-    <Position X="6" Y="9.75" Width="1.5" />
+  <Class Name="TestingSystem.MethodForTestingTaylor">
+    <Position X="9.5" Y="8.75" Width="3.75" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAABAAACAACAAAAAAAAAAAAwAAAAAAAAEACA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TestingSystem.MethodForTestingTaylorOneArg" Collapsed="true">
-    <Position X="5" Y="11.25" Width="1.5" />
+  <Class Name="TestingSystem.MethodForTestingTaylorOneArg">
+    <Position X="13.75" Y="11" Width="5.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="TestingSystem.MethodForTestingTaylorTwoArg" Collapsed="true">
-    <Position X="7.25" Y="11.25" Width="1.5" />
+  <Class Name="TestingSystem.MethodForTestingTaylorTwoArg">
+    <Position X="13.75" Y="8.75" Width="5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
@@ -228,36 +228,36 @@
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Struct Name="TestingSystem.Interval" Collapsed="true">
-    <Position X="14.5" Y="3.75" Width="1.5" />
+  <Struct Name="TestingSystem.Interval">
+    <Position X="14.25" Y="3.5" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQAAAAAAAAABAAAAIAAAAAAAAAAAAgAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Struct>
-  <Interface Name="TestingSystem.IOneArgMethod" Collapsed="true">
-    <Position X="14.5" Y="5" Width="1.5" />
+  <Interface Name="TestingSystem.IOneArgMethod">
+    <Position X="20" Y="10" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="TestingSystem.ITwoArgMethod" Collapsed="true">
-    <Position X="16.25" Y="5" Width="1.5" />
+  <Interface Name="TestingSystem.ITwoArgMethod">
+    <Position X="23" Y="9.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="TestingSystem.MethodType" Collapsed="true">
-    <Position X="16.25" Y="6" Width="1.5" />
+  <Enum Name="TestingSystem.MethodType">
+    <Position X="20" Y="7.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AIAAAAAAAAAAAAAAQAAAAAAAgAAAACAAAAAAAAAAQAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="TestingSystem.EpsilonType" Collapsed="true">
-    <Position X="14.5" Y="6" Width="1.5" />
+  <Enum Name="TestingSystem.EpsilonType">
+    <Position X="23" Y="7.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAACAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
