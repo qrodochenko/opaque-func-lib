@@ -12,34 +12,34 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args) {
             string offset = "D:\\Vedenev\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
-            MakeResultsSummaryFile("L00_58_1_arctg_arcctg", CL00_58_1_arctg_arcctg.Body, 1);
-            MakeResultsSummaryFile("L00_59_1_arctg_arccos", CL00_59_1_arctg_arccos.Body, 1);
-            MakeResultsSummaryFile("L00_60_1_arcctg_arccos", CL00_60_1_arcctg_arccos.Body, 1);
-            MakeResultsSummaryFile("L00_61_1_arcctg_arccos", CL00_61_1_arcctg_arccos.Body, 1);
-            MakeResultsSummaryFile("L00_62_1_arctg_arcsin", CL00_62_1_arcctg_arcsin.Body, 1);
-            MakeResultsSummaryFile("L00_63_1_cos", CL00_63_1_cos.Body, 1);
-            MakeResultsSummaryFile("L00_64_1_cos_sin", CL00_64_1_cos_sin.Body, 1);
-            MakeResultsSummaryFile("L00_65_1_tg", CL00_65_1_tg.Body, 1);
-            MakeResultsSummaryFile("L00_66_2_tg", CL00_66_2_tg.Body);
-            MakeResultsSummaryFile("L00_67_1_ch_sh", CL00_67_1_ch_sh.Body, 1);
-            MakeResultsSummaryFile("L00_68_1_th_sh_ch", CL00_68_1_th_sh_ch.Body, 1);
-            MakeResultsSummaryFile("L00_69_1_cth_sh_ch", CL00_69_1_cth_sh_ch.Body, 1);
-            MakeResultsSummaryFile("L00_70_1_sch_ch", CL00_70_1_sch_ch.Body, 1);
-            MakeResultsSummaryFile("L00_71_1_sch_ch", CL00_71_1_sch_ch.Body, 1);
-            MakeResultsSummaryFile("L00_72_2_sh_ch", CL00_72_2_sh_ch.Body);
-            MakeResultsSummaryFile("L00_73_2_sh_ch", CL00_73_2_sh_ch.Body);
-            MakeResultsSummaryFile("L00_74_2_sh_ch", CL00_74_2_sh_ch.Body);
-            MakeResultsSummaryFile("L00_75_2_sh_ch", CL00_75_2_sh_ch.Body);
-            MakeResultsSummaryFile("L00_76_2_th", CL00_76_2_th.Body);
-            MakeResultsSummaryFile("L00_77_2_th", CL00_77_2_th.Body);
-            MakeResultsSummaryFile("L00_78_2_cth", CL00_78_2_cth.Body);
-            MakeResultsSummaryFile("L00_79_2_cth", CL00_79_2_cth.Body);
-            MakeResultsSummaryFile("L00_80_2_sh_ch", CL00_80_2_sh_ch.Body);
-            MakeResultsSummaryFile("L00_81_2_sh_ch", CL00_81_2_sh_ch.Body);
-            MakeResultsSummaryFile("L00_82_2_sh_ch", CL00_82_2_sh_ch.Body);
-            MakeResultsSummaryFile("L00_83_1_sh_ch", CL00_83_1_sh_ch.Body, 1);
-            MakeResultsSummaryFile("L00_84_1_cth", CL00_84_1_cth.Body, 1);
-            MakeResultsSummaryFile("L00_85_1_sh_ch", CL00_85_1_sh_ch.Body, 1);
+            MakeResultsSummaryFile("L00_58_1_arctg_arcctg", CL00_58_1_arctg_arcctg.L00_58_1_arctg_arcctg, 1);
+            MakeResultsSummaryFile("L00_59_1_arctg_arccos", CL00_59_1_arctg_arccos.L00_59_1_arctg_arccos, 1);
+            MakeResultsSummaryFile("L00_60_1_arcctg_arccos", CL00_60_1_arcctg_arccos.L00_60_1_arcctg_arccos, 1);
+            MakeResultsSummaryFile("L00_61_1_arcctg_arccos", CL00_61_1_arcctg_arccos.L00_61_1_arcctg_arccos, 1);
+            MakeResultsSummaryFile("L00_62_1_arctg_arcsin", CL00_62_1_arcctg_arcsin.L00_62_1_arcctg_arcsin, 1);
+            MakeResultsSummaryFile("L00_63_1_cos", CL00_63_1_cos.L00_63_1_cos, 1);
+            MakeResultsSummaryFile("L00_64_1_cos_sin", CL00_64_1_cos_sin.L00_64_1_cos_sin, 1);
+            MakeResultsSummaryFile("L00_65_1_tg", CL00_65_1_tg.L00_65_1_tg, 1);
+            MakeResultsSummaryFile("L00_66_2_tg", CL00_66_2_tg.L00_66_2_tg);
+            MakeResultsSummaryFile("L00_67_1_ch_sh", CL00_67_1_ch_sh.L00_67_1_ch_sh, 1);
+            MakeResultsSummaryFile("L00_68_1_th_sh_ch", CL00_68_1_th_sh_ch.L00_68_1_th_sh_ch, 1);
+            MakeResultsSummaryFile("L00_69_1_cth_sh_ch", CL00_69_1_cth_sh_ch.L00_69_1_cth_sh_ch, 1);
+            MakeResultsSummaryFile("L00_70_1_sch_ch", CL00_70_1_sch_ch.L00_70_1_sch_ch, 1);
+            MakeResultsSummaryFile("L00_71_1_sch_ch", CL00_71_1_sch_ch.L00_71_1_sch_ch, 1);
+            MakeResultsSummaryFile("L00_72_2_sh_ch", CL00_72_2_sh_ch.L00_72_2_sh_ch);
+            MakeResultsSummaryFile("L00_73_2_sh_ch", CL00_73_2_sh_ch.L00_73_2_sh_ch);
+            MakeResultsSummaryFile("L00_74_2_sh_ch", CL00_74_2_sh_ch.L00_74_2_sh_ch);
+            MakeResultsSummaryFile("L00_75_2_sh_ch", CL00_75_2_sh_ch.L00_75_2_sh_ch);
+            MakeResultsSummaryFile("L00_76_2_th", CL00_76_2_th.L00_76_2_th);
+            MakeResultsSummaryFile("L00_77_2_th", CL00_77_2_th.L00_77_2_th);
+            MakeResultsSummaryFile("L00_78_2_cth", CL00_78_2_cth.L00_78_2_cth);
+            MakeResultsSummaryFile("L00_79_2_cth", CL00_79_2_cth.L00_79_2_cth);
+            MakeResultsSummaryFile("L00_80_2_sh_ch", CL00_80_2_sh_ch.L00_80_2_sh_ch);
+            MakeResultsSummaryFile("L00_81_2_sh_ch", CL00_81_2_sh_ch.L00_81_2_sh_ch);
+            MakeResultsSummaryFile("L00_82_2_sh_ch", CL00_82_2_sh_ch.L00_82_2_sh_ch);
+            MakeResultsSummaryFile("L00_83_1_sh_ch", CL00_83_1_sh_ch.L00_83_1_sh_ch, 1);
+            MakeResultsSummaryFile("L00_84_1_cth", CL00_84_1_cth.L00_84_1_cth, 1);
+            MakeResultsSummaryFile("L00_85_1_sh_ch", CL00_85_1_sh_ch.L00_85_1_sh_ch, 1);
             string source_csv_folder_name = offset + "csv"; // пусть папка для файлов с отчётами .csv называется так.
             makeErrorPlots(source_csv_folder_name);             
         }
