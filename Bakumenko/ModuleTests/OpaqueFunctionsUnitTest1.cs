@@ -722,7 +722,7 @@ namespace ModuleTests
         }
 
         [TestMethod]
-        public void Test_L00_44_1_tg_arccos_ctg_arcsin_in()
+        public void Test_L00_53_1_arcctg_arcsinn_in()
         {
             string str = "(0, 1)";
             string F = CL00_53_1_arcctg_arcsin_in.L00_53_1_arcctg_arcsin_in();
