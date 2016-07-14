@@ -629,7 +629,7 @@ namespace SummerPractice_2016
 
              
             makeErrorPlots(@"D:\student\prakt\opaque-func-lib\Pashkov\csv");
-            for (int i = 7; i < 25; i++)
+            for (int i = 6; i < 25; i++)
                 makeErrorPlots(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_" + i.ToString());
 
         }
