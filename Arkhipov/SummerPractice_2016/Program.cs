@@ -12,7 +12,7 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            MakeResultsSummaryFile("L00_86_1_th", CL00_86_1_th.L00_86_1_th);
+            MakeResultsSummaryFile("L00_86_1_th", CL00_86_1_th.L00_86_1_th, 1, 100); 
             MakeResultsSummaryFile("L00_87_2_sh_ch", CL00_87_2_sh_ch.L00_87_2_sh_ch);
             MakeResultsSummaryFile("L00_88_2_sh_ch", CL00_88_2_sh_ch.L00_88_2_sh_ch);
             MakeResultsSummaryFile("L00_89_2_ch", CL00_89_2_ch.L00_89_2_ch);
@@ -32,14 +32,14 @@ namespace SummerPractice_2016
             MakeResultsSummaryFile("L00_103_3_log", CL00_103_3_log.L00_103_3_log, 5.0, 10.0, 1, 100); // (1, w)
             MakeResultsSummaryFile("L00_104_1_ln_arsh", CL00_104_1_ln_arsh.L00_104_1_ln_arsh);
             MakeResultsSummaryFile("L00_105_1_ln_arch", CL00_105_1_ln_arch.L00_105_1_ln_arch, 2, 100); // (2, w)
-            MakeResultsSummaryFile("L00_106_1_ln_arth", CL00_106_1_ln_arth.L00_106_1_ln_arth, -0.999, 0.999); // (-1, 1)
-            MakeResultsSummaryFile("L00_107_2_pow_exp", CL00_107_2_pow_exp.L00_107_2_pow_exp, 2.0);
+            MakeResultsSummaryFile("L00_106_1_ln_arth", CL00_106_1_ln_arth.L00_106_1_ln_arth, -0.1, 0.1, 0); // (-1, 1)
+            MakeResultsSummaryFile("L00_107_2_pow_exp", CL00_107_2_pow_exp.L00_107_2_pow_exp, 2.0);   
             MakeResultsSummaryFile("L00_108_3_pow", CL00_108_3_pow.L00_108_3_pow, 2.0);
             MakeResultsSummaryFile("L00_109_3_pow", CL00_109_3_pow.L00_109_3_pow, 2.0);
             MakeResultsSummaryFile("L00_110_3_pow", CL00_110_3_pow.L00_110_3_pow, 2.0);
-            MakeResultsSummaryFile("L00_111_1_exp_th", CL00_111_1_exp_th.L00_111_1_exp_th);
+            MakeResultsSummaryFile("L00_111_1_exp_th", CL00_111_1_exp_th.L00_111_1_exp_th, 1, 4);
             MakeResultsSummaryFile("L00_112_1_exp_ch_sh", CL00_112_1_exp_ch_sh.L00_112_1_exp_ch_sh, 1, 100); // (1, w)
-            MakeResultsSummaryFile("L00_113_1_ch_sh_th", CL00_113_1_ch_sh_th.L00_113_1_ch_sh_th, 1, 100); // (1, w)
+            MakeResultsSummaryFile("L00_113_1_ch_sh_th", CL00_113_1_ch_sh_th.L00_113_1_ch_sh_th, 1, 100); // (1, w) 
 
 
             string offset = "..\\..\\..\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
@@ -58,11 +58,6 @@ namespace SummerPractice_2016
         {
             //генерирует файл .csv нужного формата
             string dest_folder = ("..\\..\\..\\csv\\");
-            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + ".csv";
-            System.IO.StreamWriter dest_file_writer =
-               new System.IO.StreamWriter(dest);
-            dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = -100.0;
             double right_border_of_range = 100.0;
@@ -70,21 +65,30 @@ namespace SummerPractice_2016
             uint number_of_points = 100;
             double dx = range_length / number_of_points;
             double dy = range_length / number_of_points;
-            for (int i = 1; i < number_of_points; i++)
-            {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
-                swatch.Start();
-                double x = left_border_of_range + i * dx;
-                double F = f(x);
-                double benchmark = 0;
-                double absoluteError = Math.Abs((F - benchmark));
-                double relativeError = Math.Abs((F - benchmark) / F);
-                swatch.Stop();
-                long t = swatch.ElapsedMilliseconds;
-                dest_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + t.ToString());
-            }
-            dest_file_writer.Close();
 
+            for (int j = 1; j < number_of_points; j++)
+            {
+                //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
+                string dest = dest_folder + funcname + ".csv";
+                System.IO.StreamWriter dest_file_writer =
+                   new System.IO.StreamWriter(dest);
+                dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+
+                for (int i = 1; i < number_of_points; i++)
+                {
+                    System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
+                    swatch.Start();
+                    double x = left_border_of_range + i * dx + 1;
+                    double F = f(x);
+                    double benchmark = 0;
+                    double absoluteError = Math.Abs((F - benchmark));
+                    double relativeError = Math.Abs((F - benchmark) / F);
+                    swatch.Stop();
+                    long t = swatch.ElapsedMilliseconds;
+                    dest_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + t.ToString());
+                }
+                dest_file_writer.Close();
+            }
         }
 
         /// <summary>
@@ -138,11 +142,6 @@ namespace SummerPractice_2016
         {
             //генерирует файл .csv нужного формата
             string dest_folder = ("..\\..\\..\\csv\\");
-            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + "_a" + a.ToString() + ".csv";
-            System.IO.StreamWriter dest_file_writer =
-               new System.IO.StreamWriter(dest);
-            dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = -100.0;
             double right_border_of_range = 100.0;
@@ -150,20 +149,30 @@ namespace SummerPractice_2016
             uint number_of_points = 100;
             double dx = range_length / number_of_points;
             double dy = range_length / number_of_points;
-            for (int i = 1; i < number_of_points; i++)
+            for (int j = 1; j < number_of_points; j++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
-                swatch.Start();
-                double x = left_border_of_range + i * dx;
-                double F = f(x, a);
-                double benchmark = 0;
-                double absoluteError = Math.Abs((F - benchmark));
-                double relativeError = Math.Abs((F - benchmark) / F);
-                swatch.Stop();
-                long t = swatch.ElapsedMilliseconds;
-                dest_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + t.ToString());
+                //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
+                string dest = dest_folder + funcname + ".csv";
+                System.IO.StreamWriter dest_file_writer =
+                   new System.IO.StreamWriter(dest);
+                dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+
+
+                for (int i = 1; i < number_of_points; i++)
+                {
+                    System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
+                    swatch.Start();
+                    double x = left_border_of_range + i * dx;
+                    double F = f(x, a);
+                    double benchmark = 0;
+                    double absoluteError = Math.Abs((F - benchmark));
+                    double relativeError = Math.Abs((F - benchmark) / F);
+                    swatch.Stop();
+                    long t = swatch.ElapsedMilliseconds;
+                    dest_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + t.ToString());
+                }
+                dest_file_writer.Close();
             }
-            dest_file_writer.Close();
         }
 
         /// <summary>
@@ -294,7 +303,6 @@ namespace SummerPractice_2016
             }
         }
 
-
         // С ручной настройкой интервала
 
         /// <summary>
@@ -306,31 +314,35 @@ namespace SummerPractice_2016
         {
             //генерирует файл .csv нужного формата
             string dest_folder = ("..\\..\\..\\csv\\");
-            //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
-            string dest = dest_folder + funcname + ".csv";
-            System.IO.StreamWriter dest_file_writer =
-               new System.IO.StreamWriter(dest);
-            dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double range_length = Math.Abs(right_border_of_range - left_border_of_range);
             uint number_of_points = 100;
             double dx = range_length / number_of_points;
             double dy = range_length / number_of_points;
-            for (int i = 1; i < number_of_points; i++)
+            for (int j = 1; j < number_of_points; j++)
             {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
-                swatch.Start();
-                double x = left_border_of_range + i * dx;
-                double F = f(x);
-                double benchmark = 0;
-                double absoluteError = Math.Abs((F - benchmark));
-                double relativeError = Math.Abs((F - benchmark) / F);
-                swatch.Stop();
-                long t = swatch.ElapsedMilliseconds;
-                dest_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + t.ToString());
-            }
-            dest_file_writer.Close();
+                //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
+                string dest = dest_folder + funcname + ".csv";
+                System.IO.StreamWriter dest_file_writer =
+                   new System.IO.StreamWriter(dest);
+                dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
 
+
+                for (int i = 1; i < number_of_points; i++)
+                {
+                    System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
+                    swatch.Start();
+                    double x = left_border_of_range + i * dx;
+                    double F = f(x);
+                    double benchmark = 0;
+                    double absoluteError = Math.Abs((F - benchmark));
+                    double relativeError = Math.Abs((F - benchmark) / F);
+                    swatch.Stop();
+                    long t = swatch.ElapsedMilliseconds;
+                    dest_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + t.ToString());
+                }
+                dest_file_writer.Close();
+            }
         }
 
         /// <summary>
@@ -528,7 +540,49 @@ namespace SummerPractice_2016
                 }
                 dest_file_writer.Close();
             }
-        } 
+        }
+
+
+        // Костыль
+
+        /// <summary>
+        /// Создает csv файлы с абсолютной и относительной погрешности для функций со следующими аргументами: X, в интервале (-1, 1).
+        /// Последний аргумент нигде не используется, нужен для выбора этой перегрузки
+        /// </summary>
+        /// <param name="funcname"></param>
+        /// <param name="f"></param>
+        static void MakeResultsSummaryFile(string funcname, Func<double, double> f, double right_border_of_range, double left_border_of_range, int for106) // x, lb, rb (-1, 1)
+        {
+            //генерирует файл .csv нужного формата
+            string dest_folder = ("..\\..\\..\\csv\\");
+            //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
+            double range_length = Math.Abs(right_border_of_range - left_border_of_range);
+            uint number_of_points = 10;
+            double dx = range_length / number_of_points;
+            for (int j = 1; j < number_of_points; j++)
+            {
+                //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
+                string dest = dest_folder + funcname + ".csv";
+                System.IO.StreamWriter dest_file_writer =
+                   new System.IO.StreamWriter(dest);
+                dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+
+                for (int i = 1; i < number_of_points; i++)
+                {
+                    System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
+                    swatch.Start();
+                    double x = left_border_of_range + double.Epsilon + i * dx;
+                    double F = f(x);
+                    double benchmark = 0;
+                    double absoluteError = Math.Abs((F - benchmark));
+                    double relativeError = Math.Abs((F - benchmark) / F);
+                    swatch.Stop();
+                    long t = swatch.ElapsedMilliseconds;
+                    dest_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + t.ToString());
+                }
+                dest_file_writer.Close();
+            }
+        }
 
 
         static void makeErrorPlot(string source_csv_file_name)
@@ -547,10 +601,15 @@ namespace SummerPractice_2016
             while (!parser.EndOfData)
             {
                 string[] fields = parser.ReadFields();
-                if (Convert.ToDouble(fields[0]) > 1e+10)
-                {
-                    fields[0] = "NaN";
-                }
+                /* Выдает ошибку:
+                Необработанное исключение: System.OverflowException: Значение было недопустимо малым или недопустимо льшим для Decimal.
+                Не знаю, как пофиксить.. 4 if-а не работают
+                */
+                if (Convert.ToDouble(fields[0]) >= 1e+50) { fields[0] = "NaN"; }
+                if (Convert.ToDouble(fields[2]) >= 1e+50) { fields[0] = "NaN"; }
+                if (Convert.ToDouble(fields[0]) <= 1e-50) { fields[0] = "0"; }
+                if (Convert.ToDouble(fields[2]) <= 1e-50) { fields[0] = "0"; }
+
                 errorChart.Series["absolute_error"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[1])); //добавляем точки на график
                 relativeErrorChart.Series["relative_error"].Points.AddXY(Convert.ToDouble(fields[0]), Convert.ToDouble(fields[2]));
             }
