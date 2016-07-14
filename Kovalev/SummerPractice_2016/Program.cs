@@ -10,26 +10,11 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Summer Practice! Yay!");
-            Console.WriteLine();
             
-
-            //if (MakeTests(0.00000000001, CMathApprox_1_Compute.MathApprox_1_Compute_2))
-            //  Console.WriteLine("Testing failed...");
-            Console.WriteLine();
-
-            //MakeResFile("MathApprox_Ln_2", CMathApprox_1_Compute.MathApprox_1_Compute_2, 
-            //    Math.Log, 0.5, 0.00000005);
-
-            //if (MakeTests(0.0000000000000000005, CMathApprox_2_Compute.MathApprox_2_Compute_2, 1.05))
-            //   Console.WriteLine("Failed...");
-            
-            
-
-            Console.WriteLine(CMathApprox_1.MathApprox_1_2("D:\\C#\\Kovalev\\", 0.0000000005));
-
             MakeResFile("MathApprox_Ln_2", CMathApprox_1_Compute.MathApprox_1_Compute_2,
                 Math.Log, 0.5, 0.0000000005);
+            MakeResFile("MathApprox_Atan_2", CMathApprox_2_Compute.MathApprox_2_Compute_2,
+                Math.Atan, 1, 0.0000000005);
 
             MakeErrorPlot("D:\\C#\\Kovalev\\csv\\Report_MathApprox_Atan_2_5E-10.csv");
             MakeErrorPlot("D:\\C#\\Kovalev\\csv\\Report_MathApprox_Ln_2_5E-10.csv");
