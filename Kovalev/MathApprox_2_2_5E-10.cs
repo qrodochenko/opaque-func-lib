@@ -11,7 +11,7 @@ namespace First
         static void Main(string[] args)
         {
             double P0 = 0;
-            double P1 = 1;
+            double P1 = 0;
             double[] Denom = new double[14];
             double[] Numer = new double[14];
             Denom[0] = 1;
@@ -44,7 +44,7 @@ namespace First
             Numer[13] = 0.000268581548936428;
             Console.Write("Input argument for Atan(x): ");
             double arg = double.Parse(Console.ReadLine());
-            for (int j = 1; j < 14; j++)
+            for (int j = 0; j < 14; j++)
             {
                 double Tmp = Math.Pow(arg, j);
                 P0 += Numer[j] * Tmp;

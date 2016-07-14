@@ -10,16 +10,17 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            
-            MakeResFile("MathApprox_Ln_2", CMathApprox_1_Compute.MathApprox_1_Compute_2,
-                Math.Log, 0.5, 0.0000000005);
-            MakeResFile("MathApprox_Atan_2", CMathApprox_2_Compute.MathApprox_2_Compute_2,
-                Math.Atan, 1, 0.0000000005);
+            CMathApprox_1.MathApprox_1_2("D:\\C#\\Kovalev\\", 0.0000000005);
+            CMathApprox_2.MathApprox_2_2("D:\\C#\\Kovalev\\", 0.0000000005);
+            CMathApprox_3.MathApprox_3_2("D:\\C#\\Kovalev\\", 0.0000000005);
+            CMathApprox_4.MathApprox_4_2("D:\\C#\\Kovalev\\", 0.0000000005);
+            CMathApprox_5.MathApprox_5_2("D:\\C#\\Kovalev\\", 0.0000000005);
 
-            MakeErrorPlot("D:\\C#\\Kovalev\\csv\\Report_MathApprox_Atan_2_5E-10.csv");
-            MakeErrorPlot("D:\\C#\\Kovalev\\csv\\Report_MathApprox_Ln_2_5E-10.csv");
         }
 
+        enum Functions {
+            MathApprox_Ln_2, MathApprox_Atan_2, MathApprox_Asin_2, MathApprox_Acot_2, MathApprox_Acos_2
+        }
         static void MakeResFile(string funcname, Func<double, double, double> F, 
             Func<double, double> f, double border, double error)
         {
@@ -35,6 +36,8 @@ namespace SummerPractice_2016
             {
                 double x = border + i * dx;
                 double Res = F(x, error);
+                if (funcname == "MathApprox_Acot_2")
+                    Res = Math.PI / 2 - Res;
                 double R = 0;
                 if (funcname == "MathApprox_Ln_2")
                     R = f(1 + x);
@@ -53,7 +56,7 @@ namespace SummerPractice_2016
             Dest_file_writer.Close();
         }
 
-        static bool MakeTests(double error, Func<double, double, double> f, double border)
+        static bool MakeTests(double error, Func<double, double, double> f, Func<double, double> ff, double border)
         {
 
             Random rnd = new Random();
@@ -64,11 +67,13 @@ namespace SummerPractice_2016
             double Range = border * 4000.0;
             for (int i = 0; i < 1000; i++)
             {
+                if (i % 2 == 0)
+                    Console.WriteLine("Alright");
                 double arg = rnd.Next(1, Convert.ToInt32(Range)) - Range/2;
                 arg = arg / 2000.0;
                 if (Math.Abs(arg) > max)
                     max = Math.Abs(arg);
-                if (Math.Abs(f(arg, error) - Math.Atan(arg)) > error)
+                if (Math.Abs(f(arg, error) - (Math.PI/2 - ff(arg))) > error)
                 {
                     F = true;
                     max = arg;
@@ -77,7 +82,7 @@ namespace SummerPractice_2016
             }
             if (F)
                 Console.WriteLine(max);
-            
+            Console.WriteLine("Complete");
             return F;
         }
 
