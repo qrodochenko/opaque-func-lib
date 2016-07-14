@@ -67,7 +67,7 @@ namespace ModuleTests
             {
                 Random rnd = new Random();
                 double threshold = 1e-1;
-                double arg = (rnd.NextDouble() - 0.5) * 2-1e-17;
+                double arg = (rnd.NextDouble() - 0.5) * 2 - 1e-17;
                 double X = CArccos_1.Arccos_1(arg, 4000000);
                 Assert.IsTrue(Math.Abs(X - Math.Acos(arg)) < threshold, "Значение функции недостаточно близко к реальному");
                 Assert.IsTrue(Math.Abs((X - Math.Acos(arg)) / Math.Acos(arg)) < threshold, "Относительная погрешность слишком велика");
@@ -110,12 +110,12 @@ namespace ModuleTests
     }
     [TestClass]
     public class CTestArctg_1
-          {
-          [TestMethod]
-    public void Test_Arctg_1()
-          {
-          for(int i = 0; i< 10; i++)
-              {
+    {
+        [TestMethod]
+        public void Test_Arctg_1()
+        {
+            for (int i = 0; i < 10; i++)
+            {
                 Random rnd = new Random();
                 double threshold = 1e-2;
                 double arg = (rnd.NextDouble() - 0.5) * 2;
@@ -124,7 +124,7 @@ namespace ModuleTests
                 Assert.IsTrue(Math.Abs((X - Math.Atan(arg)) / Math.Atan(arg)) < threshold, "Относительная погрешность слишком велика");
             }
         }
-      }
+    }
     [TestClass]
     public class CTestArcctg_1
     {
@@ -135,10 +135,10 @@ namespace ModuleTests
             {
                 Random rnd = new Random();
                 double threshold = 1e-2;
-                double arg = (rnd.NextDouble() - 0.5) * 2-1e-17;
+                double arg = (rnd.NextDouble() - 0.5) * 2 - 1e-17;
                 double X = CArcctg_1.Arcctg_1(arg, 4000000);
                 Assert.IsTrue(Math.Abs(X - (Math.PI / 2.0 - Math.Atan(arg))) < threshold, "Значение функции недостаточно близко к реальному");
-                Assert.IsTrue(Math.Abs((X - (Math.PI / 2.0 - Math.Atan(arg)))/(Math.PI / 2.0 - Math.Atan(arg))) < threshold, "Значение функции недостаточно близко к реальному");
+                Assert.IsTrue(Math.Abs((X - (Math.PI / 2.0 - Math.Atan(arg))) / (Math.PI / 2.0 - Math.Atan(arg))) < threshold, "Значение функции недостаточно близко к реальному");
             }
         }
     }
@@ -155,7 +155,7 @@ namespace ModuleTests
                 double arg = (rnd.NextDouble()) * (Math.PI - 1e-17);
                 double X = CCosec_1.Cosec_1(arg, 12);
                 Assert.IsTrue(Math.Abs(X - 1 / Math.Sin(arg)) < threshold, "Значение функции недостаточно близко к реальному");
-                Assert.IsTrue(Math.Abs((X - 1 / Math.Sin(arg))/(1/Math.Sin(arg))) < threshold, "Значение функции недостаточно близко к реальному");
+                Assert.IsTrue(Math.Abs((X - 1 / Math.Sin(arg)) / (1 / Math.Sin(arg))) < threshold, "Значение функции недостаточно близко к реальному");
             }
         }
     }
@@ -227,17 +227,4 @@ namespace ModuleTests
             }
         }
     }
-    /*  [TestClass]
-      public class
-          {
-          [TestMethod]
-      public void ()
-          {
-          for(int i = 0; i < 10; i++)
-              {
-
-              }
-  }
-      } */
-
 }
