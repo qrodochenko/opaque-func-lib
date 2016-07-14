@@ -12,71 +12,54 @@ namespace SummerPractice_2016
     {
         static void Main(string[] args)
         {
-            int N = 1000;
-            MakeResultsSummaryFile("Math_1_2", CMath_1_2.Math_1_2, N, MyBenchmark.Math_1_2_benchmark);
-            MakeResultsSummaryFile("Math_2_2", CMath_2_2.Math_2_2, N, MyBenchmark.Math_2_2_benchmark);
-            MakeResultsSummaryFile("Math_3_2", CMath_3_2.Math_3_2, N, MyBenchmark.Math_3_2_benchmark);
-            MakeResultsSummaryFile("Math_4_2", CMath_4_2.Math_4_2, N, MyBenchmark.Math_4_2_benchmark);
-            MakeResultsSummaryFile("Math_5_2", CMath_5_2.Math_5_2, N, MyBenchmark.Math_5_2_benchmark);
-            MakeResultsSummaryFile("Math_6_2", CMath_6_2.Math_6_2, N, MyBenchmark.Math_6_2_benchmark);
-            MakeResultsSummaryFile("Math_7_2", CMath_7_2.Math_7_2, N, MyBenchmark.Math_7_2_benchmark);
-            MakeResultsSummaryFile("Math_8_2", CMath_8_2.Math_8_2, N, MyBenchmark.Math_8_2_benchmark);
-            MakeResultsSummaryFile("Math_9_2", CMath_9_2.Math_9_2, N, MyBenchmark.Math_9_2_benchmark);
-            MakeResultsSummaryFile("Math_10_2", CMath_10_2.Math_10_2, N, MyBenchmark.Math_10_2_benchmark);
-            MakeResultsSummaryFile("Math_11_2", CMath_11_2.Math_11_2, N, MyBenchmark.Math_11_2_benchmark);
-            MakeResultsSummaryFile("Math_12_2", CMath_12_2.Math_12_2, N, MyBenchmark.Math_12_2_benchmark);
-            MakeResultsSummaryFile("Math_13_2", CMath_13_2.Math_13_2, N, MyBenchmark.Math_13_2_benchmark);
-            MakeResultsSummaryFile("Math_14_2", CMath_14_2.Math_14_2, N, MyBenchmark.Math_14_2_benchmark);
-            MakeResultsSummaryFile("Math_15_2", CMath_15_2.Math_15_2, N, MyBenchmark.Math_15_2_benchmark);
-            MakeResultsSummaryFile("Math_16_2", CMath_16_2.Math_16_2, N, MyBenchmark.Math_16_2_benchmark);
-            MakeResultsSummaryFile("Math_17_2", CMath_17_2.Math_17_2, N, MyBenchmark.Math_17_2_benchmark);
-            MakeResultsSummaryFile("Math_18_2", CMath_18_2.Math_18_2, N, MyBenchmark.Math_18_2_benchmark);
-            MakeResultsSummaryFile("Math_19_2", CMath_19_2.Math_19_2, N, MyBenchmark.Math_19_2_benchmark);
-            MakeResultsSummaryFile("Math_20_2", CMath_20_2.Math_20_2, N, MyBenchmark.Math_20_2_benchmark);
+            int N = 0;
+            for (int i = 1; i <= 3; i++)
+            {                
+                switch (i)
+                {
+                    case 1:
+                        N = 100;
+                        break;
+                    case 2:
+                        N = 500;
+                        break;
+                    case 3:
+                        N = 1000;
+                        break;
+                    default:
+                        Console.WriteLine("Default case");
+                        break;
+                }
+                
+                MakeResultsSummaryFile("Math_1_2", CMath_1_2.Math_1_2, N, MyBenchmark.Math_1_2_benchmark);
+                MakeResultsSummaryFile("Math_2_2", CMath_2_2.Math_2_2, N, MyBenchmark.Math_2_2_benchmark);
+                MakeResultsSummaryFile("Math_3_2", CMath_3_2.Math_3_2, N, MyBenchmark.Math_3_2_benchmark);
+                MakeResultsSummaryFile("Math_4_2", CMath_4_2.Math_4_2, N, MyBenchmark.Math_4_2_benchmark);
+                MakeResultsSummaryFile("Math_5_2", CMath_5_2.Math_5_2, N, MyBenchmark.Math_5_2_benchmark);
+                MakeResultsSummaryFile("Math_6_2", CMath_6_2.Math_6_2, N, MyBenchmark.Math_6_2_benchmark);
+                MakeResultsSummaryFile("Math_7_2", CMath_7_2.Math_7_2, N, MyBenchmark.Math_7_2_benchmark);
+                MakeResultsSummaryFile("Math_8_2", CMath_8_2.Math_8_2, N, MyBenchmark.Math_8_2_benchmark);
+                MakeResultsSummaryFile("Math_9_2", CMath_9_2.Math_9_2, N, MyBenchmark.Math_9_2_benchmark);
+                MakeResultsSummaryFile("Math_10_2", CMath_10_2.Math_10_2, N, MyBenchmark.Math_10_2_benchmark);
+                MakeResultsSummaryFile("Math_11_2", CMath_11_2.Math_11_2, N, MyBenchmark.Math_11_2_benchmark);
+                MakeResultsSummaryFile("Math_12_2", CMath_12_2.Math_12_2, N, MyBenchmark.Math_12_2_benchmark);
+                MakeResultsSummaryFile("Math_13_2", CMath_13_2.Math_13_2, N, MyBenchmark.Math_13_2_benchmark);
+                MakeResultsSummaryFile("Math_14_2", CMath_14_2.Math_14_2, N, MyBenchmark.Math_14_2_benchmark);
+                MakeResultsSummaryFile("Math_15_2", CMath_15_2.Math_15_2, N, MyBenchmark.Math_15_2_benchmark);
+                MakeResultsSummaryFile("Math_16_2", CMath_16_2.Math_16_2, N, MyBenchmark.Math_16_2_benchmark);
+                MakeResultsSummaryFile("Math_17_2", CMath_17_2.Math_17_2, N, MyBenchmark.Math_17_2_benchmark);
+                MakeResultsSummaryFile("Math_18_2", CMath_18_2.Math_18_2, N, MyBenchmark.Math_18_2_benchmark);
+                MakeResultsSummaryFile("Math_19_2", CMath_19_2.Math_19_2, N, MyBenchmark.Math_19_2_benchmark);
+                MakeResultsSummaryFile("Math_20_2", CMath_20_2.Math_20_2, N, MyBenchmark.Math_20_2_benchmark);
 
-            string offset = "..\\..\\..\\..\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
-            string source_csv_folder_name = offset + "csv"; // пусть папка для файлов с отчётами .csv называется так.
-            makeErrorPlots(source_csv_folder_name);
-        }
-
-
-        /*
-        static void MakeResultsSummaryFile(string funcname, Func<double,int,double> f, int N)
-        {
-            string dest_folder = ("..\\..\\..\\..\\csv\\");
-            string dest = dest_folder + funcname + "_N" + N.ToString() + ".csv";
-            System.IO.StreamWriter dest_file_writer =
-               new System.IO.StreamWriter(dest);
-            dest_file_writer.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
-            double left_border_of_range = -1.0;
-            double right_border_of_range = 1.0;
-            double range_length = Math.Abs(right_border_of_range - left_border_of_range);
-            uint number_of_points = 200;
-            double dx = range_length / number_of_points;
-            for (int i = 1; i < number_of_points; i++)
-            {
-                System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // создаем объект
-                swatch.Start();
-                double x = left_border_of_range + i * dx;
-                double F = f(x, N);
-                double benchmark = Math.Pow(1.0 + x, (1.0 / 3.0));
-                double absoluteError = Math.Abs((F - benchmark));
-                double relativeError = Math.Abs((F - benchmark) / benchmark);
-                swatch.Stop();
-                long t = swatch.ElapsedMilliseconds;
-                dest_file_writer.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + t.ToString());                                                     
+                string offset = "..\\..\\..\\..\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
+                string source_csv_folder_name = offset + "csv"; // пусть папка для файлов с отчётами .csv называется так.
+                makeErrorPlots(source_csv_folder_name);
+                
             }
-            //file1.WriteLine(';' + ';' + ';' + l.Min().ToString() + l.Max().ToString() + l.Average().ToString());
-            //Console.Write(String.Format("{0,5} {1,5} {2,5}",l.Average(), l.Max(), l.Min()));
-            Console.Write("Complete! /n");          
-            dest_file_writer.Close();
-        }      
-        */
 
-       
-
-
-
+        }
+              
         static void MakeResultsSummaryFile(string funcname, Func<double, int, double> f, int N, Func<double, double> benchmark)
         {
             //генерирует файл .csv нужного формата
