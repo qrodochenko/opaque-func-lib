@@ -13,9 +13,12 @@ namespace SummerPractice_2016
             Console.WriteLine("Summer Practice! Yay!");
             Console.ReadKey();
 
-
+            if(!System.IO.Directory.Exists(@"..\..\..\..\csv"))
+            {
+                System.IO.Directory.CreateDirectory(@"..\..\..\..\csv");
+            }
             System.IO.StreamWriter file1 =
-            new System.IO.StreamWriter(@"D:\hello-world\opaque-func-lib\Golubev\csv\priv_sin_2.csv");
+            new System.IO.StreamWriter(@"..\..\..\..\csv\priv_sin_2.csv");
             file1.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError");
             double x = -50;
             for (int i = 1; i < 1000; i++)
@@ -38,7 +41,7 @@ namespace SummerPractice_2016
 
 
             System.IO.StreamWriter file6 =
-            new System.IO.StreamWriter(@"D:\hello-world\opaque-func-lib\Golubev\csv\priv_cos_2.csv");
+            new System.IO.StreamWriter(@"..\..\..\..\csv\priv_cos_2.csv");
             file6.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError");
             x = -50;
             for (int i = 1; i < 1000; i++)
@@ -63,7 +66,7 @@ namespace SummerPractice_2016
 
 
             System.IO.StreamWriter file2 =
-            new System.IO.StreamWriter(@"D:\hello-world\opaque-func-lib\Golubev\csv\priv_sin_3.csv");
+            new System.IO.StreamWriter(@"..\..\..\..\csv\priv_sin_3.csv");
             file2.WriteLine("x" +  ';' + "absoluteError" + ';' + "relativeError");
             x = -50;
             for (int i = 1; i < 1000; i++)
@@ -89,7 +92,7 @@ namespace SummerPractice_2016
             file2.Close();
 
             System.IO.StreamWriter file3 =
-            new System.IO.StreamWriter(@"D:\hello-world\opaque-func-lib\Golubev\csv\priv_cos_3.csv");
+            new System.IO.StreamWriter(@"..\..\..\..\csv\priv_cos_3.csv");
             file3.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError");
             x = -50;
             for (int i = 1; i < 1000; i++)
@@ -115,7 +118,7 @@ namespace SummerPractice_2016
             file3.Close();
 
             System.IO.StreamWriter file4 =
-            new System.IO.StreamWriter(@"D:\hello-world\opaque-func-lib\Golubev\csv\priv_tan_6.csv");
+            new System.IO.StreamWriter(@"..\..\..\..\csv\priv_tan_6.csv");
             file4.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" );
             x = -50;
             for (int i = 1; i < 1000; i++)
@@ -141,7 +144,7 @@ namespace SummerPractice_2016
             file4.Close();
 
             System.IO.StreamWriter file5 =
-            new System.IO.StreamWriter(@"D:\hello-world\opaque-func-lib\Golubev\csv\priv_ctg_6.csv");
+            new System.IO.StreamWriter(@"..\..\..\..\csv\priv_ctg_6.csv");
             file5.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" );
             x = -50;
             for (int i = 1; i < 1000; i++)
@@ -166,7 +169,7 @@ namespace SummerPractice_2016
             }
             file5.Close();
 
-            makeErrorPlots(@"D:\hello-world\opaque-func-lib\Golubev\csv\");
+            makeErrorPlots(@"..\..\..\..\csv\");
 
         }
 
