@@ -191,7 +191,7 @@ namespace TestingSystem
                     {
                         try
                         {
-                            mt.GetTestingReport(10, 500, new double[] { 2, 3 }).SaveCSV("ReportsTaylor\\" + mt.Name + ".csv");
+                            mt.GetTestingReport(1000, 500, new double[] { 2, 3 }).SaveCSV("ReportsTaylor\\" + mt.Name + ".csv");
                         }
                         catch
                         {
