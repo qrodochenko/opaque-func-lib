@@ -1134,7 +1134,7 @@ namespace OpaqueFunctions
             if (angle <= 0 && angle >= 1)
             {
                 throw new OpaqueException();
-            
+            }
 #endif
             double X, arctgX, sqrtX, arccosX;
             sqrtX = (Math.Sqrt(1 - angle * angle));
