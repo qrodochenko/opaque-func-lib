@@ -5,22 +5,6 @@ using OpaqueFunctions;
 
 namespace ModuleTests
 {   
-  
-    [TestClass]
-    public class OpaqueFunctionsUnitTest1
-    {
-
-        [TestMethod]
-        public void Opaque1SinCosTest1()
-        {
-            double X = Opaque1SinCos.Body(360, 10);
-            Assert.IsTrue(Math.Abs(X - 1) < double.Epsilon, "Значение функции не единица!");
-
-
-        }
-    }
-
-
 
     [TestClass]
     public class Ctest_LOX_1_1_sin_arcsin
@@ -262,7 +246,7 @@ namespace ModuleTests
         public void test_LOX_8_1_arcctg_ctg_in()
         {
             string F = CLOX_8_1_arcctg_ctg_in.LOX_8_1_arcctg_ctg_in();
-            string s = "(-1, 1)";
+            string s = "(0, Pi)";
             Assert.IsTrue((F == s), "Интервалы не совпадают");
 
         }

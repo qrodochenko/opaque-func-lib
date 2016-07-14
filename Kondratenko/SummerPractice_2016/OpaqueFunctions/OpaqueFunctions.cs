@@ -3,44 +3,11 @@ using System;
 namespace OpaqueFunctions
 {
     /// <summary>
-    /// Реализует основное тригонометрическое тождество sin^2 (x) + cos^2 (x) = 1,  
-    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
-    /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
-    /// <returns>1</returns>
-    [OpaqueFunction()]
-    [FunctionName("Opaque0", "sin^2 + cos^2 = 1")]
-    [EquivalentIntConstant(1)]
-    public static class Opaque1SinCos
-    {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="angle"></param>
-        /// <param name="count"></param>
-        /// <returns></returns>
-        public static double Body(double angle, int count)
-        {
-            double X = 1;
-            for (int i = 0; i < count; i++)
-            {
-                X *= Math.Sin(angle)*Math.Sin(angle) + Math.Cos(angle)*Math.Cos(angle);
-            }
-            return X;
-        }
-    }
-
-    /// <summary>
     /// Реализует сложную функцию  f(x) = sin(arcsin(x)), -1≤x≤1,  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -57,11 +24,11 @@ namespace OpaqueFunctions
                 throw new Exception("Значение 'x' не принадлежит области определения!");
             }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1;
                Y1 = Math.Asin(angle);
-               X = Math.Sin(Y1);
-            return X;
+               F = Math.Sin(Y1);
+            return F;
         }
     }
 
@@ -85,11 +52,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию  f(x) = cos(arccos(x)), -1≤x≤1,  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -105,11 +70,11 @@ namespace OpaqueFunctions
                      throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1;
               Y1 = Math.Acos(angle);
-              X = Math.Cos(Y1);
-            return X;
+              F = Math.Cos(Y1);
+            return F;
         }
     }
 
@@ -134,11 +99,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию  f(x) = tg(arctg(x)), -π/2≤ x ≤ π/2,  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -154,11 +117,11 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1;
               Y1 = Math.Atan(angle);
-              X = Math.Tan(Y1);
-            return X;
+              F = Math.Tan(Y1);
+            return F;
         }
     }
 
@@ -184,11 +147,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию   f(x) = ctg(arcctg(x)), -π/2≤ x ≤ π/2,
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -204,13 +165,13 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1, Y2, Y3;
               Y1 = Math.Atan(angle);
               Y2 = Math.PI / 2;
               Y3 = Y2 - Y1;
-              X = 1.0 / Math.Tan(Y3);
-            return X;
+              F = 1.0 / Math.Tan(Y3);
+            return F;
         }
     }
 
@@ -236,11 +197,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию    f(x) = arcsin(sin(x)), -π/2≤ x ≤ π/2,  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -256,11 +215,11 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1;
               Y1 = Math.Sin(angle);
-              X = Math.Asin(Y1);
-            return X;
+              F = Math.Asin(Y1);
+            return F;
         }
     }
 
@@ -286,11 +245,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию    f(x) = arccos(cos(x)), 0 ≤ x ≤ π,  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -306,11 +263,11 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1;
               Y1 = Math.Cos(angle);
-              X = Math.Acos(Y1);
-            return X;
+              F = Math.Acos(Y1);
+            return F;
         }
     }
 
@@ -336,11 +293,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию    f(x) = arctg(tg(x)), -π/2 ≤ x ≤ π/2,  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -356,11 +311,11 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1;
               Y1 = Math.Tan(angle);
-              X = Math.Atan(Y1);
-            return X;
+              F = Math.Atan(Y1);
+            return F;
         }
     }
 
@@ -386,11 +341,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию    f(x) = arcctg(ctg(x)), -1 ≤ x ≤ 1,  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -406,11 +359,11 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1;
               Y1 = 1.0 / Math.Tan(angle);
-              X = Math.PI / 2 - Math.Atan(Y1);
-            return X;
+              F = Math.PI / 2 - Math.Atan(Y1);
+            return F;
         }
     }
 
@@ -435,12 +388,9 @@ namespace OpaqueFunctions
 
     /// <summary>
     /// Реализует сложную функцию    f(x) = (x^n)^(1/n), x > 0 нат. число,  
-    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// где X задается параметром <paramref name="x"/>. 
+    /// Результатом функции является целое число F.
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -461,7 +411,6 @@ namespace OpaqueFunctions
               Y1 = Math.Pow(n, -1.0);
               Y2 = Math.Pow(x, n);
               F = Math.Pow(Y2, Y1);
-
             return F;
         }
     }
@@ -487,12 +436,9 @@ namespace OpaqueFunctions
 
     /// <summary>
     /// Реализует сложную функцию    f(x) = (x^(1/n))^n, x > 0 нат. число,  
-    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// где X задается параметром <paramref name="x"/>. 
+    /// Результатом функции является целое число F.
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -500,20 +446,20 @@ namespace OpaqueFunctions
     [EquivalentIntConstant(1)]
     public static class CLOX_10_2_xpown_xpown_1divn
     {
-        public static double LOX_10_2_xpown_xpown_1divn(double angle, int n = 10)
+        public static double LOX_10_2_xpown_xpown_1divn(double x, int n = 10)
         {
             #if Debug
-                if (angle < 0)
+                if (x < 0)
                 {
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1, Y2;
               Y1 = 1.0/n;
-              Y2 = Math.Pow(angle, Y1);
-              X = Math.Pow(Y2, n);
-            return X;
+              Y2 = Math.Pow(x, Y1);
+              F = Math.Pow(Y2, n);
+            return F;
         }
     }
 
@@ -538,12 +484,9 @@ namespace OpaqueFunctions
 
     /// <summary>
     /// Реализует сложную функцию    f(x) = loga(a^x), a > 0, a ≠ 1,  
-    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// где X задается параметром <paramref name="x"/>. 
+    /// Результатом функции является целое число F.
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -551,7 +494,7 @@ namespace OpaqueFunctions
     [EquivalentIntConstant(1)]
     public static class CLOX_11_2_logax_apowx
     {
-        public static double LOX_11_2_logax_apowx(double angle, int a = 10)
+        public static double LOX_11_2_logax_apowx(double x, int a = 10)
         {
             #if Debug
                 if (a < 0)
@@ -559,11 +502,11 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1;
-              Y1 = Math.Pow(a, angle);
-              X = Math.Log(Y1) / Math.Log(a); 
-            return X;
+              Y1 = Math.Pow(a, x);
+              F = Math.Log(Y1) / Math.Log(a); 
+            return F;
         }
     }
 
@@ -589,12 +532,9 @@ namespace OpaqueFunctions
 
     /// <summary>
     /// Реализует сложную функцию    f(x) = a^(logax), a > 0, a ≠ 1,  
-    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// где X задается параметром <paramref name="x"/>. 
+    /// Результатом функции является целое число F.
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -602,7 +542,7 @@ namespace OpaqueFunctions
     [EquivalentIntConstant(1)]
     public static class CLOX_12_2_xpowy_logax
     {
-        public static double LOX_12_2_xpowy_logax(double angle, int a = 10)
+        public static double LOX_12_2_xpowy_logax(double x, int a = 10)
         {
             #if Debug
                 if (a < 0)
@@ -610,11 +550,11 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1;
-              Y1 = Math.Log(angle) / Math.Log(a);
-              X = Math.Pow(a, Y1);
-            return X;
+              Y1 = Math.Log(x) / Math.Log(a);
+              F = Math.Pow(a, Y1);
+            return F;
         }
     }
 
@@ -640,12 +580,9 @@ namespace OpaqueFunctions
 
     /// <summary>
     /// Реализует сложную функцию    f(x) = ln(e^x),  
-    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// где X задается параметром <paramref name="x"/>. 
+    /// Результатом функции является целое число F.
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -653,13 +590,13 @@ namespace OpaqueFunctions
     [EquivalentIntConstant(1)]
     public static class CLOX_13_1_lnx_epowx
     {
-        public static double LOX_13_1_lnx_epowx(double angle)
+        public static double LOX_13_1_lnx_epowx(double x)
         {
-            double X = 1;
+            double F = 1;
             double Y1;
-              Y1 = Math.Exp(angle);
-              X = Math.Log(Y1); 
-            return X;
+              Y1 = Math.Exp(x);
+              F = Math.Log(Y1); 
+            return F;
         }
     }
 
@@ -683,12 +620,9 @@ namespace OpaqueFunctions
 
     /// <summary>
     /// Реализует сложную функцию    f(x) = e^(lnx),  
-    /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// где X задается параметром <paramref name="x"/>. 
+    /// Результатом функции является целое число F.
     /// </summary>
-    /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -696,13 +630,13 @@ namespace OpaqueFunctions
     [EquivalentIntConstant(1)]
     public static class CLOX_14_1_xpowy_lnx
     {
-        public static double LOX_14_1_xpowy_lnx(double angle)
+        public static double LOX_14_1_xpowy_lnx(double x)
         {
-            double X = 1;
+            double F = 1;
             double Y1;
-              Y1 = Math.Log(angle);
-              X = Math.Exp(Y1);
-            return X;
+              Y1 = Math.Log(x);
+              F = Math.Exp(Y1);
+            return F;
         }
     }
 
@@ -728,11 +662,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию    f(x) = sh(arsh(x)), 
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -742,12 +674,12 @@ namespace OpaqueFunctions
     {
         public static double LOX_15_1_sh_arsh(double angle)
         {
-            double X = 1;
+            double F = 1;
             double Y1, Y2;
               Y1 = angle + Math.Sqrt(angle * angle + 1);
               Y2 = Math.Log(Y1);
-              X = Math.Sinh(Y2);
-            return X;
+              F = Math.Sinh(Y2);
+            return F;
         }
     }
 
@@ -772,11 +704,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию   f(x) = arsh(sh(x)),
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -786,12 +716,12 @@ namespace OpaqueFunctions
     {
         public static double LOX_16_1_arsh_sh(double angle)
         {
-            double X = 1;
+            double F = 1;
             double Y1, Y2;
               Y1 = Math.Sinh(angle);
               Y2 = Y1 + Math.Sqrt(Y1 * Y1 + 1);
-              X = Math.Log(Y2);
-            return X;
+              F = Math.Log(Y2);
+            return F;
         }
     }
 
@@ -817,11 +747,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию    f(x) = ch(arch(x)), x > 1,
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -837,12 +765,12 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1, Y2;
               Y1 = angle + Math.Sqrt(angle * angle - 1.0);
               Y2 = Math.Log(Y1);
-              X = Math.Cosh(Y2);
-            return X;
+              F = Math.Cosh(Y2);
+            return F;
         }
     }
 
@@ -867,11 +795,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию   f(x) = arch(ch(x)), x > 0,
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -887,12 +813,12 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1, Y2;
               Y1 = Math.Cosh(angle);
               Y2 = Y1 + Math.Sqrt(Y1 * Y1 - 1);
-              X = Math.Log(Y2);
-            return X;
+              F = Math.Log(Y2);
+            return F;
         }
     }
 
@@ -918,11 +844,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию    f(x) = th(arth(x)), -1 < x < 1, 
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -938,12 +862,12 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1, Y2;
               Y1 = (1 + angle) / (1 - angle);
               Y2 = 0.5 * Math.Log(Y1);
-              X = Math.Tanh(Y2);
-            return X;
+              F = Math.Tanh(Y2);
+            return F;
         }
     }
 
@@ -969,11 +893,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию   f(x) = arth(th(x)), 
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -989,12 +911,12 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1, Y2;
               Y1 = Math.Tanh(angle);
               Y2 = (1 + Y1) / (1 - Y1);
-              X = 0.5 * Math.Log(Y2);         
-            return X;
+              F = 0.5 * Math.Log(Y2);         
+            return F;
         }
     }
 
@@ -1021,11 +943,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию    f(x) = сth(arсth(x)), x < -1, x > 1,  
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -1041,12 +961,12 @@ namespace OpaqueFunctions
                     throw new Exception("Значение 'x' не принадлежит области определения!");
                 }
             #endif
-            double X = 1;
+            double F = 1;
             double Y1, Y2;
               Y1 = (angle + 1.0) / (angle - 1.0);
               Y2 = 0.5 * Math.Log(Y1);
-              X = 1.0 / Math.Tanh(Y2); 
-            return X;
+              F = 1.0 / Math.Tanh(Y2); 
+            return F;
         }
     }
 
@@ -1073,11 +993,9 @@ namespace OpaqueFunctions
     /// <summary>
     /// Реализует сложную функцию   f(x) = arcth(cth(x)), 
     /// где угол X задается параметром в радианах <paramref name="angle"/>. 
-    /// Результатом функции является целое число X - результат умножения левой части тождества само на себя столько раз,
-    /// сколько задано параметром <paramref name="count"/>.
+    /// Результатом функции является целое число X.
     /// </summary>
     /// <param name="angle">Угол в радианах</param>
-    /// <param name="count">Количество требуемых перемножений</param>
     /// <returns>1</returns>
 
     [OpaqueFunction()]
@@ -1087,13 +1005,13 @@ namespace OpaqueFunctions
     {
         public static double LOX_22_1_arcth_cth(double angle)
         {
-            double X = 1;
+            double F = 1;
             double Y1, Y2;
               Y1 = 1 / Math.Tanh(angle);
               Y2 = (Y1 + 1) / (Y1 - 1);
-              X = 0.5 * Math.Log(Y2);
+              F = 0.5 * Math.Log(Y2);
             
-            return X;
+            return F;
         }
     }
 
