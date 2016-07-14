@@ -28,6 +28,13 @@ namespace OpaqueFunctions
 
       
     }
+    /// <summary>
+    /// Структура содержит информацию для построения тригонометрической функции.
+    /// Структура содержит следующее поля:
+    /// <paramref name="function"/> имя тригонометрической функции;
+    /// <paramref name="argument"/> аргумент тригонометрической функции в радианах;
+    /// <paramref name="sign"/> знак тригонометрической функции;
+    /// </summary>
 
     public struct C_build_func
     {
