@@ -113,7 +113,7 @@ namespace SummerPractice_2016
                 file.Close();
 
                 ///5
-                file = new System.IO.StreamWriter(dest_folder + "Math_5_2_ln_N" + N.ToString() + ".csv");
+                file = new System.IO.StreamWriter(dest_folder + "Math_6_2_ln_N" + N.ToString() + ".csv");
                 file.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
                 result = 0;
                 x = -1;
@@ -124,7 +124,7 @@ namespace SummerPractice_2016
                     System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                     swatch.Start();
                     x += t;
-                    result = СMath_5_2_ln.Math_5_2_ln(x, N);
+                    result = СMath_6_2_ln.Math_6_2_ln(x, N);
                     absoluteError = Math.Abs(result - Math.Log(1 + x));
                     relativeError = Math.Abs(absoluteError / result);
                     swatch.Stop();
@@ -134,7 +134,7 @@ namespace SummerPractice_2016
                 file.Close();
 
                 ///6
-                file = new System.IO.StreamWriter(dest_folder + "Math_6_3_ln_N" + N.ToString() + ".csv");
+                file = new System.IO.StreamWriter(dest_folder + "Math_7_3_ln_N" + N.ToString() + ".csv");
                 file.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
 
                 result = 0;
@@ -145,7 +145,7 @@ namespace SummerPractice_2016
                     System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                     swatch.Start();
                     x += t;
-                    result = СMath_6_3_ln.Math_6_3_ln(a, x, N);
+                    result = СMath_7_3_ln.Math_7_3_ln(a, x, N);
                     absoluteError = Math.Abs(result - Math.Log(a + x));
                     relativeError = Math.Abs(absoluteError / result);
                     swatch.Stop();
@@ -155,30 +155,7 @@ namespace SummerPractice_2016
                 file.Close();
 
                 ///7
-                file = new System.IO.StreamWriter(dest_folder + "Math_7_2_ln_N" + N.ToString() + ".csv");
-                file.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
-
-                result = 0;
-                x = -1;
-
-
-                for (int i = 0; i < 199; i++)
-                {
-                    System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
-                    swatch.Start();
-                    x += t;
-                    result = СMath_7_2_ln.Math_7_2_ln(x, N);
-                    absoluteError = Math.Abs(result - Math.Log(1 + x));
-                    relativeError = Math.Abs(absoluteError / result);
-                    swatch.Stop();
-                    long time = swatch.ElapsedMilliseconds;
-                    file.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + time.ToString());
-                }
-                file.Close();
-
-                ///8
-                file =
-                new System.IO.StreamWriter(dest_folder + "Math_8_2_ln_N" + N.ToString() + ".csv");
+                file = new System.IO.StreamWriter(dest_folder + "Math_8_2_ln_N" + N.ToString() + ".csv");
                 file.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
 
                 result = 0;
@@ -199,8 +176,31 @@ namespace SummerPractice_2016
                 }
                 file.Close();
 
+                ///8
+                file =
+                new System.IO.StreamWriter(dest_folder + "Math_9_2_ln_N" + N.ToString() + ".csv");
+                file.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
+
+                result = 0;
+                x = -1;
+
+
+                for (int i = 0; i < 199; i++)
+                {
+                    System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
+                    swatch.Start();
+                    x += t;
+                    result = СMath_9_2_ln.Math_9_2_ln(x, N);
+                    absoluteError = Math.Abs(result - Math.Log(1 + x));
+                    relativeError = Math.Abs(absoluteError / result);
+                    swatch.Stop();
+                    long time = swatch.ElapsedMilliseconds;
+                    file.WriteLine(x.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString() + ';' + time.ToString());
+                }
+                file.Close();
+
                 ///9
-                file = new System.IO.StreamWriter(dest_folder + "Math_9_2_ln_N" + N.ToString() + ".csv");
+                file = new System.IO.StreamWriter(dest_folder + "Math_10_2_ln_N" + N.ToString() + ".csv");
                 file.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
 
                 result = 0;
@@ -211,7 +211,7 @@ namespace SummerPractice_2016
                     System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                     swatch.Start();
                     x += t;
-                    result = СMath_9_2_ln.Math_9_2_ln(x, N);
+                    result = СMath_10_2_ln.Math_10_2_ln(x, N);
                     absoluteError = Math.Abs(result - Math.Log((1 + x) / (1 - x)));
                     relativeError = Math.Abs(absoluteError / result);
                     swatch.Stop();
@@ -221,7 +221,7 @@ namespace SummerPractice_2016
                 file.Close();
 
                 ///10
-                file = new System.IO.StreamWriter(dest_folder + "Math_10_2_ln_N" + N.ToString() + ".csv");
+                file = new System.IO.StreamWriter(dest_folder + "Math_11_2_ln_N" + N.ToString() + ".csv");
                 file.WriteLine("x" + ';' + "absoluteError" + ';' + "relativeError" + ';' + "computation time (milliseconds)");
 
                 result = 0;
@@ -232,7 +232,7 @@ namespace SummerPractice_2016
                     System.Diagnostics.Stopwatch swatch = new System.Diagnostics.Stopwatch(); // измеритель времени, для каждой точки
                     swatch.Start();
                     x += t;
-                    result = СMath_10_2_ln.Math_10_2_ln(x, N);
+                    result = СMath_11_2_ln.Math_11_2_ln(x, N);
                     absoluteError = Math.Abs(result - Math.Log(x / (x - 1)));
                     relativeError = Math.Abs(absoluteError / result);
                     swatch.Stop();

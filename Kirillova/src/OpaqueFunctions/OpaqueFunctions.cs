@@ -195,11 +195,11 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
 
     [OpaqueFunction()]
-    [FunctionName("СMath_5_2_ln", "ln(1+x)")]
+    [FunctionName("СMath_6_2_ln", "ln(1+x)")]
 
-    public static class СMath_5_2_ln
+    public static class СMath_6_2_ln
     {
-        public static double Math_5_2_ln(double x, int count)
+        public static double Math_6_2_ln(double x, int count)
         {
 #if DEBUG
             if (x < -1)
@@ -218,7 +218,7 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_5_2_ln_in()
+        public static string Math_6_2_ln_in()
         {
             return "(-1, w)";
         }
@@ -236,11 +236,11 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
 
     [OpaqueFunction()]
-    [FunctionName("СMath_6_3_ln", "ln(x+a)")]
+    [FunctionName("СMath_7_3_ln", "ln(x+a)")]
 
-    public static class СMath_6_3_ln
+    public static class СMath_7_3_ln
     {
-        public static double Math_6_3_ln(double a, double x, int count)
+        public static double Math_7_3_ln(double a, double x, int count)
         {
 #if DEBUG
             if (x < -a)
@@ -259,7 +259,7 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_6_3_ln_in()
+        public static string Math_7_3_ln_in()
         {
             return "(-a, w)";
         }
@@ -276,11 +276,11 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
 
     [OpaqueFunction()]
-    [FunctionName("СMath_7_2_ln", "ln(1+x)")]
+    [FunctionName("СMath_8_2_ln", "ln(1+x)")]
 
-    public static class СMath_7_2_ln
+    public static class СMath_8_2_ln
     {
-        public static double Math_7_2_ln(double x, int count)
+        public static double Math_8_2_ln(double x, int count)
         {
 #if DEBUG
             if ((x < -1) || (x > 1))
@@ -298,7 +298,7 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_7_2_ln_in()
+        public static string Math_8_2_ln_in()
         {
             return "(-1, 1)";
         }
@@ -318,11 +318,11 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
 
     [OpaqueFunction()]
-    [FunctionName("СMath_8_2_ln", "ln(1+x)")]
+    [FunctionName("СMath_9_2_ln", "ln(1+x)")]
 
-    public static class СMath_8_2_ln
+    public static class СMath_9_2_ln
     {
-        public static double Math_8_2_ln(double x, int count)
+        public static double Math_9_2_ln(double x, int count)
         {
 #if DEBUG
             if ((x < -1) || (x > 1))
@@ -341,7 +341,7 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_8_2_ln_in()
+        public static string Math_9_2_ln_in()
         {
             return "(-1, 1)";
         }
@@ -358,11 +358,11 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
 
     [OpaqueFunction()]
-    [FunctionName("СMath_9_2_ln", "ln((1+x)/(1-x))")]
+    [FunctionName("СMath_10_2_ln", "ln((1+x)/(1-x))")]
 
-    public static class СMath_9_2_ln
+    public static class СMath_10_2_ln
     {
-        public static double Math_9_2_ln(double x, int count)
+        public static double Math_10_2_ln(double x, int count)
         {
 #if DEBUG
             if ((x < -1) || (x > 1))
@@ -381,7 +381,7 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_9_2_ln_in()
+        public static string Math_10_2_ln_in()
         {
             return "(-1, 1)";
         }
@@ -398,11 +398,11 @@ namespace OpaqueFunctions
     /// <param name="count">Количество требуемых итераций</param>
 
     [OpaqueFunction()]
-    [FunctionName("СMath_10_2_ln", "ln(x/(1-x))")]
+    [FunctionName("СMath_11_2_ln", "ln(x/(1-x))")]
 
-    public static class СMath_10_2_ln
+    public static class СMath_11_2_ln
     {
-        public static double Math_10_2_ln(double x, int count)
+        public static double Math_11_2_ln(double x, int count)
         {
 #if DEBUG
             if (x < 1)
@@ -420,7 +420,7 @@ namespace OpaqueFunctions
             return F;
         }
 
-        public static string Math_10_2_ln_in()
+        public static string Math_11_2_ln_in()
         {
             return "(1, w)";
         }
