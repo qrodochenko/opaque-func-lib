@@ -11,7 +11,7 @@ namespace SummerPractice_2016
     class Program
     {
         static void Main(string[] args) {
-            string offset = "D:\\Vedenev\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
+            string offset = "..\\..\\..\\..\\"; // чтобы выходные файлы оказались точно в папке с фамилией  
             MakeResultsSummaryFile("L00_58_1_arctg_arcctg", CL00_58_1_arctg_arcctg.L00_58_1_arctg_arcctg, 1);
             MakeResultsSummaryFile("L00_59_1_arctg_arccos", CL00_59_1_arctg_arccos.L00_59_1_arctg_arccos, 1);
             MakeResultsSummaryFile("L00_60_1_arcctg_arccos", CL00_60_1_arcctg_arccos.L00_60_1_arcctg_arccos, 1);
@@ -47,7 +47,7 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile(string funcname, Func<double,double> f, int N)
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = ("D:\\Vedenev\\csv\\");
+            string dest_folder = ("..\\..\\..\\..\\csv\\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             string dest = dest_folder + funcname + ".csv"; 
             System.IO.StreamWriter dest_file_writer =
@@ -77,7 +77,7 @@ namespace SummerPractice_2016
         static void MakeResultsSummaryFile(string funcname, Func<double,double,double> f) 
         {
             //генерирует файл .csv нужного формата
-            string dest_folder = ("D:\\Vedenev\\csv\\");
+            string dest_folder = ("..\\..\\..\\..\\csv\\");
             //здесь добавлено только количество итераций в файл. У вас другие параметры? По аналогии.
             //мы хотим равномерно покрыть область определения (или хорошей сходимости) функции number_of_points точками. Подойдите к выбору области аккуратно.
             double left_border_of_range = 0.1;
