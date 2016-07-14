@@ -27,4 +27,26 @@ namespace UnitTest
         }
     }
 
+[TestClass]
+public class UnitTest3
+{
+    [TestMethod]
+    public void TestMethod3()
+    {
+        double l = Cinterval_ww_finfin_3.interval_ww_finfin_3(1, 1, 2);
+        Assert.IsTrue(Math.Abs(l - 0.25) < Double.Epsilon, "false");
+    }
+}
 
+
+
+[TestClass]
+public class UnitTest4
+{
+    [TestMethod]
+    public void TestMethod4()
+    {
+        double p = Cinterval_ww_finfin_4.interval_ww_finfin_4(0);
+        Assert.IsTrue(Math.Abs(p - 1) < Double.Epsilon, "false");
+    }
+}
