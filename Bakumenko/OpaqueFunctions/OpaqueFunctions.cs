@@ -2,6 +2,14 @@
 
 namespace OpaqueFunctions
 {
+    public class OpaqueException : Exception
+    {
+        public OpaqueException() : base("Argument is out of range")
+        {
+
+        }
+    }
+
     /// <summary>
     /// Реализует 30.	f(x) = sin(arccos(x)) – (1 – x*x)^1/2
     /// </summary>
@@ -15,6 +23,12 @@ namespace OpaqueFunctions
     {
         public static double L00_30_1_sin_arccos(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, sinX, arccosX, sqrtX;
             arccosX = Math.Acos(angle);
             sinX = Math.Sin(arccosX);
@@ -53,6 +67,12 @@ namespace OpaqueFunctions
     {
         public static double L00_31_1_cos_arcsin(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, cosX, arcsinX, sqrtX;
             arcsinX = Math.Asin(angle);
             cosX = Math.Cos(arcsinX);
@@ -91,6 +111,12 @@ namespace OpaqueFunctions
     {
         public static double L00_32_1_sin_arctg_cos_arcctg(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, sinX, arctgX, cosX, arcctgX;
             arctgX = Math.Atan(angle);
             sinX = Math.Sin(arctgX);
@@ -130,6 +156,12 @@ namespace OpaqueFunctions
     {
         public static double L00_33_1_sin_arctg(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, sinX, arctgX, sqrtX;
             arctgX = Math.Atan(angle);
             sinX = Math.Sin(arctgX);
@@ -168,6 +200,12 @@ namespace OpaqueFunctions
     {
         public static double L00_34_1_cos_arcctg(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, cosX, arcctgX, sqrtX;
             arcctgX = Math.PI / 2 - Math.Atan(angle);
             cosX = Math.Cos(arcctgX);
@@ -205,6 +243,12 @@ namespace OpaqueFunctions
     {
         public static double L00_35_1_cos_arctg(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, cosX, arctgX, sqrtX;
             arctgX = Math.Atan(angle);
             cosX = Math.Cos(arctgX);
@@ -242,6 +286,12 @@ namespace OpaqueFunctions
     {
         public static double L00_36_1_sin_arcctg(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, sinX, arcctgX, sqrtX;
             arcctgX = Math.PI / 2 - Math.Atan(angle);
             sinX = Math.Sin(arcctgX);
@@ -279,6 +329,12 @@ namespace OpaqueFunctions
     {
         public static double L00_37_1_tg_arcsin(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, tgX, arcsinX, sqrtX;
             arcsinX = Math.Asin(angle);
             tgX = Math.Tan(arcsinX);
@@ -316,6 +372,12 @@ namespace OpaqueFunctions
     {
         public static double L00_38_1_ctg_arccos(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, ctgX, arccosX, sqrtX;
             arccosX = Math.Acos(angle);
             ctgX = 1 / Math.Tan(arccosX);
@@ -353,6 +415,12 @@ namespace OpaqueFunctions
     {
         public static double L00_39_1_tg_arccos(double angle)
         {
+#if DEBUG
+            if (angle <= -1 && angle >= 0)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, tgX, arccosX, sqrtX;
             arccosX = Math.Acos(angle);
             tgX = Math.Tan(arccosX);
@@ -390,6 +458,12 @@ namespace OpaqueFunctions
     {
         public static double L00_40_1_ctg_arcsin(double angle)
         {
+#if DEBUG
+            if (angle <= -1 && angle >= 0)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, ctgX, arcsinX, sqrtX;
             arcsinX = Math.Asin(angle);
             ctgX = 1 / Math.Tan(arcsinX);
@@ -427,6 +501,12 @@ namespace OpaqueFunctions
     {
         public static double L00_41_1_sin_arcctg_cos_arctg(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, sinX, cosX, arcctgX, arctgX;
             arcctgX = Math.PI / 2 - Math.Atan(angle);
             sinX = Math.Sin(arcctgX);
@@ -465,6 +545,12 @@ namespace OpaqueFunctions
     {
         public static double L00_42_1_tg_arctg(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= (Math.PI / 2))
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, tgX, arctgX;
             arctgX = Math.Atan(angle);
             tgX = Math.Tan(arctgX);
@@ -501,6 +587,12 @@ namespace OpaqueFunctions
     {
         public static double L00_43_1_tg_arcsin_ctg_arccos(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, tgX, ctgX, arcsinX, arccosX;
             arcsinX = Math.Asin(angle);
             tgX = Math.Tan(arcsinX);
@@ -539,6 +631,12 @@ namespace OpaqueFunctions
     {
         public static double L00_44_1_tg_arccos_ctg_arcsin(double angle)
         {
+#if DEBUG
+            if (angle <= -1 && angle >= 0)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, tgX, arccosX, arcsinX, ctgX;
             arccosX = Math.Acos(angle);
             tgX = Math.Tan(arccosX);
@@ -613,6 +711,12 @@ namespace OpaqueFunctions
     {
         public static double L00_46_1_arcsin_sin(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= (Math.PI / 2))
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, arcsinX, sinX;
             sinX = Math.Sin(angle);
             arcsinX = Math.Asin(sinX);
@@ -649,6 +753,12 @@ namespace OpaqueFunctions
     {
         public static double L00_47_1_arccos_cos(double angle)
         {
+#if DEBUG
+            if (angle <= 0 && angle >= Math.PI)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, arccosX, cosX;
             cosX = Math.Cos(angle);
             arccosX = Math.Acos(cosX);
@@ -685,6 +795,12 @@ namespace OpaqueFunctions
     {
         public static double L00_48_1_arctg_tg(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= (Math.PI / 2))
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, arctgX, tgX;
             tgX = Math.Tan(angle);
             arctgX = Math.Atan(tgX);
@@ -721,6 +837,12 @@ namespace OpaqueFunctions
     {
         public static double L00_49_1_arcctg_ctg(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, arcctgX, ctgX;
             ctgX = 1 / Math.Tan(angle);
             arcctgX = Math.PI / 2 - Math.Atan(ctgX);
@@ -793,6 +915,12 @@ namespace OpaqueFunctions
     {
         public static double L00_51_1_arctg_arcsin(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, arctgX, arcsinX, sqrtX;
             arcsinX = Math.Asin(angle);
             sqrtX = angle / Math.Sqrt(1 - angle * angle);
@@ -830,6 +958,12 @@ namespace OpaqueFunctions
     {
         public static double L00_52_1_arcsin_arccos(double angle)
         {
+#if DEBUG
+            if (angle <= 0 && angle >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, arccosX, sqrtX, arcsinX;
             sqrtX = Math.Sqrt(1 - angle * angle);
             arccosX = Math.Acos(sqrtX);
@@ -867,6 +1001,12 @@ namespace OpaqueFunctions
     { 
         public static double L00_53_1_arcctg_arcsin(double angle)
         {
+#if DEBUG
+            if (angle <= 0 && angle >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, arcctgX, sqrtX, arcsinX;
             sqrtX = Math.Sqrt(1 - angle * angle) / angle;
             arcctgX = Math.PI / 2 - Math.Atan(sqrtX);
@@ -904,6 +1044,12 @@ namespace OpaqueFunctions
     {
         public static double L00_54_1_arccos_arcctg(double angle)
         {
+#if DEBUG
+            if (angle <= 0 && angle >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, arccosX, arcctgX, sqrtX;
             sqrtX = Math.Sqrt(1 - angle * angle);
             arccosX = Math.Acos(sqrtX);
@@ -941,6 +1087,12 @@ namespace OpaqueFunctions
     {
         public static double L00_55_1_arccos_arcctg(double angle)
         {
+#if DEBUG
+            if (Math.Abs(angle) >= 1)
+            {
+                throw new OpaqueException();
+            }
+#endif
             double X, arcctgX, sqrtX, arccosX;
             sqrtX = Math.Sqrt(1 - angle * angle);
             arcctgX = Math.PI / 2- Math.Atan(angle / sqrtX);
@@ -978,6 +1130,12 @@ namespace OpaqueFunctions
     {
         public static double L00_56_1_arccos_arctg(double angle)
         {
+#if DEBUG
+            if (angle <= 0 && angle >= 1)
+            {
+                throw new OpaqueException();
+            
+#endif
             double X, arctgX, sqrtX, arccosX;
             sqrtX = (Math.Sqrt(1 - angle * angle));
             arccosX = Math.Acos(angle);
