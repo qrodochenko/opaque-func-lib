@@ -116,9 +116,7 @@ priv_sin_3 C:\git_reps\summer_practice\opaque-func-lib\Golubev\SummerPractice_20
 priv_cos_3 C:\git_reps\summer_practice\opaque-func-lib\Golubev\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 priv_tan_6 C:\git_reps\summer_practice\opaque-func-lib\Golubev\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 priv_ctg_6 C:\git_reps\summer_practice\opaque-func-lib\Golubev\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs  Not detected
-interval_ww_ww_1 C:\git_reps\summer_practice\opaque-func-lib\Khaustova\FunctionsLibrary\OpaqueFunctions.cs  Not detected
 interval_ww_ww_1_in C:\git_reps\summer_practice\opaque-func-lib\Khaustova\FunctionsLibrary\OpaqueFunctions.cs  Not detected
-interval_ww_ww_1_inv C:\git_reps\summer_practice\opaque-func-lib\Khaustova\FunctionsLibrary\OpaqueFunctions.cs  Not detected
 interval_ww_finfin_2 C:\git_reps\summer_practice\opaque-func-lib\Khaustova\FunctionsLibrary\OpaqueFunctions.cs  Not detected
 interval_ww_finfin_2_in C:\git_reps\summer_practice\opaque-func-lib\Khaustova\FunctionsLibrary\OpaqueFunctions.cs  Not detected
 interval_ww_finfin_2_inv C:\git_reps\summer_practice\opaque-func-lib\Khaustova\FunctionsLibrary\OpaqueFunctions.cs  Not detected
@@ -209,10 +207,12 @@ LOX_21_1_cth_arcth_in C:\git_reps\summer_practice\opaque-func-lib\Kondratenko\Su
 LOX_22_1_arcth_cth C:\git_reps\summer_practice\opaque-func-lib\Kondratenko\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 LOX_22_1_arcth_cth_in C:\git_reps\summer_practice\opaque-func-lib\Kondratenko\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 MathApprox_1_2 C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
+MathApprox_1_2_CheckError C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 MathApprox_1_2_in C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 MathApprox_1_Compute_2 C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 MathApprox_1_Compute_2_in C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 MathApprox_2_2 C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
+MathApprox_2_2_CheckError C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 MathApprox_2_2_in C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 MathApprox_2_Compute_2 C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 MathApprox_2_Compute_2_in C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
