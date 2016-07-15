@@ -594,7 +594,7 @@ namespace ModuleTests
             for (int i = 1; i <= 10; i++)
             {
                 var rnd = new Random();
-                var arg = (rnd.NextDouble() - 0.5) * 2;
+                var arg = rnd.NextDouble() * Math.PI / 2;
 
                 double F = CL00_49_1_arcctg_ctg.L00_49_1_arcctg_ctg(arg);
                 Assert.IsTrue(Math.Abs(F - 0) < treshold, "Значение функции не ноль!");
@@ -604,7 +604,7 @@ namespace ModuleTests
         [TestMethod]
         public void Test_L00_49_1_arcctg_ctg_in()
         {
-            string str = "(-1, 1)";
+            string str = "(0, Pi/2)";
             string F = CL00_49_1_arcctg_ctg_in.L00_49_1_arcctg_ctg_in();
             Assert.IsTrue(F == str, "Область определения задана неверно!");
         }
