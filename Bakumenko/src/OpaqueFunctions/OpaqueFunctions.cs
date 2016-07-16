@@ -416,7 +416,7 @@ namespace OpaqueFunctions
         public static double L00_39_1_tg_arccos(double angle)
         {
 #if DEBUG
-            if (angle <= -1 && angle >= 0)
+            if (angle <= -1 || angle >= 0)
             {
                 throw new OpaqueException();
             }
@@ -459,7 +459,7 @@ namespace OpaqueFunctions
         public static double L00_40_1_ctg_arcsin(double angle)
         {
 #if DEBUG
-            if (angle <= -1 && angle >= 0)
+            if (angle <= -1 || angle >= 0)
             {
                 throw new OpaqueException();
             }
@@ -632,7 +632,7 @@ namespace OpaqueFunctions
         public static double L00_44_1_tg_arccos_ctg_arcsin(double angle)
         {
 #if DEBUG
-            if (angle <= -1 && angle >= 0)
+            if (angle <= -1 || angle >= 0)
             {
                 throw new OpaqueException();
             }
@@ -754,7 +754,7 @@ namespace OpaqueFunctions
         public static double L00_47_1_arccos_cos(double angle)
         {
 #if DEBUG
-            if (angle <= 0 && angle >= Math.PI)
+            if (angle <= 0 || angle >= Math.PI)
             {
                 throw new OpaqueException();
             }
@@ -838,7 +838,7 @@ namespace OpaqueFunctions
         public static double L00_49_1_arcctg_ctg(double angle)
         {
 #if DEBUG
-            if (Math.Abs(angle) >= 1)
+            if (Math.Abs(angle) >= (Math.PI / 2) || (Math.Abs(angle) <= 0))
             {
                 throw new OpaqueException();
             }
@@ -862,7 +862,7 @@ namespace OpaqueFunctions
     {
         public static string L00_49_1_arcctg_ctg_in()
         {
-            string str = "(-1, 1)";
+            string str = "(0, Pi/2)";
             return str;
         }
     }
@@ -959,7 +959,7 @@ namespace OpaqueFunctions
         public static double L00_52_1_arcsin_arccos(double angle)
         {
 #if DEBUG
-            if (angle <= 0 && angle >= 1)
+            if ((Math.Abs(angle) >= 1) || (Math.Abs(angle) <= 0))
             {
                 throw new OpaqueException();
             }
@@ -1002,7 +1002,7 @@ namespace OpaqueFunctions
         public static double L00_53_1_arcctg_arcsin(double angle)
         {
 #if DEBUG
-            if (angle <= 0 && angle >= 1)
+            if (angle <= 0 || angle >= 1)
             {
                 throw new OpaqueException();
             }
@@ -1045,7 +1045,7 @@ namespace OpaqueFunctions
         public static double L00_54_1_arccos_arcctg(double angle)
         {
 #if DEBUG
-            if (angle <= 0 && angle >= 1)
+            if (angle <= 0 || angle >= 1)
             {
                 throw new OpaqueException();
             }
@@ -1131,7 +1131,7 @@ namespace OpaqueFunctions
         public static double L00_56_1_arccos_arctg(double angle)
         {
 #if DEBUG
-            if (angle <= 0 && angle >= 1)
+            if (angle <= 0 || angle >= 1)
             {
                 throw new OpaqueException();
             }
