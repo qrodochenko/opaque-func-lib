@@ -8,7 +8,6 @@ Can't compile general code: Math_7_2_ln C:\git_reps\summer_practice\opaque-func-
 Can't compile general code: Math_8_2_ln C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
 Can't compile general code: Math_9_2_ln C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
 Can't compile general code: Math_10_2_ln C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_3_2_ln C:\git_reps\summer_practice\opaque-func-lib\Kirillova\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs
 Can't compile general code: LOX_9_2_xpowy_xpown_1divn C:\git_reps\summer_practice\opaque-func-lib\Kondratenko\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
 Can't compile general code: LOX_10_2_xpown_xpown_1divn C:\git_reps\summer_practice\opaque-func-lib\Kondratenko\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
 Can't compile general code: LOX_11_2_logax_apowx C:\git_reps\summer_practice\opaque-func-lib\Kondratenko\SummerPractice_2016\OpaqueFunctions\OpaqueFunctions.cs
@@ -19,7 +18,6 @@ Universal error: Cos_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\
 Taylor error: Cos_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\OpaqueFunctions\OpaqueFunctions.cs
 Universal error: Tg_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\OpaqueFunctions\OpaqueFunctions.cs
 Taylor error: Tg_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Arcctg_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\OpaqueFunctions\OpaqueFunctions.cs
 Universal error: Cosec_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\OpaqueFunctions\OpaqueFunctions.cs
 Taylor error: Cosec_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\OpaqueFunctions\OpaqueFunctions.cs
 Universal error: Xpow2_Sin_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\OpaqueFunctions\OpaqueFunctions.cs
@@ -30,33 +28,9 @@ Universal error: Xpow3_Sin_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtso
 Taylor error: Xpow3_Sin_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\OpaqueFunctions\OpaqueFunctions.cs
 Universal error: Xpow3_Cos_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\OpaqueFunctions\OpaqueFunctions.cs
 Taylor error: Xpow3_Cos_1 C:\git_reps\summer_practice\opaque-func-lib\Kravtsov\src\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_1_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_2_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_3_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_4_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_5_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_6_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_7_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_8_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_9_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_10_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_11_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_12_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_13_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_14_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_15_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_16_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_17_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_18_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_19_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Math_20_2 C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions.cs
 Universal error: Tg_9 C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs
 Taylor error: Tg_9 C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs
 Universal error: Ctg_11 C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs
 Taylor error: Ctg_11 C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs
 Universal error: Cosec_13 C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs
 Taylor error: Cosec_13 C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Sin_15 C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Cos_17 C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Sin_19 C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs
-Universal error: Cos_21 C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs
