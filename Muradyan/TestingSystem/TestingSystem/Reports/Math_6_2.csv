@@ -1,502 +1,502 @@
 "                      Function";"    N";"   Args";"";"      Val";"    Ideal";"      Abs";"      Rel"
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,998;2|3 ;    1,195 ;    1,189; 0,006079; 0,005113
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,994;2|3 ;    1,194 ;    1,188;  0,00585; 0,004923
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,99;2|3 ;    1,193 ;    1,188;  0,00563;  0,00474
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,986;2|3 ;    1,193 ;    1,187; 0,005416; 0,004563
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,982;2|3 ;    1,192 ;    1,187;  0,00521; 0,004391
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,978;2|3 ;    1,191 ;    1,186; 0,005011; 0,004226
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,974;2|3 ;     1,19 ;    1,185; 0,004819; 0,004066
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,97;2|3 ;    1,189 ;    1,185; 0,004634; 0,003911
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,966;2|3 ;    1,189 ;    1,184; 0,004455; 0,003762
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,962;2|3 ;    1,188 ;    1,184; 0,004282; 0,003618
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,958;2|3 ;    1,187 ;    1,183; 0,004115; 0,003479
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,954;2|3 ;    1,186 ;    1,182; 0,003954; 0,003344
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,95;2|3 ;    1,186 ;    1,182; 0,003798; 0,003214
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,946;2|3 ;    1,185 ;    1,181; 0,003648; 0,003089
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,942;2|3 ;    1,184 ;     1,18; 0,003504; 0,002968
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,938;2|3 ;    1,183 ;     1,18; 0,003364; 0,002851
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,934;2|3 ;    1,183 ;    1,179;  0,00323; 0,002739
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,93;2|3 ;    1,182 ;    1,179;   0,0031;  0,00263
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,926;2|3 ;    1,181 ;    1,178; 0,002975; 0,002525
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,922;2|3 ;     1,18 ;    1,177; 0,002854; 0,002424
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,918;2|3 ;     1,18 ;    1,177; 0,002738; 0,002327
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,914;2|3 ;    1,179 ;    1,176; 0,002626; 0,002233
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,91;2|3 ;    1,178 ;    1,176; 0,002519; 0,002142
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,906;2|3 ;    1,177 ;    1,175; 0,002415; 0,002055
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,902;2|3 ;    1,177 ;    1,174; 0,002315; 0,001971
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,898;2|3 ;    1,176 ;    1,174; 0,002218;  0,00189
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,894;2|3 ;    1,175 ;    1,173; 0,002126; 0,001812
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,89;2|3 ;    1,175 ;    1,173; 0,002037; 0,001737
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,886;2|3 ;    1,174 ;    1,172; 0,001951; 0,001665
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,882;2|3 ;    1,173 ;    1,171; 0,001868; 0,001595
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,878;2|3 ;    1,172 ;    1,171; 0,001789; 0,001528
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,874;2|3 ;    1,172 ;     1,17; 0,001712; 0,001463
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,87;2|3 ;    1,171 ;    1,169; 0,001639; 0,001401
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,866;2|3 ;     1,17 ;    1,169; 0,001568; 0,001342
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,862;2|3 ;     1,17 ;    1,168;   0,0015; 0,001284
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,858;2|3 ;    1,169 ;    1,168; 0,001435; 0,001229
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,854;2|3 ;    1,168 ;    1,167; 0,001372; 0,001176
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,85;2|3 ;    1,168 ;    1,166; 0,001312; 0,001125
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,846;2|3 ;    1,167 ;    1,166; 0,001254; 0,001076
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,842;2|3 ;    1,166 ;    1,165; 0,001198; 0,001028
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,838;2|3 ;    1,166 ;    1,164; 0,001145;0,0009832
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,834;2|3 ;    1,165 ;    1,164; 0,001093;0,0009396
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,83;2|3 ;    1,164 ;    1,163; 0,001044;0,0008978
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,826;2|3 ;    1,163 ;    1,162;0,0009971;0,0008577
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,822;2|3 ;    1,163 ;    1,162;0,0009517;0,0008192
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,818;2|3 ;    1,162 ;    1,161;0,0009083;0,0007822
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,814;2|3 ;    1,161 ;    1,161;0,0008666;0,0007467
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,81;2|3 ;    1,161 ;     1,16;0,0008266;0,0007127
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,806;2|3 ;     1,16 ;    1,159;0,0007883;  0,00068
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,802;2|3 ;    1,159 ;    1,159;0,0007516;0,0006487
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,798;2|3 ;    1,159 ;    1,158;0,0007164;0,0006187
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,794;2|3 ;    1,158 ;    1,157;0,0006827;0,0005899
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,79;2|3 ;    1,157 ;    1,157;0,0006505;0,0005623
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,786;2|3 ;    1,157 ;    1,156;0,0006195;0,0005359
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,782;2|3 ;    1,156 ;    1,155;  0,00059;0,0005106
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,778;2|3 ;    1,155 ;    1,155;0,0005616;0,0004864
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,774;2|3 ;    1,155 ;    1,154;0,0005345;0,0004632
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,77;2|3 ;    1,154 ;    1,153;0,0005086;0,0004409
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,766;2|3 ;    1,153 ;    1,153;0,0004838;0,0004197
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,762;2|3 ;    1,153 ;    1,152;0,0004601;0,0003993
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,758;2|3 ;    1,152 ;    1,151;0,0004374;0,0003799
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,754;2|3 ;    1,151 ;    1,151;0,0004158;0,0003613
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,75;2|3 ;    1,151 ;     1,15;0,0003951;0,0003435
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,746;2|3 ;     1,15 ;     1,15;0,0003753;0,0003265
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,742;2|3 ;    1,149 ;    1,149;0,0003564;0,0003102
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,738;2|3 ;    1,149 ;    1,148;0,0003384;0,0002947
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,734;2|3 ;    1,148 ;    1,148;0,0003211;0,0002799
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,73;2|3 ;    1,147 ;    1,147;0,0003047;0,0002657
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,726;2|3 ;    1,146 ;    1,146; 0,000289;0,0002522
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,722;2|3 ;    1,146 ;    1,146;0,0002741;0,0002393
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,718;2|3 ;    1,145 ;    1,145;0,0002598; 0,000227
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,714;2|3 ;    1,144 ;    1,144;0,0002463;0,0002152
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,71;2|3 ;    1,144 ;    1,144;0,0002333; 0,000204
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,706;2|3 ;    1,143 ;    1,143; 0,000221;0,0001933
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,702;2|3 ;    1,142 ;    1,142;0,0002092;0,0001832
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,698;2|3 ;    1,142 ;    1,142; 0,000198;0,0001735
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,694;2|3 ;    1,141 ;    1,141;0,0001874;0,0001642
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,69;2|3 ;     1,14 ;     1,14;0,0001772;0,0001554
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,686;2|3 ;     1,14 ;     1,14;0,0001676;0,0001471
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,682;2|3 ;    1,139 ;    1,139;0,0001584;0,0001391
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,678;2|3 ;    1,138 ;    1,138;0,0001497;0,0001315
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,674;2|3 ;    1,138 ;    1,137;0,0001414;0,0001243
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,67;2|3 ;    1,137 ;    1,137;0,0001335;0,0001175
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,666;2|3 ;    1,136 ;    1,136;0,0001261; 0,000111
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,662;2|3 ;    1,136 ;    1,135;0,0001189;0,0001048
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,658;2|3 ;    1,135 ;    1,135;0,0001122;9,888E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,654;2|3 ;    1,134 ;    1,134;0,0001058;9,329E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,65;2|3 ;    1,133 ;    1,133;9,973E-05;8,799E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,646;2|3 ;    1,133 ;    1,133;9,397E-05;8,296E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,642;2|3 ;    1,132 ;    1,132;8,851E-05;7,819E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,638;2|3 ;    1,131 ;    1,131;8,333E-05;7,366E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,634;2|3 ;    1,131 ;    1,131;7,843E-05;6,937E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,63;2|3 ;     1,13 ;     1,13;7,378E-05; 6,53E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,626;2|3 ;    1,129 ;    1,129;6,939E-05;6,145E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,622;2|3 ;    1,129 ;    1,129;6,523E-05; 5,78E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,618;2|3 ;    1,128 ;    1,128;6,129E-05;5,435E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,614;2|3 ;    1,127 ;    1,127;5,757E-05;5,108E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,61;2|3 ;    1,126 ;    1,126;5,405E-05;4,798E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,606;2|3 ;    1,126 ;    1,126;5,073E-05;4,506E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,602;2|3 ;    1,125 ;    1,125;4,758E-05; 4,23E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,598;2|3 ;    1,124 ;    1,124;4,462E-05;3,968E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,594;2|3 ;    1,124 ;    1,124;4,182E-05;3,722E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,59;2|3 ;    1,123 ;    1,123;3,918E-05;3,489E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,586;2|3 ;    1,122 ;    1,122;3,668E-05;3,269E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,582;2|3 ;    1,122 ;    1,122;3,434E-05;3,062E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,578;2|3 ;    1,121 ;    1,121;3,212E-05;2,866E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,574;2|3 ;     1,12 ;     1,12;3,004E-05;2,682E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,57;2|3 ;    1,119 ;    1,119;2,807E-05;2,508E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,566;2|3 ;    1,119 ;    1,119;2,623E-05;2,344E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,562;2|3 ;    1,118 ;    1,118;2,449E-05;2,191E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,558;2|3 ;    1,117 ;    1,117;2,285E-05;2,046E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,554;2|3 ;    1,117 ;    1,117;2,132E-05;1,909E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,55;2|3 ;    1,116 ;    1,116;1,988E-05;1,781E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,546;2|3 ;    1,115 ;    1,115;1,852E-05;1,661E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,542;2|3 ;    1,114 ;    1,114;1,725E-05;1,548E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,538;2|3 ;    1,114 ;    1,114;1,605E-05;1,442E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,534;2|3 ;    1,113 ;    1,113;1,494E-05;1,342E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,53;2|3 ;    1,112 ;    1,112;1,389E-05;1,249E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,526;2|3 ;    1,111 ;    1,111;1,291E-05;1,161E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,522;2|3 ;    1,111 ;    1,111;1,199E-05;1,079E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,518;2|3 ;     1,11 ;     1,11;1,112E-05;1,002E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,514;2|3 ;    1,109 ;    1,109;1,032E-05;9,304E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,51;2|3 ;    1,109 ;    1,109;9,568E-06;8,631E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,506;2|3 ;    1,108 ;    1,108;8,865E-06;8,002E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,502;2|3 ;    1,107 ;    1,107;8,208E-06;7,415E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,498;2|3 ;    1,106 ;    1,106;7,596E-06;6,866E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,494;2|3 ;    1,106 ;    1,106;7,025E-06;6,354E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,49;2|3 ;    1,105 ;    1,105;6,492E-06;5,876E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,486;2|3 ;    1,104 ;    1,104;5,996E-06;5,431E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,482;2|3 ;    1,103 ;    1,103;5,534E-06;5,016E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,478;2|3 ;    1,103 ;    1,103;5,104E-06;4,629E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,474;2|3 ;    1,102 ;    1,102;4,704E-06;4,269E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,47;2|3 ;    1,101 ;    1,101;4,333E-06;3,935E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,466;2|3 ;      1,1 ;      1,1;3,988E-06;3,624E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,462;2|3 ;      1,1 ;      1,1;3,668E-06;3,335E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,458;2|3 ;    1,099 ;    1,099;3,371E-06;3,067E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,454;2|3 ;    1,098 ;    1,098;3,095E-06;2,819E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,45;2|3 ;    1,097 ;    1,097; 2,84E-06;2,588E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,446;2|3 ;    1,097 ;    1,097;2,604E-06;2,375E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,442;2|3 ;    1,096 ;    1,096;2,386E-06;2,177E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,438;2|3 ;    1,095 ;    1,095;2,184E-06;1,994E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,434;2|3 ;    1,094 ;    1,094;1,998E-06;1,826E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,43;2|3 ;    1,094 ;    1,094;1,826E-06; 1,67E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,426;2|3 ;    1,093 ;    1,093;1,667E-06;1,526E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,422;2|3 ;    1,092 ;    1,092;1,521E-06;1,393E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,418;2|3 ;    1,091 ;    1,091;1,386E-06; 1,27E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,414;2|3 ;     1,09 ;     1,09;1,262E-06;1,158E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,41;2|3 ;     1,09 ;     1,09;1,149E-06;1,054E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,406;2|3 ;    1,089 ;    1,089;1,044E-06;9,588E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,402;2|3 ;    1,088 ;    1,088;9,481E-07;8,713E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,398;2|3 ;    1,087 ;    1,087;8,601E-07; 7,91E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,394;2|3 ;    1,087 ;    1,087;7,795E-07;7,174E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,39;2|3 ;    1,086 ;    1,086;7,057E-07;  6,5E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,386;2|3 ;    1,085 ;    1,085;6,383E-07;5,883E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,382;2|3 ;    1,084 ;    1,084;5,766E-07;5,318E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,378;2|3 ;    1,083 ;    1,083;5,204E-07;4,803E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,374;2|3 ;    1,083 ;    1,083;4,691E-07;4,333E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,37;2|3 ;    1,082 ;    1,082;4,224E-07;3,904E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,366;2|3 ;    1,081 ;    1,081;3,799E-07;3,514E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,362;2|3 ;     1,08 ;     1,08;3,413E-07;3,159E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,358;2|3 ;     1,08 ;     1,08;3,062E-07;2,837E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,354;2|3 ;    1,079 ;    1,079;2,744E-07;2,544E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,35;2|3 ;    1,078 ;    1,078;2,456E-07;2,278E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,346;2|3 ;    1,077 ;    1,077;2,195E-07;2,038E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,342;2|3 ;    1,076 ;    1,076; 1,96E-07;1,821E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,338;2|3 ;    1,076 ;    1,076;1,747E-07;1,624E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,334;2|3 ;    1,075 ;    1,075;1,555E-07;1,447E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,33;2|3 ;    1,074 ;    1,074;1,382E-07;1,287E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,326;2|3 ;    1,073 ;    1,073;1,227E-07;1,143E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,322;2|3 ;    1,072 ;    1,072;1,087E-07;1,014E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,318;2|3 ;    1,071 ;    1,071;9,622E-08; 8,98E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,314;2|3 ;    1,071 ;    1,071;8,502E-08;7,941E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,31;2|3 ;     1,07 ;     1,07;7,499E-08; 7,01E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,306;2|3 ;    1,069 ;    1,069;6,604E-08;6,178E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,302;2|3 ;    1,068 ;    1,068;5,806E-08;5,435E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,298;2|3 ;    1,067 ;    1,067;5,096E-08;4,774E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,294;2|3 ;    1,067 ;    1,067;4,464E-08;4,185E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,29;2|3 ;    1,066 ;    1,066;3,903E-08;3,663E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,286;2|3 ;    1,065 ;    1,065;3,407E-08;3,199E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,282;2|3 ;    1,064 ;    1,064;2,968E-08;2,789E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,278;2|3 ;    1,063 ;    1,063; 2,58E-08;2,426E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,274;2|3 ;    1,062 ;    1,062;2,238E-08;2,107E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,27;2|3 ;    1,062 ;    1,062;1,938E-08;1,825E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,266;2|3 ;    1,061 ;    1,061;1,674E-08;1,578E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,262;2|3 ;     1,06 ;     1,06;1,442E-08;1,361E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,258;2|3 ;    1,059 ;    1,059; 1,24E-08;1,171E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,254;2|3 ;    1,058 ;    1,058;1,064E-08;1,005E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,25;2|3 ;    1,057 ;    1,057;9,104E-09; 8,61E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,246;2|3 ;    1,057 ;    1,057;7,771E-09;7,355E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,242;2|3 ;    1,056 ;    1,056;6,615E-09;6,266E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,238;2|3 ;    1,055 ;    1,055;5,616E-09;5,324E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,234;2|3 ;    1,054 ;    1,054;4,754E-09;4,511E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,23;2|3 ;    1,053 ;    1,053;4,013E-09; 3,81E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,226;2|3 ;    1,052 ;    1,052;3,377E-09;3,209E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,222;2|3 ;    1,051 ;    1,051;2,833E-09;2,695E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,218;2|3 ;    1,051 ;    1,051;2,369E-09;2,255E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,214;2|3 ;     1,05 ;     1,05;1,974E-09;1,881E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,21;2|3 ;    1,049 ;    1,049; 1,64E-09;1,563E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,206;2|3 ;    1,048 ;    1,048;1,357E-09;1,295E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,202;2|3 ;    1,047 ;    1,047;1,119E-09;1,068E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,198;2|3 ;    1,046 ;    1,046;9,187E-10;8,781E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,194;2|3 ;    1,045 ;    1,045;7,513E-10;7,187E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,19;2|3 ;    1,044 ;    1,044;6,119E-10;5,858E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,186;2|3 ;    1,044 ;    1,044;4,961E-10;4,754E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,182;2|3 ;    1,043 ;    1,043;4,004E-10; 3,84E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,178;2|3 ;    1,042 ;    1,042;3,216E-10;3,087E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,174;2|3 ;    1,041 ;    1,041; 2,57E-10;2,469E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,17;2|3 ;     1,04 ;     1,04;2,043E-10;1,964E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,166;2|3 ;    1,039 ;    1,039;1,615E-10;1,554E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,162;2|3 ;    1,038 ;    1,038;1,269E-10;1,223E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,158;2|3 ;    1,037 ;    1,037;9,916E-11;9,559E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,154;2|3 ;    1,036 ;    1,036;7,697E-11;7,426E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,15;2|3 ;    1,036 ;    1,036;5,934E-11;5,731E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,146;2|3 ;    1,035 ;    1,035;4,543E-11;4,391E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,142;2|3 ;    1,034 ;    1,034;3,452E-11;3,339E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,138;2|3 ;    1,033 ;    1,033;2,602E-11;2,519E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,134;2|3 ;    1,032 ;    1,032;1,945E-11;1,885E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,13;2|3 ;    1,031 ;    1,031;1,441E-11;1,398E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,126;2|3 ;     1,03 ;     1,03;1,058E-11;1,027E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,122;2|3 ;    1,029 ;    1,029;7,685E-12;7,467E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,118;2|3 ;    1,028 ;    1,028;5,524E-12;5,373E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,114;2|3 ;    1,027 ;    1,027;3,926E-12;3,821E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,11;2|3 ;    1,026 ;    1,026;2,756E-12;2,685E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,106;2|3 ;    1,026 ;    1,026;1,908E-12;1,861E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,102;2|3 ;    1,025 ;    1,025;1,304E-12;1,272E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,098;2|3 ;    1,024 ;    1,024;8,764E-13;8,562E-13
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,094;2|3 ;    1,023 ;    1,023;5,798E-13;5,669E-13
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,09;2|3 ;    1,022 ;    1,022;3,764E-13;3,683E-13
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,086;2|3 ;    1,021 ;    1,021;2,396E-13;2,347E-13
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,082;2|3 ;     1,02 ;     1,02;1,494E-13;1,465E-13
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,078;2|3 ;    1,019 ;    1,019;9,104E-14;8,934E-14
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,074;2|3 ;    1,018 ;    1,018;5,396E-14;  5,3E-14
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,07;2|3 ;    1,017 ;    1,017;3,109E-14;3,056E-14
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,066;2|3 ;    1,016 ;    1,016; 1,71E-14;1,683E-14
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,062;2|3 ;    1,015 ;    1,015;9,326E-15;9,187E-15
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,058;2|3 ;    1,014 ;    1,014;4,663E-15;4,598E-15
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,054;2|3 ;    1,013 ;    1,013;2,442E-15;2,411E-15
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,05;2|3 ;    1,012 ;    1,012;8,882E-16;8,774E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,046;2|3 ;    1,011 ;    1,011;        0;        0
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,042;2|3 ;     1,01 ;     1,01;        0;        0
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,038;2|3 ;    1,009 ;    1,009;4,441E-16;  4,4E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,034;2|3 ;    1,008 ;    1,008;4,441E-16;4,404E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,03;2|3 ;    1,007 ;    1,007; 2,22E-16;2,204E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,026;2|3 ;    1,006 ;    1,006; 2,22E-16;2,206E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,022;2|3 ;    1,005 ;    1,005;        0;        0
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,018;2|3 ;    1,004 ;    1,004; 2,22E-16;2,211E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,014;2|3 ;    1,003 ;    1,003;        0;        0
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  -0,01;2|3 ;    1,002 ;    1,002; 2,22E-16;2,215E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,006;2|3 ;    1,001 ;    1,001; 2,22E-16;2,217E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10; -0,002;2|3 ;        1 ;        1;        0;        0
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,002;2|3 ;   0,9995 ;   0,9995;        0;        0
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,006;2|3 ;   0,9985 ;   0,9985; 1,11E-16;1,112E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,01;2|3 ;   0,9975 ;   0,9975;        0;        0
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,014;2|3 ;   0,9965 ;   0,9965; 2,22E-16;2,228E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,018;2|3 ;   0,9955 ;   0,9955; 1,11E-16;1,115E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,022;2|3 ;   0,9945 ;   0,9945; 1,11E-16;1,116E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,026;2|3 ;   0,9934 ;   0,9934;        0;        0
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,03;2|3 ;   0,9924 ;   0,9924; 1,11E-16;1,119E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,034;2|3 ;   0,9914 ;   0,9914; 1,11E-16; 1,12E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,038;2|3 ;   0,9904 ;   0,9904;        0;        0
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,042;2|3 ;   0,9893 ;   0,9893; 2,22E-16;2,244E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,046;2|3 ;   0,9883 ;   0,9883;4,441E-16;4,493E-16
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,05;2|3 ;   0,9873 ;   0,9873;1,221E-15;1,237E-15
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,054;2|3 ;   0,9862 ;   0,9862;2,554E-15;2,589E-15
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,058;2|3 ;   0,9852 ;   0,9852;5,329E-15;5,409E-15
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,062;2|3 ;   0,9841 ;   0,9841;1,033E-14;1,049E-14
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,066;2|3 ;   0,9831 ;   0,9831;1,943E-14;1,976E-14
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,07;2|3 ;    0,982 ;    0,982;3,508E-14;3,573E-14
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,074;2|3 ;    0,981 ;    0,981;6,128E-14;6,247E-14
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,078;2|3 ;   0,9799 ;   0,9799;1,045E-13;1,066E-13
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,082;2|3 ;   0,9788 ;   0,9788; 1,73E-13;1,767E-13
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,086;2|3 ;   0,9778 ;   0,9778;2,793E-13;2,857E-13
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,09;2|3 ;   0,9767 ;   0,9767;4,416E-13;4,522E-13
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,094;2|3 ;   0,9756 ;   0,9756; 6,85E-13;7,021E-13
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,098;2|3 ;   0,9745 ;   0,9745;1,043E-12;1,071E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,102;2|3 ;   0,9735 ;   0,9735;1,563E-12;1,605E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,106;2|3 ;   0,9724 ;   0,9724;2,305E-12; 2,37E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,11;2|3 ;   0,9713 ;   0,9713;3,351E-12; 3,45E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,114;2|3 ;   0,9702 ;   0,9702;4,808E-12;4,956E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,118;2|3 ;   0,9691 ;   0,9691;6,815E-12;7,033E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,122;2|3 ;    0,968 ;    0,968; 9,55E-12;9,865E-12
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,126;2|3 ;   0,9669 ;   0,9669;1,324E-11;1,369E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,13;2|3 ;   0,9658 ;   0,9658;1,817E-11;1,881E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,134;2|3 ;   0,9647 ;   0,9647; 2,47E-11; 2,56E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,138;2|3 ;   0,9636 ;   0,9636;3,328E-11;3,454E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,142;2|3 ;   0,9624 ;   0,9624;4,446E-11; 4,62E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,146;2|3 ;   0,9613 ;   0,9613;5,894E-11;6,131E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,15;2|3 ;   0,9602 ;   0,9602;7,755E-11;8,077E-11
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,154;2|3 ;   0,9591 ;   0,9591;1,013E-10;1,056E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,158;2|3 ;   0,9579 ;   0,9579;1,315E-10;1,372E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,162;2|3 ;   0,9568 ;   0,9568;1,695E-10;1,772E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,166;2|3 ;   0,9556 ;   0,9556;2,172E-10;2,273E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,17;2|3 ;   0,9545 ;   0,9545;2,768E-10;  2,9E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,174;2|3 ;   0,9533 ;   0,9533;3,508E-10;3,679E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,178;2|3 ;   0,9522 ;   0,9522;4,421E-10;4,643E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,182;2|3 ;    0,951 ;    0,951;5,545E-10;5,831E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,186;2|3 ;   0,9499 ;   0,9499;6,921E-10;7,286E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,19;2|3 ;   0,9487 ;   0,9487;8,599E-10;9,064E-10
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,194;2|3 ;   0,9475 ;   0,9475;1,064E-09;1,123E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,198;2|3 ;   0,9463 ;   0,9463; 1,31E-09;1,384E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,202;2|3 ;   0,9451 ;   0,9451;1,607E-09;  1,7E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,206;2|3 ;    0,944 ;    0,944;1,964E-09; 2,08E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,21;2|3 ;   0,9428 ;   0,9428;2,391E-09;2,536E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,214;2|3 ;   0,9416 ;   0,9416;  2,9E-09; 3,08E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,218;2|3 ;   0,9404 ;   0,9404;3,505E-09;3,727E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,222;2|3 ;   0,9392 ;   0,9392;4,223E-09;4,496E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,226;2|3 ;    0,938 ;    0,938;5,071E-09;5,406E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,23;2|3 ;   0,9367 ;   0,9367; 6,07E-09; 6,48E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,234;2|3 ;   0,9355 ;   0,9355;7,245E-09;7,744E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,238;2|3 ;   0,9343 ;   0,9343;8,622E-09;9,228E-09
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,242;2|3 ;   0,9331 ;   0,9331;1,023E-08;1,097E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,246;2|3 ;   0,9318 ;   0,9318;1,211E-08;  1,3E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,25;2|3 ;   0,9306 ;   0,9306;1,429E-08;1,536E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,254;2|3 ;   0,9294 ;   0,9294;1,683E-08;1,811E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,258;2|3 ;   0,9281 ;   0,9281;1,977E-08; 2,13E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,262;2|3 ;   0,9269 ;   0,9269;2,316E-08;2,499E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,266;2|3 ;   0,9256 ;   0,9256;2,708E-08;2,926E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,27;2|3 ;   0,9243 ;   0,9243;3,159E-08;3,417E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,274;2|3 ;   0,9231 ;   0,9231;3,676E-08;3,983E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,278;2|3 ;   0,9218 ;   0,9218; 4,27E-08;4,632E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,282;2|3 ;   0,9205 ;   0,9205;4,949E-08;5,376E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,286;2|3 ;   0,9192 ;   0,9192;5,725E-08;6,228E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,29;2|3 ;   0,9179 ;   0,9179;6,609E-08;  7,2E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,294;2|3 ;   0,9166 ;   0,9166;7,617E-08;8,309E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,298;2|3 ;   0,9153 ;   0,9153;8,761E-08;9,571E-08
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,302;2|3 ;    0,914 ;    0,914;1,006E-07;1,101E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,306;2|3 ;   0,9127 ;   0,9127;1,153E-07;1,263E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,31;2|3 ;   0,9114 ;   0,9114;1,319E-07;1,448E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,314;2|3 ;   0,9101 ;   0,9101;1,507E-07;1,656E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,318;2|3 ;   0,9088 ;   0,9088;1,719E-07;1,892E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,322;2|3 ;   0,9074 ;   0,9074;1,958E-07;2,158E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,326;2|3 ;   0,9061 ;   0,9061;2,227E-07;2,457E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,33;2|3 ;   0,9047 ;   0,9047;2,528E-07;2,794E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,334;2|3 ;   0,9034 ;   0,9034;2,866E-07;3,173E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,338;2|3 ;    0,902 ;    0,902;3,245E-07;3,598E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,342;2|3 ;   0,9007 ;   0,9007;3,669E-07;4,074E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,346;2|3 ;   0,8993 ;   0,8993;4,143E-07;4,607E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,35;2|3 ;   0,8979 ;   0,8979;4,672E-07;5,203E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,354;2|3 ;   0,8965 ;   0,8965;5,261E-07;5,869E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,358;2|3 ;   0,8951 ;   0,8951;5,918E-07;6,611E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,362;2|3 ;   0,8937 ;   0,8937;6,648E-07;7,439E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,366;2|3 ;   0,8923 ;   0,8923; 7,46E-07; 8,36E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,37;2|3 ;   0,8909 ;   0,8909;8,361E-07;9,385E-07
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,374;2|3 ;   0,8895 ;   0,8895;9,361E-07;1,052E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,378;2|3 ;   0,8881 ;   0,8881;1,047E-06;1,179E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,382;2|3 ;   0,8866 ;   0,8866;1,169E-06;1,319E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,386;2|3 ;   0,8852 ;   0,8852;1,305E-06;1,474E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,39;2|3 ;   0,8838 ;   0,8838;1,454E-06;1,646E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,394;2|3 ;   0,8823 ;   0,8823; 1,62E-06;1,836E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,398;2|3 ;   0,8808 ;   0,8808;1,802E-06;2,045E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,402;2|3 ;   0,8794 ;   0,8794;2,002E-06;2,277E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,406;2|3 ;   0,8779 ;   0,8779;2,223E-06;2,532E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,41;2|3 ;   0,8764 ;   0,8764;2,466E-06;2,814E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,414;2|3 ;   0,8749 ;   0,8749;2,733E-06;3,124E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,418;2|3 ;   0,8734 ;   0,8734;3,026E-06;3,465E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,422;2|3 ;   0,8719 ;   0,8719;3,348E-06;3,839E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,426;2|3 ;   0,8704 ;   0,8704;  3,7E-06;4,251E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,43;2|3 ;   0,8689 ;   0,8689;4,086E-06;4,703E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,434;2|3 ;   0,8674 ;   0,8674;4,509E-06;5,199E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,438;2|3 ;   0,8658 ;   0,8658;4,972E-06;5,742E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,442;2|3 ;   0,8643 ;   0,8643;5,477E-06;6,337E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,446;2|3 ;   0,8627 ;   0,8627;6,029E-06;6,989E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,45;2|3 ;   0,8612 ;   0,8612;6,632E-06;7,701E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,454;2|3 ;   0,8596 ;   0,8596; 7,29E-06;8,481E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,458;2|3 ;    0,858 ;    0,858;8,007E-06;9,332E-06
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,462;2|3 ;   0,8564 ;   0,8564;8,788E-06;1,026E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,466;2|3 ;   0,8549 ;   0,8548;9,638E-06;1,127E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,47;2|3 ;   0,8532 ;   0,8532;1,056E-05;1,238E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,474;2|3 ;   0,8516 ;   0,8516;1,157E-05;1,359E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,478;2|3 ;     0,85 ;     0,85;1,266E-05; 1,49E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,482;2|3 ;   0,8484 ;   0,8484;1,385E-05;1,633E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,486;2|3 ;   0,8467 ;   0,8467;1,514E-05;1,788E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,49;2|3 ;   0,8451 ;   0,8451;1,654E-05;1,957E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,494;2|3 ;   0,8434 ;   0,8434;1,806E-05;2,141E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,498;2|3 ;   0,8418 ;   0,8417; 1,97E-05; 2,34E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,502;2|3 ;   0,8401 ;   0,8401;2,148E-05;2,557E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,506;2|3 ;   0,8384 ;   0,8384;2,341E-05;2,792E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,51;2|3 ;   0,8367 ;   0,8367; 2,55E-05;3,047E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,514;2|3 ;    0,835 ;   0,8349;2,775E-05;3,324E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,518;2|3 ;   0,8333 ;   0,8332;3,019E-05;3,623E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,522;2|3 ;   0,8315 ;   0,8315;3,283E-05;3,948E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,526;2|3 ;   0,8298 ;   0,8297;3,567E-05;4,299E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,53;2|3 ;    0,828 ;    0,828;3,875E-05; 4,68E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,534;2|3 ;   0,8263 ;   0,8262;4,206E-05;5,091E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,538;2|3 ;   0,8245 ;   0,8244;4,564E-05;5,536E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,542;2|3 ;   0,8227 ;   0,8227;4,949E-05;6,016E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,546;2|3 ;   0,8209 ;   0,8209;5,365E-05;6,536E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,55;2|3 ;   0,8191 ;    0,819;5,812E-05;7,097E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,554;2|3 ;   0,8173 ;   0,8172;6,294E-05;7,702E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,558;2|3 ;   0,8154 ;   0,8154;6,813E-05;8,356E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,562;2|3 ;   0,8136 ;   0,8135;7,371E-05; 9,06E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,566;2|3 ;   0,8117 ;   0,8117;7,971E-05;9,821E-05
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,57;2|3 ;   0,8099 ;   0,8098;8,616E-05;0,0001064
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,574;2|3 ;    0,808 ;   0,8079; 9,31E-05;0,0001152
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,578;2|3 ;   0,8061 ;    0,806;0,0001005;0,0001247
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,582;2|3 ;   0,8042 ;   0,8041;0,0001085; 0,000135
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,586;2|3 ;   0,8023 ;   0,8021;0,0001171; 0,000146
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,59;2|3 ;   0,8003 ;   0,8002;0,0001263;0,0001579
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,594;2|3 ;   0,7984 ;   0,7982;0,0001362;0,0001707
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,598;2|3 ;   0,7964 ;   0,7963;0,0001468;0,0001844
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,602;2|3 ;   0,7944 ;   0,7943;0,0001582;0,0001992
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,606;2|3 ;   0,7924 ;   0,7923;0,0001704;0,0002151
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,61;2|3 ;   0,7904 ;   0,7903;0,0001835;0,0002321
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,614;2|3 ;   0,7884 ;   0,7882;0,0001974;0,0002505
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,618;2|3 ;   0,7864 ;   0,7862;0,0002124;0,0002702
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,622;2|3 ;   0,7843 ;   0,7841;0,0002285;0,0002914
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,626;2|3 ;   0,7823 ;    0,782;0,0002456;0,0003141
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,63;2|3 ;   0,7802 ;   0,7799; 0,000264;0,0003385
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,634;2|3 ;   0,7781 ;   0,7778;0,0002836;0,0003646
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,638;2|3 ;    0,776 ;   0,7757;0,0003046;0,0003927
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,642;2|3 ;   0,7738 ;   0,7735;0,0003271;0,0004229
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,646;2|3 ;   0,7717 ;   0,7713;0,0003511;0,0004552
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,65;2|3 ;   0,7695 ;   0,7692;0,0003768;0,0004898
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,654;2|3 ;   0,7674 ;    0,767;0,0004042; 0,000527
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,658;2|3 ;   0,7652 ;   0,7647;0,0004335;0,0005668
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,662;2|3 ;   0,7629 ;   0,7625;0,0004647;0,0006095
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,666;2|3 ;   0,7607 ;   0,7602;0,0004981;0,0006552
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,67;2|3 ;   0,7585 ;   0,7579;0,0005338;0,0007043
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,674;2|3 ;   0,7562 ;   0,7556;0,0005718;0,0007568
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,678;2|3 ;   0,7539 ;   0,7533;0,0006124; 0,000813
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,682;2|3 ;   0,7516 ;   0,7509;0,0006558;0,0008733
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,686;2|3 ;   0,7493 ;   0,7486; 0,000702;0,0009378
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,69;2|3 ;   0,7469 ;   0,7462;0,0007513; 0,001007
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,694;2|3 ;   0,7446 ;   0,7438;0,0008039; 0,001081
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,698;2|3 ;   0,7422 ;   0,7413;0,0008599;  0,00116
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,702;2|3 ;   0,7398 ;   0,7388;0,0009197; 0,001245
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,706;2|3 ;   0,7373 ;   0,7364;0,0009834; 0,001336
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,71;2|3 ;   0,7349 ;   0,7338; 0,001051; 0,001433
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,714;2|3 ;   0,7324 ;   0,7313; 0,001124; 0,001537
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,718;2|3 ;   0,7299 ;   0,7287; 0,001201; 0,001648
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,722;2|3 ;   0,7274 ;   0,7261; 0,001283; 0,001767
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,726;2|3 ;   0,7249 ;   0,7235; 0,001371; 0,001894
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,73;2|3 ;   0,7223 ;   0,7208; 0,001464; 0,002031
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,734;2|3 ;   0,7197 ;   0,7182; 0,001563; 0,002177
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,738;2|3 ;   0,7171 ;   0,7154; 0,001669; 0,002333
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,742;2|3 ;   0,7145 ;   0,7127; 0,001782;   0,0025
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,746;2|3 ;   0,7118 ;   0,7099; 0,001902; 0,002679
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,75;2|3 ;   0,7091 ;   0,7071;  0,00203;  0,00287
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,754;2|3 ;   0,7064 ;   0,7043; 0,002166; 0,003075
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,758;2|3 ;   0,7037 ;   0,7014; 0,002311; 0,003295
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,762;2|3 ;   0,7009 ;   0,6985; 0,002465;  0,00353
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,766;2|3 ;   0,6981 ;   0,6955;  0,00263; 0,003781
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,77;2|3 ;   0,6953 ;   0,6925; 0,002805;  0,00405
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,774;2|3 ;   0,6925 ;   0,6895; 0,002991; 0,004339
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,778;2|3 ;   0,6896 ;   0,6864;  0,00319; 0,004647
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,782;2|3 ;   0,6867 ;   0,6833; 0,003402; 0,004978
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,786;2|3 ;   0,6838 ;   0,6801; 0,003627; 0,005333
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,79;2|3 ;   0,6808 ;   0,6769; 0,003867; 0,005713
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,794;2|3 ;   0,6778 ;   0,6737; 0,004123;  0,00612
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,798;2|3 ;   0,6748 ;   0,6704; 0,004395; 0,006556
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,802;2|3 ;   0,6717 ;   0,6671; 0,004686; 0,007024
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,806;2|3 ;   0,6687 ;   0,6637; 0,004995; 0,007526
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,81;2|3 ;   0,6655 ;   0,6602; 0,005325; 0,008065
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,814;2|3 ;   0,6624 ;   0,6567; 0,005676; 0,008643
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,818;2|3 ;   0,6592 ;   0,6532; 0,006051; 0,009264
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,822;2|3 ;    0,656 ;   0,6495;  0,00645; 0,009931
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,826;2|3 ;   0,6527 ;   0,6459; 0,006877;  0,01065
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,83;2|3 ;   0,6494 ;   0,6421; 0,007331;  0,01142
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,834;2|3 ;   0,6461 ;   0,6383; 0,007817;  0,01225
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,838;2|3 ;   0,6428 ;   0,6344; 0,008335;  0,01314
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,842;2|3 ;   0,6394 ;   0,6305; 0,008888;   0,0141
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,846;2|3 ;   0,6359 ;   0,6264; 0,009479;  0,01513
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,85;2|3 ;   0,6324 ;   0,6223;  0,01011;  0,01625
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,854;2|3 ;   0,6289 ;   0,6181;  0,01079;  0,01745
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,858;2|3 ;   0,6254 ;   0,6139;  0,01151;  0,01874
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,862;2|3 ;   0,6218 ;   0,6095;  0,01228;  0,02015
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,866;2|3 ;   0,6181 ;    0,605;  0,01311;  0,02166
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,87;2|3 ;   0,6145 ;   0,6005;  0,01399;   0,0233
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,874;2|3 ;   0,6107 ;   0,5958;  0,01494;  0,02508
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,878;2|3 ;    0,607 ;    0,591;  0,01596;    0,027
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,882;2|3 ;   0,6031 ;   0,5861;  0,01705;  0,02909
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,886;2|3 ;   0,5993 ;   0,5811;  0,01823;  0,03137
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,89;2|3 ;   0,5954 ;   0,5759;  0,01949;  0,03384
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,894;2|3 ;   0,5914 ;   0,5706;  0,02084;  0,03653
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,898;2|3 ;   0,5874 ;   0,5651;  0,02231;  0,03947
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,902;2|3 ;   0,5834 ;   0,5595;  0,02388;  0,04268
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,906;2|3 ;   0,5793 ;   0,5537;  0,02558;   0,0462
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,91;2|3 ;   0,5751 ;   0,5477;  0,02742;  0,05007
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,914;2|3 ;   0,5709 ;   0,5415;  0,02941;  0,05432
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,918;2|3 ;   0,5667 ;   0,5351;  0,03157;    0,059
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,922;2|3 ;   0,5624 ;   0,5285;  0,03392;  0,06418
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,926;2|3 ;    0,558 ;   0,5216;  0,03647;  0,06992
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,93;2|3 ;   0,5536 ;   0,5144;  0,03925;   0,0763
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,934;2|3 ;   0,5491 ;   0,5069;  0,04229;  0,08343
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,938;2|3 ;   0,5446 ;    0,499;  0,04562;  0,09143
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,942;2|3 ;     0,54 ;   0,4907;  0,04929;   0,1004
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,946;2|3 ;   0,5354 ;   0,4821;  0,05333;   0,1106
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,95;2|3 ;   0,5307 ;   0,4729;  0,05781;   0,1223
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,954;2|3 ;   0,5259 ;   0,4631;   0,0628;   0,1356
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,958;2|3 ;   0,5211 ;   0,4527;  0,06839;   0,1511
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,962;2|3 ;   0,5162 ;   0,4415;  0,07468;   0,1691
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,966;2|3 ;   0,5112 ;   0,4294;  0,08183;   0,1906
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,97;2|3 ;   0,5062 ;   0,4162;  0,09003;   0,2163
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,974;2|3 ;   0,5011 ;   0,4016;  0,09957;    0,248
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,978;2|3 ;    0,496 ;   0,3851;   0,1108;   0,2878
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,982;2|3 ;   0,4907 ;   0,3663;   0,1245;   0,3398
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,986;2|3 ;   0,4854 ;    0,344;   0,1415;   0,4112
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;   0,99;2|3 ;   0,4801 ;   0,3162;   0,1638;   0,5181
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,994;2|3 ;   0,4746 ;   0,2783;   0,1963;   0,7053
-"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Lebedev\SummerPractice2_2016\OpaqueFunctions\OpaqueFunctions_what_I_want.cs)";   10;  0,998;2|3 ;   0,4691 ;   0,2115;   0,2576;    1,218
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,998;2|3 ;    1,189 ;    1,189;2,454E-06;2,064E-06
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,994;2|3 ;    1,188 ;    1,188;4,433E-08; 3,73E-08
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,99;2|3 ;    1,188 ;    1,188;7,877E-10;6,632E-10
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,986;2|3 ;    1,187 ;    1,187;1,377E-11; 1,16E-11
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,982;2|3 ;    1,187 ;    1,187;2,378E-13;2,004E-13
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,978;2|3 ;    1,186 ;    1,186;1,776E-15;1,498E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,974;2|3 ;    1,185 ;    1,185;2,442E-15;2,061E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,97;2|3 ;    1,185 ;    1,185;1,776E-15;1,499E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,966;2|3 ;    1,184 ;    1,184;6,661E-16;5,626E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,962;2|3 ;    1,184 ;    1,184;1,554E-15;1,313E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,958;2|3 ;    1,183 ;    1,183; 2,22E-16;1,877E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,954;2|3 ;    1,182 ;    1,182;6,661E-16;5,634E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,95;2|3 ;    1,182 ;    1,182;8,882E-16;7,516E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,946;2|3 ;    1,181 ;    1,181;6,661E-16; 5,64E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,942;2|3 ;     1,18 ;     1,18;6,661E-16;5,643E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,938;2|3 ;     1,18 ;     1,18; 2,22E-15;1,882E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,934;2|3 ;    1,179 ;    1,179;4,441E-16;3,766E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,93;2|3 ;    1,179 ;    1,179; 2,22E-16;1,884E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,926;2|3 ;    1,178 ;    1,178;4,441E-16; 3,77E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,922;2|3 ;    1,177 ;    1,177;4,441E-16;3,772E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,918;2|3 ;    1,177 ;    1,177;4,441E-16;3,774E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,914;2|3 ;    1,176 ;    1,176;8,882E-16;7,551E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,91;2|3 ;    1,176 ;    1,176; 1,11E-15;9,444E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,906;2|3 ;    1,175 ;    1,175;2,442E-15;2,079E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,902;2|3 ;    1,174 ;    1,174; 2,22E-16;1,891E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,898;2|3 ;    1,174 ;    1,174;4,441E-16;3,784E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,894;2|3 ;    1,173 ;    1,173; 1,11E-15;9,464E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,89;2|3 ;    1,173 ;    1,173;1,332E-15;1,136E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,886;2|3 ;    1,172 ;    1,172; 2,22E-16;1,895E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,882;2|3 ;    1,171 ;    1,171;2,665E-15;2,275E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,878;2|3 ;    1,171 ;    1,171; 2,22E-16;1,897E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,874;2|3 ;     1,17 ;     1,17; 2,22E-16;1,898E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,87;2|3 ;    1,169 ;    1,169;8,882E-16;7,595E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,866;2|3 ;    1,169 ;    1,169;4,441E-16;  3,8E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,862;2|3 ;    1,168 ;    1,168;4,441E-16;3,802E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,858;2|3 ;    1,168 ;    1,168;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,854;2|3 ;    1,167 ;    1,167;1,332E-15;1,142E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,85;2|3 ;    1,166 ;    1,166; 1,11E-15; 9,52E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,846;2|3 ;    1,166 ;    1,166;4,441E-16; 3,81E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,842;2|3 ;    1,165 ;    1,165;4,441E-16;3,812E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,838;2|3 ;    1,164 ;    1,164;6,661E-16;5,721E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,834;2|3 ;    1,164 ;    1,164;4,441E-16;3,816E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,83;2|3 ;    1,163 ;    1,163;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,826;2|3 ;    1,162 ;    1,162;4,441E-16; 3,82E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,822;2|3 ;    1,162 ;    1,162;6,661E-16;5,734E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,818;2|3 ;    1,161 ;    1,161; 2,22E-16;1,912E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,814;2|3 ;    1,161 ;    1,161;1,332E-15;1,148E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,81;2|3 ;     1,16 ;     1,16; 1,11E-15;9,572E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,806;2|3 ;    1,159 ;    1,159;4,441E-16;3,831E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,802;2|3 ;    1,159 ;    1,159;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,798;2|3 ;    1,158 ;    1,158; 2,22E-16;1,918E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,794;2|3 ;    1,157 ;    1,157;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,79;2|3 ;    1,157 ;    1,157;6,661E-16;5,759E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,786;2|3 ;    1,156 ;    1,156;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,782;2|3 ;    1,155 ;    1,155; 2,22E-16;1,922E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,778;2|3 ;    1,155 ;    1,155;6,661E-16;5,769E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,774;2|3 ;    1,154 ;    1,154; 2,22E-16;1,924E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,77;2|3 ;    1,153 ;    1,153;6,661E-16;5,775E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,766;2|3 ;    1,153 ;    1,153;6,661E-16;5,778E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,762;2|3 ;    1,152 ;    1,152; 2,22E-16;1,927E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,758;2|3 ;    1,151 ;    1,151; 2,22E-16;1,928E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,754;2|3 ;    1,151 ;    1,151;4,441E-16;3,859E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,75;2|3 ;     1,15 ;     1,15; 2,22E-16;1,931E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,746;2|3 ;     1,15 ;     1,15; 2,22E-16;1,932E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,742;2|3 ;    1,149 ;    1,149; 2,22E-16;1,933E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,738;2|3 ;    1,148 ;    1,148; 1,11E-15;9,669E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,734;2|3 ;    1,148 ;    1,148;6,661E-16;5,805E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,73;2|3 ;    1,147 ;    1,147;6,661E-16;5,808E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,726;2|3 ;    1,146 ;    1,146;8,882E-16;7,749E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,722;2|3 ;    1,146 ;    1,146; 2,22E-16;1,938E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,718;2|3 ;    1,145 ;    1,145;4,441E-16;3,879E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,714;2|3 ;    1,144 ;    1,144;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,71;2|3 ;    1,144 ;    1,144; 2,22E-16;1,942E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,706;2|3 ;    1,143 ;    1,143;4,441E-16;3,886E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,702;2|3 ;    1,142 ;    1,142;8,882E-16;7,776E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,698;2|3 ;    1,142 ;    1,142;6,661E-16;5,835E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,694;2|3 ;    1,141 ;    1,141;8,882E-16;7,785E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,69;2|3 ;     1,14 ;     1,14;8,882E-16; 7,79E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,686;2|3 ;     1,14 ;     1,14;4,441E-16;3,897E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,682;2|3 ;    1,139 ;    1,139; 2,22E-16; 1,95E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,678;2|3 ;    1,138 ;    1,138; 2,22E-16;1,951E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,674;2|3 ;    1,137 ;    1,137; 2,22E-16;1,952E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,67;2|3 ;    1,137 ;    1,137;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,666;2|3 ;    1,136 ;    1,136;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,662;2|3 ;    1,135 ;    1,135;4,441E-16;3,911E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,658;2|3 ;    1,135 ;    1,135; 2,22E-16;1,957E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,654;2|3 ;    1,134 ;    1,134; 2,22E-16;1,958E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,65;2|3 ;    1,133 ;    1,133;4,441E-16;3,918E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,646;2|3 ;    1,133 ;    1,133;4,441E-16;3,921E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,642;2|3 ;    1,132 ;    1,132;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,638;2|3 ;    1,131 ;    1,131; 1,11E-15;9,814E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,634;2|3 ;    1,131 ;    1,131; 2,22E-16;1,964E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,63;2|3 ;     1,13 ;     1,13;6,661E-16;5,895E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,626;2|3 ;    1,129 ;    1,129;4,441E-16;3,933E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,622;2|3 ;    1,129 ;    1,129;8,882E-16; 7,87E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,618;2|3 ;    1,128 ;    1,128;4,441E-16;3,938E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,614;2|3 ;    1,127 ;    1,127;4,441E-16; 3,94E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,61;2|3 ;    1,126 ;    1,126;4,441E-16;3,942E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,606;2|3 ;    1,126 ;    1,126;6,661E-16;5,917E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,602;2|3 ;    1,125 ;    1,125; 2,22E-16;1,974E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,598;2|3 ;    1,124 ;    1,124;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,594;2|3 ;    1,124 ;    1,124;4,441E-16;3,952E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,59;2|3 ;    1,123 ;    1,123;4,441E-16;3,955E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,586;2|3 ;    1,122 ;    1,122;4,441E-16;3,957E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,582;2|3 ;    1,122 ;    1,122;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,578;2|3 ;    1,121 ;    1,121;4,441E-16;3,962E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,574;2|3 ;     1,12 ;     1,12;4,441E-16;3,965E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,57;2|3 ;    1,119 ;    1,119; 2,22E-16;1,984E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,566;2|3 ;    1,119 ;    1,119;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,562;2|3 ;    1,118 ;    1,118;4,441E-16;3,972E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,558;2|3 ;    1,117 ;    1,117;4,441E-16;3,975E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,554;2|3 ;    1,117 ;    1,117;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,55;2|3 ;    1,116 ;    1,116;4,441E-16; 3,98E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,546;2|3 ;    1,115 ;    1,115; 2,22E-16;1,991E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,542;2|3 ;    1,114 ;    1,114; 2,22E-16;1,993E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,538;2|3 ;    1,114 ;    1,114;4,441E-16;3,988E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,534;2|3 ;    1,113 ;    1,113; 2,22E-16;1,995E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,53;2|3 ;    1,112 ;    1,112; 2,22E-16;1,996E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,526;2|3 ;    1,111 ;    1,111; 2,22E-16;1,998E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,522;2|3 ;    1,111 ;    1,111; 2,22E-16;1,999E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,518;2|3 ;     1,11 ;     1,11; 2,22E-16;    2E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,514;2|3 ;    1,109 ;    1,109;8,882E-16;8,007E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,51;2|3 ;    1,109 ;    1,109; 2,22E-16;2,003E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,506;2|3 ;    1,108 ;    1,108; 2,22E-16;2,004E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,502;2|3 ;    1,107 ;    1,107; 2,22E-16;2,006E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,498;2|3 ;    1,106 ;    1,106; 2,22E-16;2,007E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,494;2|3 ;    1,106 ;    1,106;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,49;2|3 ;    1,105 ;    1,105;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,486;2|3 ;    1,104 ;    1,104;4,441E-16;4,022E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,482;2|3 ;    1,103 ;    1,103;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,478;2|3 ;    1,103 ;    1,103;4,441E-16;4,028E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,474;2|3 ;    1,102 ;    1,102;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,47;2|3 ;    1,101 ;    1,101;4,441E-16;4,033E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,466;2|3 ;      1,1 ;      1,1; 2,22E-16;2,018E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,462;2|3 ;      1,1 ;      1,1; 2,22E-16;2,019E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,458;2|3 ;    1,099 ;    1,099;8,882E-16;8,083E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,454;2|3 ;    1,098 ;    1,098; 2,22E-16;2,022E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,45;2|3 ;    1,097 ;    1,097;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,446;2|3 ;    1,097 ;    1,097;6,661E-16;6,075E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,442;2|3 ;    1,096 ;    1,096;4,441E-16;4,053E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,438;2|3 ;    1,095 ;    1,095;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,434;2|3 ;    1,094 ;    1,094;4,441E-16;4,058E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,43;2|3 ;    1,094 ;    1,094;4,441E-16;4,061E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,426;2|3 ;    1,093 ;    1,093; 2,22E-16;2,032E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,422;2|3 ;    1,092 ;    1,092; 2,22E-16;2,033E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,418;2|3 ;    1,091 ;    1,091;6,661E-16;6,104E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,414;2|3 ;     1,09 ;     1,09; 2,22E-16;2,036E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,41;2|3 ;     1,09 ;     1,09;4,441E-16;4,075E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,406;2|3 ;    1,089 ;    1,089; 2,22E-16;2,039E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,402;2|3 ;    1,088 ;    1,088;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,398;2|3 ;    1,087 ;    1,087;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,394;2|3 ;    1,087 ;    1,087; 2,22E-16;2,043E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,39;2|3 ;    1,086 ;    1,086; 2,22E-16;2,045E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,386;2|3 ;    1,085 ;    1,085;8,882E-16;8,186E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,382;2|3 ;    1,084 ;    1,084;4,441E-16;4,096E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,378;2|3 ;    1,083 ;    1,083; 2,22E-16;2,049E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,374;2|3 ;    1,083 ;    1,083;4,441E-16;4,102E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,37;2|3 ;    1,082 ;    1,082;4,441E-16;4,105E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,366;2|3 ;    1,081 ;    1,081; 2,22E-16;2,054E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,362;2|3 ;     1,08 ;     1,08; 2,22E-16;2,055E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,358;2|3 ;     1,08 ;     1,08;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,354;2|3 ;    1,079 ;    1,079;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,35;2|3 ;    1,078 ;    1,078; 2,22E-16; 2,06E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,346;2|3 ;    1,077 ;    1,077; 2,22E-16;2,061E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,342;2|3 ;    1,076 ;    1,076; 2,22E-16;2,063E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,338;2|3 ;    1,076 ;    1,076;4,441E-16;4,129E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,334;2|3 ;    1,075 ;    1,075;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,33;2|3 ;    1,074 ;    1,074;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,326;2|3 ;    1,073 ;    1,073;6,661E-16;6,208E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,322;2|3 ;    1,072 ;    1,072;4,441E-16;4,142E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,318;2|3 ;    1,071 ;    1,071; 2,22E-16;2,072E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,314;2|3 ;    1,071 ;    1,071;6,661E-16;6,222E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,31;2|3 ;     1,07 ;     1,07;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,306;2|3 ;    1,069 ;    1,069;4,441E-16;4,154E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,302;2|3 ;    1,068 ;    1,068; 2,22E-16;2,079E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,298;2|3 ;    1,067 ;    1,067; 2,22E-16; 2,08E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,294;2|3 ;    1,067 ;    1,067; 2,22E-16;2,082E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,29;2|3 ;    1,066 ;    1,066; 2,22E-16;2,083E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,286;2|3 ;    1,065 ;    1,065;4,441E-16; 4,17E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,282;2|3 ;    1,064 ;    1,064; 2,22E-16;2,087E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,278;2|3 ;    1,063 ;    1,063; 1,11E-15;1,044E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,274;2|3 ;    1,062 ;    1,062;4,441E-16; 4,18E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,27;2|3 ;    1,062 ;    1,062; 2,22E-16;2,092E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,266;2|3 ;    1,061 ;    1,061;4,441E-16;4,187E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,262;2|3 ;     1,06 ;     1,06; 2,22E-16;2,095E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,258;2|3 ;    1,059 ;    1,059;4,441E-16;4,193E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,254;2|3 ;    1,058 ;    1,058; 2,22E-16;2,098E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,25;2|3 ;    1,057 ;    1,057; 2,22E-16;  2,1E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,246;2|3 ;    1,057 ;    1,057;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,242;2|3 ;    1,056 ;    1,056; 2,22E-16;2,103E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,238;2|3 ;    1,055 ;    1,055;4,441E-16; 4,21E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,234;2|3 ;    1,054 ;    1,054;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,23;2|3 ;    1,053 ;    1,053; 2,22E-16;2,108E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,226;2|3 ;    1,052 ;    1,052; 2,22E-16; 2,11E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,222;2|3 ;    1,051 ;    1,051; 2,22E-16;2,112E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,218;2|3 ;    1,051 ;    1,051;4,441E-16;4,227E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,214;2|3 ;     1,05 ;     1,05; 2,22E-16;2,115E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,21;2|3 ;    1,049 ;    1,049;4,441E-16;4,234E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,206;2|3 ;    1,048 ;    1,048;4,441E-16;4,238E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,202;2|3 ;    1,047 ;    1,047; 2,22E-16;2,121E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,198;2|3 ;    1,046 ;    1,046;6,661E-16;6,367E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,194;2|3 ;    1,045 ;    1,045;6,661E-16;6,373E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,19;2|3 ;    1,044 ;    1,044; 2,22E-16;2,126E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,186;2|3 ;    1,044 ;    1,044; 1,11E-15;1,064E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,182;2|3 ;    1,043 ;    1,043;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,178;2|3 ;    1,042 ;    1,042;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,174;2|3 ;    1,041 ;    1,041; 2,22E-16;2,133E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,17;2|3 ;     1,04 ;     1,04; 2,22E-16;2,135E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,166;2|3 ;    1,039 ;    1,039;4,441E-16;4,274E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,162;2|3 ;    1,038 ;    1,038; 2,22E-16;2,139E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,158;2|3 ;    1,037 ;    1,037;4,441E-16;4,281E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,154;2|3 ;    1,036 ;    1,036; 2,22E-16;2,142E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,15;2|3 ;    1,036 ;    1,036; 2,22E-16;2,144E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,146;2|3 ;    1,035 ;    1,035; 2,22E-16;2,146E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,142;2|3 ;    1,034 ;    1,034; 2,22E-16;2,148E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,138;2|3 ;    1,033 ;    1,033;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,134;2|3 ;    1,032 ;    1,032; 2,22E-16;2,152E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,13;2|3 ;    1,031 ;    1,031; 2,22E-16;2,154E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,126;2|3 ;     1,03 ;     1,03; 2,22E-16;2,156E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,122;2|3 ;    1,029 ;    1,029;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,118;2|3 ;    1,028 ;    1,028;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,114;2|3 ;    1,027 ;    1,027;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,11;2|3 ;    1,026 ;    1,026; 2,22E-16;2,163E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,106;2|3 ;    1,026 ;    1,026; 2,22E-16;2,165E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,102;2|3 ;    1,025 ;    1,025;4,441E-16;4,334E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,098;2|3 ;    1,024 ;    1,024;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,094;2|3 ;    1,023 ;    1,023; 2,22E-16;2,171E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,09;2|3 ;    1,022 ;    1,022; 2,22E-16;2,173E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,086;2|3 ;    1,021 ;    1,021;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,082;2|3 ;     1,02 ;     1,02; 2,22E-16;2,177E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,078;2|3 ;    1,019 ;    1,019;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,074;2|3 ;    1,018 ;    1,018;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,07;2|3 ;    1,017 ;    1,017;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,066;2|3 ;    1,016 ;    1,016;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,062;2|3 ;    1,015 ;    1,015;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,058;2|3 ;    1,014 ;    1,014; 2,22E-16;2,189E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,054;2|3 ;    1,013 ;    1,013; 2,22E-16;2,191E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,05;2|3 ;    1,012 ;    1,012; 2,22E-16;2,194E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,046;2|3 ;    1,011 ;    1,011;4,441E-16;4,391E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,042;2|3 ;     1,01 ;     1,01; 2,22E-16;2,198E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,038;2|3 ;    1,009 ;    1,009;4,441E-16;  4,4E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,034;2|3 ;    1,008 ;    1,008;4,441E-16;4,404E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,03;2|3 ;    1,007 ;    1,007; 2,22E-16;2,204E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,026;2|3 ;    1,006 ;    1,006; 2,22E-16;2,206E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,022;2|3 ;    1,005 ;    1,005;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,018;2|3 ;    1,004 ;    1,004; 2,22E-16;2,211E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,014;2|3 ;    1,003 ;    1,003;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  -0,01;2|3 ;    1,002 ;    1,002; 2,22E-16;2,215E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,006;2|3 ;    1,001 ;    1,001; 2,22E-16;2,217E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000; -0,002;2|3 ;        1 ;        1;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,002;2|3 ;   0,9995 ;   0,9995;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,006;2|3 ;   0,9985 ;   0,9985; 1,11E-16;1,112E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,01;2|3 ;   0,9975 ;   0,9975;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,014;2|3 ;   0,9965 ;   0,9965; 2,22E-16;2,228E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,018;2|3 ;   0,9955 ;   0,9955; 1,11E-16;1,115E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,022;2|3 ;   0,9945 ;   0,9945; 1,11E-16;1,116E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,026;2|3 ;   0,9934 ;   0,9934;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,03;2|3 ;   0,9924 ;   0,9924; 1,11E-16;1,119E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,034;2|3 ;   0,9914 ;   0,9914; 1,11E-16; 1,12E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,038;2|3 ;   0,9904 ;   0,9904; 1,11E-16;1,121E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,042;2|3 ;   0,9893 ;   0,9893;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,046;2|3 ;   0,9883 ;   0,9883;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,05;2|3 ;   0,9873 ;   0,9873; 1,11E-16;1,125E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,054;2|3 ;   0,9862 ;   0,9862;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,058;2|3 ;   0,9852 ;   0,9852; 1,11E-16;1,127E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,062;2|3 ;   0,9841 ;   0,9841;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,066;2|3 ;   0,9831 ;   0,9831; 1,11E-16;1,129E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,07;2|3 ;    0,982 ;    0,982;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,074;2|3 ;    0,981 ;    0,981; 1,11E-16;1,132E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,078;2|3 ;   0,9799 ;   0,9799; 1,11E-16;1,133E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,082;2|3 ;   0,9788 ;   0,9788; 1,11E-16;1,134E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,086;2|3 ;   0,9778 ;   0,9778;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,09;2|3 ;   0,9767 ;   0,9767; 1,11E-16;1,137E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,094;2|3 ;   0,9756 ;   0,9756;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,098;2|3 ;   0,9745 ;   0,9745; 1,11E-16;1,139E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,102;2|3 ;   0,9735 ;   0,9735; 1,11E-16; 1,14E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,106;2|3 ;   0,9724 ;   0,9724;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,11;2|3 ;   0,9713 ;   0,9713;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,114;2|3 ;   0,9702 ;   0,9702; 1,11E-16;1,144E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,118;2|3 ;   0,9691 ;   0,9691;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,122;2|3 ;    0,968 ;    0,968; 2,22E-16;2,294E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,126;2|3 ;   0,9669 ;   0,9669; 2,22E-16;2,296E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,13;2|3 ;   0,9658 ;   0,9658; 1,11E-16; 1,15E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,134;2|3 ;   0,9647 ;   0,9647; 1,11E-16;1,151E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,138;2|3 ;   0,9636 ;   0,9636; 2,22E-16;2,304E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,142;2|3 ;   0,9624 ;   0,9624; 2,22E-16;2,307E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,146;2|3 ;   0,9613 ;   0,9613;3,331E-16;3,465E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,15;2|3 ;   0,9602 ;   0,9602; 1,11E-16;1,156E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,154;2|3 ;   0,9591 ;   0,9591;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,158;2|3 ;   0,9579 ;   0,9579; 2,22E-16;2,318E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,162;2|3 ;   0,9568 ;   0,9568; 1,11E-16; 1,16E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,166;2|3 ;   0,9556 ;   0,9556; 2,22E-16;2,324E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,17;2|3 ;   0,9545 ;   0,9545;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,174;2|3 ;   0,9533 ;   0,9533; 1,11E-16;1,165E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,178;2|3 ;   0,9522 ;   0,9522; 2,22E-16;2,332E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,182;2|3 ;    0,951 ;    0,951; 1,11E-16;1,167E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,186;2|3 ;   0,9499 ;   0,9499;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,19;2|3 ;   0,9487 ;   0,9487; 1,11E-16; 1,17E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,194;2|3 ;   0,9475 ;   0,9475;3,331E-16;3,515E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,198;2|3 ;   0,9463 ;   0,9463; 2,22E-16;2,346E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,202;2|3 ;   0,9451 ;   0,9451; 1,11E-16;1,175E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,206;2|3 ;    0,944 ;    0,944; 2,22E-16;2,352E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,21;2|3 ;   0,9428 ;   0,9428; 1,11E-16;1,178E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,214;2|3 ;   0,9416 ;   0,9416;3,331E-16;3,537E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,218;2|3 ;   0,9404 ;   0,9404; 2,22E-16;2,361E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,222;2|3 ;   0,9392 ;   0,9392;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,226;2|3 ;    0,938 ;    0,938;3,331E-16;3,551E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,23;2|3 ;   0,9367 ;   0,9367;3,331E-16;3,556E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,234;2|3 ;   0,9355 ;   0,9355; 1,11E-16;1,187E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,238;2|3 ;   0,9343 ;   0,9343; 1,11E-16;1,188E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,242;2|3 ;   0,9331 ;   0,9331; 1,11E-16; 1,19E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,246;2|3 ;   0,9318 ;   0,9318; 1,11E-16;1,191E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,25;2|3 ;   0,9306 ;   0,9306; 1,11E-16;1,193E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,254;2|3 ;   0,9294 ;   0,9294; 1,11E-16;1,195E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,258;2|3 ;   0,9281 ;   0,9281; 2,22E-16;2,392E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,262;2|3 ;   0,9269 ;   0,9269;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,266;2|3 ;   0,9256 ;   0,9256; 1,11E-16;1,199E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,27;2|3 ;   0,9243 ;   0,9243;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,274;2|3 ;   0,9231 ;   0,9231; 2,22E-16;2,406E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,278;2|3 ;   0,9218 ;   0,9218;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,282;2|3 ;   0,9205 ;   0,9205;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,286;2|3 ;   0,9192 ;   0,9192;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,29;2|3 ;   0,9179 ;   0,9179; 2,22E-16;2,419E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,294;2|3 ;   0,9166 ;   0,9166; 2,22E-16;2,422E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,298;2|3 ;   0,9153 ;   0,9153; 1,11E-16;1,213E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,302;2|3 ;    0,914 ;    0,914;3,331E-16;3,644E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,306;2|3 ;   0,9127 ;   0,9127; 1,11E-16;1,216E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,31;2|3 ;   0,9114 ;   0,9114; 1,11E-16;1,218E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,314;2|3 ;   0,9101 ;   0,9101;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,318;2|3 ;   0,9088 ;   0,9088; 1,11E-16;1,222E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,322;2|3 ;   0,9074 ;   0,9074;3,331E-16; 3,67E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,326;2|3 ;   0,9061 ;   0,9061; 1,11E-16;1,225E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,33;2|3 ;   0,9047 ;   0,9047; 2,22E-16;2,454E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,334;2|3 ;   0,9034 ;   0,9034;5,551E-16;6,145E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,338;2|3 ;    0,902 ;    0,902;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,342;2|3 ;   0,9007 ;   0,9007;3,331E-16;3,698E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,346;2|3 ;   0,8993 ;   0,8993; 1,11E-16;1,235E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,35;2|3 ;   0,8979 ;   0,8979;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,354;2|3 ;   0,8965 ;   0,8965;3,331E-16;3,715E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,358;2|3 ;   0,8951 ;   0,8951;3,331E-16;3,721E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,362;2|3 ;   0,8937 ;   0,8937;3,331E-16;3,727E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,366;2|3 ;   0,8923 ;   0,8923; 1,11E-16;1,244E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,37;2|3 ;   0,8909 ;   0,8909;3,331E-16;3,738E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,374;2|3 ;   0,8895 ;   0,8895; 1,11E-16;1,248E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,378;2|3 ;   0,8881 ;   0,8881; 2,22E-16;  2,5E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,382;2|3 ;   0,8866 ;   0,8866; 1,11E-16;1,252E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,386;2|3 ;   0,8852 ;   0,8852;3,331E-16;3,763E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,39;2|3 ;   0,8838 ;   0,8838; 1,11E-16;1,256E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,394;2|3 ;   0,8823 ;   0,8823;3,331E-16;3,775E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,398;2|3 ;   0,8808 ;   0,8808; 1,11E-16; 1,26E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,402;2|3 ;   0,8794 ;   0,8794;3,331E-16;3,788E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,406;2|3 ;   0,8779 ;   0,8779; 2,22E-16;2,529E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,41;2|3 ;   0,8764 ;   0,8764; 2,22E-16;2,534E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,414;2|3 ;   0,8749 ;   0,8749; 1,11E-16;1,269E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,418;2|3 ;   0,8734 ;   0,8734; 2,22E-16;2,542E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,422;2|3 ;   0,8719 ;   0,8719; 2,22E-16;2,547E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,426;2|3 ;   0,8704 ;   0,8704; 1,11E-16;1,276E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,43;2|3 ;   0,8689 ;   0,8689;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,434;2|3 ;   0,8674 ;   0,8674; 1,11E-16; 1,28E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,438;2|3 ;   0,8658 ;   0,8658; 2,22E-16;2,565E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,442;2|3 ;   0,8643 ;   0,8643; 2,22E-16;2,569E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,446;2|3 ;   0,8627 ;   0,8627;4,441E-16;5,147E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,45;2|3 ;   0,8612 ;   0,8612;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,454;2|3 ;   0,8596 ;   0,8596;4,441E-16;5,166E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,458;2|3 ;    0,858 ;    0,858;3,331E-16;3,882E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,462;2|3 ;   0,8564 ;   0,8564; 1,11E-16;1,296E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,466;2|3 ;   0,8548 ;   0,8548; 2,22E-16;2,597E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,47;2|3 ;   0,8532 ;   0,8532; 2,22E-16;2,602E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,474;2|3 ;   0,8516 ;   0,8516;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,478;2|3 ;     0,85 ;     0,85; 1,11E-16;1,306E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,482;2|3 ;   0,8484 ;   0,8484; 1,11E-16;1,309E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,486;2|3 ;   0,8467 ;   0,8467; 1,11E-16;1,311E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,49;2|3 ;   0,8451 ;   0,8451; 2,22E-16;2,628E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,494;2|3 ;   0,8434 ;   0,8434;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,498;2|3 ;   0,8417 ;   0,8417; 2,22E-16;2,638E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,502;2|3 ;   0,8401 ;   0,8401; 2,22E-16;2,643E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,506;2|3 ;   0,8384 ;   0,8384; 2,22E-16;2,649E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,51;2|3 ;   0,8367 ;   0,8367; 2,22E-16;2,654E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,514;2|3 ;   0,8349 ;   0,8349;4,441E-16;5,319E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,518;2|3 ;   0,8332 ;   0,8332;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,522;2|3 ;   0,8315 ;   0,8315; 1,11E-16;1,335E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,526;2|3 ;   0,8297 ;   0,8297; 2,22E-16;2,676E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,53;2|3 ;    0,828 ;    0,828; 2,22E-16;2,682E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,534;2|3 ;   0,8262 ;   0,8262;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,538;2|3 ;   0,8244 ;   0,8244;3,331E-16; 4,04E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,542;2|3 ;   0,8227 ;   0,8227;3,331E-16;4,049E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,546;2|3 ;   0,8209 ;   0,8209; 2,22E-16;2,705E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,55;2|3 ;    0,819 ;    0,819;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,554;2|3 ;   0,8172 ;   0,8172; 1,11E-16;1,359E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,558;2|3 ;   0,8154 ;   0,8154; 2,22E-16;2,723E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,562;2|3 ;   0,8135 ;   0,8135; 2,22E-16;2,729E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,566;2|3 ;   0,8117 ;   0,8117; 1,11E-16;1,368E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,57;2|3 ;   0,8098 ;   0,8098; 1,11E-16;1,371E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,574;2|3 ;   0,8079 ;   0,8079;3,331E-16;4,123E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,578;2|3 ;    0,806 ;    0,806; 2,22E-16;2,755E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,582;2|3 ;   0,8041 ;   0,8041;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,586;2|3 ;   0,8021 ;   0,8021;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,59;2|3 ;   0,8002 ;   0,8002;3,331E-16;4,162E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,594;2|3 ;   0,7982 ;   0,7982;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,598;2|3 ;   0,7963 ;   0,7963;5,551E-16;6,971E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,602;2|3 ;   0,7943 ;   0,7943; 2,22E-16;2,796E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,606;2|3 ;   0,7923 ;   0,7923; 1,11E-16;1,401E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,61;2|3 ;   0,7903 ;   0,7903; 2,22E-16; 2,81E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,614;2|3 ;   0,7882 ;   0,7882; 2,22E-16;2,817E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,618;2|3 ;   0,7862 ;   0,7862; 2,22E-16;2,824E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,622;2|3 ;   0,7841 ;   0,7841;4,441E-16;5,664E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,626;2|3 ;    0,782 ;    0,782; 1,11E-16; 1,42E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,63;2|3 ;   0,7799 ;   0,7799;3,331E-16;4,271E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,634;2|3 ;   0,7778 ;   0,7778;3,331E-16;4,282E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,638;2|3 ;   0,7757 ;   0,7757; 2,22E-16;2,863E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,642;2|3 ;   0,7735 ;   0,7735; 1,11E-16;1,435E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,646;2|3 ;   0,7713 ;   0,7713; 2,22E-16;2,879E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,65;2|3 ;   0,7692 ;   0,7692; 2,22E-16;2,887E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,654;2|3 ;    0,767 ;    0,767; 1,11E-16;1,448E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,658;2|3 ;   0,7647 ;   0,7647;3,331E-16;4,355E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,662;2|3 ;   0,7625 ;   0,7625; 2,22E-16;2,912E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,666;2|3 ;   0,7602 ;   0,7602; 1,11E-16; 1,46E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,67;2|3 ;   0,7579 ;   0,7579;4,441E-16;5,859E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,674;2|3 ;   0,7556 ;   0,7556; 1,11E-16;1,469E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,678;2|3 ;   0,7533 ;   0,7533;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,682;2|3 ;   0,7509 ;   0,7509;8,882E-16;1,183E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,686;2|3 ;   0,7486 ;   0,7486; 1,11E-16;1,483E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,69;2|3 ;   0,7462 ;   0,7462; 2,22E-16;2,976E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,694;2|3 ;   0,7438 ;   0,7438;3,331E-16;4,478E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,698;2|3 ;   0,7413 ;   0,7413; 1,11E-16;1,498E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,702;2|3 ;   0,7388 ;   0,7388; 1,11E-16;1,503E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,706;2|3 ;   0,7364 ;   0,7364;3,331E-16;4,523E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,71;2|3 ;   0,7338 ;   0,7338; 2,22E-16;3,026E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,714;2|3 ;   0,7313 ;   0,7313;4,441E-16;6,073E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,718;2|3 ;   0,7287 ;   0,7287;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,722;2|3 ;   0,7261 ;   0,7261;7,772E-16; 1,07E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,726;2|3 ;   0,7235 ;   0,7235;3,331E-16;4,604E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,73;2|3 ;   0,7208 ;   0,7208;5,551E-16;7,701E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,734;2|3 ;   0,7182 ;   0,7182; 1,11E-16;1,546E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,738;2|3 ;   0,7154 ;   0,7154;3,331E-16;4,655E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,742;2|3 ;   0,7127 ;   0,7127;3,331E-16;4,673E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,746;2|3 ;   0,7099 ;   0,7099; 2,22E-16;3,128E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,75;2|3 ;   0,7071 ;   0,7071; 1,11E-16; 1,57E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,754;2|3 ;   0,7043 ;   0,7043;4,441E-16;6,306E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,758;2|3 ;   0,7014 ;   0,7014; 1,11E-16;1,583E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,762;2|3 ;   0,6985 ;   0,6985;3,331E-16;4,769E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,766;2|3 ;   0,6955 ;   0,6955;5,551E-16;7,981E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,77;2|3 ;   0,6925 ;   0,6925; 2,22E-16;3,206E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,774;2|3 ;   0,6895 ;   0,6895;5,551E-16;8,051E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,778;2|3 ;   0,6864 ;   0,6864;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,782;2|3 ;   0,6833 ;   0,6833; 2,22E-16; 3,25E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,786;2|3 ;   0,6801 ;   0,6801; 2,22E-16;3,265E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,79;2|3 ;   0,6769 ;   0,6769; 2,22E-16; 3,28E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,794;2|3 ;   0,6737 ;   0,6737; 2,22E-16;3,296E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,798;2|3 ;   0,6704 ;   0,6704;5,551E-16; 8,28E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,802;2|3 ;   0,6671 ;   0,6671; 1,11E-16;1,664E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,806;2|3 ;   0,6637 ;   0,6637;5,551E-16;8,364E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,81;2|3 ;   0,6602 ;   0,6602;9,992E-16;1,513E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,814;2|3 ;   0,6567 ;   0,6567; 2,22E-16;3,381E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,818;2|3 ;   0,6532 ;   0,6532;5,551E-16;8,499E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,822;2|3 ;   0,6495 ;   0,6495;5,551E-16;8,546E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,826;2|3 ;   0,6459 ;   0,6459; 1,11E-16;1,719E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,83;2|3 ;   0,6421 ;   0,6421;4,441E-16;6,916E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,834;2|3 ;   0,6383 ;   0,6383;5,551E-16;8,697E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,838;2|3 ;   0,6344 ;   0,6344;3,331E-16; 5,25E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,842;2|3 ;   0,6305 ;   0,6305;5,551E-16;8,805E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,846;2|3 ;   0,6264 ;   0,6264; 1,11E-16;1,772E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,85;2|3 ;   0,6223 ;   0,6223; 2,22E-16;3,568E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,854;2|3 ;   0,6181 ;   0,6181;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,858;2|3 ;   0,6139 ;   0,6139;4,441E-16;7,234E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,862;2|3 ;   0,6095 ;   0,6095; 1,11E-16;1,822E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,866;2|3 ;    0,605 ;    0,605; 2,22E-16; 3,67E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,87;2|3 ;   0,6005 ;   0,6005;3,331E-16;5,547E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,874;2|3 ;   0,5958 ;   0,5958;4,441E-16;7,454E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,878;2|3 ;    0,591 ;    0,591; 1,11E-16;1,879E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,882;2|3 ;   0,5861 ;   0,5861;6,661E-16;1,137E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,886;2|3 ;   0,5811 ;   0,5811;1,665E-15;2,866E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,89;2|3 ;   0,5759 ;   0,5759;6,661E-16;1,157E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,894;2|3 ;   0,5706 ;   0,5706;5,551E-16;9,729E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,898;2|3 ;   0,5651 ;   0,5651;7,772E-16;1,375E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,902;2|3 ;   0,5595 ;   0,5595;3,331E-16;5,953E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,906;2|3 ;   0,5537 ;   0,5537; 1,11E-15;2,005E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,91;2|3 ;   0,5477 ;   0,5477;5,551E-16;1,013E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,914;2|3 ;   0,5415 ;   0,5415; 2,22E-16;  4,1E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,918;2|3 ;   0,5351 ;   0,5351; 1,11E-16;2,075E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,922;2|3 ;   0,5285 ;   0,5285;6,661E-16; 1,26E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,926;2|3 ;   0,5216 ;   0,5216;3,331E-16;6,386E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,93;2|3 ;   0,5144 ;   0,5144;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,934;2|3 ;   0,5069 ;   0,5069;7,772E-16;1,533E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,938;2|3 ;    0,499 ;    0,499;        0;        0
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,942;2|3 ;   0,4907 ;   0,4907;8,882E-16; 1,81E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,946;2|3 ;   0,4821 ;   0,4821;6,106E-16;1,267E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,95;2|3 ;   0,4729 ;   0,4729;3,331E-16;7,044E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,954;2|3 ;   0,4631 ;   0,4631;4,441E-16;9,589E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,958;2|3 ;   0,4527 ;   0,4527;4,441E-16; 9,81E-16
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,962;2|3 ;   0,4415 ;   0,4415;9,437E-16;2,137E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,966;2|3 ;   0,4294 ;   0,4294;5,551E-16;1,293E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,97;2|3 ;   0,4162 ;   0,4162;7,216E-16;1,734E-15
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,974;2|3 ;   0,4016 ;   0,4016;5,107E-15;1,272E-14
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,978;2|3 ;   0,3851 ;   0,3851;3,414E-13;8,866E-13
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,982;2|3 ;   0,3663 ;   0,3663;2,447E-11;6,681E-11
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,986;2|3 ;    0,344 ;    0,344;1,803E-09;5,241E-09
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;   0,99;2|3 ;   0,3162 ;   0,3162;1,406E-07;4,446E-07
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,994;2|3 ;   0,2783 ;   0,2783;1,244E-05;4,469E-05
+"Math_6_2(C:\git_reps\summer_practice\opaque-func-lib\Muradyan\TestingSystem\TestingSystem\Tests\Lebedev.cs)"; 1000;  0,998;2|3 ;   0,2131 ;   0,2115;  0,00165; 0,007805
 

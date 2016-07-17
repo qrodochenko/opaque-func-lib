@@ -1,502 +1,502 @@
 "                      Function";"    N";"   Args";"";"      Val";"    Ideal";"      Abs";"      Rel"
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -99800;2|3 ;3,442E+90 ;  -0,1391;3,442E+90;2,475E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -99400;2|3 ;3,177E+90 ;   0,9999;3,177E+90;3,177E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -99000;2|3 ;2,931E+90 ;   -0,151;2,931E+90;1,941E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -98600;2|3 ;2,703E+90 ; -0,08551;2,703E+90; 3,16E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -98200;2|3 ;2,492E+90 ;    0,986;2,492E+90;2,527E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -97800;2|3 ;2,296E+90 ;  -0,2216;2,296E+90;1,036E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -97400;2|3 ;2,116E+90 ;  -0,0465;2,116E+90; 4,55E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -97000;2|3 ;1,948E+90 ;   0,9496;1,948E+90;2,052E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -96600;2|3 ;1,794E+90 ;  -0,3049;1,794E+90;5,884E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -96200;2|3 ;1,651E+90 ; -0,02098;1,651E+90;7,868E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -95800;2|3 ;1,519E+90 ;   0,8925;1,519E+90;1,702E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -95400;2|3 ;1,397E+90 ;  -0,3982;1,397E+90;3,509E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -95000;2|3 ;1,284E+90 ;-0,006847;1,284E+90;1,876E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -94600;2|3 ; 1,18E+90 ;   0,8179; 1,18E+90;1,443E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -94200;2|3 ;1,085E+90 ;  -0,4979;1,085E+90;2,178E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -93800;2|3 ;9,961E+89 ;-0,001076;9,961E+89;9,257E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -93400;2|3 ;9,145E+89 ;   0,7297;9,145E+89;1,253E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -93000;2|3 ;8,393E+89 ;  -0,5998;8,393E+89;1,399E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -92600;2|3 ;7,699E+89 ; -2,9E-06;7,699E+89;2,655E+95
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -92200;2|3 ;7,061E+89 ;   0,6323;7,061E+89;1,117E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -91800;2|3 ;6,473E+89 ;   -0,699;6,473E+89; 9,26E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -91400;2|3 ;5,931E+89 ;0,0004063;5,931E+89; 1,46E+93
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -91000;2|3 ;5,433E+89 ;   0,5308;5,433E+89;1,024E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -90600;2|3 ;4,975E+89 ;  -0,7907;4,975E+89;6,292E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -90200;2|3 ;4,554E+89 ; 0,004237;4,554E+89;1,075E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -89800;2|3 ;4,166E+89 ;   0,4299;4,166E+89;9,692E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -89400;2|3 ;3,811E+89 ;  -0,8702;3,811E+89;4,379E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -89000;2|3 ;3,484E+89 ;  0,01531;3,484E+89;2,276E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -88600;2|3 ;3,184E+89 ;    0,334;3,184E+89;9,531E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -88200;2|3 ;2,908E+89 ;  -0,9333;2,908E+89;3,116E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -87800;2|3 ;2,655E+89 ;  0,03687;2,655E+89;7,202E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -87400;2|3 ;2,424E+89 ;   0,2472;2,424E+89;9,806E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -87000;2|3 ;2,211E+89 ;  -0,9766;2,211E+89;2,264E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -86600;2|3 ;2,017E+89 ;  0,07136;2,017E+89;2,826E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -86200;2|3 ;1,838E+89 ;   0,1722;1,838E+89;1,067E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -85800;2|3 ;1,675E+89 ;   -0,998;1,675E+89;1,678E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -85400;2|3 ;1,525E+89 ;   0,1202;1,525E+89;1,269E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -85000;2|3 ;1,389E+89 ;   0,1112;1,389E+89;1,249E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -84600;2|3 ;1,264E+89 ;   -0,996;1,264E+89;1,269E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -84200;2|3 ;1,149E+89 ;   0,1836;1,149E+89;6,261E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -83800;2|3 ;1,045E+89 ;  0,06476;1,045E+89;1,614E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -83400;2|3 ;9,496E+88 ;   -0,971;9,496E+88; 9,78E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -83000;2|3 ;8,626E+88 ;   0,2606;8,626E+88; 3,31E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -82600;2|3 ;7,831E+88 ;  0,03251;7,831E+88;2,409E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -82200;2|3 ;7,107E+88 ;  -0,9242;7,107E+88; 7,69E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -81800;2|3 ;6,446E+88 ;   0,3492;6,446E+88;1,846E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -81400;2|3 ;5,844E+88 ;  0,01285;5,844E+88;4,546E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -81000;2|3 ;5,296E+88 ;  -0,8582;5,296E+88;6,171E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -80600;2|3 ;4,797E+88 ;   0,4462;4,797E+88;1,075E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -80200;2|3 ;4,342E+88 ;  0,00321;4,342E+88;1,353E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -79800;2|3 ;3,929E+88 ;  -0,7764;3,929E+88;5,061E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -79400;2|3 ;3,553E+88 ;   0,5475;3,553E+88; 6,49E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -79000;2|3 ;3,212E+88 ; 0,000212;3,212E+88;1,515E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -78600;2|3 ;2,902E+88 ;  -0,6832;2,902E+88;4,248E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -78200;2|3 ; 2,62E+88 ;   0,6487; 2,62E+88; 4,04E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -77800;2|3 ;2,365E+88 ;-2,37E-05;2,365E+88;9,977E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -77400;2|3 ;2,133E+88 ;  -0,5832;2,133E+88;3,658E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -77000;2|3 ;1,923E+88 ;   0,7448;1,923E+88;2,582E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -76600;2|3 ;1,733E+88 ;-0,001596;1,733E+88;1,086E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -76200;2|3 ;1,561E+88 ;  -0,4813;1,561E+88;3,243E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -75800;2|3 ;1,405E+88 ;   0,8311;1,405E+88; 1,69E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -75400;2|3 ;1,264E+88 ;-0,008499;1,264E+88;1,487E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -75000;2|3 ;1,136E+88 ;  -0,3824;1,136E+88;2,972E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -74600;2|3 ;1,021E+88 ;   0,9031;1,021E+88; 1,13E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -74200;2|3 ;9,169E+87 ; -0,02431;9,169E+87;3,771E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -73800;2|3 ;8,229E+87 ;  -0,2905;8,229E+87;2,833E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -73400;2|3 ;7,382E+87 ;    0,957;7,382E+87;7,713E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -73000;2|3 ;6,618E+87 ; -0,05192;6,618E+87;1,275E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -72600;2|3 ;5,929E+87 ;  -0,2091;5,929E+87;2,836E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -72200;2|3 ;5,309E+87 ;   0,9899;5,309E+87;5,363E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -71800;2|3 ; 4,75E+87 ; -0,09327; 4,75E+87;5,093E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -71400;2|3 ;4,248E+87 ;  -0,1407;4,248E+87;3,019E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -71000;2|3 ;3,797E+87 ;   0,9999;3,797E+87;3,797E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -70600;2|3 ;3,391E+87 ;  -0,1492;3,391E+87;2,272E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -70200;2|3 ;3,027E+87 ; -0,08678;3,027E+87;3,488E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -69800;2|3 ;  2,7E+87 ;   0,9867;  2,7E+87;2,736E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -69400;2|3 ;2,407E+87 ;  -0,2195;2,407E+87;1,097E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -69000;2|3 ;2,144E+87 ; -0,04738;2,144E+87;4,525E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -68600;2|3 ;1,909E+87 ;   0,9508;1,909E+87;2,007E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -68200;2|3 ;1,698E+87 ;  -0,3024;1,698E+87;5,614E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -67800;2|3 ; 1,51E+87 ; -0,02152; 1,51E+87;7,016E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -67400;2|3 ;1,341E+87 ;   0,8943;1,341E+87;  1,5E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -67000;2|3 ;1,191E+87 ;  -0,3955;1,191E+87; 3,01E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -66600;2|3 ;1,056E+87 ;-0,007106;1,056E+87;1,486E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -66200;2|3 ;9,363E+86 ;   0,8201;9,363E+86;1,142E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -65800;2|3 ;8,294E+86 ;  -0,4952;8,294E+86;1,675E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -65400;2|3 ;7,342E+86 ;-0,001153;7,342E+86;6,365E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -65000;2|3 ;6,494E+86 ;   0,7322;6,494E+86;8,869E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -64600;2|3 ; 5,74E+86 ;   -0,597; 5,74E+86;9,614E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -64200;2|3 ;5,069E+86 ;-4,634E-06;5,069E+86;1,094E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -63800;2|3 ;4,474E+86 ;   0,6351;4,474E+86;7,044E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -63400;2|3 ;3,945E+86 ;  -0,6964;3,945E+86;5,665E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -63000;2|3 ;3,476E+86 ; 0,000368;3,476E+86;9,446E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -62600;2|3 ; 3,06E+86 ;   0,5336; 3,06E+86;5,735E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -62200;2|3 ;2,692E+86 ;  -0,7883;2,692E+86;3,415E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -61800;2|3 ;2,366E+86 ; 0,004053;2,366E+86;5,838E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -61400;2|3 ;2,078E+86 ;   0,4326;2,078E+86;4,803E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -61000;2|3 ;1,823E+86 ;  -0,8682;1,823E+86;  2,1E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -60600;2|3 ;1,598E+86 ;  0,01488;1,598E+86;1,074E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -60200;2|3 ;  1,4E+86 ;   0,3365;  1,4E+86; 4,16E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -59800;2|3 ;1,225E+86 ;  -0,9318;1,225E+86;1,315E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -59400;2|3 ;1,071E+86 ;  0,03612;1,071E+86;2,966E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -59000;2|3 ; 9,36E+85 ;   0,2494; 9,36E+85;3,753E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -58600;2|3 ;8,169E+85 ;  -0,9757;8,169E+85;8,373E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -58200;2|3 ;7,124E+85 ;  0,07024;7,124E+85;1,014E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -57800;2|3 ;6,206E+85 ;   0,1741;6,206E+85;3,564E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -57400;2|3 ;5,401E+85 ;  -0,9977;5,401E+85;5,414E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -57000;2|3 ;4,696E+85 ;   0,1187;4,696E+85;3,958E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -56600;2|3 ;4,079E+85 ;   0,1127;4,079E+85;3,621E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -56200;2|3 ; 3,54E+85 ;  -0,9964; 3,54E+85;3,552E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -55800;2|3 ;3,068E+85 ;   0,1817;3,068E+85;1,689E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -55400;2|3 ;2,657E+85 ;  0,06583;2,657E+85;4,036E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -55000;2|3 ;2,299E+85 ;   -0,972;2,299E+85;2,365E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -54600;2|3 ;1,987E+85 ;   0,2584;1,987E+85;7,689E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -54200;2|3 ;1,715E+85 ;  0,03321;1,715E+85;5,163E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -53800;2|3 ;1,479E+85 ;  -0,9258;1,479E+85;1,597E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -53400;2|3 ;1,274E+85 ;   0,3467;1,274E+85;3,674E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -53000;2|3 ;1,096E+85 ;  0,01324;1,096E+85;8,274E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -52600;2|3 ;9,418E+84 ;  -0,8602;9,418E+84;1,095E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -52200;2|3 ;8,084E+84 ;   0,4434;8,084E+84;1,823E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -51800;2|3 ;6,932E+84 ; 0,003368;6,932E+84;2,058E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -51400;2|3 ;5,936E+84 ;  -0,7788;5,936E+84;7,622E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -51000;2|3 ;5,077E+84 ;   0,5447;5,077E+84;9,321E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -50600;2|3 ;4,338E+84 ;0,0002387;4,338E+84;1,817E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -50200;2|3 ;3,701E+84 ;  -0,6858;3,701E+84;5,396E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -49800;2|3 ;3,154E+84 ;    0,646;3,154E+84;4,882E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -49400;2|3 ;2,684E+84 ;-1,822E-05;2,684E+84;1,473E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -49000;2|3 ;2,281E+84 ;   -0,586;2,281E+84;3,893E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -48600;2|3 ;1,936E+84 ;   0,7423;1,936E+84;2,608E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -48200;2|3 ;1,641E+84 ;  -0,0015;1,641E+84;1,094E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -47800;2|3 ;1,389E+84 ;  -0,4841;1,389E+84; 2,87E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -47400;2|3 ;1,174E+84 ;    0,829;1,174E+84;1,417E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -47000;2|3 ;9,913E+83 ;-0,008207;9,913E+83;1,208E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -46600;2|3 ;8,355E+83 ;   -0,385;8,355E+83; 2,17E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -46200;2|3 ;7,032E+83 ;   0,9014;7,032E+83;7,801E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -45800;2|3 ;5,909E+83 ; -0,02374;5,909E+83; 2,49E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -45400;2|3 ;4,959E+83 ;  -0,2928;4,959E+83;1,693E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -45000;2|3 ;4,154E+83 ;   0,9558;4,154E+83;4,346E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -44600;2|3 ;3,475E+83 ; -0,05099;3,475E+83;6,815E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -44200;2|3 ;2,902E+83 ;  -0,2111;2,902E+83;1,374E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -43800;2|3 ;2,419E+83 ;   0,9893;2,419E+83;2,446E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -43400;2|3 ;2,014E+83 ; -0,09195;2,014E+83; 2,19E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -43000;2|3 ;1,673E+83 ;  -0,1424;1,673E+83;1,175E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -42600;2|3 ;1,388E+83 ;        1;1,388E+83;1,388E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -42200;2|3 ;1,149E+83 ;  -0,1475;1,149E+83;7,792E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -41800;2|3 ;9,501E+82 ; -0,08806;9,501E+82;1,079E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -41400;2|3 ;7,839E+82 ;   0,9874;7,839E+82;7,939E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -41000;2|3 ;6,455E+82 ;  -0,2174;6,455E+82; 2,97E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -40600;2|3 ;5,306E+82 ; -0,04827;5,306E+82;1,099E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -40200;2|3 ;4,353E+82 ;   0,9521;4,353E+82;4,572E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -39800;2|3 ;3,564E+82 ;     -0,3;3,564E+82;1,188E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -39400;2|3 ;2,912E+82 ; -0,02206;2,912E+82; 1,32E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -39000;2|3 ;2,374E+82 ;   0,8961;2,374E+82; 2,65E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -38600;2|3 ;1,932E+82 ;  -0,3929;1,932E+82;4,917E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -38200;2|3 ;1,569E+82 ;-0,007372;1,569E+82;2,128E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -37800;2|3 ;1,271E+82 ;   0,8223;1,271E+82;1,545E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -37400;2|3 ;1,027E+82 ;  -0,4924;1,027E+82;2,086E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -37000;2|3 ;8,285E+81 ;-0,001234;8,285E+81;6,712E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -36600;2|3 ;6,666E+81 ;   0,7347;6,666E+81;9,072E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -36200;2|3 ;5,351E+81 ;  -0,5943;5,351E+81;9,004E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -35800;2|3 ;4,285E+81 ;-6,949E-06;4,285E+81;6,166E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -35400;2|3 ;3,422E+81 ;   0,6378;3,422E+81;5,366E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -35000;2|3 ;2,726E+81 ;  -0,6938;2,726E+81; 3,93E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -34600;2|3 ;2,167E+81 ;0,0003322;2,167E+81;6,523E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -34200;2|3 ;1,717E+81 ;   0,5364;1,717E+81;3,201E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -33800;2|3 ;1,357E+81 ;   -0,786;1,357E+81;1,727E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -33400;2|3 ;1,069E+81 ; 0,003874;1,069E+81;2,761E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -33000;2|3 ;8,405E+80 ;   0,4353;8,405E+80;1,931E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -32600;2|3 ;6,586E+80 ;  -0,8662;6,586E+80;7,603E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -32200;2|3 ;5,145E+80 ;  0,01446;5,145E+80;3,558E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -31800;2|3 ;4,007E+80 ;   0,3391;4,007E+80;1,182E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -31400;2|3 ;3,111E+80 ;  -0,9303;3,111E+80;3,344E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -31000;2|3 ;2,407E+80 ;  0,03538;2,407E+80;6,803E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -30600;2|3 ;1,856E+80 ;   0,2516;1,856E+80;7,378E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -30200;2|3 ;1,427E+80 ;  -0,9748;1,427E+80;1,464E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -29800;2|3 ;1,093E+80 ;  0,06912;1,093E+80;1,581E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -29400;2|3 ; 8,34E+79 ;    0,176; 8,34E+79;4,739E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -29000;2|3 ;6,342E+79 ;  -0,9974;6,342E+79;6,358E+79
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -28600;2|3 ;4,804E+79 ;   0,1171;4,804E+79;4,101E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -28200;2|3 ;3,624E+79 ;   0,1141;3,624E+79;3,175E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -27800;2|3 ;2,724E+79 ;  -0,9967;2,724E+79;2,732E+79
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -27400;2|3 ;2,038E+79 ;   0,1798;2,038E+79;1,134E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -27000;2|3 ;1,519E+79 ;  0,06692;1,519E+79; 2,27E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -26600;2|3 ;1,127E+79 ;   -0,973;1,127E+79;1,158E+79
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -26200;2|3 ;8,323E+78 ;   0,2561;8,323E+78; 3,25E+79
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -25800;2|3 ;6,118E+78 ;  0,03393;6,118E+78;1,803E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -25400;2|3 ;4,476E+78 ;  -0,9273;4,476E+78;4,827E+78
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -25000;2|3 ;3,259E+78 ;   0,3441;3,259E+78; 9,47E+78
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -24600;2|3 ; 2,36E+78 ;  0,01364; 2,36E+78; 1,73E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -24200;2|3 ;  1,7E+78 ;  -0,8622;  1,7E+78;1,972E+78
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -23800;2|3 ;1,218E+78 ;   0,4407;1,218E+78;2,765E+78
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -23400;2|3 ;8,681E+77 ; 0,003532;8,681E+77;2,458E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -23000;2|3 ;6,149E+77 ;  -0,7812;6,149E+77;7,871E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -22600;2|3 ;4,329E+77 ;   0,5419;4,329E+77;7,988E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -22200;2|3 ;3,029E+77 ;0,0002676;3,029E+77;1,132E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -21800;2|3 ;2,106E+77 ;  -0,6885;2,106E+77;3,058E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -21400;2|3 ;1,454E+77 ;   0,6433;1,454E+77; 2,26E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -21000;2|3 ;9,968E+76 ;-1,366E-05;9,968E+76;7,297E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -20600;2|3 ;6,786E+76 ;  -0,5887;6,786E+76;1,153E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -20200;2|3 ;4,584E+76 ;   0,7398;4,584E+76;6,197E+76
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -19800;2|3 ;3,073E+76 ;-0,001407;3,073E+76;2,183E+79
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -19400;2|3 ;2,043E+76 ;  -0,4869;2,043E+76;4,196E+76
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -19000;2|3 ;1,347E+76 ;   0,8268;1,347E+76;1,629E+76
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -18600;2|3 ;  8,8E+75 ;-0,007922;  8,8E+75;1,111E+78
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -18200;2|3 ;5,697E+75 ;  -0,3876;5,697E+75; 1,47E+76
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -17800;2|3 ;3,653E+75 ;   0,8996;3,653E+75; 4,06E+75
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -17400;2|3 ;2,319E+75 ; -0,02317;2,319E+75;1,001E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -17000;2|3 ;1,456E+75 ;  -0,2952;1,456E+75;4,933E+75
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -16600;2|3 ;9,045E+74 ;   0,9546;9,045E+74;9,475E+74
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -16200;2|3 ;5,553E+74 ; -0,05007;5,553E+74;1,109E+76
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -15800;2|3 ;3,368E+74 ;  -0,2132;3,368E+74; 1,58E+75
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -15400;2|3 ;2,017E+74 ;   0,9886;2,017E+74; 2,04E+74
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -15000;2|3 ;1,191E+74 ; -0,09064;1,191E+74;1,314E+75
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -14600;2|3 ;6,939E+73 ;  -0,1441;6,939E+73;4,815E+74
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -14200;2|3 ;3,981E+73 ;        1;3,981E+73;3,981E+73
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -13800;2|3 ;2,248E+73 ;  -0,1458;2,248E+73;1,542E+74
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -13400;2|3 ;1,248E+73 ; -0,08934;1,248E+73;1,397E+74
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -13000;2|3 ;6,809E+72 ;    0,988;6,809E+72;6,892E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -12600;2|3 ;3,645E+72 ;  -0,2153;3,645E+72;1,693E+73
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -12200;2|3 ;1,912E+72 ; -0,04916;1,912E+72;3,889E+73
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -11800;2|3 ;9,815E+71 ;   0,9533;9,815E+71; 1,03E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -11400;2|3 ;4,924E+71 ;  -0,2976;4,924E+71;1,655E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -11000;2|3 ; 2,41E+71 ; -0,02261; 2,41E+71;1,066E+73
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -10600;2|3 ;1,149E+71 ;   0,8979;1,149E+71; 1,28E+71
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10; -10200;2|3 ;5,324E+70 ;  -0,3903;5,324E+70;1,364E+71
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -9800;2|3 ;2,392E+70 ;-0,007644;2,392E+70;3,129E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -9400;2|3 ;1,039E+70 ;   0,8246;1,039E+70;1,261E+70
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -9000;2|3 ;4,356E+69 ;  -0,4896;4,356E+69;8,896E+69
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -8600;2|3 ;1,755E+69 ;-0,001319;1,755E+69; 1,33E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -8200;2|3 ;6,769E+68 ;   0,7373;6,769E+68;9,181E+68
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -7800;2|3 ; 2,49E+68 ;  -0,5915; 2,49E+68;4,209E+68
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -7400;2|3 ;8,687E+67 ;-9,93E-06;8,687E+67;8,748E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -7000;2|3 ;2,859E+67 ;   0,6405;2,859E+67;4,463E+67
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -6600;2|3 ;8,813E+66 ;  -0,6911;8,813E+66;1,275E+67
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -6200;2|3 ;2,524E+66 ;0,0002987;2,524E+66;8,449E+69
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -5800;2|3 ; 6,65E+65 ;   0,5392; 6,65E+65;1,233E+66
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -5400;2|3 ;1,593E+65 ;  -0,7836;1,593E+65;2,032E+65
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -5000;2|3 ;3,417E+64 ;   0,0037;3,417E+64;9,235E+66
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -4600;2|3 ;6,448E+63 ;    0,438;6,448E+63;1,472E+64
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -4200;2|3 ;1,045E+63 ;  -0,8642;1,045E+63;1,209E+63
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -3800;2|3 ;1,412E+62 ;  0,01405;1,412E+62;1,005E+64
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -3400;2|3 ;1,527E+61 ;   0,3416;1,527E+61; 4,47E+61
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -3000;2|3 ;1,249E+60 ;  -0,9288;1,249E+60;1,345E+60
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -2600;2|3 ; 7,14E+58 ;  0,03465; 7,14E+58;2,061E+60
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -2200;2|3 ;2,527E+57 ;   0,2539;2,527E+57;9,957E+57
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -1800;2|3 ;4,568E+55 ;  -0,9739;4,568E+55; 4,69E+55
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -1400;2|3 ;2,998E+53 ;  0,06801;2,998E+53;4,408E+54
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -1000;2|3 ;3,583E+50 ;   0,1779;3,583E+50;2,014E+51
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   -600;2|3 ; 1,31E+46 ;  -0,9971; 1,31E+46;1,314E+46
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   -200;2|3 ;3,753E+36 ;   0,1156;3,753E+36;3,246E+37
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;    200;2|3 ;3,753E+36 ;   0,1156;3,753E+36;3,246E+37
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;    600;2|3 ; 1,31E+46 ;  -0,9971; 1,31E+46;1,314E+46
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1000;2|3 ;3,583E+50 ;   0,1779;3,583E+50;2,014E+51
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1400;2|3 ;2,998E+53 ;  0,06801;2,998E+53;4,408E+54
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1800;2|3 ;4,568E+55 ;  -0,9739;4,568E+55; 4,69E+55
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   2200;2|3 ;2,527E+57 ;   0,2539;2,527E+57;9,957E+57
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   2600;2|3 ; 7,14E+58 ;  0,03465; 7,14E+58;2,061E+60
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3000;2|3 ;1,249E+60 ;  -0,9288;1,249E+60;1,345E+60
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3400;2|3 ;1,527E+61 ;   0,3416;1,527E+61; 4,47E+61
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3800;2|3 ;1,412E+62 ;  0,01405;1,412E+62;1,005E+64
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   4200;2|3 ;1,045E+63 ;  -0,8642;1,045E+63;1,209E+63
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   4600;2|3 ;6,448E+63 ;    0,438;6,448E+63;1,472E+64
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   5000;2|3 ;3,417E+64 ;   0,0037;3,417E+64;9,235E+66
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   5400;2|3 ;1,593E+65 ;  -0,7836;1,593E+65;2,032E+65
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   5800;2|3 ; 6,65E+65 ;   0,5392; 6,65E+65;1,233E+66
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   6200;2|3 ;2,524E+66 ;0,0002987;2,524E+66;8,449E+69
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   6600;2|3 ;8,813E+66 ;  -0,6911;8,813E+66;1,275E+67
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   7000;2|3 ;2,859E+67 ;   0,6405;2,859E+67;4,463E+67
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   7400;2|3 ;8,687E+67 ;-9,93E-06;8,687E+67;8,748E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   7800;2|3 ; 2,49E+68 ;  -0,5915; 2,49E+68;4,209E+68
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   8200;2|3 ;6,769E+68 ;   0,7373;6,769E+68;9,181E+68
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   8600;2|3 ;1,755E+69 ;-0,001319;1,755E+69; 1,33E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   9000;2|3 ;4,356E+69 ;  -0,4896;4,356E+69;8,896E+69
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   9400;2|3 ;1,039E+70 ;   0,8246;1,039E+70;1,261E+70
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;   9800;2|3 ;2,392E+70 ;-0,007644;2,392E+70;3,129E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  10200;2|3 ;5,324E+70 ;  -0,3903;5,324E+70;1,364E+71
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  10600;2|3 ;1,149E+71 ;   0,8979;1,149E+71; 1,28E+71
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11000;2|3 ; 2,41E+71 ; -0,02261; 2,41E+71;1,066E+73
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11400;2|3 ;4,924E+71 ;  -0,2976;4,924E+71;1,655E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11800;2|3 ;9,815E+71 ;   0,9533;9,815E+71; 1,03E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  12200;2|3 ;1,912E+72 ; -0,04916;1,912E+72;3,889E+73
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  12600;2|3 ;3,645E+72 ;  -0,2153;3,645E+72;1,693E+73
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13000;2|3 ;6,809E+72 ;    0,988;6,809E+72;6,892E+72
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13400;2|3 ;1,248E+73 ; -0,08934;1,248E+73;1,397E+74
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13800;2|3 ;2,248E+73 ;  -0,1458;2,248E+73;1,542E+74
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  14200;2|3 ;3,981E+73 ;        1;3,981E+73;3,981E+73
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  14600;2|3 ;6,939E+73 ;  -0,1441;6,939E+73;4,815E+74
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15000;2|3 ;1,191E+74 ; -0,09064;1,191E+74;1,314E+75
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15400;2|3 ;2,017E+74 ;   0,9886;2,017E+74; 2,04E+74
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15800;2|3 ;3,368E+74 ;  -0,2132;3,368E+74; 1,58E+75
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  16200;2|3 ;5,553E+74 ; -0,05007;5,553E+74;1,109E+76
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  16600;2|3 ;9,045E+74 ;   0,9546;9,045E+74;9,475E+74
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17000;2|3 ;1,456E+75 ;  -0,2952;1,456E+75;4,933E+75
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17400;2|3 ;2,319E+75 ; -0,02317;2,319E+75;1,001E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17800;2|3 ;3,653E+75 ;   0,8996;3,653E+75; 4,06E+75
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  18200;2|3 ;5,697E+75 ;  -0,3876;5,697E+75; 1,47E+76
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  18600;2|3 ;  8,8E+75 ;-0,007922;  8,8E+75;1,111E+78
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19000;2|3 ;1,347E+76 ;   0,8268;1,347E+76;1,629E+76
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19400;2|3 ;2,043E+76 ;  -0,4869;2,043E+76;4,196E+76
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19800;2|3 ;3,073E+76 ;-0,001407;3,073E+76;2,183E+79
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  20200;2|3 ;4,584E+76 ;   0,7398;4,584E+76;6,197E+76
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  20600;2|3 ;6,786E+76 ;  -0,5887;6,786E+76;1,153E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21000;2|3 ;9,968E+76 ;-1,366E-05;9,968E+76;7,297E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21400;2|3 ;1,454E+77 ;   0,6433;1,454E+77; 2,26E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21800;2|3 ;2,106E+77 ;  -0,6885;2,106E+77;3,058E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  22200;2|3 ;3,029E+77 ;0,0002676;3,029E+77;1,132E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  22600;2|3 ;4,329E+77 ;   0,5419;4,329E+77;7,988E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23000;2|3 ;6,149E+77 ;  -0,7812;6,149E+77;7,871E+77
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23400;2|3 ;8,681E+77 ; 0,003532;8,681E+77;2,458E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23800;2|3 ;1,218E+78 ;   0,4407;1,218E+78;2,765E+78
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  24200;2|3 ;  1,7E+78 ;  -0,8622;  1,7E+78;1,972E+78
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  24600;2|3 ; 2,36E+78 ;  0,01364; 2,36E+78; 1,73E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25000;2|3 ;3,259E+78 ;   0,3441;3,259E+78; 9,47E+78
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25400;2|3 ;4,476E+78 ;  -0,9273;4,476E+78;4,827E+78
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25800;2|3 ;6,118E+78 ;  0,03393;6,118E+78;1,803E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  26200;2|3 ;8,323E+78 ;   0,2561;8,323E+78; 3,25E+79
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  26600;2|3 ;1,127E+79 ;   -0,973;1,127E+79;1,158E+79
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27000;2|3 ;1,519E+79 ;  0,06692;1,519E+79; 2,27E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27400;2|3 ;2,038E+79 ;   0,1798;2,038E+79;1,134E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27800;2|3 ;2,724E+79 ;  -0,9967;2,724E+79;2,732E+79
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  28200;2|3 ;3,624E+79 ;   0,1141;3,624E+79;3,175E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  28600;2|3 ;4,804E+79 ;   0,1171;4,804E+79;4,101E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29000;2|3 ;6,342E+79 ;  -0,9974;6,342E+79;6,358E+79
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29400;2|3 ; 8,34E+79 ;    0,176; 8,34E+79;4,739E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29800;2|3 ;1,093E+80 ;  0,06912;1,093E+80;1,581E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  30200;2|3 ;1,427E+80 ;  -0,9748;1,427E+80;1,464E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  30600;2|3 ;1,856E+80 ;   0,2516;1,856E+80;7,378E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31000;2|3 ;2,407E+80 ;  0,03538;2,407E+80;6,803E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31400;2|3 ;3,111E+80 ;  -0,9303;3,111E+80;3,344E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31800;2|3 ;4,007E+80 ;   0,3391;4,007E+80;1,182E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  32200;2|3 ;5,145E+80 ;  0,01446;5,145E+80;3,558E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  32600;2|3 ;6,586E+80 ;  -0,8662;6,586E+80;7,603E+80
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33000;2|3 ;8,405E+80 ;   0,4353;8,405E+80;1,931E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33400;2|3 ;1,069E+81 ; 0,003874;1,069E+81;2,761E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33800;2|3 ;1,357E+81 ;   -0,786;1,357E+81;1,727E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  34200;2|3 ;1,717E+81 ;   0,5364;1,717E+81;3,201E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  34600;2|3 ;2,167E+81 ;0,0003322;2,167E+81;6,523E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35000;2|3 ;2,726E+81 ;  -0,6938;2,726E+81; 3,93E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35400;2|3 ;3,422E+81 ;   0,6378;3,422E+81;5,366E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35800;2|3 ;4,285E+81 ;-6,949E-06;4,285E+81;6,166E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  36200;2|3 ;5,351E+81 ;  -0,5943;5,351E+81;9,004E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  36600;2|3 ;6,666E+81 ;   0,7347;6,666E+81;9,072E+81
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37000;2|3 ;8,285E+81 ;-0,001234;8,285E+81;6,712E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37400;2|3 ;1,027E+82 ;  -0,4924;1,027E+82;2,086E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37800;2|3 ;1,271E+82 ;   0,8223;1,271E+82;1,545E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  38200;2|3 ;1,569E+82 ;-0,007372;1,569E+82;2,128E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  38600;2|3 ;1,932E+82 ;  -0,3929;1,932E+82;4,917E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39000;2|3 ;2,374E+82 ;   0,8961;2,374E+82; 2,65E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39400;2|3 ;2,912E+82 ; -0,02206;2,912E+82; 1,32E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39800;2|3 ;3,564E+82 ;     -0,3;3,564E+82;1,188E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  40200;2|3 ;4,353E+82 ;   0,9521;4,353E+82;4,572E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  40600;2|3 ;5,306E+82 ; -0,04827;5,306E+82;1,099E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41000;2|3 ;6,455E+82 ;  -0,2174;6,455E+82; 2,97E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41400;2|3 ;7,839E+82 ;   0,9874;7,839E+82;7,939E+82
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41800;2|3 ;9,501E+82 ; -0,08806;9,501E+82;1,079E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  42200;2|3 ;1,149E+83 ;  -0,1475;1,149E+83;7,792E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  42600;2|3 ;1,388E+83 ;        1;1,388E+83;1,388E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43000;2|3 ;1,673E+83 ;  -0,1424;1,673E+83;1,175E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43400;2|3 ;2,014E+83 ; -0,09195;2,014E+83; 2,19E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43800;2|3 ;2,419E+83 ;   0,9893;2,419E+83;2,446E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  44200;2|3 ;2,902E+83 ;  -0,2111;2,902E+83;1,374E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  44600;2|3 ;3,475E+83 ; -0,05099;3,475E+83;6,815E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45000;2|3 ;4,154E+83 ;   0,9558;4,154E+83;4,346E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45400;2|3 ;4,959E+83 ;  -0,2928;4,959E+83;1,693E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45800;2|3 ;5,909E+83 ; -0,02374;5,909E+83; 2,49E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  46200;2|3 ;7,032E+83 ;   0,9014;7,032E+83;7,801E+83
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  46600;2|3 ;8,355E+83 ;   -0,385;8,355E+83; 2,17E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47000;2|3 ;9,913E+83 ;-0,008207;9,913E+83;1,208E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47400;2|3 ;1,174E+84 ;    0,829;1,174E+84;1,417E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47800;2|3 ;1,389E+84 ;  -0,4841;1,389E+84; 2,87E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  48200;2|3 ;1,641E+84 ;  -0,0015;1,641E+84;1,094E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  48600;2|3 ;1,936E+84 ;   0,7423;1,936E+84;2,608E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49000;2|3 ;2,281E+84 ;   -0,586;2,281E+84;3,893E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49400;2|3 ;2,684E+84 ;-1,822E-05;2,684E+84;1,473E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49800;2|3 ;3,154E+84 ;    0,646;3,154E+84;4,882E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  50200;2|3 ;3,701E+84 ;  -0,6858;3,701E+84;5,396E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  50600;2|3 ;4,338E+84 ;0,0002387;4,338E+84;1,817E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51000;2|3 ;5,077E+84 ;   0,5447;5,077E+84;9,321E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51400;2|3 ;5,936E+84 ;  -0,7788;5,936E+84;7,622E+84
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51800;2|3 ;6,932E+84 ; 0,003368;6,932E+84;2,058E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  52200;2|3 ;8,084E+84 ;   0,4434;8,084E+84;1,823E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  52600;2|3 ;9,418E+84 ;  -0,8602;9,418E+84;1,095E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53000;2|3 ;1,096E+85 ;  0,01324;1,096E+85;8,274E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53400;2|3 ;1,274E+85 ;   0,3467;1,274E+85;3,674E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53800;2|3 ;1,479E+85 ;  -0,9258;1,479E+85;1,597E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  54200;2|3 ;1,715E+85 ;  0,03321;1,715E+85;5,163E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  54600;2|3 ;1,987E+85 ;   0,2584;1,987E+85;7,689E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55000;2|3 ;2,299E+85 ;   -0,972;2,299E+85;2,365E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55400;2|3 ;2,657E+85 ;  0,06583;2,657E+85;4,036E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55800;2|3 ;3,068E+85 ;   0,1817;3,068E+85;1,689E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  56200;2|3 ; 3,54E+85 ;  -0,9964; 3,54E+85;3,552E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  56600;2|3 ;4,079E+85 ;   0,1127;4,079E+85;3,621E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57000;2|3 ;4,696E+85 ;   0,1187;4,696E+85;3,958E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57400;2|3 ;5,401E+85 ;  -0,9977;5,401E+85;5,414E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57800;2|3 ;6,206E+85 ;   0,1741;6,206E+85;3,564E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  58200;2|3 ;7,124E+85 ;  0,07024;7,124E+85;1,014E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  58600;2|3 ;8,169E+85 ;  -0,9757;8,169E+85;8,373E+85
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59000;2|3 ; 9,36E+85 ;   0,2494; 9,36E+85;3,753E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59400;2|3 ;1,071E+86 ;  0,03612;1,071E+86;2,966E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59800;2|3 ;1,225E+86 ;  -0,9318;1,225E+86;1,315E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  60200;2|3 ;  1,4E+86 ;   0,3365;  1,4E+86; 4,16E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  60600;2|3 ;1,598E+86 ;  0,01488;1,598E+86;1,074E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61000;2|3 ;1,823E+86 ;  -0,8682;1,823E+86;  2,1E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61400;2|3 ;2,078E+86 ;   0,4326;2,078E+86;4,803E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61800;2|3 ;2,366E+86 ; 0,004053;2,366E+86;5,838E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  62200;2|3 ;2,692E+86 ;  -0,7883;2,692E+86;3,415E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  62600;2|3 ; 3,06E+86 ;   0,5336; 3,06E+86;5,735E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63000;2|3 ;3,476E+86 ; 0,000368;3,476E+86;9,446E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63400;2|3 ;3,945E+86 ;  -0,6964;3,945E+86;5,665E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63800;2|3 ;4,474E+86 ;   0,6351;4,474E+86;7,044E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  64200;2|3 ;5,069E+86 ;-4,634E-06;5,069E+86;1,094E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  64600;2|3 ; 5,74E+86 ;   -0,597; 5,74E+86;9,614E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65000;2|3 ;6,494E+86 ;   0,7322;6,494E+86;8,869E+86
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65400;2|3 ;7,342E+86 ;-0,001153;7,342E+86;6,365E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65800;2|3 ;8,294E+86 ;  -0,4952;8,294E+86;1,675E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  66200;2|3 ;9,363E+86 ;   0,8201;9,363E+86;1,142E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  66600;2|3 ;1,056E+87 ;-0,007106;1,056E+87;1,486E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67000;2|3 ;1,191E+87 ;  -0,3955;1,191E+87; 3,01E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67400;2|3 ;1,341E+87 ;   0,8943;1,341E+87;  1,5E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67800;2|3 ; 1,51E+87 ; -0,02152; 1,51E+87;7,016E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  68200;2|3 ;1,698E+87 ;  -0,3024;1,698E+87;5,614E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  68600;2|3 ;1,909E+87 ;   0,9508;1,909E+87;2,007E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69000;2|3 ;2,144E+87 ; -0,04738;2,144E+87;4,525E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69400;2|3 ;2,407E+87 ;  -0,2195;2,407E+87;1,097E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69800;2|3 ;  2,7E+87 ;   0,9867;  2,7E+87;2,736E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  70200;2|3 ;3,027E+87 ; -0,08678;3,027E+87;3,488E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  70600;2|3 ;3,391E+87 ;  -0,1492;3,391E+87;2,272E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71000;2|3 ;3,797E+87 ;   0,9999;3,797E+87;3,797E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71400;2|3 ;4,248E+87 ;  -0,1407;4,248E+87;3,019E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71800;2|3 ; 4,75E+87 ; -0,09327; 4,75E+87;5,093E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  72200;2|3 ;5,309E+87 ;   0,9899;5,309E+87;5,363E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  72600;2|3 ;5,929E+87 ;  -0,2091;5,929E+87;2,836E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73000;2|3 ;6,618E+87 ; -0,05192;6,618E+87;1,275E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73400;2|3 ;7,382E+87 ;    0,957;7,382E+87;7,713E+87
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73800;2|3 ;8,229E+87 ;  -0,2905;8,229E+87;2,833E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  74200;2|3 ;9,169E+87 ; -0,02431;9,169E+87;3,771E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  74600;2|3 ;1,021E+88 ;   0,9031;1,021E+88; 1,13E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75000;2|3 ;1,136E+88 ;  -0,3824;1,136E+88;2,972E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75400;2|3 ;1,264E+88 ;-0,008499;1,264E+88;1,487E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75800;2|3 ;1,405E+88 ;   0,8311;1,405E+88; 1,69E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  76200;2|3 ;1,561E+88 ;  -0,4813;1,561E+88;3,243E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  76600;2|3 ;1,733E+88 ;-0,001596;1,733E+88;1,086E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77000;2|3 ;1,923E+88 ;   0,7448;1,923E+88;2,582E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77400;2|3 ;2,133E+88 ;  -0,5832;2,133E+88;3,658E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77800;2|3 ;2,365E+88 ;-2,37E-05;2,365E+88;9,977E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  78200;2|3 ; 2,62E+88 ;   0,6487; 2,62E+88; 4,04E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  78600;2|3 ;2,902E+88 ;  -0,6832;2,902E+88;4,248E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79000;2|3 ;3,212E+88 ; 0,000212;3,212E+88;1,515E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79400;2|3 ;3,553E+88 ;   0,5475;3,553E+88; 6,49E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79800;2|3 ;3,929E+88 ;  -0,7764;3,929E+88;5,061E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  80200;2|3 ;4,342E+88 ;  0,00321;4,342E+88;1,353E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  80600;2|3 ;4,797E+88 ;   0,4462;4,797E+88;1,075E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81000;2|3 ;5,296E+88 ;  -0,8582;5,296E+88;6,171E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81400;2|3 ;5,844E+88 ;  0,01285;5,844E+88;4,546E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81800;2|3 ;6,446E+88 ;   0,3492;6,446E+88;1,846E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  82200;2|3 ;7,107E+88 ;  -0,9242;7,107E+88; 7,69E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  82600;2|3 ;7,831E+88 ;  0,03251;7,831E+88;2,409E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83000;2|3 ;8,626E+88 ;   0,2606;8,626E+88; 3,31E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83400;2|3 ;9,496E+88 ;   -0,971;9,496E+88; 9,78E+88
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83800;2|3 ;1,045E+89 ;  0,06476;1,045E+89;1,614E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  84200;2|3 ;1,149E+89 ;   0,1836;1,149E+89;6,261E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  84600;2|3 ;1,264E+89 ;   -0,996;1,264E+89;1,269E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85000;2|3 ;1,389E+89 ;   0,1112;1,389E+89;1,249E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85400;2|3 ;1,525E+89 ;   0,1202;1,525E+89;1,269E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85800;2|3 ;1,675E+89 ;   -0,998;1,675E+89;1,678E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  86200;2|3 ;1,838E+89 ;   0,1722;1,838E+89;1,067E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  86600;2|3 ;2,017E+89 ;  0,07136;2,017E+89;2,826E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87000;2|3 ;2,211E+89 ;  -0,9766;2,211E+89;2,264E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87400;2|3 ;2,424E+89 ;   0,2472;2,424E+89;9,806E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87800;2|3 ;2,655E+89 ;  0,03687;2,655E+89;7,202E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  88200;2|3 ;2,908E+89 ;  -0,9333;2,908E+89;3,116E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  88600;2|3 ;3,184E+89 ;    0,334;3,184E+89;9,531E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89000;2|3 ;3,484E+89 ;  0,01531;3,484E+89;2,276E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89400;2|3 ;3,811E+89 ;  -0,8702;3,811E+89;4,379E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89800;2|3 ;4,166E+89 ;   0,4299;4,166E+89;9,692E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  90200;2|3 ;4,554E+89 ; 0,004237;4,554E+89;1,075E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  90600;2|3 ;4,975E+89 ;  -0,7907;4,975E+89;6,292E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91000;2|3 ;5,433E+89 ;   0,5308;5,433E+89;1,024E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91400;2|3 ;5,931E+89 ;0,0004063;5,931E+89; 1,46E+93
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91800;2|3 ;6,473E+89 ;   -0,699;6,473E+89; 9,26E+89
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  92200;2|3 ;7,061E+89 ;   0,6323;7,061E+89;1,117E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  92600;2|3 ;7,699E+89 ; -2,9E-06;7,699E+89;2,655E+95
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93000;2|3 ;8,393E+89 ;  -0,5998;8,393E+89;1,399E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93400;2|3 ;9,145E+89 ;   0,7297;9,145E+89;1,253E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93800;2|3 ;9,961E+89 ;-0,001076;9,961E+89;9,257E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  94200;2|3 ;1,085E+90 ;  -0,4979;1,085E+90;2,178E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  94600;2|3 ; 1,18E+90 ;   0,8179; 1,18E+90;1,443E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95000;2|3 ;1,284E+90 ;-0,006847;1,284E+90;1,876E+92
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95400;2|3 ;1,397E+90 ;  -0,3982;1,397E+90;3,509E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95800;2|3 ;1,519E+90 ;   0,8925;1,519E+90;1,702E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  96200;2|3 ;1,651E+90 ; -0,02098;1,651E+90;7,868E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  96600;2|3 ;1,794E+90 ;  -0,3049;1,794E+90;5,884E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97000;2|3 ;1,948E+90 ;   0,9496;1,948E+90;2,052E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97400;2|3 ;2,116E+90 ;  -0,0465;2,116E+90; 4,55E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97800;2|3 ;2,296E+90 ;  -0,2216;2,296E+90;1,036E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  98200;2|3 ;2,492E+90 ;    0,986;2,492E+90;2,527E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  98600;2|3 ;2,703E+90 ; -0,08551;2,703E+90; 3,16E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99000;2|3 ;2,931E+90 ;   -0,151;2,931E+90;1,941E+91
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99400;2|3 ;3,177E+90 ;   0,9999;3,177E+90;3,177E+90
-"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99800;2|3 ;3,442E+90 ;  -0,1391;3,442E+90;2,475E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -99800;2|3 ;3,442E+90 ;  -0,1391;3,442E+90;2,475E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -99400;2|3 ;3,177E+90 ;   0,9999;3,177E+90;3,177E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -99000;2|3 ;2,931E+90 ;   -0,151;2,931E+90;1,941E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -98600;2|3 ;2,703E+90 ; -0,08551;2,703E+90; 3,16E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -98200;2|3 ;2,492E+90 ;    0,986;2,492E+90;2,527E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -97800;2|3 ;2,296E+90 ;  -0,2216;2,296E+90;1,036E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -97400;2|3 ;2,116E+90 ;  -0,0465;2,116E+90; 4,55E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -97000;2|3 ;1,948E+90 ;   0,9496;1,948E+90;2,052E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -96600;2|3 ;1,794E+90 ;  -0,3049;1,794E+90;5,884E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -96200;2|3 ;1,651E+90 ; -0,02098;1,651E+90;7,868E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -95800;2|3 ;1,519E+90 ;   0,8925;1,519E+90;1,702E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -95400;2|3 ;1,397E+90 ;  -0,3982;1,397E+90;3,509E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -95000;2|3 ;1,284E+90 ;-0,006847;1,284E+90;1,876E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -94600;2|3 ; 1,18E+90 ;   0,8179; 1,18E+90;1,443E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -94200;2|3 ;1,085E+90 ;  -0,4979;1,085E+90;2,178E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -93800;2|3 ;9,961E+89 ;-0,001076;9,961E+89;9,257E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -93400;2|3 ;9,145E+89 ;   0,7297;9,145E+89;1,253E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -93000;2|3 ;8,393E+89 ;  -0,5998;8,393E+89;1,399E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -92600;2|3 ;7,699E+89 ; -2,9E-06;7,699E+89;2,655E+95
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -92200;2|3 ;7,061E+89 ;   0,6323;7,061E+89;1,117E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -91800;2|3 ;6,473E+89 ;   -0,699;6,473E+89; 9,26E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -91400;2|3 ;5,931E+89 ;0,0004063;5,931E+89; 1,46E+93
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -91000;2|3 ;5,433E+89 ;   0,5308;5,433E+89;1,024E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -90600;2|3 ;4,975E+89 ;  -0,7907;4,975E+89;6,292E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -90200;2|3 ;4,554E+89 ; 0,004237;4,554E+89;1,075E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -89800;2|3 ;4,166E+89 ;   0,4299;4,166E+89;9,692E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -89400;2|3 ;3,811E+89 ;  -0,8702;3,811E+89;4,379E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -89000;2|3 ;3,484E+89 ;  0,01531;3,484E+89;2,276E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -88600;2|3 ;3,184E+89 ;    0,334;3,184E+89;9,531E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -88200;2|3 ;2,908E+89 ;  -0,9333;2,908E+89;3,116E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -87800;2|3 ;2,655E+89 ;  0,03687;2,655E+89;7,202E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -87400;2|3 ;2,424E+89 ;   0,2472;2,424E+89;9,806E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -87000;2|3 ;2,211E+89 ;  -0,9766;2,211E+89;2,264E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -86600;2|3 ;2,017E+89 ;  0,07136;2,017E+89;2,826E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -86200;2|3 ;1,838E+89 ;   0,1722;1,838E+89;1,067E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -85800;2|3 ;1,675E+89 ;   -0,998;1,675E+89;1,678E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -85400;2|3 ;1,525E+89 ;   0,1202;1,525E+89;1,269E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -85000;2|3 ;1,389E+89 ;   0,1112;1,389E+89;1,249E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -84600;2|3 ;1,264E+89 ;   -0,996;1,264E+89;1,269E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -84200;2|3 ;1,149E+89 ;   0,1836;1,149E+89;6,261E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -83800;2|3 ;1,045E+89 ;  0,06476;1,045E+89;1,614E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -83400;2|3 ;9,496E+88 ;   -0,971;9,496E+88; 9,78E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -83000;2|3 ;8,626E+88 ;   0,2606;8,626E+88; 3,31E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -82600;2|3 ;7,831E+88 ;  0,03251;7,831E+88;2,409E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -82200;2|3 ;7,107E+88 ;  -0,9242;7,107E+88; 7,69E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -81800;2|3 ;6,446E+88 ;   0,3492;6,446E+88;1,846E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -81400;2|3 ;5,844E+88 ;  0,01285;5,844E+88;4,546E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -81000;2|3 ;5,296E+88 ;  -0,8582;5,296E+88;6,171E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -80600;2|3 ;4,797E+88 ;   0,4462;4,797E+88;1,075E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -80200;2|3 ;4,342E+88 ;  0,00321;4,342E+88;1,353E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -79800;2|3 ;3,929E+88 ;  -0,7764;3,929E+88;5,061E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -79400;2|3 ;3,553E+88 ;   0,5475;3,553E+88; 6,49E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -79000;2|3 ;3,212E+88 ; 0,000212;3,212E+88;1,515E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -78600;2|3 ;2,902E+88 ;  -0,6832;2,902E+88;4,248E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -78200;2|3 ; 2,62E+88 ;   0,6487; 2,62E+88; 4,04E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -77800;2|3 ;2,365E+88 ;-2,37E-05;2,365E+88;9,977E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -77400;2|3 ;2,133E+88 ;  -0,5832;2,133E+88;3,658E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -77000;2|3 ;1,923E+88 ;   0,7448;1,923E+88;2,582E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -76600;2|3 ;1,733E+88 ;-0,001596;1,733E+88;1,086E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -76200;2|3 ;1,561E+88 ;  -0,4813;1,561E+88;3,243E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -75800;2|3 ;1,405E+88 ;   0,8311;1,405E+88; 1,69E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -75400;2|3 ;1,264E+88 ;-0,008499;1,264E+88;1,487E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -75000;2|3 ;1,136E+88 ;  -0,3824;1,136E+88;2,972E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -74600;2|3 ;1,021E+88 ;   0,9031;1,021E+88; 1,13E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -74200;2|3 ;9,169E+87 ; -0,02431;9,169E+87;3,771E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -73800;2|3 ;8,229E+87 ;  -0,2905;8,229E+87;2,833E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -73400;2|3 ;7,382E+87 ;    0,957;7,382E+87;7,713E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -73000;2|3 ;6,618E+87 ; -0,05192;6,618E+87;1,275E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -72600;2|3 ;5,929E+87 ;  -0,2091;5,929E+87;2,836E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -72200;2|3 ;5,309E+87 ;   0,9899;5,309E+87;5,363E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -71800;2|3 ; 4,75E+87 ; -0,09327; 4,75E+87;5,093E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -71400;2|3 ;4,248E+87 ;  -0,1407;4,248E+87;3,019E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -71000;2|3 ;3,797E+87 ;   0,9999;3,797E+87;3,797E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -70600;2|3 ;3,391E+87 ;  -0,1492;3,391E+87;2,272E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -70200;2|3 ;3,027E+87 ; -0,08678;3,027E+87;3,488E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -69800;2|3 ;  2,7E+87 ;   0,9867;  2,7E+87;2,736E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -69400;2|3 ;2,407E+87 ;  -0,2195;2,407E+87;1,097E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -69000;2|3 ;2,144E+87 ; -0,04738;2,144E+87;4,525E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -68600;2|3 ;1,909E+87 ;   0,9508;1,909E+87;2,007E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -68200;2|3 ;1,698E+87 ;  -0,3024;1,698E+87;5,614E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -67800;2|3 ; 1,51E+87 ; -0,02152; 1,51E+87;7,016E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -67400;2|3 ;1,341E+87 ;   0,8943;1,341E+87;  1,5E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -67000;2|3 ;1,191E+87 ;  -0,3955;1,191E+87; 3,01E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -66600;2|3 ;1,056E+87 ;-0,007106;1,056E+87;1,486E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -66200;2|3 ;9,363E+86 ;   0,8201;9,363E+86;1,142E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -65800;2|3 ;8,294E+86 ;  -0,4952;8,294E+86;1,675E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -65400;2|3 ;7,342E+86 ;-0,001153;7,342E+86;6,365E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -65000;2|3 ;6,494E+86 ;   0,7322;6,494E+86;8,869E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -64600;2|3 ; 5,74E+86 ;   -0,597; 5,74E+86;9,614E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -64200;2|3 ;5,069E+86 ;-4,634E-06;5,069E+86;1,094E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -63800;2|3 ;4,474E+86 ;   0,6351;4,474E+86;7,044E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -63400;2|3 ;3,945E+86 ;  -0,6964;3,945E+86;5,665E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -63000;2|3 ;3,476E+86 ; 0,000368;3,476E+86;9,446E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -62600;2|3 ; 3,06E+86 ;   0,5336; 3,06E+86;5,735E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -62200;2|3 ;2,692E+86 ;  -0,7883;2,692E+86;3,415E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -61800;2|3 ;2,366E+86 ; 0,004053;2,366E+86;5,838E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -61400;2|3 ;2,078E+86 ;   0,4326;2,078E+86;4,803E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -61000;2|3 ;1,823E+86 ;  -0,8682;1,823E+86;  2,1E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -60600;2|3 ;1,598E+86 ;  0,01488;1,598E+86;1,074E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -60200;2|3 ;  1,4E+86 ;   0,3365;  1,4E+86; 4,16E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -59800;2|3 ;1,225E+86 ;  -0,9318;1,225E+86;1,315E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -59400;2|3 ;1,071E+86 ;  0,03612;1,071E+86;2,966E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -59000;2|3 ; 9,36E+85 ;   0,2494; 9,36E+85;3,753E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -58600;2|3 ;8,169E+85 ;  -0,9757;8,169E+85;8,373E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -58200;2|3 ;7,124E+85 ;  0,07024;7,124E+85;1,014E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -57800;2|3 ;6,206E+85 ;   0,1741;6,206E+85;3,564E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -57400;2|3 ;5,401E+85 ;  -0,9977;5,401E+85;5,414E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -57000;2|3 ;4,696E+85 ;   0,1187;4,696E+85;3,958E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -56600;2|3 ;4,079E+85 ;   0,1127;4,079E+85;3,621E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -56200;2|3 ; 3,54E+85 ;  -0,9964; 3,54E+85;3,552E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -55800;2|3 ;3,068E+85 ;   0,1817;3,068E+85;1,689E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -55400;2|3 ;2,657E+85 ;  0,06583;2,657E+85;4,036E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -55000;2|3 ;2,299E+85 ;   -0,972;2,299E+85;2,365E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -54600;2|3 ;1,987E+85 ;   0,2584;1,987E+85;7,689E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -54200;2|3 ;1,715E+85 ;  0,03321;1,715E+85;5,163E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -53800;2|3 ;1,479E+85 ;  -0,9258;1,479E+85;1,597E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -53400;2|3 ;1,274E+85 ;   0,3467;1,274E+85;3,674E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -53000;2|3 ;1,096E+85 ;  0,01324;1,096E+85;8,274E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -52600;2|3 ;9,418E+84 ;  -0,8602;9,418E+84;1,095E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -52200;2|3 ;8,084E+84 ;   0,4434;8,084E+84;1,823E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -51800;2|3 ;6,932E+84 ; 0,003368;6,932E+84;2,058E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -51400;2|3 ;5,936E+84 ;  -0,7788;5,936E+84;7,622E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -51000;2|3 ;5,077E+84 ;   0,5447;5,077E+84;9,321E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -50600;2|3 ;4,338E+84 ;0,0002387;4,338E+84;1,817E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -50200;2|3 ;3,701E+84 ;  -0,6858;3,701E+84;5,396E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -49800;2|3 ;3,154E+84 ;    0,646;3,154E+84;4,882E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -49400;2|3 ;2,684E+84 ;-1,822E-05;2,684E+84;1,473E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -49000;2|3 ;2,281E+84 ;   -0,586;2,281E+84;3,893E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -48600;2|3 ;1,936E+84 ;   0,7423;1,936E+84;2,608E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -48200;2|3 ;1,641E+84 ;  -0,0015;1,641E+84;1,094E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -47800;2|3 ;1,389E+84 ;  -0,4841;1,389E+84; 2,87E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -47400;2|3 ;1,174E+84 ;    0,829;1,174E+84;1,417E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -47000;2|3 ;9,913E+83 ;-0,008207;9,913E+83;1,208E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -46600;2|3 ;8,355E+83 ;   -0,385;8,355E+83; 2,17E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -46200;2|3 ;7,032E+83 ;   0,9014;7,032E+83;7,801E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -45800;2|3 ;5,909E+83 ; -0,02374;5,909E+83; 2,49E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -45400;2|3 ;4,959E+83 ;  -0,2928;4,959E+83;1,693E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -45000;2|3 ;4,154E+83 ;   0,9558;4,154E+83;4,346E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -44600;2|3 ;3,475E+83 ; -0,05099;3,475E+83;6,815E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -44200;2|3 ;2,902E+83 ;  -0,2111;2,902E+83;1,374E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -43800;2|3 ;2,419E+83 ;   0,9893;2,419E+83;2,446E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -43400;2|3 ;2,014E+83 ; -0,09195;2,014E+83; 2,19E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -43000;2|3 ;1,673E+83 ;  -0,1424;1,673E+83;1,175E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -42600;2|3 ;1,388E+83 ;        1;1,388E+83;1,388E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -42200;2|3 ;1,149E+83 ;  -0,1475;1,149E+83;7,792E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -41800;2|3 ;9,501E+82 ; -0,08806;9,501E+82;1,079E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -41400;2|3 ;7,839E+82 ;   0,9874;7,839E+82;7,939E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -41000;2|3 ;6,455E+82 ;  -0,2174;6,455E+82; 2,97E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -40600;2|3 ;5,306E+82 ; -0,04827;5,306E+82;1,099E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -40200;2|3 ;4,353E+82 ;   0,9521;4,353E+82;4,572E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -39800;2|3 ;3,564E+82 ;     -0,3;3,564E+82;1,188E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -39400;2|3 ;2,912E+82 ; -0,02206;2,912E+82; 1,32E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -39000;2|3 ;2,374E+82 ;   0,8961;2,374E+82; 2,65E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -38600;2|3 ;1,932E+82 ;  -0,3929;1,932E+82;4,917E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -38200;2|3 ;1,569E+82 ;-0,007372;1,569E+82;2,128E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -37800;2|3 ;1,271E+82 ;   0,8223;1,271E+82;1,545E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -37400;2|3 ;1,027E+82 ;  -0,4924;1,027E+82;2,086E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -37000;2|3 ;8,285E+81 ;-0,001234;8,285E+81;6,712E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -36600;2|3 ;6,666E+81 ;   0,7347;6,666E+81;9,072E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -36200;2|3 ;5,351E+81 ;  -0,5943;5,351E+81;9,004E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -35800;2|3 ;4,285E+81 ;-6,949E-06;4,285E+81;6,166E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -35400;2|3 ;3,422E+81 ;   0,6378;3,422E+81;5,366E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -35000;2|3 ;2,726E+81 ;  -0,6938;2,726E+81; 3,93E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -34600;2|3 ;2,167E+81 ;0,0003322;2,167E+81;6,523E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -34200;2|3 ;1,717E+81 ;   0,5364;1,717E+81;3,201E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -33800;2|3 ;1,357E+81 ;   -0,786;1,357E+81;1,727E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -33400;2|3 ;1,069E+81 ; 0,003874;1,069E+81;2,761E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -33000;2|3 ;8,405E+80 ;   0,4353;8,405E+80;1,931E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -32600;2|3 ;6,586E+80 ;  -0,8662;6,586E+80;7,603E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -32200;2|3 ;5,145E+80 ;  0,01446;5,145E+80;3,558E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -31800;2|3 ;4,007E+80 ;   0,3391;4,007E+80;1,182E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -31400;2|3 ;3,111E+80 ;  -0,9303;3,111E+80;3,344E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -31000;2|3 ;2,407E+80 ;  0,03538;2,407E+80;6,803E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -30600;2|3 ;1,856E+80 ;   0,2516;1,856E+80;7,378E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -30200;2|3 ;1,427E+80 ;  -0,9748;1,427E+80;1,464E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -29800;2|3 ;1,093E+80 ;  0,06912;1,093E+80;1,581E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -29400;2|3 ; 8,34E+79 ;    0,176; 8,34E+79;4,739E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -29000;2|3 ;6,342E+79 ;  -0,9974;6,342E+79;6,358E+79
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -28600;2|3 ;4,804E+79 ;   0,1171;4,804E+79;4,101E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -28200;2|3 ;3,624E+79 ;   0,1141;3,624E+79;3,175E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -27800;2|3 ;2,724E+79 ;  -0,9967;2,724E+79;2,732E+79
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -27400;2|3 ;2,038E+79 ;   0,1798;2,038E+79;1,134E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -27000;2|3 ;1,519E+79 ;  0,06692;1,519E+79; 2,27E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -26600;2|3 ;1,127E+79 ;   -0,973;1,127E+79;1,158E+79
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -26200;2|3 ;8,323E+78 ;   0,2561;8,323E+78; 3,25E+79
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -25800;2|3 ;6,118E+78 ;  0,03393;6,118E+78;1,803E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -25400;2|3 ;4,476E+78 ;  -0,9273;4,476E+78;4,827E+78
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -25000;2|3 ;3,259E+78 ;   0,3441;3,259E+78; 9,47E+78
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -24600;2|3 ; 2,36E+78 ;  0,01364; 2,36E+78; 1,73E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -24200;2|3 ;  1,7E+78 ;  -0,8622;  1,7E+78;1,972E+78
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -23800;2|3 ;1,218E+78 ;   0,4407;1,218E+78;2,765E+78
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -23400;2|3 ;8,681E+77 ; 0,003532;8,681E+77;2,458E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -23000;2|3 ;6,149E+77 ;  -0,7812;6,149E+77;7,871E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -22600;2|3 ;4,329E+77 ;   0,5419;4,329E+77;7,988E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -22200;2|3 ;3,029E+77 ;0,0002676;3,029E+77;1,132E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -21800;2|3 ;2,106E+77 ;  -0,6885;2,106E+77;3,058E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -21400;2|3 ;1,454E+77 ;   0,6433;1,454E+77; 2,26E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -21000;2|3 ;9,968E+76 ;-1,366E-05;9,968E+76;7,297E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -20600;2|3 ;6,786E+76 ;  -0,5887;6,786E+76;1,153E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -20200;2|3 ;4,584E+76 ;   0,7398;4,584E+76;6,197E+76
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -19800;2|3 ;3,073E+76 ;-0,001407;3,073E+76;2,183E+79
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -19400;2|3 ;2,043E+76 ;  -0,4869;2,043E+76;4,196E+76
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -19000;2|3 ;1,347E+76 ;   0,8268;1,347E+76;1,629E+76
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -18600;2|3 ;  8,8E+75 ;-0,007922;  8,8E+75;1,111E+78
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -18200;2|3 ;5,697E+75 ;  -0,3876;5,697E+75; 1,47E+76
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -17800;2|3 ;3,653E+75 ;   0,8996;3,653E+75; 4,06E+75
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -17400;2|3 ;2,319E+75 ; -0,02317;2,319E+75;1,001E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -17000;2|3 ;1,456E+75 ;  -0,2952;1,456E+75;4,933E+75
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -16600;2|3 ;9,045E+74 ;   0,9546;9,045E+74;9,475E+74
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -16200;2|3 ;5,553E+74 ; -0,05007;5,553E+74;1,109E+76
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -15800;2|3 ;3,368E+74 ;  -0,2132;3,368E+74; 1,58E+75
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -15400;2|3 ;2,017E+74 ;   0,9886;2,017E+74; 2,04E+74
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -15000;2|3 ;1,191E+74 ; -0,09064;1,191E+74;1,314E+75
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -14600;2|3 ;6,939E+73 ;  -0,1441;6,939E+73;4,815E+74
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -14200;2|3 ;3,981E+73 ;        1;3,981E+73;3,981E+73
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -13800;2|3 ;2,248E+73 ;  -0,1458;2,248E+73;1,542E+74
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -13400;2|3 ;1,248E+73 ; -0,08934;1,248E+73;1,397E+74
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -13000;2|3 ;6,809E+72 ;    0,988;6,809E+72;6,892E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -12600;2|3 ;3,645E+72 ;  -0,2153;3,645E+72;1,693E+73
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -12200;2|3 ;1,912E+72 ; -0,04916;1,912E+72;3,889E+73
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -11800;2|3 ;9,815E+71 ;   0,9533;9,815E+71; 1,03E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -11400;2|3 ;4,924E+71 ;  -0,2976;4,924E+71;1,655E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -11000;2|3 ; 2,41E+71 ; -0,02261; 2,41E+71;1,066E+73
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -10600;2|3 ;1,149E+71 ;   0,8979;1,149E+71; 1,28E+71
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; -10200;2|3 ;5,324E+70 ;  -0,3903;5,324E+70;1,364E+71
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -9800;2|3 ;2,392E+70 ;-0,007644;2,392E+70;3,129E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -9400;2|3 ;1,039E+70 ;   0,8246;1,039E+70;1,261E+70
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -9000;2|3 ;4,356E+69 ;  -0,4896;4,356E+69;8,896E+69
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -8600;2|3 ;1,755E+69 ;-0,001319;1,755E+69; 1,33E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -8200;2|3 ;6,769E+68 ;   0,7373;6,769E+68;9,181E+68
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -7800;2|3 ; 2,49E+68 ;  -0,5915; 2,49E+68;4,209E+68
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -7400;2|3 ;8,687E+67 ;-9,93E-06;8,687E+67;8,748E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -7000;2|3 ;2,859E+67 ;   0,6405;2,859E+67;4,463E+67
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -6600;2|3 ;8,813E+66 ;  -0,6911;8,813E+66;1,275E+67
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -6200;2|3 ;2,524E+66 ;0,0002987;2,524E+66;8,449E+69
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -5800;2|3 ; 6,65E+65 ;   0,5392; 6,65E+65;1,233E+66
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -5400;2|3 ;1,593E+65 ;  -0,7836;1,593E+65;2,032E+65
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -5000;2|3 ;3,417E+64 ;   0,0037;3,417E+64;9,235E+66
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -4600;2|3 ;6,448E+63 ;    0,438;6,448E+63;1,472E+64
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -4200;2|3 ;1,045E+63 ;  -0,8642;1,045E+63;1,209E+63
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -3800;2|3 ;1,412E+62 ;  0,01405;1,412E+62;1,005E+64
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -3400;2|3 ;1,527E+61 ;   0,3416;1,527E+61; 4,47E+61
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -3000;2|3 ;1,249E+60 ;  -0,9288;1,249E+60;1,345E+60
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -2600;2|3 ; 7,14E+58 ;  0,03465; 7,14E+58;2,061E+60
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -2200;2|3 ;2,527E+57 ;   0,2539;2,527E+57;9,957E+57
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -1800;2|3 ;4,568E+55 ;  -0,9739;4,568E+55; 4,69E+55
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -1400;2|3 ;2,998E+53 ;  0,06801;2,998E+53;4,408E+54
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  -1000;2|3 ;3,583E+50 ;   0,1779;3,583E+50;2,014E+51
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   -600;2|3 ; 1,31E+46 ;  -0,9971; 1,31E+46;1,314E+46
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   -200;2|3 ;3,753E+36 ;   0,1156;3,753E+36;3,246E+37
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;    200;2|3 ;3,753E+36 ;   0,1156;3,753E+36;3,246E+37
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;    600;2|3 ; 1,31E+46 ;  -0,9971; 1,31E+46;1,314E+46
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1000;2|3 ;3,583E+50 ;   0,1779;3,583E+50;2,014E+51
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1400;2|3 ;2,998E+53 ;  0,06801;2,998E+53;4,408E+54
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1800;2|3 ;4,568E+55 ;  -0,9739;4,568E+55; 4,69E+55
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   2200;2|3 ;2,527E+57 ;   0,2539;2,527E+57;9,957E+57
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   2600;2|3 ; 7,14E+58 ;  0,03465; 7,14E+58;2,061E+60
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3000;2|3 ;1,249E+60 ;  -0,9288;1,249E+60;1,345E+60
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3400;2|3 ;1,527E+61 ;   0,3416;1,527E+61; 4,47E+61
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3800;2|3 ;1,412E+62 ;  0,01405;1,412E+62;1,005E+64
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   4200;2|3 ;1,045E+63 ;  -0,8642;1,045E+63;1,209E+63
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   4600;2|3 ;6,448E+63 ;    0,438;6,448E+63;1,472E+64
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   5000;2|3 ;3,417E+64 ;   0,0037;3,417E+64;9,235E+66
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   5400;2|3 ;1,593E+65 ;  -0,7836;1,593E+65;2,032E+65
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   5800;2|3 ; 6,65E+65 ;   0,5392; 6,65E+65;1,233E+66
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   6200;2|3 ;2,524E+66 ;0,0002987;2,524E+66;8,449E+69
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   6600;2|3 ;8,813E+66 ;  -0,6911;8,813E+66;1,275E+67
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   7000;2|3 ;2,859E+67 ;   0,6405;2,859E+67;4,463E+67
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   7400;2|3 ;8,687E+67 ;-9,93E-06;8,687E+67;8,748E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   7800;2|3 ; 2,49E+68 ;  -0,5915; 2,49E+68;4,209E+68
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   8200;2|3 ;6,769E+68 ;   0,7373;6,769E+68;9,181E+68
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   8600;2|3 ;1,755E+69 ;-0,001319;1,755E+69; 1,33E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   9000;2|3 ;4,356E+69 ;  -0,4896;4,356E+69;8,896E+69
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   9400;2|3 ;1,039E+70 ;   0,8246;1,039E+70;1,261E+70
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   9800;2|3 ;2,392E+70 ;-0,007644;2,392E+70;3,129E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  10200;2|3 ;5,324E+70 ;  -0,3903;5,324E+70;1,364E+71
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  10600;2|3 ;1,149E+71 ;   0,8979;1,149E+71; 1,28E+71
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11000;2|3 ; 2,41E+71 ; -0,02261; 2,41E+71;1,066E+73
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11400;2|3 ;4,924E+71 ;  -0,2976;4,924E+71;1,655E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11800;2|3 ;9,815E+71 ;   0,9533;9,815E+71; 1,03E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  12200;2|3 ;1,912E+72 ; -0,04916;1,912E+72;3,889E+73
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  12600;2|3 ;3,645E+72 ;  -0,2153;3,645E+72;1,693E+73
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13000;2|3 ;6,809E+72 ;    0,988;6,809E+72;6,892E+72
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13400;2|3 ;1,248E+73 ; -0,08934;1,248E+73;1,397E+74
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13800;2|3 ;2,248E+73 ;  -0,1458;2,248E+73;1,542E+74
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  14200;2|3 ;3,981E+73 ;        1;3,981E+73;3,981E+73
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  14600;2|3 ;6,939E+73 ;  -0,1441;6,939E+73;4,815E+74
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15000;2|3 ;1,191E+74 ; -0,09064;1,191E+74;1,314E+75
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15400;2|3 ;2,017E+74 ;   0,9886;2,017E+74; 2,04E+74
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15800;2|3 ;3,368E+74 ;  -0,2132;3,368E+74; 1,58E+75
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  16200;2|3 ;5,553E+74 ; -0,05007;5,553E+74;1,109E+76
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  16600;2|3 ;9,045E+74 ;   0,9546;9,045E+74;9,475E+74
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17000;2|3 ;1,456E+75 ;  -0,2952;1,456E+75;4,933E+75
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17400;2|3 ;2,319E+75 ; -0,02317;2,319E+75;1,001E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17800;2|3 ;3,653E+75 ;   0,8996;3,653E+75; 4,06E+75
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  18200;2|3 ;5,697E+75 ;  -0,3876;5,697E+75; 1,47E+76
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  18600;2|3 ;  8,8E+75 ;-0,007922;  8,8E+75;1,111E+78
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19000;2|3 ;1,347E+76 ;   0,8268;1,347E+76;1,629E+76
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19400;2|3 ;2,043E+76 ;  -0,4869;2,043E+76;4,196E+76
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19800;2|3 ;3,073E+76 ;-0,001407;3,073E+76;2,183E+79
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  20200;2|3 ;4,584E+76 ;   0,7398;4,584E+76;6,197E+76
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  20600;2|3 ;6,786E+76 ;  -0,5887;6,786E+76;1,153E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21000;2|3 ;9,968E+76 ;-1,366E-05;9,968E+76;7,297E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21400;2|3 ;1,454E+77 ;   0,6433;1,454E+77; 2,26E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21800;2|3 ;2,106E+77 ;  -0,6885;2,106E+77;3,058E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  22200;2|3 ;3,029E+77 ;0,0002676;3,029E+77;1,132E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  22600;2|3 ;4,329E+77 ;   0,5419;4,329E+77;7,988E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23000;2|3 ;6,149E+77 ;  -0,7812;6,149E+77;7,871E+77
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23400;2|3 ;8,681E+77 ; 0,003532;8,681E+77;2,458E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23800;2|3 ;1,218E+78 ;   0,4407;1,218E+78;2,765E+78
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  24200;2|3 ;  1,7E+78 ;  -0,8622;  1,7E+78;1,972E+78
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  24600;2|3 ; 2,36E+78 ;  0,01364; 2,36E+78; 1,73E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25000;2|3 ;3,259E+78 ;   0,3441;3,259E+78; 9,47E+78
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25400;2|3 ;4,476E+78 ;  -0,9273;4,476E+78;4,827E+78
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25800;2|3 ;6,118E+78 ;  0,03393;6,118E+78;1,803E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  26200;2|3 ;8,323E+78 ;   0,2561;8,323E+78; 3,25E+79
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  26600;2|3 ;1,127E+79 ;   -0,973;1,127E+79;1,158E+79
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27000;2|3 ;1,519E+79 ;  0,06692;1,519E+79; 2,27E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27400;2|3 ;2,038E+79 ;   0,1798;2,038E+79;1,134E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27800;2|3 ;2,724E+79 ;  -0,9967;2,724E+79;2,732E+79
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  28200;2|3 ;3,624E+79 ;   0,1141;3,624E+79;3,175E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  28600;2|3 ;4,804E+79 ;   0,1171;4,804E+79;4,101E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29000;2|3 ;6,342E+79 ;  -0,9974;6,342E+79;6,358E+79
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29400;2|3 ; 8,34E+79 ;    0,176; 8,34E+79;4,739E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29800;2|3 ;1,093E+80 ;  0,06912;1,093E+80;1,581E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  30200;2|3 ;1,427E+80 ;  -0,9748;1,427E+80;1,464E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  30600;2|3 ;1,856E+80 ;   0,2516;1,856E+80;7,378E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31000;2|3 ;2,407E+80 ;  0,03538;2,407E+80;6,803E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31400;2|3 ;3,111E+80 ;  -0,9303;3,111E+80;3,344E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31800;2|3 ;4,007E+80 ;   0,3391;4,007E+80;1,182E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  32200;2|3 ;5,145E+80 ;  0,01446;5,145E+80;3,558E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  32600;2|3 ;6,586E+80 ;  -0,8662;6,586E+80;7,603E+80
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33000;2|3 ;8,405E+80 ;   0,4353;8,405E+80;1,931E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33400;2|3 ;1,069E+81 ; 0,003874;1,069E+81;2,761E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33800;2|3 ;1,357E+81 ;   -0,786;1,357E+81;1,727E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  34200;2|3 ;1,717E+81 ;   0,5364;1,717E+81;3,201E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  34600;2|3 ;2,167E+81 ;0,0003322;2,167E+81;6,523E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35000;2|3 ;2,726E+81 ;  -0,6938;2,726E+81; 3,93E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35400;2|3 ;3,422E+81 ;   0,6378;3,422E+81;5,366E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35800;2|3 ;4,285E+81 ;-6,949E-06;4,285E+81;6,166E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  36200;2|3 ;5,351E+81 ;  -0,5943;5,351E+81;9,004E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  36600;2|3 ;6,666E+81 ;   0,7347;6,666E+81;9,072E+81
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37000;2|3 ;8,285E+81 ;-0,001234;8,285E+81;6,712E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37400;2|3 ;1,027E+82 ;  -0,4924;1,027E+82;2,086E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37800;2|3 ;1,271E+82 ;   0,8223;1,271E+82;1,545E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  38200;2|3 ;1,569E+82 ;-0,007372;1,569E+82;2,128E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  38600;2|3 ;1,932E+82 ;  -0,3929;1,932E+82;4,917E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39000;2|3 ;2,374E+82 ;   0,8961;2,374E+82; 2,65E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39400;2|3 ;2,912E+82 ; -0,02206;2,912E+82; 1,32E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39800;2|3 ;3,564E+82 ;     -0,3;3,564E+82;1,188E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  40200;2|3 ;4,353E+82 ;   0,9521;4,353E+82;4,572E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  40600;2|3 ;5,306E+82 ; -0,04827;5,306E+82;1,099E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41000;2|3 ;6,455E+82 ;  -0,2174;6,455E+82; 2,97E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41400;2|3 ;7,839E+82 ;   0,9874;7,839E+82;7,939E+82
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41800;2|3 ;9,501E+82 ; -0,08806;9,501E+82;1,079E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  42200;2|3 ;1,149E+83 ;  -0,1475;1,149E+83;7,792E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  42600;2|3 ;1,388E+83 ;        1;1,388E+83;1,388E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43000;2|3 ;1,673E+83 ;  -0,1424;1,673E+83;1,175E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43400;2|3 ;2,014E+83 ; -0,09195;2,014E+83; 2,19E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43800;2|3 ;2,419E+83 ;   0,9893;2,419E+83;2,446E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  44200;2|3 ;2,902E+83 ;  -0,2111;2,902E+83;1,374E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  44600;2|3 ;3,475E+83 ; -0,05099;3,475E+83;6,815E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45000;2|3 ;4,154E+83 ;   0,9558;4,154E+83;4,346E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45400;2|3 ;4,959E+83 ;  -0,2928;4,959E+83;1,693E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45800;2|3 ;5,909E+83 ; -0,02374;5,909E+83; 2,49E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  46200;2|3 ;7,032E+83 ;   0,9014;7,032E+83;7,801E+83
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  46600;2|3 ;8,355E+83 ;   -0,385;8,355E+83; 2,17E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47000;2|3 ;9,913E+83 ;-0,008207;9,913E+83;1,208E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47400;2|3 ;1,174E+84 ;    0,829;1,174E+84;1,417E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47800;2|3 ;1,389E+84 ;  -0,4841;1,389E+84; 2,87E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  48200;2|3 ;1,641E+84 ;  -0,0015;1,641E+84;1,094E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  48600;2|3 ;1,936E+84 ;   0,7423;1,936E+84;2,608E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49000;2|3 ;2,281E+84 ;   -0,586;2,281E+84;3,893E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49400;2|3 ;2,684E+84 ;-1,822E-05;2,684E+84;1,473E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49800;2|3 ;3,154E+84 ;    0,646;3,154E+84;4,882E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  50200;2|3 ;3,701E+84 ;  -0,6858;3,701E+84;5,396E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  50600;2|3 ;4,338E+84 ;0,0002387;4,338E+84;1,817E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51000;2|3 ;5,077E+84 ;   0,5447;5,077E+84;9,321E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51400;2|3 ;5,936E+84 ;  -0,7788;5,936E+84;7,622E+84
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51800;2|3 ;6,932E+84 ; 0,003368;6,932E+84;2,058E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  52200;2|3 ;8,084E+84 ;   0,4434;8,084E+84;1,823E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  52600;2|3 ;9,418E+84 ;  -0,8602;9,418E+84;1,095E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53000;2|3 ;1,096E+85 ;  0,01324;1,096E+85;8,274E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53400;2|3 ;1,274E+85 ;   0,3467;1,274E+85;3,674E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53800;2|3 ;1,479E+85 ;  -0,9258;1,479E+85;1,597E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  54200;2|3 ;1,715E+85 ;  0,03321;1,715E+85;5,163E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  54600;2|3 ;1,987E+85 ;   0,2584;1,987E+85;7,689E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55000;2|3 ;2,299E+85 ;   -0,972;2,299E+85;2,365E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55400;2|3 ;2,657E+85 ;  0,06583;2,657E+85;4,036E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55800;2|3 ;3,068E+85 ;   0,1817;3,068E+85;1,689E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  56200;2|3 ; 3,54E+85 ;  -0,9964; 3,54E+85;3,552E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  56600;2|3 ;4,079E+85 ;   0,1127;4,079E+85;3,621E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57000;2|3 ;4,696E+85 ;   0,1187;4,696E+85;3,958E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57400;2|3 ;5,401E+85 ;  -0,9977;5,401E+85;5,414E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57800;2|3 ;6,206E+85 ;   0,1741;6,206E+85;3,564E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  58200;2|3 ;7,124E+85 ;  0,07024;7,124E+85;1,014E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  58600;2|3 ;8,169E+85 ;  -0,9757;8,169E+85;8,373E+85
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59000;2|3 ; 9,36E+85 ;   0,2494; 9,36E+85;3,753E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59400;2|3 ;1,071E+86 ;  0,03612;1,071E+86;2,966E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59800;2|3 ;1,225E+86 ;  -0,9318;1,225E+86;1,315E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  60200;2|3 ;  1,4E+86 ;   0,3365;  1,4E+86; 4,16E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  60600;2|3 ;1,598E+86 ;  0,01488;1,598E+86;1,074E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61000;2|3 ;1,823E+86 ;  -0,8682;1,823E+86;  2,1E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61400;2|3 ;2,078E+86 ;   0,4326;2,078E+86;4,803E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61800;2|3 ;2,366E+86 ; 0,004053;2,366E+86;5,838E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  62200;2|3 ;2,692E+86 ;  -0,7883;2,692E+86;3,415E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  62600;2|3 ; 3,06E+86 ;   0,5336; 3,06E+86;5,735E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63000;2|3 ;3,476E+86 ; 0,000368;3,476E+86;9,446E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63400;2|3 ;3,945E+86 ;  -0,6964;3,945E+86;5,665E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63800;2|3 ;4,474E+86 ;   0,6351;4,474E+86;7,044E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  64200;2|3 ;5,069E+86 ;-4,634E-06;5,069E+86;1,094E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  64600;2|3 ; 5,74E+86 ;   -0,597; 5,74E+86;9,614E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65000;2|3 ;6,494E+86 ;   0,7322;6,494E+86;8,869E+86
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65400;2|3 ;7,342E+86 ;-0,001153;7,342E+86;6,365E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65800;2|3 ;8,294E+86 ;  -0,4952;8,294E+86;1,675E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  66200;2|3 ;9,363E+86 ;   0,8201;9,363E+86;1,142E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  66600;2|3 ;1,056E+87 ;-0,007106;1,056E+87;1,486E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67000;2|3 ;1,191E+87 ;  -0,3955;1,191E+87; 3,01E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67400;2|3 ;1,341E+87 ;   0,8943;1,341E+87;  1,5E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67800;2|3 ; 1,51E+87 ; -0,02152; 1,51E+87;7,016E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  68200;2|3 ;1,698E+87 ;  -0,3024;1,698E+87;5,614E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  68600;2|3 ;1,909E+87 ;   0,9508;1,909E+87;2,007E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69000;2|3 ;2,144E+87 ; -0,04738;2,144E+87;4,525E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69400;2|3 ;2,407E+87 ;  -0,2195;2,407E+87;1,097E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69800;2|3 ;  2,7E+87 ;   0,9867;  2,7E+87;2,736E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  70200;2|3 ;3,027E+87 ; -0,08678;3,027E+87;3,488E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  70600;2|3 ;3,391E+87 ;  -0,1492;3,391E+87;2,272E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71000;2|3 ;3,797E+87 ;   0,9999;3,797E+87;3,797E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71400;2|3 ;4,248E+87 ;  -0,1407;4,248E+87;3,019E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71800;2|3 ; 4,75E+87 ; -0,09327; 4,75E+87;5,093E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  72200;2|3 ;5,309E+87 ;   0,9899;5,309E+87;5,363E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  72600;2|3 ;5,929E+87 ;  -0,2091;5,929E+87;2,836E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73000;2|3 ;6,618E+87 ; -0,05192;6,618E+87;1,275E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73400;2|3 ;7,382E+87 ;    0,957;7,382E+87;7,713E+87
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73800;2|3 ;8,229E+87 ;  -0,2905;8,229E+87;2,833E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  74200;2|3 ;9,169E+87 ; -0,02431;9,169E+87;3,771E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  74600;2|3 ;1,021E+88 ;   0,9031;1,021E+88; 1,13E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75000;2|3 ;1,136E+88 ;  -0,3824;1,136E+88;2,972E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75400;2|3 ;1,264E+88 ;-0,008499;1,264E+88;1,487E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75800;2|3 ;1,405E+88 ;   0,8311;1,405E+88; 1,69E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  76200;2|3 ;1,561E+88 ;  -0,4813;1,561E+88;3,243E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  76600;2|3 ;1,733E+88 ;-0,001596;1,733E+88;1,086E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77000;2|3 ;1,923E+88 ;   0,7448;1,923E+88;2,582E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77400;2|3 ;2,133E+88 ;  -0,5832;2,133E+88;3,658E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77800;2|3 ;2,365E+88 ;-2,37E-05;2,365E+88;9,977E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  78200;2|3 ; 2,62E+88 ;   0,6487; 2,62E+88; 4,04E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  78600;2|3 ;2,902E+88 ;  -0,6832;2,902E+88;4,248E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79000;2|3 ;3,212E+88 ; 0,000212;3,212E+88;1,515E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79400;2|3 ;3,553E+88 ;   0,5475;3,553E+88; 6,49E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79800;2|3 ;3,929E+88 ;  -0,7764;3,929E+88;5,061E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  80200;2|3 ;4,342E+88 ;  0,00321;4,342E+88;1,353E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  80600;2|3 ;4,797E+88 ;   0,4462;4,797E+88;1,075E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81000;2|3 ;5,296E+88 ;  -0,8582;5,296E+88;6,171E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81400;2|3 ;5,844E+88 ;  0,01285;5,844E+88;4,546E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81800;2|3 ;6,446E+88 ;   0,3492;6,446E+88;1,846E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  82200;2|3 ;7,107E+88 ;  -0,9242;7,107E+88; 7,69E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  82600;2|3 ;7,831E+88 ;  0,03251;7,831E+88;2,409E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83000;2|3 ;8,626E+88 ;   0,2606;8,626E+88; 3,31E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83400;2|3 ;9,496E+88 ;   -0,971;9,496E+88; 9,78E+88
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83800;2|3 ;1,045E+89 ;  0,06476;1,045E+89;1,614E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  84200;2|3 ;1,149E+89 ;   0,1836;1,149E+89;6,261E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  84600;2|3 ;1,264E+89 ;   -0,996;1,264E+89;1,269E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85000;2|3 ;1,389E+89 ;   0,1112;1,389E+89;1,249E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85400;2|3 ;1,525E+89 ;   0,1202;1,525E+89;1,269E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85800;2|3 ;1,675E+89 ;   -0,998;1,675E+89;1,678E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  86200;2|3 ;1,838E+89 ;   0,1722;1,838E+89;1,067E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  86600;2|3 ;2,017E+89 ;  0,07136;2,017E+89;2,826E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87000;2|3 ;2,211E+89 ;  -0,9766;2,211E+89;2,264E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87400;2|3 ;2,424E+89 ;   0,2472;2,424E+89;9,806E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87800;2|3 ;2,655E+89 ;  0,03687;2,655E+89;7,202E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  88200;2|3 ;2,908E+89 ;  -0,9333;2,908E+89;3,116E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  88600;2|3 ;3,184E+89 ;    0,334;3,184E+89;9,531E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89000;2|3 ;3,484E+89 ;  0,01531;3,484E+89;2,276E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89400;2|3 ;3,811E+89 ;  -0,8702;3,811E+89;4,379E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89800;2|3 ;4,166E+89 ;   0,4299;4,166E+89;9,692E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  90200;2|3 ;4,554E+89 ; 0,004237;4,554E+89;1,075E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  90600;2|3 ;4,975E+89 ;  -0,7907;4,975E+89;6,292E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91000;2|3 ;5,433E+89 ;   0,5308;5,433E+89;1,024E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91400;2|3 ;5,931E+89 ;0,0004063;5,931E+89; 1,46E+93
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91800;2|3 ;6,473E+89 ;   -0,699;6,473E+89; 9,26E+89
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  92200;2|3 ;7,061E+89 ;   0,6323;7,061E+89;1,117E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  92600;2|3 ;7,699E+89 ; -2,9E-06;7,699E+89;2,655E+95
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93000;2|3 ;8,393E+89 ;  -0,5998;8,393E+89;1,399E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93400;2|3 ;9,145E+89 ;   0,7297;9,145E+89;1,253E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93800;2|3 ;9,961E+89 ;-0,001076;9,961E+89;9,257E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  94200;2|3 ;1,085E+90 ;  -0,4979;1,085E+90;2,178E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  94600;2|3 ; 1,18E+90 ;   0,8179; 1,18E+90;1,443E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95000;2|3 ;1,284E+90 ;-0,006847;1,284E+90;1,876E+92
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95400;2|3 ;1,397E+90 ;  -0,3982;1,397E+90;3,509E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95800;2|3 ;1,519E+90 ;   0,8925;1,519E+90;1,702E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  96200;2|3 ;1,651E+90 ; -0,02098;1,651E+90;7,868E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  96600;2|3 ;1,794E+90 ;  -0,3049;1,794E+90;5,884E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97000;2|3 ;1,948E+90 ;   0,9496;1,948E+90;2,052E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97400;2|3 ;2,116E+90 ;  -0,0465;2,116E+90; 4,55E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97800;2|3 ;2,296E+90 ;  -0,2216;2,296E+90;1,036E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  98200;2|3 ;2,492E+90 ;    0,986;2,492E+90;2,527E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  98600;2|3 ;2,703E+90 ; -0,08551;2,703E+90; 3,16E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99000;2|3 ;2,931E+90 ;   -0,151;2,931E+90;1,941E+91
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99400;2|3 ;3,177E+90 ;   0,9999;3,177E+90;3,177E+90
+"Cos_21(C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99800;2|3 ;3,442E+90 ;  -0,1391;3,442E+90;2,475E+91
 
