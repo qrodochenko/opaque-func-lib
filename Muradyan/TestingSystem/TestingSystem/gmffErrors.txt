@@ -33,3 +33,5 @@ L00_101_3_log_in C:\git_reps\summer_practice\opaque-func-lib\Arkhipov\OpaqueFunc
 L00_102_3_log C:\git_reps\summer_practice\opaque-func-lib\Arkhipov\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 L00_102_3_log_in C:\git_reps\summer_practice\opaque-func-lib\Arkhipov\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 L00_103_3_log C:\git_reps\summer_practice\opa
+MathApprox_1_2_CheckError C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected
+MathApprox_2_2_CheckError C:\git_reps\summer_practice\opaque-func-lib\Kovalev\OpaqueFunctions\OpaqueFunctions.cs  Not detected

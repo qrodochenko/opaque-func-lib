@@ -1042,7 +1042,7 @@ namespace OpaqueFunctions
                 double F = 1;
                 for (int i = 1; i <= N; i++)
                 {
-                    F *= ((4 * i - 3) * Math.Pow(4 * i, -1)) * x;
+                    F *= ((4 * i - (double)3) * Math.Pow(4 * i, -1)) * x;
                     F = -F;
                     S += F;
                 }
