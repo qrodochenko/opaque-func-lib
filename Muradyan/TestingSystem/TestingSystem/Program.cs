@@ -13,98 +13,226 @@ using System.Text;
 //main namespace
 namespace TestingSystem
 {
-    interface IOneArgMethod
+    public static class ExtendedMath
     {
-        Interval Interval { get; set; }
-    }
-    interface ITwoArgMethod
-    {
-        Interval Interval1 { get; set; }
-        Interval Interval2 { get; set; }
+        public static double Sqr(double x)
+        {
+            return x * x;
+        }
+
+        public static double Ctg(double x)
+        {
+            return 1 / Math.Tan(x);
+        }
+
+        public static double Cosec(double x)
+        {
+            return 1 / Math.Sin(x);
+        }
+
+        public static double Sec(double x)
+        {
+            return 1 / Math.Cos(x);
+        }
+
+        public static double Cth(double x)
+        {
+            return 1 / Math.Tanh(x);
+        }
+
+        public static double Csch(double x)
+        {
+            return 1 / Math.Sinh(x);
+        }
+
+        public static double Sech(double x)
+        {
+            return 1 / Math.Cosh(x);
+        }
+
+        public static double Arcctg(double x)
+        {
+            return Math.PI / 2 - Math.Atan(x);
+        }
+        public static double Arcsec(double x)
+        {
+            return Math.Acos(1 / x);
+        }
+        public static double Arccosec(double x)
+        {
+            return Math.Asin(1 / x);
+        }
+
+        public static double Arsh(double x)
+        {
+            return Math.Log(x + Math.Sqrt(x * x + 1));
+        }
+
+        public static double Arch(double x)
+        {
+            return Math.Log(x + Math.Sqrt(x * x - 1));
+        }
+
+        public static double Arth(double x)
+        {
+            return .5*Math.Log((1+x)/(1-x));
+        }
+
+        public static double Arcth(double x)
+        {
+            return .5 * Math.Log((1 + x) / (x - 1));
+        }
+
+        public static double Arsech(double x)
+        {
+            return Math.Log(1 / x + Math.Sqrt(1 / (x * x) - 1));
+        }
+
+        public static double Arcsch(double x)
+        {
+            return Math.Log(1 / x + Math.Sqrt(1 / (x * x) + 1));
+        }
     }
 
-    public enum MethodType
+    public class Point
     {
-        X, XY, XA, XYA, XAB, XYAB, NOT_DETECTED
+        public double[] coords;
+
+        public Point(int n, double defaultVal = 0)
+        {
+            coords = new double[n];
+            for(int i=0; i<n; ++i)
+            {
+                coords[i] = defaultVal;
+            }
+        }
+
+        public Point(Point pt)
+        {
+            coords = new double[pt.coords.Length];
+            Array.Copy(pt.coords, coords, coords.Length);
+        }
+
+        public double this[int i]{
+            get
+            {
+                return coords[i];
+            }
+            set
+            {
+                coords[i] = value;
+            }
+        }
+    } 
+
+    public class PointCounter
+    {
+        public Point Cur { get; set; }
+        Point Offset;
+        Interval[] Limits;
+        double Incer;
+
+        public PointCounter(Interval[] lim, double incer, Point offset = null)
+        {
+            Offset = offset ?? new Point(lim.Length,incer/2);
+            Limits = lim;
+            Cur = new Point(lim.Length);
+            Incer = incer;
+            for(int i=0; i<lim.Length; ++i)
+            {
+                Cur[i] = lim[i].left + Offset[i];
+            }
+        }
+
+        public bool inc()
+        {
+            for(int i=0; i<Limits.Length; ++i)
+            {
+                if(Cur[i] + Incer > Limits[i].right)
+                {
+                    if (i == Limits.Length - 1)
+                        return false;
+                    Cur[i] = Limits[i].left + Offset[i];
+                    continue;
+                }
+                Cur[i] += Incer;
+                break;
+            }
+            return true;
+        }
     }
-    
+
+    public class ConvergencyRegion
+    {
+        public Interval[] Intervals;
+
+        public ConvergencyRegion(Interval[] intervals)
+        {
+            Intervals = intervals;
+        }
+
+        public int getDim()
+        {
+            return Intervals.Length;
+        }
+
+        public double Area()
+        {
+            double sq = 1;
+            foreach(var interv in Intervals)
+            {
+                sq *= interv.Length();
+            }
+            return sq;
+        }
+
+        public List<Point> GetPoints(int maxPoints)
+        {
+            List<Point> res = new List<Point>();
+
+            double area = Area();
+            double sqArea = area / maxPoints;
+            double sqSide = Math.Pow(sqArea, 1 / getDim());
+            PointCounter cnt = new PointCounter(Intervals, sqSide, new Point(getDim(),sqSide / 2));
+
+            do
+            {
+                res.Add(new Point(cnt.Cur));
+            }
+            while (cnt.inc());
+
+            return res;
+        }
+
+
+    }
+
     public enum EpsilonType
     {
         ABSOLUTE, RELATIVE
     }
 
-    namespace ArgsTypesIdeal
+    public class MethodType
     {
+        public int argnum, parnum;
 
-        public class ArgsOneArg
+        public static MethodType X = new MethodType(1,0);
+        public MethodType(int argnum, int parnum)
         {
-            public double X;
-        }
-        public class ArgsTwoArg
-        {
-            public double X, Y;
-        }
-        public class ArgsX : ArgsOneArg
-        {
-
-        }
-        public class ArgsXY : ArgsTwoArg
-        {
-
-        }
-        public class ArgsXA : ArgsOneArg
-        {
-            public double A;
-        }
-        public class ArgsXYA : ArgsTwoArg
-        {
-            public double A;
-        }
-        public class ArgsXAB : ArgsOneArg
-        {
-            public double A, B;
-        }
-        public class ArgsXYAB : ArgsTwoArg
-        {
-            public double A, B;
+            this.argnum = argnum;
+            this.parnum = parnum;
         }
     }
 
-    namespace ArgsTypesIterations
+    public class IdealMethodArgs
     {
+        public double[] args;
+        public double[] param;
+    }
 
-        public class ArgsOneArg : ArgsTypesIdeal.ArgsOneArg
-        {
-            public int N;
-        }
-        public class ArgsTwoArg : ArgsTypesIdeal.ArgsTwoArg
-        {
-            public int N;
-        }
-        public class ArgsX : ArgsOneArg
-        {
-
-        }
-        public class ArgsXY : ArgsTwoArg
-        {
-
-        }
-        public class ArgsXA : ArgsOneArg
-        {
-            public double A;
-        }
-        public class ArgsXYA : ArgsTwoArg
-        {
-            public double A;
-        }
-        public class ArgsXAB : ArgsOneArg
-        {
-            public double A, B;
-        }
-        public class ArgsXYAB : ArgsTwoArg
-        {
-            public double A, B;
-        }
+    public class IterMethodArgs : IdealMethodArgs
+    {
+        public int N;
     }
 
     // some utility functions
@@ -186,12 +314,12 @@ namespace TestingSystem
                         sw.WriteLine("Can't compile general code: " + m.Name + " " + m.FilePath);
                         return;
                     }
-                    var mt = MethodForTestingTaylor.GetTaylorExtension(m);
+                    var mt = new MethodForTestingTaylor(m);
                     if (mt.Correct)
                     {
                         try
                         {
-                            mt.GetTestingReport(1000, 500, new double[] { 2, 3 }).SaveCSV("ReportsTaylor\\" + mt.Name + ".csv");
+                            mt.GetTestingReportTaylor(1000, 500, new double[] { 2, 3 }).SaveCSV("ReportsTaylor\\" + mt.Name + ".csv");
                         }
                         catch
                         {
@@ -209,6 +337,7 @@ namespace TestingSystem
     public class ReportEntry
     {
         public string FunctionName;
+        public string FileName;
         public int NumberOfIterations;
         public double[] Arguments;
         public double[] Parameters;
@@ -220,6 +349,7 @@ namespace TestingSystem
         public ReportEntry(
             bool evaluateEps = true,
             string functionName = "NONAME",
+            string fileName = "NOFILE",
             int N = -1,
             double[] args = null,
             double[] param = null,
@@ -231,6 +361,7 @@ namespace TestingSystem
             Arguments = args ?? new double[0];
             Parameters = param ?? new double[0];
             FunctionName = functionName;
+            FileName = fileName;
             NumberOfIterations = N;
             Val = val;
             WantedVal = wantedVal;
@@ -267,7 +398,7 @@ namespace TestingSystem
 
             return string.Format(dotOption,
                 getFormatString(argnum, parnum, fieldsSeparator, forCSV),
-                FunctionName,
+                FunctionName+ "("+FileName+")",
                 NumberOfIterations,
                 joinedargs,
                 joinedparam,
@@ -285,7 +416,7 @@ namespace TestingSystem
         public static string getFormatString(int argnum = 1, int parnum = 0, string fieldsSeparator = " ", bool forCSV = false)
         {
             string q = forCSV ? "\"" : "";
-            return q + "{0,10}" + q + fieldsSeparator + 
+            return q + "{0,30}" + q + fieldsSeparator + 
                 "{1,5}" + fieldsSeparator + 
                 "{2," + (argnum * 7) + "}" + fieldsSeparator + 
                 "{3," + (parnum * 7) + "} " + fieldsSeparator +
@@ -302,7 +433,7 @@ namespace TestingSystem
         {
             string q = forCSV ? "\"" : "";
             string dq = q + (forCSV ? ";" : " ") + q;
-            return q+"{0,10}" + dq + "{1,5}" + dq + "{2," + (argnum * 7) + "}" + dq + "{3," + (parnum * 7) + "}" + dq + 
+            return q+"{0,30}" + dq + "{1,5}" + dq + "{2," + (argnum * 7) + "}" + dq + "{3," + (parnum * 7) + "}" + dq + 
                 "{4,9}" + dq + "{5,9}" + dq + "{6,9}" + dq + "{7,9}" + q + "\n";
         }
         
@@ -476,35 +607,26 @@ namespace TestingSystem
     {
         public const string DefaultUsings = "using System;\n";
 
-        public static string getEvalExpression(MethodDeclarationSyntax meth, string usings = DefaultUsings, MethodType Type = MethodType.X, bool isIdeal = false)
-        {
-            return usings + meth.GetText().ToString() + "\nreturn " + meth.Identifier + generateArguments(Type, !isIdeal) + ";\n";
-        }
-
-        public static T Evaluate<ArgsT, T>(MethodDeclarationSyntax meth, ArgsT args, string usings = DefaultUsings, ScriptOptions opts = null)
-        {
-            opts = opts ?? ScriptOptions.Default;
-            return CSharpScript.EvaluateAsync<T>(getEvalExpression(meth, usings), opts, globals:args).Result;
-        }
-
-        public static T Evaluate<ArgsT, T>(string EvalExpression, ArgsT args, ScriptOptions opts = null)
-        {
-            opts = opts ?? ScriptOptions.Default;
-            return CSharpScript.EvaluateAsync<T>(EvalExpression, opts, globals: args).Result;
-        }
-
         // (arg1, arg2, .. , argn)
-        public static string generateArguments(MethodType Type, bool WithN = true, bool types = false, int HeapsNumber = 0)
+        public static string generateArguments(MethodType Type, bool WithN = true, bool types = false, int HeapsNumber = 0, bool callTaylorAddonOrIdeal = false)
         {
-            Dictionary<MethodType, List<string>> dic = new Dictionary<MethodType, List<string>>();
-            dic[MethodType.X] = new List<string> { "X" };
-            dic[MethodType.XA] = new List<string> { "X", "A" };
-            dic[MethodType.XAB] = new List<string> { "X", "A", "B" };
-            dic[MethodType.XY] = new List<string> { "X", "Y" };
-            dic[MethodType.XYA] = new List<string> { "X", "Y", "A" };
-            dic[MethodType.XYAB] = new List<string> { "X", "Y", "A", "B" };
+            string res = "";
+            if (types)
+                res += "(double [] args, double [] param";
+            else if(callTaylorAddonOrIdeal)
+                res += "(args, param";
+            else
+            {
+                res += "(";
+                for (int i = 0; i < Type.argnum; ++i)
+                    res += "args[" + i + "], ";
+                for (int i=0; i<Type.parnum; ++i)
+                {
+                    res += "param[" + i + "], ";
+                }
+                res = res.Substring(0, res.Length - 2);
+            }
 
-            var res = "(" + (types ? "double " : "") + dic[Type].Aggregate( (result, cur) => result + ", " + (types ? "double" : "") + " " + cur);
             if (WithN)
             {
                 res += ", " + (types ? "int " : "") + "N";
@@ -518,6 +640,16 @@ namespace TestingSystem
                 ar[i] = "tst" + (i + 1);
             }
             return res + ", " + ar.Aggregate((result, cur) => result + ", " + (types ? "Heap" : "") + " " + cur) + ')';
+        }
+
+        public static Tuple<IdealMethodArgs,IterMethodArgs> GenerateStructures(MethodType t, double[] parameters = null)
+        {
+            parameters = parameters ?? new double[0];
+            var idargs = new IdealMethodArgs();
+            var itargs = new IterMethodArgs();
+            idargs.param = itargs.param = parameters;
+            idargs.args = itargs.args = new double[t.argnum];
+            return new Tuple<IdealMethodArgs, IterMethodArgs>(idargs, itargs);
         }
 
         public static string makeArg(double x)
@@ -563,94 +695,45 @@ namespace TestingSystem
             return cN;
         }
         
-        public static Report GetReportOneArg(
+        public static Report GetReport(
             int N, 
             int pointsNumber, 
             double[] parameters, 
             MethodType type,
             string methodName,
-            Interval interval, 
-            Func<MethodType, double[], Tuple<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg>> generateStructures,
-            Action<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg, double>  putArg,
-            Func<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg, Tuple<double, double>> evalFunc)
+            string fieName,
+            ConvergencyRegion reg, 
+            Func<MethodType, double[], Tuple<IdealMethodArgs, IterMethodArgs>> generateStructures,
+            Action<IdealMethodArgs, IterMethodArgs, Point>  putArg,
+            Func<IdealMethodArgs, IterMethodArgs, Tuple<double, double>> evalFunc)
         {
             Report rep = new Report();
-            double h = (interval.right - interval.left) / (pointsNumber + 1);
 
             var structures = generateStructures(type, parameters);
             var argStructIdeal = structures.Item1;
             var argStructIter = structures.Item2;
-
             argStructIter.N = N;
 
-            for (double arg = interval.left + h; pointsNumber-- > 0; arg += h)
+            var ptsList = reg.GetPoints(pointsNumber);
+
+            foreach (var pt in ptsList)
             {
-                putArg(argStructIdeal,argStructIter,arg);
+                putArg(argStructIdeal,argStructIter, pt);
                 var resTuple = evalFunc(argStructIdeal, argStructIter);
                 var val = resTuple.Item1;
                 var idealVal = resTuple.Item2;
                 rep.Add(new ReportEntry(
                     evaluateEps: true,
                     functionName: methodName,
+                    fileName:fieName,
                     N: N,
-                    args: new double[] { arg },
+                    args: pt.coords,
                     param: parameters,
                     val: val,
                     wantedVal: idealVal));
             }
             return rep;
         }
-
-        public static Report GetReportTwoArg(
-            int N,
-            int pointsNumber,
-            double[] parameters,
-            MethodType type,
-            string methodName,
-            Interval interval1,
-            Interval interval2,
-            Func<MethodType, double[], Tuple<ArgsTypesIdeal.ArgsTwoArg, ArgsTypesIterations.ArgsTwoArg>> generateStructures,
-            Action<ArgsTypesIdeal.ArgsTwoArg, ArgsTypesIterations.ArgsTwoArg, double, double> putArgs,
-            Func<ArgsTypesIdeal.ArgsTwoArg, ArgsTypesIterations.ArgsTwoArg, Tuple<double, double>> evalFunc)
-        {
-            Report rep = new Report();
-            double xSide = interval1.Length();
-            double ySide = interval2.Length();
-            double area = xSide * ySide;
-            double sqArea = area / pointsNumber;
-            double sqSide = Math.Sqrt(sqArea);
-            int xIter = (int)(xSide / sqSide);
-            int yIter = (int)(ySide / sqSide);
-            var startX = interval1.left + sqSide / 2;
-            var startY = interval2.left + sqSide / 2;
-
-            var structures = generateStructures(type, parameters);
-            var argStructIdeal = structures.Item1;
-            var argStructIter = structures.Item2;
-            argStructIter.N = N;
-
-            for (double x = startX; xIter --> 0; x += sqSide)
-            {
-                for (double y = startY; yIter-- > 0; y += sqSide)
-                {
-                    putArgs(argStructIdeal, argStructIter, x, y);
-                    var resTuple = evalFunc(argStructIdeal, argStructIter);
-                    var val = resTuple.Item1;
-                    var idealVal = resTuple.Item2;
-                    rep.Add(new ReportEntry(
-                        evaluateEps: true,
-                        functionName: methodName,
-                        N: N,
-                        args: new double[] { x, y },
-                        param: parameters,
-                        val: val,
-                        wantedVal: idealVal));
-                }
-            }
-            return rep;
-        }
-            
-
     }
 
     public struct Interval
@@ -713,15 +796,11 @@ namespace TestingSystem
                 double[] corners = new double[2];
                 for (int i = 0; i < 2; ++i)
                 {
-                    try
-                    {
-                        corners[i] = CSharpScript.EvaluateAsync<double>(lnr[i].ToUpper(), ScriptOptions.Default.WithImports("System.Math")).Result;
-                    }
-                    catch (CompilationErrorException)
-                    {
-                        corners[i] = i == 0 ? -Interval.almostInfinity : Interval.almostInfinity;
-                        continue;
-                    }
+                    var upperText = lnr[i].ToUpper();
+                    corners[i] = upperText.IndexOf('W') == -1 ?
+                        CSharpScript.EvaluateAsync<double>(upperText, ScriptOptions.Default.WithImports("System.Math")).Result :
+                        (i == 0 ? -Interval.almostInfinity : Interval.almostInfinity);
+                    
                 }
                 intervals[k] = new Interval { left = corners[0], right = corners[1] };
                 ++k;
@@ -734,40 +813,63 @@ namespace TestingSystem
     public class IdealTestMethod
     {
         Script<double> Script;
-        MethodType Type;
+        public MethodType Type;
 
         public static string Name = "_ideal";
         public static string ReturnType = "double";
         public static Dictionary<string, string> IdentifierDic = new Dictionary<string, string>()
         {
-            { "SIN", "Sin" }, {"COS", "Cos" }, {"TAN",  "Tan"}, {"LN", "Log" }, { "LOG","Log10"},
-            {"TANH", "Tanh" }, { "TG", "Tan"}, {"POW", "Pow" }, {"SH", "Sinh" }, {"CH","Cosh" },
-            {"TH", "Tanh" },
-            {"X", "X" }, {"Y", "Y" }, {"A", "A" }, {"B", "B" }
+            {"LN", "Log" }, { "LOG","Log10"}, {"POW", "Pow" }, { "SQR", "Sqr"}, {"SQRT", "Sqrt" },
+
+            { "SIN", "Sin" }, {"COS", "Cos" }, {"TAN",  "Tan"}, { "TG", "Tan"},
+            { "CTG", "Ctg" }, {"SEC", "Sec" }, {"COSEC",  "Cosec"}, { "CSC", "Cosec"},
+
+            {"SH", "Sinh" }, {"CH","Cosh" }, {"TANH", "Tanh" },  {"TH", "Tanh" },
+            {"CTH", "Cth" }, {"CSCH","Csch" }, {"SECH", "Sech" },  {"CTANH", "Cth" },
+
+            { "ASIN", "Asin" }, {"ACOS", "Acos" }, {"ATAN",  "Atan"}, { "ATG", "Atan"},
+            { "ARCSIN", "Asin" }, {"ARCCOS", "Acos" }, {"ARCTAN",  "Atan"}, { "ARCTG", "Atan"},
+            { "ARCSEC", "Arcsec" }, {"ARCCOSEC", "Arccosec" }, {"ARCCTG",  "Arcctg"}, { "ARCCSC", "Arccosec"},
+
+            { "ARCSINH", "Arsh" }, {"ARCCOSH", "Arch" }, {"ARCTANH",  "Arth"},
+            { "ARCSECH", "Arsech" }, {"ARCCOSECH", "Arcsch" }, {"ARCCTGH",  "Arcth"},
+            { "ARSH", "Arsh" }, {"ARCH", "Arch" }, {"ARTH",  "Arth"},
+            { "ARSECH", "Arsech" }, {"ARCSCH", "Arcsch" }, {"ARCTH",  "Arcth"},
+
+            {"X", "args[0]" }, {"Y", "args[1]" }, {"Z", "args[2]" },
+            { "A", "param[0]" }, {"B", "param[1]" }, {"C", "param[2]" }, {"D", "param[3]" }, {"E", "param[4]" }
         };
+        
 
-        Type GetArgsType()
+        public IdealTestMethod(string IdealExpression, MethodType type)
         {
-            switch (Type)
-            {
-                case MethodType.X: return typeof(ArgsTypesIdeal.ArgsX);
-                case MethodType.XA: return typeof(ArgsTypesIdeal.ArgsXA);
-                case MethodType.XAB: return typeof(ArgsTypesIdeal.ArgsXAB);
-                case MethodType.XY: return typeof(ArgsTypesIdeal.ArgsXY);
-                case MethodType.XYA: return typeof(ArgsTypesIdeal.ArgsXYA);
-                case MethodType.XYAB: return typeof(ArgsTypesIdeal.ArgsXYAB);
-                default: throw new Exception();
-            }
-        }
-
-        public IdealTestMethod(string IdealExpression, MethodType mtype)
-        {
-            Type = mtype;
+            Type = type;
+            var eqPos = IdealExpression.LastIndexOf('=');
+            if (eqPos != -1)
+                IdealExpression = IdealExpression.Substring(eqPos + 1);
             var parsed = CSharpSyntaxTree.ParseText(ReturnType + " " + Name + TestingUtilities.generateArguments(Type, false, true, 0) +
                                             "{ return " +
                                             IdealExpression +
                                             "; }")
                                             .GetRoot().ChildNodes().OfType<MethodDeclarationSyntax>().First();
+
+            while (true)
+            {
+                var numbers = parsed.DescendantNodes().OfType<LiteralExpressionSyntax>();
+                bool notFound = true;
+                foreach (var id in numbers)
+                {
+                    if (id.Kind() != SyntaxKind.NumericLiteralExpression
+                        || id.Parent.Kind() == SyntaxKind.CastExpression)
+                        continue;
+                    notFound = false;
+                    var txt = "(double)" + id.Token.ValueText;
+                    parsed = parsed.ReplaceNode(id, SyntaxFactory.ParseExpression(txt));
+                    break;
+                }
+                if (notFound) break;
+            }
+
             while (true)
             {
                 var identifiers = parsed.DescendantNodes().OfType<IdentifierNameSyntax>();
@@ -780,7 +882,7 @@ namespace TestingSystem
                     var dicText = IdentifierDic[idText];
 
                     if (dicText != idTextNCh){
-                        parsed = parsed.ReplaceNode(id, SyntaxFactory.IdentifierName(dicText));
+                        parsed = parsed.ReplaceNode(id, SyntaxFactory.ParseExpression(dicText));
                         notFound = false;
                         break;
                     }
@@ -788,18 +890,42 @@ namespace TestingSystem
                 if (notFound) break;
             }
 
-            var EvalExpression = TestingUtilities.getEvalExpression(parsed, "using System;\n", mtype, true);
-            Console.WriteLine(EvalExpression);
-            Script = CSharpScript.Create<double>(EvalExpression, ScriptOptions.Default.WithImports("System.Math"), GetArgsType());
+            while (true)
+            {
+                var binExprs = parsed.DescendantNodes().OfType<BinaryExpressionSyntax>();
+                bool notFound = true;
+                foreach (var id in binExprs)
+                {
+                    if (id.Kind() != SyntaxKind.ExclusiveOrExpression)
+                        continue;
+                    notFound = false;
+                    var txt = "Pow("+id.Left.GetText()+", "+id.Right.GetText()+")";
+                    parsed = parsed.ReplaceNode(id, SyntaxFactory.ParseExpression(txt));
+                    break;
+                }
+                if (notFound) break;
+            }
 
+            var EvalExpression = "using System; using TestingSystem;\n" + parsed.GetText().ToString() +
+                "\nreturn " + parsed.Identifier.ValueText + 
+                TestingUtilities.generateArguments(Type, false, false, 0, true) + ";";
+#if DEBUG
+            Console.WriteLine(EvalExpression);
+#endif
+            Script = CSharpScript.Create<double>(
+                EvalExpression, 
+                ScriptOptions.Default   .WithReferences(typeof(ExtendedMath).Assembly)
+                                        .WithImports("System.Math","TestingSystem.ExtendedMath"), 
+                typeof (IdealMethodArgs));
+            Script.Compile();
         }
-        public double Evaluate<ArgsT>(ArgsT args)
+        public double Evaluate(IdealMethodArgs args)
         {
             return Script.RunAsync(args).Result.ReturnValue;
         }
     }
 
-    public abstract class MethodForTesting
+    public class MethodForTesting
     {
         public static string Usings = "using System; \n";
         
@@ -814,6 +940,7 @@ namespace TestingSystem
         public string FilePath;
         public Script<double> Script;
         public bool Correct;
+        public ConvergencyRegion Region;
 
         public MethodForTesting()
         {
@@ -832,17 +959,7 @@ namespace TestingSystem
             Correct = m.Correct;
             EvalCode = m.EvalCode;
             IdealCode = m.IdealCode;
-
-            if (m is IOneArgMethod)
-            {
-                ((IOneArgMethod)this).Interval = ((IOneArgMethod)m).Interval;
-            }
-            else if (m is ITwoArgMethod)
-            {
-                ((ITwoArgMethod)this).Interval1 = ((ITwoArgMethod)m).Interval1;
-                ((ITwoArgMethod)this).Interval2 = ((ITwoArgMethod)m).Interval2;
-            }
-            else throw new Exception();
+            Region = m.Region;
         }
 
         public MethodForTesting(string FilePath, string MethodName) : 
@@ -851,20 +968,7 @@ namespace TestingSystem
             
         }
 
-        internal Type GetArgsType()
-        {
-            switch (Type)
-            {
-                case MethodType.X: return typeof(ArgsTypesIterations.ArgsX);
-                case MethodType.XA: return typeof(ArgsTypesIterations.ArgsXA);
-                case MethodType.XAB: return typeof(ArgsTypesIterations.ArgsXAB);
-                case MethodType.XY: return typeof(ArgsTypesIterations.ArgsXY);
-                case MethodType.XYA: return typeof(ArgsTypesIterations.ArgsXYA);
-                case MethodType.XYAB: return typeof(ArgsTypesIterations.ArgsXYAB);
-                default: throw new Exception();
-            }
-        }
-
+        
         public bool CompileScript()
         {
             if (IdealCode == null) return false;
@@ -873,10 +977,13 @@ namespace TestingSystem
             {
                 IdealMethod = new IdealTestMethod(IdealCode, Type);
             }
-            catch (Exception e)
+            catch
+#if DEBUG
+            (Exception e)
+#endif
             {
 #if DEBUG
-                Console.WriteLine(Name + " " + FilePath + " " + e.Message);
+                Console.WriteLine("Ideal test method: "+Name + " " + FilePath + " " + e.Message);
 #endif
                 Correct = false;
             }
@@ -889,7 +996,7 @@ namespace TestingSystem
             opts = opts.AddImports("System.Math");
             try
             {
-                Script = CSharpScript.Create<double>(EvalCode, opts, GetArgsType());
+                Script = CSharpScript.Create<double>(EvalCode, opts, typeof(IterMethodArgs));
                 Script.Compile();
             }
             catch
@@ -904,7 +1011,7 @@ namespace TestingSystem
         //  public double arg1;
         //  public int arg2; ...
         //}
-        public double Evaluate<ArgsT>(ArgsT args){
+        public double Evaluate(IterMethodArgs args){
             return Script.RunAsync(args).Result.ReturnValue;
         }
 
@@ -926,7 +1033,14 @@ namespace TestingSystem
             return TestingUtilities.GetIterationsByEpsilon(this, epsilon, pointsNumber, functionParameters:functionParameters);
         }
 
-        public abstract Report GetTestingReport(int N, int PointsNumber, double[] parameters = null);
+        public Report GetTestingReport(int N, int PointsNumber, double[] parameters = null)
+        {
+            return TestingUtilities.GetReport(N, PointsNumber, parameters,
+                Type, Name, FilePath, Region,
+                TestingUtilities.GenerateStructures,
+                (ideal, iter, pt) => ideal.args = iter.args = pt.coords,
+                (ideal, iter) => Tuple.Create(Evaluate(iter), IdealMethod.Evaluate(ideal)));
+        }
         
         public static Dictionary<string, string> getExpressionsFromAttributes(SyntaxNode TreeRoot)
         {
@@ -953,51 +1067,39 @@ namespace TestingSystem
                 string inMethName = meth.Identifier.ValueText;
                 if (!inMethName.EndsWith("_in")) continue;
                 string methodName = inMethName.Substring(0, inMethName.Length - 3);
-                dic[methodName] = IntervalMethod.Evaluate(meth);
+                try
+                {
+                    dic[methodName] = IntervalMethod.Evaluate(meth);
+                }
+                catch
+                {
+                    continue;
+                }
             }
 
             return dic;
         }
 
-        public static bool isOneArg(MethodType t)
-        {
-            return t == MethodType.X || t == MethodType.XA || t == MethodType.XAB;
-        }
-
-        public static bool isTwoArg(MethodType t)
-        {
-            return t == MethodType.XY || t == MethodType.XYA || t == MethodType.XYAB;
-        }
-
         public static MethodType DetectType(MethodDeclarationSyntax meth)
         {
+#if DEBUG
+            Console.WriteLine(meth.ReturnType.GetText());
+#endif
+            if (meth.ReturnType.GetText().ToString().Trim() != "double") return null;
             var argsSynt = meth.ParameterList.ChildNodes().OfType<ParameterSyntax>();
             var argsL = argsSynt.Select((elem) => elem.Identifier.ValueText.ToUpper());
             var args = argsL.ToArray();
-            
+            var possibleArgs = new string[] { "X", "Y", "Z" };
+            var possibleParams = new string[] { "A", "B", "C", "D", "E", "F" };
 
-            if (argsSynt.Count() == 0 || argsSynt.Last().Type.GetText().ToString().Trim() != "int") return MethodType.NOT_DETECTED;
-            if (args.Length <2) return MethodType.NOT_DETECTED;
-            if (args.Length == 2) return MethodType.X;
-            if (args[0] == "X")
-            {
-                if (args.Length == 2) return MethodType.X;
-                if(args[1] == "Y")
-                {
-                    if (args.Length == 3) return MethodType.XY;
-                    if(args[2] == "A")
-                    {
-                        if (args.Length == 4) return MethodType.XYA;
-                        if (args[3] == "B" && args.Length == 5) return MethodType.XYAB;
-                    }
-                }
-                else if(args[1] == "A")
-                {
-                    if (args.Length == 3) return MethodType.XA;
-                    if (args[3] == "B" && args.Length == 4) return MethodType.XAB;
-                }
-            }
-            return MethodType.NOT_DETECTED;
+            if (argsSynt.Count() < 2 || argsSynt.Last().Type.GetText().ToString().Trim() != "int") return null;
+            if (argsSynt.Count() == 2 && argsSynt.First().Type.GetText().ToString().Trim() == "double") return MethodType.X;
+
+            int argnum = 0, parnum = 0;
+            for (; argnum < possibleArgs.Length && argnum < args.Length && possibleArgs[argnum] == args[argnum]; ++argnum) ;
+            for (; parnum < possibleParams.Length && (parnum+argnum) < args.Length && possibleParams[parnum] == args[argnum+parnum]; ++parnum) ;
+            if (argnum == 0 || (argnum+parnum+1) != args.Length) return null;
+            return new MethodType (argnum, parnum);
         }
 
         public static List<MethodForTesting> getMethodsFromFiles(
@@ -1005,7 +1107,7 @@ namespace TestingSystem
             string[] MethodNames,
             bool exclude = false,
             bool methodTypeDetection = false,
-            Dictionary<string, MethodType> MethodTypes = null )
+            Dictionary<string, MethodType > MethodTypes = null )
         {
             MethodTypes = MethodTypes ?? new Dictionary<string, MethodType>();
 #if DEBUG
@@ -1027,7 +1129,7 @@ namespace TestingSystem
 
                     var t = MethodTypes.ContainsKey(thisMethodName) ? MethodTypes[thisMethodName] :
                         (methodTypeDetection ? DetectType(meth): MethodType.X);
-                    if (t == MethodType.NOT_DETECTED)
+                    if (t == null)
                     {
 #if DEBUG
                         sw.WriteLine(thisMethodName + " " + fname + " " + " Not detected");
@@ -1047,26 +1149,24 @@ namespace TestingSystem
 #endif
                         continue;
                     }
-                    if (isOneArg(t) && methIntervals.Length == 1)
+                    
+                    if(methIntervals.Length != t.argnum)
                     {
-                        m = new MethodForTestingOneArg();
-                        ((MethodForTestingOneArg)m).Interval = methIntervals[0];
-                    }
-                    else if (isTwoArg(t) && methIntervals.Length == 2)
-                    {
-                        m = new MethodForTestingTwoArg();
-                        ((MethodForTestingTwoArg)m).Interval1 = methIntervals[0];
-                        ((MethodForTestingTwoArg)m).Interval2 = methIntervals[1];
-                    }
-                    else
-                    {
-                        Console.WriteLine("Intervals/types: {0} {1}", fname, thisMethodName);
+
+#if DEBUG
+                        sw.WriteLine(thisMethodName + " " + fname + " " + " No correlation between args and intervals");
+#endif
                         continue;
                     }
 
+                    m = new MethodForTesting();
+
                     m.Name = thisMethodName;
                     m.FilePath = fname;
+                    m.Region = new ConvergencyRegion(methIntervals);
+#if DEBUG
                     Console.WriteLine(thisMethodName+" "+fname);
+#endif
                     m.Type = t;
                     m.Code = meth.GetText().ToString();
                     m.Node = meth;
@@ -1085,144 +1185,15 @@ namespace TestingSystem
                 }
             }
 
+#if DEBUG
             sw.Close();
             sw.Dispose();
+#endif
             return reslist;
         }
     }
 
-    public class MethodForTestingOneArg : MethodForTesting, IOneArgMethod
-    {
-        public Interval Interval { get; set; }
-
-        public MethodForTestingOneArg(MethodForTestingOneArg meth) : base(meth)
-        {
-            Interval = meth.Interval;
-        }
-
-        public MethodForTestingOneArg()
-        {
-
-        }
-
-        public MethodForTestingOneArg(string FilePath, string MethodName) : base(FilePath, MethodName)
-        {
-
-        }
-
-        public override Report GetTestingReport(int N, int PointsNumber, double[] parameters = null)
-        {
-            return TestingUtilities.GetReportOneArg(
-                N, PointsNumber, parameters, Type, Name, Interval,
-                fillStructures,
-                (ideal, iter, x) => ideal.X = iter.X = x,
-                (ideal, iter) => Tuple.Create(Evaluate(iter), IdealMethod.Evaluate(ideal)));
-        }
-
-        internal static Tuple<ArgsTypesIdeal.ArgsOneArg, ArgsTypesIterations.ArgsOneArg> fillStructures(MethodType Type, double[] parameters = null)
-        {
-            if (Type != MethodType.X && Type != MethodType.XA && Type != MethodType.XAB)
-                throw new Exception();
-
-            parameters = parameters ?? new double[0];
-
-            ArgsTypesIdeal.ArgsOneArg argStructIdeal = new ArgsTypesIdeal.ArgsOneArg();
-            ArgsTypesIterations.ArgsOneArg argStructIter = new ArgsTypesIterations.ArgsOneArg();
-
-            switch (Type)
-            {
-                case MethodType.X:
-                    argStructIdeal = new ArgsTypesIdeal.ArgsX();
-                    argStructIter = new ArgsTypesIterations.ArgsX();
-                    break;
-                case MethodType.XA:
-                    argStructIdeal = new ArgsTypesIdeal.ArgsXA();
-                    argStructIter = new ArgsTypesIterations.ArgsXA();
-                    ((ArgsTypesIterations.ArgsXA)argStructIter).A =
-                        ((ArgsTypesIdeal.ArgsXA)argStructIdeal).A = parameters[0];
-                    break;
-                case MethodType.XAB:
-                    argStructIdeal = new ArgsTypesIdeal.ArgsXAB();
-                    argStructIter = new ArgsTypesIterations.ArgsXAB();
-                    ((ArgsTypesIterations.ArgsXAB)argStructIter).A =
-                        ((ArgsTypesIdeal.ArgsXAB)argStructIdeal).A = parameters[0];
-                    ((ArgsTypesIterations.ArgsXAB)argStructIter).B =
-                        ((ArgsTypesIdeal.ArgsXAB)argStructIdeal).B = parameters[1];
-                    break;
-            }
-
-            return Tuple.Create(argStructIdeal, argStructIter);
-        }
-
-    }
-
-    public class MethodForTestingTwoArg : MethodForTesting, ITwoArgMethod
-    {
-        public Interval Interval1 { get; set; }
-        public Interval Interval2 { get; set; }
-
-        public MethodForTestingTwoArg(MethodForTestingTwoArg meth) : base(meth)
-        {
-            Interval1 = meth.Interval1;
-            Interval2 = meth.Interval2;
-        }
-
-        public MethodForTestingTwoArg()
-        {
-
-        }
-
-        public MethodForTestingTwoArg(string FilePath, string MethodName) : base(FilePath, MethodName)
-        {
-
-        }
-
-        public override Report GetTestingReport(int N, int PointsNumber, double[] parameters = null)
-        {
-            return TestingUtilities.GetReportTwoArg(N, PointsNumber, parameters, Type, Name, Interval1, Interval2,
-                fillStructures,
-                (ideal, iter, x, y) => { ideal.X = iter.X = x; ideal.Y = iter.Y = y; },
-                (ideal, iter) => Tuple.Create(Evaluate(iter), IdealMethod.Evaluate(ideal)));
-        }
-
-        internal static Tuple<ArgsTypesIdeal.ArgsTwoArg, ArgsTypesIterations.ArgsTwoArg> fillStructures(MethodType Type, double[] parameters = null)
-        {
-            if (Type != MethodType.XY && Type != MethodType.XYA && Type != MethodType.XYAB)
-                throw new Exception();
-
-            parameters = parameters ?? new double[0];
-
-            var argStructIdeal = new ArgsTypesIdeal.ArgsTwoArg();
-            var argStructIter = new ArgsTypesIterations.ArgsTwoArg();
-
-            switch (Type)
-            {
-                case MethodType.XY:
-                    argStructIdeal = new ArgsTypesIdeal.ArgsXY();
-                    argStructIter = new ArgsTypesIterations.ArgsXY();
-                    break;
-                case MethodType.XYA:
-                    argStructIdeal = new ArgsTypesIdeal.ArgsXYA();
-                    argStructIter = new ArgsTypesIterations.ArgsXYA();
-                    ((ArgsTypesIterations.ArgsXYA)argStructIter).A =
-                        ((ArgsTypesIdeal.ArgsXYA)argStructIdeal).A = parameters[0];
-                    break;
-                case MethodType.XYAB:
-                    argStructIdeal = new ArgsTypesIdeal.ArgsXYAB();
-                    argStructIter = new ArgsTypesIterations.ArgsXYAB();
-                    ((ArgsTypesIterations.ArgsXYAB)argStructIter).A =
-                        ((ArgsTypesIdeal.ArgsXYAB)argStructIdeal).A = parameters[0];
-                    ((ArgsTypesIterations.ArgsXYAB)argStructIter).B =
-                        ((ArgsTypesIdeal.ArgsXYAB)argStructIdeal).B = parameters[1];
-                    break;
-            }
-
-            return Tuple.Create(argStructIdeal, argStructIter);
-        }
-
-    }
-
-    public abstract class MethodForTestingTaylor : MethodForTesting
+    public class MethodForTestingTaylor : MethodForTesting
     {
         //public string TaylorEvalCode;
         public static new string Usings = "using System; \n using TestingSystem; \n";
@@ -1234,7 +1205,7 @@ namespace TestingSystem
             var TaylorEvalCode = Usings + 
                 getChangedNode(Node).GetText().ToString() + 
                 constructTaylorAddon(Name, Type) +
-                "return " +TaylorAddonName + TestingUtilities.generateArguments(Type, true, false, 0)+ ";";
+                "return " +TaylorAddonName + TestingUtilities.generateArguments(Type, true, false, 0, true)+ ";";
 
             var opts = ScriptOptions.Default;
             var mscorlib = typeof(object).Assembly;
@@ -1247,7 +1218,7 @@ namespace TestingSystem
             Correct = true;
             try
             {
-                ScriptTaylor = CSharpScript.Create<Tuple<double, double>>(TaylorEvalCode, opts, GetArgsType());
+                ScriptTaylor = CSharpScript.Create<Tuple<double, double>>(TaylorEvalCode, opts, typeof(IterMethodArgs));
                 ScriptTaylor.Compile();
             }
             catch(Exception)
@@ -1256,11 +1227,20 @@ namespace TestingSystem
             }
         }
 
-        public Tuple<double, double> EvaluateTaylor<ArgsT>(ArgsT args)
+        public Tuple<double, double> EvaluateTaylor(IterMethodArgs args)
         {
             return ScriptTaylor.RunAsync(args).Result.ReturnValue;
         }
-        
+
+        public Report GetTestingReportTaylor(int N, int PointsNumber, double[] parameters = null)
+        {
+            return TestingUtilities.GetReport(N, PointsNumber, parameters,
+                Type, Name, FilePath, Region,
+                TestingUtilities.GenerateStructures,
+                (ideal, iter, pt) => iter.args = pt.coords,
+                (ideal, iter) => EvaluateTaylor(iter));
+        }
+
         public int GetIterationsByEpsilonTaylor(
             double epsilon,
             int pointsNumber,
@@ -1356,52 +1336,7 @@ namespace TestingSystem
                     }";
         }
 
-        public static MethodForTestingTaylor GetTaylorExtension(MethodForTesting m)
-        {
-            if (MethodForTesting.isOneArg(m.Type)) return new MethodForTestingTaylorOneArg((MethodForTestingOneArg)m);
-            if (MethodForTesting.isTwoArg(m.Type)) return new MethodForTestingTaylorTwoArg((MethodForTestingTwoArg)m);
-            throw new Exception();
-        }
-
     }
 
-    public class MethodForTestingTaylorOneArg : MethodForTestingTaylor, IOneArgMethod
-    {
-        public Interval Interval { get; set; }
-
-        public MethodForTestingTaylorOneArg(MethodForTestingOneArg meth) : base(meth)
-        {
-            Interval = meth.Interval;
-        }
-
-        public override Report GetTestingReport(int N, int PointsNumber, double[] parameters = null)
-        {
-            return TestingUtilities.GetReportOneArg(
-                N, PointsNumber, parameters, Type, Name, Interval,
-                MethodForTestingOneArg.fillStructures,
-                (ideal, iter, x) => iter.X = x,
-                (ideal, iter) => EvaluateTaylor(iter));
-        }
-    }
-
-    public class MethodForTestingTaylorTwoArg : MethodForTestingTaylor, ITwoArgMethod
-    {
-        public Interval Interval1 { get; set; }
-        public Interval Interval2 { get; set; }
-
-        public MethodForTestingTaylorTwoArg(MethodForTestingTwoArg meth) : base(meth)
-        {
-            Interval1 = meth.Interval1;
-            Interval2 = meth.Interval2;
-        }
-
-        public override Report GetTestingReport(int N, int PointsNumber, double[] parameters = null)
-        {
-            return TestingUtilities.GetReportTwoArg(N, PointsNumber, parameters, Type, Name, Interval1, Interval2,
-                MethodForTestingTwoArg.fillStructures,
-                (ideal, iter, x, y) => {iter.X = x; iter.Y = y; },
-                (ideal, iter) => EvaluateTaylor(iter));
-        }
-    }   
 }
 
