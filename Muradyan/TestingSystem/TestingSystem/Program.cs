@@ -71,7 +71,7 @@ namespace TestingSystem
                         return;
                     }
                     var mt = new MethodForTestingTaylor(m);
-                    if (mt.Correct)
+                    if (mt.CorrectTaylor)
                     {
                         try
                         {

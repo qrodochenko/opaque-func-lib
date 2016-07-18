@@ -26,7 +26,7 @@ namespace TestingSystem
     {
         public const string DefaultUsings = "using System;\n";
 
-        // (arg1, arg2, .. , argn)
+        // (arg[0], arg[1], .. , arg[n-1], param[0], param[1], ..., param[m-1])
         public static string generateArguments(MethodType Type, bool WithN = true, bool types = false, int HeapsNumber = 0, bool callTaylorAddonOrIdeal = false)
         {
             string res = "";

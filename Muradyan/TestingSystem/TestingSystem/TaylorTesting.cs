@@ -5,6 +5,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Scripting;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 
 namespace TestingSystem
@@ -205,14 +206,21 @@ namespace TestingSystem
         /// Namespaces which Taylor-testing uses
         /// </summary>
         public static new string Usings = "using System; \n using TestingSystem; \n";
+        
         /// <summary>
         /// Name of addon-method
         /// </summary>
         public static string TaylorAddonName = "_TaylorAddon";
+        
         /// <summary>
         /// Скрипт, тестирующий суммирование
         /// </summary>
         public Script<Tuple<double, double>> ScriptTaylor;
+
+        /// <summary>
+        /// Показывает, скомпилирован ли успешно скрипт для тестирования суммирования
+        /// </summary>
+        public bool CorrectTaylor;
 
         /// <summary>
         /// Добавляет новую функциональность обычному экземпляру MethodForTesting (тест суммирования)
@@ -233,7 +241,7 @@ namespace TestingSystem
             opts = opts.AddImports("System.Math");
             opts = opts.AddImports("TestingSystem.Heap");
 
-            Correct = true;
+            CorrectTaylor = true;
             try
             {
                 ScriptTaylor = CSharpScript.Create<Tuple<double, double>>(TaylorEvalCode, opts, typeof(IterMethodArgs));
@@ -241,7 +249,7 @@ namespace TestingSystem
             }
             catch (Exception)
             {
-                Correct = false;
+                CorrectTaylor = false;
             }
         }
 
@@ -302,21 +310,23 @@ namespace TestingSystem
         /// </summary>
         /// <param name="epsilon">Значение погрешности</param>
         /// <param name="pointsNumber">Количество точек, на которых проводится измерение погрешности</param>
-        /// <param name="functionParameters">Параметры функции</param>
+        /// <param name="parameters">Параметры функции</param>
         /// <param name="epsType">Тип погрешности - относительная или абсолютная</param>
         /// <returns></returns>
         public int GetIterationsByEpsilonTaylor(
             double epsilon,
             int pointsNumber,
-            double[] functionParameters = null,
+            double[] parameters = null,
             EpsilonType epsType = EpsilonType.RELATIVE)
         {
+            parameters = parameters ?? new double[0];
+            Debug.Assert(parameters.Length == Type.parnum);
             return TestingUtilities.GetIterationsByEpsilon(
                 this, 
                 epsilon, 
                 pointsNumber, 
                 epsType, 
-                functionParameters,
+                parameters,
                 GetTestingReportTaylor);
         }
 
@@ -424,6 +434,28 @@ namespace TestingSystem
                         var v = " + funName + @" " + TestingUtilities.generateArguments(Type, true, false, 1) + @";
                         return Tuple.Create(v, tst1.Sum());
                     }";
+        }
+
+        public class TaylorRewriter : CSharpSyntaxRewriter
+        {
+            public override SyntaxNode VisitDocumentationCommentTrivia(DocumentationCommentTriviaSyntax node)
+            {
+                string xml = node.GetText().ToString();
+
+                var TestEntryArgName = "__tst";
+
+                char[] delim = { ' ', '\n', '\t', '\r' };
+                var ar = xml.Split(delim, StringSplitOptions.RemoveEmptyEntries);
+                if (ar.Length != 3 || ar[1] != "add")
+                {
+                    return base.VisitDocumentationCommentTrivia(node);
+                }
+                var lineToAdd = TestEntryArgName + ".AddElement(" + ar[2] + ")";
+
+                var expression = SyntaxFactory.ExpressionStatement(SyntaxFactory.ParseExpression(lineToAdd));
+
+                return expression;
+            }
         }
 
     }
