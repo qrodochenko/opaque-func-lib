@@ -1,0 +1,843 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestingSystem</name>
+    </assembly>
+    <members>
+        <member name="T:TestingSystem.EpsilonType">
+            <summary>
+            Перечисление видов погрешности
+            </summary>
+        </member>
+        <member name="F:TestingSystem.EpsilonType.ABSOLUTE">
+            <summary>
+            Абслютная погрешность
+            </summary>
+        </member>
+        <member name="F:TestingSystem.EpsilonType.RELATIVE">
+            <summary>
+            Относительная погрешность
+            </summary>
+        </member>
+        <member name="T:TestingSystem.MethodType">
+            <summary>
+            Класс, представляющий тип метода по количеству аргументов и параметров
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodType.argnum">
+            <summary>
+            Число аргументов метода
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodType.parnum">
+            <summary>
+            Число параметров метода
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodType.X">
+            <summary>
+            Самый простой тип - с одним аргументом без параметров
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodType.NOT_DETECTED">
+            <summary>
+            Представляет неопределённый тип
+            </summary>
+        </member>
+        <member name="M:TestingSystem.MethodType.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Инициализирует объект класса MethodType
+            </summary>
+            <param name="argnum">Число аргументов</param>
+            <param name="parnum">Число параметров</param>
+        </member>
+        <member name="T:TestingSystem.IdealMethodArgs">
+            <summary>
+            Тип аргументов, передающихся образцовому методу
+            </summary>
+        </member>
+        <member name="F:TestingSystem.IdealMethodArgs.args">
+            <summary>
+            Массив аргументов метода
+            </summary>
+        </member>
+        <member name="F:TestingSystem.IdealMethodArgs.param">
+            <summary>
+            Массив параметров метода
+            </summary>
+        </member>
+        <member name="T:TestingSystem.IterMethodArgs">
+            <summary>
+            Тип аргументов для основоного метода
+            </summary>
+        </member>
+        <member name="F:TestingSystem.IterMethodArgs.N">
+            <summary>
+            Дополнительно передающееся число итераций
+            </summary>
+        </member>
+        <member name="T:TestingSystem.Point">
+            <summary>
+            Класс, представляющий n-мерную точку
+            </summary>
+        </member>
+        <member name="F:TestingSystem.Point.coords">
+            <summary>
+            Координаты точки
+            </summary>
+        </member>
+        <member name="M:TestingSystem.Point.#ctor(System.Int32,System.Double)">
+            <summary>
+            Задаёт точку её размерностью и значением каждой координаты
+            </summary>
+            <param name="n">Размерность пространства</param>
+            <param name="defaultVal">Значение каждой координаты точки</param>
+        </member>
+        <member name="M:TestingSystem.Point.#ctor(TestingSystem.Point)">
+            <summary>
+            Конструктор копии
+            </summary>
+            <param name="pt">Точка для копирования</param>
+        </member>
+        <member name="P:TestingSystem.Point.Item(System.Int32)">
+            <summary>
+            Позволяет получить i-ю координату точки
+            </summary>
+            <param name="i">Номер координаты</param>
+            <returns>Значение координаты</returns>
+        </member>
+        <member name="T:TestingSystem.PointCounter">
+            <summary>
+            Пробегает по всем узлам квадратной сетки некоторой
+            области в виде параллелепипеда произвольной размерности
+            </summary>
+        </member>
+        <member name="P:TestingSystem.PointCounter.Cur">
+            <summary>
+            Текущее значение точки
+            </summary>
+        </member>
+        <member name="M:TestingSystem.PointCounter.#ctor(TestingSystem.Interval[],System.Double,TestingSystem.Point)">
+            <summary>
+            Задаёт новый экземляр PointCounter
+            </summary>
+            <param name="lim">Массив интевалов, описывающих параллелепипед, в котором расчерчивается сетка</param>
+            <param name="incer">Длинна стороны кубика сетки</param>
+            <param name="offset">Начальные значения сдвига сетки относительно левой вершины lim</param>
+        </member>
+        <member name="M:TestingSystem.PointCounter.inc">
+            <summary>
+            Переход к следующей точке в сетке
+            </summary>
+            <returns>true, если точка Cur корректна. false, если нет (перечислены все точки сетки)</returns>
+        </member>
+        <member name="T:TestingSystem.ConvergencyRegion">
+            <summary>
+            Представляет прямоугольную n-мерную область сходимости
+            </summary>
+        </member>
+        <member name="F:TestingSystem.ConvergencyRegion.Intervals">
+            <summary>
+            Массив интервалов, произведение которых даёт искомую область
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ConvergencyRegion.#ctor(TestingSystem.Interval[])">
+            <summary>
+            Инициализирует область массивом интервалов
+            </summary>
+            <param name="intervals">Массив интервалов, задающий область</param>
+        </member>
+        <member name="M:TestingSystem.ConvergencyRegion.GetDim">
+            <summary>
+            Получает размерность области сходимости
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.ConvergencyRegion.Volume">
+            <summary>
+            Получает объём области
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.ConvergencyRegion.GetPoints(System.Int32)">
+            <summary>
+            Получает примерно <paramref name="maxPoints"/> точек области,
+            находящихся в вершинах квадратной сетки.
+            Для одномерного случая +-1 точка, для больших размерностей разброс больше
+            </summary>
+            <param name="maxPoints"></param>
+            <returns></returns>
+        </member>
+        <member name="T:TestingSystem.Interval">
+            <summary>
+            Класс, представляющий интервал
+            </summary>
+        </member>
+        <member name="F:TestingSystem.Interval.almostInfinity">
+            <summary>
+            Константа, представляющая самое большое положительное значение для концов интервала
+            </summary>
+        </member>
+        <member name="F:TestingSystem.Interval.left">
+            <summary>
+            Левый конец интервала
+            </summary>
+        </member>
+        <member name="F:TestingSystem.Interval.right">
+            <summary>
+            Правый конец интервала
+            </summary>
+        </member>
+        <member name="M:TestingSystem.Interval.Length">
+            <summary>
+            Возвращает длину интервала
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TestingSystem.IntervalMethod">
+            <summary>
+            Класс, отвечающий за выполнение интервальных методов
+            </summary>
+        </member>
+        <member name="M:TestingSystem.IntervalMethod.Evaluate(Microsoft.CodeAnalysis.CSharp.Syntax.MethodDeclarationSyntax)">
+            <summary>
+            По узлу дереву, представлящему интервальный метод, возвращает массив интервалов, представленный этим методом
+            </summary>
+            <param name="meth">Узел интервального метода</param>
+            <returns></returns>
+        </member>
+        <member name="T:TestingSystem.ExtendedMath">
+            <summary>
+            Класс предоставляет некоторые дополнительные математические
+            функции, такие как возведение в квадрат, дополнительные тригонометрические
+            и гиперболические функции, а также обратные к ним
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Sqr(System.Double)">
+            <summary>
+            Возвращает квадрат указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Ctg(System.Double)">
+            <summary>
+            Возвращает котангенс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Cosec(System.Double)">
+            <summary>
+            Возвращает косеканс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Sec(System.Double)">
+            <summary>
+            Возвращает секанс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Cth(System.Double)">
+            <summary>
+            Возвращает гиперболический котангенс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Csch(System.Double)">
+            <summary>
+            Возвращает гиперболический косеканс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Sech(System.Double)">
+            <summary>
+            Возвращает гиперболический секанс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Arcctg(System.Double)">
+            <summary>
+            Возвращает арккотангенс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Arcsec(System.Double)">
+            <summary>
+            Возвращает арксеканс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Arccosec(System.Double)">
+            <summary>
+            Возвращает арккосеканс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Arsh(System.Double)">
+            <summary>
+            Возвращает гиперболический арсинус указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Arch(System.Double)">
+            <summary>
+            Возвращает гиперболический аркосинус указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Arth(System.Double)">
+            <summary>
+            Возвращает гиперболический артангенс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Arcth(System.Double)">
+            <summary>
+            Возвращает гиперболический аркотангенс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Arsech(System.Double)">
+            <summary>
+            Возвращает гиперболический арсеканс указанного аргумента
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ExtendedMath.Arcsch(System.Double)">
+            <summary>
+            Возвращает гиперболический аркосеканс указанного аргумента
+            </summary>
+        </member>
+        <member name="T:TestingSystem.ReportEntry">
+            <summary>
+            Представляет запись в отчёте
+            </summary>
+        </member>
+        <member name="F:TestingSystem.ReportEntry.FunctionName">
+            <summary>
+            Имя функции
+            </summary>
+        </member>
+        <member name="F:TestingSystem.ReportEntry.FileName">
+            <summary>
+            Файл, в котором функция была обнаружена
+            </summary>
+        </member>
+        <member name="F:TestingSystem.ReportEntry.NumberOfIterations">
+            <summary>
+            Число итераций для тестируемого метода (N)
+            </summary>
+        </member>
+        <member name="F:TestingSystem.ReportEntry.Arguments">
+            <summary>
+            Массив аргументов для функции
+            </summary>
+        </member>
+        <member name="F:TestingSystem.ReportEntry.Parameters">
+            <summary>
+            Массив параметров для функции
+            </summary>
+        </member>
+        <member name="F:TestingSystem.ReportEntry.Val">
+            <summary>
+            Значение, которое получилось в результате тестирования
+            </summary>
+        </member>
+        <member name="F:TestingSystem.ReportEntry.WantedVal">
+            <summary>
+            Значение, которое вернула образцовая функция или другой "идеальный" метод
+            </summary>
+        </member>
+        <member name="F:TestingSystem.ReportEntry.AbsoluteEps">
+            <summary>
+            Абсолютная погрешность вычисления
+            </summary>
+        </member>
+        <member name="F:TestingSystem.ReportEntry.RelativeEps">
+            <summary>
+            Относительная погрешность вычисления
+            </summary>
+        </member>
+        <member name="M:TestingSystem.ReportEntry.#ctor(System.Boolean,System.String,System.String,System.Int32,System.Double[],System.Double[],System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Создаёт новую запись отчёта
+            </summary>
+            <param name="evaluateEps">Если установлен, то погрешности вычисляются сами</param>
+            <param name="functionName">Имя тестируемой функции</param>
+            <param name="fileName">Файл, в котором находится тестируемая функция</param>
+            <param name="N">Количество итераций для тестируемого метода</param>
+            <param name="args">Аргументы функции</param>
+            <param name="param">Параметры функции</param>
+            <param name="val">Тестируемое значение</param>
+            <param name="wantedVal">Идеальное значение</param>
+            <param name="absEps">Абсолютная погрешность вычислений</param>
+            <param name="relEps">Относительна погрешность вычислений</param>
+        </member>
+        <member name="M:TestingSystem.ReportEntry.ToString(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Преобразует запись в строку
+            </summary>
+            <param name="fieldsSeparator">Разделитель полей записи</param>
+            <param name="argparamSeparator">Разделитель аргументов и параметров в соответствующих полях</param>
+            <param name="argnum">Количество аргументов, под которые надо выделить место</param>
+            <param name="parnum">Количество параметров, под которые надо выделить место</param>
+            <param name="forCSV">Указывает, надо ли выставлять кавычки перед и после текстовых полей</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.ReportEntry.GetCSVLine">
+            <summary>
+            Получает строчку CSV-файла из данной записи
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.ReportEntry.getFormatString(System.Int32,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Получает строку формата необходимго вида
+            </summary>
+            <param name="fieldsSeparator">Разделитель полей записи</param>
+            <param name="argnum">Количество аргументов, под которые надо выделить место</param>
+            <param name="parnum">Количество параметров, под которые надо выделить место</param>
+            <param name="forCSV">Указывает, надо ли выставлять кавычки перед и после текстовых полей</param>
+            <returns></returns>
+        </member>
+        <member name="T:TestingSystem.Report">
+            <summary>
+            Класс, представляющий отчёт тестирования
+            </summary>
+        </member>
+        <member name="M:TestingSystem.Report.getFormatString(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Получает строку формата необходимго вида
+            </summary>
+            <param name="argnum">Количество аргументов, под которые надо выделить место</param>
+            <param name="parnum">Количество параметров, под которые надо выделить место</param>
+            <param name="forCSV">Указывает, надо ли выставлять кавычки перед и после текстовых полей</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.Report.getTitleString(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Получает строку заголовка необходимго вида
+            </summary>
+            <param name="argnum">Количество аргументов, под которые выделяется место в основной таблице</param>
+            <param name="parnum">Количество параметров, под которые выделяется место в основной таблице</param>
+            <param name="forCSV">Указывает, надо ли выставлять кавычки перед и после текстовых полей</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.Report.ToString">
+            <summary>
+            Преобразует отчёт в строку для печати на консоль
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.Report.SaveCSV(System.String)">
+            <summary>
+            Созраняет отчёт в CSV-файл по указанному пути
+            </summary>
+            <param name="path">Путь к файлу отчёта</param>
+        </member>
+        <member name="M:TestingSystem.Report.maxEpsilonAbsolute">
+            <summary>
+            Возвращает максимальную абсолютную погрешность среди всех записей данного отчёта
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.Report.maxEpsilonRelative">
+            <summary>
+            Возвращает максимальную относительную погрешность среди всех записей данного отчёта
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TestingSystem.Heap">
+            <summary>
+            O(NlogN) -summator for ideal sum implementation
+            </summary>
+        </member>
+        <member name="F:TestingSystem.Heap.elnum">
+            <summary>
+            Количество элементов в контейнере
+            </summary>
+        </member>
+        <member name="F:TestingSystem.Heap.ar">
+            <summary>
+            Контейнер - динамическая таблица
+            </summary>
+        </member>
+        <member name="M:TestingSystem.Heap.less(System.Double,System.Double)">
+            <summary>
+            Сравнение на меньше по модулю
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>true, если |a| меньше |b|</returns>
+        </member>
+        <member name="M:TestingSystem.Heap.more(System.Double,System.Double)">
+            <summary>
+            Сравнение на больше по модулю
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>true, если |a| больше |b|</returns>
+        </member>
+        <member name="M:TestingSystem.Heap.lesseq(System.Double,System.Double)">
+            <summary>
+            Сравнение на меньше или равно по модулю
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>true, если |a| меньше или равно |b|</returns>
+        </member>
+        <member name="M:TestingSystem.Heap.moreeq(System.Double,System.Double)">
+            <summary>
+            Сравнение на больше или равно по модулю
+            </summary>
+            <param name="a"></param>
+            <param name="b"></param>
+            <returns>true, если |a| больше или равно |b|</returns>
+        </member>
+        <member name="M:TestingSystem.Heap.Heapify(System.Int32)">
+            <summary>
+            Сохраняет порядок кучи в структуре с порядком кучи, нарушенным лишь в вершине <paramref name="index"/>
+            </summary>
+            <param name="index">Номер элемента, в котором нарушен порядок кучи</param>
+        </member>
+        <member name="M:TestingSystem.Heap.ExtractMin">
+            <summary>
+            Извлекает из кучи наименьший элемент (вершину кучи)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.Heap.AddTwoMin">
+            <summary>
+            Извлекает из кучи два минимальных элемента, и добавляет их сумму обратно в кучу
+            </summary>
+        </member>
+        <member name="M:TestingSystem.Heap.Clear">
+            <summary>
+            Очищает кучу
+            </summary>
+        </member>
+        <member name="M:TestingSystem.Heap.Sum">
+            <summary>
+            Вычисляет сумму элементов в куче.
+            При этом сама куча редуцируется до одного элемента.
+            Если элементов в куче не было, возвращает ноль.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.Heap.ChangeArray(System.Collections.Generic.List{System.Double}@)">
+            <summary>
+            Изменяет массив-хранитель данной кучи
+            </summary>
+            <param name="a">Новый массив</param>
+        </member>
+        <member name="M:TestingSystem.Heap.AddElement(System.Double)">
+            <summary>
+            Добавляет элемент в конец массива.
+            </summary>
+            <remarks>
+            Heapify не вызывается, однако Sum превращает любой массив в кучу
+            Мы дилегируем ей эти полномочия, ибо всегда до суммирования выполняется только добавление,
+            а после него - ничего
+            </remarks>
+            <param name="el"></param>
+        </member>
+        <member name="T:TestingSystem.MethodForTestingTaylor">
+            <summary>
+            The extension of MethodForTesting for testing simple sum functions
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTestingTaylor.Usings">
+            <summary>
+            Namespaces which Taylor-testing uses
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTestingTaylor.TaylorAddonName">
+            <summary>
+            Name of addon-method
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTestingTaylor.ScriptTaylor">
+            <summary>
+            Скрипт, тестирующий суммирование
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTestingTaylor.CorrectTaylor">
+            <summary>
+            Показывает, скомпилирован ли успешно скрипт для тестирования суммирования
+            </summary>
+        </member>
+        <member name="M:TestingSystem.MethodForTestingTaylor.#ctor(TestingSystem.MethodForTesting)">
+            <summary>
+            Добавляет новую функциональность обычному экземпляру MethodForTesting (тест суммирования)
+            </summary>
+            <param name="meth">Объект, на основе которого конструируется расширение для проверки суммирования</param>
+        </member>
+        <member name="M:TestingSystem.MethodForTestingTaylor.EvaluateTaylor(TestingSystem.IterMethodArgs)">
+            <summary>
+            Выполняет скрипт с данными аргументами
+            </summary>
+            <param name="args">Аргументы для скрипта</param>
+            <returns>Пара (тестируемое значение, идеальное значение)</returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTestingTaylor.GetTestingReportTaylor(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            Возвращает отчёт по проверке суммирования
+            </summary>
+            <param name="N">Число итераций</param>
+            <param name="PointsNumber">Количество точек области сходимости для тестирования</param>
+            <param name="parameters">Параметры метода</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTestingTaylor.GetMaxEpsilonAbsTaylor(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            Максимальная абсолютная погрешность в проверке суммирования
+            </summary>
+            <param name="N">Количество итераций</param>
+            <param name="PointsNumber">Количество точек области сходимости для тестирования</param>
+            <param name="parameters">Параметры функции</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTestingTaylor.GetMaxEpsilonRelTaylor(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            Максимальная относительная погрешность в проверке суммирования
+            </summary>
+            <param name="N">Количество итераций</param>
+            <param name="PointsNumber">Количество точек области сходимости для тестирования</param>
+            <param name="parameters">Параметры функции</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTestingTaylor.GetIterationsByEpsilonTaylor(System.Double,System.Int32,System.Double[],TestingSystem.EpsilonType)">
+            <summary>
+            Получает необходимое количество итераций по требуемой погрешности - относительной или абсолютной
+            </summary>
+            <param name="epsilon">Значение погрешности</param>
+            <param name="pointsNumber">Количество точек, на которых проводится измерение погрешности</param>
+            <param name="parameters">Параметры функции</param>
+            <param name="epsType">Тип погрешности - относительная или абсолютная</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTestingTaylor.getChangedNode(Microsoft.CodeAnalysis.CSharp.Syntax.MethodDeclarationSyntax)">
+            <summary>
+            Changes the method node by adding the last parameter and new lines insted of ///add comments 
+            </summary>
+            <param name="method">Method node to change</param>
+            <returns>Changed node</returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTestingTaylor.constructTaylorAddon(System.String,TestingSystem.MethodType)">
+            <summary>
+            Constructs the code of method that calls modified testing method 
+            and gives it a heap through the reference
+            </summary>
+            <param name="funName">Name of the function to call</param>
+            <param name="Type">Type of the function <paramref name="funName"/></param>
+            <returns></returns>
+        </member>
+        <member name="T:TestingSystem.IdealTestMethod">
+            <summary>
+            Класс, представляющий образцовый метод, выражение для которого находится в атрибуте FunctionName
+            </summary>
+        </member>
+        <member name="F:TestingSystem.IdealTestMethod.Script">
+            <summary>
+            Скрипт, хранящий код и компиляцию образцового метода
+            </summary>
+        </member>
+        <member name="F:TestingSystem.IdealTestMethod.Type">
+            <summary>
+            Тип образцового метода, должен совпадать с типом тестируемого метода
+            </summary>
+        </member>
+        <member name="F:TestingSystem.IdealTestMethod.Name">
+            <summary>
+            Название для всех образцовых методов
+            </summary>
+        </member>
+        <member name="F:TestingSystem.IdealTestMethod.ReturnType">
+            <summary>
+            Возвращаемый тип для всех образцовых методов
+            </summary>
+        </member>
+        <member name="F:TestingSystem.IdealTestMethod.IdentifierDic">
+            <summary>
+            Словарь замен в образцовых выражениях
+            </summary>
+        </member>
+        <member name="M:TestingSystem.IdealTestMethod.#ctor(System.String,TestingSystem.MethodType)">
+            <summary>
+            По математическому выражению и типу (тестируемого метода) конструирует новый экземпляр IdealTestMethod
+            </summary>
+            <param name="idealExpression">Второй параметр атрибута FunctionName</param>
+            <param name="type">Тип тестируемого метода</param>
+        </member>
+        <member name="M:TestingSystem.IdealTestMethod.Evaluate(TestingSystem.IdealMethodArgs)">
+            <summary>
+            Выполняет метод на заданных аргументах/параметрах
+            </summary>
+            <param name="args">Структура, содержащая аргументы и параметры метода</param>
+            <returns></returns>
+        </member>
+        <member name="T:TestingSystem.MethodForTesting">
+            <summary>
+            Основной класс, представляющий тестируемый метод. 
+            Также предоставляет сравнение с образцом
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.Usings">
+            <summary>
+            Пространства имён, используемые тестируемым методом
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.Code">
+            <summary>
+            Код тестируемого метода, хранится всегда с моента создания
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.EvalCode">
+            <summary>
+            Код метода с добавленным вызовом этого метода в правильной форме 
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.IdealCode">
+            <summary>
+            Код образцового метода (второй аргумент FunctionName)
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.Name">
+            <summary>
+            Название тестируемого метода
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.IdealMethod">
+            <summary>
+            Объект, представляющий образцовый метод. Создаётся только при вызове CompileScript()
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.Node">
+            <summary>
+            Узел синтаксического дерева, представляющий данный метод
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.Type">
+            <summary>
+            Тип метода
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.FilePath">
+            <summary>
+            Путь к файлу, в котором находится код данного метода
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.Script">
+            <summary>
+            Скрипт, служащий для выполнения данного метода.
+            Компиляция только при вызове CompileScrpt()
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.Correct">
+            <summary>
+            Указывает, корректно ли скомпилированы тестируемый и образцовый метод
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.Region">
+            <summary>
+            Область сходимости для тестируемого метода
+            </summary>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.#ctor">
+            <summary>
+            Конструктор без параметров, только выделяет память
+            </summary>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.#ctor(TestingSystem.MethodForTesting)">
+            <summary>
+            Конструктор-копировщик, переносит все данные о методе
+            </summary>
+            <param name="m">Копируемый метод</param>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.#ctor(System.String,System.String)">
+            <summary>
+            Находит в указанном файле метод с указанным именем и создаёт соответствующий объект
+            </summary>
+            <param name="FilePath">Путь к файлу</param>
+            <param name="MethodName">Имя тестируемого метода</param>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.CompileScript">
+            <summary>
+            Пытается скомпилировать тестируемый метод, а также образцовый метод.
+            Если удалось скомпилировать тестируемый метод, возвращает true, иначе false
+            Если удалось скомпилировать и тестируемый, и образцовый метод, значение Correct устанавливается в true,
+            иначе в false.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.Evaluate(TestingSystem.IterMethodArgs)">
+            <summary>
+            Выполняет скомпилированный скрипт тестируемого метода с предоставленными аргументами и параметрами
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.GetMaxEpsilonAbs(System.Int32,System.Int32,System.Double[],System.Func{System.Int32,System.Int32,System.Double[],TestingSystem.Report})">
+            <summary>
+            Максимальная абсолютная погрешность при сравнении с образцовым методом
+            </summary>
+            <param name="N">Количество итераций</param>
+            <param name="PointsNumber">Количество точек области сходимости для тестирования</param>
+            <param name="parameters">Параметры функции</param>
+            <param name="reportingFunc">Используемая для составления отчёта функция</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.GetMaxEpsilonRel(System.Int32,System.Int32,System.Double[],System.Func{System.Int32,System.Int32,System.Double[],TestingSystem.Report})">
+            <summary>
+            Максимальная относительная погрешность при сравнении с образцовым методом
+            </summary>
+            <param name="N">Количество итераций</param>
+            <param name="PointsNumber">Количество точек области сходимости для тестирования</param>
+            <param name="parameters">Параметры функции</param>
+            <param name="reportingFunc">Используемая для составления отчёта функция</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.GetIterationsByEpsilon(System.Double,System.Int32,System.Double[],TestingSystem.EpsilonType,System.Func{System.Int32,System.Int32,System.Double[],TestingSystem.Report})">
+            <summary>
+            Получает необходимое количество итераций по требуемой погрешности - относительной или абсолютной
+            </summary>
+            <param name="epsilon">Значение погрешности</param>
+            <param name="pointsNumber">Количество точек, на которых проводится измерение погрешности</param>
+            <param name="functionParameters">Параметры функции</param>
+            <param name="epsType">Тип погрешности - относительная или абсолютная</param>
+            <param name="reportingFunc">Используемая для составления отчёта функция</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.GetTestingReport(System.Int32,System.Int32,System.Double[])">
+            <summary>
+            Возвращает отчёт сопоставления данной функции с образцовой
+            </summary>
+            <param name="N">Количество итераций для тестируемой функции</param>
+            <param name="PointsNumber">Число точек, на которых производится тестирование</param>
+            <param name="parameters">Параметры для функции</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.getExpressionsFromAttributes(Microsoft.CodeAnalysis.SyntaxNode)">
+            <summary>
+            Searches for all the ideal expression and returns map (funcname) => (expr)
+            </summary>
+            <param name="TreeRoot">The root of the tree to search for expression attributes</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.getIntervals(Microsoft.CodeAnalysis.SyntaxNode)">
+            <summary>
+            Searches for interval methods, executes them, and returns the intervals in dictionary form
+            </summary>
+            <param name="TreeRoot">The root of the tree to search for interval methods</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.DetectType(Microsoft.CodeAnalysis.CSharp.Syntax.MethodDeclarationSyntax)">
+            <summary>
+            Определяет тип метода по сигнатуре
+            </summary>
+            <param name="meth">Узел ситаксического дерева, представляющий данный метод</param>
+            <remarks>
+            Если тип возвращаемого значения - не double, тип не определяется.
+            Последний аргумент должен быть типа int.
+            Все остальные аргументы - типа double, причём должным образом поименованы.
+            </remarks>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.getMethodsFromFiles(System.String[],System.String[],System.Boolean,System.Boolean,System.Collections.Generic.Dictionary{System.String,TestingSystem.MethodType})">
+            <summary>
+            Получает методы для тестирования из указанных файлов
+            </summary>
+            <param name="FileNames">Список файлов исходного кода, в которых осуществляется поиск</param>
+            <param name="MethodNames">Имена методов, включаемые, или исключаемы из поиска (см. <paramref name="exclude"/>)</param>
+            <param name="exclude">Если true, <paramref name="MethodNames"/> исключаются из поиска, иначе включаются</param>
+            <param name="methodTypeDetection">Если true, самостоятельно пытается определить тип методов</param>
+            <param name="MethodTypes">Словарь типов методов - указывается при необходимости, если методы имют нестандартную сигнатуру, не распознаваемую DetectType()</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
