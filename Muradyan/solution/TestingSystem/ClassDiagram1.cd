@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="TestingSystem.MethodType">
+    <Position X="14" Y="1.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAQAABAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\BasicTypes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.IdealMethodArgs">
+    <Position X="14" Y="16.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\BasicTypes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.IterMethodArgs">
+    <Position X="14" Y="17.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\BasicTypes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.Point">
+    <Position X="10.5" Y="9.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.PointCounter">
+    <Position X="13.75" Y="9.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQAIEAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.ConvergencyRegion">
+    <Position X="0.75" Y="9.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAIAAAAAAAAAAAAAAAAIAAAAgAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.IntervalMethod">
+    <Position X="7.25" Y="9.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAQAAAAAQAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.ExtendedMath">
+    <Position X="16.5" Y="14.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAQAgBgAIRAAAAAAAAAAgAAAAEAAAgAAAYAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ExtendedMath.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.PlotGraph">
+    <Position X="0.5" Y="3.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\PlotGraph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.OutputPath">
+    <Position X="0.5" Y="1.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAACAAAAAAAAAAAAgAAAAAAAAAABIAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.MainClass">
+    <Position X="3.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.ReportEntry">
+    <Position X="6.25" Y="2.75" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAGAAAAEAAACAAACAAAAAAAAYIQAAAFAAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Reporting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.Report">
+    <Position X="6.25" Y="0.5" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAEAAAAAAECACAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Reporting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.Heap">
+    <Position X="10.5" Y="19.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAABAACAAIAAAQgAiABAAQgAAAAAAABAAAQ=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\TaylorTesting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.MethodForTestingTaylor">
+    <Position X="1.25" Y="19.25" Width="9" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAACAACCAAAAAAAAAAAwAAAIAAAQEACA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\TaylorTesting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.IdealTestMethod">
+    <Position X="14" Y="12" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAgQAAAAAAAAAAQAAAAAkAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\UniversalTesting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.MethodForTesting">
+    <Position X="0.75" Y="12" Width="12.5" />
+    <TypeIdentifier>
+      <HashCode>AAYACAAAAAAAACAABAAgAgTQAAAABAoQARBAAAEpAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\UniversalTesting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.Utility">
+    <Position X="12.75" Y="7" Width="6" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.TestingUtilities">
+    <Position X="12.75" Y="4.75" Width="6" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAADAAAAAAAAAAAAQAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Utility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TestingSystem.IntervalMethodArgs">
+    <Position X="14" Y="14.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\BasicTypes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="TestingSystem.Interval">
+    <Position X="4" Y="9.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAABAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="TestingSystem.EpsilonType">
+    <Position X="14" Y="3.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\BasicTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

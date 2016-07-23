@@ -406,12 +406,13 @@ Cos_21_inv C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunction
 Cos_22 C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 Cos_22_in C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs  Not detected
 Cos_22_inv C:\git_reps\summer_practice\opaque-func-lib\Markov\src\OpaqueFunctions\OpaqueFunctions.cs  Not detected
-inc C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs  Not detected
+Inc C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs  Not detected
 GetDim C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs  Not detected
 Volume C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs  Not detected
 GetPoints C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs  Not detected
 Length C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs  Not detected
-Evaluate C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs  Not detected
+GetConvergencyRegion C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs  Not detected
+ParseString C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ConvergencyRegion.cs  Not detected
 Sqr C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ExtendedMath.cs  Not detected
 Ctg C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ExtendedMath.cs  Not detected
 Cosec C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\ExtendedMath.cs  Not detected
@@ -441,9 +442,8 @@ maxEpsilonAbsolute C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Repo
 maxEpsilonRelative C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Reporting.cs  Not detected
 Swap C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Utility.cs  Not detected
 SwapArr C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Utility.cs  Not detected
-generateArguments C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Utility.cs  Not detected
+GenerateArguments C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Utility.cs  Not detected
 GenerateStructures C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Utility.cs  Not detected
-makeArg C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Utility.cs  Not detected
 GetIterationsByEpsilon C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Utility.cs  Not detected
 GetReport C:\git_reps\summer_practice\opaque-func-lib\Muradyan\src\Utility.cs  Not detected
 Math_1_2_ln_in C:\git_reps\summer_practice\opaque-func-lib\Muradyan\tests\Kirillova.cs  Not detected

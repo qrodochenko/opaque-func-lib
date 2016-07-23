@@ -52,20 +52,26 @@
         }
     }
 
+    /// <summary>
+    /// Тип аргументов, передающихся интервальному методу
+    /// </summary>
+    public class IntervalMethodArgs
+    {
+        /// <summary>
+        /// Массив параметров метода
+        /// </summary>
+        public double[] param;
+    }
 
     /// <summary>
     /// Тип аргументов, передающихся образцовому методу
     /// </summary>
-    public class IdealMethodArgs
+    public class IdealMethodArgs : IntervalMethodArgs
     {
         /// <summary>
         /// Массив аргументов метода
         /// </summary>
         public double[] args;
-        /// <summary>
-        /// Массив параметров метода
-        /// </summary>
-        public double[] param;
     }
 
     /// <summary>

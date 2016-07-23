@@ -5,7 +5,6 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Scripting;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 
 namespace TestingSystem
@@ -226,12 +225,19 @@ namespace TestingSystem
         /// Добавляет новую функциональность обычному экземпляру MethodForTesting (тест суммирования)
         /// </summary>
         /// <param name="meth">Объект, на основе которого конструируется расширение для проверки суммирования</param>
-        public MethodForTestingTaylor(MethodForTesting meth) : base(meth)
+        /// <param name="onlyTaylor">Если true, не хранит обычный скрипт</param>
+        public MethodForTestingTaylor(MethodForTesting meth, bool onlyTaylor = true) : base(meth)
         {
+            if (onlyTaylor)
+            {
+                Correct = false;
+                EvalCode = null;
+                Script = null;
+            }
             var TaylorEvalCode = "#define _Debug\r\n"+Usings +
                 getChangedNode(Node).GetText().ToString() +
                 constructTaylorAddon(Name, Type) +
-                "return " + TaylorAddonName + TestingUtilities.generateArguments(Type, true, false, 0, true) + ";";
+                "return " + TaylorAddonName + TestingUtilities.GenerateArguments(Type, true, false, 0, true) + ";";
 
             var opts = ScriptOptions.Default;
             var mscorlib = typeof(object).Assembly;
@@ -273,7 +279,7 @@ namespace TestingSystem
         public Report GetTestingReportTaylor(int N, int PointsNumber, double[] parameters = null)
         {
             return TestingUtilities.GetReport(N, PointsNumber, parameters,
-                Type, Name, FilePath, Region,
+                Type, Name, FilePath, IntervalMethod.GetConvergencyRegion(parameters),
                 TestingUtilities.GenerateStructures,
                 (ideal, iter, pt) => iter.args = pt.coords,
                 (ideal, iter) => EvaluateTaylor(iter));
@@ -377,9 +383,9 @@ namespace TestingSystem
         /// <returns></returns>
         public static string constructTaylorAddon(string funName, MethodType Type)
         {
-            return @"Tuple<double, double> " + TaylorAddonName + @" " + TestingUtilities.generateArguments(Type, true, true, 0) + @"{
+            return @"Tuple<double, double> " + TaylorAddonName + @" " + TestingUtilities.GenerateArguments(Type, true, true, 0) + @"{
                         Heap tst1 = new Heap();
-                        var v = " + funName + @" " + TestingUtilities.generateArguments(Type, true, false, 1) + @";
+                        var v = " + funName + @" " + TestingUtilities.GenerateArguments(Type, true, false, 1) + @";
                         return Tuple.Create(v, tst1.Sum());
                     }";
         }

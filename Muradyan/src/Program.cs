@@ -5,13 +5,22 @@ using System.IO;
 //main namespace
 namespace TestingSystem
 {
+    static class OutputPath
+    {
+        public static string FilesListPath = "..\\CSlist.txt";
+        public static string UniversalReportsDir = "..\\..\\testing_data\\Reports";
+        public static string TaylorReportsDir = "..\\..\\testing_data\\ReportsTaylor";
+        public static string GetMethodsFromFilesErrorsPath = "..\\..\\debug_data\\gmff_errors.txt";
+        public static string CommonErrorsPath = "..\\..\\debug_data\\errors.txt";
+    }
+
     class MainClass
     {
-        static string[] testingMethodsNames = new string[] { "Body", "Sin_1_in" };
-
+        
         static void Main(string[] args)
         {
-            var sr = new StreamReader("..\\CSlist.txt");
+
+            var sr = new StreamReader(OutputPath.FilesListPath);
             var listOfFiles = new List<string>();
             while (!sr.EndOfStream)
             {
@@ -19,9 +28,9 @@ namespace TestingSystem
             }
             var listOfMethods = MethodForTesting.getMethodsFromFiles(listOfFiles.ToArray(), new string[] {}, true, true);
 
-            Directory.CreateDirectory("..\\..\\testing_data\\Reports");
-            Directory.CreateDirectory("..\\..\\testing_data\\ReportsTaylor");
-            var sw = new StreamWriter("..\\..\\debug_data\\errors.txt");
+            Directory.CreateDirectory(OutputPath.UniversalReportsDir);
+            Directory.CreateDirectory(OutputPath.TaylorReportsDir);
+            var sw = new StreamWriter(OutputPath.CommonErrorsPath);
             Console.WriteLine("Methods found total: {0}", listOfMethods.Count);
             listOfMethods.ForEach(
                 (m) => 
@@ -30,7 +39,7 @@ namespace TestingSystem
                     {
                         try
                         {
-                            m.GetTestingReport(1000, 500, new double[] { 2, 3 }).SaveCSV("..\\..\\testing_data\\Reports\\" + m.Name + ".csv");
+                            m.GetTestingReport(1000, 500, new double[] { 2, 3 }).SaveCSV(OutputPath.UniversalReportsDir + "\\" + m.Name + ".csv");
                         }
                         catch
                         {
@@ -47,9 +56,10 @@ namespace TestingSystem
                     var mt = new MethodForTestingTaylor(m);
                     if (mt.CorrectTaylor)
                     {
+                        m.Script = null;
                         try
                         {
-                            mt.GetTestingReportTaylor(1000, 500, new double[] { 2, 3 }).SaveCSV("..\\..\\testing_data\\ReportsTaylor\\" + mt.Name + ".csv");
+                            mt.GetTestingReportTaylor(1000, 500, new double[] { 2, 3 }).SaveCSV(OutputPath.TaylorReportsDir + "\\" + mt.Name + ".csv");
                         }
                         catch
                         {
@@ -59,8 +69,8 @@ namespace TestingSystem
                 });
             sw.Close();
 
-            PlotGraph.makeErrorPlots("..\\..\\testing_data\\Reports");
-            PlotGraph.makeErrorPlots("..\\..\\testing_data\\ReportsTaylor");
+            PlotGraph.makeErrorPlots(OutputPath.UniversalReportsDir);
+            PlotGraph.makeErrorPlots(OutputPath.TaylorReportsDir);
         }
     }
 }

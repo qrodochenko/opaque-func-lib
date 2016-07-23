@@ -94,7 +94,7 @@ namespace TestingSystem
         /// Переход к следующей точке в сетке
         /// </summary>
         /// <returns>true, если точка Cur корректна. false, если нет (перечислены все точки сетки)</returns>
-        public bool inc()
+        public bool Inc()
         {
             for (int i = 0; i < Limits.Length; ++i)
             {
@@ -174,7 +174,7 @@ namespace TestingSystem
             {
                 res.Add(new Point(cnt.Cur));
             }
-            while (cnt.inc());
+            while (cnt.Inc());
 
             return res;
         }
@@ -216,32 +216,46 @@ namespace TestingSystem
     /// </summary>
     public class IntervalMethod
     {
+        string EvalCode;
         //TODO:
         //Параметризованные интервалы
         //Замена маленьких идентификаторов на большие
 
         /// <summary>
-        /// По узлу дереву, представлящему интервальный метод, возвращает массив интервалов, представленный этим методом
+        /// Конструирует интервальный метод по узлу синтаксического дерева
         /// </summary>
-        /// <param name="meth">Узел интервального метода</param>
-        /// <returns></returns>
-        public static Interval[] Evaluate(MethodDeclarationSyntax meth)
+        /// <param name="meth">Узел, соответствующий данному интервальному методу</param>
+        public IntervalMethod(MethodDeclarationSyntax meth)
         {
-            var methName = meth.Identifier.ValueText;
-            var methCode = meth.GetText().ToString();
-            string methodResult = "";
-            try
-            {
-                methodResult = CSharpScript.EvaluateAsync<string>(methCode + "\n return " + methName + "();").Result;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
+            var type = new MethodType( 0, meth.Arity );
+            EvalCode = 
+                meth.GetText().ToString() + 
+                "\r\n return " + meth.Identifier.ValueText + 
+                TestingUtilities.GenerateArguments(type, false, false, 0, false, true) + ";";
+        }
+
+        /// <summary>
+        /// Вычисляет область сходимости для данных параметров
+        /// </summary>
+        /// <param name="param">Параметры интервального метода</param>
+        /// <returns></returns>
+        public ConvergencyRegion GetConvergencyRegion(double[] param = null)
+        {
+            param = param ?? new double[0];
+            var intervMethArgs = new IntervalMethodArgs { param = param};
+            var script = CSharpScript.Create<string>(EvalCode, globalsType: typeof(IntervalMethodArgs));
+            script.Compile();
+            var ret = ParseString(script.RunAsync(intervMethArgs).Result.ReturnValue);
+            script = null;
+            return ret;
+        }
+
+        static ConvergencyRegion ParseString(string s)
+        {
             var intervalsList = new List<string>();
             int cBracket = 0, oBracket = 0;
             string cS = "";
-            foreach (char c in methodResult)
+            foreach (char c in s)
             {
                 if (c == '(') ++cBracket;
                 else if (c == ')') --cBracket;
@@ -277,7 +291,7 @@ namespace TestingSystem
                 ++k;
             }
 
-            return intervals;
+            return new ConvergencyRegion(intervals);
         }
     }
 }

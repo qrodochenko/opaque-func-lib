@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 using System.Linq;
 
 namespace TestingSystem
@@ -22,27 +21,36 @@ namespace TestingSystem
         }
     }
 
-    class TestingUtilities
+    internal static class TestingUtilities
     {
         public const string DefaultUsings = "using System;\n";
 
         // (arg[0], arg[1], .. , arg[n-1], param[0], param[1], ..., param[m-1])
-        public static string generateArguments(MethodType Type, bool WithN = true, bool types = false, int HeapsNumber = 0, bool callTaylorAddonOrIdeal = false)
+        public static string GenerateArguments(
+            MethodType Type, 
+            bool WithN = true, 
+            bool types = false, 
+            int HeapsNumber = 0, 
+            bool callTaylorAddonOrIdeal = false,
+            bool onlyParams = false)
         {
+            if (onlyParams && Type.parnum == 0) return "()";
+
             string res = "";
             if (types)
-                res += "(double [] args, double [] param";
+                res += onlyParams? "(double [] param" : "(double [] args, double [] param";
             else if (callTaylorAddonOrIdeal)
-                res += "(args, param";
+                res += onlyParams ? "(param" : "(args, param";
             else
             {
                 res += "(";
-                for (int i = 0; i < Type.argnum; ++i)
-                    res += "args[" + i + "], ";
-                for (int i = 0; i < Type.parnum; ++i)
+                if (!onlyParams)
                 {
-                    res += "param[" + i + "], ";
+                    for (int i = 0; i < Type.argnum; ++i)
+                        res += "args[" + i + "], ";
                 }
+                for (int i = 0; i < Type.parnum; ++i)
+                    res += "param[" + i + "], ";
                 res = res.Substring(0, res.Length - 2);
             }
 
@@ -69,11 +77,6 @@ namespace TestingSystem
             idargs.param = itargs.param = parameters;
             idargs.args = itargs.args = new double[t.argnum];
             return new Tuple<IdealMethodArgs, IterMethodArgs>(idargs, itargs);
-        }
-
-        public static string makeArg(double x)
-        {
-            return x.ToString(CultureInfo.CreateSpecificCulture("en-GB"));
         }
 
         // returns the number of iterations by epsilon we want

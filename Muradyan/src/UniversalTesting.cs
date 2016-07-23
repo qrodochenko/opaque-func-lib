@@ -5,7 +5,6 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Scripting;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
@@ -75,7 +74,7 @@ namespace TestingSystem
                 idealExpression = idealExpression.Substring(eqPos + 1);
 
             // Добавляем список аргументов и парсим выражение как метод.
-            var parsed = CSharpSyntaxTree.ParseText(ReturnType + " " + Name + TestingUtilities.generateArguments(Type, false, true, 0) +
+            var parsed = CSharpSyntaxTree.ParseText(ReturnType + " " + Name + TestingUtilities.GenerateArguments(Type, false, true, 0) +
                                             "{ return " +
                                             idealExpression +
                                             "; }")
@@ -142,7 +141,7 @@ namespace TestingSystem
             // Получаем строку для скрипта
             var EvalExpression = "using System; using TestingSystem;\n" + parsed.GetText().ToString() +
                 "\nreturn " + parsed.Identifier.ValueText +
-                TestingUtilities.generateArguments(Type, false, false, 0, true) + ";";
+                TestingUtilities.GenerateArguments(Type, false, false, 0, true) + ";";
 #if DEBUG
             Console.WriteLine(EvalExpression);
 #endif
@@ -229,9 +228,9 @@ namespace TestingSystem
         public bool Correct;
 
         /// <summary>
-        /// Область сходимости для тестируемого метода
+        /// Возвращает
         /// </summary>
-        public ConvergencyRegion Region;
+        public IntervalMethod IntervalMethod;
 
         /// <summary>
         /// Конструктор без параметров, только выделяет память
@@ -257,7 +256,7 @@ namespace TestingSystem
             Correct = m.Correct;
             EvalCode = m.EvalCode;
             IdealCode = m.IdealCode;
-            Region = m.Region;
+            IntervalMethod = m.IntervalMethod;
         }
 
         /// <summary>
@@ -393,7 +392,7 @@ namespace TestingSystem
         {
             parameters = parameters ?? new double[0];
             return TestingUtilities.GetReport(N, PointsNumber, parameters,
-                Type, Name, FilePath, Region,
+                Type, Name, FilePath, IntervalMethod.GetConvergencyRegion(parameters),
                 TestingUtilities.GenerateStructures,
                 (ideal, iter, pt) => ideal.args = iter.args = pt.coords,
                 (ideal, iter) => Tuple.Create(Evaluate(iter), IdealMethod.Evaluate(ideal)));
@@ -425,9 +424,9 @@ namespace TestingSystem
         /// </summary>
         /// <param name="TreeRoot">The root of the tree to search for interval methods</param>
         /// <returns></returns>
-        public static Dictionary<string, Interval[]> getIntervals(SyntaxNode TreeRoot)
+        public static Dictionary<string, MethodDeclarationSyntax> getIntervalMethCodes(SyntaxNode TreeRoot)
         {
-            var dic = new Dictionary<string, Interval[]>();
+            var dic = new Dictionary<string, MethodDeclarationSyntax>();
             var methods = TreeRoot.DescendantNodes().OfType<MethodDeclarationSyntax>();
             foreach (var meth in methods)
             {
@@ -436,7 +435,7 @@ namespace TestingSystem
                 string methodName = inMethName.Substring(0, inMethName.Length - 3);
                 try
                 {
-                    dic[methodName] = IntervalMethod.Evaluate(meth);
+                    dic[methodName] = meth;
                 }
                 catch
                 {
@@ -497,7 +496,7 @@ namespace TestingSystem
         {
             MethodTypes = MethodTypes ?? new Dictionary<string, MethodType>();
 #if DEBUG
-            StreamWriter sw = new StreamWriter("..\\..\\debug_data\\gmffErrors.txt");
+            StreamWriter sw = new StreamWriter(OutputPath.GetMethodsFromFilesErrorsPath);
 #endif
             List<MethodForTesting> reslist = new List<MethodForTesting>();
             foreach (var fname in FileNames)
@@ -506,7 +505,7 @@ namespace TestingSystem
                 var rt = tree.GetRoot();
                 var fileMethods = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
                 var expressionsDic = getExpressionsFromAttributes(rt);
-                var intervalsDic = getIntervals(rt);
+                var intervalsDic = getIntervalMethCodes(rt);
 
                 foreach (var meth in fileMethods)
                 {
@@ -526,30 +525,12 @@ namespace TestingSystem
                     MethodForTesting m = null;
 
                     if (!intervalsDic.ContainsKey(thisMethodName)) continue;
-                    var methIntervals = intervalsDic[thisMethodName];
-                    if (methIntervals == null)
-                    {
-
-#if DEBUG
-                        sw.WriteLine(thisMethodName + " " + fname + " " + " No intervals");
-#endif
-                        continue;
-                    }
-
-                    if (methIntervals.Length != t.argnum)
-                    {
-
-#if DEBUG
-                        sw.WriteLine(thisMethodName + " " + fname + " " + " No correlation between args and intervals");
-#endif
-                        continue;
-                    }
+                    var intervalMethod = intervalsDic[thisMethodName];
 
                     m = new MethodForTesting();
-
                     m.Name = thisMethodName;
                     m.FilePath = fname;
-                    m.Region = new ConvergencyRegion(methIntervals);
+                    m.IntervalMethod = new IntervalMethod(intervalMethod);
 #if DEBUG
                     Console.WriteLine(thisMethodName + " " + fname);
 #endif
@@ -559,7 +540,7 @@ namespace TestingSystem
 
                     m.Correct = false;
                     m.EvalCode = Usings + m.Code + "\nreturn " +
-                        m.Name + TestingUtilities.generateArguments(m.Type, true, false, 0) + ";\n";
+                        m.Name + TestingUtilities.GenerateArguments(m.Type, true, false, 0) + ";\n";
 
                     if (expressionsDic.ContainsKey(m.Name))
                         m.IdealCode = expressionsDic[m.Name];

@@ -51,6 +51,16 @@
             <param name="argnum">Число аргументов</param>
             <param name="parnum">Число параметров</param>
         </member>
+        <member name="T:TestingSystem.IntervalMethodArgs">
+            <summary>
+            Тип аргументов, передающихся интервальному методу
+            </summary>
+        </member>
+        <member name="F:TestingSystem.IntervalMethodArgs.param">
+            <summary>
+            Массив параметров метода
+            </summary>
+        </member>
         <member name="T:TestingSystem.IdealMethodArgs">
             <summary>
             Тип аргументов, передающихся образцовому методу
@@ -59,11 +69,6 @@
         <member name="F:TestingSystem.IdealMethodArgs.args">
             <summary>
             Массив аргументов метода
-            </summary>
-        </member>
-        <member name="F:TestingSystem.IdealMethodArgs.param">
-            <summary>
-            Массив параметров метода
             </summary>
         </member>
         <member name="T:TestingSystem.IterMethodArgs">
@@ -125,7 +130,7 @@
             <param name="incer">Длинна стороны кубика сетки</param>
             <param name="offset">Начальные значения сдвига сетки относительно левой вершины lim</param>
         </member>
-        <member name="M:TestingSystem.PointCounter.inc">
+        <member name="M:TestingSystem.PointCounter.Inc">
             <summary>
             Переход к следующей точке в сетке
             </summary>
@@ -199,11 +204,17 @@
             Класс, отвечающий за выполнение интервальных методов
             </summary>
         </member>
-        <member name="M:TestingSystem.IntervalMethod.Evaluate(Microsoft.CodeAnalysis.CSharp.Syntax.MethodDeclarationSyntax)">
+        <member name="M:TestingSystem.IntervalMethod.#ctor(Microsoft.CodeAnalysis.CSharp.Syntax.MethodDeclarationSyntax)">
             <summary>
-            По узлу дереву, представлящему интервальный метод, возвращает массив интервалов, представленный этим методом
+            Конструирует интервальный метод по узлу синтаксического дерева
             </summary>
-            <param name="meth">Узел интервального метода</param>
+            <param name="meth">Узел, соответствующий данному интервальному методу</param>
+        </member>
+        <member name="M:TestingSystem.IntervalMethod.GetConvergencyRegion(System.Double[])">
+            <summary>
+            Вычисляет область сходимости для данных параметров
+            </summary>
+            <param name="param">Параметры интервального метода</param>
             <returns></returns>
         </member>
         <member name="T:TestingSystem.ExtendedMath">
@@ -551,11 +562,12 @@
             Показывает, скомпилирован ли успешно скрипт для тестирования суммирования
             </summary>
         </member>
-        <member name="M:TestingSystem.MethodForTestingTaylor.#ctor(TestingSystem.MethodForTesting)">
+        <member name="M:TestingSystem.MethodForTestingTaylor.#ctor(TestingSystem.MethodForTesting,System.Boolean)">
             <summary>
             Добавляет новую функциональность обычному экземпляру MethodForTesting (тест суммирования)
             </summary>
             <param name="meth">Объект, на основе которого конструируется расширение для проверки суммирования</param>
+            <param name="onlyTaylor">Если true, не хранит обычный скрипт</param>
         </member>
         <member name="M:TestingSystem.MethodForTestingTaylor.EvaluateTaylor(TestingSystem.IterMethodArgs)">
             <summary>
@@ -723,9 +735,9 @@
             Указывает, корректно ли скомпилированы тестируемый и образцовый метод
             </summary>
         </member>
-        <member name="F:TestingSystem.MethodForTesting.Region">
+        <member name="F:TestingSystem.MethodForTesting.IntervalMethod">
             <summary>
-            Область сходимости для тестируемого метода
+            Возвращает
             </summary>
         </member>
         <member name="M:TestingSystem.MethodForTesting.#ctor">
@@ -809,7 +821,7 @@
             <param name="TreeRoot">The root of the tree to search for expression attributes</param>
             <returns></returns>
         </member>
-        <member name="M:TestingSystem.MethodForTesting.getIntervals(Microsoft.CodeAnalysis.SyntaxNode)">
+        <member name="M:TestingSystem.MethodForTesting.getIntervalMethCodes(Microsoft.CodeAnalysis.SyntaxNode)">
             <summary>
             Searches for interval methods, executes them, and returns the intervals in dictionary form
             </summary>
