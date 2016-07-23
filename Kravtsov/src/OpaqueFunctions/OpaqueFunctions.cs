@@ -26,7 +26,7 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
     [OpaqueFunction()]
-    [FunctionName("Sin_1", "sin")]
+    [FunctionName("Sin_1", "sin(x)")]
     public static class CSin_1
     {
         public static double Sin_1(double angle, int count)
@@ -41,6 +41,7 @@ namespace OpaqueFunctions
                 X1 = Math.Pow(X, 2 * i + 1);
                 top = X1 * Math.Pow(-1, i);
                 bottom = CFakt.Fakt(2 * i + 1);
+                /// add top/bottom
                 result += top / bottom;
             }
             return result;
@@ -480,7 +481,7 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
     [OpaqueFunction()]
-    [FunctionName("Xpow2_Sin_1", "sin^2(x)")]
+    [FunctionName("Xpow2_Sin_1", "sin(x)^2")]
     public static class CXpow2_Sin_1
     {
         public static double Xpow2_Sin_1(double angle, int count)
@@ -505,7 +506,7 @@ namespace OpaqueFunctions
     /// Возвращает область определения функции sin^2(x)
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("Xpow2_Sin_1_in", "Sin^2(x)")]
+    [FunctionName("Xpow2_Sin_1_in", "Sin(x)^2")]
     public static class CXpow2_Sin_1_in
     {
         public static string Xpow2_Sin_1_in()
@@ -523,7 +524,7 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
     [OpaqueFunction()]
-    [FunctionName("Xpow2_Cos_1", "cos^2(x)")]
+    [FunctionName("Xpow2_Cos_1", "cos(x)^2")]
     public static class CXpow2_Cos_1
     {
         public static double Xpow2_Cos_1(double angle, int count)
@@ -548,7 +549,7 @@ namespace OpaqueFunctions
     /// Возвращает область определения функции cos^2(x)
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("Xpow2_Cos_1_in", "Cos^2(x)")]
+    [FunctionName("Xpow2_Cos_1_in", "Cos(x)^2")]
     public static class CXpow2_Cos_1_in
     {
         public static string Xpow2_Cos_1_in()
@@ -566,7 +567,7 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
     [OpaqueFunction()]
-    [FunctionName("Xpow3_Sin_1", "sin^3(x)")]
+    [FunctionName("Xpow3_Sin_1", "sin(x)^3")]
     public static class CXpow3_Sin_1
     {
         public static double Xpow3_Sin_1(double angle, int count)
@@ -590,7 +591,7 @@ namespace OpaqueFunctions
     /// Возвращает область определения функции sin^3(x)
     /// <returns>string</returns>
     [OpaqueFunction()]
-    [FunctionName("Xpow3_Sin_1_in", "Sin^3(x)")]
+    [FunctionName("Xpow3_Sin_1_in", "Sin(x)^3")]
     public static class CXpow3_Sin_1_in
     {
         public static string Xpow3_Sin_1_in()
@@ -608,7 +609,7 @@ namespace OpaqueFunctions
     /// <param name="angle">Угол в радианах</param>
     /// <param name="count">Количество требуемых перемножений</param>
     [OpaqueFunction()]
-    [FunctionName("Xpow3_Cos_1", "cos^3(x)")]
+    [FunctionName("Xpow3_Cos_1", "cos(x)^3")]
     public static class CXpow3_Cos_1
     {
         public static double Xpow3_Cos_1(double angle, int count)

@@ -228,9 +228,14 @@ namespace TestingSystem
         public bool Correct;
 
         /// <summary>
-        /// Возвращает
+        /// Интервальный метод
         /// </summary>
         public IntervalMethod IntervalMethod;
+
+        /// <summary>
+        /// Определения необходимых классов из кода
+        /// </summary>
+        public string ClassesDeclarations;
 
         /// <summary>
         /// Конструктор без параметров, только выделяет память
@@ -257,6 +262,7 @@ namespace TestingSystem
             EvalCode = m.EvalCode;
             IdealCode = m.IdealCode;
             IntervalMethod = m.IntervalMethod;
+            ClassesDeclarations = m.ClassesDeclarations;
         }
 
         /// <summary>
@@ -447,6 +453,24 @@ namespace TestingSystem
         }
 
         /// <summary>
+        /// Searches for classes, and returns them in dictionary form
+        /// </summary>
+        /// <param name="TreeRoot">The root of the tree to search for classes</param>
+        /// <returns></returns>
+        public static Dictionary<string, string> getClassCodes(SyntaxNode TreeRoot)
+        {
+            var dic = new Dictionary<string, string>();
+            var classes = TreeRoot.DescendantNodes().OfType<ClassDeclarationSyntax>();
+            foreach (var cl in classes)
+            {
+                dic[cl.Identifier.Text] = cl.RemoveNodes(cl.DescendantNodes().
+                    OfType<AttributeListSyntax>(), SyntaxRemoveOptions.KeepNoTrivia).GetText().ToString();
+            }
+
+            return dic;
+        }
+
+        /// <summary>
         /// Определяет тип метода по сигнатуре
         /// </summary>
         /// <param name="meth">Узел ситаксического дерева, представляющий данный метод</param>
@@ -506,6 +530,7 @@ namespace TestingSystem
                 var fileMethods = rt.DescendantNodes().OfType<MethodDeclarationSyntax>();
                 var expressionsDic = getExpressionsFromAttributes(rt);
                 var intervalsDic = getIntervalMethCodes(rt);
+                var classesDic = getClassCodes(rt);
 
                 foreach (var meth in fileMethods)
                 {
@@ -539,7 +564,19 @@ namespace TestingSystem
                     m.Node = meth;
 
                     m.Correct = false;
-                    m.EvalCode = Usings + m.Code + "\nreturn " +
+
+                    m.ClassesDeclarations = "";
+                    foreach(string className in meth.DescendantNodes().
+                        OfType<MemberAccessExpressionSyntax>().
+                        Select((acc) => acc.Expression.WithoutTrivia().GetText().ToString()))
+                    {
+                        if (classesDic.ContainsKey(className))
+                        {
+                            m.ClassesDeclarations += classesDic[className] + "\r\n";
+                        }
+                    }
+
+                    m.EvalCode = Usings + m.ClassesDeclarations + m.Code + "\nreturn " +
                         m.Name + TestingUtilities.GenerateArguments(m.Type, true, false, 0) + ";\n";
 
                     if (expressionsDic.ContainsKey(m.Name))

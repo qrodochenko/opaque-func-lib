@@ -737,7 +737,12 @@
         </member>
         <member name="F:TestingSystem.MethodForTesting.IntervalMethod">
             <summary>
-            Возвращает
+            Интервальный метод
+            </summary>
+        </member>
+        <member name="F:TestingSystem.MethodForTesting.ClassesDeclarations">
+            <summary>
+            Определения необходимых классов из кода
             </summary>
         </member>
         <member name="M:TestingSystem.MethodForTesting.#ctor">
@@ -826,6 +831,13 @@
             Searches for interval methods, executes them, and returns the intervals in dictionary form
             </summary>
             <param name="TreeRoot">The root of the tree to search for interval methods</param>
+            <returns></returns>
+        </member>
+        <member name="M:TestingSystem.MethodForTesting.getClassCodes(Microsoft.CodeAnalysis.SyntaxNode)">
+            <summary>
+            Searches for classes, and returns them in dictionary form
+            </summary>
+            <param name="TreeRoot">The root of the tree to search for classes</param>
             <returns></returns>
         </member>
         <member name="M:TestingSystem.MethodForTesting.DetectType(Microsoft.CodeAnalysis.CSharp.Syntax.MethodDeclarationSyntax)">

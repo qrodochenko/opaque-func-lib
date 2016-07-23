@@ -39,7 +39,7 @@ namespace TestingSystem
                     {
                         try
                         {
-                            m.GetTestingReport(1000, 500, new double[] { 2, 3 }).SaveCSV(OutputPath.UniversalReportsDir + "\\" + m.Name + ".csv");
+                            m.GetTestingReport(10, 500, new double[] { 2, 3 }).SaveCSV(OutputPath.UniversalReportsDir + "\\" + m.Name + " ("+GetSurname(m.FilePath)+").csv");
                         }
                         catch
                         {
@@ -59,7 +59,7 @@ namespace TestingSystem
                         m.Script = null;
                         try
                         {
-                            mt.GetTestingReportTaylor(1000, 500, new double[] { 2, 3 }).SaveCSV(OutputPath.TaylorReportsDir + "\\" + mt.Name + ".csv");
+                            mt.GetTestingReportTaylor(10, 500, new double[] { 2, 3 }).SaveCSV(OutputPath.TaylorReportsDir + "\\" + mt.Name + " (" + GetSurname(mt.FilePath) + ").csv");
                         }
                         catch
                         {
@@ -71,6 +71,13 @@ namespace TestingSystem
 
             PlotGraph.makeErrorPlots(OutputPath.UniversalReportsDir);
             PlotGraph.makeErrorPlots(OutputPath.TaylorReportsDir);
+        }
+
+        static string GetSurname(string fpath)
+        {
+            string repName = "opaque-func-lib\\";
+            string sr = fpath.Substring(fpath.IndexOf(repName) + repName.Length);
+            return sr.Substring(0, sr.IndexOf('\\'));
         }
     }
 }

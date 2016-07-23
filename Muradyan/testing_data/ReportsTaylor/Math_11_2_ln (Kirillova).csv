@@ -1,0 +1,502 @@
+"                      Function";"    N";"   Args";"";"      Val";"    Ideal";"      Abs";"      Rel"
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;    101;2|3 ;  0,00995 ;        0;  0,00995;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;    301;2|3 ; 0,003328 ;        0; 0,003328;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;    501;2|3 ; 0,001998 ;        0; 0,001998;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 700,99;2|3 ; 0,001428 ;        0; 0,001428;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 900,99;2|3 ; 0,001111 ;        0; 0,001111;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1101;2|3 ;0,0009087 ;        0;0,0009087;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1301;2|3 ;0,0007689 ;        0;0,0007689;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1501;2|3 ;0,0006665 ;        0;0,0006665;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1701;2|3 ;0,0005881 ;        0;0,0005881;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   1901;2|3 ;0,0005262 ;        0;0,0005262;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   2101;2|3 ;0,0004761 ;        0;0,0004761;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   2301;2|3 ;0,0004347 ;        0;0,0004347;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   2501;2|3 ;0,0003999 ;        0;0,0003999;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   2701;2|3 ;0,0003703 ;        0;0,0003703;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   2901;2|3 ;0,0003448 ;        0;0,0003448;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3101;2|3 ;0,0003225 ;        0;0,0003225;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3301;2|3 ; 0,000303 ;        0; 0,000303;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3501;2|3 ;0,0002857 ;        0;0,0002857;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3701;2|3 ;0,0002702 ;        0;0,0002702;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   3901;2|3 ;0,0002564 ;        0;0,0002564;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   4101;2|3 ;0,0002439 ;        0;0,0002439;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   4301;2|3 ;0,0002325 ;        0;0,0002325;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   4501;2|3 ;0,0002222 ;        0;0,0002222;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   4701;2|3 ;0,0002127 ;        0;0,0002127;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;   4901;2|3 ;0,0002041 ;        0;0,0002041;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 5100,9;2|3 ;0,0001961 ;        0;0,0001961;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 5300,9;2|3 ;0,0001887 ;        0;0,0001887;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 5500,9;2|3 ;0,0001818 ;        0;0,0001818;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 5700,9;2|3 ;0,0001754 ;        0;0,0001754;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 5900,9;2|3 ;0,0001695 ;        0;0,0001695;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 6100,9;2|3 ;0,0001639 ;        0;0,0001639;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 6300,9;2|3 ;0,0001587 ;        0;0,0001587;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 6500,9;2|3 ;0,0001538 ;        0;0,0001538;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 6700,9;2|3 ;0,0001492 ;        0;0,0001492;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 6900,9;2|3 ;0,0001449 ;        0;0,0001449;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 7100,9;2|3 ;0,0001408 ;        0;0,0001408;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 7300,9;2|3 ; 0,000137 ;        0; 0,000137;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 7500,9;2|3 ;0,0001333 ;        0;0,0001333;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 7700,9;2|3 ;0,0001299 ;        0;0,0001299;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 7900,9;2|3 ;0,0001266 ;        0;0,0001266;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 8100,9;2|3 ;0,0001235 ;        0;0,0001235;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 8300,9;2|3 ;0,0001205 ;        0;0,0001205;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 8500,9;2|3 ;0,0001176 ;        0;0,0001176;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 8700,9;2|3 ;0,0001149 ;        0;0,0001149;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 8900,9;2|3 ;0,0001124 ;        0;0,0001124;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 9100,9;2|3 ;0,0001099 ;        0;0,0001099;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 9300,9;2|3 ;0,0001075 ;        0;0,0001075;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 9500,9;2|3 ;0,0001053 ;        0;0,0001053;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 9700,9;2|3 ;0,0001031 ;        0;0,0001031;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10; 9900,9;2|3 ; 0,000101 ;        0; 0,000101;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  10101;2|3 ;9,901E-05 ;        0;9,901E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  10301;2|3 ;9,708E-05 ;        0;9,708E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  10501;2|3 ;9,523E-05 ;        0;9,523E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  10701;2|3 ;9,345E-05 ;        0;9,345E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  10901;2|3 ;9,174E-05 ;        0;9,174E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11101;2|3 ;9,009E-05 ;        0;9,009E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11301;2|3 ;8,849E-05 ;        0;8,849E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11501;2|3 ;8,695E-05 ;        0;8,695E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11701;2|3 ;8,547E-05 ;        0;8,547E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  11901;2|3 ;8,403E-05 ;        0;8,403E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  12101;2|3 ;8,264E-05 ;        0;8,264E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  12301;2|3 ; 8,13E-05 ;        0; 8,13E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  12501;2|3 ;    8E-05 ;        0;    8E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  12701;2|3 ;7,874E-05 ;        0;7,874E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  12901;2|3 ;7,752E-05 ;        0;7,752E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13101;2|3 ;7,633E-05 ;        0;7,633E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13301;2|3 ;7,519E-05 ;        0;7,519E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13501;2|3 ;7,407E-05 ;        0;7,407E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13701;2|3 ;7,299E-05 ;        0;7,299E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  13901;2|3 ;7,194E-05 ;        0;7,194E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  14101;2|3 ;7,092E-05 ;        0;7,092E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  14301;2|3 ;6,993E-05 ;        0;6,993E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  14501;2|3 ;6,896E-05 ;        0;6,896E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  14701;2|3 ;6,803E-05 ;        0;6,803E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  14901;2|3 ;6,711E-05 ;        0;6,711E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15101;2|3 ;6,622E-05 ;        0;6,622E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15301;2|3 ;6,536E-05 ;        0;6,536E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15501;2|3 ;6,451E-05 ;        0;6,451E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15701;2|3 ;6,369E-05 ;        0;6,369E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  15901;2|3 ;6,289E-05 ;        0;6,289E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  16101;2|3 ;6,211E-05 ;        0;6,211E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  16301;2|3 ;6,135E-05 ;        0;6,135E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  16501;2|3 ; 6,06E-05 ;        0; 6,06E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  16701;2|3 ;5,988E-05 ;        0;5,988E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  16901;2|3 ;5,917E-05 ;        0;5,917E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17101;2|3 ;5,848E-05 ;        0;5,848E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17301;2|3 ; 5,78E-05 ;        0; 5,78E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17501;2|3 ;5,714E-05 ;        0;5,714E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17701;2|3 ; 5,65E-05 ;        0; 5,65E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  17901;2|3 ;5,586E-05 ;        0;5,586E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  18101;2|3 ;5,525E-05 ;        0;5,525E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  18301;2|3 ;5,464E-05 ;        0;5,464E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  18501;2|3 ;5,405E-05 ;        0;5,405E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  18701;2|3 ;5,348E-05 ;        0;5,348E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  18901;2|3 ;5,291E-05 ;        0;5,291E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19101;2|3 ;5,236E-05 ;        0;5,236E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19301;2|3 ;5,181E-05 ;        0;5,181E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19501;2|3 ;5,128E-05 ;        0;5,128E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19701;2|3 ;5,076E-05 ;        0;5,076E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  19901;2|3 ;5,025E-05 ;        0;5,025E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  20101;2|3 ;4,975E-05 ;        0;4,975E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  20301;2|3 ;4,926E-05 ;        0;4,926E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  20501;2|3 ;4,878E-05 ;        0;4,878E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  20701;2|3 ;4,831E-05 ;        0;4,831E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  20901;2|3 ;4,785E-05 ;        0;4,785E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21101;2|3 ;4,739E-05 ;        0;4,739E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21301;2|3 ;4,695E-05 ;        0;4,695E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21501;2|3 ;4,651E-05 ;        0;4,651E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21701;2|3 ;4,608E-05 ;        0;4,608E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  21901;2|3 ;4,566E-05 ;        0;4,566E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  22101;2|3 ;4,525E-05 ;        0;4,525E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  22301;2|3 ;4,484E-05 ;        0;4,484E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  22501;2|3 ;4,444E-05 ;        0;4,444E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  22701;2|3 ;4,405E-05 ;        0;4,405E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  22901;2|3 ;4,367E-05 ;        0;4,367E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23101;2|3 ;4,329E-05 ;        0;4,329E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23301;2|3 ;4,292E-05 ;        0;4,292E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23501;2|3 ;4,255E-05 ;        0;4,255E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23701;2|3 ;4,219E-05 ;        0;4,219E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  23901;2|3 ;4,184E-05 ;        0;4,184E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  24101;2|3 ;4,149E-05 ;        0;4,149E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  24301;2|3 ;4,115E-05 ;        0;4,115E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  24501;2|3 ;4,082E-05 ;        0;4,082E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  24701;2|3 ;4,049E-05 ;        0;4,049E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  24901;2|3 ;4,016E-05 ;        0;4,016E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25101;2|3 ;3,984E-05 ;        0;3,984E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25301;2|3 ;3,953E-05 ;        0;3,953E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25501;2|3 ;3,922E-05 ;        0;3,922E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25701;2|3 ;3,891E-05 ;        0;3,891E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  25901;2|3 ;3,861E-05 ;        0;3,861E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  26101;2|3 ;3,831E-05 ;        0;3,831E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  26301;2|3 ;3,802E-05 ;        0;3,802E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  26501;2|3 ;3,774E-05 ;        0;3,774E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  26701;2|3 ;3,745E-05 ;        0;3,745E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  26901;2|3 ;3,717E-05 ;        0;3,717E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27101;2|3 ; 3,69E-05 ;        0; 3,69E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27301;2|3 ;3,663E-05 ;        0;3,663E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27501;2|3 ;3,636E-05 ;        0;3,636E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27701;2|3 ; 3,61E-05 ;        0; 3,61E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  27901;2|3 ;3,584E-05 ;        0;3,584E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  28101;2|3 ;3,559E-05 ;        0;3,559E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  28301;2|3 ;3,534E-05 ;        0;3,534E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  28501;2|3 ;3,509E-05 ;        0;3,509E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  28701;2|3 ;3,484E-05 ;        0;3,484E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  28901;2|3 ; 3,46E-05 ;        0; 3,46E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29101;2|3 ;3,436E-05 ;        0;3,436E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29301;2|3 ;3,413E-05 ;        0;3,413E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29501;2|3 ; 3,39E-05 ;        0; 3,39E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29701;2|3 ;3,367E-05 ;        0;3,367E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  29901;2|3 ;3,344E-05 ;        0;3,344E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  30101;2|3 ;3,322E-05 ;        0;3,322E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  30301;2|3 ;  3,3E-05 ;        0;  3,3E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  30501;2|3 ;3,279E-05 ;        0;3,279E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  30701;2|3 ;3,257E-05 ;        0;3,257E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  30901;2|3 ;3,236E-05 ;        0;3,236E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31101;2|3 ;3,215E-05 ;        0;3,215E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31301;2|3 ;3,195E-05 ;        0;3,195E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31501;2|3 ;3,175E-05 ;        0;3,175E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31701;2|3 ;3,155E-05 ;        0;3,155E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  31901;2|3 ;3,135E-05 ;        0;3,135E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  32101;2|3 ;3,115E-05 ;        0;3,115E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  32301;2|3 ;3,096E-05 ;        0;3,096E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  32501;2|3 ;3,077E-05 ;        0;3,077E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  32701;2|3 ;3,058E-05 ;        0;3,058E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  32901;2|3 ;3,039E-05 ;        0;3,039E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33101;2|3 ;3,021E-05 ;        0;3,021E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33301;2|3 ;3,003E-05 ;        0;3,003E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33501;2|3 ;2,985E-05 ;        0;2,985E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33701;2|3 ;2,967E-05 ;        0;2,967E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  33901;2|3 ; 2,95E-05 ;        0; 2,95E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  34101;2|3 ;2,933E-05 ;        0;2,933E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  34301;2|3 ;2,915E-05 ;        0;2,915E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  34501;2|3 ;2,899E-05 ;        0;2,899E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  34701;2|3 ;2,882E-05 ;        0;2,882E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  34901;2|3 ;2,865E-05 ;        0;2,865E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35101;2|3 ;2,849E-05 ;        0;2,849E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35301;2|3 ;2,833E-05 ;        0;2,833E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35501;2|3 ;2,817E-05 ;        0;2,817E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35701;2|3 ;2,801E-05 ;        0;2,801E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  35901;2|3 ;2,786E-05 ;        0;2,786E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  36101;2|3 ; 2,77E-05 ;        0; 2,77E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  36301;2|3 ;2,755E-05 ;        0;2,755E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  36501;2|3 ; 2,74E-05 ;        0; 2,74E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  36701;2|3 ;2,725E-05 ;        0;2,725E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  36901;2|3 ; 2,71E-05 ;        0; 2,71E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37101;2|3 ;2,695E-05 ;        0;2,695E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37301;2|3 ;2,681E-05 ;        0;2,681E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37501;2|3 ;2,667E-05 ;        0;2,667E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37701;2|3 ;2,653E-05 ;        0;2,653E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  37901;2|3 ;2,639E-05 ;        0;2,639E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  38101;2|3 ;2,625E-05 ;        0;2,625E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  38301;2|3 ;2,611E-05 ;        0;2,611E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  38501;2|3 ;2,597E-05 ;        0;2,597E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  38701;2|3 ;2,584E-05 ;        0;2,584E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  38901;2|3 ;2,571E-05 ;        0;2,571E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39101;2|3 ;2,558E-05 ;        0;2,558E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39301;2|3 ;2,545E-05 ;        0;2,545E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39501;2|3 ;2,532E-05 ;        0;2,532E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39701;2|3 ;2,519E-05 ;        0;2,519E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  39901;2|3 ;2,506E-05 ;        0;2,506E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  40101;2|3 ;2,494E-05 ;        0;2,494E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  40301;2|3 ;2,481E-05 ;        0;2,481E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  40501;2|3 ;2,469E-05 ;        0;2,469E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  40701;2|3 ;2,457E-05 ;        0;2,457E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  40901;2|3 ;2,445E-05 ;        0;2,445E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41101;2|3 ;2,433E-05 ;        0;2,433E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41301;2|3 ;2,421E-05 ;        0;2,421E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41501;2|3 ; 2,41E-05 ;        0; 2,41E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41701;2|3 ;2,398E-05 ;        0;2,398E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  41901;2|3 ;2,387E-05 ;        0;2,387E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  42101;2|3 ;2,375E-05 ;        0;2,375E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  42301;2|3 ;2,364E-05 ;        0;2,364E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  42501;2|3 ;2,353E-05 ;        0;2,353E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  42701;2|3 ;2,342E-05 ;        0;2,342E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  42901;2|3 ;2,331E-05 ;        0;2,331E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43101;2|3 ; 2,32E-05 ;        0; 2,32E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43301;2|3 ;2,309E-05 ;        0;2,309E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43501;2|3 ;2,299E-05 ;        0;2,299E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43701;2|3 ;2,288E-05 ;        0;2,288E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  43901;2|3 ;2,278E-05 ;        0;2,278E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  44101;2|3 ;2,268E-05 ;        0;2,268E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  44301;2|3 ;2,257E-05 ;        0;2,257E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  44501;2|3 ;2,247E-05 ;        0;2,247E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  44701;2|3 ;2,237E-05 ;        0;2,237E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  44901;2|3 ;2,227E-05 ;        0;2,227E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45101;2|3 ;2,217E-05 ;        0;2,217E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45301;2|3 ;2,208E-05 ;        0;2,208E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45501;2|3 ;2,198E-05 ;        0;2,198E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45701;2|3 ;2,188E-05 ;        0;2,188E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  45901;2|3 ;2,179E-05 ;        0;2,179E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  46101;2|3 ;2,169E-05 ;        0;2,169E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  46301;2|3 ; 2,16E-05 ;        0; 2,16E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  46501;2|3 ;2,151E-05 ;        0;2,151E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  46701;2|3 ;2,141E-05 ;        0;2,141E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  46901;2|3 ;2,132E-05 ;        0;2,132E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47101;2|3 ;2,123E-05 ;        0;2,123E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47301;2|3 ;2,114E-05 ;        0;2,114E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47501;2|3 ;2,105E-05 ;        0;2,105E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47701;2|3 ;2,096E-05 ;        0;2,096E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  47901;2|3 ;2,088E-05 ;        0;2,088E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  48101;2|3 ;2,079E-05 ;        0;2,079E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  48301;2|3 ; 2,07E-05 ;        0; 2,07E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  48501;2|3 ;2,062E-05 ;        0;2,062E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  48701;2|3 ;2,053E-05 ;        0;2,053E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  48901;2|3 ;2,045E-05 ;        0;2,045E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49101;2|3 ;2,037E-05 ;        0;2,037E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49301;2|3 ;2,028E-05 ;        0;2,028E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49501;2|3 ; 2,02E-05 ;        0; 2,02E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49701;2|3 ;2,012E-05 ;        0;2,012E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  49901;2|3 ;2,004E-05 ;        0;2,004E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  50100;2|3 ;1,996E-05 ;        0;1,996E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  50300;2|3 ;1,988E-05 ;        0;1,988E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  50500;2|3 ; 1,98E-05 ;        0; 1,98E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  50700;2|3 ;1,972E-05 ;        0;1,972E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  50900;2|3 ;1,965E-05 ;        0;1,965E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51100;2|3 ;1,957E-05 ;        0;1,957E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51300;2|3 ;1,949E-05 ;        0;1,949E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51500;2|3 ;1,942E-05 ;        0;1,942E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51700;2|3 ;1,934E-05 ;        0;1,934E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  51900;2|3 ;1,927E-05 ;        0;1,927E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  52100;2|3 ;1,919E-05 ;        0;1,919E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  52300;2|3 ;1,912E-05 ;        0;1,912E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  52500;2|3 ;1,905E-05 ;        0;1,905E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  52700;2|3 ;1,898E-05 ;        0;1,898E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  52900;2|3 ; 1,89E-05 ;        0; 1,89E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53100;2|3 ;1,883E-05 ;        0;1,883E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53300;2|3 ;1,876E-05 ;        0;1,876E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53500;2|3 ;1,869E-05 ;        0;1,869E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53700;2|3 ;1,862E-05 ;        0;1,862E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  53900;2|3 ;1,855E-05 ;        0;1,855E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  54100;2|3 ;1,848E-05 ;        0;1,848E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  54300;2|3 ;1,842E-05 ;        0;1,842E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  54500;2|3 ;1,835E-05 ;        0;1,835E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  54700;2|3 ;1,828E-05 ;        0;1,828E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  54900;2|3 ;1,821E-05 ;        0;1,821E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55100;2|3 ;1,815E-05 ;        0;1,815E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55300;2|3 ;1,808E-05 ;        0;1,808E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55500;2|3 ;1,802E-05 ;        0;1,802E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55700;2|3 ;1,795E-05 ;        0;1,795E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  55900;2|3 ;1,789E-05 ;        0;1,789E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  56100;2|3 ;1,783E-05 ;        0;1,783E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  56300;2|3 ;1,776E-05 ;        0;1,776E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  56500;2|3 ; 1,77E-05 ;        0; 1,77E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  56700;2|3 ;1,764E-05 ;        0;1,764E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  56900;2|3 ;1,757E-05 ;        0;1,757E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57100;2|3 ;1,751E-05 ;        0;1,751E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57300;2|3 ;1,745E-05 ;        0;1,745E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57500;2|3 ;1,739E-05 ;        0;1,739E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57700;2|3 ;1,733E-05 ;        0;1,733E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  57900;2|3 ;1,727E-05 ;        0;1,727E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  58100;2|3 ;1,721E-05 ;        0;1,721E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  58300;2|3 ;1,715E-05 ;        0;1,715E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  58500;2|3 ;1,709E-05 ;        0;1,709E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  58700;2|3 ;1,704E-05 ;        0;1,704E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  58900;2|3 ;1,698E-05 ;        0;1,698E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59100;2|3 ;1,692E-05 ;        0;1,692E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59300;2|3 ;1,686E-05 ;        0;1,686E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59500;2|3 ;1,681E-05 ;        0;1,681E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59700;2|3 ;1,675E-05 ;        0;1,675E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  59900;2|3 ;1,669E-05 ;        0;1,669E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  60100;2|3 ;1,664E-05 ;        0;1,664E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  60300;2|3 ;1,658E-05 ;        0;1,658E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  60500;2|3 ;1,653E-05 ;        0;1,653E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  60700;2|3 ;1,647E-05 ;        0;1,647E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  60900;2|3 ;1,642E-05 ;        0;1,642E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61100;2|3 ;1,637E-05 ;        0;1,637E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61300;2|3 ;1,631E-05 ;        0;1,631E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61500;2|3 ;1,626E-05 ;        0;1,626E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61700;2|3 ;1,621E-05 ;        0;1,621E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  61900;2|3 ;1,616E-05 ;        0;1,616E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  62100;2|3 ; 1,61E-05 ;        0; 1,61E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  62300;2|3 ;1,605E-05 ;        0;1,605E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  62500;2|3 ;  1,6E-05 ;        0;  1,6E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  62700;2|3 ;1,595E-05 ;        0;1,595E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  62900;2|3 ; 1,59E-05 ;        0; 1,59E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63100;2|3 ;1,585E-05 ;        0;1,585E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63300;2|3 ; 1,58E-05 ;        0; 1,58E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63500;2|3 ;1,575E-05 ;        0;1,575E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63700;2|3 ; 1,57E-05 ;        0; 1,57E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  63900;2|3 ;1,565E-05 ;        0;1,565E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  64100;2|3 ; 1,56E-05 ;        0; 1,56E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  64300;2|3 ;1,555E-05 ;        0;1,555E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  64500;2|3 ; 1,55E-05 ;        0; 1,55E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  64700;2|3 ;1,546E-05 ;        0;1,546E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  64900;2|3 ;1,541E-05 ;        0;1,541E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65100;2|3 ;1,536E-05 ;        0;1,536E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65300;2|3 ;1,531E-05 ;        0;1,531E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65500;2|3 ;1,527E-05 ;        0;1,527E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65700;2|3 ;1,522E-05 ;        0;1,522E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  65900;2|3 ;1,517E-05 ;        0;1,517E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  66100;2|3 ;1,513E-05 ;        0;1,513E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  66300;2|3 ;1,508E-05 ;        0;1,508E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  66500;2|3 ;1,504E-05 ;        0;1,504E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  66700;2|3 ;1,499E-05 ;        0;1,499E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  66900;2|3 ;1,495E-05 ;        0;1,495E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67100;2|3 ; 1,49E-05 ;        0; 1,49E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67300;2|3 ;1,486E-05 ;        0;1,486E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67500;2|3 ;1,481E-05 ;        0;1,481E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67700;2|3 ;1,477E-05 ;        0;1,477E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  67900;2|3 ;1,473E-05 ;        0;1,473E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  68100;2|3 ;1,468E-05 ;        0;1,468E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  68300;2|3 ;1,464E-05 ;        0;1,464E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  68500;2|3 ; 1,46E-05 ;        0; 1,46E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  68700;2|3 ;1,456E-05 ;        0;1,456E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  68900;2|3 ;1,451E-05 ;        0;1,451E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69100;2|3 ;1,447E-05 ;        0;1,447E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69300;2|3 ;1,443E-05 ;        0;1,443E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69500;2|3 ;1,439E-05 ;        0;1,439E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69700;2|3 ;1,435E-05 ;        0;1,435E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  69900;2|3 ;1,431E-05 ;        0;1,431E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  70100;2|3 ;1,427E-05 ;        0;1,427E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  70300;2|3 ;1,422E-05 ;        0;1,422E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  70500;2|3 ;1,418E-05 ;        0;1,418E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  70700;2|3 ;1,414E-05 ;        0;1,414E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  70900;2|3 ; 1,41E-05 ;        0; 1,41E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71100;2|3 ;1,406E-05 ;        0;1,406E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71300;2|3 ;1,403E-05 ;        0;1,403E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71500;2|3 ;1,399E-05 ;        0;1,399E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71700;2|3 ;1,395E-05 ;        0;1,395E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  71900;2|3 ;1,391E-05 ;        0;1,391E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  72100;2|3 ;1,387E-05 ;        0;1,387E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  72300;2|3 ;1,383E-05 ;        0;1,383E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  72500;2|3 ;1,379E-05 ;        0;1,379E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  72700;2|3 ;1,376E-05 ;        0;1,376E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  72900;2|3 ;1,372E-05 ;        0;1,372E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73100;2|3 ;1,368E-05 ;        0;1,368E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73300;2|3 ;1,364E-05 ;        0;1,364E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73500;2|3 ;1,361E-05 ;        0;1,361E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73700;2|3 ;1,357E-05 ;        0;1,357E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  73900;2|3 ;1,353E-05 ;        0;1,353E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  74100;2|3 ; 1,35E-05 ;        0; 1,35E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  74300;2|3 ;1,346E-05 ;        0;1,346E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  74500;2|3 ;1,342E-05 ;        0;1,342E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  74700;2|3 ;1,339E-05 ;        0;1,339E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  74900;2|3 ;1,335E-05 ;        0;1,335E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75100;2|3 ;1,332E-05 ;        0;1,332E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75300;2|3 ;1,328E-05 ;        0;1,328E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75500;2|3 ;1,325E-05 ;        0;1,325E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75700;2|3 ;1,321E-05 ;        0;1,321E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  75900;2|3 ;1,318E-05 ;        0;1,318E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  76100;2|3 ;1,314E-05 ;        0;1,314E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  76300;2|3 ;1,311E-05 ;        0;1,311E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  76500;2|3 ;1,307E-05 ;        0;1,307E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  76700;2|3 ;1,304E-05 ;        0;1,304E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  76900;2|3 ;  1,3E-05 ;        0;  1,3E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77100;2|3 ;1,297E-05 ;        0;1,297E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77300;2|3 ;1,294E-05 ;        0;1,294E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77500;2|3 ; 1,29E-05 ;        0; 1,29E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77700;2|3 ;1,287E-05 ;        0;1,287E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  77900;2|3 ;1,284E-05 ;        0;1,284E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  78100;2|3 ; 1,28E-05 ;        0; 1,28E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  78300;2|3 ;1,277E-05 ;        0;1,277E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  78500;2|3 ;1,274E-05 ;        0;1,274E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  78700;2|3 ;1,271E-05 ;        0;1,271E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  78900;2|3 ;1,267E-05 ;        0;1,267E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79100;2|3 ;1,264E-05 ;        0;1,264E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79300;2|3 ;1,261E-05 ;        0;1,261E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79500;2|3 ;1,258E-05 ;        0;1,258E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79700;2|3 ;1,255E-05 ;        0;1,255E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  79900;2|3 ;1,252E-05 ;        0;1,252E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  80100;2|3 ;1,248E-05 ;        0;1,248E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  80300;2|3 ;1,245E-05 ;        0;1,245E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  80500;2|3 ;1,242E-05 ;        0;1,242E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  80700;2|3 ;1,239E-05 ;        0;1,239E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  80900;2|3 ;1,236E-05 ;        0;1,236E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81100;2|3 ;1,233E-05 ;        0;1,233E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81300;2|3 ; 1,23E-05 ;        0; 1,23E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81500;2|3 ;1,227E-05 ;        0;1,227E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81700;2|3 ;1,224E-05 ;        0;1,224E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  81900;2|3 ;1,221E-05 ;        0;1,221E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  82100;2|3 ;1,218E-05 ;        0;1,218E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  82300;2|3 ;1,215E-05 ;        0;1,215E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  82500;2|3 ;1,212E-05 ;        0;1,212E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  82700;2|3 ;1,209E-05 ;        0;1,209E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  82900;2|3 ;1,206E-05 ;        0;1,206E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83100;2|3 ;1,203E-05 ;        0;1,203E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83300;2|3 ;  1,2E-05 ;        0;  1,2E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83500;2|3 ;1,198E-05 ;        0;1,198E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83700;2|3 ;1,195E-05 ;        0;1,195E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  83900;2|3 ;1,192E-05 ;        0;1,192E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  84100;2|3 ;1,189E-05 ;        0;1,189E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  84300;2|3 ;1,186E-05 ;        0;1,186E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  84500;2|3 ;1,183E-05 ;        0;1,183E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  84700;2|3 ;1,181E-05 ;        0;1,181E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  84900;2|3 ;1,178E-05 ;        0;1,178E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85100;2|3 ;1,175E-05 ;        0;1,175E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85300;2|3 ;1,172E-05 ;        0;1,172E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85500;2|3 ; 1,17E-05 ;        0; 1,17E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85700;2|3 ;1,167E-05 ;        0;1,167E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  85900;2|3 ;1,164E-05 ;        0;1,164E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  86100;2|3 ;1,161E-05 ;        0;1,161E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  86300;2|3 ;1,159E-05 ;        0;1,159E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  86500;2|3 ;1,156E-05 ;        0;1,156E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  86700;2|3 ;1,153E-05 ;        0;1,153E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  86900;2|3 ;1,151E-05 ;        0;1,151E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87100;2|3 ;1,148E-05 ;        0;1,148E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87300;2|3 ;1,145E-05 ;        0;1,145E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87500;2|3 ;1,143E-05 ;        0;1,143E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87700;2|3 ; 1,14E-05 ;        0; 1,14E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  87900;2|3 ;1,138E-05 ;        0;1,138E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  88100;2|3 ;1,135E-05 ;        0;1,135E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  88300;2|3 ;1,133E-05 ;        0;1,133E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  88500;2|3 ; 1,13E-05 ;        0; 1,13E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  88700;2|3 ;1,127E-05 ;        0;1,127E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  88900;2|3 ;1,125E-05 ;        0;1,125E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89100;2|3 ;1,122E-05 ;        0;1,122E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89300;2|3 ; 1,12E-05 ;        0; 1,12E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89500;2|3 ;1,117E-05 ;        0;1,117E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89700;2|3 ;1,115E-05 ;        0;1,115E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  89900;2|3 ;1,112E-05 ;        0;1,112E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  90100;2|3 ; 1,11E-05 ;        0; 1,11E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  90300;2|3 ;1,107E-05 ;        0;1,107E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  90500;2|3 ;1,105E-05 ;        0;1,105E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  90700;2|3 ;1,103E-05 ;        0;1,103E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  90900;2|3 ;  1,1E-05 ;        0;  1,1E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91100;2|3 ;1,098E-05 ;        0;1,098E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91300;2|3 ;1,095E-05 ;        0;1,095E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91500;2|3 ;1,093E-05 ;        0;1,093E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91700;2|3 ;1,091E-05 ;        0;1,091E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  91900;2|3 ;1,088E-05 ;        0;1,088E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  92100;2|3 ;1,086E-05 ;        0;1,086E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  92300;2|3 ;1,083E-05 ;        0;1,083E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  92500;2|3 ;1,081E-05 ;        0;1,081E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  92700;2|3 ;1,079E-05 ;        0;1,079E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  92900;2|3 ;1,076E-05 ;        0;1,076E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93100;2|3 ;1,074E-05 ;        0;1,074E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93300;2|3 ;1,072E-05 ;        0;1,072E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93500;2|3 ; 1,07E-05 ;        0; 1,07E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93700;2|3 ;1,067E-05 ;        0;1,067E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  93900;2|3 ;1,065E-05 ;        0;1,065E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  94100;2|3 ;1,063E-05 ;        0;1,063E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  94300;2|3 ; 1,06E-05 ;        0; 1,06E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  94500;2|3 ;1,058E-05 ;        0;1,058E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  94700;2|3 ;1,056E-05 ;        0;1,056E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  94900;2|3 ;1,054E-05 ;        0;1,054E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95100;2|3 ;1,052E-05 ;        0;1,052E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95300;2|3 ;1,049E-05 ;        0;1,049E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95500;2|3 ;1,047E-05 ;        0;1,047E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95700;2|3 ;1,045E-05 ;        0;1,045E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  95900;2|3 ;1,043E-05 ;        0;1,043E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  96100;2|3 ;1,041E-05 ;        0;1,041E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  96300;2|3 ;1,038E-05 ;        0;1,038E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  96500;2|3 ;1,036E-05 ;        0;1,036E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  96700;2|3 ;1,034E-05 ;        0;1,034E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  96900;2|3 ;1,032E-05 ;        0;1,032E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97100;2|3 ; 1,03E-05 ;        0; 1,03E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97300;2|3 ;1,028E-05 ;        0;1,028E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97500;2|3 ;1,026E-05 ;        0;1,026E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97700;2|3 ;1,024E-05 ;        0;1,024E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  97900;2|3 ;1,021E-05 ;        0;1,021E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  98100;2|3 ;1,019E-05 ;        0;1,019E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  98300;2|3 ;1,017E-05 ;        0;1,017E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  98500;2|3 ;1,015E-05 ;        0;1,015E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  98700;2|3 ;1,013E-05 ;        0;1,013E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  98900;2|3 ;1,011E-05 ;        0;1,011E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99100;2|3 ;1,009E-05 ;        0;1,009E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99300;2|3 ;1,007E-05 ;        0;1,007E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99500;2|3 ;1,005E-05 ;        0;1,005E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99700;2|3 ;1,003E-05 ;        0;1,003E-05;        ∞
+"Math_11_2_ln(C:\git_reps\summer_practice\opaque-func-lib\Kirillova\src\OpaqueFunctions\OpaqueFunctions.cs)";   10;  99900;2|3 ;1,001E-05 ;        0;1,001E-05;        ∞
+

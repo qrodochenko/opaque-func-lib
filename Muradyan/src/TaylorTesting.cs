@@ -189,7 +189,6 @@ namespace TestingSystem
         /// <param name="el"></param>
         public void AddElement(double el)
         {
-            //Console.WriteLine(elnum);
             ar.Add(el);
             ++elnum;
         }
@@ -234,7 +233,7 @@ namespace TestingSystem
                 EvalCode = null;
                 Script = null;
             }
-            var TaylorEvalCode = "#define _Debug\r\n"+Usings +
+            var TaylorEvalCode = Usings + ClassesDeclarations +
                 getChangedNode(Node).GetText().ToString() +
                 constructTaylorAddon(Name, Type) +
                 "return " + TaylorAddonName + TestingUtilities.GenerateArguments(Type, true, false, 0, true) + ";";
