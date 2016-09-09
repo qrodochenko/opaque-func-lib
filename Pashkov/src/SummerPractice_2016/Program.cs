@@ -63,9 +63,10 @@ namespace SummerPractice_2016
 
         static void Main(string[] args)
         {
-
+            string dest_folder = ("..\\..\\..\\..\\csv\\");
+            string dest = dest_folder + "L00_2" + ".csv";
              System.IO.StreamWriter file2 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_2.csv");
+                  new System.IO.StreamWriter(dest);
              file2.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -80,8 +81,9 @@ namespace SummerPractice_2016
              }
              file2.Close();
 
+             dest = dest_folder + "L00_3" + ".csv";
              System.IO.StreamWriter file3 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_3.csv");
+                  new System.IO.StreamWriter(dest);
              file3.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -96,8 +98,9 @@ namespace SummerPractice_2016
              }
              file3.Close();
 
+             dest = dest_folder + "L00_4" + ".csv";
              System.IO.StreamWriter file4 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_4.csv");
+                  new System.IO.StreamWriter(dest);
              file4.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -112,8 +115,9 @@ namespace SummerPractice_2016
              }
              file4.Close();
 
+             dest = dest_folder + "L00_5" + ".csv";
              System.IO.StreamWriter file5 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_5.csv");
+                  new System.IO.StreamWriter(dest);
              file5.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -128,11 +132,13 @@ namespace SummerPractice_2016
              }
              file5.Close();
 
+            
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_6\\" + angle2.ToString() + ".csv";
                  System.IO.StreamWriter file6 =
-                     new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_6\" + angle2.ToString() + ".csv");
+                     new System.IO.StreamWriter(dest);
                  file6.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
                  for (int i = 1; i < 100; i++)
                  {
@@ -148,11 +154,13 @@ namespace SummerPractice_2016
                  file6.Close();
              }
 
+             
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_7\\" + angle2.ToString() + ".csv";
                  System.IO.StreamWriter file7 =
-                     new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_7\" + angle2.ToString() + ".csv");
+                     new System.IO.StreamWriter(dest);
                  file7.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
                  for (int i = 1; i < 100; i++)
                  {
@@ -170,11 +178,13 @@ namespace SummerPractice_2016
                  file7.Close();
              }
 
+             
               for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_8\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file8 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_8\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter(dest);
              file8.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -191,11 +201,13 @@ namespace SummerPractice_2016
              file8.Close();
              }
 
+              
               for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_9\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file9 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_9\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter(dest);
              file9.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -209,15 +221,16 @@ namespace SummerPractice_2016
                      file9.WriteLine(angle1.ToString() + ';' + absoluteError.ToString() + ';' + relativeError.ToString());
                  }
 
-            
+
              file9.Close();
               }
 
-              for (int j = 1; j < 11; j++)
+            for (int j = 1; j < 11; j++)
              {
                  double angle2 = -0.7 + 0.15*j;
+                 dest = dest_folder + "L00_10\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file10 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_10\" + angle2.ToString() + ".csv");
+                  new System.IO.StreamWriter(dest);
              file10.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -235,11 +248,13 @@ namespace SummerPractice_2016
              file10.Close();
               }
 
+             
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -0.7 + 0.15*j;
+                 dest = dest_folder + "L00_11\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file11 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_11\" + angle2.ToString() + ".csv");
+                  new System.IO.StreamWriter(dest);
              file11.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -257,11 +272,13 @@ namespace SummerPractice_2016
              file11.Close();
              }
 
+            
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = 0.15*j;
+                 dest = dest_folder + "L00_12\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file12 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_12\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter(dest);
              file12.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -282,8 +299,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = 0.15*j;
+                 dest = dest_folder + "L00_13\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file13 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_13\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter(dest);
              file13.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -305,8 +323,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_14\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file14 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_14\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter( dest );
              file14.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -327,8 +346,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_15\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file15 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_15\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter(dest);
              file15.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -349,8 +369,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_16\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file16 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_16\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter(dest);
              file16.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -371,8 +392,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_17\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file17 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_17\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter(dest);
              file17.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -393,8 +415,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_18\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file18 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_18\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter(dest);
              file18.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -415,8 +438,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_19\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file19 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_19\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter(dest);
              file19.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -437,8 +461,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -5 + j;
+                 dest = dest_folder + "L00_20\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file20 =
-                 new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_20\" + angle2.ToString() + ".csv");
+                 new System.IO.StreamWriter(dest);
              file20.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -459,8 +484,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -1.5 + 0.3*j;
+                 dest = dest_folder + "L00_21\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file21 =
-                new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_21\" + angle2.ToString() + ".csv");
+                new System.IO.StreamWriter(dest);
              file21.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -482,8 +508,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 = -1.5 + 0.3*j;
+                 dest = dest_folder + "L00_22\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file22 =
-                new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_22\" + angle2.ToString() + ".csv");
+                new System.IO.StreamWriter(dest);
              file22.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -504,8 +531,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 =  0.3*j;
+                 dest = dest_folder + "L00_23\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file23 =
-                new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_23\" + angle2.ToString() + ".csv");
+                new System.IO.StreamWriter(dest);
              file23.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -527,8 +555,9 @@ namespace SummerPractice_2016
              for (int j = 1; j < 11; j++)
              {
                  double angle2 =  0.3*j;
+                 dest = dest_folder + "L00_24\\" + angle2.ToString() + ".csv";
              System.IO.StreamWriter file24 =
-                new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_24\" + angle2.ToString() + ".csv");
+                new System.IO.StreamWriter(dest);
              file24.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -547,8 +576,9 @@ namespace SummerPractice_2016
              file24.Close();
              }
 
+             dest = dest_folder + "L00_25" + ".csv";
              System.IO.StreamWriter file25 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_25.csv");
+                  new System.IO.StreamWriter(dest);
              file25.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -563,8 +593,9 @@ namespace SummerPractice_2016
              }
              file25.Close();
 
+             dest = dest_folder + "L00_26" + ".csv";
              System.IO.StreamWriter file26 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_26.csv");
+                  new System.IO.StreamWriter(dest);
              file26.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -579,8 +610,9 @@ namespace SummerPractice_2016
              }
              file26.Close();
 
+             dest = dest_folder + "L00_27" + ".csv";
              System.IO.StreamWriter file27 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_27.csv");
+                  new System.IO.StreamWriter(dest);
              file27.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -595,8 +627,9 @@ namespace SummerPractice_2016
              }
              file27.Close();
 
+             dest = dest_folder + "L00_28" + ".csv";
              System.IO.StreamWriter file28 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_28.csv");
+                  new System.IO.StreamWriter(dest);
              file28.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -611,8 +644,9 @@ namespace SummerPractice_2016
              }
              file28.Close();
 
+             dest = dest_folder + "L00_29" + ".csv";
              System.IO.StreamWriter file29 =
-                  new System.IO.StreamWriter(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_29.csv");
+                  new System.IO.StreamWriter(dest);
              file29.WriteLine("angle" + ';' + " absoluteError" + ';' + " relativeError");
              for (int i = 1; i < 100; i++)
              {
@@ -627,10 +661,10 @@ namespace SummerPractice_2016
              }
              file29.Close();
 
-             
-            makeErrorPlots(@"D:\student\prakt\opaque-func-lib\Pashkov\csv");
+
+             makeErrorPlots("..\\..\\..\\..\\csv\\");
             for (int i = 6; i < 25; i++)
-                makeErrorPlots(@"D:\student\prakt\opaque-func-lib\Pashkov\csv\L00_" + i.ToString());
+                makeErrorPlots("..\\..\\..\\..\\csv\\" + "L00_" + i.ToString());
 
         }
     }
