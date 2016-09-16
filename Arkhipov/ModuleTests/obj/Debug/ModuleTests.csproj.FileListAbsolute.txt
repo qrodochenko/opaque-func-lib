@@ -1,7 +1,0 @@
-F:\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.csprojResolveAssemblyReference.cache
-F:\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.dll
-F:\SummerPractice_2016\ModuleTests\bin\Debug\ModuleTests.pdb
-F:\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.dll
-F:\SummerPractice_2016\ModuleTests\bin\Debug\OpaqueFunctions.pdb
-F:\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.dll
-F:\SummerPractice_2016\ModuleTests\obj\Debug\ModuleTests.pdb
